@@ -1,24 +1,27 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en" data-page="index">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Footfall — sobrevivência zumbi na sua cidade real</title>
-<meta name="description" content="Footfall é um jogo de sobrevivência zumbi para Android, em pixel art gótico, jogado andando pela sua cidade real. Saqueie lugares de verdade, monte uma base com o seu grupo e aguente as noites.">
+<title>Footfall — zombie survival in your real city</title>
+<meta name="description" content="Footfall is a gothic pixel-art zombie survival game for Android, played by walking around your real city. Loot real places, build a base with your group and survive the nights.">
 <meta name="theme-color" content="#0b0a10">
 <link rel="icon" type="image/png" href="img/icone.png">
 <link rel="apple-touch-icon" href="img/icone.png">
 <link rel="preload" href="fonts/jersey-10-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="alternate" hreflang="en" href="https://footfall.pcpastre.com/?lang=en">
+<link rel="alternate" hreflang="pt-BR" href="https://footfall.pcpastre.com/?lang=pt">
+<link rel="alternate" hreflang="es" href="https://footfall.pcpastre.com/?lang=es">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Footfall — sobrevivência zumbi na sua cidade real">
-<meta property="og:description" content="Ande. O corvo está vendo. Um jogo de zumbi para Android jogado andando pela sua cidade.">
+<meta property="og:title" content="Footfall — zombie survival in your real city">
+<meta property="og:description" content="Walk. The crow is watching. A zombie game for Android played by walking around your city.">
 <meta property="og:image" content="https://footfall.pcpastre.com/img/og.jpg">
 <meta property="og:url" content="https://footfall.pcpastre.com/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" fill="currentColor" shape-rendering="crispEdges">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" shape-rendering="crispEdges">
 <symbol id="i-ig" viewBox="0 0 12 12"><path d="M2 0h8v1h-8zM1 1h2v1h-2zM9 1h2v1h-2zM0 2h2v1h-2zM9 2h3v1h-3zM0 3h1v1h-1zM10 3h2v1h-2zM0 4h1v1h-1zM4 4h4v1h-4zM11 4h1v1h-1zM0 5h1v1h-1zM3 5h2v1h-2zM7 5h2v1h-2zM11 5h1v1h-1zM0 6h1v1h-1zM3 6h1v1h-1zM8 6h1v1h-1zM11 6h1v1h-1zM0 7h1v1h-1zM3 7h2v1h-2zM7 7h2v1h-2zM11 7h1v1h-1zM0 8h1v1h-1zM4 8h4v1h-4zM11 8h1v1h-1zM0 9h2v1h-2zM10 9h2v1h-2zM1 10h2v1h-2zM9 10h2v1h-2zM2 11h8v1h-8z"/></symbol>
 <symbol id="i-tt" viewBox="0 0 12 12"><path d="M6 0h2v1h-2zM6 1h3v1h-3zM6 2h1v1h-1zM8 2h2v1h-2zM6 3h1v1h-1zM9 3h3v1h-3zM6 4h1v1h-1zM6 5h1v1h-1zM2 6h5v1h-5zM1 7h2v1h-2zM6 7h1v1h-1zM1 8h1v1h-1zM6 8h1v1h-1zM1 9h2v1h-2zM5 9h2v1h-2zM2 10h4v1h-4z"/></symbol>
 <symbol id="i-pt" viewBox="0 0 12 12"><path d="M0 0h2v1h-2zM5 0h4v1h-4zM0 1h2v1h-2zM4 1h6v1h-6zM0 2h2v1h-2zM3 2h8v1h-8zM0 3h2v1h-2zM3 3h8v1h-8zM0 4h2v1h-2zM3 4h8v1h-8zM0 5h2v1h-2zM3 5h8v1h-8zM0 6h2v1h-2zM4 6h6v1h-6zM0 7h2v1h-2zM5 7h4v1h-4zM0 8h2v1h-2zM0 9h2v1h-2zM0 10h2v1h-2zM0 11h2v1h-2z"/></symbol>
@@ -27,17 +30,22 @@
 <symbol id="i-heart" viewBox="0 0 12 12"><path d="M1 1h3v1h-3zM8 1h3v1h-3zM0 2h5v1h-5zM7 2h5v1h-5zM0 3h12v1h-12zM0 4h12v1h-12zM0 5h12v1h-12zM1 6h10v1h-10zM2 7h8v1h-8zM3 8h6v1h-6zM4 9h4v1h-4zM5 10h2v1h-2z"/></symbol>
 <symbol id="i-mail" viewBox="0 0 12 12"><path d="M0 1h12v1h-12zM0 2h2v1h-2zM10 2h2v1h-2zM0 3h1v1h-1zM2 3h1v1h-1zM9 3h1v1h-1zM11 3h1v1h-1zM0 4h1v1h-1zM3 4h1v1h-1zM8 4h1v1h-1zM11 4h1v1h-1zM0 5h1v1h-1zM4 5h1v1h-1zM7 5h1v1h-1zM11 5h1v1h-1zM0 6h1v1h-1zM5 6h2v1h-2zM11 6h1v1h-1zM0 7h1v1h-1zM11 7h1v1h-1zM0 8h1v1h-1zM11 8h1v1h-1zM0 9h12v1h-12z"/></symbol>
 </svg>
-<a class="skip" href="#jogo">Pular para o conteúdo</a>
+<a class="skip" href="#jogo" data-i18n="skip">Skip to content</a>
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#" aria-label="Footfall, início"><img class="px" src="img/logo.png" alt="Footfall" width="148" height="58"></a>
-    <nav aria-label="Seções">
-      <a href="#jogo">O jogo</a>
-      <a href="#imagens">Imagens</a>
-      <a href="#apoie">Apoie</a>
-      <a class="go bevel" href="#baixar">Baixar</a>
+    <a class="brand" href="#" aria-label="Footfall"><img class="px" src="img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <nav aria-label="Sections">
+      <a href="#jogo" data-i18n="nav.game">The game</a>
+      <a href="#imagens" data-i18n="nav.images">Images</a>
+      <a href="#apoie" data-i18n="nav.support">Support</a>
+      <a class="go bevel" href="#baixar" data-i18n="nav.download">Download</a>
     </nav>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" class="flag" data-set="en" aria-pressed="true" title="English"><img class="px" src="img/flags/en.png" alt="English" width="18" height="12"></button>
+      <button type="button" class="flag" data-set="pt" aria-pressed="false" title="Português"><img class="px" src="img/flags/pt.png" alt="Português" width="18" height="12"></button>
+      <button type="button" class="flag" data-set="es" aria-pressed="false" title="Español"><img class="px" src="img/flags/es.png" alt="Español" width="18" height="12"></button>
+    </div>
   </div>
 </header>
 
@@ -47,11 +55,11 @@
   <div class="in">
     <h1 style="margin:0"><img class="logo px" src="img/logo.png" alt="Footfall" width="444" height="174"></h1>
     <div class="stage" id="stage"></div>
-    <p class="tag">Ande. O corvo está vendo.</p>
-    <p class="sub">Sobrevivência zumbi para Android jogada andando de verdade. O mapa é a sua cidade, e ela está cheia de mortos.</p>
+    <p class="tag" data-i18n="hero.tag">Walk. The crow is watching.</p>
+    <p class="sub" data-i18n="hero.sub">Zombie survival for Android, played by really walking. The map is your city, and it is full of the dead.</p>
     <div class="row">
-      <a class="btn big" href="#baixar"><svg aria-hidden="true"><use href="#i-down"/></svg>Baixar</a>
-      <a class="btn big ghost" href="#jogo">Conhecer o jogo</a>
+      <a class="btn big" href="#baixar"><svg aria-hidden="true"><use href="#i-down"/></svg><span data-i18n="hero.download">Download</span></a>
+      <a class="btn big ghost" href="#jogo" data-i18n="hero.more">Explore the game</a>
     </div>
     <div class="socials" data-socials></div>
   </div>
@@ -60,39 +68,39 @@
 <section id="jogo">
   <div class="wrap intro">
     <div>
-      <p class="kicker">O jogo</p>
-      <h2>Sua cidade. Os mortos. Você.</h2>
-      <p class="lead" style="margin-top:18px">Footfall é um jogo de sobrevivência zumbi em pixel art gótico jogado andando pela sua cidade real.
-        As ruas, as farmácias, os mercados e os postos são os de verdade, e estão tomados.</p>
-      <p class="lead">Ande para achar o que precisa. Saqueie lugares que enchem de novo toda semana, cuide de cada ferida,
-        levante uma base com o seu grupo e aguente as noites. Quanto mais você anda, mais longe chega.</p>
-      <blockquote>Quando você puser a primeira porta, um corvo pousa nela. Ele fica.</blockquote>
+      <p class="kicker" data-i18n="game.kicker">The game</p>
+      <h2 data-i18n="game.title">Your city. The dead. You.</h2>
+      <p class="lead" style="margin-top:18px" data-i18n="game.p1">Footfall is a gothic pixel-art zombie survival game you play by walking around your real city.
+        The streets, pharmacies, supermarkets and gas stations are the real ones, and they have been overrun.</p>
+      <p class="lead" data-i18n="game.p2">Walk to find what you need. Loot places that restock every week, treat every wound,
+        raise a base with your group and survive the nights. The more you walk, the further you get.</p>
+      <blockquote data-i18n="game.quote">When you place your first door, a crow lands on it. It stays.</blockquote>
     </div>
     <figure>
-      <img src="img/galeria/confronto.jpg" alt="Três sobreviventes sob a luz de uma lanterna diante de uma horda de zumbis" width="1200" height="675">
+      <img src="img/galeria/confronto.jpg" data-i18n-alt="alt.confront" alt="Three survivors in the light of a lantern facing a horde of zombies" width="1200" height="675">
     </figure>
   </div>
 
   <div class="wrap">
     <div class="feats">
-      <article class="feat bevel"><img class="px" src="img/icones/casa.png" alt="" width="64" height="64"><h3>O mapa é a sua cidade</h3>
-        <p>Ruas e lugares reais pelo GPS. Você só vê o que está à sua frente; prédios tapam a visão e a noite encurta tudo.</p></article>
-      <article class="feat bevel"><img class="px" src="img/icones/mercado.png" alt="" width="64" height="64"><h3>Saque de verdade</h3>
-        <p>Pela porta é rápido; entrando tem mais coisa, e mais zumbi. Cada móvel faz barulho ao abrir. Tudo enche de novo toda semana.</p></article>
-      <article class="feat bevel"><img class="px" src="img/icones/horda.png" alt="" width="64" height="64"><h3>Tela de ação</h3>
-        <p>Lute de perto: empurre, agache, mire, arremesse. Cada arma gasta e faz barulho. Quem estiver a até 120 m entra junto.</p></article>
-      <article class="feat bevel"><img class="px" src="img/icones/saude.png" alt="" width="64" height="64"><h3>Corpo de verdade</h3>
-        <p>Feridas tratadas passo a passo. Fome, sede, cansaço e o clima real. Mordida infecta, e não tem cura.</p></article>
-      <article class="feat bevel"><img class="px" src="img/icones/base.png" alt="" width="64" height="64"><h3>Base do grupo</h3>
-        <p>Demarque na grade, levante paredes, ponha portas, baús, horta e armadilhas. Toda noite ela é atacada.</p></article>
-      <article class="feat bevel"><img class="px" src="img/icones/suprimentos.png" alt="" width="64" height="64"><h3>Mercado de selos</h3>
-        <p>Uma caixa de correio na base é o mercado de todo mundo. A moeda é o selo, e ninguém vê o que os outros negociam.</p></article>
-      <article class="feat bevel"><img class="px" src="img/icones/bandeira-sua.png" alt="" width="64" height="64"><h3>Pontos dominados</h3>
-        <p>Lugares grandes têm bandeira. Vença os guardas na arena e o ponto é do seu grupo, pagando selos todo dia.</p></article>
-      <article class="feat bevel"><img class="px" src="img/icones/radio.png" alt="" width="64" height="64"><h3>Rádio Corvo</h3>
-        <p>Com um rádio, você ouve a horda da semana, as caixas de suprimento, pistas e missões.</p></article>
-      <article class="feat bevel"><img class="px" src="img/icones/roupas.png" alt="" width="64" height="64"><h3>Roupas raras</h3>
-        <p>Do comum ao lendário. Algumas só saem do corpo do zumbi do mesmo ofício: polícia, bombeiro, médico…</p></article>
+      <article class="feat bevel"><img class="px" src="img/icones/casa.png" alt="" width="64" height="64"><h3 data-i18n="f1.t">Your city is the map</h3>
+        <p data-i18n="f1.p">Real streets and places through GPS. You only see what is in front of you; buildings block your view and night shortens everything.</p></article>
+      <article class="feat bevel"><img class="px" src="img/icones/mercado.png" alt="" width="64" height="64"><h3 data-i18n="f2.t">Real looting</h3>
+        <p data-i18n="f2.p">From the door it is quick; going inside there is more stuff, and more zombies. Every piece of furniture makes noise. Everything restocks each week.</p></article>
+      <article class="feat bevel"><img class="px" src="img/icones/horda.png" alt="" width="64" height="64"><h3 data-i18n="f3.t">Action screen</h3>
+        <p data-i18n="f3.p">Fight up close: shove, crouch, aim, throw. Every weapon wears out and makes noise. Anyone within 120 m can join in.</p></article>
+      <article class="feat bevel"><img class="px" src="img/icones/saude.png" alt="" width="64" height="64"><h3 data-i18n="f4.t">A real body</h3>
+        <p data-i18n="f4.p">Wounds treated step by step. Hunger, thirst, fatigue and the real weather. A bite infects, and there is no cure.</p></article>
+      <article class="feat bevel"><img class="px" src="img/icones/base.png" alt="" width="64" height="64"><h3 data-i18n="f5.t">Group base</h3>
+        <p data-i18n="f5.p">Mark it on the grid, raise walls, add doors, chests, a garden and traps. Every night it is attacked.</p></article>
+      <article class="feat bevel"><img class="px" src="img/icones/suprimentos.png" alt="" width="64" height="64"><h3 data-i18n="f6.t">Stamp market</h3>
+        <p data-i18n="f6.p">A mailbox at your base is everyone's market. The currency is the stamp, and nobody sees what others trade.</p></article>
+      <article class="feat bevel"><img class="px" src="img/icones/bandeira-sua.png" alt="" width="64" height="64"><h3 data-i18n="f7.t">Strongholds</h3>
+        <p data-i18n="f7.p">Big places have a flag. Beat the guards in the arena and the place belongs to your group, paying stamps every day.</p></article>
+      <article class="feat bevel"><img class="px" src="img/icones/radio.png" alt="" width="64" height="64"><h3 data-i18n="f8.t">Crow Radio</h3>
+        <p data-i18n="f8.p">With a radio you hear about the week's horde, supply drops, clues and missions.</p></article>
+      <article class="feat bevel"><img class="px" src="img/icones/roupas.png" alt="" width="64" height="64"><h3 data-i18n="f9.t">Rare outfits</h3>
+        <p data-i18n="f9.p">From common to legendary. Some only drop from the body of a zombie of the same trade: police, firefighter, doctor…</p></article>
     </div>
   </div>
 </section>
@@ -101,27 +109,27 @@
 
 <section id="imagens" class="alt">
   <div class="wrap">
-    <p class="kicker">Imagens</p>
-    <h2>O que te espera lá fora</h2>
+    <p class="kicker" data-i18n="img.kicker">Images</p>
+    <h2 data-i18n="img.title">What waits for you out there</h2>
     <div class="gal">
-      <figure><a href="img/galeria/horda.jpg"><img src="img/galeria/horda.jpg" alt="Uma horda de zumbis com uniformes de polícia, bombeiro, médico e presidiário" width="1200" height="675" loading="lazy"></a>
-        <figcaption><b>A horda</b>Zumbis de uniforme carregam o que usavam em vida.</figcaption></figure>
-      <figure><a href="img/galeria/roupas.jpg"><img src="img/galeria/roupas.jpg" alt="Sobreviventes com roupas de raridades diferentes" width="1200" height="675" loading="lazy"></a>
-        <figcaption><b>Roupas</b>Ache conjuntos no saque e troque no armário da base.</figcaption></figure>
-      <figure><a href="img/galeria/arsenal.jpg"><img src="img/galeria/arsenal.jpg" alt="Armas, remédios e suprimentos do jogo em casas de inventário" width="1200" height="675" loading="lazy"></a>
-        <figcaption><b>Arsenal</b>Da faca ao fuzil, de bandagem a rádio.</figcaption></figure>
+      <figure><a href="img/galeria/horda.jpg"><img src="img/galeria/horda.jpg" data-i18n-alt="alt.horde" alt="A horde of zombies in police, firefighter, doctor and prisoner uniforms" width="1200" height="675" loading="lazy"></a>
+        <figcaption><b data-i18n="g1.t">The horde</b><span data-i18n="g1.p">Uniformed zombies carry what they used in life.</span></figcaption></figure>
+      <figure><a href="img/galeria/roupas.jpg"><img src="img/galeria/roupas.jpg" data-i18n-alt="alt.outfits" alt="Survivors wearing outfits of different rarities" width="1200" height="675" loading="lazy"></a>
+        <figcaption><b data-i18n="g2.t">Outfits</b><span data-i18n="g2.p">Find sets while looting and change in your base's wardrobe.</span></figcaption></figure>
+      <figure><a href="img/galeria/arsenal.jpg"><img src="img/galeria/arsenal.jpg" data-i18n-alt="alt.arsenal" alt="Weapons, medicine and supplies from the game in inventory slots" width="1200" height="675" loading="lazy"></a>
+        <figcaption><b data-i18n="g3.t">Arsenal</b><span data-i18n="g3.p">From knife to rifle, from bandage to radio.</span></figcaption></figure>
     </div>
   </div>
 </section>
 
 <section id="seguranca">
   <div class="wrap">
-    <p class="kicker">Antes de sair</p>
-    <h2>Jogue de cabeça erguida</h2>
+    <p class="kicker" data-i18n="safe.kicker">Before you go out</p>
+    <h2 data-i18n="safe.title">Play with your head up</h2>
     <div class="safe">
-      <div><b>Olhe o trânsito</b>Nunca jogue dirigindo. Ao atravessar a rua, o jogo pausa as ameaças: olhe a rua de verdade.</div>
-      <div><b>Lugares são referência</b>Não entre em imóveis, terrenos ou áreas fechadas. O saque acontece no jogo.</div>
-      <div><b>Ninguém vê você</b>Sua posição fica só no servidor. Outros jogadores não recebem onde você está.</div>
+      <div><b data-i18n="s1.t">Watch the traffic</b><span data-i18n="s1.p">Never play while driving. When crossing a street, the game pauses threats: look at the real street.</span></div>
+      <div><b data-i18n="s2.t">Places are just a reference</b><span data-i18n="s2.p">Do not enter buildings, lots or closed areas. Looting happens in the game.</span></div>
+      <div><b data-i18n="s3.t">Nobody sees you</b><span data-i18n="s3.p">Your position stays on the server only. Other players never receive where you are.</span></div>
     </div>
   </div>
 </section>
@@ -130,24 +138,24 @@
 
 <section id="baixar" class="alt">
   <div class="wrap">
-    <p class="kicker">Baixar e apoiar</p>
-    <h2>Entre no apocalipse</h2>
+    <p class="kicker" data-i18n="dl.kicker">Download and support</p>
+    <h2 data-i18n="dl.title">Enter the apocalypse</h2>
     <div class="cta">
       <div class="card bevel">
-        <h3>Baixe o Footfall</h3>
-        <p>Grátis, sem anúncios. Em breve na Google Play; siga as redes para entrar no teste.</p>
+        <h3 data-i18n="dl.h">Get Footfall</h3>
+        <p data-i18n="dl.p">Free, no ads. Coming soon to Google Play; follow us to join the test.</p>
         <div class="row">
-          <a class="btn amber off" data-site="playstore" aria-disabled="true"><svg aria-hidden="true"><use href="#i-play"/></svg><span class="two">Google Play<small>em breve</small></span></a>
-          <a class="btn ghost off" data-site="apk" aria-disabled="true"><svg aria-hidden="true"><use href="#i-down"/></svg><span class="two">Baixar APK<small>em breve</small></span></a>
+          <a class="btn amber off" data-site="playstore" aria-disabled="true"><svg aria-hidden="true"><use href="#i-play"/></svg><span class="two">Google Play<small data-soon="soon">coming soon</small></span></a>
+          <a class="btn ghost off" data-site="apk" aria-disabled="true"><svg aria-hidden="true"><use href="#i-down"/></svg><span class="two"><span data-i18n="dl.apk">Download APK</span><small data-soon="soon">coming soon</small></span></a>
         </div>
-        <div class="req"><span>Android</span><span>GPS</span><span>Internet</span><span>13+</span></div>
+        <div class="req"><span>Android</span><span>GPS</span><span data-i18n="dl.net">Internet</span><span>13+</span></div>
       </div>
       <div class="card support bevel" id="apoie">
         <img class="crow px" src="img/corvo_grande.png" alt="" width="112" height="92">
-        <h3>Apoie o Footfall</h3>
-        <p>Um jogo feito por uma pessoa só, sem anúncios e sem vender vantagem. O seu apoio mantém os servidores ligados e o corvo acordado.</p>
+        <h3 data-i18n="sup.h">Support Footfall</h3>
+        <p data-i18n="sup.p">A game made by a single person, with no ads and no pay-to-win. Your support keeps the servers on and the crow awake.</p>
         <div class="row">
-          <a class="btn off" data-site="apoio" aria-disabled="true"><svg aria-hidden="true"><use href="#i-heart"/></svg><span class="two">Apoie<small>em breve no Patreon</small></span></a>
+          <a class="btn off" data-site="apoio" aria-disabled="true"><svg aria-hidden="true"><use href="#i-heart"/></svg><span class="two"><span data-i18n="sup.btn">Support</span><small data-soon="sup.soon">coming soon on Patreon</small></span></a>
         </div>
       </div>
     </div>
@@ -158,15 +166,16 @@
 <footer class="foot">
   <div class="wrap">
     <img class="px" src="img/logo.png" alt="Footfall" width="148" height="58">
-    <nav aria-label="Rodapé">
-      <a href="privacidade.html">Política de privacidade</a>
-      <a href="excluir-conta.html">Excluir conta</a>
+    <nav aria-label="Footer">
+      <a href="privacidade.html" data-i18n="ft.privacy">Privacy policy</a>
+      <a href="excluir-conta.html" data-i18n="ft.delete">Delete account</a>
       <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
     </nav>
     <div class="socials" data-socials></div>
   </div>
-  <div class="wrap" style="margin-top:14px">© 2026 Footfall · Feito no Brasil</div>
+  <div class="wrap" style="margin-top:14px" data-i18n="ft.copy">© 2026 Footfall · Made in Brazil</div>
 </footer>
+<script src="i18n.js"></script>
 <script src="site.js" defer></script>
 </body>
 </html>

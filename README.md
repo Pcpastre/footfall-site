@@ -6,6 +6,7 @@ Site do Footfall publicado em https://footfall.pcpastre.com (GitHub Pages).
 - `privacidade.html`: política de privacidade
 - `excluir-conta.html`: como excluir a conta
 - `site.js`: a tempestade da capa (igual à tela inicial do jogo) e os links
+- `i18n.js`: idiomas (inglês padrão, português e espanhol; bandeiras no topo, `?lang=pt|en|es` na URL)
 - `img/`: arte tirada dos sprites do jogo; `fonts/`: Jersey 10 (licença OFL)
 
 ## Links (sem mexer no código)

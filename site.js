@@ -10,35 +10,41 @@
   const https = (u) => typeof u === 'string' && /^https:\/\/[^\s]+$/.test(u);
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-  function socials(list) {
-    const html = list.map((l) => {
+  const tt = (k, f) => (window.FF ? window.FF.t(k, f) : f);
+  let socialList = [{ key: 'instagram', label: 'Instagram', url: '' }, { key: 'tiktok', label: 'TikTok', url: '' }];
+  let siteList = [];
+
+  function socials() {
+    const html = socialList.map((l) => {
       const ic = `<svg aria-hidden="true"><use href="#i-${ICON[l.key] || 'heart'}"/></svg>`;
       return https(l.url)
         ? `<a class="soc bevel" href="${esc(l.url)}" target="_blank" rel="noopener">${ic}${esc(l.label)}</a>`
-        : `<span class="soc off bevel">${ic}${esc(l.label)} <em>em breve</em></span>`;
+        : `<span class="soc off bevel">${ic}${esc(l.label)} <em>${esc(tt('soon', 'coming soon'))}</em></span>`;
     }).join('');
     document.querySelectorAll('[data-socials]').forEach((el) => { el.innerHTML = html; });
   }
-  const base = [{ key: 'instagram', label: 'Instagram', url: '' }, { key: 'tiktok', label: 'TikTok', url: '' }];
-  socials(base);
 
-  const SMALL = { playstore: 'Disponível', apk: 'Versão de teste', apoio: 'Patreon' };
-  function siteLinks(list) {
-    for (const l of list) {
-      if (!https(l.url)) continue;
-      document.querySelectorAll(`[data-site="${CSS.escape(l.key)}"]`).forEach((a) => {
+  function siteLinks() {
+    document.querySelectorAll('[data-site]').forEach((a) => {
+      const l = siteList.find((x) => x.key === a.dataset.site);
+      const s = a.querySelector('small');
+      if (l && https(l.url)) {
         a.href = l.url;
         a.classList.remove('off');
         a.removeAttribute('aria-disabled');
         if (l.key !== 'apk') { a.target = '_blank'; a.rel = 'noopener'; }
-        const s = a.querySelector('small');
-        if (s) s.textContent = SMALL[l.key] || '';
-      });
-    }
+        if (s) s.textContent = tt('ok.' + l.key, '');
+      } else if (s) {
+        s.textContent = tt(s.dataset.soon || 'soon', s.textContent);
+      }
+    });
   }
   document.querySelectorAll('[data-site]').forEach((a) => a.addEventListener('click', (e) => {
     if (a.classList.contains('off')) e.preventDefault();
   }));
+  const render = () => { socials(); siteLinks(); };
+  window.addEventListener('ff:lang', render);
+  render();
 
   async function get(table) {
     const r = await fetch(`${SB}/rest/v1/${table}?select=key,label,url,sort&active=eq.true&order=sort`, { headers: { apikey: KEY } });
@@ -46,11 +52,12 @@
     return r.json();
   }
   get('links').then((rows) => {
-    const merged = base.map((b) => ({ ...b, ...(rows.find((r) => r.key === b.key) || {}) }));
+    const merged = socialList.map((b) => ({ ...b, ...(rows.find((r) => r.key === b.key) || {}) }));
     for (const r of rows) if (!merged.some((m) => m.key === r.key) && https(r.url)) merged.push(r);
-    socials(merged);
+    socialList = merged;
+    socials();
   }).catch(() => {});
-  get('site_links').then(siteLinks).catch(() => {});
+  get('site_links').then((rows) => { siteList = rows; siteLinks(); }).catch(() => {});
 
   /* ---------- A tempestade (porta gótica, corvo, raios e chuva), igual à tela inicial ---------- */
   const cv = document.getElementById('storm');
