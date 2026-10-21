@@ -268,11 +268,30 @@
     fade(document.hidden ? 0 : VOL);
   }
   function stop() { if (gain) fade(0); }
-  const first = () => { if (on) start(); };
+  // Rolar nao libera som (regra do navegador): ao rolar com a musica ainda parada, um aviso
+  // ao lado do alto-falante pede um toque. Some no primeiro toque ou se a musica for desligada.
+  const hint = document.getElementById('sndHint');
+  let hintDone = false;
+  const hideHint = () => {
+    hintDone = true;
+    if (!hint) return;
+    hint.classList.remove('on');
+    setTimeout(() => { hint.hidden = true; }, 350);
+  };
+  const onScroll = () => {
+    if (hintDone || started || !on || !hint || window.scrollY < 120) return;
+    window.removeEventListener('scroll', onScroll);
+    hint.hidden = false;
+    requestAnimationFrame(() => hint.classList.add('on'));
+    setTimeout(hideHint, 9000);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  const first = () => { hideHint(); if (on) start(); };
   ['pointerdown', 'keydown', 'touchend'].forEach((ev) => document.addEventListener(ev, first, { once: true, passive: true }));
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
     on = !on;
+    hideHint();
     store.set(on ? 'on' : 'off');
     label();
     if (on) start(); else stop();

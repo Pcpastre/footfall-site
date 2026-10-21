@@ -50,6 +50,12 @@ p{margin:0 0 1em}
 .snd:hover{color:var(--bone);border-color:var(--bone3)}
 .snd[aria-pressed="true"]{color:var(--amber);border-color:var(--amber)}
 .snd:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.sndbox{position:relative;margin-left:6px;display:flex}
+.sndbox .snd{margin-left:0}
+.snd-hint{position:absolute;top:calc(100% + 10px);right:-6px;white-space:nowrap;font-family:var(--pixel);font-size:1.15rem;letter-spacing:.03em;color:var(--bone);background:var(--panel);border:2px solid var(--amber);padding:4px 10px;pointer-events:none;opacity:0;transform:translateY(-4px);transition:opacity .3s,transform .3s}
+.snd-hint::before{content:"";position:absolute;top:-8px;right:14px;border:6px solid transparent;border-bottom-color:var(--amber);border-top:0}
+.snd-hint.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.snd-hint{transition:none}}
 .flag{background:none;border:2px solid var(--line);padding:2px;margin:0;cursor:pointer;line-height:0;opacity:.6;transition:opacity .15s,border-color .15s}
 .flag img{width:36px;height:24px}
 .flag:hover{opacity:1}
