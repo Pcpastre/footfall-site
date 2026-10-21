@@ -45,6 +45,11 @@ p{margin:0 0 1em}
 .top nav a.go:hover{background:var(--blood)}
 @media (max-width:640px){.top nav a:not(.go){display:none}}
 .langs{display:flex;gap:6px;margin-left:6px}
+.snd{background:none;border:2px solid var(--line);color:var(--bone2);width:32px;height:28px;padding:0;margin-left:6px;cursor:pointer;display:grid;place-items:center}
+.snd svg{width:18px;height:18px;fill:currentColor;image-rendering:pixelated;shape-rendering:crispEdges}
+.snd:hover{color:var(--bone);border-color:var(--bone3)}
+.snd[aria-pressed="true"]{color:var(--amber);border-color:var(--amber)}
+.snd:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
 .flag{background:none;border:2px solid var(--line);padding:2px;margin:0;cursor:pointer;line-height:0;opacity:.6;transition:opacity .15s,border-color .15s}
 .flag img{width:36px;height:24px}
 .flag:hover{opacity:1}

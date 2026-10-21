@@ -212,3 +212,75 @@
   Promise.all(ready).then(() => { if (reduce) draw(1500); });
   if (reduce) draw(1500); else start();
 })();
+
+/* Musica do menu do jogo (Neblina) em laco, a 50%. Navegador so deixa tocar som depois que a
+   pessoa interage: comeca no primeiro toque/clique/tecla. O botao de som desliga e a escolha fica salva. */
+(() => {
+  'use strict';
+  const btn = document.getElementById('snd');
+  if (!btn) return;
+  const VOL = 0.5;
+  const store = {
+    get() { try { return localStorage.getItem('musica'); } catch (_) { return null; } },
+    set(v) { try { localStorage.setItem('musica', v); } catch (_) { /* sem armazenamento */ } }
+  };
+  let on = store.get() !== 'off';
+  let ctx = null, gain = null, src = null, buf = null, loading = null, started = false;
+  const label = () => {
+    btn.setAttribute('aria-pressed', String(on));
+    btn.querySelector('use').setAttribute('href', on ? '#i-som' : '#i-mudo');
+    const t = (k, f) => (window.FF ? window.FF.t(k, f) : f);
+    const txt = on ? t('music.on', 'Music on (tap to turn off)') : t('music.off', 'Music off (tap to turn on)');
+    btn.title = txt; btn.setAttribute('aria-label', txt);
+  };
+  // o ogg fecha o laco sem emenda; se o navegador nao abrir ogg, vai o mp3
+  const load = () => loading || (loading = (async () => {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return null;
+    ctx = new AC();
+    gain = ctx.createGain(); gain.gain.value = 0; gain.connect(ctx.destination);
+    for (const f of ['audio/menu.ogg', 'audio/menu.mp3']) {
+      try {
+        const r = await fetch(f);
+        const data = await r.arrayBuffer();
+        buf = await new Promise((ok, no) => ctx.decodeAudioData(data, ok, no));
+        return buf;
+      } catch (_) { /* tenta o proximo */ }
+    }
+    return null;
+  })());
+  const fade = (to) => {
+    if (!gain) return;
+    const now = ctx.currentTime;
+    gain.gain.cancelScheduledValues(now);
+    gain.gain.setValueAtTime(gain.gain.value, now);
+    gain.gain.linearRampToValueAtTime(to, now + 1.2);
+  };
+  async function start() {
+    if (!on) return;
+    const b = await load();
+    if (!b || !on) return;
+    if (ctx.state === 'suspended') { try { await ctx.resume(); } catch (_) { return; } }
+    if (!started) {
+      src = ctx.createBufferSource(); src.buffer = b; src.loop = true; src.connect(gain); src.start();
+      started = true;
+    }
+    fade(document.hidden ? 0 : VOL);
+  }
+  function stop() { if (gain) fade(0); }
+  const first = () => { if (on) start(); };
+  ['pointerdown', 'keydown', 'touchend'].forEach((ev) => document.addEventListener(ev, first, { once: true, passive: true }));
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    on = !on;
+    store.set(on ? 'on' : 'off');
+    label();
+    if (on) start(); else stop();
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (!started || !on) return;
+    if (document.hidden) stop(); else start();
+  });
+  window.addEventListener('ff:lang', label);
+  label();
+})();

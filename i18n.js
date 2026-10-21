@@ -12,6 +12,7 @@
       'desc.index': 'Footfall é um jogo de sobrevivência zumbi para Android, em pixel art gótico, jogado andando pela sua cidade real. Saqueie lugares de verdade, monte uma base com o seu grupo e aguente as noites.',
       'skip': 'Pular para o conteúdo',
       'lang': 'Idioma',
+      'music': 'Música', 'music.on': 'Música ligada (toque para desligar)', 'music.off': 'Música desligada (toque para ligar)',
       'nav.game': 'O jogo', 'nav.images': 'Imagens', 'nav.support': 'Apoie', 'nav.download': 'Baixar',
       'nav.home': 'Início', 'nav.privacy': 'Privacidade',
       'hero.tag': 'Ande. O corvo está vendo.',
@@ -57,6 +58,7 @@
       'title.delete': 'Footfall — Eliminar cuenta',
       'desc.index': 'Footfall es un juego de supervivencia zombi para Android, en pixel art gótico, que se juega caminando por tu ciudad real. Saquea lugares de verdad, arma una base con tu grupo y resiste las noches.',
       'skip': 'Ir al contenido',
+      'music': 'Música', 'music.on': 'Música activada (toca para apagar)', 'music.off': 'Música apagada (toca para encender)',
       'lang': 'Idioma',
       'nav.game': 'El juego', 'nav.images': 'Imágenes', 'nav.support': 'Apoya', 'nav.download': 'Descargar',
       'nav.home': 'Inicio', 'nav.privacy': 'Privacidad',
@@ -102,7 +104,8 @@
       'title.delete': 'Footfall — Delete account',
       'soon': 'coming soon', 'sup.soon': 'coming soon on Patreon',
       'ok.playstore': 'Available', 'ok.apk': 'Test version', 'ok.apoio': 'Patreon',
-      'lang': 'Language'
+      'lang': 'Language',
+      'music': 'Music', 'music.on': 'Music on (tap to turn off)', 'music.off': 'Music off (tap to turn on)'
     }
   };
 
