@@ -6,6 +6,18 @@
   const HTML_LANG = { en: 'en', pt: 'pt-BR', es: 'es' };
   const T = {
     pt: {
+      /* guias:pt */
+      'title.guias': 'Footfall — Guias',
+      'nav.guides': 'Guias',
+      'title.guia-comecar': 'Footfall — Guia: Primeiros passos',
+      'title.guia-saque': 'Footfall — Guia: Saque',
+      'title.guia-combate': 'Footfall — Guia: Combate',
+      'title.guia-saude': 'Footfall — Guia: Saúde e sobrevivência',
+      'title.guia-base': 'Footfall — Guia: A base',
+      'title.guia-grupo': 'Footfall — Guia: Grupo, mercado e pontos',
+      'title.guia-corvo': 'Footfall — Guia: O corvo e o rádio',
+      'title.guia-memorias': 'Footfall — Guia: Memórias',
+      /* /guias:pt */
       'title.index': 'Footfall — sobrevivência zumbi na sua cidade real',
       'title.privacy': 'Footfall — Política de privacidade',
       'title.delete': 'Footfall — Excluir conta',
@@ -17,7 +29,7 @@
       'nav.home': 'Início', 'nav.privacy': 'Privacidade',
       'hero.tag': 'Ande. O corvo está vendo.',
       'hero.sub': 'Sobrevivência zumbi para Android jogada andando de verdade. O mapa é a sua cidade, e ela está cheia de mortos.',
-      'hero.download': 'Baixar', 'hero.more': 'Conhecer o jogo',
+      'hero.download': 'Baixar', 'hero.more': 'Conhecer o jogo', 'hero.guides': 'Como jogar',
       'game.kicker': 'O jogo', 'game.title': 'Sua cidade. Os mortos. Você.',
       'game.p1': 'Footfall é um jogo de sobrevivência zumbi em pixel art gótico jogado andando pela sua cidade real. As ruas, as farmácias, os mercados e os postos são os de verdade, e estão tomados.',
       'game.p2': 'Ande para achar o que precisa. Saqueie lugares que enchem de novo toda semana, cuide de cada ferida, levante uma base com o seu grupo e aguente as noites. Quanto mais você anda, mais longe chega.',
@@ -25,7 +37,7 @@
       'alt.confront': 'Três sobreviventes sob a luz de uma lanterna diante de uma horda de zumbis',
       'f1.t': 'O mapa é a sua cidade', 'f1.p': 'Ruas e lugares reais pelo GPS. Você só vê o que está à sua frente; prédios tapam a visão e a noite encurta tudo.',
       'f2.t': 'Saque de verdade', 'f2.p': 'Pela porta é rápido; entrando tem mais coisa, e mais zumbi. Cada móvel faz barulho ao abrir. Tudo enche de novo toda semana.',
-      'f3.t': 'Tela de ação', 'f3.p': 'Lute de perto: empurre, agache, mire, arremesse. Cada arma gasta e faz barulho. Quem estiver a até 120 m entra junto.',
+      'f3.t': 'Tela de ação', 'f3.p': 'Lute de perto: empurre, agache, mire, arremesse. Arma branca gasta e tiro faz barulho. Quem está perto de você no mundo real aparece na mesma cena.',
       'f4.t': 'Corpo de verdade', 'f4.p': 'Feridas tratadas passo a passo. Fome, sede, cansaço e o clima real. Mordida infecta, e não tem cura.',
       'f5.t': 'Base do grupo', 'f5.p': 'Demarque na grade, levante paredes, ponha portas, baús, horta e armadilhas. Toda noite ela é atacada.',
       'f6.t': 'Mercado de selos', 'f6.p': 'Uma caixa de correio na base é o mercado de todo mundo. A moeda é o selo, e ninguém vê o que os outros negociam.',
@@ -53,6 +65,18 @@
       'ft.copy': '© 2026 Footfall · Feito no Brasil'
     },
     es: {
+      /* guias:es */
+      'title.guias': 'Footfall — Guías',
+      'nav.guides': 'Guías',
+      'title.guia-comecar': 'Footfall — Guía: Primeros pasos',
+      'title.guia-saque': 'Footfall — Guía: Saqueo',
+      'title.guia-combate': 'Footfall — Guía: Combate',
+      'title.guia-saude': 'Footfall — Guía: Salud y supervivencia',
+      'title.guia-base': 'Footfall — Guía: La base',
+      'title.guia-grupo': 'Footfall — Guía: Grupo, mercado y puntos',
+      'title.guia-corvo': 'Footfall — Guía: El cuervo y la radio',
+      'title.guia-memorias': 'Footfall — Guía: Memorias',
+      /* /guias:es */
       'title.index': 'Footfall — supervivencia zombi en tu ciudad real',
       'title.privacy': 'Footfall — Política de privacidad',
       'title.delete': 'Footfall — Eliminar cuenta',
@@ -64,7 +88,7 @@
       'nav.home': 'Inicio', 'nav.privacy': 'Privacidad',
       'hero.tag': 'Camina. El cuervo te está viendo.',
       'hero.sub': 'Supervivencia zombi para Android que se juega caminando de verdad. El mapa es tu ciudad, y está llena de muertos.',
-      'hero.download': 'Descargar', 'hero.more': 'Conocer el juego',
+      'hero.download': 'Descargar', 'hero.more': 'Conocer el juego', 'hero.guides': 'Cómo jugar',
       'game.kicker': 'El juego', 'game.title': 'Tu ciudad. Los muertos. Tú.',
       'game.p1': 'Footfall es un juego de supervivencia zombi en pixel art gótico que se juega caminando por tu ciudad real. Las calles, las farmacias, los supermercados y las gasolineras son los de verdad, y están tomados.',
       'game.p2': 'Camina para encontrar lo que necesitas. Saquea lugares que se reabastecen cada semana, cura cada herida, levanta una base con tu grupo y resiste las noches. Cuanto más caminas, más lejos llegas.',
@@ -72,7 +96,7 @@
       'alt.confront': 'Tres sobrevivientes bajo la luz de una linterna frente a una horda de zombis',
       'f1.t': 'El mapa es tu ciudad', 'f1.p': 'Calles y lugares reales por GPS. Solo ves lo que tienes enfrente; los edificios tapan la vista y la noche lo acorta todo.',
       'f2.t': 'Saqueo de verdad', 'f2.p': 'Desde la puerta es rápido; adentro hay más cosas, y más zombis. Cada mueble hace ruido al abrirse. Todo se reabastece cada semana.',
-      'f3.t': 'Pantalla de acción', 'f3.p': 'Pelea de cerca: empuja, agáchate, apunta, lanza. Cada arma se desgasta y hace ruido. Quien esté a menos de 120 m puede unirse.',
+      'f3.t': 'Pantalla de acción', 'f3.p': 'Pelea de cerca: empuja, agáchate, apunta, lanza. Las armas blancas se desgastan y los disparos hacen ruido. Quien esté cerca de ti en el mundo real aparece en la misma escena.',
       'f4.t': 'Un cuerpo de verdad', 'f4.p': 'Heridas tratadas paso a paso. Hambre, sed, cansancio y el clima real. La mordida infecta, y no tiene cura.',
       'f5.t': 'Base del grupo', 'f5.p': 'Márcala en la cuadrícula, levanta muros, pon puertas, cofres, huerto y trampas. Cada noche la atacan.',
       'f6.t': 'Mercado de sellos', 'f6.p': 'Un buzón en la base es el mercado de todos. La moneda es el sello, y nadie ve lo que negocian los demás.',
@@ -100,6 +124,18 @@
       'ft.copy': '© 2026 Footfall · Hecho en Brasil'
     },
     en: {
+      /* guias:en */
+      'title.guias': 'Footfall — Guides',
+      'nav.guides': 'Guides',
+      'title.guia-comecar': 'Footfall — Guide: First steps',
+      'title.guia-saque': 'Footfall — Guide: Looting',
+      'title.guia-combate': 'Footfall — Guide: Combat',
+      'title.guia-saude': 'Footfall — Guide: Health and survival',
+      'title.guia-base': 'Footfall — Guide: The base',
+      'title.guia-grupo': 'Footfall — Guide: Group, market and strongholds',
+      'title.guia-corvo': 'Footfall — Guide: The crow and the radio',
+      'title.guia-memorias': 'Footfall — Guide: Memories',
+      /* /guias:en */
       'title.privacy': 'Footfall — Privacy policy',
       'title.delete': 'Footfall — Delete account',
       'soon': 'coming soon', 'sup.soon': 'coming soon on Patreon',
