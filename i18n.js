@@ -177,6 +177,7 @@
       el.setAttribute('alt', lang === 'en' ? en : t(el.dataset.i18nAlt, en));
     });
     document.querySelectorAll('[data-lang]').forEach((el) => { el.hidden = el.dataset.lang !== lang; });
+    document.querySelectorAll('a[data-wiki]').forEach((el) => { el.setAttribute('href', lang === 'pt' ? 'wiki/index.html' : 'wiki/' + lang + '/index.html'); });
     document.querySelectorAll('.flag').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.set === lang)));
     document.querySelectorAll('.langs').forEach((g) => g.setAttribute('aria-label', t('lang', 'Language')));
     window.dispatchEvent(new CustomEvent('ff:lang', { detail: lang }));

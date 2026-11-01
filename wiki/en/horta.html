@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Garden — Footfall Wiki</title>
+<meta name="description" content="Garden beds, seeds, watering, growth time, the effect of Farming, and harvesting.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="alternate" hreflang="pt-BR" href="https://footfall.pcpastre.com/wiki/horta.html"><link rel="alternate" hreflang="en" href="https://footfall.pcpastre.com/wiki/en/horta.html"><link rel="alternate" hreflang="es" href="https://footfall.pcpastre.com/wiki/es/horta.html">
+<link rel="icon" type="image/png" href="../../img/icone.png">
+<link rel="stylesheet" href="../../estilo.css">
+<link rel="stylesheet" href="../wiki.css">
+</head>
+<body class="wiki" data-a="../">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../../index.html?lang=en" aria-label="Footfall"><img class="px" src="../../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <div class="langs" role="group" aria-label="Language"><a class="flag" href="../horta.html" hreflang="pt-BR" title="Português"><img class="px" src="../../img/flags/pt.png" alt="Português" width="18" height="12"></a><a class="flag" href="horta.html" hreflang="en" title="English" aria-current="true"><img class="px" src="../../img/flags/en.png" alt="English" width="18" height="12"></a><a class="flag" href="../es/horta.html" hreflang="es" title="Español"><img class="px" src="../../img/flags/es.png" alt="Español" width="18" height="12"></a></div>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Sections</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Wiki sections"><details open><summary>Indexes</summary><ul><li><a href="itens.html">All items</a></li><li><a href="lugares.html">Places</a></li><li><a href="zumbis-lista.html">Zombie types</a></li><li><a href="memorias-lista.html">The memories</a></li></ul></details><details open><summary>Getting started</summary><ul><li><a href="criacao-de-personagem.html">Character creation</a></li><li><a href="sessao-e-mapa.html">Session and map</a></li></ul></details><details open><summary>Character</summary><ul><li><a href="mochila-e-peso.html">Backpack and weight</a></li><li><a href="morte.html">Death</a></li><li><a href="profissoes.html">Professions</a></li><li><a href="habilidades.html">Skills</a></li><li><a href="costura-e-roupas.html">Tailoring and clothes</a></li><li><a href="tracos.html">Traits</a></li></ul></details><details open><summary>Health</summary><ul><li><a href="cansaco-e-sono.html">Fatigue and sleep</a></li><li><a href="infeccao.html">Infection</a></li><li><a href="mente.html">Mind</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Needs</a></li><li><a href="temperatura.html">Temperature</a></li><li><a href="tratamento.html">Treatment</a></li><li><a href="feridas.html">Wounds</a></li></ul></details><details open><summary>World</summary><ul><li><a href="horda-e-alarmes.html">Horde and alarms</a></li><li><a href="barulho.html">Noise</a></li><li><a href="visao.html">Vision</a></li><li><a href="clima-e-hora.html">Weather and time</a></li><li><a href="zumbis.html">Zombies</a></li></ul></details><details open><summary>Looting</summary><ul><li><a href="corpos.html">Bodies</a></li><li><a href="bunkers.html">Bunkers</a></li><li><a href="saque.html">Looting</a></li></ul></details><details open><summary>Combat</summary><ul><li><a href="tela-de-acao.html">Action screen</a></li><li><a href="controles.html">Controls</a></li><li><a href="armas-de-fogo.html">Firearms</a></li><li><a href="combate-corpo-a-corpo.html">Melee combat</a></li><li><a href="arremesso.html">Throwing</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="base.html">Base</a></li><li><a href="moveis-da-base.html">Base furniture</a></li><li><a href="horta.html" aria-current=page>Garden</a></li><li><a href="cozinha.html">Kitchen</a></li><li><a href="ataque-noturno.html">Night attack</a></li><li><a href="deposito-do-radio.html">Radio vault and outposts</a></li><li><a href="receitas.html">Recipes</a></li><li><a href="armadilhas.html">Traps</a></li><li><a href="paredes-portas-e-janelas.html">Walls, doors and windows</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Group</a></li><li><a href="mercado-e-selos.html">Market and stamps</a></li><li><a href="pontos-dominados.html">Strongholds</a></li></ul></details><details open><summary>Crow and radio</summary><ul><li><a href="corvo.html">Crow</a></li><li><a href="radio.html">Radio</a></li></ul></details><details open><summary>Memories</summary><ul><li><a href="memorias.html">Memories</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Base</p>
+<h1>Garden</h1>
+<p class="sub">Garden beds, seeds, watering, growth time, the effect of Farming, and harvesting.</p>
+
+<p>The <b>garden</b> is made of garden beds placed in the <a href="base.html">base</a> or in the yard. Each bed takes a packet of <a href="item-sementes.html">seeds</a>, grows in <b>real time</b> as long as it's watered, and gives <a href="item-legumes.html">garden vegetables</a> at harvest. The panel is under <kbd>Base</kbd> → <kbd>BASE</kbd> → <i>Garden (N/4 garden beds · Farming N)</i>.</p>
+
+<h2>Garden beds</h2>
+<div class="tbl"><table>
+<tr><th>Recipe</th><th>Cost</th><th>Workbench</th><th>Skill</th><th>XP</th><th>Limit</th></tr>
+<tr><td>H01 · Garden bed</td><td>2 <a href="item-tabuas.html">planks</a> + 2 <a href="item-pregos.html">nails</a></td><td>no</td><td>Farming</td><td>15</td><td>4 beds per base</td></tr>
+</table></div>
+<p>Make it under <kbd>Backpack</kbd> → <kbd>CRAFT</kbd> (inside the base) and place it with the hammer on the action screen (see <a href="moveis-da-base.html">Base furniture</a>). The bed measures 1.2 × 1.2 m and can go in the yard (up to 15 m from the edge). To take it apart, it has to be empty.</p>
+
+<h2>Step by step</h2>
+<ol class="steps">
+<li><b>Plant</b>: <kbd>Plant</kbd> uses 1 <a href="item-sementes.html">seed packet</a> (from the backpack or the chests). +8 Farming XP. Notice: <i>"Planted. Water it every day so it grows."</i></li>
+<li><b>Water</b>: <kbd>Water</kbd> uses 1 clean <a href="item-agua.html">water bottle</a>. Each watering lasts <b>24 hours</b>. +3 Farming XP.</li>
+<li><b>Wait</b>: the bed only grows during the hours covered by a watering. When dry, it stops growing (without losing what it has already grown).</li>
+<li><b>Harvest</b>: when it's ready, the button becomes <kbd>Harvest</kbd>. The vegetables go into the backpack. +25 Farming XP.</li>
+</ol>
+<p>All of this only works with you at the base or in the yard (<i>"Only at the base or in the yard."</i>), from the panel or with <kbd>USE GARDEN BED</kbd> on the action screen.</p>
+<div class="tip"><b>Real time</b>The garden grows with the app closed too, as long as the last watering is still in effect. Watering right before sleeping guarantees 24 h of growth.</div>
+
+<h2>Growth time</h2>
+<p>Base: <b>72 hours</b> (3 days) of watered growth. Farming speeds it up <b>5% per level</b>:</p>
+<p><b>hours = 72 × (1 − 0.05 × level)</b>, with the factor never below 0.4.</p>
+<div class="tbl"><table>
+<tr><th>Farming level</th><th>Hours until ready</th><th>Minimum waterings</th><th>Vegetables per harvest</th></tr>
+<tr><td>0</td><td>72</td><td>3</td><td>3</td></tr>
+<tr><td>1</td><td>68.4</td><td>3</td><td>3</td></tr>
+<tr><td>2</td><td>64.8</td><td>3</td><td>4</td></tr>
+<tr><td>3</td><td>61.2</td><td>3</td><td>4</td></tr>
+<tr><td>4</td><td>57.6</td><td>3</td><td>5</td></tr>
+<tr><td>5</td><td>54</td><td>3</td><td>5</td></tr>
+<tr><td>6</td><td>50.4</td><td>3</td><td>6</td></tr>
+<tr><td>7</td><td>46.8</td><td>2</td><td>6</td></tr>
+<tr><td>8</td><td>43.2</td><td>2</td><td>7</td></tr>
+<tr><td>9</td><td>39.6</td><td>2</td><td>7</td></tr>
+<tr><td>10</td><td>36</td><td>2</td><td>8</td></tr>
+</table></div>
+<p>The level counts at the moment it's checked: leveling up while the plant is growing already shortens its time.</p>
+
+<h2>Harvest</h2>
+<p>There's only one crop in the game: the seed always becomes <a href="item-legumes.html">Garden vegetables</a>.</p>
+<p><b>vegetables = 3 + ⌊Farming level ÷ 2⌋</b></p>
+<div class="tbl"><table>
+<tr><th>Item</th><th>Weight</th><th>Calories</th><th>Water</th><th>Shelf life</th></tr>
+<tr><td><a href="item-legumes.html">Garden vegetables</a></td><td>0.4 kg</td><td>250 kcal</td><td>100 ml</td><td>4 days</td></tr>
+</table></div>
+<p>The vegetables can be eaten raw or used in the <a href="cozinha.html">kitchen</a>: Cook vegetables (C03), Soup (C08) and Canned vegetables (C07, which last 3 months). They also feed the <a href="corvo.html">crow</a> (6 bond).</p>
+
+<h2>Status on screen</h2>
+<div class="tbl"><table>
+<tr><th>Text</th><th>Meaning</th></tr>
+<tr><td><i>Bed N: empty</i> · <i>Plant 1 seed packet.</i></td><td>No plant</td></tr>
+<tr><td><i>Bed N: 45%</i> · <i>Watered (grows for 24 h). ~40 h left.</i></td><td>Growing</td></tr>
+<tr><td><i>Dry: not growing. Water with 1 bottle of water.</i></td><td>Watering expired</td></tr>
+<tr><td><i>Bed N: ready to harvest</i></td><td>Can be harvested</td></tr>
+</table></div>
+<p>On the action screen the bed appears empty, with sprouts, or ripe.</p>
+
+<h2>Where to get seeds and water</h2>
+<ul>
+<li><a href="item-sementes.html">Seed packet</a>: <a href="lugar-mercado.html">markets</a>, <a href="lugar-construcao.html">construction sites</a>, <a href="lugar-loja.html">shops</a>, <a href="lugar-casa.html">houses</a>, and the <a href="mercado-e-selos.html">general store</a> (5 per day).</li>
+<li><a href="item-agua.html">Water bottle</a>: looting, the general store, or boiling rainwater from the <a href="moveis-da-base.html">barrel</a> (see <a href="cozinha.html">Kitchen</a>). Unboiled rainwater can't be used for watering.</li>
+</ul>
+<div class="tip warn"><b>Group</b>Joining a group takes down your base: the planted garden is lost. Taking apart a garden bed requires harvesting first.</div>
+
+<h2>See also</h2>
+<ul>
+<li><a href="cozinha.html">Kitchen</a></li>
+<li><a href="moveis-da-base.html">Base furniture</a></li>
+<li><a href="habilidades.html">Skills</a></li>
+</ul>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Footer">
+      <a href="../../index.html?lang=en">Site</a>
+      <a href="../../guias.html?lang=en">Guides</a>
+      <a href="index.html">Wiki</a>
+      <a href="../../privacidade.html?lang=en">Privacy policy</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki generated from the game code. Values may change between versions.</div>
+</footer>
+<script src="../wiki.js" defer></script>
+</body>
+</html>

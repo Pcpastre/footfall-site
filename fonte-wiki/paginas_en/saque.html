@@ -1,0 +1,190 @@
+<!-- titulo: Looting | categoria: Looting | resumo: How to loot through the door or from inside, the time and noise of each piece of furniture, how many items you get, the rarity roll, ultra-rare finds, weekly restocking, locked doors and glass cuts. -->
+<p>Looting means opening furniture in real places on the map (pharmacies, markets, police stations, houses...) to find items. Each piece of furniture takes time and makes noise. The more you've walked in the session, and the deeper you go into the place, the better the chance of something rare. What you take is gone for the other survivors until the place restocks.</p>
+
+<h2>Where you can loot</h2>
+<p>The map's <kbd>Loot</kbd> button searches within <b>35 m</b> of you (the GPS margin):</p>
+<ul>
+<li>places on the map (shops, services; see the types in <a href="lugar-saude.html">Health</a>, <a href="lugar-mercado.html">Market</a>, <a href="lugar-restaurante.html">Restaurant</a>, <a href="lugar-construcao.html">Construction</a>, <a href="lugar-posto.html">Gas station</a>, <a href="lugar-policia.html">Police</a>, <a href="lugar-bombeiros.html">Fire station</a>, <a href="lugar-escola.html">School</a>, <a href="lugar-roupas.html">Clothes</a>, <a href="lugar-eletronicos.html">Electronics</a>, <a href="lugar-loja.html">Shop</a>);</li>
+<li><a href="lugar-casa.html">houses</a>: any building of 20 to 600 m² with no shop, with you within <b>12 m</b> of the wall;</li>
+<li><a href="corpos.html">bodies</a> of killed zombies and items dropped on the ground (bodies take priority when everything is close);</li>
+<li>supply drops and rescue crates (see <a href="horda-e-alarmes.html">Horde and alarms</a>);</li>
+<li>the month's <a href="bunkers.html">bunkers</a>.</li>
+</ul>
+<p>With only one thing nearby, it opens directly. With more than one, the <kbd>Loot</kbd> list appears (up to 8, from nearest to farthest), and places already looted show "already looted (you can enter)". With nothing: "Nothing to loot nearby".</p>
+
+<h2>Through the door or going inside</h2>
+<p>A place's loot screen shows two options side by side:</p>
+<div class="tbl"><table>
+<tr><th></th><th><kbd>Through the door</kbd></th><th><kbd>Enter</kbd></th></tr>
+<tr><td>Where</td><td>on the loot screen itself, on the map</td><td>opens the <a href="tela-de-acao.html">action screen</a> outside the main door, with the building's interior</td></tr>
+<tr><td>Furniture</td><td>the 3 ground-floor pieces closest to the main door</td><td>all the others, on every floor</td></tr>
+<tr><td>Rares</td><td>never (rarity multiplier 0)</td><td>multiplier 1.5 (in the bunker, higher on each floor)</td></tr>
+<tr><td>Ultra-rare finds</td><td>no</td><td>yes (see below)</td></tr>
+<tr><td>Danger</td><td>only the street zombies</td><td>the zombies inside, plus those outside who hear the noise</td></tr>
+</table></div>
+<p>Buildings 9 m tall or more have 2 floors, 12 m or more have 3; schools, police stations and fire stations always have at least 2; houses have 2 at 6 m or more. Upper floors have fewer zombies (60%).</p>
+<p>You can also go inside by walking on the action screen: getting within 3.5 m of a place's door opens it from the inside on its own; outside free-walk mode the <kbd>ENTER: place name</kbd> button appears.</p>
+
+<h2>Rummaging</h2>
+<ol class="steps">
+<li>On the loot screen, tap <kbd>Rummage (X s · noise)</kbd> on a piece of furniture. On the action screen, get within 1.3 m of it and tap <kbd>RUMMAGE FURNITURE NAME</kbd>.</li>
+<li>Stay still until the bar fills. One piece of furniture at a time.</li>
+<li>Once it's open: tap an item to take it (ammo comes as the whole stack) or tap <kbd>Take all</kbd>.</li>
+</ol>
+<p><b>Time</b> = furniture time ÷ (looting speed). The <b>Burglar</b> profession loots 1.5× faster; being sad (sadness level 2 or more) makes it 10% slower.</p>
+<p><b>Interruptions</b>:</p>
+<ul>
+<li>On the map, moving more than <b>20 m</b> from the point where you opened the loot cancels it ("Looting interrupted: you moved away.").</li>
+<li>If the action screen starts (a zombie saw you), the loot closes ("Looting interrupted!") and reopens on its own when the fight ends, if you're still within 35 m.</li>
+<li>On the action screen, moving more than 0.45 m, being knocked down or being grabbed stops the search ("Stopped rummaging.").</li>
+</ul>
+<p>Opening the first piece of furniture marks the place as <b>looted</b> for 7 days (the bunker, until the start of the next month). A looted place can still be opened: whatever's left is still there.</p>
+
+<h3>Glass cuts</h3>
+<p>Each piece of furniture you open (bodies don't count) has a <b>4%</b> chance of you cutting your hand on a shard: a shard is left in your hand ("You cut your hand on a shard of glass: there's a shard in it. Check the Health screen.").</p>
+
+<h2 id="moveis">Time and noise of each piece of furniture</h2>
+<p>Noise is the level from 0 to 1 while you rummage; the radius is noise × 120 m (before rain). See <a href="barulho.html">Noise</a>.</p>
+<div class="tbl"><table>
+<tr><th>Furniture</th><th>Time (s)</th><th>Noise</th><th>Radius</th><th>Label</th><th>Only has</th></tr>
+<tr><td>Laundry basket</td><td>1.2</td><td>0.02</td><td>2.4 m</td><td>silent</td><td>clothes and rags</td></tr>
+<tr><td>Lost backpacks</td><td>1.5</td><td>0.03</td><td>3.6 m</td><td>silent</td><td>-</td></tr>
+<tr><td>Clothes rack</td><td>1.2</td><td>0.03</td><td>3.6 m</td><td>silent</td><td>-</td></tr>
+<tr><td>Fitting room</td><td>1.0</td><td>0.03</td><td>3.6 m</td><td>silent</td><td>-</td></tr>
+<tr><td>Nightstand</td><td>1.0</td><td>0.03</td><td>3.6 m</td><td>silent</td><td>-</td></tr>
+<tr><td>Body</td><td>2.0</td><td>0.03</td><td>3.6 m</td><td>silent</td><td>see <a href="corpos.html">Bodies</a></td></tr>
+<tr><td>Shelf</td><td>1.2</td><td>0.04</td><td>4.8 m</td><td>silent</td><td>-</td></tr>
+<tr><td>Drawer</td><td>1.0</td><td>0.04</td><td>4.8 m</td><td>silent</td><td>-</td></tr>
+<tr><td>Shelf</td><td>1.4</td><td>0.04</td><td>4.8 m</td><td>silent</td><td>-</td></tr>
+<tr><td>Office desk</td><td>1.2</td><td>0.04</td><td>4.8 m</td><td>silent</td><td>-</td></tr>
+<tr><td>Bathroom cabinet</td><td>1.2</td><td>0.04</td><td>4.8 m</td><td>silent</td><td>dressings and light medicines</td></tr>
+<tr><td>Pantry</td><td>2.0</td><td>0.05</td><td>6 m</td><td>silent</td><td>food</td></tr>
+<tr><td>Wardrobe</td><td>1.8</td><td>0.05</td><td>6 m</td><td>silent</td><td>clothes, backpacks, rags</td></tr>
+<tr><td>Supply locker</td><td>1.5</td><td>0.05</td><td>6 m</td><td>silent</td><td>-</td></tr>
+<tr><td>Supply drop / rescue crate</td><td>4.0</td><td>0.05</td><td>6 m</td><td>silent</td><td>-</td></tr>
+<tr><td>Fridge</td><td>2.0</td><td>0.06</td><td>7.2 m</td><td>silent</td><td>water, meat, fruit, milk, bread</td></tr>
+<tr><td>Freezer</td><td>2.0</td><td>0.06</td><td>7.2 m</td><td>silent</td><td>water, meat, fruit, milk, bread</td></tr>
+<tr><td>Counter</td><td>1.5</td><td>0.06</td><td>7.2 m</td><td>silent</td><td>-</td></tr>
+<tr><td>Medicine cart</td><td>1.6</td><td>0.06</td><td>7.2 m</td><td>silent</td><td>medicines and dressings</td></tr>
+<tr><td>Steel filing cabinet</td><td>2.0</td><td>0.06</td><td>7.2 m</td><td>silent</td><td>maps, books, batteries, flashlight, radio</td></tr>
+<tr><td>Kitchen cabinet</td><td>1.8</td><td>0.07</td><td>8.4 m</td><td>silent</td><td>-</td></tr>
+<tr><td>Kitchen (school)</td><td>2.0</td><td>0.07</td><td>8.4 m</td><td>silent</td><td>food</td></tr>
+<tr><td>Cabinet</td><td>2.0</td><td>0.08</td><td>9.6 m</td><td>silent</td><td>-</td></tr>
+<tr><td>Gear locker</td><td>2.2</td><td>0.08</td><td>9.6 m</td><td>silent</td><td>protective gear</td></tr>
+<tr><td>Cement bags</td><td>2.5</td><td>0.08</td><td>9.6 m</td><td>silent</td><td>cement, rock, wire, nails</td></tr>
+<tr><td>Ammo box</td><td>2.0</td><td>0.08</td><td>9.6 m</td><td>silent</td><td>-</td></tr>
+<tr><td>Weapons bench</td><td>2.5</td><td>0.08</td><td>9.6 m</td><td>silent</td><td>firearms, ammo, combat knife, tape</td></tr>
+<tr><td>Back stockroom</td><td>3.5</td><td>0.10</td><td>12 m</td><td>moderate noise</td><td>-</td></tr>
+<tr><td>Medicine cabinet</td><td>2.5</td><td>0.10</td><td>12 m</td><td>moderate noise</td><td>-</td></tr>
+<tr><td>Vault</td><td>3.0</td><td>0.10</td><td>12 m</td><td>moderate noise</td><td>-</td></tr>
+<tr><td>Student lockers</td><td>2.0</td><td>0.10</td><td>12 m</td><td>moderate noise</td><td>-</td></tr>
+<tr><td>Garage</td><td>2.5</td><td>0.10</td><td>12 m</td><td>moderate noise</td><td>planks, nails, hammer, tape, wire, wrench, pipe</td></tr>
+<tr><td>Evidence locker</td><td>2.5</td><td>0.10</td><td>12 m</td><td>moderate noise</td><td>baton, flashlight, radio, ammo, knives, cigarettes, cachaça...</td></tr>
+<tr><td>Lab bench</td><td>2.5</td><td>0.10</td><td>12 m</td><td>moderate noise</td><td>strong medicines</td></tr>
+<tr><td>Toolbox</td><td>2.0</td><td>0.12</td><td>14.4 m</td><td>moderate noise</td><td>-</td></tr>
+<tr><td>Morgue drawer</td><td>3.0</td><td>0.12</td><td>14.4 m</td><td>moderate noise</td><td>a body's pocket</td></tr>
+<tr><td>Police car</td><td>2.5</td><td>0.14</td><td>16.8 m</td><td>moderate noise</td><td>-</td></tr>
+<tr><td>Truck (fire station)</td><td>3.0</td><td>0.15</td><td>18 m</td><td>moderate noise</td><td>-</td></tr>
+<tr><td>Small safe</td><td>4.0</td><td>0.15</td><td>18 m</td><td>moderate noise</td><td>-</td></tr>
+<tr><td>Cash register</td><td>2.5</td><td>0.16</td><td>19.2 m</td><td>moderate noise</td><td>-</td></tr>
+<tr><td>Gun rack</td><td>4.0</td><td>0.20</td><td>24 m</td><td>loud noise</td><td>firearms, ammo, baton</td></tr>
+<tr><td>Bunker safe</td><td>6.0</td><td>0.20</td><td>24 m</td><td>loud noise</td><td>-</td></tr>
+<tr><td>Glass display case</td><td>3.0</td><td>0.22</td><td>26.4 m</td><td>loud noise</td><td>-</td></tr>
+<tr><td>Locked armory</td><td>5.0</td><td>0.25</td><td>30 m</td><td>loud noise</td><td>firearms, ammo, vest, baton, riot helmet, tactical vest</td></tr>
+</table></div>
+<p>A piece of furniture with no entry in the table uses the shelf's time and noise. "Only has" means the furniture accepts only those items: if the roll gives something else, it's swapped for an accepted item of the same rarity or more common (if there's none, sometimes, 30%, for any accepted one; otherwise that item doesn't come).</p>
+
+<h2>How many items</h2>
+<div class="tbl"><table>
+<tr><th>Furniture</th><th>Items</th></tr>
+<tr><td>Normal</td><td>20% chance of empty; otherwise 1 to 3</td></tr>
+<tr><td>Stock (stock rooms inside)</td><td>2 to 5</td></tr>
+<tr><td>Armory and medicine rooms inside</td><td>1 to 3 (never empty); each item has a 45% chance of coming from the room's special list</td></tr>
+<tr><td>Loose ammo</td><td>each ammo roll comes with 1 to 6 rounds</td></tr>
+<tr><td>Boxed ammo (Locked armory, armory and stock rooms)</td><td>6 to 15 rounds</td></tr>
+</table></div>
+<p>The armory room's special list: pistol, 9 mm ammo, vest, baton, flashlight, shotgun, shells, revolver, .38 ammo, submachine gun, 5.56 rifle, 5.56 ammo, riot helmet, tactical vest, tactical gloves, forearm guard and sawed-off shotgun. The medicine room's: antibiotic, first aid kit, painkiller, anti-anxiety pills, beta blocker, antidepressant, alcohol, morphine, suture kit, tourniquet and saline.</p>
+<p>When the building's interior can't be built, the place uses a quick list of 3 or 4 pieces of furniture for its type (through the door only).</p>
+
+<h2 id="raridade">The rarity roll</h2>
+<p>Each item comes out like this:</p>
+<ol class="steps">
+<li><b>Base rare chance</b> = 1% + 1.5% per km walked in the session, at most <b>15%</b>. The Wanderer trait counts 10% more distance.</li>
+<li>Times <b>luck</b>: Lucky ×1.1, Unlucky ×0.9.</li>
+<li>Times the <b>place</b>: through the door ×0 (never rare), inside ×1.5, bunker ×(1.5 + 0.8 per floor below ground level).</li>
+<li>Roll: below the rare chance you get a <b>rare</b>; up to 22 percentage points above that you get an <b>uncommon</b>; the rest is <b>common</b>.</li>
+<li>It picks an item of that rarity from the place type's list. If there's none of that rarity, it goes down one (rare → uncommon → common).</li>
+</ol>
+<p>Legendary items never come from this roll, only from the special finds below. The distance is that of the <b>current session</b>: ending it resets it.</p>
+<div class="tbl"><table>
+<tr><th>Walked in the session</th><th>Base rare</th><th>Inside (×1.5)</th><th>Uncommon inside</th></tr>
+<tr><td>0 km</td><td>1%</td><td>1.5%</td><td>22%</td></tr>
+<tr><td>1 km</td><td>2.5%</td><td>3.75%</td><td>22%</td></tr>
+<tr><td>2 km</td><td>4%</td><td>6%</td><td>22%</td></tr>
+<tr><td>4 km</td><td>7%</td><td>10.5%</td><td>22%</td></tr>
+<tr><td>6 km</td><td>10%</td><td>15%</td><td>22%</td></tr>
+<tr><td>9.3 km or more</td><td>15%</td><td>22.5%</td><td>22%</td></tr>
+</table></div>
+<h3>Weight within a rarity</h3>
+<p>Within the same rarity, some items come up less often (weight 1 = normal):</p>
+<div class="tbl"><table>
+<tr><th>Weight</th><th>Items</th></tr>
+<tr><td>0.12 to 0.2</td><td><a href="item-fuzil.html">5.56 rifle</a> 0.12, <a href="item-submetralhadora.html">submachine gun</a> 0.15, <a href="item-rifle.html">hunting rifle</a> 0.18, <a href="item-colete_tatico.html">tactical vest</a> 0.2, <a href="item-capacete_militar.html">ballistic helmet</a> 0.2</td></tr>
+<tr><td>0.25 to 0.5</td><td><a href="item-capacete_tatico.html">tactical helmet</a> 0.25, <a href="item-escopeta.html">shotgun</a> 0.3, <a href="item-escopeta_serrada.html">sawed-off shotgun</a> 0.3, <a href="item-katana.html">katana</a> 0.3, <a href="item-mochila_tatica.html">tactical backpack</a> 0.3, <a href="item-mochila_cargueira.html">expedition pack</a> 0.3, <a href="item-pistola.html">pistol</a> 0.35, <a href="item-revolver.html">revolver</a> 0.35, <a href="item-carabina.html">.22 rifle</a> 0.35, <a href="item-municao_308.html">.308 ammo</a> 0.35, <a href="item-municao_556.html">5.56 ammo</a> 0.35, <a href="item-besta.html">crossbow</a> 0.4, <a href="item-capacete_policial.html">riot helmet</a> 0.4, <a href="item-colete.html">ballistic vest</a> 0.45, <a href="item-protetor_antebraco.html">forearm guard</a> 0.5, <a href="item-calca_tatica.html">tactical pants</a> 0.5, <a href="item-municao.html">9 mm ammo</a> 0.5, <a href="item-municao_38.html">.38</a> 0.5, <a href="item-cartucho.html">shell</a> 0.5</td></tr>
+<tr><td>0.6</td><td><a href="item-municao_22.html">.22 ammo</a></td></tr>
+<tr><td>2.5</td><td><a href="item-tabuas.html">planks</a>, <a href="item-pregos.html">nails</a></td></tr>
+</table></div>
+<p>Items repeated in the place's list also count more than once.</p>
+
+<h2>Ultra-rare finds</h2>
+<p>Only inside places:</p>
+<div class="tbl"><table>
+<tr><th>Find</th><th>Chance</th></tr>
+<tr><td>Outfit (each item rolled inside)</td><td>0.12% × 1.5 × (1 + km walked ÷ 2), at most 0.6%. Common outfits come up more (weights 1, 0.5, 0.2 and 0.05 by rarity) and each one comes up 4× more in its own place type. Uniforms only come from <a href="zumbis.html">zombies</a></td></tr>
+<tr><td><a href="item-radio_posto.html">Outpost radio</a> (once per place)</td><td>0.3%</td></tr>
+<tr><td><a href="item-expansor.html">Base expansion kit</a> (once per place)</td><td>0.5%</td></tr>
+<tr><td><a href="item-sinalizador_facil.html">Easy flare</a> (once per place)</td><td>1.2%</td></tr>
+<tr><td><a href="item-sinalizador_medio.html">Medium flare</a> (once per place)</td><td>0.4%</td></tr>
+<tr><td><a href="item-sinalizador_dificil.html">Hard flare</a> (once per place)</td><td>only after 3 km walked in the session: 0.2% + 0.08% per km above 3, at most 0.8%</td></tr>
+<tr><td>Memory book (in the right place type, only if you don't have it yet)</td><td>0.6% per book</td></tr>
+</table></div>
+<p>The Lucky trait raises and the Unlucky trait lowers the chances of the per-place finds (radio, kit and flares) by 10%.</p>
+<h3>Radio tip</h3>
+<p>With a <a href="item-radio.html">radio</a>, once a day the radio points to a place not yet looted between 300 m and 1.2 km away ("Weak signal: there's untouched stock at..."). That place gets 1 extra rare item from its list, once.</p>
+
+<h2>Weekly restocking and server stock</h2>
+<ul>
+<li>Each place is built <b>once per week</b>. The stock week is counted in 7-day blocks of the server clock.</li>
+<li>When logged in, the server stores the week's first build and everyone sees the same stock: what another survivor already took is no longer there. If you both take the same thing at the same time, whoever confirmed later loses the item ("Another survivor took it first: ...").</li>
+<li>Zombies killed inside, forced doors and dismantled furniture stay that way until the week turns over. Then the place fills up again.</li>
+<li>Bunkers, rescue crates and memories are yours alone: nothing goes to the server.</li>
+<li>Without a connection, what you take is queued and confirmed when the network comes back.</li>
+</ul>
+
+<h2>Locked doors and the crowbar</h2>
+<p>Inside, some ground-floor doors are locked. Getting close shows <kbd>FORCE DOOR</kbd>:</p>
+<ul>
+<li>it requires a <a href="item-pe_de_cabra.html">crowbar</a>, in hand or in the backpack ("Locked. Needs a crowbar (or a zombie inside breaks it).");</li>
+<li>it takes <b>3 s</b> standing still and makes <b>30 m</b> of noise ("Door forced open (noise!).");</li>
+<li>the door also comes down if a zombie pounds on it until it breaks (100 health; each blow takes 5 to 9). Windows have 40.</li>
+</ul>
+<p>An opened door stays open until the week turns over, for everyone. The keys (<a href="item-chave_arsenal.html">armory key</a>, <a href="item-chave_farmacia.html">pharmacy key</a>) only appear inside memories. The bunker's vault door has its own rules: see <a href="bunkers.html">Bunkers</a>.</p>
+
+<h2>Dismantling furniture</h2>
+<p>A wooden piece of furniture that's already been rummaged and is empty can be dismantled with <kbd>DISMANTLE (planks · 8 s · noise)</kbd>. It requires a <a href="item-martelo.html">hammer</a>, <a href="item-pe_de_cabra.html">crowbar</a>, <a href="item-machado.html">axe</a>, <a href="item-machado_incendio.html">fire axe</a> or <a href="item-marreta.html">sledgehammer</a>.</p>
+<ul>
+<li>Furniture: shelf, cabinet, kitchen cabinet, student lockers, counter, drawer, pantry, table, school desk, bookcase, wardrobe, nightstand, bed, back stockroom and vault.</li>
+<li>It yields 1 to 2 <a href="item-tabuas.html">planks</a> (2 to 3 from the big ones: cabinet, wardrobe, bookcase, bed, counter, stockroom and vault) and, with a hammer, 1 to 3 <a href="item-pregos.html">nails</a>.</li>
+<li>It takes 8 s, makes 30 m of noise and gives 8 Carpentry experience.</li>
+</ul>
+
+<h2>Tips</h2>
+<div class="tip"><b>Walk before going in</b>The rare chance only grows with the session distance. Going into the good places after a few kilometers yields much more than looting at your front door right after opening the app.</div>
+<div class="tip warn"><b>Display cases and armories call the street</b>Glass display cases, gun racks and locked armories make 24 to 30 m of noise. Clear out the zombies nearby first.</div>
+
+<h2>See also</h2>
+<ul>
+<li><a href="mochila-e-peso.html">Backpack and weight</a>: what fits.</li>
+<li><a href="corpos.html">Bodies</a></li>
+<li><a href="bunkers.html">Bunkers</a></li>
+</ul>

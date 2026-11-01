@@ -1,0 +1,95 @@
+<!-- titulo: Controls | categoria: Combat | resumo: The action screen's three control modes, the screen halves, the FIGHT button, crouching, the target selector and the running threshold. -->
+<p>The <a href="tela-de-acao.html">action screen</a> has three control modes. Choose one in <kbd>Settings</kbd> → <kbd>CONTROLS</kbd>. The mode also applies in memories.</p>
+
+<h2>The three modes</h2>
+<div class="tbl"><table>
+<tr><th>Mode</th><th>In-game description</th><th>Sticks</th></tr>
+<tr><td><b>Simple</b> (default)</td><td>"One stick and the FIGHT button; tap to strike, running leaves the fight"</td><td>left one moves; <kbd>FIGHT</kbd> button on the right</td></tr>
+<tr><td><b>Two sticks</b></td><td>"Aim with the right stick; tapping the screen strikes and shoves"</td><td>left one moves; right one aims</td></tr>
+<tr><td><b>Automatic</b></td><td>"One stick; strikes, shots and shoves on their own"</td><td>a single one, in the bottom middle</td></tr>
+</table></div>
+
+<h2>The screen halves</h2>
+<p>There is no attack button: the whole screen is the button. A <b>quick tap</b>:</p>
+<ul>
+<li>on the <b>left half</b>: shove;</li>
+<li>on the <b>right half</b>: strike (with a firearm, shoot).</li>
+</ul>
+<p>Holding and dragging the screen moves the camera to see more of one side; <kbd>Center</kbd> (at the top) brings it back. Taps don't attack while a panel is open or in the base's build mode.</p>
+<p>Pressing strike before the weapon is ready delays the next strike by 0.15 s ("too soon!"). Standing still and not aiming, the strike turns by itself toward the nearest zombie within 1.6× the weapon's reach.</p>
+
+<h2>Simple mode and the FIGHT button</h2>
+<p>The <kbd>FIGHT</kbd> button turns on the <b>fighting stance</b> and then shows <kbd>FIGHTING</kbd>, in amber.</p>
+<ul>
+<li>In the stance you automatically face the nearest zombie (with a firearm, the nearest one you can see within 14 m; with a melee weapon, within 2.2× the weapon's reach) and move sideways, at <b>60%</b> speed.</li>
+<li>The stance counts as <b>aiming all the time</b>: more accurate strikes with a chance of critical (see <a href="combate-corpo-a-corpo.html">Melee combat</a>).</li>
+<li>Tapping the screen outside the stance turns the stance on and strikes immediately.</li>
+<li><b>Running turns the stance off</b> ("who runs doesn't fight").</li>
+<li>It also turns off by itself after <b>6 s</b> with no zombie within 12 m ("relaxed").</li>
+<li>When off, the button pulses red when an alert zombie is within 8 m.</li>
+</ul>
+
+<h2>Two sticks mode</h2>
+<ul>
+<li>The right stick (red) aims: wherever it points, your character looks and strikes.</li>
+<li>Holding the right stick turns on the fighting stance while you hold it and for 0.4 s after you let go.</li>
+<li>With a firearm, the aim you set stays in effect for 1.5 s even while walking (you can strafe while shooting).</li>
+<li>Striking <b>without aiming</b> (right stick released) is worse: damage ×0.85, a 25% chance of a glancing blow (half damage) and a higher chance of missing the head.</li>
+</ul>
+
+<h2>Automatic mode</h2>
+<p>You only move. Your character faces the nearest zombie and:</p>
+<ul>
+<li>strikes by itself when a zombie is within the weapon's reach;</li>
+<li>shoots by itself when it sees a zombie within <b>14 m</b> (even with longer-range weapons);</li>
+<li>shoves by itself when on the ground or grabbed, and when there are <b>3 or more</b> zombies within 1.1 m (if it has stamina for the shove + 5);</li>
+<li>the shove hits all around (360°), not just in front.</li>
+</ul>
+<p>The price: the interval between automatic strikes is 1.35× longer, further multiplied by 1 + panic ÷ 200 (with panic at 100, about 2× normal) and by the reflex rate (Fast reflexes ×0.9, Slow reflexes ×1.1), it hits 15% weaker and has only a 4% base critical chance. Automatic bursts come out shot by shot, at the weapon's rate of fire.</p>
+<p>Taps on the screen halves also work in this mode.</p>
+
+<h2>Walking and running</h2>
+<div class="tbl"><table>
+<tr><th>Stick</th><th>Speed</th></tr>
+<tr><td>Up to 72% of its travel</td><td>walking, proportional, up to 2.0 m/s</td></tr>
+<tr><td>Beyond 72% (the edge)</td><td>running, 4.2 m/s</td></tr>
+</table></div>
+<p>Running needs more than 5 stamina and uses 10 per second (4% less per Stamina level). You can't run while crouched, on the ground or grabbed. Walking uses 2 stamina per second (proportional to the stick). With less than 10 stamina you walk at 70%.</p>
+<p>While running, any unaware zombie within 5 m (times the footstep multiplier) notices you instantly. Other speed multipliers: load (see <a href="mochila-e-peso.html">Backpack and weight</a>), pain, fracture, cluttered floor and the Adrenaline junkie trait (+10% with strong panic, +25% at extreme).</p>
+<p>On the ground, moving the stick makes you get up faster.</p>
+
+<h2>Crouching</h2>
+<p>The <kbd>CROUCH</kbd> button (it becomes <kbd>STANDING</kbd>) is on the left, above the stick.</p>
+<ul>
+<li>You move at <b>45%</b> speed and can't run.</li>
+<li>Unaware zombies only see you within 4.5 m (standing, 7 m) and take twice as long to notice.</li>
+<li>Shots spread 1 degree less.</li>
+<li>Armed guards hit less (−10 percentage points).</li>
+<li>Being knocked down puts you back on your feet.</li>
+</ul>
+
+<h2>Target selector</h2>
+<p>In the top right corner, below the weapon, the target icon changes where you aim with each tap, in this order: <kbd>BODY</kbd> → <kbd>LEGS</kbd> → <kbd>HEAD</kbd> → <kbd>BODY</kbd>.</p>
+<div class="tbl"><table>
+<tr><th>Target</th><th>Effect</th></tr>
+<tr><td>HEAD</td><td>high damage, but can miss and hit the shoulder; a shot aimed at the head spreads 2 degrees more</td></tr>
+<tr><td>BODY</td><td>normal damage, no risk (the zombie's vest absorbs part of it)</td></tr>
+<tr><td>LEGS</td><td>less damage, but builds up leg damage until it falls and crawls</td></tr>
+</table></div>
+<p>A downed or crawling zombie is always hit in the head. The numbers are in <a href="combate-corpo-a-corpo.html">Melee combat</a> and <a href="armas-de-fogo.html">Firearms</a>.</p>
+
+<h2>Other on-screen buttons</h2>
+<ul>
+<li><b>Weapon</b> (top right corner): tap to open the list of weapons you can grab right now (back and belt) and switch. It shows durability (melee weapon) or rounds (firearm). Switching takes 0.7 s (0.3 s for fists), without attacking.</li>
+<li><b>Build</b> (hammer, base only): turns on build mode; in it, taps don't attack.</li>
+<li><b>Exit</b>: exit icon; see <a href="tela-de-acao.html">Action screen</a>.</li>
+<li><b>Throw</b>: next to crouch, with the name and how many are left; holding it switches the item. See <a href="arremesso.html">Throwing</a>.</li>
+<li><b>Heart</b> (top left corner): tap to see health, stamina, panic and the mode.</li>
+<li>Context buttons (they appear near things): <kbd>RUMMAGE</kbd>, <kbd>SEARCH BODY</kbd>, <kbd>FORCE DOOR</kbd>, <kbd>DISMANTLE</kbd>, <kbd>GO UP</kbd>/<kbd>GO DOWN</kbd>, <kbd>ENTER: name</kbd>, <kbd>USE</kbd>.</li>
+</ul>
+
+<h2>See also</h2>
+<ul>
+<li><a href="combate-corpo-a-corpo.html">Melee combat</a></li>
+<li><a href="armas-de-fogo.html">Firearms</a></li>
+</ul>

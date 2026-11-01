@@ -1,0 +1,98 @@
+<!-- titulo: Pantalla de acción | categoria: Combate | resumo: Cuándo empieza la pantalla de acción, la confirmación de lugar seguro, el radio de la arena, el máximo de zombis, los tiempos de respiro, dónde no hay pelea y cómo salir. -->
+<p>La <b>pantalla de acción</b> es donde ocurre la pelea: una escena vista desde arriba, armada con las calles, edificios, autos y muebles reales a tu alrededor, y todos los zombis del radio. En ella caminas con el joystick (no con el GPS), peleas, revisas lugares por dentro y registras cuerpos.</p>
+
+<h2>Cuándo empieza</h2>
+<h3>Sola</h3>
+<p>Si un zombi que te está <b>persiguiendo</b> llega a <b>25 m</b> de ti en el mapa, la pantalla de acción se abre sola. Esto no ocurre:</p>
+<ul>
+<li>durante un tiempo de respiro (mira abajo);</li>
+<li>dentro de la base con las paredes en pie (base cerrada);</li>
+<li>en la pausa de las avenidas ("Cruza con cuidado — amenaza pausada", mira <a href="sessao-e-mapa.html">Sesión y mapa</a>).</li>
+</ul>
+<h3>Con el botón</h3>
+<p>El botón grande de pelea del mapa abre la pantalla de acción en el momento, en cualquier lugar. Quien no te vio empieza <b>desprevenido</b>: puedes acercarte por detrás.</p>
+<h3>Otros caminos</h3>
+<ul>
+<li><kbd>Entrar</kbd> a un lugar desde la pantalla de saqueo (mira <a href="saque.html">Saqueo</a>).</li>
+<li>Ir a la base por un puesto avanzado o por la tienda de campaña.</li>
+<li>El depósito de la radio y la arena de un punto dominado también usan la pantalla de acción.</li>
+</ul>
+
+<h2>Confirmación: "YA LLEGARON"</h2>
+<p>Cuando la pelea empezó sola, antes de la escena aparece una pantalla de aviso con el número de zombis en el radio: "Antes de pelear, detente en un lugar seguro: en la acera, lejos de la calle, sin cruzar nada. La pelea te espera." La pelea no avanza mientras esa pantalla está abierta. Toca <kbd>ESTOY QUIETO Y SEGURO · LUCHAR</kbd> para empezar.</p>
+<p>Con esa pantalla o con la pantalla de acción abierta, caminar de verdad <b>no cuenta distancia</b> (ni para raros, ni para misiones).</p>
+
+<h2>La arena</h2>
+<div class="tbl"><table>
+<tr><th>Regla</th><th>Valor</th></tr>
+<tr><td>Radio de la escena</td><td>120 m alrededor de donde estabas</td></tr>
+<tr><td>Zombis que entran</td><td>todos los del mapa dentro de los 120 m, del más cercano al más lejano, hasta <b>40</b></td></tr>
+<tr><td>Los que ya te perseguían o ya te habían notado a medias</td><td>empiezan alerta</td></tr>
+<tr><td>Caídos acostados en el mapa</td><td>empiezan acostados (los desprevenidos se quedan en el suelo hasta notarte)</td></tr>
+</table></div>
+<p>La escena empieza contigo mirando hacia donde mirabas en el mapa. Si el GPS te puso dentro de un edificio, empiezas en la calle más cercana.</p>
+<p>Al comienzo aparecen por algunos segundos las notas de lo que pesa en esta pelea: hambre, sed, cansancio, dolor, fractura, enfermedad, carga, noche, niebla, lluvia, estrés, remedios.</p>
+<h3>Caminar libre</h3>
+<p>La pantalla de acción común, abierta en la calle (con el botón o sola), es de <b>caminar libre</b>:</p>
+<ul>
+<li>al pasar de 40 m del centro, la escena vuelve a empezar a tu alrededor: el terreno se rehace, entran los zombis nuevos del radio (hasta completar 40 en la escena) y salen los que quedaron lejos;</li>
+<li>solo pisas donde ya está tu mapa explorado (el resto queda a oscuras), la base y su patio;</li>
+<li>llegar a hasta 3,5 m de la puerta de un lugar lo abre por dentro ahí mismo; salir de adentro y alejarte 6 m de la puerta lo cierra de nuevo;</li>
+<li>no hay borde de huida.</li>
+</ul>
+<p>En las otras escenas (lugar abierto con <kbd>Entrar</kbd>, base por el puesto) hay un <b>borde rojo</b> a 120 m: cruzarlo es huir.</p>
+
+<h2>Lugares sin pelea</h2>
+<ul>
+<li><b>Base cerrada</b>: dentro de la base con las paredes en pie, los zombis del mapa dejan de perseguirte y olvidan el ruido que oyeron, y la pelea no empieza sola. Las calles dentro de ella quedan bloqueadas para ellos.</li>
+<li><b>Avenidas</b>: en la pausa de cruce los zombis se detienen por completo.</li>
+<li><b>Depósito de la radio</b> y <b>arena</b>: no entra ningún zombi del mapa.</li>
+<li><b>Salas seguras del búnker</b>: la puerta blindada no deja pasar zombis (mira <a href="bunkers.html">Búnkeres</a>).</li>
+</ul>
+
+<h2>Tiempos de respiro</h2>
+<p>Cuando la pantalla de acción se cierra, ganas un tiempo en el que la pelea no vuelve a empezar sola:</p>
+<div class="tbl"><table>
+<tr><th>Cómo terminó</th><th>Respiro</th><th>Qué hacen los zombis</th></tr>
+<tr><td>Huiste (por el borde, despistándolos en una escena con final, o saliste con zombis detrás)</td><td><b>20 s</b></td><td>los que sabían de ti quedan aturdidos (quietos) durante el respiro, y después van al lugar del que huiste; el ruido sube al máximo</td></tr>
+<tr><td>Saliste con el botón sin abatir a nadie</td><td>3 s</td><td>quedan como estaban</td></tr>
+<tr><td>Saliste con el botón con bajas, o ganaste</td><td>3 s</td><td>-</td></tr>
+<tr><td>Solo pasaste por la puerta de un lugar (caminar libre)</td><td>3 s</td><td>la pantalla de acción se vuelve a abrir en la puerta</td></tr>
+</table></div>
+<p>Avisos: "¡Escapaste! N abatido(s). Corre.", "Saliste de la pantalla de acción con zombis detrás de ti.", "N abatido(s). Puedes registrar los cuerpos.", "Horda derrotada: N abatido(s). Puedes registrar los cuerpos."</p>
+
+<h2>Salir</h2>
+<p>La pantalla de acción común no termina sola cuando todos mueren: sales cuando quieras. Hay tres formas:</p>
+<h3>Ícono de la puerta</h3>
+<p>En la esquina superior derecha, el ícono de salida tiene borde verde cuando se puede salir. Solo funciona si:</p>
+<ul>
+<li>ningún zombi vivo está a menos de <b>10 m</b> ("Zombi a menos de 10 m: aléjate para salir.");</li>
+<li>nadie te está persiguiendo ("N zombi(s) te persiguen: despístalos (quédate a 40 m de ellos por 3 s), abátelos o huye por el borde.");</li>
+<li>no estás en el suelo ("Levántate primero.") ni agarrado ("Suéltate primero.").</li>
+</ul>
+<h3>Despistar</h3>
+<p>Si todos los zombis que saben de ti quedan a más de <b>40 m</b> durante <b>3 s</b> seguidos, aparece "¡lo despistaste!". En la pantalla de acción común solo te pierden de vista (vuelven a quedar desprevenidos) y entonces el ícono de la puerta se libera. En una escena que termina sola (la arena), despistarlos cuenta como huida.</p>
+<h3>Borde rojo</h3>
+<p>En las escenas con borde, pasar de los 120 m del centro termina la pelea como huida ("Escapaste").</p>
+<h3>Lugar por dentro</h3>
+<p>En un lugar abierto con <kbd>Entrar</kbd>, salir caminando por la puerta (después de haber pisado adentro) ya te devuelve a la calle.</p>
+<p>Al final aparece el resumen (<b>Moriste</b>, <b>Escapaste</b> u <b>Horda derrotada</b>, con abatidos, vida y tiempo) y <kbd>Volver al mapa</kbd>.</p>
+
+<h2>Lo que la pelea lleva al mapa</h2>
+<ul>
+<li>Vida, pánico, munición, lanzamientos, arma en la mano y durabilidad pasan directo al personaje (la mochila se ajusta en vivo durante la pelea).</li>
+<li>Las heridas se vuelven lesiones en el cuerpo. La mordida da estrés y tristeza.</li>
+<li>Flechas: vuelve el 60% de las disparadas. Cada disparo de escopeta deja un <a href="item-cartucho_vazio.html">cartucho vacío</a>.</li>
+<li>Los abatidos se vuelven una pila de <a href="corpos.html">cuerpos</a> en el mapa (menos en búnker y arena) y no vuelven hasta que cambie el mes.</li>
+<li>Los disparos hacen eco: mira <a href="barulho.html">Ruido</a>.</li>
+<li>Experiencia: cada acierto da 4 en Armas blancas (6 en Armas de fuego con arma de fuego; con los puños, 4 en Fuerza) y 1 en Aliento; cada baja da 6 en Fuerza y cada empujón 2.</li>
+<li>Vida en 0: "Muerto por la horda.".</li>
+</ul>
+
+<h2>Ver también</h2>
+<ul>
+<li><a href="controles.html">Controles</a></li>
+<li><a href="combate-corpo-a-corpo.html">Combate cuerpo a cuerpo</a></li>
+<li><a href="armas-de-fogo.html">Armas de fuego</a></li>
+<li><a href="arremesso.html">Lanzamiento</a></li>
+</ul>

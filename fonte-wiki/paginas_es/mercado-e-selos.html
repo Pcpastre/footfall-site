@@ -1,0 +1,129 @@
+<!-- titulo: Mercado y sellos | categoria: Social | resumo: El sello como moneda, de dónde viene y cómo desaparece; el mercado del buzón, el almacén y el mostrador. -->
+<p>El <b>sello</b> es la moneda de Footfall. No es un objeto que pese en la mochila: es un <b>saldo en la cartera</b>. Con cuenta en línea, el servidor guarda el saldo; el celular junta lo que ganaste y gastaste y lo envía cada cierto tiempo (cada operación solo cuenta una vez). El saldo aparece en la pestaña <kbd>MOCHILA</kbd> (<i>Cartera: N sello(s)</i>) y en la parte de arriba del buzón.</p>
+
+<h2>De dónde vienen los sellos</h2>
+<div class="tbl"><table>
+<tr><th>Fuente</th><th>Cuánto</th></tr>
+<tr><td>Kit del primer personaje (1 por dispositivo y por cuenta)</td><td>10 sellos, junto con una <a href="item-radio_posto.html">Radio de puesto avanzado</a></td></tr>
+<tr><td>Objeto <a href="item-selo.html">Sello</a> en el saqueo</td><td>Listas de <a href="lugar-loja.html">tienda</a> (incluye oficina de correos), <a href="lugar-casa.html">casa</a> y <a href="lugar-suprimentos.html">caja de suministros</a> (que trae 3 a 6 de una vez)</td></tr>
+<tr><td>Cuerpo de zombi común</td><td>6% de probabilidad de 1 ("carta en el bolsillo")</td></tr>
+<tr><td>Cuerpo del <a href="zumbi-presidiario.html">zombi presidiario</a></td><td>35% de probabilidad de 1 a 3</td></tr>
+<tr><td>Cuerpo del <a href="zumbi-mercado.html">zombi empleado de supermercado</a></td><td>30% de probabilidad de 1 a 2</td></tr>
+<tr><td>Misión de la semana de la <a href="radio.html">radio</a></td><td>10 sellos</td></tr>
+<tr><td>Impuestos de un <a href="pontos-dominados.html">bastión dominado</a></td><td>4 por día, menos el salario de los guardias</td></tr>
+<tr><td>Conjunto de ropa repetido guardado en el armario</td><td>2 / 5 / 12 / 30 (común / poco común / rara / legendaria)</td></tr>
+<tr><td>Libro de memoria repetido</td><td>3 sellos (entran como objeto, así que pasan por el termostato de abajo)</td></tr>
+<tr><td>Venta en el mercado</td><td>El precio acordado menos la comisión</td></tr>
+<tr><td>Venta al mostrador del almacén</td><td>Cerca de 1/3 de la guía, bajando con cada unidad</td></tr>
+</table></div>
+<p>Todo objeto <i>Sello</i> que entra en la mochila, en los cofres o en el depósito se convierte en saldo al instante. El sello de <b>saqueo</b> pasa por el <b>termostato</b> del servidor: la cantidad se multiplica por un factor entre 0,6 y 1,4 (empieza en 1), con redondeo sorteado. El servidor también limita lo que la cartera acepta de ganancias por día a 1.500 sellos.</p>
+
+<h2>Cómo desaparecen los sellos</h2>
+<div class="tbl"><table>
+<tr><th>Salida</th><th>Regla</th></tr>
+<tr><td>Muerte</td><td>La cartera se queda contigo, pero pierde el <b>15%</b> (redondeado), que desaparece del juego</td></tr>
+<tr><td>Tope de 300</td><td>Sin gastar nada durante más de 14 días, el saldo por encima de 300 pierde el 2% del excedente por semana (como mínimo 1 por semana), sin bajar nunca de 300; como máximo 52 semanas de una vez</td></tr>
+<tr><td>Alquiler</td><td>Cada semana: 1 sello por cada 100 kg en el <a href="deposito-do-radio.html">depósito de la radio</a> (mínimo 1 si hay algo) + 2 por puesto avanzado además del primero</td></tr>
+<tr><td>Mercado</td><td>1 sello por oferta publicada; la comisión sobre cada venta</td></tr>
+<tr><td>Almacén</td><td>El precio de cada objeto comprado</td></tr>
+</table></div>
+<p>Ejemplo del tope: con 500 sellos quietos, la primera semana quita ⌊200 × 0,02⌋ = 4 (quedan 496), la segunda ⌊196 × 0,02⌋ = 3, y así sucesivamente. Gastar cualquier sello reinicia el conteo de 14 días.</p>
+
+<h2>El buzón</h2>
+<p>El mercado y el almacén están en el <b>buzón</b>, en dos lugares:</p>
+<ul>
+<li>el del <a href="deposito-do-radio.html">depósito de la radio</a> (<kbd>BUZÓN: MERCADO Y ALMACÉN</kbd>), al que se llega desde cualquier puesto avanzado;</li>
+<li>un <a href="moveis-da-base.html">buzón</a> colocado en tu base (receta M13: 2 tablas + 2 clavos).</li>
+</ul>
+<p>Fuera de ellos: <i>"Usa el buzón del depósito de la radio (desde cualquier puesto avanzado) o arma uno en la base."</i></p>
+<p>La pantalla <i>Buzón</i> tiene tres pestañas:</p>
+<div class="tbl"><table>
+<tr><th>Pestaña</th><th>Para qué</th><th>Necesita internet</th></tr>
+<tr><td><kbd>Mercado</kbd></td><td>Comprar y vender con otros jugadores, en sellos</td><td>sí (cuenta en línea)</td></tr>
+<tr><td><kbd>Almacén</kbd></td><td>Comprar lo básico y vender cualquier cosa al mostrador</td><td>no</td></tr>
+<tr><td><kbd>Valor</kbd></td><td>Cuánto vale tu mochila según la guía de precios</td><td>no (sin internet usa el precio base)</td></tr>
+</table></div>
+<p>Lo que se puede vender: lo que está suelto en la mochila y, en la base, en los cofres; dentro del depósito, también lo que está en el depósito.</p>
+
+<h2>Mercado</h2>
+<p>El mercado es un libro de ofertas <b>a ciegas</b>: <i>"6 espacios. Tu oferta se cruza con la de alguien al precio de quien llegó primero, pero nadie ve lo que negocian los demás: solo el precio guía."</i></p>
+<div class="tbl"><table>
+<tr><th>Regla</th><th>Valor</th></tr>
+<tr><td>Espacios</td><td>6 ofertas abiertas al mismo tiempo (compra y venta juntas)</td></tr>
+<tr><td>Publicar</td><td>1 sello por oferta</td></tr>
+<tr><td>Vender</td><td>Los objetos salen de tu inventario en el momento de publicar</td></tr>
+<tr><td>Comprar</td><td>Reserva cantidad × precio + 1 sello; si sale más barato, la diferencia vuelve</td></tr>
+<tr><td>Comisión</td><td>Quien vende paga la comisión del termostato (empieza en 5%, varía de 2% a 10%), como mínimo 1 sello en ventas de 2 sellos o más</td></tr>
+<tr><td>Límite de compra</td><td>Por objeto, cada 4 horas (aparece en el formulario: <i>"Límite de compra: N cada 4 h · aún puedes M"</i>)</td></tr>
+<tr><td>Tamaño de la oferta</td><td>hasta 1.000 unidades y 100.000 sellos por unidad</td></tr>
+<tr><td>Lo que no entra</td><td>El sello (<i>"El sello es la moneda."</i>) y los objetos fuera de la lista del mercado</td></tr>
+</table></div>
+<h3>Cómo publicar</h3>
+<ol class="steps">
+<li>En un espacio libre, toca <kbd>Vender</kbd> o <kbd>Comprar</kbd>.</li>
+<li><i>Buscar objeto</i>: elige el objeto (la lista muestra la guía y, en la venta, cuánto tienes).</li>
+<li>Elige la cantidad (<kbd>Todo</kbd> o <kbd>Máx</kbd> llena el máximo) y el precio por unidad. Los botones <kbd>−5%</kbd>, <kbd>Guía</kbd> y <kbd>+5%</kbd> ajustan el precio.</li>
+<li>Venta: el formulario muestra <i>"Recibe hasta N sello(s) en la cartera (5% de comisión). Publicar: 1 sello."</i>. Compra: <i>"Reserva N sello(s) ahora (incluye 1 por publicar)..."</i>.</li>
+<li>Toca <kbd>Poner a la venta</kbd> o <kbd>Hacer pedido</kbd>.</li>
+</ol>
+<h3>Cómo se cruzan las ofertas</h3>
+<ul>
+<li>Una venta se cruza con los pedidos de compra de otras personas con precio <b>igual o mayor</b>, del mayor al menor; una compra, con las ventas de precio <b>igual o menor</b>, de la más barata a la más cara. Empate: la más antigua primero.</li>
+<li>El trato sale siempre <b>al precio de la oferta que ya estaba ahí</b>. Si pides comprar a 10 y había una venta a 8, pagas 8 y los 2 de diferencia vuelven.</li>
+<li>La oferta puede cerrarse solo en parte: <i>"Negociaste N de M al instante; el resto queda esperando."</i></li>
+<li>Con una oferta abierta, el juego revisa cada 2 minutos y avisa: <i>"Buzón: vendiste 3x Tablas (oferta completa)."</i></li>
+</ul>
+<h3>Retirar</h3>
+<p>Cada espacio muestra <i>"Vendiendo/Comprando Nx Objeto a P sello(s)"</i> y el avance. <kbd>Retirar</kbd> se lleva lo que llegó: los <b>sellos van directo a la cartera</b> y los <b>objetos a la mochila</b> (tienes que estar en un buzón). <kbd>Cancelar</kbd> cierra la oferta; <kbd>Liberar espacio</kbd> vacía un espacio terminado.</p>
+
+<h3>La guía de precios</h3>
+<p>Cada objeto tiene un <b>precio de referencia</b>, medido por el tiempo que se tarda en encontrar el objeto jugando (p. ej.: <a href="item-tabuas.html">Tablas</a> 1, <a href="item-chapa.html">Lámina de metal</a> 60, <a href="item-fuzil.html">Fusil 5,56</a> 212). La <b>guía</b> parte de ese precio y se mueve despacio con el mercado:</p>
+<ul>
+<li>una vez por semana, el servidor mira la mediana de cada día de los últimos 7 días (solo días con 3 o más compradores y 3 o más vendedores distintos; los intercambios dentro del mismo grupo no cuentan);</li>
+<li>si 5 o más días quedaron más de un 10% por encima o por debajo de la guía, esta se mueve hasta un 10% en la dirección del mercado;</li>
+<li>la guía nunca sale de la franja de 0,5× a 2× el precio de referencia.</li>
+</ul>
+<p>El termostato también es semanal: con el mercado muy caro durante 2 semanas, el sello del saqueo baja un 5% y la comisión sube 0,5 puntos; muy barato durante 2 semanas, lo contrario.</p>
+
+<h2>Almacén</h2>
+<p>La pestaña <kbd>Almacén</kbd> funciona <b>sin internet</b>: <i>"Vende lo básico (el stock vuelve cada día; el precio sube cuando se acaba) y compra cualquier cosa barata (vender mucho del mismo ítem hoy paga menos)."</i></p>
+<h3>Comprar</h3>
+<p>Precio de cada unidad: <b>⌈guía × 1,3 × (1 + compradas hoy ÷ stock del día)⌉</b>, como mínimo 1. El stock vuelve completo cada día (a medianoche).</p>
+<div class="tbl"><table>
+<tr><th>Objeto</th><th>Stock por día</th><th>1.ª unidad (guía de referencia)</th></tr>
+<tr><td><a href="item-agua.html">Botella de agua</a></td><td>10</td><td>2</td></tr>
+<tr><td><a href="item-feijao.html">Lata de frijoles</a></td><td>6</td><td>6</td></tr>
+<tr><td><a href="item-pao.html">Pan</a></td><td>4</td><td>3</td></tr>
+<tr><td><a href="item-bolacha.html">Paquete de galletas</a></td><td>6</td><td>3</td></tr>
+<tr><td><a href="item-bandagem.html">Vendaje</a></td><td>6</td><td>3</td></tr>
+<tr><td><a href="item-pano.html">Trapos de tela</a></td><td>8</td><td>2</td></tr>
+<tr><td><a href="item-tabuas.html">Tablas</a></td><td>10</td><td>2</td></tr>
+<tr><td><a href="item-pregos.html">Clavos</a></td><td>20</td><td>2</td></tr>
+<tr><td><a href="item-fita.html">Cinta adhesiva</a></td><td>3</td><td>4</td></tr>
+<tr><td><a href="item-pilhas.html">Pilas</a></td><td>4</td><td>3</td></tr>
+<tr><td><a href="item-isqueiro.html">Encendedor</a></td><td>2</td><td>3</td></tr>
+<tr><td><a href="item-garrafa.html">Botella vacía</a></td><td>6</td><td>7</td></tr>
+<tr><td><a href="item-sementes.html">Paquete de semillas</a></td><td>5</td><td>4</td></tr>
+<tr><td><a href="item-agulha.html">Aguja e hilo</a></td><td>2</td><td>10</td></tr>
+<tr><td><a href="item-lanterna.html">Linterna</a></td><td>1</td><td>3</td></tr>
+</table></div>
+<p>Los precios de la última columna usan el precio de referencia; con internet, valen la guía actual. Ejemplo: las tablas cuestan 2 cada una de la 1.ª a la 6.ª; de la 7.ª a la 10.ª cuestan 3 (la 10.ª: ⌈1 × 1,3 × 1,9⌉ = 3). Si se acaba: <i>"Se acabó por hoy. Mañana llega más."</i></p>
+<h3>Vender al mostrador</h3>
+<ul>
+<li>El mostrador compra <b>hasta 30 objetos por día</b> (sumando todos los objetos).</li>
+<li>Paga cerca de <b>1/3 de la guía</b> (redondeado, como mínimo 1); los objetos con guía por debajo de 2 rinden 0.</li>
+<li>Cada unidad del mismo objeto vendida el mismo día paga un 20% menos que la anterior (× 0,8 por unidad).</li>
+<li>El botón muestra cuánto paga la próxima unidad (<i>+N</i>) y la lista muestra la guía.</li>
+</ul>
+<p>Ejemplo: una <a href="item-chapa.html">lámina</a> con guía 60 paga 20, la segunda 16, la tercera 12 (redondeado hacia abajo).</p>
+
+<h2>Valor</h2>
+<p>La pestaña <kbd>Valor</kbd> suma la mochila según la guía (<i>"Tu mochila vale ~N sello(s) según la guía."</i>) y lista cada objeto con el total.</p>
+
+<h2>Ver también</h2>
+<ul>
+<li><a href="deposito-do-radio.html">Depósito de la radio</a></li>
+<li><a href="pontos-dominados.html">Bastiones dominados</a></li>
+<li><a href="grupo.html">Grupo</a> (intercambios)</li>
+<li><a href="memorias.html">Memorias</a></li>
+</ul>

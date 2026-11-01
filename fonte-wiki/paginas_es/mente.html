@@ -1,0 +1,168 @@
+<!-- titulo: Mente | categoria: Salud | resumo: Pánico, estrés, tristeza, aburrimiento, adicción al cigarrillo, fobias y hemofobia: qué los hace subir, los niveles, los efectos y cómo bajarlos. -->
+<p>La cabeza del sobreviviente, al estilo de Project Zomboid, tiene cuatro medidores: <b>pánico</b> (el susto del momento), <b>estrés</b>, <b>tristeza</b> y <b>aburrimiento</b>. Los tres últimos aparecen como barras en la sección <i>Cabeza</i> de la pestaña <kbd>Salud</kbd>; el pánico aparece como moodle. Todos van de 0 a 100.</p>
+
+<h2>Pánico</h2>
+<h3>Niveles</h3>
+<div class="tbl"><table>
+<tr><th>Pánico</th><th>Nivel</th><th>Moodle</th></tr>
+<tr><td>0 a 14</td><td>0</td><td>—</td></tr>
+<tr><td>15 a 34</td><td>1</td><td>Pánico leve</td></tr>
+<tr><td>35 a 59</td><td>2</td><td>En pánico</td></tr>
+<tr><td>60 a 79</td><td>3</td><td>Pánico fuerte</td></tr>
+<tr><td>80 a 100</td><td>4</td><td>Pánico extremo</td></tr>
+</table></div>
+<p>El pánico del mapa pasa a la pantalla de acción y vuelve al mapa al final de la pelea. Los niveles son los mismos en los dos lugares.</p>
+
+<h3>Qué lo hace subir</h3>
+<p><b>En el mapa</b>: cada zombi a hasta 40 m que estás viendo o que te persigue suma, por segundo, 1,5 × (1 − d/40)² (3 × si te está persiguiendo), donde d es la distancia. Cuanto más cerca y más zombis, más rápido sube. Dentro de la base cerrada (paredes en pie y puertas cerradas), los zombis no dan pánico.</p>
+<p><b>En la pantalla de acción</b>:</p>
+<div class="tbl"><table>
+<tr><th>Causa</th><th>Pánico</th></tr>
+<tr><td>Zombi que te notó a hasta 10 m, visto o percibido</td><td>10 × (1 − d/10)² por segundo, sumado por zombi</td></tr>
+<tr><td>Zombi que aparece de repente a menos de 6 m</td><td>hasta +8 de susto</td></tr>
+<tr><td>Recibir daño</td><td>+6</td></tr>
+<tr><td>Ser agarrado</td><td>+10</td></tr>
+<tr><td>Ser derribado</td><td>+15</td></tr>
+<tr><td>Ser herido, con Hemofóbico</td><td>+12</td></tr>
+<tr><td>Abstinencia de cigarrillo</td><td>+10 al comienzo de la pelea</td></tr>
+</table></div>
+<p>Toda ganancia de pánico (excepto la de la abstinencia) se multiplica por:</p>
+<div class="tbl"><table>
+<tr><th>Factor</th><th>Multiplicador</th></tr>
+<tr><td>Valiente / Cobarde / Insensibilizado</td><td>×0,3 / ×2 / ×0</td></tr>
+<tr><td>Estrés</td><td>×(1 + estrés/133): 75 de estrés = +56%</td></tr>
+<tr><td><a href="item-ansiolitico.html">Ansiolítico</a></td><td>×0,4</td></tr>
+<tr><td><a href="item-betabloqueador.html">Betabloqueante</a></td><td>×0,5</td></tr>
+<tr><td><a href="item-cachaca.html">Cachaza</a> (bebiste hace menos de 1 h)</td><td>×0,4</td></tr>
+<tr><td>Días vivo (costumbre)</td><td>de ×1 el 1.er día a ×0,4 con 60 días o más</td></tr>
+</table></div>
+
+<h3>Cómo bajarlo</h3>
+<p>Sin zombis cerca, el pánico baja solo: 1,5 por segundo en el mapa y 2,5 por segundo en la pantalla de acción, multiplicado por la costumbre (de ×1 el primer día hasta ×3 con 60 días vivo). En la pantalla de acción, cada empujón quita 10. Objetos:</p>
+<div class="tbl"><table>
+<tr><th>Objeto</th><th>Pánico</th></tr>
+<tr><td><a href="item-cachaca.html">Botella de cachaza</a></td><td>Lo pone en cero</td></tr>
+<tr><td><a href="item-ansiolitico.html">Ansiolítico</a></td><td>−40</td></tr>
+<tr><td><a href="item-cigarros.html">Cajetilla de cigarrillos</a> (solo Fumador)</td><td>−20</td></tr>
+<tr><td><a href="item-betabloqueador.html">Betabloqueante</a></td><td>−15</td></tr>
+</table></div>
+
+<h3>Efectos</h3>
+<ul>
+<li><b>Mapa</b>: el cono de visión se estrecha 0,25° por punto de pánico (hasta −25°).</li>
+<li><b>Pantalla de acción, visión</b>: el cono se estrecha 0,5° por punto (nunca por debajo de 110°).</li>
+<li><b>Golpe cuerpo a cuerpo</b> (consulta <a href="combate-corpo-a-corpo.html">Combate cuerpo a cuerpo</a>): −10% de daño en En pánico, −20% en Pánico fuerte, −30% en Pánico extremo; la franja de crítico se encoge y la probabilidad de crítico baja; la probabilidad de fallar la cabeza sube.</li>
+<li><b>Empujón</b>: empuja y derriba menos (−8% de fuerza y −10% de probabilidad de derribar por nivel).</li>
+<li><b>Disparo</b>: la dispersión crece con el pánico; por debajo de Armas de fuego 6, Pánico fuerte quita 15% y Pánico extremo 25% del daño.</li>
+<li><b>Tratamiento</b>: la sutura y la extracción de esquirla fallan un 8% más en En pánico, 16% en Pánico fuerte, 24% en Pánico extremo (consulta <a href="tratamento.html">Tratamiento</a>).</li>
+<li><b>Adicto a la adrenalina</b>: el rasgo convierte el pánico alto en ventaja: +10% de velocidad en Pánico fuerte y +25% en Pánico extremo.</li>
+</ul>
+
+<h2>Fobias</h2>
+<p>Los rasgos <a href="tracos.html">Claustrofóbico</a> y Agorafóbico crean un piso de pánico de <b>35</b> en ciertos lugares:</p>
+<div class="tbl"><table>
+<tr><th>Fobia</th><th>Dónde</th></tr>
+<tr><td>Claustrofóbico</td><td>Con 4 o más edificios a hasta 15 m de ti (callejones, manzanas cerradas)</td></tr>
+<tr><td>Agorafóbico</td><td>Con la calle más cercana (hasta 15 m) siendo ancha, de 9 m o más (avenidas y calles principales)</td></tr>
+</table></div>
+<p>En el mapa, en esos lugares el pánico no baja de la mitad del piso (17,5, Pánico leve). En la pantalla de acción abierta ahí, el pánico sube solo hasta 35 (En pánico) incluso sin zombis. Insensibilizado no tiene fobias.</p>
+
+<h2>Hemofobia</h2>
+<p>Con el rasgo Hemofóbico:</p>
+<ul>
+<li>cada paso de tratamiento hecho en la pestaña Salud suma +10 de pánico;</li>
+<li>la cura rápida suma +35;</li>
+<li>cada herida recibida en la pantalla de acción suma +12 × tu multiplicador de pánico (como mínimo +6).</li>
+</ul>
+<p>Como el pánico empeora la sutura, trata primero las heridas que no pueden fallar (vendar, limpiar) y deja la sutura para cuando el pánico baje.</p>
+
+<h2>Estrés</h2>
+<div class="tbl"><table>
+<tr><th>Estrés</th><th>Moodle</th><th>Efectos</th></tr>
+<tr><td>0 a 24</td><td>—</td><td>El pánico sube un poco más rápido (hasta +18%)</td></tr>
+<tr><td>25 a 49</td><td>Tenso</td><td>El pánico sube +19% a +37%</td></tr>
+<tr><td>50 a 74</td><td>Estresado</td><td>El pánico sube +38% a +56%; el aliento vuelve 10% más lento en la pelea</td></tr>
+<tr><td>75 a 100</td><td>Muy estresado</td><td>El pánico sube +56% a +75%; el aliento vuelve 20% más lento; mano temblorosa (+2° de dispersión en el disparo, +5% de fallo en la sutura); la tristeza sube</td></tr>
+</table></div>
+<h3>Qué lo hace subir</h3>
+<p>Con la app abierta, fuera de la pantalla de acción, por segundo:</p>
+<div class="tbl"><table>
+<tr><th>Causa</th><th>Estrés por segundo</th></tr>
+<tr><td>Pánico en el mapa</td><td>pánico × 0,006 (pánico 50 = +0,3/s)</td></tr>
+<tr><td>Sangrando, con fiebre o delirando</td><td>+0,05</td></tr>
+<tr><td>Hambriento o con mucha sed (o peor)</td><td>+0,02</td></tr>
+<tr><td>Abstinencia de cigarrillo</td><td>+0,03</td></tr>
+</table></div>
+<p>Con el ansiolítico activo, la ganancia por segundo baja a la mitad. Eventos:</p>
+<div class="tbl"><table>
+<tr><th>Evento</th><th>Estrés</th><th>Tristeza</th></tr>
+<tr><td>Ser mordido</td><td>+20</td><td>+15</td></tr>
+<tr><td>Fin de una pelea</td><td>+5, más 3 por herida recibida</td><td>+0,5 por zombi abatido, más 4 por herida</td></tr>
+<tr><td>Herida fuera de la pelea (vidrio, herramienta, fuego)</td><td>+4</td><td>—</td></tr>
+<tr><td>Comer comida podrida</td><td>—</td><td>+10</td></tr>
+</table></div>
+<p>Insensibilizado no gana estrés ni tristeza con peleas y heridas (la mordida sí cuenta).</p>
+<h3>Cómo bajarlo</h3>
+<ul>
+<li>Sin ninguna causa activa, el estrés baja solo: −0,1 por segundo dentro de la base (6 por minuto), −0,02 fuera (1,2 por minuto).</li>
+<li>Durmiendo: −30 por hora con descanso de base (base, puesto, tienda de campaña), −10 por hora fuera; en la cama cada hora vale 1,5, en el saco de dormir 1,2.</li>
+<li>Objetos: <a href="item-ansiolitico.html">Ansiolítico</a> −35, <a href="item-cigarros.html">cigarrillo</a> −25 (Fumador), <a href="item-cachaca.html">Cachaza</a> −15, <a href="item-chocolate.html">Chocolate</a> −5.</li>
+</ul>
+
+<h2>Tristeza</h2>
+<div class="tbl"><table>
+<tr><th>Tristeza</th><th>Moodle</th><th>Efectos</th></tr>
+<tr><td>0 a 19</td><td>—</td><td>—</td></tr>
+<tr><td>20 a 44</td><td>Hacia abajo</td><td>XP ×0,9</td></tr>
+<tr><td>45 a 69</td><td>Triste</td><td>XP ×0,75; saqueo 10% más lento</td></tr>
+<tr><td>70 a 100</td><td>Deprimido</td><td>XP ×0,6; saqueo 10% más lento; −10% de daño en la pelea</td></tr>
+</table></div>
+<h3>Qué la hace subir</h3>
+<ul>
+<li>Muy estresado: +0,01 por segundo.</li>
+<li>Muy aburrido o peor: +0,02 por segundo.</li>
+<li>Mordidas, heridas, bajas y comida podrida (tabla de eventos de arriba).</li>
+</ul>
+<h3>Cómo bajarla</h3>
+<ul>
+<li>Dentro de la base, sin nada que la haga subir: −0,01 por segundo (0,6 por minuto).</li>
+<li>Durmiendo: −5 por hora con descanso de base, −1 por hora fuera.</li>
+<li><a href="item-antidepressivo.html">Antidepresivo</a>: empieza a actuar 1 h después de tomarlo y quita cerca de 40 por hora hasta completar 24 h de la dosis, también con la app cerrada.</li>
+<li>Objetos: <a href="item-chocolate.html">Chocolate</a> −15, <a href="item-revista.html">Historieta</a> −10, <a href="item-cafe_coado.html">Café colado</a> −8, <a href="item-sopa.html">Sopa caliente</a> −8, <a href="item-cafe.html">Café molido</a> −5, <a href="item-cachaca.html">Cachaza</a> −5.</li>
+</ul>
+
+<h2>Aburrimiento</h2>
+<div class="tbl"><table>
+<tr><th>Aburrimiento</th><th>Moodle</th><th>Efectos</th></tr>
+<tr><td>0 a 24</td><td>—</td><td>—</td></tr>
+<tr><td>25 a 49</td><td>Aburrido</td><td>—</td></tr>
+<tr><td>50 a 74</td><td>Muy aburrido</td><td>La tristeza sube</td></tr>
+<tr><td>75 a 100</td><td>Muriéndose de aburrimiento</td><td>La tristeza sube; XP ×0,9</td></tr>
+</table></div>
+<ul>
+<li><b>Sube</b>: quieto (por debajo de 0,5 m/s) dentro de la base con la app abierta, +0,05 por segundo (3 por minuto; de 0 a 100 en poco más de media hora).</li>
+<li><b>Baja</b>: caminando por ahí (por encima de 0,5 m/s), −0,03 por segundo. Leer la <a href="item-revista.html">Historieta</a> quita 35; cualquier libro de habilidad quita 20.</li>
+<li>Con la app cerrada el aburrimiento no cambia.</li>
+</ul>
+
+<h2>Fumar</h2>
+<p>Solo para quien tiene el rasgo <a href="tracos.html">Fumador</a>. Después de 4 h reales sin fumar (contando desde la creación del personaje, la primera vez), empieza la abstinencia, moodle <i>Con ganas de fumar</i>:</p>
+<ul>
+<li>aliento máximo ×0,9;</li>
+<li>+0,03 de estrés por segundo;</li>
+<li>+10 de pánico al entrar en la pantalla de acción ("Con ganas de fumar: más nervioso").</li>
+</ul>
+<p>El botón <kbd>Fumar</kbd> de la <a href="item-cigarros.html">Cajetilla de cigarrillos</a> gasta 1 cajetilla, pone el reloj en cero, quita 20 de pánico y 25 de estrés.</p>
+
+<h2>Medicamentos para la cabeza</h2>
+<div class="tbl"><table>
+<tr><th>Objeto</th><th>En el momento</th><th>Durante el efecto</th><th>Duración</th></tr>
+<tr><td><a href="item-ansiolitico.html">Ansiolítico (diazepam)</a></td><td>−40 pánico, −35 estrés, +10 cansancio (+25 si se repite)</td><td>El pánico sube ×0,4; el estrés sube a la mitad; golpes 8% más lentos; tratamiento 10% más lento</td><td>3 h</td></tr>
+<tr><td><a href="item-betabloqueador.html">Betabloqueante (propranolol)</a></td><td>−15 pánico</td><td>El pánico sube ×0,5; puntería firme (−1,5° de dispersión, anula la mano temblorosa)</td><td>2 h</td></tr>
+<tr><td><a href="item-antidepressivo.html">Antidepresivo (sertralina)</a></td><td>—</td><td>La tristeza baja ~40 por hora (a partir de 1 h después)</td><td>hasta 24 h después de tomarlo</td></tr>
+<tr><td><a href="item-cachaca.html">Botella de cachaza</a></td><td>Pánico en cero, −15 estrés, −5 tristeza</td><td>El pánico sube ×0,4; peor puntería (+2,5° de dispersión)</td><td>1 h</td></tr>
+</table></div>
+<p>La pestaña Salud muestra hasta cuándo hace efecto cada medicamento.</p>
+
+<h2>Costumbre</h2>
+<p>Cuantos más días lleva vivo el personaje, menos asusta el pánico: la ganancia de pánico baja 1% por día (hasta −60% con 60 días) y la velocidad con la que se pasa aumenta hasta 3 veces. Esa costumbre desaparece con la <a href="morte.html">muerte</a>, junto con el resto del personaje.</p>

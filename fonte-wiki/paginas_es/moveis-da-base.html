@@ -1,0 +1,95 @@
+<!-- titulo: Muebles de la base | categoria: Base | resumo: Los 15 muebles de la base: costo, requisito, tamaño, efecto y cómo colocarlos con el martillo. -->
+<p>Los <b>muebles</b> son estructuras que fabricas y después colocas dentro de la <a href="base.html">base</a> o en el patio (hasta 15 m del borde). Un mueble fabricado queda "guardado" hasta que lo colocas: solo después de colocado funciona. Son 15 tipos.</p>
+
+<h2>Tabla general</h2>
+<div class="tbl"><table>
+<tr><th>Mueble</th><th>Receta</th><th>Costo</th><th>Requiere</th><th>Tamaño (m)</th><th>Efecto</th></tr>
+<tr><td>Banco de trabajo</td><td>R14</td><td>4 <a href="item-tabuas.html">tablas</a>, 3 <a href="item-pregos.html">clavos</a></td><td>— (máximo 1 por base)</td><td>1,8 × 0,8</td><td>Desbloquea las recetas del banco de trabajo</td></tr>
+<tr><td>Cofre</td><td>M01</td><td>4 tablas, 4 clavos</td><td>—</td><td>1,0 × 0,6</td><td>+40 kg de espacio cada uno</td></tr>
+<tr><td>Cama</td><td>M02</td><td>3 tablas, 2 clavos, 4 <a href="item-pano.html">trapos de tela</a></td><td>banco de trabajo</td><td>1,0 × 2,0</td><td>Dormir en la base recupera 50% más</td></tr>
+<tr><td>Mesa</td><td>M03</td><td>3 tablas, 2 clavos</td><td>banco de trabajo</td><td>1,2 × 0,8</td><td>Comer en la base rinde 10% más</td></tr>
+<tr><td>Huerto</td><td>H01</td><td>2 tablas, 2 clavos</td><td>— (máximo 4)</td><td>1,2 × 1,2</td><td>Huerto (plantar, regar, cosechar)</td></tr>
+<tr><td>Barril de lluvia</td><td>M04</td><td>4 tablas, 1 <a href="item-chapa.html">lámina de metal</a></td><td>banco de trabajo</td><td>0,7 × 0,7</td><td>Se llena con la lluvia: agua para las botellas</td></tr>
+<tr><td>Fogata</td><td>M05</td><td>3 <a href="item-pedra.html">piedras</a>, 2 tablas</td><td>—</td><td>1,0 × 1,0</td><td>Cocinar (hace luz y atrae zombis de noche)</td></tr>
+<tr><td>Cocina de leña</td><td>M06</td><td>1 lámina, 1 <a href="item-cano.html">tubo de hierro</a>, 2 clavos</td><td>banco de trabajo</td><td>0,9 × 0,7</td><td>Cocinar (cerrada: casi sin luz)</td></tr>
+<tr><td>Camilla (enfermería)</td><td>M07</td><td>3 tablas, 3 trapos, 2 clavos, 1 tubo</td><td>banco de trabajo, Carpintería 1</td><td>0,9 × 2,0</td><td>En la base, las heridas tratadas cicatrizan 50% más rápido</td></tr>
+<tr><td>Estacas</td><td>M08</td><td>2 tablas, 4 clavos</td><td>—</td><td>1,2 × 0,6</td><td>Trampa: hiere y lisia a quien pasa (6 veces)</td></tr>
+<tr><td>Alambre con latas</td><td>M09</td><td>1 <a href="item-arame.html">alambre</a>, 2 <a href="item-garrafa.html">botellas vacías</a>, 2 clavos</td><td>—</td><td>1,6 × 0,2</td><td>Alarma: avisa cuando pasa un zombi</td></tr>
+<tr><td>Pozo cubierto</td><td>M10</td><td>2 tablas, 2 trapos</td><td>—</td><td>1,0 × 1,0</td><td>Trampa: el zombi cae y queda atrapado (3 veces)</td></tr>
+<tr><td>Reflector</td><td>M11</td><td>2 <a href="item-lanterna.html">linternas</a>, 1 alambre, 1 tubo</td><td>banco de trabajo, Mecánica 1</td><td>0,6 × 0,6</td><td>Con generador en los cofres y gasolina: ilumina la base de noche (pero llama la atención)</td></tr>
+<tr><td>Torre de vigía</td><td>M12</td><td>8 tablas, 8 clavos</td><td>banco de trabajo, Carpintería 2</td><td>2,0 × 2,0</td><td>Cerca de la base ves 50% más lejos</td></tr>
+<tr><td>Buzón</td><td>M13</td><td>2 tablas, 2 clavos</td><td>—</td><td>0,5 × 0,5</td><td>Mercado: 6 espacios de compra y venta (sellos)</td></tr>
+</table></div>
+<p>Todas las recetas de muebles son del tipo <i>estructura</i>: solo se pueden hacer <b>dentro de la base</b> (o en el patio, por la pantalla de acción). Las marcadas con "banco de trabajo" requieren que estés usando el banco de trabajo colocado. La experiencia de cada una está en <a href="receitas.html">Recetas</a>.</p>
+
+<h2>Fabricar, colocar, mover y desmontar</h2>
+<ol class="steps">
+<li><b>Fabricar</b>: <kbd>Mochila</kbd> → <kbd>FABRICAR</kbd> → <kbd>Hacer</kbd> en la receta del mueble (dentro de la base). Aviso: <i>"... lista. Colócala en la pantalla de acción (ícono del martillo, dentro de la base)."</i></li>
+<li><b>Abrir el modo construir</b>: en la pantalla de acción, dentro de la base, toca el martillo. En el modo construir los toques no atacan.</li>
+<li><b>Elegir</b>: <kbd>CONSTRUIR (puerta, ventana, mueble)</kbd> lista los muebles guardados (con la cantidad) y también puerta y ventana.</li>
+<li><b>Colocar</b>: el mueble fantasma aparece frente al muñeco, sujeto a una cuadrícula de 0,5 m alineada con la base. Camina y apunta para elegir el lugar, gira 90° con el botón de girar y toca la palomita. Fuera de la base y del patio la palomita queda apagada (<i>"Fuera de la base y del patio (15 m del borde)."</i>).</li>
+<li><b>Usar</b>: fuera del modo construir, acércate a hasta 1,3 m del borde del mueble y toca <kbd>USAR ...</kbd> (la etiqueta cambia según el mueble).</li>
+</ol>
+<p>En el modo construir, cerca de un mueble colocado aparecen:</p>
+<ul>
+<li><kbd>Mover</kbd>: vuelve a tomar el mueble como fantasma (mantiene la rotación);</li>
+<li><kbd>Guardar</kbd>: quita el mueble del suelo sin desmontarlo (<i>"... guardado (martillo para volver a ponerlo)."</i>);</li>
+<li><kbd>Desmontar</kbd>: devuelve <b>todo el material</b> a la mochila. El cofre tiene que estar vacío (<i>"Vacía el cofre primero."</i>) y el huerto sin planta (<i>"Cosecha (o espera) antes de desmontar el huerto."</i>). Volver a armar un mueble desmontado <b>no da experiencia</b>.</li>
+</ul>
+<p>Dos muebles no pueden quedar demasiado pegados (<i>"Demasiado pegado a otro mueble."</i>). Un mueble guardado no funciona: por ejemplo, un cofre guardado no recibe nada.</p>
+<div class="tip"><b>Herramienta que resbala</b>Toda receta de Carpintería o Mecánica tiene probabilidad de cortarte la mano: 3% menos 0,5% por nivel de la habilidad (desaparece en el nivel 6). El corte es una herida de verdad en la mano.</div>
+
+<h2>Banco de trabajo</h2>
+<p>Desbloquea las recetas marcadas "banco de trabajo" en <a href="receitas.html">Recetas</a>. Una base solo puede tener <b>un</b> banco de trabajo (<i>"La base ya tiene banco de trabajo."</i>). Úsalo con <kbd>USAR BANCO DE TRABAJO</kbd>: abre la pestaña <kbd>FABRICAR</kbd>, que usa lo que está en la mochila <b>y en los cofres</b>. Si no estás usando el banco de trabajo, las recetas de banco de trabajo avisan <i>"Camina hasta el banco de trabajo en la pantalla de acción y toca USAR."</i>. También hay bancos de trabajo en el <a href="deposito-do-radio.html">depósito de la radio</a> y en el sótano de los <a href="bunkers.html">búnkeres</a>, pero esos no hacen muebles.</p>
+
+<h2>Cofre</h2>
+<p>Cada cofre colocado guarda <b>40 kg</b>. <kbd>USAR COFRE</kbd> abre ese cofre; la pestaña <kbd>Base</kbd> → <kbd>COFRES</kbd> muestra todos los cofres juntos (dentro de la base, guarda en el primer cofre con espacio). Los cofres cuentan como inventario para recetas, reparaciones, refuerzos y para el <a href="mercado-e-selos.html">mercado</a> mientras estás en la base. Lo que está en los cofres puede desaparecer en el <a href="ataque-noturno.html">ataque nocturno</a> si la base está abierta. Para desmontarlo, vacíalo antes.</p>
+
+<h2>Cama</h2>
+<p>Al terminar la sesión dentro de la base (según el GPS) con una cama colocada, el descanso con la app cerrada rinde 50% más (tasa de descanso 18,75 contra 12,5) y la vida vuelve 7,5 por hora en lugar de 5 (sin sangrado ni infección). <kbd>USAR CAMA</kbd> solo te recuerda: <i>"Termina la sesión dentro de la base para dormir: con cama, el descanso rinde 50% más."</i> Entrar a la base por un puesto avanzado y terminar en el puesto no usa la cama.</p>
+
+<h2>Mesa</h2>
+<p><kbd>USAR MESA</kbd> abre la mochila con el mensaje <i>"Comiendo en la mesa: la comida rinde 10% más."</i>. Mientras esa pantalla esté abierta, toda la comida que comas da 10% más calorías (la comida echada a perder no recibe la bonificación).</p>
+
+<h2>Huerto</h2>
+<p>Cada cantero es un pedazo del <a href="horta.html">huerto</a>. Máximo de 4 por base (<i>"El huerto ya tiene 4 canteros."</i>). <kbd>USAR HUERTO</kbd> muestra el estado y los botones <kbd>Plantar</kbd>, <kbd>Regar</kbd> y <kbd>Cosechar</kbd>. En la pantalla de acción el dibujo cambia: vacío, con brotes o maduro.</p>
+
+<h2>Barril de lluvia</h2>
+<p>Con la app abierta y lloviendo, cada barril colocado junta <b>1 botella cada 10 minutos</b>, hasta 20. (Los intervalos de más de 30 min sin actualizar no cuentan.) El botón muestra <kbd>AGUA DEL BARRIL (N)</kbd>: al tocarlo llena todas las <a href="item-garrafa.html">botellas vacías</a> de la mochila que se pueda con <a href="item-agua_suja.html">agua de lluvia</a>, que hay que hervir o filtrar. Mira <a href="cozinha.html">Cocina</a>.</p>
+
+<h2>Fogata y cocina de leña</h2>
+<p>Las dos sirven para cocinar. <kbd>ENCENDER FOGATA</kbd> / <kbd>ENCENDER COCINA DE LEÑA</kbd> gasta 1 tabla (con un <a href="item-isqueiro.html">encendedor</a>, que no se gasta) y deja el fuego encendido por 30 minutos; encendido, el botón pasa a ser <kbd>COCINAR</kbd>. Diferencia:</p>
+<div class="tbl"><table>
+<tr><th></th><th>Fogata</th><th>Cocina de leña</th></tr>
+<tr><td>Requiere banco de trabajo para hacerla</td><td>no</td><td>sí</td></tr>
+<tr><td>De noche, encendida, atrae zombis</td><td>sí: los zombis a hasta 100 m que no te están persiguiendo van a la base a ver la luz</td><td>no</td></tr>
+<tr><td>Ataque nocturno</td><td>+3 atacantes si está encendida en ese momento</td><td>sin efecto</td></tr>
+</table></div>
+<p>Detalles en <a href="cozinha.html">Cocina</a>.</p>
+
+<h2>Camilla (enfermería)</h2>
+<p>Con una camilla colocada y tú <b>en la base según el GPS</b>, el tiempo de cicatrización de las heridas tratadas baja al 67% (cicatrizan 50% más rápido). <kbd>USAR CAMILLA (ENFERMERÍA)</kbd> abre la pantalla de Salud.</p>
+
+<h2>Estacas, alambre con latas y pozo cubierto</h2>
+<p>Son las <a href="armadilhas.html">trampas</a>: las estacas hieren y lisian (6 usos), el pozo atrapa (3 usos) y las latas hacen ruido cuando pasa un zombi (no se gastan). Tocar <kbd>USAR ESTACAS</kbd> o <kbd>USAR POZO CUBIERTO</kbd> las rearma. En el ataque nocturno, las latas reducen el daño.</p>
+
+<h2>Reflector</h2>
+<p>El reflector solo se enciende con un <a href="item-gerador.html">generador portátil</a> guardado en algún cofre de la base. <kbd>USAR REFLECTOR</kbd> le carga combustible: 1 <a href="item-gasolina.html">bidón de gasolina</a> = 24 h de tanque (se suma a lo que ya tenía). Solo se enciende de noche. Encendido:</p>
+<ul>
+<li>la base se ve iluminada en la pantalla de acción de noche;</li>
+<li>en el ataque nocturno, atrae 2 zombis más, pero cada golpe quita 20% menos (se ve quién viene).</li>
+</ul>
+
+<h2>Torre de vigía</h2>
+<p>Con una torre colocada, mientras estés a menos de 40 m de la base, tu alcance de visión en el mapa es 50% mayor. En el ataque nocturno también reduce el daño en 15%.</p>
+
+<h2>Buzón</h2>
+<p>Da acceso al <a href="mercado-e-selos.html">mercado y al almacén</a> desde dentro de la base (<kbd>USAR BUZÓN</kbd>). Sin él, el único buzón es el del <a href="deposito-do-radio.html">depósito de la radio</a>.</p>
+
+<h2>Ver también</h2>
+<ul>
+<li><a href="receitas.html">Recetas</a></li>
+<li><a href="armadilhas.html">Trampas</a></li>
+<li><a href="horta.html">Huerto</a></li>
+<li><a href="cozinha.html">Cocina</a></li>
+</ul>

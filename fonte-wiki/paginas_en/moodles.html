@@ -1,0 +1,87 @@
+<!-- titulo: Moodles | categoria: Health | resumo: All of the survivor's status icons, their levels, what triggers them and what they do. -->
+<p>Moodles are the round status icons that appear on the map, next to the bottom buttons, <b>only when something is wrong</b>. Each one has an icon and a border colored by level: <b>amber</b> at level 1, <b>rust</b> at level 2 and <b>red</b> at level 3. Holding your finger on the icon shows the name of the status. This page lists every moodle in the game; the details of each mechanic are on the linked pages.</p>
+
+<h2>Moodle table</h2>
+<div class="tbl"><table>
+<tr><th>Moodle</th><th>Level 1</th><th>Level 2</th><th>Level 3</th><th>Page</th></tr>
+<tr><td>Hunger</td><td>Hungry</td><td>Starving</td><td>Sick with hunger</td><td><a href="necessidades.html">Needs</a></td></tr>
+<tr><td>Thirst</td><td>Thirsty</td><td>Very thirsty</td><td>Dehydrated</td><td><a href="necessidades.html">Needs</a></td></tr>
+<tr><td>Fatigue</td><td>Tired</td><td>Exhausted</td><td>At the limit</td><td><a href="cansaco-e-sono.html">Fatigue and sleep</a></td></tr>
+<tr><td>Panic</td><td>Mild panic</td><td>Panicked</td><td>Strong panic / Extreme panic</td><td><a href="mente.html">Mind</a></td></tr>
+<tr><td>Bleeding</td><td>Bleeding (1 wound)</td><td>Bleeding (2 wounds)</td><td>Bleeding (3 or more)</td><td><a href="feridas.html">Wounds</a></td></tr>
+<tr><td>Pain</td><td>Pain</td><td>Severe pain</td><td>Unbearable pain</td><td><a href="feridas.html">Wounds</a></td></tr>
+<tr><td>Infected wound</td><td>—</td><td>Infected wound</td><td>—</td><td><a href="infeccao.html">Infection</a></td></tr>
+<tr><td>Fracture</td><td>Fracture (splinted)</td><td>—</td><td>Fracture</td><td><a href="feridas.html">Wounds</a></td></tr>
+<tr><td>Sick</td><td>—</td><td>Feverish</td><td>Delirious</td><td><a href="infeccao.html">Infection</a></td></tr>
+<tr><td>Weight</td><td>Heavy load</td><td>—</td><td>—</td><td><a href="mochila-e-peso.html">Backpack and weight</a></td></tr>
+<tr><td>Nausea</td><td>—</td><td>Nauseous</td><td>—</td><td><a href="necessidades.html">Needs</a></td></tr>
+<tr><td>Smoking</td><td>Craving a smoke</td><td>—</td><td>—</td><td><a href="mente.html">Mind</a></td></tr>
+<tr><td>Stress</td><td>Tense</td><td>Stressed</td><td>Very stressed</td><td><a href="mente.html">Mind</a></td></tr>
+<tr><td>Sadness</td><td>Down</td><td>Sad</td><td>Depressed</td><td><a href="mente.html">Mind</a></td></tr>
+<tr><td>Boredom</td><td>Bored</td><td>Very bored</td><td>Bored to death</td><td><a href="mente.html">Mind</a></td></tr>
+<tr><td>Cold</td><td>Cold</td><td>Freezing</td><td>—</td><td><a href="temperatura.html">Temperature</a></td></tr>
+<tr><td>Heat</td><td>Hot</td><td>Boiling</td><td>—</td><td><a href="temperatura.html">Temperature</a></td></tr>
+<tr><td>Clothing</td><td>Torn clothes</td><td>—</td><td>—</td><td><a href="costura-e-roupas.html">Sewing and clothes</a></td></tr>
+</table></div>
+<p>Panic has five bands but only three colors: Strong panic and Extreme panic both appear with a red border, and the name shows which one it is.</p>
+
+<h2>Each moodle</h2>
+
+<h3>Hunger</h3>
+<p>Based on your calorie reserve (full = 2,400 kcal). <b>Hungry</b> below 50%: just a warning. <b>Starving</b> below 25%: −10% combat damage, health stops coming back, stress rises. <b>Sick with hunger</b> below 10%: −20% damage and 1 HP every 30 s. Eating fixes it.</p>
+
+<h3>Thirst</h3>
+<p>Based on your water reserve (full = 2,400 ml). <b>Thirsty</b> below 50%: just a warning. <b>Very thirsty</b> below 25%: stamina recovers 20% slower in combat, health stops coming back, stress rises. <b>Dehydrated</b> below 10%: stamina recovers 40% slower and 1 HP every 20 s. Drinking fixes it.</p>
+
+<h3>Fatigue</h3>
+<p><b>Tired</b> at 40% fatigue, <b>Exhausted</b> at 70% (attacks 10% slower), <b>At the limit</b> at 90% (attacks 20% slower). Max stamina drops 0.4 per point of fatigue at all times. Standing still, coffee or sleeping fix it.</p>
+
+<h3>Panic</h3>
+<p><b>Mild panic</b> from 15, <b>Panicked</b> from 35, <b>Strong panic</b> from 60 and <b>Extreme panic</b> from 80. From Panicked on, attacks lose damage (−10%, −20%, −30%) and sutures fail more. The vision cone narrows with panic. Getting away from zombies makes it drop; cachaça clears it.</p>
+
+<h3>Bleeding</h3>
+<p>The level is the number of bleeding wounds (3 at most). Each one drains health at its own rate, from 1 HP every 30 s (scratch) to 1 HP every 3 s (hemorrhage). Bandage, tourniquet or suture, depending on the wound.</p>
+
+<h3>Pain</h3>
+<p>Based on the total pain from your wounds: <b>Pain</b> from 15, <b>Severe pain</b> from 35, <b>Unbearable pain</b> from 60. It makes attacks slower and weaker and, at level 3, takes 10 off max stamina. A painkiller cuts it by 65%, morphine clears it.</p>
+
+<h3>Infected wound</h3>
+<p>Some wound caught a common infection. It stops healing, hurts more, takes 15 off max stamina, keeps health from coming back while you play and, after 72 h, drains health. Only an antibiotic cures it.</p>
+
+<h3>Fracture</h3>
+<p><b>Fracture</b> (level 3, red) without a splint: speed ×0.65 on the action screen and high pain. <b>Fracture (splinted)</b> (level 1) with a splint: speed ×0.85. It goes away when the fracture heals (7 days after the splint).</p>
+
+<h3>Sick: Feverish and Delirious</h3>
+<p>Stages of the zombie infection. <b>Feverish</b> from the 3rd to the 5th day: −25 max stamina and −10% damage. <b>Delirious</b> from the 5th to the 7th day: −35 max stamina, map vision ×0.6 and −20% damage. There is no cure.</p>
+
+<h3>Heavy load</h3>
+<p>Your pockets or backpack went over capacity. On the map, your footsteps get louder (+0.03 noise, about 4 m more radius). On the action screen, speed ×0.8 and attacks 15% slower. Drop weight or store it at the base.</p>
+
+<h3>Nauseous</h3>
+<p>You ate spoiled food, drank unboiled rainwater or ate raw meat and got sick. It lasts 2 h: max stamina ×0.85 and −10% combat damage.</p>
+
+<h3>Craving a smoke</h3>
+<p>Only with the Smoker trait, after 4 h without a cigarette. Max stamina ×0.9, rising stress and +10 panic at the start of each fight. Smoking a <a href="item-cigarros.html">Pack of cigarettes</a> fixes it.</p>
+
+<h3>Stress: Tense, Stressed, Very stressed</h3>
+<p>From 25, 50 and 75. It makes panic rise faster; Stressed and above make stamina recover more slowly; Very stressed makes your hand shake when shooting and suturing and pushes sadness up. It goes down on its own when things are calm, especially at the base, and while sleeping.</p>
+
+<h3>Sadness: Down, Sad, Depressed</h3>
+<p>From 20, 45 and 70. It reduces the XP you earn (×0.9, ×0.75, ×0.6); Sad and Depressed loot 10% slower; Depressed hits 10% weaker. Chocolate, comics, coffee, soup, antidepressants and rest at the base help.</p>
+
+<h3>Boredom: Bored, Very bored, Bored to death</h3>
+<p>From 25, 50 and 75. It rises while you sit still at the base with the app open. Very bored and above pushes sadness up; Bored to death also cuts XP by 10%. Going out walking or reading fixes it.</p>
+
+<h3>Cold: Cold, Freezing</h3>
+<p>Not enough warm clothing for the feels-like temperature. −8 max stamina per level and extra calorie use. It doesn't happen inside the base or in the 3 h after a hot soup.</p>
+
+<h3>Heat: Hot, Boiling</h3>
+<p>Clothing too heavy for the heat (above 28 °C, during the day). −8 max stamina per level and extra water use. Take off the coat and wear a cap.</p>
+
+<h3>Torn clothes</h3>
+<p>Some piece of clothing you're wearing reached 100% wear. It protects only half as much until it's sewn (the <kbd>Sew</kbd> button in the Backpack tab, with <a href="item-agulha.html">Needle and thread</a> and 1 <a href="item-pano.html">rag</a>).</p>
+
+<h2>Max stamina: everything that weighs on it</h2>
+<p>Several moodles affect max stamina. The full formula is:</p>
+<p><b>(100 − 0.4 × fatigue − 25 fever − 35 delirium − 15 infected wound − 10 unbearable pain − 8 × (cold + heat)) × trait × (×0.9 withdrawal) × (×0.8 Homebody far from base) × (×0.85 nauseous)</b>, between 30 and 150.</p>
+<p>The trait multiplier is 1 + 0.4 (Athletic) / 0.2 (Fit) / −0.2 (Out of shape) / −0.4 (Sedentary), plus 0.03 per Stamina level.</p>

@@ -1,0 +1,120 @@
+<!-- titulo: Weather and time | categoria: World | resumo: The real weather and real time of the place where you play, and everything that rain, fog, storms, wind, temperature, night, the small hours and the full moon change. -->
+<p>Footfall uses the <b>real weather</b> and the <b>real time</b> where you are. If it's raining on your street, it rains in the game; if it's gotten dark, it's night in the game. This page lists every effect.</p>
+
+<h2>Where the weather comes from</h2>
+<ul>
+<li>The game queries the free Open-Meteo service, sending only your position rounded to two decimal places (about 1 km).</li>
+<li>It updates when the session starts and then every <b>30 min</b>. Without internet, the last reading stays in effect.</li>
+<li>It reads: precipitation, weather code, temperature at 2 m, wind speed and direction at 10 m.</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>State</th><th>When the game counts it</th></tr>
+<tr><td>Rain</td><td>precipitation above 0.05 mm, or a code for drizzle, rain, freezing rain, showers or thunderstorm (51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82, 95, 96, 99)</td></tr>
+<tr><td>Fog</td><td>codes 45 or 48</td></tr>
+<tr><td>Storm</td><td>thunderstorm codes 95, 96 or 99 (a storm also counts as rain)</td></tr>
+</table></div>
+
+<h2>Rain</h2>
+<div class="tbl"><table>
+<tr><th>Effect</th><th>Value</th></tr>
+<tr><td>Your vision range on the map</td><td>×0.75</td></tr>
+<tr><td>Range at which zombies see you</td><td>×0.75</td></tr>
+<tr><td>Radius at which zombies hear you</td><td>×0.7</td></tr>
+<tr><td>Feels-like temperature</td><td>-4 °C, unless you're wearing a <a href="item-capa_chuva.html">raincoat</a> or a <a href="item-corta_vento.html">windbreaker</a></td></tr>
+<tr><td>Base rain barrel</td><td>fills 1 bottle every 10 min of rain with the app open (it becomes <a href="item-agua_suja.html">rainwater</a>, which needs to be boiled)</td></tr>
+<tr><td>Pitched <a href="item-barraca.html">tent</a> tarp</td><td>wears out 1.5× faster</td></tr>
+</table></div>
+<p>On the action screen, rain shows in the art and in the notes at the start of the fight ("Rain: wet ground, muffled noise"), but the fight itself doesn't change.</p>
+
+<h2>Fog</h2>
+<ul>
+<li>Your vision range on the map: ×0.6.</li>
+<li>Vision range on the action screen: ×0.6 (notice "Fog: see up to X m").</li>
+<li>It doesn't change the zombies' vision.</li>
+</ul>
+
+<h2>Storm</h2>
+<p>When it starts, you see "Storm: the thunder muffles your footsteps, but they get restless."</p>
+<div class="tbl"><table>
+<tr><th>Effect</th><th>Value</th></tr>
+<tr><td>Radius at which zombies hear you</td><td>×0.6 (on top of the rain's ×0.7: ×0.42 in total)</td></tr>
+<tr><td>Your vision range on the map</td><td>×0.85 (on top of the rain's ×0.75)</td></tr>
+<tr><td>Wandering zombies</td><td>rest half as long between one walk and the next</td></tr>
+<tr><td>Pitched tent tarp</td><td>wears out 2× faster</td></tr>
+</table></div>
+
+<h2>Wind</h2>
+<ul>
+<li>Wind above <b>30 km/h</b> makes a pitched tent's tarp wear out 1.5× faster (if there's no rain or storm, which already count).</li>
+<li>The rest is ambience: wind sound (from 12 km/h) and the direction of things blowing on the map and on the action screen.</li>
+</ul>
+
+<h2>Temperature</h2>
+<p>The <b>feels-like</b> temperature is the real temperature minus 4 °C in the rain (without a raincoat or windbreaker) and minus 2 °C at night.</p>
+<h3>Cold</h3>
+<p>Cold only counts with the session open and outside the base. The warm clothing you need:</p>
+<div class="tbl"><table>
+<tr><th>Feels like</th><th>Warm clothing points needed</th></tr>
+<tr><td>16 °C or more</td><td>0</td></tr>
+<tr><td>from 10 °C to under 16 °C</td><td>1</td></tr>
+<tr><td>below 10 °C</td><td>2</td></tr>
+</table></div>
+<p>Each piece worn and intact adds up: <a href="item-jaqueta.html">leather jacket</a> 1, <a href="item-moletom.html">sweatshirt</a> 1, <a href="item-jaqueta_bolsos.html">jacket with pockets</a> 1, <a href="item-gorro.html">beanie</a> 1, <a href="item-casaco.html">thick coat</a> 2. Torn clothing doesn't keep you warm. Whatever is missing becomes the cold level (0 to 2: "Cold", "Freezing"). Eating <a href="item-sopa.html">hot soup</a> removes the cold for a while.</p>
+<h3>Heat</h3>
+<p>Heat only counts during the day, with the session open. Heavy pieces: the <a href="item-casaco.html">coat</a> counts 2; the <a href="item-jaqueta.html">leather jacket</a>, <a href="item-colete.html">ballistic vest</a>, <a href="item-colete_tatico.html">tactical vest</a>, <a href="item-capacete_militar.html">ballistic helmet</a>, <a href="item-jaqueta_bolsos.html">jacket with pockets</a>, <a href="item-capacete_tatico.html">tactical helmet</a>, <a href="item-capacete_bombeiro.html">firefighter helmet</a> and <a href="item-mochila_cargueira.html">expedition pack</a> count 1.</p>
+<div class="tbl"><table>
+<tr><th>Real temperature</th><th>No heavy piece</th><th>With 1 point</th><th>With 2 or more</th></tr>
+<tr><td>up to 28 °C</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>above 28 °C</td><td>0</td><td>1</td><td>2</td></tr>
+<tr><td>above 33 °C</td><td>1</td><td>2</td><td>2</td></tr>
+</table></div>
+<p>A <a href="item-bone.html">cap</a> worn removes 1 heat level.</p>
+<h3>What cold and heat do</h3>
+<ul>
+<li>Cold: burns 0.004 kcal per second per level (shivering).</li>
+<li>Heat: uses 0.012 water per second per level (sweating).</li>
+<li>Each level of cold or heat takes 8 points off max stamina.</li>
+</ul>
+
+<h2>Night</h2>
+<p>Night runs from sunset to sunrise at your location, calculated from your position and the date. When it gets dark: "Night has fallen: zombies are more active. The flashlight draws attention from afar."</p>
+<div class="tbl"><table>
+<tr><th>Effect</th><th>Value</th></tr>
+<tr><td>Your vision range on the map</td><td>40 m (90 m in a 60° cone with a flashlight); Night vision ignores this</td></tr>
+<tr><td>Range at which zombies see you</td><td>8 m (30 m with your flashlight on)</td></tr>
+<tr><td>Sleepers that get up and wander</td><td>3 out of every 8</td></tr>
+<tr><td>Wandering zombies</td><td>rest 8 to 25 s between walks (during the day, 20 to 60 s)</td></tr>
+<tr><td>Vision on the action screen</td><td>12 m (22 with a flashlight, 26 with Night vision)</td></tr>
+<tr><td><a href="item-moletom.html">Dark sweatshirt</a></td><td>zombies see you at 85% of the distance</td></tr>
+<tr><td>Lit campfire at the base</td><td>draws zombies from up to 100 m</td></tr>
+<tr><td>Heat</td><td>doesn't count</td></tr>
+<tr><td>Feels-like temperature</td><td>-2 °C</td></tr>
+<tr><td>Flashlight button</td><td>only appears at night (it turns off on its own at dawn)</td></tr>
+</table></div>
+<p>Every night, at 1 a.m., the base suffers a night attack (with the app closed, up to 3 missed nights are resolved when you come back). The mail crow doesn't fly at night: it lands and finishes the flight in the morning.</p>
+
+<h2>Small hours</h2>
+<p>This is the part of the night before 5 a.m. Notice: "Small hours: the zombies are restless and hear better."</p>
+<ul>
+<li>The radius at which zombies hear you becomes ×1.3.</li>
+<li>Map zombies move 15% faster (chasing, investigating or wandering).</li>
+</ul>
+
+<h2>Full moon</h2>
+<p>The game calculates the real moon phase. It counts as a full moon when the phase is within 0.04 of the middle of the cycle (a day or so on each side). It only applies at night. Notice: "Full moon: you can see farther, but so can they. More of them roam tonight."</p>
+<div class="tbl"><table>
+<tr><th>Effect</th><th>Value</th></tr>
+<tr><td>Your vision range without a flashlight</td><td>40 × 1.5 = 60 m</td></tr>
+<tr><td>Range at which zombies see you without a flashlight</td><td>8 × 1.3 = 10.4 m</td></tr>
+<tr><td>Sleepers that get up and wander</td><td>6 out of every 8 (instead of 3)</td></tr>
+</table></div>
+
+<h2>Game time</h2>
+<p>Online, the game clock follows the server time. Setting your phone's clock forward or back doesn't change the night, the week, the month, place stock or events.</p>
+
+<h2>See also</h2>
+<ul>
+<li><a href="visao.html">Vision</a></li>
+<li><a href="barulho.html">Noise</a></li>
+<li><a href="horda-e-alarmes.html">Horde and alarms</a> (the horde comes at night)</li>
+</ul>

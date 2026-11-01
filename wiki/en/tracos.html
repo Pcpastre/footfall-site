@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Traits — Footfall Wiki</title>
+<meta name="description" content="All positive and negative traits: cost, exact effect in the code and conflicts.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="alternate" hreflang="pt-BR" href="https://footfall.pcpastre.com/wiki/tracos.html"><link rel="alternate" hreflang="en" href="https://footfall.pcpastre.com/wiki/en/tracos.html"><link rel="alternate" hreflang="es" href="https://footfall.pcpastre.com/wiki/es/tracos.html">
+<link rel="icon" type="image/png" href="../../img/icone.png">
+<link rel="stylesheet" href="../../estilo.css">
+<link rel="stylesheet" href="../wiki.css">
+</head>
+<body class="wiki" data-a="../">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../../index.html?lang=en" aria-label="Footfall"><img class="px" src="../../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <div class="langs" role="group" aria-label="Language"><a class="flag" href="../tracos.html" hreflang="pt-BR" title="Português"><img class="px" src="../../img/flags/pt.png" alt="Português" width="18" height="12"></a><a class="flag" href="tracos.html" hreflang="en" title="English" aria-current="true"><img class="px" src="../../img/flags/en.png" alt="English" width="18" height="12"></a><a class="flag" href="../es/tracos.html" hreflang="es" title="Español"><img class="px" src="../../img/flags/es.png" alt="Español" width="18" height="12"></a></div>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Sections</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Wiki sections"><details open><summary>Indexes</summary><ul><li><a href="itens.html">All items</a></li><li><a href="lugares.html">Places</a></li><li><a href="zumbis-lista.html">Zombie types</a></li><li><a href="memorias-lista.html">The memories</a></li></ul></details><details open><summary>Getting started</summary><ul><li><a href="criacao-de-personagem.html">Character creation</a></li><li><a href="sessao-e-mapa.html">Session and map</a></li></ul></details><details open><summary>Character</summary><ul><li><a href="mochila-e-peso.html">Backpack and weight</a></li><li><a href="morte.html">Death</a></li><li><a href="profissoes.html">Professions</a></li><li><a href="habilidades.html">Skills</a></li><li><a href="costura-e-roupas.html">Tailoring and clothes</a></li><li><a href="tracos.html" aria-current=page>Traits</a></li></ul></details><details open><summary>Health</summary><ul><li><a href="cansaco-e-sono.html">Fatigue and sleep</a></li><li><a href="infeccao.html">Infection</a></li><li><a href="mente.html">Mind</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Needs</a></li><li><a href="temperatura.html">Temperature</a></li><li><a href="tratamento.html">Treatment</a></li><li><a href="feridas.html">Wounds</a></li></ul></details><details open><summary>World</summary><ul><li><a href="horda-e-alarmes.html">Horde and alarms</a></li><li><a href="barulho.html">Noise</a></li><li><a href="visao.html">Vision</a></li><li><a href="clima-e-hora.html">Weather and time</a></li><li><a href="zumbis.html">Zombies</a></li></ul></details><details open><summary>Looting</summary><ul><li><a href="corpos.html">Bodies</a></li><li><a href="bunkers.html">Bunkers</a></li><li><a href="saque.html">Looting</a></li></ul></details><details open><summary>Combat</summary><ul><li><a href="tela-de-acao.html">Action screen</a></li><li><a href="controles.html">Controls</a></li><li><a href="armas-de-fogo.html">Firearms</a></li><li><a href="combate-corpo-a-corpo.html">Melee combat</a></li><li><a href="arremesso.html">Throwing</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="base.html">Base</a></li><li><a href="moveis-da-base.html">Base furniture</a></li><li><a href="horta.html">Garden</a></li><li><a href="cozinha.html">Kitchen</a></li><li><a href="ataque-noturno.html">Night attack</a></li><li><a href="deposito-do-radio.html">Radio vault and outposts</a></li><li><a href="receitas.html">Recipes</a></li><li><a href="armadilhas.html">Traps</a></li><li><a href="paredes-portas-e-janelas.html">Walls, doors and windows</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Group</a></li><li><a href="mercado-e-selos.html">Market and stamps</a></li><li><a href="pontos-dominados.html">Strongholds</a></li></ul></details><details open><summary>Crow and radio</summary><ul><li><a href="corvo.html">Crow</a></li><li><a href="radio.html">Radio</a></li></ul></details><details open><summary>Memories</summary><ul><li><a href="memorias.html">Memories</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Character</p>
+<h1>Traits</h1>
+<p class="sub">All positive and negative traits: cost, exact effect in the code and conflicts.</p>
+
+<p>Traits are characteristics chosen during <a href="criacao-de-personagem.html">character creation</a>. Positive ones cost points; negative ones give points back. The final balance (<a href="profissoes.html">profession</a> points minus the cost of the traits) must be 0 or more. Conflicting traits can't be chosen together, and the rule works both ways: if A conflicts with B, checking A disables B.</p>
+<p>There are 28 positive traits and 23 negative ones. Traits last until <a href="morte.html">death</a>; you can't gain or lose traits during play.</p>
+
+<h2>Positive traits</h2>
+<div class="tbl"><table>
+<tr><th>Trait</th><th>Cost</th><th>Effect (game text)</th><th>Conflicts with</th></tr>
+<tr><td>Athletic</td><td>8</td><td>+40% max stamina</td><td>Fit, Out of shape, Sedentary, Asthmatic</td></tr>
+<tr><td>Fit</td><td>4</td><td>+20% max stamina</td><td>Athletic, Out of shape, Sedentary</td></tr>
+<tr><td>Strong</td><td>8</td><td>+30% melee damage, +20% weight limit</td><td>Sturdy, Weak, Scrawny</td></tr>
+<tr><td>Sturdy</td><td>4</td><td>+15% melee damage</td><td>Strong, Weak, Scrawny</td></tr>
+<tr><td>Light-footed</td><td>4</td><td>-30% noise when walking and running</td><td>Clumsy</td></tr>
+<tr><td>Eagle eyes</td><td>4</td><td>+30% vision range</td><td>Nearsighted</td></tr>
+<tr><td>Night vision</td><td>2</td><td>No vision loss at night</td><td>—</td></tr>
+<tr><td>Keen hearing</td><td>4</td><td>Warning of zombies approaching out of sight</td><td>Bad hearing</td></tr>
+<tr><td>Fast reflexes</td><td>6</td><td>+15% critical window; +10% full-auto fire rate</td><td>Slow reflexes</td></tr>
+<tr><td>Thick skin</td><td>6</td><td>-30% chance a hit becomes a wound</td><td>Thin skin</td></tr>
+<tr><td>Fast healer</td><td>4</td><td>Wounds heal 30% faster</td><td>Slow healer</td></tr>
+<tr><td>Strong immunity</td><td>4</td><td>-30% chance a bite gets infected</td><td>Weak immunity</td></tr>
+<tr><td>Organized</td><td>6</td><td>+30% backpack capacity</td><td>Disorganized</td></tr>
+<tr><td>Lucky</td><td>4</td><td>+10% rare loot chance</td><td>Unlucky</td></tr>
+<tr><td>Light eater</td><td>3</td><td>Hunger 25% slower</td><td>Big eater</td></tr>
+<tr><td>Low thirst</td><td>3</td><td>Thirst 25% slower</td><td>High thirst</td></tr>
+<tr><td>Brave</td><td>4</td><td>Panic builds 70% slower</td><td>Cowardly, Desensitized</td></tr>
+<tr><td>Adrenaline junkie</td><td>4</td><td>In a fight, +10% speed in strong panic and +25% in extreme</td><td>—</td></tr>
+<tr><td>Desensitized</td><td>8</td><td>Immune to panic</td><td>Brave, Cowardly, Hemophobic, Claustrophobic, Agoraphobic</td></tr>
+<tr><td>Fast learner</td><td>6</td><td>+30% XP in all skills</td><td>Slow learner</td></tr>
+<tr><td>Handyman</td><td>6</td><td>+1 Carpentry and +1 Mechanics</td><td>—</td></tr>
+<tr><td>First responder</td><td>2</td><td>+1 First aid</td><td>Hemophobic</td></tr>
+<tr><td>Baseball player</td><td>4</td><td>+1 Melee weapons; +15% damage with bats</td><td>—</td></tr>
+<tr><td>Hunter</td><td>6</td><td>+1 Firearms; -15% walking noise</td><td>—</td></tr>
+<tr><td>Gardener</td><td>3</td><td>+1 Farming</td><td>—</td></tr>
+<tr><td>Skilled cook</td><td>3</td><td>Food goes 25% further</td><td>—</td></tr>
+<tr><td>Leader</td><td>4</td><td>In a group, your role's XP bonus is doubled (+50%)</td><td>—</td></tr>
+<tr><td>Wanderer</td><td>5</td><td>+10% to distance counted for loot</td><td>Homebody</td></tr>
+</table></div>
+
+<h2>Negative traits</h2>
+<div class="tbl"><table>
+<tr><th>Trait</th><th>Gives back</th><th>Effect (game text)</th><th>Conflicts with</th></tr>
+<tr><td>Out of shape</td><td>4</td><td>-20% max stamina</td><td>Athletic, Fit, Sedentary</td></tr>
+<tr><td>Sedentary</td><td>8</td><td>-40% max stamina</td><td>Athletic, Fit, Out of shape</td></tr>
+<tr><td>Weak</td><td>8</td><td>-30% melee damage, -20% weight limit</td><td>Strong, Sturdy, Scrawny</td></tr>
+<tr><td>Scrawny</td><td>4</td><td>-15% melee damage</td><td>Strong, Sturdy, Weak</td></tr>
+<tr><td>Clumsy</td><td>2</td><td>+30% noise; looting is louder</td><td>Light-footed</td></tr>
+<tr><td>Nearsighted</td><td>2</td><td>-30% vision range</td><td>Eagle eyes</td></tr>
+<tr><td>Bad hearing</td><td>4</td><td>No alert for zombies out of sight</td><td>Keen hearing</td></tr>
+<tr><td>Slow reflexes</td><td>4</td><td>-15% critical window; -10% fire rate</td><td>Fast reflexes</td></tr>
+<tr><td>Thin skin</td><td>6</td><td>+30% chance a hit becomes a wound</td><td>Thick skin</td></tr>
+<tr><td>Slow healer</td><td>3</td><td>Wounds heal 30% slower</td><td>Fast healer</td></tr>
+<tr><td>Weak immunity</td><td>4</td><td>+30% chance of infection (up to laceration)</td><td>Strong immunity</td></tr>
+<tr><td>Disorganized</td><td>4</td><td>-30% backpack capacity</td><td>Organized</td></tr>
+<tr><td>Unlucky</td><td>4</td><td>-10% rare loot chance</td><td>Lucky</td></tr>
+<tr><td>Big eater</td><td>3</td><td>Hunger 25% faster</td><td>Light eater</td></tr>
+<tr><td>High thirst</td><td>3</td><td>Thirst 25% faster</td><td>Low thirst</td></tr>
+<tr><td>Cowardly</td><td>2</td><td>Panic builds 2× faster</td><td>Brave, Desensitized</td></tr>
+<tr><td>Claustrophobic</td><td>4</td><td>Panic near walls and alleys</td><td>Agoraphobic, Desensitized</td></tr>
+<tr><td>Agoraphobic</td><td>4</td><td>Panic on avenues and open areas</td><td>Claustrophobic, Desensitized</td></tr>
+<tr><td>Hemophobic</td><td>3</td><td>Panic when dressing wounds</td><td>Desensitized, First responder</td></tr>
+<tr><td>Slow learner</td><td>6</td><td>-30% XP in all skills</td><td>Fast learner</td></tr>
+<tr><td>Asthmatic</td><td>5</td><td>Stamina recovers 50% slower</td><td>Athletic</td></tr>
+<tr><td>Smoker</td><td>2</td><td>Needs a cigarette every 4 h of play; without it, -10% stamina</td><td>—</td></tr>
+<tr><td>Homebody</td><td>4</td><td>More than 2 km from base, -20% max stamina</td><td>Wanderer</td></tr>
+</table></div>
+
+<h2>What each trait does, in detail</h2>
+
+<h3>Stamina: Athletic, Fit, Out of shape, Sedentary, Asthmatic</h3>
+<p>Max stamina starts at 100, loses 0.4 per point of <a href="cansaco-e-sono.html">fatigue</a> and other penalties (fever, pain, cold...), and only then is multiplied by the trait: Athletic ×1.4, Fit ×1.2, Out of shape ×0.8, Sedentary ×0.6. The Stamina skill adds +3% per level to the same multiplier. The result always stays between 30 and 150. Asthmatic doesn't touch the maximum: it multiplies by 0.5 the rate at which stamina comes back during a fight.</p>
+
+<h3>Damage: Strong, Sturdy, Weak, Scrawny, Baseball player</h3>
+<p>A beginner's melee damage starts at 75%. Strong adds 30 points, Sturdy 15, Weak subtracts 30 and Scrawny subtracts 15. Melee weapons adds 5 per level and Strength 3 per level (see <a href="habilidades.html">Skills</a>). Baseball player multiplies the result by 1.15 when the weapon in hand is the <a href="item-taco.html">Baseball bat</a> or the <a href="item-taco_pregos.html">Nail bat</a>, besides giving +1 in Melee weapons. Strong and Weak also change the weight limit by ±20% (pockets and backpack).</p>
+
+<h3>Noise: Light-footed, Hunter, Clumsy</h3>
+<p>Footstep noise is multiplied by 1 − 0.3 (Light-footed) − 0.15 (Hunter) + 0.3 (Clumsy) − 0.04 per Stealth level, with a minimum of 0.3. Light-footed and Hunter can stack. Clumsy also multiplies by 1.5 the noise of opening furniture and containers when looting. The same multiplier applies on the action screen, where it determines how long zombies take to notice you.</p>
+
+<h3>Vision: Eagle eyes, Nearsighted, Night vision</h3>
+<ul>
+<li><b>Eagle eyes</b>: vision range ×1.3 on the map and on the action screen; on the action screen the vision cone opens to 180° instead of 160°.</li>
+<li><b>Nearsighted</b>: range ×0.7; on the action screen zombies that leave your vision fade from the screen more slowly (1.6 s instead of 0.8 s).</li>
+<li><b>Night vision</b>: at night, vision on the map stays at 120 m (without the trait it drops to 40 m, or 60 m on a full-moon night, or 90 m with a flashlight). On the action screen, at night and without a flashlight, you see up to 26 m instead of 12 m.</li>
+</ul>
+
+<h3>Hearing: Keen hearing, Bad hearing</h3>
+<p>On the map, the game plays the groan of the nearest zombie that's chasing you or is within 25 m, from its direction. Without the trait, this works up to 40 m; with Keen hearing, up to 70 m; with Bad hearing the alert doesn't exist. On the action screen, the radius in which you notice zombies out of sight is 6 m (10 m with Keen hearing, 3 m with Bad hearing), and a closed helmet multiplies that radius by 0.7.</p>
+
+<h3>Fast and Slow reflexes</h3>
+<p>They affect the action screen: the critical hit window becomes 15% larger (or smaller); in Automatic mode the interval between automatic swings is ×0.9 (or ×1.1); and the zombies' attack wind-up seems slower (×1.12) or faster (×0.9), giving more or less time to dodge.</p>
+
+<h3>Thick skin and Thin skin</h3>
+<p>When a hit is about to become a <a href="feridas.html">wound</a>, Thick skin cancels the wound 30% of the time (only the damage remains, halved). Thin skin does the opposite: when clothing stops the hit, 30% of the time the game rolls the same attack again, with the same clothing, and it may get through. A bite stopped by clothing becomes a bruise and isn't rolled again.</p>
+
+<h3>Fast healer and Slow healer</h3>
+<p>They multiply by 0.7 (or 1.3) the healing time of every treated wound. They combine with the −5% per First aid level and with the base stretcher (×0.67).</p>
+
+<h3>Strong immunity and Weak immunity</h3>
+<p>They change the chance that a zombie wound turns into <a href="infeccao.html">zombie infection</a>:</p>
+<div class="tbl"><table>
+<tr><th>Wound</th><th>Normal</th><th>Strong immunity</th><th>Weak immunity</th></tr>
+<tr><td>Bite</td><td>85%</td><td>60%</td><td>100%</td></tr>
+<tr><td>Laceration or hemorrhage</td><td>25%</td><td>12.5%</td><td>40%</td></tr>
+<tr><td>Scratch</td><td>7%</td><td>3.5%</td><td>11.2%</td></tr>
+</table></div>
+<p>Note that the real numbers don't exactly match the trait texts: Strong immunity also halves the chance for lacerations and scratches, and Weak immunity multiplies those by 1.6.</p>
+
+<h3>Organized and Disorganized</h3>
+<p>They multiply by 1.3 (or 0.7) the capacity of the pockets and the worn backpack, together with Strong/Weak (the bonuses add up: Strong + Organized = ×1.5).</p>
+
+<h3>Lucky and Unlucky</h3>
+<p>They multiply by 1.1 (or 0.9) the chance of a rare item when looting. On the action screen, Lucky also adds 3% to the critical chance and to the chance that a melee weapon doesn't lose durability on a swing; Unlucky subtracts 3% from the critical chance.</p>
+
+<h3>Light eater, Big eater, Low thirst, High thirst</h3>
+<p>They multiply by 0.75 (or 1.25) all calorie or water consumption: the daily amount and that of each kilometer walked. See <a href="necessidades.html">Needs</a>.</p>
+
+<h3>Panic: Brave, Cowardly, Desensitized, Adrenaline junkie</h3>
+<p>How much <a href="mente.html">panic</a> rises is multiplied by 0.3 (Brave), 2 (Cowardly) or 0 (Desensitized). Desensitized also zeroes the stress and sadness caused by fights and wounds and cancels the phobias. Adrenaline junkie makes you 10% faster on the action screen in Strong panic and 25% in Extreme panic.</p>
+
+<h3>Experience: Fast learner, Slow learner, Leader</h3>
+<p>Fast learner multiplies all XP by 1.3; Slow learner by 0.7. Leader changes the group role bonus from ×1.25 to ×1.5. See <a href="habilidades.html">Skills</a>.</p>
+
+<h3>Starting skill: Handyman, First responder, Baseball player, Hunter, Gardener</h3>
+<p>They give +1 level in the indicated skill, added to the profession's (cap 10). E.g.: a Doctor with First responder starts with First aid 5.</p>
+
+<h3>Skilled cook</h3>
+<p>Unspoiled food gives 25% more calories. Eating at the base table raises the yield another 10% (×1.25 × 1.1). The food's water doesn't change.</p>
+
+<h3>Wanderer</h3>
+<p>The chance of a rare item grows with the distance walked in the session (1% standing still, +1.5% per km, up to 15%). Wanderer counts that distance as 10% greater, and the same goes for the chance of finding outfit sets.</p>
+
+<h2>The trickiest traits</h2>
+
+<h3>Smoker</h3>
+<p>Smoker gives back only 2 points, but requires a <a href="item-cigarros.html">Pack of cigarettes</a> every 4 real hours. The clock starts at character creation: 4 h after being created, if you haven't smoked yet, withdrawal kicks in (moodle <i>Craving a smoke</i>). While it lasts:</p>
+<ul>
+<li>max stamina ×0.9;</li>
+<li>stress rises 0.03 per second with the app open (about 1.8 per minute);</li>
+<li>every fight starts with 10 more panic.</li>
+</ul>
+<p>Smoking (<kbd>Smoke</kbd> button on the item) resets the clock, removes 20 panic and 25 stress ("Smoked a cigarette. Calmer."). Non-smokers can't smoke. The clock also runs with the app closed, so anyone away for a long time comes back already craving a smoke.</p>
+
+<h3>Homebody</h3>
+<p>It only applies if you have a base. More than <b>2 km</b> from the nearest stretch of base, max stamina is multiplied by 0.8. Without a base, the trait does nothing. Outposts and the tent don't count as a base for this rule.</p>
+
+<h3>Claustrophobic and Agoraphobic</h3>
+<p>The phobias create a <b>panic floor</b> in certain places:</p>
+<ul>
+<li><b>Claustrophobic</b>: when there are 4 or more buildings within 15 m of you.</li>
+<li><b>Agoraphobic</b>: when the nearest street (within 15 m) is wide, 9 m or more: avenues and the map's main and secondary roads (types <i>primary</i>, <i>secondary</i>, <i>trunk</i>, <i>tertiary</i> and their ramps).</li>
+</ul>
+<p>The floor is 35. On the map, panic doesn't drop below 17.5 (half the floor) while you're in these places; on the action screen it rises on its own to 35 (Panicked). Since panic narrows vision, reduces damage and worsens suturing, the phobia weighs heavily. Desensitized cancels both, and they can't be chosen together.</p>
+
+<h3>Hemophobic</h3>
+<p>Seeing blood causes panic:</p>
+<ul>
+<li>+10 panic for each <a href="tratamento.html">treatment</a> step done on the Health screen;</li>
+<li>+35 panic on a quick dressing;</li>
+<li>+12 panic (multiplied by your panic gain, at least ×0.5) each time you're wounded on the action screen.</li>
+</ul>
+<p>Conflicts with First responder and Desensitized. Since panic at level 2 or higher increases the chance of the suture failing, a hemophobic character can fall into a vicious cycle when treating themselves right after a fight.</p>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Footer">
+      <a href="../../index.html?lang=en">Site</a>
+      <a href="../../guias.html?lang=en">Guides</a>
+      <a href="index.html">Wiki</a>
+      <a href="../../privacidade.html?lang=en">Privacy policy</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki generated from the game code. Values may change between versions.</div>
+</footer>
+<script src="../wiki.js" defer></script>
+</body>
+</html>

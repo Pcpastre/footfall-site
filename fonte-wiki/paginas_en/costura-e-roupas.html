@@ -1,0 +1,203 @@
+<!-- titulo: Tailoring and clothes | categoria: Character | resumo: Protection, warmth and pockets for each piece of clothing, wear and sewing, and the wardrobe's 21 outfits with how to unlock each one. -->
+<p>In Footfall there are two different things called "clothes":</p>
+<ul>
+<li><b>Actual clothes</b> (clothing-type items): you wear them in a body slot, they protect against bites, scratches, blows and gunshots, keep you warm, weigh on you in the heat, give pockets and wear out until they tear.</li>
+<li><b>Outfits</b> (your character's look): <i>Outfit: ...</i> items that you store in the wardrobe at the <a href="deposito-do-radio.html">radio depot</a>. They only change your appearance and stay with you even after you die.</li>
+</ul>
+
+<h2>Body slots</h2>
+<p>Each piece of clothing goes in one slot. New clothing in an empty slot is put on automatically (except in slots you emptied on purpose).</p>
+<div class="tbl"><table>
+<tr><th>Slot</th><th>Clothes</th></tr>
+<tr><td>Head</td><td><a href="item-capacete.html">Motorcycle helmet</a>, <a href="item-capacete_obra.html">Hard hat</a>, <a href="item-capacete_policial.html">Riot helmet</a>, <a href="item-capacete_militar.html">Ballistic helmet</a>, <a href="item-capacete_mineiro.html">Miner helmet</a>, <a href="item-capacete_tatico.html">Tactical helmet with light</a>, <a href="item-capacete_bombeiro.html">Firefighter helmet</a>, <a href="item-capacete_ciclista.html">Bike helmet</a>, <a href="item-capacete_motocross.html">Motocross helmet</a>, <a href="item-lanterna_cabeca.html">Headlamp</a>, <a href="item-gorro.html">Beanie</a>, <a href="item-bone.html">Cap</a></td></tr>
+<tr><td>Top (torso)</td><td><a href="item-jaqueta.html">Leather jacket</a>, <a href="item-moletom.html">Dark sweatshirt</a>, <a href="item-casaco.html">Thick coat</a>, <a href="item-capa_chuva.html">Raincoat</a>, <a href="item-jaqueta_bolsos.html">Jacket with pockets</a>, <a href="item-corta_vento.html">Windbreaker</a></td></tr>
+<tr><td>Vest</td><td><a href="item-colete.html">Ballistic vest</a>, <a href="item-colete_tatico.html">Tactical vest</a>, <a href="item-colete_bolsos.html">Multi-pocket vest</a></td></tr>
+<tr><td>Arms</td><td><a href="item-cotoveleiras.html">Elbow pads</a>, <a href="item-protetor_antebraco.html">Forearm guard</a></td></tr>
+<tr><td>Hands</td><td><a href="item-luvas.html">Work gloves</a>, <a href="item-luvas_taticas.html">Tactical gloves</a></td></tr>
+<tr><td>Pants</td><td><a href="item-calca_jeans.html">Jeans</a>, <a href="item-calca_cargo.html">Cargo pants</a>, <a href="item-calca_tatica.html">Tactical pants</a>, <a href="item-calca_moletom.html">Sweatpants</a></td></tr>
+<tr><td>Legs</td><td><a href="item-caneleiras.html">Shin guards</a>, <a href="item-joelheiras.html">Knee pads</a></td></tr>
+<tr><td>Feet</td><td><a href="item-botas.html">Boots</a>, <a href="item-tenis.html">Running shoes</a>, <a href="item-coturno.html">Combat boots</a></td></tr>
+<tr><td>Backpack</td><td><a href="item-mochila.html">Daypack</a>, <a href="item-mochila_escolar.html">School backpack</a>, <a href="item-mochila_academia.html">Gym bag</a>, <a href="item-mochila_tatica.html">Tactical backpack</a>, <a href="item-mochila_cargueira.html">Expedition pack</a></td></tr>
+<tr><td>Leg pouch</td><td><a href="item-bolsa_coxa.html">Tactical thigh pouch</a>, <a href="item-bolsa_canela.html">Tactical shin pouch</a></td></tr>
+<tr><td>Arm pouch</td><td><a href="item-bolsa_braco.html">Arm pouch</a></td></tr>
+<tr><td>Fanny pack</td><td><a href="item-pochete.html">Fanny pack</a></td></tr>
+</table></div>
+<p>There is also the <i>Back</i> slot (long weapon) and two <i>Belt</i> slots; the third belt slot only exists with the Tactical vest or the Tactical backpack worn (MOLLE straps).</p>
+
+<h2>How protection works</h2>
+<p>Each piece of clothing has two parts: how much of each body part it <b>covers</b> (e.g., the jacket covers 88% of the arms; the rest are the gaps at the cuffs and collar) and the <b>material</b>, which stops each type of attack in its own way.</p>
+<div class="tbl"><table>
+<tr><th>Material</th><th>Bite</th><th>Scratch</th><th>Blow</th><th>Shot</th><th>Wear per bite blocked</th></tr>
+<tr><td>Fabric</td><td>10%</td><td>30%</td><td>10%</td><td>0%</td><td>25</td></tr>
+<tr><td>Denim/canvas</td><td>35%</td><td>60%</td><td>20%</td><td>0%</td><td>15</td></tr>
+<tr><td>Leather</td><td>85%</td><td>90%</td><td>35%</td><td>5%</td><td>8</td></tr>
+<tr><td>Rigid</td><td>95%</td><td>95%</td><td>70%</td><td>30%</td><td>4</td></tr>
+<tr><td>Ballistic</td><td>95%</td><td>95%</td><td>60%</td><td>80%</td><td>5</td></tr>
+</table></div>
+<p><b>A piece's protection = coverage × material resistance × condition</b>, where condition goes from 1 (new) to 0.5 (torn) depending on wear. Pieces in <b>layers</b> on the same body part stack: whatever gets through one still has to get through the other (total protection = 1 − the product of what each one lets through).</p>
+<p>Example: arms with a <a href="item-moletom.html">sweatshirt</a> (9% against bites) and a <a href="item-protetor_antebraco.html">forearm guard</a> (66%) block 1 − 0.91 × 0.34 = 69% of bites to the arm.</p>
+
+<h2>Clothing table</h2>
+<p>Values for the new piece. "Warmth" is how warm it keeps you; "Heavy" is how much it weighs on you in the heat; "Pockets" is the quick-access space it adds.</p>
+<div class="tbl"><table>
+<tr><th>Clothing</th><th>Rarity</th><th>Weight</th><th>Material</th><th>Covers</th><th>Against bites</th><th>Against scratches</th><th>Against blows</th><th>Against shots</th><th>Warmth</th><th>Heavy</th><th>Pockets / load</th></tr>
+<tr><td><a href="item-jaqueta.html">Leather jacket</a></td><td>uncommon</td><td>1.5 kg</td><td>leather</td><td>torso 85%, arms 88%</td><td>72% / 75%</td><td>76% / 79%</td><td>30% / 31%</td><td>4% / 4%</td><td>1</td><td>1</td><td>+1 kg</td></tr>
+<tr><td><a href="item-moletom.html">Dark sweatshirt</a></td><td>common</td><td>0.7 kg</td><td>fabric</td><td>torso 90%, arms 90%</td><td>9%</td><td>27%</td><td>9%</td><td>0%</td><td>1</td><td>—</td><td>+0.5 kg</td></tr>
+<tr><td><a href="item-casaco.html">Thick coat</a></td><td>uncommon</td><td>1.4 kg</td><td>denim/canvas</td><td>torso 90%, arms 90%</td><td>32%</td><td>54%</td><td>18%</td><td>0%</td><td>2</td><td>2</td><td>+1 kg</td></tr>
+<tr><td><a href="item-jaqueta_bolsos.html">Jacket with pockets</a></td><td>uncommon</td><td>1.2 kg</td><td>denim/canvas</td><td>torso 85%, arms 85%</td><td>30%</td><td>51%</td><td>17%</td><td>0%</td><td>1</td><td>1</td><td>+2 kg</td></tr>
+<tr><td><a href="item-corta_vento.html">Windbreaker</a></td><td>common</td><td>0.4 kg</td><td>fabric</td><td>torso 80%</td><td>8%</td><td>24%</td><td>8%</td><td>0%</td><td>—</td><td>—</td><td>+1.5 kg</td></tr>
+<tr><td><a href="item-capa_chuva.html">Raincoat</a></td><td>common</td><td>0.4 kg</td><td>fabric</td><td>torso 60%</td><td>6%</td><td>18%</td><td>6%</td><td>0%</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-colete.html">Ballistic vest</a></td><td>rare</td><td>3.0 kg</td><td>ballistic</td><td>torso 85%</td><td>81%</td><td>81%</td><td>51%</td><td>68%</td><td>—</td><td>1</td><td>+1 kg</td></tr>
+<tr><td><a href="item-colete_tatico.html">Tactical vest</a></td><td>rare</td><td>2.4 kg</td><td>ballistic</td><td>torso 70%</td><td>66%</td><td>66%</td><td>42%</td><td>56%</td><td>—</td><td>1</td><td>+3 kg, 3rd belt slot</td></tr>
+<tr><td><a href="item-colete_bolsos.html">Multi-pocket vest</a></td><td>uncommon</td><td>0.6 kg</td><td>—</td><td>nothing</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>+4 kg</td></tr>
+<tr><td><a href="item-capacete.html">Motorcycle helmet</a></td><td>rare</td><td>1.2 kg</td><td>rigid</td><td>head 80%</td><td>76%</td><td>76%</td><td>56%</td><td>24%</td><td>—</td><td>—</td><td>full-face</td></tr>
+<tr><td><a href="item-capacete_policial.html">Riot helmet</a></td><td>rare</td><td>1.4 kg</td><td>rigid</td><td>head 80%</td><td>76%</td><td>76%</td><td>56%</td><td>24%</td><td>—</td><td>—</td><td>full-face</td></tr>
+<tr><td><a href="item-capacete_militar.html">Ballistic helmet</a></td><td>rare</td><td>1.6 kg</td><td>ballistic</td><td>head 60%</td><td>57%</td><td>57%</td><td>36%</td><td>48%</td><td>—</td><td>1</td><td>—</td></tr>
+<tr><td><a href="item-capacete_tatico.html">Tactical helmet with light</a></td><td>rare</td><td>1.4 kg</td><td>ballistic</td><td>head 70%</td><td>66%</td><td>66%</td><td>42%</td><td>56%</td><td>—</td><td>1</td><td>flashlight</td></tr>
+<tr><td><a href="item-capacete_bombeiro.html">Firefighter helmet</a></td><td>uncommon</td><td>1.1 kg</td><td>rigid</td><td>head 65%</td><td>62%</td><td>62%</td><td>45%</td><td>20%</td><td>—</td><td>1</td><td>—</td></tr>
+<tr><td><a href="item-capacete_motocross.html">Motocross helmet</a></td><td>uncommon</td><td>1.1 kg</td><td>rigid</td><td>head 65%</td><td>62%</td><td>62%</td><td>45%</td><td>20%</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-capacete_obra.html">Hard hat</a></td><td>common</td><td>0.5 kg</td><td>rigid</td><td>head 35%</td><td>33%</td><td>33%</td><td>24%</td><td>10%</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-capacete_mineiro.html">Miner helmet</a></td><td>uncommon</td><td>0.6 kg</td><td>rigid</td><td>head 35%</td><td>33%</td><td>33%</td><td>24%</td><td>10%</td><td>—</td><td>—</td><td>flashlight</td></tr>
+<tr><td><a href="item-capacete_ciclista.html">Bike helmet</a></td><td>common</td><td>0.3 kg</td><td>rigid</td><td>head 30%</td><td>28%</td><td>28%</td><td>21%</td><td>9%</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-lanterna_cabeca.html">Headlamp</a></td><td>uncommon</td><td>0.15 kg</td><td>—</td><td>nothing</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>flashlight</td></tr>
+<tr><td><a href="item-gorro.html">Beanie</a></td><td>common</td><td>0.1 kg</td><td>—</td><td>nothing</td><td>—</td><td>—</td><td>—</td><td>—</td><td>1</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-bone.html">Cap</a></td><td>common</td><td>0.1 kg</td><td>—</td><td>nothing</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>removes 1 heat</td><td>—</td></tr>
+<tr><td><a href="item-luvas.html">Work gloves</a></td><td>common</td><td>0.2 kg</td><td>leather</td><td>hands 85%</td><td>72%</td><td>76%</td><td>30%</td><td>4%</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-luvas_taticas.html">Tactical gloves</a></td><td>uncommon</td><td>0.25 kg</td><td>leather</td><td>hands 90%</td><td>76%</td><td>81%</td><td>32%</td><td>5%</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-protetor_antebraco.html">Forearm guard</a></td><td>rare</td><td>0.7 kg</td><td>rigid</td><td>arms 70%</td><td>66%</td><td>66%</td><td>49%</td><td>21%</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-cotoveleiras.html">Elbow pads</a></td><td>uncommon</td><td>0.4 kg</td><td>rigid</td><td>arms 30%</td><td>28%</td><td>28%</td><td>21%</td><td>9%</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-calca_jeans.html">Jeans</a></td><td>common</td><td>0.8 kg</td><td>denim/canvas</td><td>legs 95%</td><td>33%</td><td>57%</td><td>19%</td><td>0%</td><td>—</td><td>—</td><td>+1 kg</td></tr>
+<tr><td><a href="item-calca_cargo.html">Cargo pants</a></td><td>uncommon</td><td>0.9 kg</td><td>denim/canvas</td><td>legs 95%</td><td>33%</td><td>57%</td><td>19%</td><td>0%</td><td>—</td><td>—</td><td>+3 kg</td></tr>
+<tr><td><a href="item-calca_tatica.html">Tactical pants</a></td><td>rare</td><td>1.0 kg</td><td>denim/canvas</td><td>legs 95%</td><td>33%</td><td>57%</td><td>19%</td><td>0%</td><td>—</td><td>—</td><td>+3 kg</td></tr>
+<tr><td><a href="item-calca_moletom.html">Sweatpants</a></td><td>common</td><td>0.5 kg</td><td>—</td><td>nothing</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>+0.5 kg</td></tr>
+<tr><td><a href="item-caneleiras.html">Shin guards</a></td><td>uncommon</td><td>0.6 kg</td><td>rigid</td><td>legs 55%</td><td>52%</td><td>52%</td><td>38%</td><td>16%</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-joelheiras.html">Knee pads</a></td><td>common</td><td>0.4 kg</td><td>rigid</td><td>legs 30%</td><td>28%</td><td>28%</td><td>21%</td><td>9%</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-botas.html">Boots</a></td><td>common</td><td>1.2 kg</td><td>leather</td><td>feet 90%, legs 25%</td><td>76% / 21%</td><td>81% / 22%</td><td>32% / 9%</td><td>5% / 1%</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-coturno.html">Combat boots</a></td><td>uncommon</td><td>1.5 kg</td><td>leather</td><td>feet 95%, legs 35%</td><td>81% / 30%</td><td>86% / 32%</td><td>33% / 12%</td><td>5% / 2%</td><td>—</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-tenis.html">Running shoes</a></td><td>common</td><td>0.6 kg</td><td>fabric</td><td>feet 90%</td><td>9%</td><td>27%</td><td>9%</td><td>0%</td><td>—</td><td>—</td><td>footsteps 20% quieter</td></tr>
+<tr><td><a href="item-mochila_academia.html">Gym bag</a></td><td>common</td><td>0.4 kg</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>backpack 5 kg</td></tr>
+<tr><td><a href="item-mochila_escolar.html">School backpack</a></td><td>common</td><td>0.5 kg</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>backpack 6 kg</td></tr>
+<tr><td><a href="item-mochila.html">Daypack</a></td><td>rare</td><td>0.8 kg</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>backpack 10 kg</td></tr>
+<tr><td><a href="item-mochila_tatica.html">Tactical backpack</a></td><td>rare</td><td>1.2 kg</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>backpack 12 kg, 3rd belt slot</td></tr>
+<tr><td><a href="item-mochila_cargueira.html">Expedition pack</a></td><td>rare</td><td>2.0 kg</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>1</td><td>backpack 16 kg</td></tr>
+<tr><td><a href="item-bolsa_coxa.html">Tactical thigh pouch</a></td><td>uncommon</td><td>0.3 kg</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>+1.5 kg</td></tr>
+<tr><td><a href="item-bolsa_canela.html">Tactical shin pouch</a></td><td>uncommon</td><td>0.2 kg</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>+0.8 kg</td></tr>
+<tr><td><a href="item-bolsa_braco.html">Arm pouch</a></td><td>uncommon</td><td>0.15 kg</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>+0.5 kg</td></tr>
+<tr><td><a href="item-pochete.html">Fanny pack</a></td><td>common</td><td>0.2 kg</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>+1.5 kg</td></tr>
+</table></div>
+<p>With no clothes at all, you have 4 kg of pockets (hands and shallow pockets). Pockets and backpack are multiplied by the character's capacity (traits). See <a href="mochila-e-peso.html">Backpack and weight</a>.</p>
+<h3>Extra effects</h3>
+<ul>
+<li><b>Running shoes</b>: footsteps 20% quieter. <b>Sweatpants</b>: footsteps 8% quieter. The two together multiply.</li>
+<li><b>Motorcycle helmet</b> and <b>Riot helmet</b> are full-face: they cut side vision and a bit of hearing.</li>
+<li><b>Miner helmet</b>, <b>Tactical helmet with light</b> and <b>Headlamp</b>: the light points where you look and batteries last 50% longer (with batteries in any pocket).</li>
+<li><b>Raincoat</b> and <b>Windbreaker</b>: in the rain you don't feel its cold.</li>
+<li><b>Cap</b>: removes 1 from the heat level during the day.</li>
+</ul>
+
+<h2>Cold and heat</h2>
+<p>The feels-like temperature is the real temperature minus 4 °C in the rain (without a raincoat or windbreaker) and minus 2 °C at night. At the base, or with hot soup in effect (3 h), you don't feel cold.</p>
+<div class="tbl"><table>
+<tr><th>Feels like</th><th>Clothing warmth needed</th></tr>
+<tr><td>16 °C or more</td><td>0</td></tr>
+<tr><td>10 to 16 °C</td><td>1</td></tr>
+<tr><td>below 10 °C</td><td>2</td></tr>
+</table></div>
+<p><b>Cold</b> = needed − warmth of the clothes worn (0 to 2: <i>Cold</i>, <i>Freezing</i>). Torn clothes don't keep you warm. Shivering burns calories.</p>
+<p><b>Heat</b> (daytime only), by the sum of "heavy" for the clothes worn:</p>
+<div class="tbl"><table>
+<tr><th>Temperature</th><th>No heavy clothes</th><th>Heavy 1</th><th>Heavy 2 or more</th></tr>
+<tr><td>up to 28 °C</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>28 to 33 °C</td><td>0</td><td>1</td><td>2</td></tr>
+<tr><td>above 33 °C</td><td>1</td><td>2</td><td>2</td></tr>
+</table></div>
+<p>The cap removes 1. Heat (<i>Hot</i>, <i>Boiling</i>) makes you sweat and use up water. Each level of cold or heat removes 8 from max stamina.</p>
+
+<h2>Wear and torn clothes</h2>
+<p>Each piece of clothing has wear from 0 to 100%. It wears out in two ways:</p>
+<ul>
+<li><b>When it blocks an attack</b>: each piece covering that body part wears by <i>material wear × attack factor × coverage</i>. Factor: bite 1.0, blow 0.7, scratch 0.5, shot 1.2. Example: a bite blocked on the torso wears the sweatshirt by 25 × 1.0 × 0.9 = 22.5%.</li>
+<li><b>When a hit lands</b> on a body part, the clothes covering it also tear a little.</li>
+</ul>
+<p>Each Tailoring level reduces all wear by 5%.</p>
+<p>At 100% the clothing <b>tears</b>: <i>"... tore: half protection until you sew it."</i>. Torn, it:</p>
+<ul>
+<li>protects only half (condition drops linearly from 1 new to 0.5 torn; a piece at 50% wear protects 75%);</li>
+<li>carries half in its pockets;</li>
+<li>doesn't keep you warm.</li>
+</ul>
+<p>With any torn clothing, the <i>Torn clothes</i> notice appears.</p>
+
+<h2>Sewing</h2>
+<p>On the <kbd>BACKPACK</kbd> tab, each piece of clothing with 10% or more wear appears with its condition (<i>"uses 35%"</i> or <i>"torn (half protection)"</i>) and the <kbd>Sew</kbd> button.</p>
+<div class="tbl"><table>
+<tr><th>Sewing</th><th>Value</th></tr>
+<tr><td>Tool</td><td><a href="item-agulha.html">Needle and thread</a> in the backpack (not used up)</td></tr>
+<tr><td>Uses</td><td>1 <a href="item-pano.html">cloth rag</a> (from the backpack; at the base, also from the chests)</td></tr>
+<tr><td>Result</td><td>The clothing is back <b>whole</b> (0% wear)</td></tr>
+<tr><td>Experience</td><td>5 Tailoring XP</td></tr>
+</table></div>
+<p>Without a needle: <i>"Needs needle and thread."</i>. Without cloth: <i>"Needs 1 cloth rag."</i>. The <a href="item-livro_costura.html">Sewing magazine</a> gives +50% Tailoring XP for 1 day. Tailoring is also used for the <a href="item-saco_dormir.html">sleeping bag</a>, the <a href="item-barraca.html">tent</a> and patching the tarp (see <a href="receitas.html">Recipes</a>).</p>
+
+<h2>Outfits (your character's look)</h2>
+<p>Your character's look on the action screen is an <b>outfit</b>. You start with the <i>Survivor</i>. You find the others as items (<i>Outfit: ...</i>, 1.2 kg) or earn them by finishing memories. No one sees your name above your character: the outfit and the colors (skin, hair, shirt, in Settings → Appearance) are what tell one player from another.</p>
+
+<h3>The wardrobe</h3>
+<ol class="steps">
+<li>Bring the <i>Outfit: ...</i> item to the <a href="deposito-do-radio.html">radio depot</a> (through an outpost or the tent).</li>
+<li>Get close to the wardrobe and tap <kbd>WARDROBE: STORE NEW OUTFIT</kbd> (or <kbd>WARDROBE</kbd>). Outfits in the backpack go in automatically.</li>
+<li>Tap <kbd>WEAR</kbd> on the outfit. You can only change outfits there (<i>"You can only change outfits at the radio vault wardrobe."</i>).</li>
+</ol>
+<p>A <b>duplicate</b> outfit turns into stamps when you store it, by rarity:</p>
+<div class="tbl"><table>
+<tr><th>Rarity</th><th>Roll weight</th><th>Stamps per duplicate</th></tr>
+<tr><td>Common</td><td>1</td><td>2</td></tr>
+<tr><td>Uncommon</td><td>0.5</td><td>5</td></tr>
+<tr><td>Rare</td><td>0.2</td><td>12</td></tr>
+<tr><td>Legendary</td><td>0.05</td><td>30</td></tr>
+</table></div>
+<div class="tip"><b>Stays after death</b>Outfits stored in the wardrobe belong to the account, not the character: when you <a href="morte.html">die</a>, they're still there. An outfit that was in your backpack (not yet stored) goes to the pile where you fell, like any item.</div>
+
+<h3>How outfits appear</h3>
+<ul>
+<li><b>In loot inside places</b>: each item rolled from interior furniture (not the entrance's) has a chance of being an outfit: 0.12% × (1 + meters walked in the session ÷ 2,000) × 1.5, capped at 0.6% (traits that change distance count; luck traits don't). Walking more in the session raises the chance. At the outfit's "right" place, it weighs 4 times more in the roll.</li>
+<li><b>On the job-specific zombie's body</b> ("more dead"): each uniformed zombie has a 10% chance of carrying the full outfit.</li>
+<li><b>In rescue flare crates</b>: the medium one has a 5% chance and the hard one 10% of bringing a random outfit.</li>
+<li><b>In memories</b>: finishing a memory unlocks its outfit straight into the wardrobe.</li>
+</ul>
+
+<h3>List of outfits</h3>
+<div class="tbl"><table>
+<tr><th>Outfit</th><th>Item</th><th>Rarity</th><th>Description</th><th>How to unlock</th></tr>
+<tr><td>Survivor</td><td>—</td><td>Common</td><td>Scarf, backpack and chest flashlight.</td><td>Unlocked from the start</td></tr>
+<tr><td>Student</td><td><a href="item-roupa_estudante.html">Outfit: Student</a></td><td>Common</td><td>Hoodie, headphones around the neck and small backpack.</td><td>Interior loot; more at <a href="lugar-escola.html">school</a> and <a href="lugar-roupas.html">clothes</a></td></tr>
+<tr><td>Paramedic</td><td><a href="item-roupa_paramedica.html">Outfit: Paramedic</a></td><td>Uncommon</td><td>Jacket with reflective stripes, ponytail and first aid bag.</td><td>Interior loot; more at <a href="lugar-saude.html">health</a> and <a href="lugar-bombeiros.html">fire station</a></td></tr>
+<tr><td>Construction worker</td><td><a href="item-roupa_operario.html">Outfit: Construction worker</a></td><td>Uncommon</td><td>Overalls, hard hat and tool belt.</td><td>Interior loot; more at <a href="lugar-construcao.html">construction</a></td></tr>
+<tr><td>Biker</td><td><a href="item-roupa_motoqueiro.html">Outfit: Biker</a></td><td>Rare</td><td>Leather jacket, bandana over the face and gloves.</td><td>Interior loot; more at <a href="lugar-posto.html">gas station</a> and <a href="lugar-roupas.html">clothes</a></td></tr>
+<tr><td>Hunter</td><td><a href="item-roupa_cacador.html">Outfit: Hunter</a></td><td>Rare</td><td>Canvas coat, wide-brimmed hat and frame backpack.</td><td>Interior loot; more at <a href="lugar-casa.html">house</a> and <a href="lugar-roupas.html">clothes</a></td></tr>
+<tr><td>Plainclothes cop</td><td><a href="item-roupa_policial.html">Outfit: Plainclothes cop</a></td><td>Rare</td><td>Shirt, black vest and cap.</td><td>Interior loot; more at <a href="lugar-policia.html">police</a></td></tr>
+<tr><td>Wanderer</td><td><a href="item-roupa_andarilha.html">Outfit: Wanderer</a></td><td>Legendary</td><td>Ragged poncho, long hair and a staff on the back.</td><td>Interior loot (any place)</td></tr>
+<tr><td>Supermarket clerk</td><td><a href="item-roupa_mercado.html">Outfit: Supermarket clerk</a></td><td>Common</td><td>Green apron and supermarket badge.</td><td>Body of the <a href="zumbi-mercado.html">supermarket clerk zombie</a></td></tr>
+<tr><td>Doctor</td><td><a href="item-roupa_medico.html">Outfit: Doctor</a></td><td>Uncommon</td><td>White lab coat, stethoscope and badge.</td><td>Body of the <a href="zumbi-medico.html">doctor zombie</a></td></tr>
+<tr><td>Construction worker</td><td><a href="item-roupa_obra.html">Outfit: Construction worker</a></td><td>Uncommon</td><td>Reflective vest and hard hat.</td><td>Body of the <a href="zumbi-obra.html">construction worker zombie</a></td></tr>
+<tr><td>Inmate</td><td><a href="item-roupa_presidiario.html">Outfit: Inmate</a></td><td>Uncommon</td><td>Orange prison jumpsuit.</td><td>Body of the <a href="zumbi-presidiario.html">inmate zombie</a></td></tr>
+<tr><td>Backpacker</td><td><a href="item-roupa_mochileiro.html">Outfit: Backpacker</a></td><td>Uncommon</td><td>Hiking pack and trail clothes.</td><td>Body of the <a href="zumbi-mochileiro.html">backpacker zombie</a></td></tr>
+<tr><td>Security guard</td><td><a href="item-roupa_seguranca.html">Outfit: Security guard</a></td><td>Uncommon</td><td>Black suit, light vest and radio.</td><td>Body of the <a href="zumbi-seguranca.html">security guard zombie</a></td></tr>
+<tr><td>Firefighter</td><td><a href="item-roupa_bombeiro.html">Outfit: Firefighter</a></td><td>Rare</td><td>Turnout gear and helmet.</td><td>Body of the <a href="zumbi-bombeiro.html">firefighter zombie</a></td></tr>
+<tr><td>Police officer</td><td><a href="item-roupa_policia.html">Outfit: Police officer</a></td><td>Rare</td><td>Police uniform, vest and cap.</td><td>Body of the <a href="zumbi-policia.html">police officer zombie</a>, or finish the memory <a href="memoria-quinta.html">Thursday duty</a></td></tr>
+<tr><td>Soldier</td><td><a href="item-roupa_militar.html">Outfit: Soldier</a></td><td>Legendary</td><td>Camo fatigues, helmet and tactical vest.</td><td>Body of the <a href="zumbi-militar.html">soldier zombie</a>, or finish the memory <a href="memoria-cofre.html">The vault</a></td></tr>
+<tr><td>Mail carrier</td><td>—</td><td>Special</td><td>Blue uniform, cap and the mail bag across the shoulder.</td><td>Finish the memory <a href="memoria-entrega.html">The last delivery</a></td></tr>
+<tr><td>Doorman</td><td>—</td><td>Special</td><td>Dress shirt, dark trousers, the building's cap and a bunch of keys on the belt.</td><td>Finish the memory <a href="memoria-jorge.html">Old Jorge</a></td></tr>
+<tr><td>Nurse</td><td>—</td><td>Special</td><td>Scrubs, ponytail, badge and scissors in the pocket.</td><td>Finish the memory <a href="memoria-plantao.html">The night shift</a></td></tr>
+<tr><td>Radio host</td><td>—</td><td>Special</td><td>Studio headset with microphone, sweater and jeans.</td><td>Finish the memory <a href="memoria-voz.html">The crow's voice</a></td></tr>
+</table></div>
+<p>Zombie uniforms never drop in place loot, and memory outfits never drop in loot or from zombies. In the wardrobe, an outfit not yet unlocked appears as <i>???</i> (memory outfits show their name).</p>
+<p>The <a href="zumbi-chefe.html">Brute</a> has no outfit.</p>
+
+<h2>See also</h2>
+<ul>
+<li><a href="mochila-e-peso.html">Backpack and weight</a></li>
+<li><a href="deposito-do-radio.html">Radio depot</a></li>
+<li><a href="memorias.html">Memories</a></li>
+<li><a href="receitas.html">Recipes</a></li>
+</ul>

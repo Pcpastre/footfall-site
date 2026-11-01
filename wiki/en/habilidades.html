@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Skills — Footfall Wiki</title>
+<meta name="description" content="The 10 skills, how each one gains experience, the XP formula and what each level changes.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="alternate" hreflang="pt-BR" href="https://footfall.pcpastre.com/wiki/habilidades.html"><link rel="alternate" hreflang="en" href="https://footfall.pcpastre.com/wiki/en/habilidades.html"><link rel="alternate" hreflang="es" href="https://footfall.pcpastre.com/wiki/es/habilidades.html">
+<link rel="icon" type="image/png" href="../../img/icone.png">
+<link rel="stylesheet" href="../../estilo.css">
+<link rel="stylesheet" href="../wiki.css">
+</head>
+<body class="wiki" data-a="../">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../../index.html?lang=en" aria-label="Footfall"><img class="px" src="../../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <div class="langs" role="group" aria-label="Language"><a class="flag" href="../habilidades.html" hreflang="pt-BR" title="Português"><img class="px" src="../../img/flags/pt.png" alt="Português" width="18" height="12"></a><a class="flag" href="habilidades.html" hreflang="en" title="English" aria-current="true"><img class="px" src="../../img/flags/en.png" alt="English" width="18" height="12"></a><a class="flag" href="../es/habilidades.html" hreflang="es" title="Español"><img class="px" src="../../img/flags/es.png" alt="Español" width="18" height="12"></a></div>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Sections</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Wiki sections"><details open><summary>Indexes</summary><ul><li><a href="itens.html">All items</a></li><li><a href="lugares.html">Places</a></li><li><a href="zumbis-lista.html">Zombie types</a></li><li><a href="memorias-lista.html">The memories</a></li></ul></details><details open><summary>Getting started</summary><ul><li><a href="criacao-de-personagem.html">Character creation</a></li><li><a href="sessao-e-mapa.html">Session and map</a></li></ul></details><details open><summary>Character</summary><ul><li><a href="mochila-e-peso.html">Backpack and weight</a></li><li><a href="morte.html">Death</a></li><li><a href="profissoes.html">Professions</a></li><li><a href="habilidades.html" aria-current=page>Skills</a></li><li><a href="costura-e-roupas.html">Tailoring and clothes</a></li><li><a href="tracos.html">Traits</a></li></ul></details><details open><summary>Health</summary><ul><li><a href="cansaco-e-sono.html">Fatigue and sleep</a></li><li><a href="infeccao.html">Infection</a></li><li><a href="mente.html">Mind</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Needs</a></li><li><a href="temperatura.html">Temperature</a></li><li><a href="tratamento.html">Treatment</a></li><li><a href="feridas.html">Wounds</a></li></ul></details><details open><summary>World</summary><ul><li><a href="horda-e-alarmes.html">Horde and alarms</a></li><li><a href="barulho.html">Noise</a></li><li><a href="visao.html">Vision</a></li><li><a href="clima-e-hora.html">Weather and time</a></li><li><a href="zumbis.html">Zombies</a></li></ul></details><details open><summary>Looting</summary><ul><li><a href="corpos.html">Bodies</a></li><li><a href="bunkers.html">Bunkers</a></li><li><a href="saque.html">Looting</a></li></ul></details><details open><summary>Combat</summary><ul><li><a href="tela-de-acao.html">Action screen</a></li><li><a href="controles.html">Controls</a></li><li><a href="armas-de-fogo.html">Firearms</a></li><li><a href="combate-corpo-a-corpo.html">Melee combat</a></li><li><a href="arremesso.html">Throwing</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="base.html">Base</a></li><li><a href="moveis-da-base.html">Base furniture</a></li><li><a href="horta.html">Garden</a></li><li><a href="cozinha.html">Kitchen</a></li><li><a href="ataque-noturno.html">Night attack</a></li><li><a href="deposito-do-radio.html">Radio vault and outposts</a></li><li><a href="receitas.html">Recipes</a></li><li><a href="armadilhas.html">Traps</a></li><li><a href="paredes-portas-e-janelas.html">Walls, doors and windows</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Group</a></li><li><a href="mercado-e-selos.html">Market and stamps</a></li><li><a href="pontos-dominados.html">Strongholds</a></li></ul></details><details open><summary>Crow and radio</summary><ul><li><a href="corvo.html">Crow</a></li><li><a href="radio.html">Radio</a></li></ul></details><details open><summary>Memories</summary><ul><li><a href="memorias.html">Memories</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Character</p>
+<h1>Skills</h1>
+<p class="sub">The 10 skills, how each one gains experience, the XP formula and what each level changes.</p>
+
+<p>Skills go up with use, from level 0 to <b>10</b>, and are all lost when the character <a href="morte.html">dies</a> ("They go up with use. If you die, you lose it all."). You start with the levels given by your <a href="profissoes.html">profession</a> and by some <a href="tracos.html">traits</a>. Progress appears on the character panel, <kbd>Skills</kbd> tab: ten little level squares and a thin bar with the XP to the next one.</p>
+
+<h2>The ten skills</h2>
+<div class="tbl"><table>
+<tr><th>Skill</th><th>How it gains XP</th><th>What each level gives</th></tr>
+<tr><td>Melee weapons</td><td>Landing hits with a melee weapon in a fight</td><td>+5% melee damage, +2% critical window, 3% chance of not using durability, −3% chance of missing the head</td></tr>
+<tr><td>Strength</td><td>Killing zombies, shoving, punching</td><td>+3% melee damage, +0.5 kg in pockets, +1.5 m throwing distance, cheaper and stronger shove, escapes grabs faster</td></tr>
+<tr><td>Stamina</td><td>Walking and running; each hit landed</td><td>+3% max stamina, +5% stamina recovery, −4% cost when running in a fight</td></tr>
+<tr><td>Stealth</td><td>Walking slowly near zombies; throwing distractions</td><td>−4% noise, zombies spot you 4% closer</td></tr>
+<tr><td>First aid</td><td>Treatment steps, quick dressings, medical recipes</td><td>−8% time per step, −12 points on failure chance, −5% healing time, +10% health per healing item</td></tr>
+<tr><td>Carpentry</td><td>Building and repairing the base, dismantling furniture, recipes</td><td>+5 health per wall repair, unlocks recipes, −0.5% chance of cutting yourself</td></tr>
+<tr><td>Mechanics</td><td>Mechanics recipes, reinforcing walls with sheet metal</td><td>+5% on each weapon repair, unlocks recipes, −0.5% chance of cutting yourself</td></tr>
+<tr><td>Farming</td><td>Planting, watering, harvesting, garden recipes</td><td>−5% growing time, +1 vegetable per harvest every 2 levels</td></tr>
+<tr><td>Firearms</td><td>Landing shots in a fight</td><td>−0.5° spread, +4% headshots when aiming, −5% reload time; at level 6 panic no longer reduces shot damage</td></tr>
+<tr><td>Tailoring</td><td>Sewing clothes, pitching the tent, tailoring recipes</td><td>−5% clothing wear</td></tr>
+</table></div>
+
+<h2>Experience formula</h2>
+<p>Going from level <i>N</i> to <i>N</i>+1 takes <b>60 × (N + 1)</b> XP points. Leftover XP carries over to the next level, and a big gain can raise several levels at once. At level 10 the skill stops gaining XP. When you level up, the notice "Level up: &lt;skill&gt; &lt;level&gt;" appears.</p>
+<div class="tbl"><table>
+<tr><th>From → to</th><th>Level XP</th><th>Cumulative XP</th></tr>
+<tr><td>0 → 1</td><td>60</td><td>60</td></tr>
+<tr><td>1 → 2</td><td>120</td><td>180</td></tr>
+<tr><td>2 → 3</td><td>180</td><td>360</td></tr>
+<tr><td>3 → 4</td><td>240</td><td>600</td></tr>
+<tr><td>4 → 5</td><td>300</td><td>900</td></tr>
+<tr><td>5 → 6</td><td>360</td><td>1,260</td></tr>
+<tr><td>6 → 7</td><td>420</td><td>1,680</td></tr>
+<tr><td>7 → 8</td><td>480</td><td>2,160</td></tr>
+<tr><td>8 → 9</td><td>540</td><td>2,700</td></tr>
+<tr><td>9 → 10</td><td>600</td><td>3,300</td></tr>
+</table></div>
+
+<h3>XP multipliers</h3>
+<p>Every XP gain is multiplied by these factors, which stack:</p>
+<div class="tbl"><table>
+<tr><th>Factor</th><th>Multiplier</th><th>Applies to</th></tr>
+<tr><td>Fast learner trait</td><td>×1.3</td><td>All</td></tr>
+<tr><td>Slow learner trait</td><td>×0.7</td><td>All</td></tr>
+<tr><td>Sadness: Down / Sad / Depressed</td><td>×0.9 / ×0.75 / ×0.6</td><td>All</td></tr>
+<tr><td>Boredom: Bored to death</td><td>×0.9</td><td>All</td></tr>
+<tr><td>Book read (24 real hours)</td><td>×1.5</td><td>The book's skill</td></tr>
+<tr><td>Group role</td><td>×1.25 (×1.5 with the Leader trait)</td><td>The role's two skills</td></tr>
+</table></div>
+<p>Sadness and boredom are covered in <a href="mente.html">Mind</a>. On the Skills tab, a skill with an active book shows the tag <i>book ×1.5</i>, and those of your role show <i>role ×1.25</i>.</p>
+
+<h3>Books</h3>
+<div class="tbl"><table>
+<tr><th>Book</th><th>Skills</th></tr>
+<tr><td><a href="item-livro_medicina.html">First aid book</a></td><td>First aid</td></tr>
+<tr><td><a href="item-livro_carpintaria.html">Carpentry book</a></td><td>Carpentry</td></tr>
+<tr><td><a href="item-livro_mecanica.html">Mechanics manual</a></td><td>Mechanics</td></tr>
+<tr><td><a href="item-livro_agricultura.html">Garden almanac</a></td><td>Farming</td></tr>
+<tr><td><a href="item-livro_armas.html">Shooting magazine</a></td><td>Firearms and Melee weapons</td></tr>
+<tr><td><a href="item-livro_costura.html">Sewing magazine</a></td><td>Tailoring</td></tr>
+</table></div>
+<p>Reading (<kbd>Read</kbd> button) uses up the book, gives +50% XP in those skills for 1 real day and removes 20 boredom. Reading again before it runs out restarts the 24 h.</p>
+
+<h3>Group role</h3>
+<p>In a group, each member can choose a role. It gives +25% XP in two skills (+50% with the Leader trait):</p>
+<div class="tbl"><table>
+<tr><th>Role</th><th>Skills</th><th>Other effect</th></tr>
+<tr><td>Doctor</td><td>First aid, Tailoring</td><td>Treatment steps 10% faster</td></tr>
+<tr><td>Builder</td><td>Carpentry, Mechanics</td><td>—</td></tr>
+<tr><td>Scout</td><td>Stealth, Stamina</td><td>Map vision 5% wider</td></tr>
+</table></div>
+
+<h2>Each skill in detail</h2>
+
+<h3>Melee weapons</h3>
+<p><b>XP:</b> 4 per hit landed with a melee weapon, counted at the end of each fight; 10 per guard when you win the takeover of a point.</p>
+<p><b>Effects per level:</b> melee damage starts at 75% and adds 5 points per level (level 5 = 100% without traits). The critical window grows 2% per level. Each hit has a 3% chance per level of not using the weapon's durability. The chance that a head strike hits the shoulder drops 3 points per level (base 40%, minimum 5%).</p>
+
+<h3>Strength</h3>
+<p><b>XP:</b> 6 per zombie killed and 2 per shove, counted at the end of the fight; fighting with fists, hits (4 each) also go to Strength instead of Melee weapons.</p>
+<p><b>Effects per level:</b> +3% melee damage; +0.5 kg of pocket capacity; throwing on the map reaches 18 m + 1.5 m per level; the shove costs 20 stamina minus 1 per Strength level (minimum 12), pushes harder and knocks down more often (45% + 4% per level, up to 80%); to break free of a grab, each level helps 8% more.</p>
+
+<h3>Stamina</h3>
+<p><b>XP:</b> walking, 1 every 150 m; running (above 3 m/s), 1 every 40 m. Vehicles don't count. In a fight, +1 per hit landed.</p>
+<p><b>Effects per level:</b> +3% max stamina (added to the stamina trait multiplier), +5% to how fast it comes back, −4% stamina cost when running on the action screen.</p>
+
+<h3>Stealth</h3>
+<p><b>XP:</b> 1 every 15 m walked below 1.8 m/s with an awake zombie that isn't chasing you within 40 m; 3 per object thrown on the map (bottle, <a href="item-rojao.html">firework</a>, <a href="item-despertador.html">alarm clock</a>...).</p>
+<p><b>Effects per level:</b> −4% to your footstep noise (total noise never goes below 30% of normal) and −4% to the distance at which zombies spot you on the map.</p>
+
+<h3>First aid</h3>
+<p><b>XP per <a href="tratamento.html">treatment</a> step done right:</b></p>
+<div class="tbl"><table>
+<tr><th>Step</th><th>XP</th></tr>
+<tr><td>Clean and disinfect</td><td>5</td></tr>
+<tr><td>Remove the shrapnel</td><td>15</td></tr>
+<tr><td>Suture</td><td>20</td></tr>
+<tr><td>Bandage</td><td>10</td></tr>
+<tr><td>Tourniquet</td><td>10</td></tr>
+<tr><td>Immobilize (splint)</td><td>15</td></tr>
+<tr><td>Ointment</td><td>8</td></tr>
+<tr><td>Failed step</td><td>2</td></tr>
+<tr><td>Quick dressing</td><td>15</td></tr>
+</table></div>
+<p>The recipes Dressing (10), Sterile dressing (15, requires level 1) and Splint (8) also give XP.</p>
+<p><b>Effects per level:</b> each step takes 8% less time; the failure chance for sutures and shrapnel drops 12 points; wounds heal 5% faster; items that restore health (bandage, kit, antibiotic...) heal 10% more.</p>
+
+<h3>Carpentry</h3>
+<p><b>XP outside recipes:</b></p>
+<div class="tbl"><table>
+<tr><th>Action</th><th>XP</th></tr>
+<tr><td>Marking out the base</td><td>10</td></tr>
+<tr><td>Raising a wall</td><td>5 per plank used + 5</td></tr>
+<tr><td>Expanding the base</td><td>3 per plank used</td></tr>
+<tr><td>Opening a door or window</td><td>8</td></tr>
+<tr><td>Repairing a wall</td><td>10</td></tr>
+<tr><td>Reinforcing a sheet metal wall to concrete</td><td>20</td></tr>
+<tr><td>Repairing a door/window</td><td>6</td></tr>
+<tr><td>Nailing planks over an opening</td><td>8</td></tr>
+<tr><td>Rearming a trap</td><td>6</td></tr>
+<tr><td>Dismantling furniture on the action screen</td><td>8</td></tr>
+</table></div>
+<p><b>Carpentry recipes (XP):</b> Workbench 40, Chest 25, Bed 30, Table 20, Nail bat 25, Stretcher 30 (level 1), Rain barrel 25, Stakes 20, Watchtower 50 (level 2), Mailbox 15, Makeshift bow 30 (level 1), Arrows 12.</p>
+<p><b>Effects per level:</b> each wall repair restores 50 + 5 per level of health; recipes require a minimum level; in every carpentry or mechanics recipe there's a 3% chance the tool slips and gives you a deep cut on the hand, minus 0.5 points per level of the recipe's skill (zero from level 6 on).</p>
+
+<h3>Mechanics</h3>
+<p><b>XP:</b> 20 for reinforcing a wooden wall to sheet metal. Recipes: Makeshift spear 30 (level 1), Repair weapon in hand 20, Repair weapon at the workbench 30 (level 1), Wood stove 30, Floodlight 30 (level 1), Improvised silencer 15, Reload shells 20 (level 1), Blade on the tip of the long weapon 15, Flashlight mounted on the weapon 15.</p>
+<p><b>Effects per level:</b> each weapon repair restores 5% more; unlocks level 1 recipes; reduces the risk of cutting your hand (like Carpentry).</p>
+
+<h3>Farming</h3>
+<p><b>XP:</b> planting 8, watering 3, harvesting 25; recipes Garden bed 15 and Canned vegetables 12.</p>
+<p><b>Effects per level:</b> (see <a href="horta.html">Garden</a>) the garden bed needs 72 watered hours to be ready, minus 5% per level (level 10 = 36 h); each harvest gives 3 vegetables + 1 every 2 levels (level 10 = 8).</p>
+
+<h3>Firearms</h3>
+<p><b>XP:</b> 6 per shot that hits, counted at the end of the fight.</p>
+<p><b>Effects per level:</b> single-shot spread drops 0.5° per level (never below 1°) and the shotgun's 0.4°; the chance of hitting the head rises 4 points per level when aiming for the head (3 without aiming); reloading gets 5% faster. Below level 6, Strong panic removes 15% and Extreme panic 25% of shot damage; from level 6 on, it no longer does.</p>
+
+<h3>Tailoring</h3>
+<p><b>XP:</b> sewing a piece of clothing 5; pitching the tent 6; recipes Sleeping bag 35 (level 1), Tent 80 (level 2) and Patch the tarp 25.</p>
+<p><b>Effects per level:</b> clothes wear 5% less with each hit or bite they block (level 10 = half the wear).</p>
+
+<h2>Recipes that give no XP</h2>
+<p>The full list of recipes, with ingredients, is in <a href="receitas.html">Recipes</a>.</p>
+<p>Recipes without a skill give no experience at all: Campfire, Molotov cocktail, Tin can wire, Covered pit, Extract the gunpowder from a firework, Biodiesel, Wrap the weapon's handle, all food cooked on the fire (except Canned vegetables), Boil water and Filter water through cloth. Rebuilding a piece of furniture you dismantled also gives no XP.</p>
+
+<div class="tip warn"><b>Lost on death</b>All XP and all levels are gone when the character dies. The new character starts again from the profession and trait levels. See <a href="morte.html">Death</a>.</div>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Footer">
+      <a href="../../index.html?lang=en">Site</a>
+      <a href="../../guias.html?lang=en">Guides</a>
+      <a href="index.html">Wiki</a>
+      <a href="../../privacidade.html?lang=en">Privacy policy</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki generated from the game code. Values may change between versions.</div>
+</footer>
+<script src="../wiki.js" defer></script>
+</body>
+</html>

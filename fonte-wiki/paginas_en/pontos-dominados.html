@@ -1,0 +1,118 @@
+<!-- titulo: Strongholds | categoria: Social | resumo: Which places can be taken over, the arena against bandits or guards, armed guards, daily taxes and how to lose a stronghold. -->
+<p>Some large places on the map can be <b>taken over</b>: you beat the defenders in an arena and the place becomes yours (or your <a href="grupo.html">group's</a>). A stronghold pays <b>taxes in stamps</b> every day, and you protect it by leaving <b>armed guards</b>. All of this requires an <b>online account</b> (<i>"Strongholds need an online account."</i>).</p>
+
+<h2>Which places</h2>
+<div class="tbl"><table>
+<tr><th>Place type</th><th>Can be taken over</th></tr>
+<tr><td><a href="lugar-saude.html">Health</a></td><td>yes</td></tr>
+<tr><td><a href="lugar-mercado.html">Market</a></td><td>yes</td></tr>
+<tr><td><a href="lugar-restaurante.html">Restaurant</a></td><td>yes</td></tr>
+<tr><td><a href="lugar-construcao.html">Construction</a></td><td>yes</td></tr>
+<tr><td><a href="lugar-posto.html">Gas station</a></td><td>yes</td></tr>
+<tr><td><a href="lugar-policia.html">Police</a></td><td>yes</td></tr>
+<tr><td><a href="lugar-bombeiros.html">Fire station</a></td><td>yes</td></tr>
+<tr><td><a href="lugar-escola.html">School</a></td><td>yes</td></tr>
+<tr><td><a href="lugar-roupas.html">Clothes</a>, <a href="lugar-eletronicos.html">Electronics</a>, <a href="lugar-loja.html">Shop</a>, <a href="lugar-casa.html">House</a>, <a href="lugar-bunker.html">Bunker</a>, crates and piles of bodies</td><td>no</td></tr>
+</table></div>
+<p>On the map, stronghold buildings stand a bit taller (at least 9 m) and are colored by owner: free (bandits), another group's or yours. The list of nearby owners is updated every 2 minutes.</p>
+
+<h2>How to take a stronghold</h2>
+<ol class="steps">
+<li>Get to the place and open its loot (the loot button on the map).</li>
+<li>On the place's screen the flag option appears: <kbd>Take the stronghold (bandits)</kbd> for a free stronghold, or <kbd>Take the stronghold (N guards)</kbd> for another group's stronghold.</li>
+<li>Tap it. The action screen opens in the stronghold's <b>arena</b> and you disappear from the map.</li>
+<li>Take down <b>all</b> the defenders without dying, without fleeing and without leaving the arena.</li>
+</ol>
+<p>You can't go in with a zombie chasing you (<i>"There's a zombie after you."</i>), with a zombie 15 m away or closer (<i>"A zombie is too close."</i>) or during another fight. A stronghold that was just taken stays protected for a while (<i>"Stronghold just taken: protected for a while."</i>). A stronghold with an owner but <b>no guards</b> is taken on the spot, with no fight.</p>
+
+<h3>The arena</h3>
+<p>The arena is always the same for each place: an intersection of two streets with up to 12 abandoned cars and up to 18 barricades scattered within a radius of about 36 m, surrounded by a ring of barricades with gaps 44 m from the center. There's no place to enter and no furniture to rummage: just the fight. You start 26 m from the center; the defenders appear on the other side, facing you.</p>
+
+<h3>Result</h3>
+<ul>
+<li><b>You won</b>: <i>"(Place) is now yours! Leave armed guards and collect the taxes (4 stamps per day)."</i> (in a group: <i>"your group's"</i>). The action screen stays open: you can walk around and enter the place. You earn 10 Melee weapons XP per defender.</li>
+<li><b>You left or fled</b>: <i>"You fell back. N guard(s) still left at (place)."</i> The guards you took down at another group's stronghold stay down.</li>
+<li>Weapons from downed guards may come to you: <i>"Picked up ..."</i>.</li>
+</ul>
+
+<h2>Bandits (free stronghold)</h2>
+<p>Every stronghold without an owner is defended by <b>armed bandits</b>, always the same ones at that place:</p>
+<ul>
+<li>there are <b>3 or 4</b>;</li>
+<li>the first has a 70% chance of having a firearm or bow;</li>
+<li>the others (and the first, in the other 30%) have a melee weapon.</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Possible firearms/bows</th><th>Possible melee weapons</th></tr>
+<tr><td><a href="item-pistola.html">9mm pistol</a>, <a href="item-arco.html">Makeshift bow</a>, <a href="item-escopeta.html">12-gauge shotgun</a>, <a href="item-revolver.html">.38 revolver</a>, <a href="item-carabina.html">.22 rifle</a>, <a href="item-rifle.html">.308 hunting rifle</a>, <a href="item-submetralhadora.html">9mm submachine gun</a></td><td><a href="item-faca.html">Kitchen knife</a>, <a href="item-cano.html">Iron pipe</a>, <a href="item-taco.html">Baseball bat</a>, <a href="item-facao.html">Machete</a>, <a href="item-martelo.html">Hammer</a>, <a href="item-cassetete.html">Baton</a>, <a href="item-foice.html">Scythe</a>, <a href="item-chave_inglesa.html">Wrench</a>, <a href="item-faca_combate.html">Combat knife</a></td></tr>
+</table></div>
+
+<h2>How guards fight</h2>
+<p>Bandits and guards use the same rules:</p>
+<div class="tbl"><table>
+<tr><th></th><th>With a firearm or bow</th><th>With a melee weapon</th></tr>
+<tr><td>Health</td><td>34</td><td>34</td></tr>
+<tr><td>Speed</td><td>1.25</td><td>1.25</td></tr>
+<tr><td>Behavior</td><td>Stays about 10 m away and shoots when it has a clear line; backs off if you get within 6 m</td><td>Comes up to you and hits</td></tr>
+<tr><td>Hit chance</td><td>42% − 1.2% per meter of distance; −10% if you're crouched; −12% if you're running; +15% if you're on the ground</td><td>55% (otherwise you <i>dodged</i>)</td></tr>
+<tr><td>Damage</td><td>Half the weapon's damage, between 3 and 9; shard wound</td><td>70% of the weapon's damage, between 2 and 10; cut (weapon with 6 or more damage) or bruise</td></tr>
+<tr><td>Interval</td><td>3× the weapon's fire rate (at least 1 s) + up to 0.7 s</td><td>2.4× the rate + 0.5 s</td></tr>
+</table></div>
+<p>Guards don't grab or bite, and their wounds <b>don't pass on the infection</b>. The clothing on the part that's hit can stop the shot or the blow.</p>
+
+<h2>Your stronghold's guards</h2>
+<p>At your stronghold, the option becomes <kbd>Your stronghold</kbd> (or <kbd>Group stronghold</kbd>) and opens the stronghold panel.</p>
+<div class="tbl"><table>
+<tr><th>Rule</th><th>Value</th></tr>
+<tr><td>Max guards</td><td>6</td></tr>
+<tr><td>How to place one</td><td><kbd>Place</kbd> on a weapon in the <b>backpack</b> (the one in hand doesn't count)</td></tr>
+<tr><td>Cost</td><td>The weapon goes with the guard; firearms and bows take ammo along</td></tr>
+<tr><td>Downed guard</td><td>Disappears with the weapon</td></tr>
+<tr><td>Stronghold without guards</td><td><i>"None: anyone takes the stronghold without a fight."</i></td></tr>
+</table></div>
+<div class="tbl"><table>
+<tr><th>Guard's weapon</th><th>Ammo that goes along</th></tr>
+<tr><td><a href="item-pistola.html">9mm pistol</a></td><td>12 <a href="item-municao.html">9mm ammo</a></td></tr>
+<tr><td><a href="item-submetralhadora.html">9mm submachine gun</a></td><td>30 <a href="item-municao.html">9mm ammo</a></td></tr>
+<tr><td><a href="item-revolver.html">.38 revolver</a></td><td>12 <a href="item-municao_38.html">.38 ammo</a></td></tr>
+<tr><td><a href="item-carabina.html">.22 rifle</a></td><td>20 <a href="item-municao_22.html">.22 ammo</a></td></tr>
+<tr><td><a href="item-rifle.html">.308 hunting rifle</a></td><td>5 <a href="item-municao_308.html">.308 ammo</a></td></tr>
+<tr><td><a href="item-fuzil.html">5.56 rifle</a></td><td>30 <a href="item-municao_556.html">5.56 ammo</a></td></tr>
+<tr><td><a href="item-escopeta.html">12-gauge shotgun</a></td><td>6 <a href="item-cartucho.html">shells</a></td></tr>
+<tr><td><a href="item-escopeta_serrada.html">Sawed-off shotgun</a></td><td>6 <a href="item-cartucho.html">shells</a></td></tr>
+<tr><td><a href="item-arco.html">Makeshift bow</a></td><td>10 <a href="item-flecha.html">arrows</a></td></tr>
+<tr><td><a href="item-besta.html">Crossbow</a></td><td>10 <a href="item-flecha.html">arrows</a></td></tr>
+<tr><td>Any melee weapon</td><td>nothing</td></tr>
+</table></div>
+<p>The panel's list only shows the weapons you can place right now (with the required ammo in the backpack). The weapon and ammo leave the backpack before the server responds; if there's an error, they come back.</p>
+
+<h2>Taxes</h2>
+<p>A stronghold of yours yields <b>4 stamps per day</b> (every 24 h), stacking up to <b>7 days</b> at most. The guards get paid wages: <b>12 stamps per week</b>, deducted when you collect.</p>
+<p><b>received = 4 × days − ⌊days × 12 ÷ 7⌋</b>, with days from 1 to 7.</p>
+<div class="tbl"><table>
+<tr><th>Days stacked</th><th>Gross</th><th>Wages</th><th>You get</th></tr>
+<tr><td>1</td><td>4</td><td>1</td><td>3</td></tr>
+<tr><td>2</td><td>8</td><td>3</td><td>5</td></tr>
+<tr><td>3</td><td>12</td><td>5</td><td>7</td></tr>
+<tr><td>4</td><td>16</td><td>6</td><td>10</td></tr>
+<tr><td>5</td><td>20</td><td>8</td><td>12</td></tr>
+<tr><td>6</td><td>24</td><td>10</td><td>14</td></tr>
+<tr><td>7 (max)</td><td>28</td><td>12</td><td>16</td></tr>
+</table></div>
+<p>Tap <kbd>Collect</kbd> in the stronghold panel: <i>"Collected N stamp(s) in taxes (guard wages already deducted)."</i> Before 24 h: <i>"Nothing yet: taxes come in every 24 h (up to 7 days stacked)."</i> If you go past 7 days without collecting, anything beyond that is lost.</p>
+<div class="tip"><b>Collect every day</b>Because of how the wages round, collecting every day yields 3 stamps per day, versus about 2.3 per day (16 in 7 days) collecting once a week.</div>
+
+<h2>Losing a stronghold</h2>
+<ul>
+<li>Another player enters your stronghold's arena and takes down all your guards: the stronghold becomes theirs.</li>
+<li>Each guard that falls during an attempt <b>disappears with their weapon</b>, even if the attacker backs off afterwards.</li>
+<li>A stronghold without guards is taken by anyone, with no fight.</li>
+<li>Right after being taken, the stronghold stays protected for a while.</li>
+</ul>
+
+<h2>See also</h2>
+<ul>
+<li><a href="mercado-e-selos.html">Market and stamps</a></li>
+<li><a href="grupo.html">Group</a></li>
+<li><a href="tela-de-acao.html">Action screen</a></li>
+</ul>

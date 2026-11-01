@@ -1,0 +1,190 @@
+<!-- titulo: Saqueo | categoria: Saqueo | resumo: Cómo saquear por la puerta o por dentro, tiempo y ruido de cada mueble, cuántos objetos salen, el sorteo de rareza, hallazgos rarísimos, reposición semanal, puertas cerradas con llave y cortes de vidrio. -->
+<p>Saquear es abrir muebles de lugares reales del mapa (farmacias, mercados, comisarías, casas...) para encontrar objetos. Cada mueble toma un tiempo y hace ruido. Cuanto más hayas caminado en la sesión, y cuanto más adentro entres en el lugar, mayor es la probabilidad de que salga algo raro. Lo que tomas desaparece para los demás sobrevivientes hasta que el lugar se reponga.</p>
+
+<h2>Dónde se puede saquear</h2>
+<p>El botón <kbd>Saquear</kbd> del mapa busca, a hasta <b>35 m</b> de ti (el margen del GPS):</p>
+<ul>
+<li>lugares del mapa (tiendas, servicios; consulta los tipos en <a href="lugar-saude.html">Salud</a>, <a href="lugar-mercado.html">Mercado</a>, <a href="lugar-restaurante.html">Restaurante</a>, <a href="lugar-construcao.html">Construcción</a>, <a href="lugar-posto.html">Gasolinera</a>, <a href="lugar-policia.html">Policía</a>, <a href="lugar-bombeiros.html">Bomberos</a>, <a href="lugar-escola.html">Escuela</a>, <a href="lugar-roupas.html">Ropa</a>, <a href="lugar-eletronicos.html">Electrónicos</a>, <a href="lugar-loja.html">Tienda</a>);</li>
+<li><a href="lugar-casa.html">casas</a>: cualquier edificio de 20 a 600 m² sin tienda, contigo a hasta <b>12 m</b> de la pared;</li>
+<li><a href="corpos.html">cuerpos</a> de zombis abatidos y objetos tirados en el suelo (los cuerpos tienen preferencia cuando todo está cerca);</li>
+<li>cajas de suministros y cajas de rescate (consulta <a href="horda-e-alarmes.html">Horda y alarmas</a>);</li>
+<li>los <a href="bunkers.html">búnkeres</a> del mes.</li>
+</ul>
+<p>Con una sola cosa cerca, se abre directo. Con más de una, aparece la lista <kbd>Saquear</kbd> (hasta 8, de la más cercana a la más lejana), y los lugares ya saqueados aparecen con "ya saqueado (se puede entrar)". Sin nada: "Nada para saquear cerca".</p>
+
+<h2>Por la puerta o entrando</h2>
+<p>La pantalla de saqueo de un lugar muestra dos opciones lado a lado:</p>
+<div class="tbl"><table>
+<tr><th></th><th><kbd>Por la puerta</kbd></th><th><kbd>Entrar</kbd></th></tr>
+<tr><td>Dónde</td><td>en la propia pantalla de saqueo, en el mapa</td><td>abre la <a href="tela-de-acao.html">pantalla de acción</a> del lado de afuera de la puerta principal, con el edificio por dentro</td></tr>
+<tr><td>Muebles</td><td>los 3 muebles de la planta baja más cercanos a la puerta principal</td><td>todos los demás, en todos los pisos</td></tr>
+<tr><td>Raros</td><td>nunca (multiplicador de rareza 0)</td><td>multiplicador 1,5 (en el búnker, mayor en cada piso)</td></tr>
+<tr><td>Hallazgos rarísimos</td><td>no</td><td>sí (ver abajo)</td></tr>
+<tr><td>Peligro</td><td>solo los zombis de la calle</td><td>los zombis de adentro, más los de afuera que oigan el ruido</td></tr>
+</table></div>
+<p>Los edificios con altura de 9 m o más tienen 2 pisos, con 12 m o más tienen 3; la escuela, la comisaría y los bomberos tienen siempre al menos 2; la casa tiene 2 con 6 m o más. Los pisos de arriba tienen menos zombis (60%).</p>
+<p>También puedes entrar por la pantalla de acción caminando: al llegar a hasta 3,5 m de la puerta de un lugar, se abre por dentro solo; fuera del modo de caminar libre aparece el botón <kbd>ENTRAR: nombre del lugar</kbd>.</p>
+
+<h2>Hurgar</h2>
+<ol class="steps">
+<li>En la pantalla de saqueo, toca <kbd>Hurgar (X s · ruido)</kbd> en un mueble. En la pantalla de acción, acércate a hasta 1,3 m de él y toca <kbd>HURGAR NOMBRE DEL MUEBLE</kbd>.</li>
+<li>Quédate quieto hasta que se llene la barra. Un mueble a la vez.</li>
+<li>Abierto: toca un objeto para tomarlo (la munición viene en la pila entera) o <kbd>Tomar todo</kbd>.</li>
+</ol>
+<p><b>Tiempo</b> = tiempo del mueble ÷ (velocidad de saqueo). La profesión <b>Ladrón(a)</b> saquea 1,5× más rápido; estar triste (tristeza nivel 2 o más) lo vuelve 10% más lento.</p>
+<p><b>Interrupciones</b>:</p>
+<ul>
+<li>En el mapa, alejarte más de <b>20 m</b> del punto donde abriste el saqueo lo cancela ("Saqueo interrumpido: te alejaste.").</li>
+<li>Si empieza la pantalla de acción (un zombi te vio), el saqueo se cierra ("¡Saqueo interrumpido!") y se vuelve a abrir solo cuando termina la pelea, si todavía estás a hasta 35 m.</li>
+<li>En la pantalla de acción, caminar más de 0,45 m, ser derribado o agarrado detiene la búsqueda ("Dejaste de hurgar.").</li>
+</ul>
+<p>Abrir el primer mueble marca el lugar como <b>saqueado</b> durante 7 días (el búnker, hasta el comienzo del mes siguiente). Un lugar saqueado se puede seguir abriendo: lo que quedó sigue ahí.</p>
+
+<h3>Corte de vidrio</h3>
+<p>Cada mueble abierto (no vale para cuerpos) tiene <b>4%</b> de probabilidad de que te cortes la mano con un vidrio roto: te queda una esquirla en la mano ("Te cortaste la mano con un vidrio roto: tienes una esquirla. Mira la pantalla Salud.").</p>
+
+<h2 id="moveis">Tiempo y ruido de cada mueble</h2>
+<p>El ruido es el nivel de 0 a 1 mientras hurgas; el radio es ruido × 120 m (antes de la lluvia). Consulta <a href="barulho.html">Ruido</a>.</p>
+<div class="tbl"><table>
+<tr><th>Mueble</th><th>Tiempo (s)</th><th>Ruido</th><th>Radio</th><th>Etiqueta</th><th>Solo tiene</th></tr>
+<tr><td>Cesto de ropa</td><td>1,2</td><td>0,02</td><td>2,4 m</td><td>silencioso</td><td>ropa y trapos</td></tr>
+<tr><td>Mochilas perdidas</td><td>1,5</td><td>0,03</td><td>3,6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Perchero</td><td>1,2</td><td>0,03</td><td>3,6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Probador</td><td>1,0</td><td>0,03</td><td>3,6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Mesita de noche</td><td>1,0</td><td>0,03</td><td>3,6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Cuerpo</td><td>2,0</td><td>0,03</td><td>3,6 m</td><td>silencioso</td><td>consulta <a href="corpos.html">Cuerpos</a></td></tr>
+<tr><td>Estante</td><td>1,2</td><td>0,04</td><td>4,8 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Cajón</td><td>1,0</td><td>0,04</td><td>4,8 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Estantería</td><td>1,4</td><td>0,04</td><td>4,8 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Escritorio</td><td>1,2</td><td>0,04</td><td>4,8 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Mueble del baño</td><td>1,2</td><td>0,04</td><td>4,8 m</td><td>silencioso</td><td>vendajes y medicamentos leves</td></tr>
+<tr><td>Despensa</td><td>2,0</td><td>0,05</td><td>6 m</td><td>silencioso</td><td>comida</td></tr>
+<tr><td>Ropero</td><td>1,8</td><td>0,05</td><td>6 m</td><td>silencioso</td><td>ropa, mochilas, trapos</td></tr>
+<tr><td>Armario de suministros</td><td>1,5</td><td>0,05</td><td>6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Caja de suministros / de rescate</td><td>4,0</td><td>0,05</td><td>6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Refrigerador</td><td>2,0</td><td>0,06</td><td>7,2 m</td><td>silencioso</td><td>agua, carne, frutas, leche, pan</td></tr>
+<tr><td>Congelador</td><td>2,0</td><td>0,06</td><td>7,2 m</td><td>silencioso</td><td>agua, carne, frutas, leche, pan</td></tr>
+<tr><td>Mostrador</td><td>1,5</td><td>0,06</td><td>7,2 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Carro de medicación</td><td>1,6</td><td>0,06</td><td>7,2 m</td><td>silencioso</td><td>medicamentos y vendajes</td></tr>
+<tr><td>Archivador de acero</td><td>2,0</td><td>0,06</td><td>7,2 m</td><td>silencioso</td><td>mapas, libros, pilas, linterna, radio</td></tr>
+<tr><td>Alacena</td><td>1,8</td><td>0,07</td><td>8,4 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Cocina (escuela)</td><td>2,0</td><td>0,07</td><td>8,4 m</td><td>silencioso</td><td>comida</td></tr>
+<tr><td>Armario</td><td>2,0</td><td>0,08</td><td>9,6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Armario de EPI</td><td>2,2</td><td>0,08</td><td>9,6 m</td><td>silencioso</td><td>equipo de protección</td></tr>
+<tr><td>Sacos de cemento</td><td>2,5</td><td>0,08</td><td>9,6 m</td><td>silencioso</td><td>cemento, piedra, alambre, clavos</td></tr>
+<tr><td>Caja de munición</td><td>2,0</td><td>0,08</td><td>9,6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Banco de armas</td><td>2,5</td><td>0,08</td><td>9,6 m</td><td>silencioso</td><td>armas de fuego, munición, cuchillo de combate, cinta</td></tr>
+<tr><td>Almacén trasero</td><td>3,5</td><td>0,10</td><td>12 m</td><td>ruido moderado</td><td>-</td></tr>
+<tr><td>Botiquín</td><td>2,5</td><td>0,10</td><td>12 m</td><td>ruido moderado</td><td>-</td></tr>
+<tr><td>Depósito</td><td>3,0</td><td>0,10</td><td>12 m</td><td>ruido moderado</td><td>-</td></tr>
+<tr><td>Casilleros de alumnos</td><td>2,0</td><td>0,10</td><td>12 m</td><td>ruido moderado</td><td>-</td></tr>
+<tr><td>Garaje</td><td>2,5</td><td>0,10</td><td>12 m</td><td>ruido moderado</td><td>tablas, clavos, martillo, cinta, alambre, llave inglesa, tubo</td></tr>
+<tr><td>Armario de pruebas</td><td>2,5</td><td>0,10</td><td>12 m</td><td>ruido moderado</td><td>bastón policial, linterna, radio, munición, cuchillos, cigarrillos, cachaza...</td></tr>
+<tr><td>Mesa de laboratorio</td><td>2,5</td><td>0,10</td><td>12 m</td><td>ruido moderado</td><td>medicamentos fuertes</td></tr>
+<tr><td>Caja de herramientas</td><td>2,0</td><td>0,12</td><td>14,4 m</td><td>ruido moderado</td><td>-</td></tr>
+<tr><td>Cajón de morgue</td><td>3,0</td><td>0,12</td><td>14,4 m</td><td>ruido moderado</td><td>el bolsillo de un cuerpo</td></tr>
+<tr><td>Patrulla</td><td>2,5</td><td>0,14</td><td>16,8 m</td><td>ruido moderado</td><td>-</td></tr>
+<tr><td>Camión (bomberos)</td><td>3,0</td><td>0,15</td><td>18 m</td><td>ruido moderado</td><td>-</td></tr>
+<tr><td>Caja fuerte pequeña</td><td>4,0</td><td>0,15</td><td>18 m</td><td>ruido moderado</td><td>-</td></tr>
+<tr><td>Caja registradora</td><td>2,5</td><td>0,16</td><td>19,2 m</td><td>ruido moderado</td><td>-</td></tr>
+<tr><td>Armero</td><td>4,0</td><td>0,20</td><td>24 m</td><td>ruido fuerte</td><td>armas de fuego, munición, bastón policial</td></tr>
+<tr><td>Caja fuerte del búnker</td><td>6,0</td><td>0,20</td><td>24 m</td><td>ruido fuerte</td><td>-</td></tr>
+<tr><td>Vitrina de vidrio</td><td>3,0</td><td>0,22</td><td>26,4 m</td><td>ruido fuerte</td><td>-</td></tr>
+<tr><td>Arsenal cerrado</td><td>5,0</td><td>0,25</td><td>30 m</td><td>ruido fuerte</td><td>armas de fuego, munición, chaleco, bastón policial, casco antidisturbios, chaleco táctico</td></tr>
+</table></div>
+<p>Un mueble sin fila en la tabla usa el tiempo y el ruido del estante. "Solo tiene" quiere decir que el mueble acepta solo esos objetos: si el sorteo da otra cosa, se cambia por un objeto aceptado de la misma rareza o más común (si no hay ninguno, a veces, 30%, por cualquiera aceptado; si no, ese objeto no sale).</p>
+
+<h2>Cuántos objetos</h2>
+<div class="tbl"><table>
+<tr><th>Mueble</th><th>Objetos</th></tr>
+<tr><td>Normal</td><td>20% de probabilidad de vacío; si no, 1 a 3</td></tr>
+<tr><td>Almacén (salas de almacén por dentro)</td><td>2 a 5</td></tr>
+<tr><td>Salas de arsenal y de medicamentos por dentro</td><td>1 a 3 (nunca vacío); cada objeto tiene 45% de probabilidad de venir de la lista especial de la sala</td></tr>
+<tr><td>Munición suelta</td><td>cada sorteo de munición viene con 1 a 6 balas</td></tr>
+<tr><td>Munición en caja (Arsenal cerrado, salas de arsenal y de almacén)</td><td>6 a 15 balas</td></tr>
+</table></div>
+<p>La lista especial de la sala de arsenal: pistola, munición 9 mm, chaleco, bastón policial, linterna, escopeta, cartuchos, revólver, munición .38, subfusil, fusil, munición 5,56, casco antidisturbios, chaleco táctico, guantes tácticos, protector de antebrazo y escopeta recortada. La de medicamentos: antibiótico, botiquín de primeros auxilios, analgésico, ansiolítico, betabloqueante, antidepresivo, alcohol, morfina, kit de sutura, torniquete y suero.</p>
+<p>Cuando el edificio no se puede armar por dentro, el lugar usa una lista rápida de 3 o 4 muebles de su tipo (solo por la puerta).</p>
+
+<h2 id="raridade">El sorteo de rareza</h2>
+<p>Cada objeto sale así:</p>
+<ol class="steps">
+<li><b>Probabilidad de raro base</b> = 1% + 1,5% por km caminado en la sesión, como máximo <b>15%</b>. El rasgo Errante cuenta 10% más de distancia.</li>
+<li>Por la <b>suerte</b>: Afortunado ×1,1, Desafortunado ×0,9.</li>
+<li>Por el <b>lugar</b>: por la puerta ×0 (nunca raro), por dentro ×1,5, búnker ×(1,5 + 0,8 por piso debajo de la planta baja).</li>
+<li>Sorteo: por debajo de la probabilidad de raro sale <b>raro</b>; hasta 22 puntos porcentuales por encima de eso sale <b>poco común</b>; el resto es <b>común</b>.</li>
+<li>Elige un objeto de esa rareza de la lista del tipo de lugar. Si no hay ninguno de esa rareza, baja una (raro → poco común → común).</li>
+</ol>
+<p>Los objetos legendarios nunca salen de este sorteo, solo de los hallazgos especiales de abajo. La distancia es la de la <b>sesión actual</b>: terminarla la pone en cero.</p>
+<div class="tbl"><table>
+<tr><th>Caminado en la sesión</th><th>Raro base</th><th>Por dentro (×1,5)</th><th>Poco común por dentro</th></tr>
+<tr><td>0 km</td><td>1%</td><td>1,5%</td><td>22%</td></tr>
+<tr><td>1 km</td><td>2,5%</td><td>3,75%</td><td>22%</td></tr>
+<tr><td>2 km</td><td>4%</td><td>6%</td><td>22%</td></tr>
+<tr><td>4 km</td><td>7%</td><td>10,5%</td><td>22%</td></tr>
+<tr><td>6 km</td><td>10%</td><td>15%</td><td>22%</td></tr>
+<tr><td>9,3 km o más</td><td>15%</td><td>22,5%</td><td>22%</td></tr>
+</table></div>
+<h3>Peso dentro de la rareza</h3>
+<p>Dentro de la misma rareza, algunos objetos salen menos (peso 1 = normal):</p>
+<div class="tbl"><table>
+<tr><th>Peso</th><th>Objetos</th></tr>
+<tr><td>0,12 a 0,2</td><td><a href="item-fuzil.html">fusil</a> 0,12, <a href="item-submetralhadora.html">subfusil</a> 0,15, <a href="item-rifle.html">rifle</a> 0,18, <a href="item-colete_tatico.html">chaleco táctico</a> 0,2, <a href="item-capacete_militar.html">casco balístico</a> 0,2</td></tr>
+<tr><td>0,25 a 0,5</td><td><a href="item-capacete_tatico.html">casco táctico</a> 0,25, <a href="item-escopeta.html">escopeta</a> 0,3, <a href="item-escopeta_serrada.html">escopeta recortada</a> 0,3, <a href="item-katana.html">katana</a> 0,3, <a href="item-mochila_tatica.html">mochila táctica</a> 0,3, <a href="item-mochila_cargueira.html">mochila de expedición</a> 0,3, <a href="item-pistola.html">pistola</a> 0,35, <a href="item-revolver.html">revólver</a> 0,35, <a href="item-carabina.html">carabina</a> 0,35, <a href="item-municao_308.html">munición .308</a> 0,35, <a href="item-municao_556.html">munición 5,56</a> 0,35, <a href="item-besta.html">ballesta</a> 0,4, <a href="item-capacete_policial.html">casco antidisturbios</a> 0,4, <a href="item-colete.html">chaleco balístico</a> 0,45, <a href="item-protetor_antebraco.html">protector de antebrazo</a> 0,5, <a href="item-calca_tatica.html">pantalón táctico</a> 0,5, <a href="item-municao.html">munición 9 mm</a> 0,5, <a href="item-municao_38.html">.38</a> 0,5, <a href="item-cartucho.html">cartucho</a> 0,5</td></tr>
+<tr><td>0,6</td><td><a href="item-municao_22.html">munición .22</a></td></tr>
+<tr><td>2,5</td><td><a href="item-tabuas.html">tablas</a>, <a href="item-pregos.html">clavos</a></td></tr>
+</table></div>
+<p>Los objetos repetidos en la lista del lugar también cuentan más de una vez.</p>
+
+<h2>Hallazgos rarísimos</h2>
+<p>Solo dentro de los lugares:</p>
+<div class="tbl"><table>
+<tr><th>Hallazgo</th><th>Probabilidad</th></tr>
+<tr><td>Conjunto de ropa (cada objeto sorteado por dentro)</td><td>0,12% × 1,5 × (1 + km caminados ÷ 2), como máximo 0,6%. Los conjuntos comunes salen más (pesos 1, 0,5, 0,2 y 0,05 por rareza) y cada uno sale 4× más en su tipo de lugar. Los uniformes solo salen de <a href="zumbis.html">zombis</a></td></tr>
+<tr><td><a href="item-radio_posto.html">Radio de puesto avanzado</a> (una vez por lugar)</td><td>0,3%</td></tr>
+<tr><td><a href="item-expansor.html">Kit de expansión de la base</a> (una vez por lugar)</td><td>0,5%</td></tr>
+<tr><td><a href="item-sinalizador_facil.html">Bengala fácil</a> (una vez por lugar)</td><td>1,2%</td></tr>
+<tr><td><a href="item-sinalizador_medio.html">Bengala media</a> (una vez por lugar)</td><td>0,4%</td></tr>
+<tr><td><a href="item-sinalizador_dificil.html">Bengala difícil</a> (una vez por lugar)</td><td>solo después de 3 km caminados en la sesión: 0,2% + 0,08% por km por encima de 3, como máximo 0,8%</td></tr>
+<tr><td>Libro de memoria (en el tipo de lugar correcto, solo si todavía no lo tienes)</td><td>0,6% por libro</td></tr>
+</table></div>
+<p>El rasgo Afortunado aumenta y el Desafortunado disminuye las probabilidades de los hallazgos por lugar (radio, kit y bengalas) en un 10%.</p>
+<h3>Pista de la radio</h3>
+<p>Con una <a href="item-radio.html">radio</a>, una vez al día la radio señala un lugar todavía no saqueado entre 300 m y 1,2 km ("Señal débil: hay existencias intactas en..."). Ese lugar gana 1 objeto raro más de su lista, una vez.</p>
+
+<h2>Reposición semanal y existencias del servidor</h2>
+<ul>
+<li>Cada lugar se arma <b>una vez por semana</b>. La semana de las existencias se cuenta en bloques de 7 días del reloj del servidor.</li>
+<li>Con sesión iniciada, el servidor guarda el primer armado de la semana y todos ven las mismas existencias: lo que otro sobreviviente ya se llevó ya no está. Si toman la misma cosa al mismo tiempo, quien confirmó después pierde el objeto ("Otro sobreviviente lo tomó antes: ...").</li>
+<li>Los zombis abatidos por dentro, las puertas forzadas y los muebles desmontados quedan así hasta que cambia la semana. Entonces el lugar se llena de nuevo.</li>
+<li>Los búnkeres, las cajas de rescate y las memorias son solo tuyos: nada va al servidor.</li>
+<li>Sin conexión, los retiros quedan en cola y se confirman cuando vuelve la red.</li>
+</ul>
+
+<h2>Puertas cerradas con llave y palanca</h2>
+<p>Por dentro, algunas puertas de la planta baja están cerradas con llave. Al acercarte aparece <kbd>FORZAR PUERTA</kbd>:</p>
+<ul>
+<li>requiere una <a href="item-pe_de_cabra.html">palanca</a>, en la mano o en la mochila ("Cerrada con llave. Necesita una palanca (o un zombi adentro la rompe).");</li>
+<li>toma <b>3 s</b> quieto y hace un ruido de <b>30 m</b> ("Puerta forzada (¡ruido!).");</li>
+<li>la puerta también cae si un zombi la golpea hasta romperla (100 de vida; cada golpe quita de 5 a 9). Las ventanas tienen 40.</li>
+</ul>
+<p>Una puerta abierta sigue abierta hasta que cambia la semana, para todos. Las llaves (<a href="item-chave_arsenal.html">llave del arsenal</a>, <a href="item-chave_farmacia.html">llave de la farmacia</a>) solo aparecen dentro de las memorias. La puerta blindada del búnker tiene reglas propias: consulta <a href="bunkers.html">Búnkeres</a>.</p>
+
+<h2>Desmontar muebles</h2>
+<p>Un mueble de madera ya hurgado y vacío se puede desmontar con <kbd>DESMONTAR (tablas · 8 s · ruido)</kbd>. Requiere <a href="item-martelo.html">martillo</a>, <a href="item-pe_de_cabra.html">palanca</a>, <a href="item-machado.html">hacha</a>, <a href="item-machado_incendio.html">hacha de bombero</a> o <a href="item-marreta.html">mazo</a>.</p>
+<ul>
+<li>Muebles: estante, armario, alacena, casilleros de alumnos, mostrador, cajón, despensa, mesa, pupitre, estantería, ropero, mesita de noche, cama, almacén trasero y depósito.</li>
+<li>Rinde 1 a 2 <a href="item-tabuas.html">tablas</a> (2 a 3 en los grandes: armario, ropero, estantería, cama, mostrador, almacén y depósito) y, con martillo, 1 a 3 <a href="item-pregos.html">clavos</a>.</li>
+<li>Toma 8 s, hace un ruido de 30 m y da 8 de experiencia de Carpintería.</li>
+</ul>
+
+<h2>Consejos</h2>
+<div class="tip"><b>Camina antes de entrar</b>La probabilidad de raro solo crece con la distancia de la sesión. Entrar en los lugares buenos después de unos kilómetros rinde mucho más que saquear en la puerta de tu casa apenas abres la app.</div>
+<div class="tip warn"><b>La vitrina y el arsenal llaman a la calle</b>La vitrina de vidrio, el armero y el arsenal cerrado hacen de 24 a 30 m de ruido. Limpia los zombis cercanos antes.</div>
+
+<h2>Ver también</h2>
+<ul>
+<li><a href="mochila-e-peso.html">Mochila y peso</a>: lo que cabe.</li>
+<li><a href="corpos.html">Cuerpos</a></li>
+<li><a href="bunkers.html">Búnkeres</a></li>
+</ul>

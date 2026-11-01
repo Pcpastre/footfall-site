@@ -18,7 +18,8 @@
       return [s, p];
     }).filter(Boolean).sort((a, b) => b[0] - a[0]).map(x => x[1]);
   }
-  const row = p => `<a href="${p.u}">${p.i ? `<img class="px" src="img/itens/${p.i}.png" alt="" width="24" height="24" style="display:inline;vertical-align:-6px;margin-right:6px">` : ''}${esc(p.t)}<small>${esc(p.c)}${p.r ? ' · ' + esc(p.r) : ''}</small></a>`;
+  const A = document.body.dataset.a || '';
+  const row = p => `<a href="${p.u}">${p.i ? `<img class="px" src="${A}img/itens/${p.i}.png" alt="" width="24" height="24" style="display:inline;vertical-align:-6px;margin-right:6px">` : ''}${esc(p.t)}<small>${esc(p.c)}${p.r ? ' · ' + esc(p.r) : ''}</small></a>`;
   const form = document.querySelector('.busca');
   if (form) {
     const inp = form.querySelector('input'), sug = form.querySelector('.sug');

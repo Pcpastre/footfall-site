@@ -1,0 +1,142 @@
+<!-- titulo: Habilidades | categoria: Personaje | resumo: Las 10 habilidades, cómo gana experiencia cada una, la fórmula de XP y lo que cambia cada nivel. -->
+<p>Las habilidades suben con el uso, del nivel 0 al <b>10</b>, y se pierden todas cuando el personaje <a href="morte.html">muere</a> ("Suben con el uso. Si mueres, lo pierdes todo."). Empiezas con los niveles que dan la <a href="profissoes.html">profesión</a> y algunos <a href="tracos.html">rasgos</a>. El progreso aparece en el panel del personaje, pestaña <kbd>Habilidades</kbd>: diez cuadritos de nivel y una barra fina con la XP hasta el siguiente.</p>
+
+<h2>Las diez habilidades</h2>
+<div class="tbl"><table>
+<tr><th>Habilidad</th><th>Cómo gana XP</th><th>Lo que da cada nivel</th></tr>
+<tr><td>Armas blancas</td><td>Acertar golpes con arma blanca en la pelea</td><td>+5% de daño cuerpo a cuerpo, +2% de ventana de crítico, 3% de probabilidad de no gastar durabilidad, −3% de probabilidad de fallar la cabeza</td></tr>
+<tr><td>Fuerza</td><td>Abatir zombis, empujar, pegar con los puños</td><td>+3% de daño cuerpo a cuerpo, +0,5 kg en los bolsillos, +1,5 m en el lanzamiento, empujón más barato y más fuerte, escapa más rápido del agarre</td></tr>
+<tr><td>Aliento</td><td>Caminar y correr; cada golpe acertado</td><td>+3% de aliento máximo, +5% de recuperación del aliento, −4% de gasto al correr en la pelea</td></tr>
+<tr><td>Sigilo</td><td>Caminar despacio cerca de zombis; lanzar distracciones</td><td>−4% de ruido, los zombis te ven 4% más cerca</td></tr>
+<tr><td>Primeros auxilios</td><td>Pasos de tratamiento, vendajes, recetas médicas</td><td>−8% de tiempo por paso, −12 puntos en la probabilidad de fallo, −5% en el tiempo de cicatrización, +10% de vida por ítem de curación</td></tr>
+<tr><td>Carpintería</td><td>Construir y reparar la base, desmontar muebles, recetas</td><td>+5 de vida por reparación de pared, desbloquea recetas, −0,5% de probabilidad de cortarte</td></tr>
+<tr><td>Mecánica</td><td>Recetas de mecánica, reforzar pared con lámina</td><td>+5% en cada reparación de arma, desbloquea recetas, −0,5% de probabilidad de cortarte</td></tr>
+<tr><td>Agricultura</td><td>Plantar, regar, cosechar, recetas del huerto</td><td>−5% en el tiempo de crecimiento, +1 verdura en la cosecha cada 2 niveles</td></tr>
+<tr><td>Armas de fuego</td><td>Acertar disparos en la pelea</td><td>−0,5° de dispersión, +4% de disparo a la cabeza apuntando, −5% en el tiempo de recarga; en el nivel 6 el pánico deja de quitar daño al disparo</td></tr>
+<tr><td>Costura</td><td>Coser ropa, montar la tienda de campaña, recetas de costura</td><td>−5% de desgaste de la ropa</td></tr>
+</table></div>
+
+<h2>Fórmula de experiencia</h2>
+<p>Para pasar del nivel <i>N</i> al <i>N</i>+1 se necesitan <b>60 × (N + 1)</b> puntos de XP. La XP que sobra pasa al nivel siguiente, y una ganancia grande puede subir varios niveles de una vez. En el nivel 10 la habilidad deja de ganar XP. Al subir, aparece el aviso "Subiste de nivel: &lt;habilidad&gt; &lt;nivel&gt;".</p>
+<div class="tbl"><table>
+<tr><th>De → a</th><th>XP del nivel</th><th>XP acumulada</th></tr>
+<tr><td>0 → 1</td><td>60</td><td>60</td></tr>
+<tr><td>1 → 2</td><td>120</td><td>180</td></tr>
+<tr><td>2 → 3</td><td>180</td><td>360</td></tr>
+<tr><td>3 → 4</td><td>240</td><td>600</td></tr>
+<tr><td>4 → 5</td><td>300</td><td>900</td></tr>
+<tr><td>5 → 6</td><td>360</td><td>1.260</td></tr>
+<tr><td>6 → 7</td><td>420</td><td>1.680</td></tr>
+<tr><td>7 → 8</td><td>480</td><td>2.160</td></tr>
+<tr><td>8 → 9</td><td>540</td><td>2.700</td></tr>
+<tr><td>9 → 10</td><td>600</td><td>3.300</td></tr>
+</table></div>
+
+<h3>Multiplicadores de XP</h3>
+<p>Toda ganancia de XP se multiplica por estos factores, que se combinan:</p>
+<div class="tbl"><table>
+<tr><th>Factor</th><th>Multiplicador</th><th>Vale para</th></tr>
+<tr><td>Rasgo Aprende rápido</td><td>×1,3</td><td>Todas</td></tr>
+<tr><td>Rasgo Aprende despacio</td><td>×0,7</td><td>Todas</td></tr>
+<tr><td>Tristeza: Hacia abajo / Triste / Deprimido</td><td>×0,9 / ×0,75 / ×0,6</td><td>Todas</td></tr>
+<tr><td>Aburrimiento: Muriéndose de aburrimiento</td><td>×0,9</td><td>Todas</td></tr>
+<tr><td>Libro leído (24 h reales)</td><td>×1,5</td><td>La habilidad del libro</td></tr>
+<tr><td>Rol en el grupo</td><td>×1,25 (×1,5 con el rasgo Líder)</td><td>Las dos habilidades del rol</td></tr>
+</table></div>
+<p>La tristeza y el aburrimiento están en <a href="mente.html">Mente</a>. En la pestaña Habilidades, la habilidad con libro activo muestra la etiqueta <i>libro ×1,5</i>, y las de tu rol muestran <i>rol ×1,25</i>.</p>
+
+<h3>Libros</h3>
+<div class="tbl"><table>
+<tr><th>Libro</th><th>Habilidades</th></tr>
+<tr><td><a href="item-livro_medicina.html">Libro de primeros auxilios</a></td><td>Primeros auxilios</td></tr>
+<tr><td><a href="item-livro_carpintaria.html">Libro de carpintería</a></td><td>Carpintería</td></tr>
+<tr><td><a href="item-livro_mecanica.html">Manual de mecánica</a></td><td>Mecánica</td></tr>
+<tr><td><a href="item-livro_agricultura.html">Almanaque del huerto</a></td><td>Agricultura</td></tr>
+<tr><td><a href="item-livro_armas.html">Revista de tiro</a></td><td>Armas de fuego y Armas blancas</td></tr>
+<tr><td><a href="item-livro_costura.html">Revista de costura</a></td><td>Costura</td></tr>
+</table></div>
+<p>Leer (botón <kbd>Leer</kbd>) gasta el libro, da +50% de XP en esas habilidades durante 1 día real y quita 20 de aburrimiento. Leer de nuevo antes de que termine reinicia las 24 h.</p>
+
+<h3>Rol en el grupo</h3>
+<p>En un grupo, cada miembro puede elegir un rol. Este da +25% de XP en dos habilidades (+50% con el rasgo Líder):</p>
+<div class="tbl"><table>
+<tr><th>Rol</th><th>Habilidades</th><th>Otro efecto</th></tr>
+<tr><td>Médico</td><td>Primeros auxilios, Costura</td><td>Pasos de tratamiento 10% más rápidos</td></tr>
+<tr><td>Constructor</td><td>Carpintería, Mecánica</td><td>—</td></tr>
+<tr><td>Explorador</td><td>Sigilo, Aliento</td><td>Visión en el mapa 5% mayor</td></tr>
+</table></div>
+
+<h2>Cada habilidad en detalle</h2>
+
+<h3>Armas blancas</h3>
+<p><b>XP:</b> 4 por golpe que acierta con arma blanca, contado al final de cada pelea; 10 por guardia al ganar la toma de un bastión.</p>
+<p><b>Efectos por nivel:</b> el daño cuerpo a cuerpo empieza en 75% y suma 5 puntos por nivel (nivel 5 = 100% sin rasgos). La ventana de crítico crece 2% por nivel. Cada golpe tiene 3% por nivel de no gastar la durabilidad del arma. La probabilidad de que el golpe a la cabeza dé en el hombro baja 3 puntos por nivel (base 40%, mínimo 5%).</p>
+
+<h3>Fuerza</h3>
+<p><b>XP:</b> 6 por zombi abatido y 2 por empujón, contados al final de la pelea; peleando con los puños, los aciertos (4 cada uno) también van a Fuerza en vez de a Armas blancas.</p>
+<p><b>Efectos por nivel:</b> +3% de daño cuerpo a cuerpo; +0,5 kg de capacidad en los bolsillos; el lanzamiento en el mapa llega a 18 m + 1,5 m por nivel; el empujón cuesta 20 de aliento menos 1 por nivel de Fuerza (mínimo 12), empuja más fuerte y derriba más (45% + 4% por nivel, hasta 80%); para soltarte de un agarre, cada nivel ayuda un 8% más.</p>
+
+<h3>Aliento</h3>
+<p><b>XP:</b> caminando, 1 cada 150 m; corriendo (más de 3 m/s), 1 cada 40 m. En vehículo no cuenta. En la pelea, +1 por golpe acertado.</p>
+<p><b>Efectos por nivel:</b> +3% en el aliento máximo (sumado al multiplicador de los rasgos de aliento), +5% en la velocidad a la que se recupera, −4% en el gasto de aliento al correr en la pantalla de acción.</p>
+
+<h3>Sigilo</h3>
+<p><b>XP:</b> 1 cada 15 m caminados por debajo de 1,8 m/s con algún zombi despierto que no te esté persiguiendo a menos de 40 m; 3 por objeto lanzado en el mapa (botella, <a href="item-rojao.html">cohete</a>, <a href="item-despertador.html">despertador</a>...).</p>
+<p><b>Efectos por nivel:</b> −4% en el ruido de tus pasos (el ruido total nunca queda por debajo del 30% de lo normal) y −4% en la distancia a la que los zombis te ven en el mapa.</p>
+
+<h3>Primeros auxilios</h3>
+<p><b>XP por paso de <a href="tratamento.html">tratamiento</a> bien hecho:</b></p>
+<div class="tbl"><table>
+<tr><th>Paso</th><th>XP</th></tr>
+<tr><td>Limpiar y desinfectar</td><td>5</td></tr>
+<tr><td>Quitar la esquirla</td><td>15</td></tr>
+<tr><td>Suturar</td><td>20</td></tr>
+<tr><td>Vendar</td><td>10</td></tr>
+<tr><td>Torniquete</td><td>10</td></tr>
+<tr><td>Inmovilizar (férula)</td><td>15</td></tr>
+<tr><td>Pomada</td><td>8</td></tr>
+<tr><td>Paso que falló</td><td>2</td></tr>
+<tr><td>Vendaje rápido</td><td>15</td></tr>
+</table></div>
+<p>También dan XP las recetas Venda (10), Venda estéril (15, pide nivel 1) y Férula (8).</p>
+<p><b>Efectos por nivel:</b> cada paso tarda 8% menos; la probabilidad de fallo de la sutura y de la esquirla baja 12 puntos; las heridas cicatrizan 5% más rápido; los ítems que devuelven vida (vendaje, botiquín, antibiótico...) curan 10% más.</p>
+
+<h3>Carpintería</h3>
+<p><b>XP fuera de las recetas:</b></p>
+<div class="tbl"><table>
+<tr><th>Acción</th><th>XP</th></tr>
+<tr><td>Delimitar la base</td><td>10</td></tr>
+<tr><td>Levantar una pared</td><td>5 por tabla gastada + 5</td></tr>
+<tr><td>Ampliar la base</td><td>3 por tabla gastada</td></tr>
+<tr><td>Abrir puerta o ventana</td><td>8</td></tr>
+<tr><td>Reparar pared</td><td>10</td></tr>
+<tr><td>Reforzar pared de lámina a concreto</td><td>20</td></tr>
+<tr><td>Reparar puerta/ventana</td><td>6</td></tr>
+<tr><td>Clavar tablas en la abertura</td><td>8</td></tr>
+<tr><td>Rearmar trampa</td><td>6</td></tr>
+<tr><td>Desmontar mueble en la pantalla de acción</td><td>8</td></tr>
+</table></div>
+<p><b>Recetas de carpintería (XP):</b> Banco de trabajo 40, Cofre 25, Cama 30, Mesa 20, Bate con clavos 25, Camilla 30 (nivel 1), Barril de lluvia 25, Estacas 20, Torre de vigía 50 (nivel 2), Buzón 15, Arco improvisado 30 (nivel 1), Flechas 12.</p>
+<p><b>Efectos por nivel:</b> cada reparación de pared devuelve 50 + 5 por nivel de vida; las recetas piden nivel mínimo; en toda receta de carpintería o mecánica hay 3% de probabilidad de que la herramienta resbale y haga un corte profundo en la mano, menos 0,5 punto por nivel de la habilidad de la receta (cero a partir del nivel 6).</p>
+
+<h3>Mecánica</h3>
+<p><b>XP:</b> 20 al reforzar una pared de madera a lámina. Recetas: Lanza improvisada 30 (nivel 1), Reparar arma en la mano 20, Reparar arma en el banco de trabajo 30 (nivel 1), Cocina de leña 30, Reflector 30 (nivel 1), Silenciador improvisado 15, Recargar cartuchos 20 (nivel 1), Hoja en la punta del arma larga 15, Linterna montada en el arma 15.</p>
+<p><b>Efectos por nivel:</b> cada reparación de arma recupera 5% más; desbloquea las recetas de nivel 1; reduce el riesgo de corte en la mano (como Carpintería).</p>
+
+<h3>Agricultura</h3>
+<p><b>XP:</b> plantar 8, regar 3, cosechar 25; recetas Cantero del huerto 15 y Verduras en conserva 12.</p>
+<p><b>Efectos por nivel:</b> (consulta <a href="horta.html">Huerto</a>) el cantero necesita 72 h regado para estar listo, menos 5% por nivel (nivel 10 = 36 h); cada cosecha da 3 verduras + 1 cada 2 niveles (nivel 10 = 8).</p>
+
+<h3>Armas de fuego</h3>
+<p><b>XP:</b> 6 por disparo que acierta, contado al final de la pelea.</p>
+<p><b>Efectos por nivel:</b> la dispersión del disparo único baja 0,5° por nivel (nunca por debajo de 1°) y la de la escopeta 0,4°; la probabilidad de dar en la cabeza sube 4 puntos por nivel apuntando a la cabeza (3 sin apuntar); la recarga es 5% más rápida. Por debajo del nivel 6, Pánico fuerte quita 15% y Pánico extremo 25% del daño del disparo; del nivel 6 en adelante, ya no quita nada.</p>
+
+<h3>Costura</h3>
+<p><b>XP:</b> coser una prenda 5; montar la tienda de campaña 6; recetas Saco de dormir 35 (nivel 1), Tienda 80 (nivel 2) y Remendar la lona 25.</p>
+<p><b>Efectos por nivel:</b> la ropa se gasta 5% menos con cada golpe o mordida que resiste (nivel 10 = la mitad del desgaste).</p>
+
+<h2>Recetas que no dan XP</h2>
+<p>La lista completa de recetas, con ingredientes, está en <a href="receitas.html">Recetas</a>.</p>
+<p>Las recetas sin habilidad no dan ninguna experiencia: Fogata, Cóctel molotov, Alambre con latas, Pozo cubierto, Sacar la pólvora de un cohete, Biodiésel, Enrollar el mango del arma, toda la comida al fuego (salvo Verduras en conserva), Hervir agua y Filtrar agua con un trapo. Rehacer un mueble que desmontaste tampoco da XP.</p>
+
+<div class="tip warn"><b>Se pierden al morir</b>Toda la XP y todos los niveles se van cuando el personaje muere. El nuevo personaje empieza otra vez desde los niveles de la profesión y de los rasgos. Consulta <a href="morte.html">Muerte</a>.</div>

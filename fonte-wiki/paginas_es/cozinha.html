@@ -1,0 +1,108 @@
+<!-- titulo: Cocina | categoria: Base | resumo: Fogata y cocina de leña, cómo encenderlas, cada receta de cocinar, caducidad, agua de lluvia, hervir y filtrar. -->
+<p>Cocinar transforma comida cruda o escasa en comida que rinde más, y transforma <a href="item-agua_suja.html">agua de lluvia</a> en <a href="item-agua.html">agua limpia</a>. Todas las recetas de cocinar exigen un <b>fuego encendido de la base</b>: una <a href="moveis-da-base.html">fogata</a> o una <a href="moveis-da-base.html">cocina de leña</a> colocadas.</p>
+
+<h2>Los dos fuegos</h2>
+<div class="tbl"><table>
+<tr><th>Fuego</th><th>Receta</th><th>Costo</th><th>Banco de trabajo</th><th>De noche</th></tr>
+<tr><td>Fogata</td><td>M05</td><td>3 <a href="item-pedra.html">piedras</a> + 2 <a href="item-tabuas.html">tablas</a></td><td>no</td><td>La luz atrae a los zombis a hasta 100 m y suma 3 atacantes en el <a href="ataque-noturno.html">ataque nocturno</a></td></tr>
+<tr><td>Cocina de leña</td><td>M06</td><td>1 <a href="item-chapa.html">lámina de metal</a> + 1 <a href="item-cano.html">tubo de hierro</a> + 2 <a href="item-pregos.html">clavos</a></td><td>sí (Mecánica, 30 XP)</td><td>Cerrada: casi sin luz, no atrae a nadie</td></tr>
+</table></div>
+
+<h2>Encender</h2>
+<ol class="steps">
+<li>En la pantalla de acción, acércate al fuego colocado y toca <kbd>ENCENDER FOGATA</kbd> o <kbd>ENCENDER COCINA DE LEÑA</kbd>.</li>
+<li>Necesitas un <a href="item-isqueiro.html">encendedor</a> (no se gasta) y se gasta <b>1 tabla</b> de leña.</li>
+<li>El fuego queda encendido durante <b>30 minutos</b> (tiempo real). Encendido, brilla en la pantalla de acción y el botón se convierte en <kbd>COCINAR</kbd>.</li>
+<li><kbd>COCINAR</kbd> abre la pestaña <kbd>FABRICAR</kbd> con las recetas de fuego arriba y el aviso <i>"En el fuego: cocinar rinde más y la comida vuelve a durar."</i></li>
+</ol>
+<div class="tbl"><table>
+<tr><th>Encender</th><th>Valor</th></tr>
+<tr><td>Duración</td><td>30 min</td></tr>
+<tr><td>Leña</td><td>1 <a href="item-tabuas.html">tabla</a></td></tr>
+<tr><td>Herramienta</td><td>1 <a href="item-isqueiro.html">encendedor</a> (se queda contigo)</td></tr>
+<tr><td>Probabilidad de quemarte la mano</td><td>4% cada vez que enciendes (quemadura en la mano)</td></tr>
+</table></div>
+<p>Sin encendedor: <i>"Necesita un encendedor."</i>. Sin tabla: <i>"Necesita 1 tabla de leña."</i>. Intentar cocinar sin estar en el fuego: <i>"Solo en el fuego encendido de la base (fogata o estufa): camina hasta él y toca USAR."</i></p>
+<div class="tip warn"><b>Fogata de noche</b>Al encender la fogata, el juego avisa: <i>"Fogata encendida (30 min). De noche la luz atrae zombis desde lejos."</i> Los zombis a hasta 100 m de la base que no te están persiguiendo van hasta ella a ver la luz. Para cocinar de noche sin atraer a nadie, usa la cocina de leña.</div>
+
+<h2>Recetas de cocinar</h2>
+<p>Ninguna necesita banco de trabajo; todas necesitan el fuego encendido. Los ingredientes salen de la mochila y de los cofres.</p>
+<div class="tbl"><table>
+<tr><th>Id</th><th>Receta</th><th>Entra</th><th>Sale</th><th>Habilidad</th><th>XP</th></tr>
+<tr><td>C01</td><td>Cocinar arroz</td><td>1 <a href="item-arroz.html">paquete de arroz</a> + 2 <a href="item-agua.html">botellas de agua</a></td><td>3 <a href="item-arroz_cozido.html">arroz cocido</a></td><td>—</td><td>—</td></tr>
+<tr><td>C02</td><td>Asar carne</td><td>1 <a href="item-carne.html">carne fresca</a></td><td>1 <a href="item-carne_assada.html">carne asada</a></td><td>—</td><td>—</td></tr>
+<tr><td>C03</td><td>Cocinar verduras</td><td>1 <a href="item-legumes.html">verduras del huerto</a> + 1 botella de agua</td><td>1 <a href="item-legumes_cozidos.html">verduras cocidas</a></td><td>—</td><td>—</td></tr>
+<tr><td>C04</td><td>Calentar frijoles</td><td>1 <a href="item-feijao.html">lata de frijoles</a></td><td>1 <a href="item-feijao_quente.html">frijoles calientes</a></td><td>—</td><td>—</td></tr>
+<tr><td>C05</td><td>Hervir agua</td><td>2 <a href="item-agua_suja.html">aguas de lluvia</a></td><td>2 <a href="item-agua.html">botellas de agua</a></td><td>—</td><td>—</td></tr>
+<tr><td>C06</td><td>Carne seca al fuego (dura 2 meses)</td><td>1 carne fresca</td><td>2 <a href="item-carne_seca.html">cecina (charque)</a></td><td>—</td><td>—</td></tr>
+<tr><td>C07</td><td>Verduras en conserva (duran 3 meses)</td><td>2 verduras + 2 <a href="item-garrafa.html">botellas vacías</a> + 1 botella de agua</td><td>2 <a href="item-conserva.html">verduras en conserva</a></td><td>Agricultura</td><td>12</td></tr>
+<tr><td>C08</td><td>Sopa (calienta)</td><td>1 verduras + 2 botellas de agua + 1 lata de frijoles</td><td>2 <a href="item-sopa.html">sopa caliente</a></td><td>—</td><td>—</td></tr>
+<tr><td>C09</td><td>Café colado</td><td>1 <a href="item-cafe.html">café molido</a> + 1 botella de agua + 1 <a href="item-pano.html">trapo de tela</a></td><td>2 <a href="item-cafe_coado.html">café colado</a></td><td>—</td><td>—</td></tr>
+<tr><td>C10</td><td>Pan de olla</td><td>1 <a href="item-farinha.html">paquete de harina</a> + 1 botella de agua</td><td>2 <a href="item-pao_panela.html">pan de olla</a></td><td>—</td><td>—</td></tr>
+<tr><td>E04</td><td>Biodiésel (aceite, alcohol y soda cáustica, al fuego)</td><td>2 <a href="item-oleo_cozinha.html">aceite de cocina</a> + 2 <a href="item-alcool.html">alcohol 70%</a> + 1 <a href="item-soda_caustica.html">soda cáustica</a></td><td>1 <a href="item-biodiesel.html">bidón de biodiésel</a></td><td>—</td><td>—</td></tr>
+</table></div>
+<p>Las recetas sin habilidad no dan experiencia (su valor de XP solo vale cuando hay habilidad). Solo la conserva entrena Agricultura.</p>
+
+<h2>Rendimiento: crudo contra cocido</h2>
+<div class="tbl"><table>
+<tr><th>Ingrediente</th><th>kcal crudo</th><th>Resultado</th><th>kcal total</th><th>Caducidad del resultado</th></tr>
+<tr><td>1 paquete de arroz</td><td>0 (crudo no se come)</td><td>3 arroz cocido (600 cada uno)</td><td>1.800</td><td>2 días</td></tr>
+<tr><td>1 carne fresca</td><td>700 (35% de probabilidad de náuseas)</td><td>1 carne asada</td><td>980</td><td>2 días</td></tr>
+<tr><td>1 carne fresca</td><td>700</td><td>2 cecinas (650 cada una)</td><td>1.300</td><td>60 días</td></tr>
+<tr><td>1 verduras + 1 agua</td><td>250 kcal, 600 ml</td><td>1 verduras cocidas</td><td>350 kcal, 300 ml</td><td>3 días</td></tr>
+<tr><td>1 lata de frijoles</td><td>300</td><td>1 frijoles calientes</td><td>420</td><td>2 días</td></tr>
+<tr><td>1 harina + 1 agua</td><td>0 (cruda no se come)</td><td>2 panes de olla (800 cada uno)</td><td>1.600</td><td>4 días</td></tr>
+<tr><td>1 verduras + 2 aguas + 1 frijoles</td><td>550 kcal, 1.100 ml</td><td>2 sopas (550 kcal, 400 ml cada una)</td><td>1.100 kcal, 800 ml</td><td>2 días</td></tr>
+<tr><td>2 verduras + 2 botellas + 1 agua</td><td>500</td><td>2 conservas (300 kcal, 150 ml cada una)</td><td>600</td><td>90 días</td></tr>
+<tr><td>1 café molido + 1 agua + 1 trapo</td><td>10 kcal, 700 ml</td><td>2 cafés colados (20 kcal, 250 ml cada uno)</td><td>40 kcal, 500 ml</td><td>1 día</td></tr>
+</table></div>
+<p>Todo lo que sale del fuego entra en la mochila como <b>nuevo</b>: la caducidad empieza a contar en el momento en que cocinaste.</p>
+
+<h3>Efectos especiales</h3>
+<div class="tbl"><table>
+<tr><th>Comida</th><th>Efecto al comer</th></tr>
+<tr><td><a href="item-sopa.html">Sopa caliente</a></td><td>Quita el frío durante 3 horas y mejora el humor</td></tr>
+<tr><td><a href="item-cafe_coado.html">Café colado</a></td><td>Quita 25 de cansancio y mejora el humor (el café molido crudo quita solo 10)</td></tr>
+<tr><td><a href="item-carne.html">Carne fresca</a> cruda</td><td>35% de probabilidad de náuseas (−5 de vida y 2 h con náuseas)</td></tr>
+</table></div>
+
+<h2>Caducidad</h2>
+<p>La comida perecedera se echa a perder después del plazo, en tiempo real. Comer comida echada a perder rinde solo la mitad de las calorías, quita 8 de vida y te deja <b>con náuseas</b> durante 2 horas.</p>
+<div class="tbl"><table>
+<tr><th>Comida</th><th>Caducidad</th></tr>
+<tr><td><a href="item-carne.html">Carne fresca</a>, <a href="item-cafe_coado.html">café colado</a></td><td>1 día</td></tr>
+<tr><td><a href="item-arroz_cozido.html">Arroz cocido</a>, <a href="item-carne_assada.html">carne asada</a>, <a href="item-feijao_quente.html">frijoles calientes</a>, <a href="item-sopa.html">sopa caliente</a></td><td>2 días</td></tr>
+<tr><td><a href="item-legumes_cozidos.html">Verduras cocidas</a>, <a href="item-pao.html">pan</a></td><td>3 días</td></tr>
+<tr><td><a href="item-legumes.html">Verduras del huerto</a>, <a href="item-leite.html">caja de leche</a>, <a href="item-pao_panela.html">pan de olla</a></td><td>4 días</td></tr>
+<tr><td><a href="item-frutas.html">Frutas</a></td><td>5 días</td></tr>
+<tr><td><a href="item-carne_seca.html">Cecina</a></td><td>60 días</td></tr>
+<tr><td><a href="item-conserva.html">Verduras en conserva</a></td><td>90 días</td></tr>
+<tr><td>Frijoles en lata, arroz y harina crudos, galletas, chocolate, enlatados, ración de combate</td><td>no se echan a perder</td></tr>
+</table></div>
+
+<h2>Agua de lluvia</h2>
+<p>El <a href="moveis-da-base.html">barril de lluvia</a> junta 1 botella cada 10 min de lluvia (hasta 20). Al usar el barril, cada <a href="item-garrafa.html">botella vacía</a> de la mochila se convierte en un <a href="item-agua_suja.html">Agua de lluvia (sin hervir)</a>: <i>"Llenaste N botella(s) con agua de lluvia. Hiérvela en el fuego antes de beber."</i></p>
+<div class="tbl"><table>
+<tr><th>Ítem</th><th>Agua</th><th>Riesgo</th></tr>
+<tr><td><a href="item-agua_suja.html">Agua de lluvia (sin hervir)</a></td><td>500 ml</td><td>1 de cada 3 (33%) da náuseas: −4 de vida y 2 h con náuseas</td></tr>
+<tr><td><a href="item-agua.html">Botella de agua</a></td><td>500 ml</td><td>ninguno</td></tr>
+</table></div>
+<p>Con náuseas, tienes el aviso <i>"Con náuseas"</i> y el aliento máximo baja 15%. Beber cualquier botella devuelve la <a href="item-garrafa.html">botella vacía</a>.</p>
+
+<h3>Hervir o filtrar</h3>
+<div class="tbl"><table>
+<tr><th>Método</th><th>Receta</th><th>Entra</th><th>Sale</th><th>Necesita</th><th>Funciona</th></tr>
+<tr><td>Hervir</td><td>C05 · Hervir agua</td><td>2 aguas de lluvia</td><td>2 botellas de agua</td><td>fuego encendido</td><td>siempre</td></tr>
+<tr><td>Filtrar con un trapo</td><td>R09 · Filtrar agua con un trapo (la mitad de las veces no basta)</td><td>1 agua de lluvia + 1 <a href="item-pano.html">trapo de tela</a></td><td>1 botella de agua</td><td>nada (en cualquier lugar)</td><td>50%: en la otra mitad, el trapo se gasta y el agua sigue turbia</td></tr>
+</table></div>
+<p>Cuando el filtro falla: <i>"El trapo no alcanzó: el agua sigue turbia. Mejor hervirla."</i></p>
+
+<h2>Otros lugares para cocinar</h2>
+<p>Solo los fuegos de tu base cocinan. Comer en la <a href="moveis-da-base.html">mesa</a> de la base rinde 10% más calorías.</p>
+
+<h2>Ver también</h2>
+<ul>
+<li><a href="horta.html">Huerto</a></li>
+<li><a href="receitas.html">Recetas</a></li>
+<li><a href="moveis-da-base.html">Muebles de la base</a></li>
+</ul>

@@ -1,0 +1,71 @@
+<!-- titulo: Huerto | categoria: Base | resumo: Canteros, semillas, riego, tiempo de crecimiento, efecto de la Agricultura y cosecha. -->
+<p>El <b>huerto</b> está hecho de canteros colocados en la <a href="base.html">base</a> o en el patio. Cada cantero recibe un paquete de <a href="item-sementes.html">semillas</a>, crece en <b>tiempo real</b> mientras esté regado y da <a href="item-legumes.html">verduras del huerto</a> en la cosecha. El panel está en <kbd>Base</kbd> → <kbd>BASE</kbd> → <i>Huerto (N/4 huertos · Agricultura N)</i>.</p>
+
+<h2>Canteros</h2>
+<div class="tbl"><table>
+<tr><th>Receta</th><th>Costo</th><th>Banco de trabajo</th><th>Habilidad</th><th>XP</th><th>Límite</th></tr>
+<tr><td>H01 · Cantero del huerto</td><td>2 <a href="item-tabuas.html">tablas</a> + 2 <a href="item-pregos.html">clavos</a></td><td>no</td><td>Agricultura</td><td>15</td><td>4 canteros por base</td></tr>
+</table></div>
+<p>Hazlo en <kbd>Mochila</kbd> → <kbd>FABRICAR</kbd> (dentro de la base) y colócalo con el martillo en la pantalla de acción (consulta <a href="moveis-da-base.html">Muebles de la base</a>). El cantero mide 1,2 × 1,2 m y puede quedar en el patio (hasta 15 m del borde). Para desmontarlo, tiene que estar vacío.</p>
+
+<h2>Paso a paso</h2>
+<ol class="steps">
+<li><b>Plantar</b>: <kbd>Plantar</kbd> gasta 1 <a href="item-sementes.html">paquete de semillas</a> (de la mochila o de los cofres). +8 XP de Agricultura. Aviso: <i>"Plantado. Riégalo todos los días para que crezca."</i></li>
+<li><b>Regar</b>: <kbd>Regar</kbd> gasta 1 <a href="item-agua.html">botella de agua</a> limpia. Cada riego vale <b>24 horas</b>. +3 XP de Agricultura.</li>
+<li><b>Esperar</b>: el cantero solo crece durante las horas cubiertas por un riego. Seco, deja de crecer (sin perder lo que ya creció).</li>
+<li><b>Cosechar</b>: cuando está listo, el botón cambia a <kbd>Cosechar</kbd>. Las verduras van a la mochila. +25 XP de Agricultura.</li>
+</ol>
+<p>Todo esto solo funciona contigo en la base o en el patio (<i>"Solo en la base o en el patio."</i>), desde el panel o con <kbd>USAR HUERTO</kbd> en la pantalla de acción.</p>
+<div class="tip"><b>Tiempo real</b>El huerto crece también con la app cerrada, siempre que el último riego siga vigente. Regar justo antes de dormir garantiza 24 h de crecimiento.</div>
+
+<h2>Tiempo de crecimiento</h2>
+<p>Base: <b>72 horas</b> (3 días) de crecimiento regado. La Agricultura acelera <b>5% por nivel</b>:</p>
+<p><b>horas = 72 × (1 − 0,05 × nivel)</b>, con el factor nunca por debajo de 0,4.</p>
+<div class="tbl"><table>
+<tr><th>Nivel de Agricultura</th><th>Horas hasta estar listo</th><th>Riegos mínimos</th><th>Verduras por cosecha</th></tr>
+<tr><td>0</td><td>72</td><td>3</td><td>3</td></tr>
+<tr><td>1</td><td>68,4</td><td>3</td><td>3</td></tr>
+<tr><td>2</td><td>64,8</td><td>3</td><td>4</td></tr>
+<tr><td>3</td><td>61,2</td><td>3</td><td>4</td></tr>
+<tr><td>4</td><td>57,6</td><td>3</td><td>5</td></tr>
+<tr><td>5</td><td>54</td><td>3</td><td>5</td></tr>
+<tr><td>6</td><td>50,4</td><td>3</td><td>6</td></tr>
+<tr><td>7</td><td>46,8</td><td>2</td><td>6</td></tr>
+<tr><td>8</td><td>43,2</td><td>2</td><td>7</td></tr>
+<tr><td>9</td><td>39,6</td><td>2</td><td>7</td></tr>
+<tr><td>10</td><td>36</td><td>2</td><td>8</td></tr>
+</table></div>
+<p>El nivel cuenta en el momento de la comprobación: subir de nivel mientras la planta crece ya acorta su tiempo.</p>
+
+<h2>Cosecha</h2>
+<p>Solo hay un cultivo en el juego: la semilla siempre se convierte en <a href="item-legumes.html">Verduras del huerto</a>.</p>
+<p><b>verduras = 3 + ⌊nivel de Agricultura ÷ 2⌋</b></p>
+<div class="tbl"><table>
+<tr><th>Objeto</th><th>Peso</th><th>Calorías</th><th>Agua</th><th>Caducidad</th></tr>
+<tr><td><a href="item-legumes.html">Verduras del huerto</a></td><td>0,4 kg</td><td>250 kcal</td><td>100 ml</td><td>4 días</td></tr>
+</table></div>
+<p>Las verduras se pueden comer crudas o usar en la <a href="cozinha.html">cocina</a>: Cocinar verduras (C03), Sopa (C08) y Verduras en conserva (C07, que duran 3 meses). También alimentan al <a href="corvo.html">cuervo</a> (6 de vínculo).</p>
+
+<h2>Estado en pantalla</h2>
+<div class="tbl"><table>
+<tr><th>Texto</th><th>Significado</th></tr>
+<tr><td><i>Cantero N: vacío</i> · <i>Planta 1 paquete de semillas.</i></td><td>Sin planta</td></tr>
+<tr><td><i>Cantero N: 45%</i> · <i>Regado (crece durante 24 h). Faltan ~40 h.</i></td><td>Creciendo</td></tr>
+<tr><td><i>Seco: no crece. Riega con 1 botella de agua.</i></td><td>Riego vencido</td></tr>
+<tr><td><i>Cantero N: listo para cosechar</i></td><td>Se puede cosechar</td></tr>
+</table></div>
+<p>En la pantalla de acción el cantero aparece vacío, con brotes o maduro.</p>
+
+<h2>Dónde conseguir semillas y agua</h2>
+<ul>
+<li><a href="item-sementes.html">Paquete de semillas</a>: <a href="lugar-mercado.html">mercados</a>, <a href="lugar-construcao.html">construcción</a>, <a href="lugar-loja.html">tiendas</a>, <a href="lugar-casa.html">casas</a>, y el <a href="mercado-e-selos.html">almacén</a> (5 por día).</li>
+<li><a href="item-agua.html">Botella de agua</a>: saqueo, almacén, o hirviendo el agua de lluvia del <a href="moveis-da-base.html">barril</a> (consulta <a href="cozinha.html">Cocina</a>). El agua de lluvia sin hervir no sirve para regar.</li>
+</ul>
+<div class="tip warn"><b>Grupo</b>Unirte a un grupo deshace tu base: el huerto plantado se pierde. Para desmontar un cantero hay que cosechar antes.</div>
+
+<h2>Ver también</h2>
+<ul>
+<li><a href="cozinha.html">Cocina</a></li>
+<li><a href="moveis-da-base.html">Muebles de la base</a></li>
+<li><a href="habilidades.html">Habilidades</a></li>
+</ul>

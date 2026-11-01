@@ -55,3 +55,8 @@
   .wiki .top .brand{display:none}
 }
 .wdoc .tbl:has(table.kv){display:inline-block;max-width:100%;vertical-align:top}
+.wiki .langs{margin-left:8px}
+.wiki .flag{display:inline-block}
+.wiki .flag[aria-current]{opacity:1;border-color:var(--amber)}
+@media (max-width:900px){.wiki .langs .flag img{width:24px;height:16px}.wiki .langs{gap:3px;margin-left:4px}}
+@media (max-width:520px){.wiki .wk{display:none}.wiki .langs .flag img{width:20px;height:13px}.wiki .flag{padding:1px}.wiki .menu{padding:6px 8px;font-size:1.05rem}.busca{min-width:0}}

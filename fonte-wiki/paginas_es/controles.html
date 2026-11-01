@@ -1,0 +1,95 @@
+<!-- titulo: Controles | categoria: Combate | resumo: Los tres modos de control de la pantalla de acción, las mitades de la pantalla, el botón PELEAR, agacharse, el selector de objetivo y el límite para correr. -->
+<p>La <a href="tela-de-acao.html">pantalla de acción</a> tiene tres modos de control. Elige en <kbd>Ajustes</kbd> → <kbd>CONTROLES</kbd>. El modo vale también en las memorias.</p>
+
+<h2>Los tres modos</h2>
+<div class="tbl"><table>
+<tr><th>Modo</th><th>Descripción en el juego</th><th>Sticks</th></tr>
+<tr><td><b>Simple</b> (predeterminado)</td><td>"Un stick y el botón PELEAR; tocar golpea, correr sale de la pelea"</td><td>el izquierdo mueve; botón <kbd>PELEAR</kbd> a la derecha</td></tr>
+<tr><td><b>Dos sticks</b></td><td>"Puntería en el stick derecho; tocar la pantalla golpea y empuja"</td><td>el izquierdo mueve; el derecho apunta</td></tr>
+<tr><td><b>Automático</b></td><td>"Un stick; golpe, disparo y empujón solos"</td><td>uno solo, en el centro, abajo</td></tr>
+</table></div>
+
+<h2>Las mitades de la pantalla</h2>
+<p>No hay botón de ataque: toda la pantalla es el botón. Un <b>toque rápido</b>:</p>
+<ul>
+<li>en la <b>mitad izquierda</b>: empujón;</li>
+<li>en la <b>mitad derecha</b>: golpe (con arma de fuego, disparo).</li>
+</ul>
+<p>Mantener y arrastrar la pantalla mueve la cámara para ver más hacia un lado; <kbd>Centrar</kbd> (arriba) la regresa. Los toques no atacan con un panel abierto ni en el modo construir de la base.</p>
+<p>Presionar el golpe antes de que el arma esté lista retrasa el siguiente golpe 0,15 s ("¡muy pronto!"). Quieto y sin apuntar, el golpe se gira solo hacia el zombi más cercano dentro de 1,6× el alcance del arma.</p>
+
+<h2>Modo Simple y el botón PELEAR</h2>
+<p>El botón <kbd>PELEAR</kbd> activa la <b>postura de pelea</b> y pasa a mostrar <kbd>PELEANDO</kbd>, en ámbar.</p>
+<ul>
+<li>En la postura encaras solo al zombi más cercano (con arma de fuego, el más cercano que ves a hasta 14 m; con arma blanca, hasta 2,2× el alcance del arma) y caminas de lado, al <b>60%</b> de la velocidad.</li>
+<li>La postura cuenta como <b>apuntar todo el tiempo</b>: golpes más certeros y con probabilidad de crítico (consulta <a href="combate-corpo-a-corpo.html">Combate cuerpo a cuerpo</a>).</li>
+<li>Tocar la pantalla fuera de la postura ya activa la postura y golpea en el acto.</li>
+<li><b>Correr apaga la postura</b> ("quien corre no pelea").</li>
+<li>También se apaga sola después de <b>6 s</b> sin ningún zombi a 12 m ("relajado").</li>
+<li>Apagado, el botón late en rojo cuando un zombi alerta está a hasta 8 m.</li>
+</ul>
+
+<h2>Modo Dos sticks</h2>
+<ul>
+<li>El stick derecho (rojo) apunta: hacia donde señala, el muñeco mira y golpea.</li>
+<li>Mantener el derecho activa la postura de pelea mientras lo mantienes y 0,4 s más después de soltarlo.</li>
+<li>Con arma de fuego, la puntería dada sigue valiendo 1,5 s aunque camines (se puede caminar de lado disparando).</li>
+<li>Golpear <b>sin apuntar</b> (stick derecho suelto) es peor: daño ×0,85, 25% de probabilidad de dar de refilón (la mitad del daño) y más probabilidad de fallar la cabeza.</li>
+</ul>
+
+<h2>Modo Automático</h2>
+<p>Tú solo caminas. El muñeco encara al zombi más cercano y:</p>
+<ul>
+<li>golpea solo cuando hay un zombi al alcance del arma;</li>
+<li>dispara solo cuando ve un zombi a hasta <b>14 m</b> (incluso con armas de mayor alcance);</li>
+<li>empuja solo cuando está en el suelo o agarrado, y cuando hay <b>3 o más</b> zombis a 1,1 m (si tiene aliento para el empujón + 5);</li>
+<li>el empujón alcanza todo alrededor (360°), no solo al frente.</li>
+</ul>
+<p>El precio: el intervalo entre golpes automáticos es 1,35× mayor, multiplicado además por 1 + pánico ÷ 200 (con pánico 100, cerca de 2× lo normal) y por la cadencia de los reflejos (Reflejos rápidos ×0,9, Reflejos lentos ×1,1), pega 15% más débil y solo tiene 4% de probabilidad base de crítico. Las ráfagas automáticas salen disparo a disparo, a la cadencia del arma.</p>
+<p>Los toques en las mitades de la pantalla también funcionan en este modo.</p>
+
+<h2>Caminar y correr</h2>
+<div class="tbl"><table>
+<tr><th>Stick</th><th>Velocidad</th></tr>
+<tr><td>Hasta 72% del recorrido</td><td>caminando, proporcional, hasta 2,0 m/s</td></tr>
+<tr><td>Más allá de 72% (el borde)</td><td>corriendo, 4,2 m/s</td></tr>
+</table></div>
+<p>Correr requiere más de 5 de aliento y gasta 10 por segundo (4% menos por nivel de Aliento). No se puede correr agachado, en el suelo ni agarrado. Caminar gasta 2 de aliento por segundo (proporcional al stick). Con menos de 10 de aliento caminas al 70%.</p>
+<p>Corriendo, cualquier zombi desprevenido a menos de 5 m (por el multiplicador de pasos) te nota en el acto. Otros multiplicadores de velocidad: carga (consulta <a href="mochila-e-peso.html">Mochila y peso</a>), dolor, fractura, suelo desordenado y el rasgo Adicto a la adrenalina (+10% con pánico fuerte, +25% en el extremo).</p>
+<p>En el suelo, mover el stick hace que te levantes más rápido.</p>
+
+<h2>Agacharse</h2>
+<p>El botón <kbd>AGACHARSE</kbd> (se convierte en <kbd>DE PIE</kbd>) está a la izquierda, encima del stick.</p>
+<ul>
+<li>Caminas al <b>45%</b> de la velocidad y no corres.</li>
+<li>Los desprevenidos solo te ven a hasta 4,5 m (de pie, 7 m) y tardan el doble en notarte.</li>
+<li>Los disparos se abren 1 grado menos.</li>
+<li>Los guardias armados aciertan menos (−10 puntos porcentuales).</li>
+<li>Ser derribado te deja de pie otra vez.</li>
+</ul>
+
+<h2>Selector de objetivo</h2>
+<p>En la esquina superior derecha, debajo del arma, el ícono del objetivo cambia adónde apuntas con cada toque, en este orden: <kbd>CUERPO</kbd> → <kbd>PIERNAS</kbd> → <kbd>CABEZA</kbd> → <kbd>CUERPO</kbd>.</p>
+<div class="tbl"><table>
+<tr><th>Objetivo</th><th>Efecto</th></tr>
+<tr><td>CABEZA</td><td>daño alto, pero puede fallar y dar en el hombro; el disparo apuntado a la cabeza se abre 2 grados más</td></tr>
+<tr><td>CUERPO</td><td>daño normal, sin riesgo (el chaleco del zombi absorbe una parte)</td></tr>
+<tr><td>PIERNAS</td><td>menos daño, pero acumula daño en la pierna hasta que cae y se arrastra</td></tr>
+</table></div>
+<p>Un zombi caído o arrastrándose siempre recibe el golpe en la cabeza. Los números están en <a href="combate-corpo-a-corpo.html">Combate cuerpo a cuerpo</a> y <a href="armas-de-fogo.html">Armas de fuego</a>.</p>
+
+<h2>Otros botones de la pantalla</h2>
+<ul>
+<li><b>Arma</b> (esquina superior derecha): toca para abrir la lista de armas que puedes tomar ahora (espalda y cinturón) y cambiar. Muestra la durabilidad (arma blanca) o las balas (arma de fuego). Cambiar tarda 0,7 s (0,3 s para los puños), sin atacar.</li>
+<li><b>Construir</b> (martillo, solo en la base): activa el modo construir; en él los toques no atacan.</li>
+<li><b>Salir</b>: ícono de salida; consulta <a href="tela-de-acao.html">Pantalla de acción</a>.</li>
+<li><b>Lanzamiento</b>: junto a agacharse, con el nombre y cuántos quedan; mantenerlo cambia el ítem. Consulta <a href="arremesso.html">Lanzamiento</a>.</li>
+<li><b>Corazón</b> (esquina superior izquierda): toca para ver vida, aliento, pánico y el modo.</li>
+<li>Botones de contexto (aparecen cerca de las cosas): <kbd>HURGAR</kbd>, <kbd>REGISTRAR CUERPO</kbd>, <kbd>FORZAR PUERTA</kbd>, <kbd>DESMONTAR</kbd>, <kbd>SUBIR</kbd>/<kbd>BAJAR</kbd>, <kbd>ENTRAR: nombre</kbd>, <kbd>USAR</kbd>.</li>
+</ul>
+
+<h2>Ver también</h2>
+<ul>
+<li><a href="combate-corpo-a-corpo.html">Combate cuerpo a cuerpo</a></li>
+<li><a href="armas-de-fogo.html">Armas de fuego</a></li>
+</ul>

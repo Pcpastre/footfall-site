@@ -1,0 +1,121 @@
+<!-- titulo: Wounds | categoria: Health | resumo: The nine wound types, where each hit lands, how much it bleeds, how long it takes to heal, the steps it needs and how clothing protects you. -->
+<p>Wounds sit on one of the six body parts and each one needs its own <a href="tratamento.html">treatment</a> steps. A wound only starts healing when <b>all</b> the steps it needs are done and it isn't infected. Open wounds bleed, hurt, can catch a common infection, and some can pass on the <a href="infeccao.html">zombie infection</a>. You can see everything in the character panel, <kbd>Health</kbd> tab, on the Vitruvian figure (each part gets redder the worse the wound is, and shifts toward green if infected) and on the wound cards below it.</p>
+
+<h2>Wound types</h2>
+<div class="tbl"><table>
+<tr><th>Wound</th><th>Bleeds (untreated)</th><th>Heals in</th><th>Steps it needs</th><th>Pain</th><th>Passes zombie infection</th></tr>
+<tr><td>Scratch</td><td>1 HP every 30 s (2/min)</td><td>1 day</td><td>Clean, Bandage</td><td>5</td><td>7%</td></tr>
+<tr><td>Laceration</td><td>1 HP every 12 s (5/min)</td><td>3 days</td><td>Clean, Bandage</td><td>12</td><td>25%</td></tr>
+<tr><td>Bite</td><td>1 HP every 15 s (4/min)</td><td>5 days</td><td>Clean, Bandage</td><td>15</td><td>85%</td></tr>
+<tr><td>Deep cut</td><td>1 HP every 8 s (7.5/min); bandaged without a suture, 1 every 40 s</td><td>4 days</td><td>Clean, Suture, Bandage</td><td>15</td><td>No</td></tr>
+<tr><td>Shard</td><td>1 HP every 25 s (2.4/min)</td><td>2 days</td><td>Remove the shrapnel, Clean, Bandage</td><td>18 with the shard in, 8 without</td><td>No</td></tr>
+<tr><td>Hemorrhage</td><td>1 HP every 3 s (20/min)</td><td>5 days</td><td>Tourniquet, Clean, Suture, Bandage</td><td>20</td><td>25%</td></tr>
+<tr><td>Fracture</td><td>Doesn't bleed</td><td>7 days</td><td>Immobilize (splint)</td><td>32 without a splint, 15 with</td><td>No</td></tr>
+<tr><td>Burn</td><td>Doesn't bleed</td><td>3 days</td><td>Ointment, Bandage</td><td>20 without ointment, 8 with</td><td>No</td></tr>
+<tr><td>Bruise</td><td>Doesn't bleed</td><td>12 hours</td><td>None</td><td>8</td><td>No</td></tr>
+</table></div>
+<p>The zombie infection chances in the table are the normal ones; the immunity traits change these numbers (see <a href="infeccao.html">Infection</a>). Healing times are in <b>real time</b> and count from the moment the last step was done; they're multiplied by the healing trait, the First aid level and the base stretcher (see <a href="tratamento.html">Treatment</a>). A treated wound stays on the body, hurting half as much, until the <i>healing</i> bar fills.</p>
+
+<h3>Notes on each type</h3>
+<ul>
+<li><b>Scratch, laceration and bite</b>: stop bleeding as soon as they're bandaged. Cleaning is only asked for while the wound isn't bandaged: if you bandage first, the game no longer asks for cleaning, but a wound bandaged without cleaning has the highest chance of common infection (see below).</li>
+<li><b>Deep cut</b>: bandaging reduces the bleeding but doesn't stop it. Until it's sutured the card shows <i>leaking (needs suture)</i> and you lose 1 HP every 40 s.</li>
+<li><b>Shard</b>: the fragment stays inside (<i>shrapnel inside</i>) until you take it out. With the fragment inside the wound hurts more and has an extra chance of common infection. Bandaging stops the blood, but it doesn't replace removing the shard.</li>
+<li><b>Hemorrhage</b>: only stops bleeding with a <a href="item-torniquete.html">tourniquet</a> or a suture; a bandage isn't enough. The tourniquet can stay on for 2 hours at most: after that the limb without blood takes 1 HP every 120 s until you suture it (the suture releases the tourniquet).</li>
+<li><b>Fracture</b>: makes you slow on the action screen (speed ×0.65 without a splint, ×0.85 with a splint) and gives the <i>Fracture</i> moodle.</li>
+<li><b>Burn</b>: without ointment, it has a 3% chance per hour of catching a common infection.</li>
+<li><b>Bruise</b>: this is the hematoma. It needs nothing and goes away on its own in 12 hours. It doesn't tear clothing and never gets infected.</li>
+</ul>
+
+<h2>Where each wound comes from</h2>
+<div class="tbl"><table>
+<tr><th>Source</th><th>Wound</th><th>Part</th><th>Damage</th></tr>
+<tr><td>Zombie scratch</td><td>60% scratch; 40% laceration, and 12% of those become hemorrhage</td><td>Rolled by part weight</td><td>4 to 7</td></tr>
+<tr><td>Zombie bite</td><td>70% bite, 30% laceration</td><td>See bite table</td><td>6 to 10 (crawler: 3 to 5)</td></tr>
+<tr><td>Bite stopped by clothing</td><td>Bruise</td><td>The bite's part</td><td>Half</td></tr>
+<tr><td>The Brute's blow and charge</td><td>Like the scratch</td><td>Rolled by weight</td><td>8 to 14, and knocks you down</td></tr>
+<tr><td>Being knocked down</td><td>5% fracture (arms or legs); 35% bruise (arms, legs, torso or head)</td><td>—</td><td>—</td></tr>
+<tr><td>Stepping on fire (action screen)</td><td>Burn</td><td>Legs or feet</td><td>4 every 2 s (2 with a <a href="item-capacete_bombeiro.html">Firefighter helmet</a>)</td></tr>
+<tr><td>Guard's gunshot or arrow</td><td>Shard</td><td>Any, equally</td><td>Half the weapon's damage, between 3 and 9</td></tr>
+<tr><td>Guard's melee hit</td><td>Deep cut (weapon with damage 6 or more) or bruise</td><td>Any, equally</td><td>70% of the weapon's damage, between 2 and 10</td></tr>
+<tr><td>Opening a piece of furniture while looting</td><td>Shard (glass fragment), 4% chance</td><td>Hands</td><td>—</td></tr>
+<tr><td>Carpentry or mechanics recipe</td><td>Deep cut, 3% − 0.5% per level</td><td>Hands</td><td>—</td></tr>
+<tr><td>Lighting a campfire or stove</td><td>Burn, 4% chance</td><td>Hands</td><td>—</td></tr>
+</table></div>
+<p>The Brute's (<a href="zumbi-chefe.html">boss zombie</a>) bite or blow deals double damage. Wounds from guards and accidents (glass, tools, fire) never pass on the zombie infection. Each wound outside a fight also adds 4 stress.</p>
+
+<h2>Where the hit lands</h2>
+<h3>Scratch and blow</h3>
+<div class="tbl"><table>
+<tr><th>Part</th><th>Chance</th></tr>
+<tr><td>Head</td><td>8%</td></tr>
+<tr><td>Torso</td><td>22%</td></tr>
+<tr><td>Arms</td><td>25%</td></tr>
+<tr><td>Hands</td><td>15%</td></tr>
+<tr><td>Legs</td><td>20%</td></tr>
+<tr><td>Feet</td><td>10%</td></tr>
+</table></div>
+<h3>Bite</h3>
+<div class="tbl"><table>
+<tr><th>Zombie</th><th>Parts</th></tr>
+<tr><td>Standing (or grabbing you)</td><td>Arms 55%, torso 30%, head (face and neck) 10%, hands 5%</td></tr>
+<tr><td>Crawler</td><td>Feet 50%, legs 50%</td></tr>
+</table></div>
+<p>The arm is the most-bitten spot: a <a href="item-protetor_antebraco.html">Forearm guard</a> or a <a href="item-jaqueta.html">Leather jacket</a> stops most of them. Against crawlers, what matters is <a href="item-coturno.html">Combat boots</a>, <a href="item-botas.html">Boots</a> and <a href="item-caneleiras.html">Shin guards</a>.</p>
+
+<h2>How clothing protects you</h2>
+<p>Each piece worn has a <b>coverage</b> per body part (how much it covers, e.g.: the leather jacket covers 85% of the torso and 88% of the arms) and a <b>material</b>, which stops each type of attack differently:</p>
+<div class="tbl"><table>
+<tr><th>Material</th><th>Bite</th><th>Scratch</th><th>Blow</th><th>Gunshot</th><th>Wear per bite stopped</th></tr>
+<tr><td>Fabric</td><td>10%</td><td>30%</td><td>10%</td><td>0%</td><td>25%</td></tr>
+<tr><td>Denim/canvas</td><td>35%</td><td>60%</td><td>20%</td><td>0%</td><td>15%</td></tr>
+<tr><td>Leather</td><td>85%</td><td>90%</td><td>35%</td><td>5%</td><td>8%</td></tr>
+<tr><td>Rigid</td><td>95%</td><td>95%</td><td>70%</td><td>30%</td><td>4%</td></tr>
+<tr><td>Ballistic</td><td>95%</td><td>95%</td><td>60%</td><td>80%</td><td>5%</td></tr>
+</table></div>
+<p>The chance of a piece stopping an attack is <b>coverage × material resistance × condition</b>, where condition goes from 100% (new) to 50% (torn). Layered pieces on the same part add up: the attack has to get through all of them. Example: jeans on the legs (95% coverage, denim 35% against bites) stop about 33% of bites to the leg.</p>
+<p>When clothing stops the attack:</p>
+<ul>
+<li><b>Scratch, blow, melee hit or gunshot</b>: no wound and only half the damage ("your clothes held").</li>
+<li><b>Bite</b>: becomes a <b>bruise</b> and you take half the damage. It hurts, but it doesn't bleed or get infected.</li>
+</ul>
+<p>Stopping an attack wears the clothing: a bite wears it by the table value × coverage; a scratch wears half that, a melee hit 70% and a gunshot 120%. When a wound gets through, the clothing on that part also tears a little (35 wear points per wound, except bruises). At 100% wear the piece is torn and protects half as much until it's sewn. The Tailoring skill reduces all this wear by 5% per level. Each piece's protection is on the item's page and in <a href="costura-e-roupas.html">Tailoring and clothing</a>.</p>
+
+<h3>Thick skin and Thin skin</h3>
+<p>After the clothing comes the trait: with <a href="tracos.html">Thick skin</a>, 30% of the wounds that would get through are canceled (half the damage remains). With Thin skin, when clothing stops a scratch, melee hit or gunshot, the same attack is rolled again 30% of the time.</p>
+
+<h2>Bleeding</h2>
+<p>Each bleeding wound takes health at the rate in the table, and several wounds add up. The <i>Bleeding</i> moodle shows how many wounds are bleeding (1, 2 or 3+). While there's bleeding, health doesn't regenerate and stamina recovers 15% slower in a fight. Blood only flows on the map with the session active: with the app closed it doesn't take health, but rest also doesn't give health back to someone who is bleeding.</p>
+<p>Dying with bleeding wounds gives the cause "You bled to death.". See <a href="morte.html">Death</a>.</p>
+
+<h2>Dirty dressing</h2>
+<p>Every dressing gets dirty over time:</p>
+<ul>
+<li>a clean bandage or gauze: gets dirty after <b>12 h</b>;</li>
+<li>with <a href="item-esparadrapo.html">Medical tape</a> (used when bandaging, if you have it): gets dirty after <b>24 h</b>;</li>
+<li>with <a href="item-pano.html">Cloth rags</a>: it's dirty from the start.</li>
+</ul>
+<p>The card shows <i>dirty dressing</i> and the <kbd>Change dressing</kbd> button appears. A dirty dressing doesn't prevent healing, but it adds 4% per hour to the chance of common infection. Changing the dressing resets the clock.</p>
+
+<h2>Common infection</h2>
+<p>Every hour with the session active, every wound that can bleed (except hemorrhage) has a chance of getting infected, adding up:</p>
+<div class="tbl"><table>
+<tr><th>Situation</th><th>Per hour</th></tr>
+<tr><td>Bandaged without having been cleaned</td><td>+6%</td></tr>
+<tr><td>Dirty dressing (past its time or a rag)</td><td>+4%</td></tr>
+<tr><td>Shard still inside</td><td>+5%</td></tr>
+<tr><td>Open, no dressing (except scratches)</td><td>+2%</td></tr>
+<tr><td>Burn without ointment</td><td>3%</td></tr>
+</table></div>
+<p>An infected wound is marked <i>INFECTED</i>, stops healing, hurts +10, keeps health from coming back while you play (while sleeping it comes back normally), takes 15 off max stamina and gives the <i>Infected wound</i> moodle. After 72 h infected it takes 1 HP every 600 s. Only an <a href="item-antibiotico.html">Antibiotic</a> cures it; details in <a href="infeccao.html">Infection</a>.</p>
+
+<h2>Pain</h2>
+<p>Total pain is the sum of each wound's pain (table above; half if the wound is already treated, +10 if infected), up to 100.</p>
+<div class="tbl"><table>
+<tr><th>Pain</th><th>Moodle</th><th>Effect on the action screen</th></tr>
+<tr><td>Less than 15</td><td>—</td><td>—</td></tr>
+<tr><td>15 to 34</td><td>Pain</td><td>Swings 7% slower, −5% damage</td></tr>
+<tr><td>35 to 59</td><td>Severe pain</td><td>Swings 14% slower, −10% damage, speed ×0.93</td></tr>
+<tr><td>60 or more</td><td>Unbearable pain</td><td>Swings 21% slower, −15% damage, speed ×0.85; −10 max stamina</td></tr>
+</table></div>
+<p>A <a href="item-analgesico.html">Painkiller</a> cuts 65% of the pain for 4 h; <a href="item-morfina.html">Morphine</a> zeroes the pain for 2 h, but makes swings 10% slower and adds 15 tiredness.</p>

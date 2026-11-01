@@ -1,0 +1,62 @@
+<!-- titulo: Cansancio y sueño | categoria: Salud | resumo: Cómo sube y baja el cansancio, sus niveles y efectos, y cuánto descansas y te curas durmiendo en la base, en la cama, en el saco de dormir o en la calle. -->
+<p>El cansancio va de 0 a 100% y aparece en la barra <i>Cansancio</i> de la pestaña <kbd>Salud</kbd>. Sube caminando y corriendo y solo baja de verdad cuando te detienes o terminas la sesión. En Footfall, <b>dormir es terminar la sesión</b>: el tiempo con la app cerrada es el tiempo de sueño, y el lugar donde terminaste define cuánto rinde.</p>
+
+<h2>Cómo sube el cansancio</h2>
+<div class="tbl"><table>
+<tr><th>Actividad</th><th>Cansancio</th></tr>
+<tr><td>Caminar (hasta 3 m/s)</td><td>+1,5 por km</td></tr>
+<tr><td>Correr (más de 3 m/s)</td><td>+9 por km (6 por km, y cada metro corriendo vale 1,5)</td></tr>
+<tr><td><a href="item-ansiolitico.html">Ansiolítico</a></td><td>+10 (+25 si ya estabas bajo el efecto de otro)</td></tr>
+<tr><td><a href="item-morfina.html">Morfina</a></td><td>+15</td></tr>
+</table></div>
+<p>En vehículo (más de unos 25 km/h durante más de 3 s) la distancia no cuenta, así que tampoco cansa.</p>
+
+<h2>Cómo baja el cansancio</h2>
+<div class="tbl"><table>
+<tr><th>Situación</th><th>Recuperación</th></tr>
+<tr><td>Quieto (menos de 0,4 m/s) con la sesión activa</td><td>−0,5 por minuto (−30 por hora)</td></tr>
+<tr><td><a href="item-cafe.html">Café molido</a></td><td>−10 en el acto</td></tr>
+<tr><td><a href="item-cafe_coado.html">Café colado</a></td><td>−25 en el acto</td></tr>
+<tr><td>App cerrada</td><td>Depende de dónde terminaste (tabla de abajo)</td></tr>
+</table></div>
+
+<h2>Niveles</h2>
+<div class="tbl"><table>
+<tr><th>Cansancio</th><th>Moodle</th><th>Efecto</th></tr>
+<tr><td>0 a 39</td><td>—</td><td>Aliento máximo −0,4 por punto</td></tr>
+<tr><td>40 a 69</td><td>Cansado</td><td>Aliento máximo −16 a −27,6</td></tr>
+<tr><td>70 a 89</td><td>Exhausto</td><td>Aliento máximo −28 a −35,6; golpes 10% más lentos en la pelea</td></tr>
+<tr><td>90 a 100</td><td>Al límite</td><td>Aliento máximo −36 a −40; golpes 20% más lentos en la pelea</td></tr>
+</table></div>
+<p>El aliento máximo empieza en 100 y pierde 0,4 por punto de cansancio antes de los multiplicadores de los rasgos. El resultado nunca queda por debajo de 30.</p>
+
+<h2>Dormir</h2>
+<p>Para dormir, abre el menú y toca <kbd>Dormir (terminar aquí)</kbd> cuando estés en un lugar seguro, o <kbd>Terminar sesión</kbd> fuera de él. El juego confirma: <i>¿Dormir en la base?</i> / <i>¿Dormir en el puesto?</i> con el botón <kbd>Dormir</kbd>, o <i>¿Terminar aquí?</i> con el botón <kbd>Terminar</kbd>. Terminar en cualquier lugar conserva todo lo que llevas.</p>
+<p>Son lugares seguros para dormir: dentro de tu base, en un puesto avanzado tuyo o en tu tienda de campaña montada.</p>
+
+<h3>Cuánto rinde</h3>
+<div class="tbl"><table>
+<tr><th>Dónde terminaste</th><th>Cansancio por hora</th><th>Para llevar 100% a cero</th><th>Vida por hora</th><th>Cabeza (horas contadas)</th></tr>
+<tr><td>Base, con cama</td><td>−18,75</td><td>5 h 20 min</td><td>+7,5</td><td>×1,5, con descanso de base</td></tr>
+<tr><td>Base sin cama, puesto avanzado o tienda de campaña</td><td>−12,5</td><td>8 h</td><td>+5</td><td>×1, con descanso de base</td></tr>
+<tr><td>Fuera de ellos, con <a href="item-saco_dormir.html">Saco de dormir</a> en la mochila</td><td>−8</td><td>12 h 30 min</td><td>+2,5</td><td>×1,2, descanso común</td></tr>
+<tr><td>Fuera de ellos, en el suelo</td><td>−4</td><td>25 h</td><td>0</td><td>×1, descanso común</td></tr>
+</table></div>
+<ul>
+<li><b>Cama</b>: tiene que ser un <a href="moveis-da-base.html">mueble</a> <i>Cama</i> colocado en tu <a href="base.html">base</a>, y tienes que haber terminado dentro de la base (no en un puesto). Rinde 50% más que la base sin cama.</li>
+<li><b>Saco de dormir</b>: basta con que esté en la mochila al terminar fuera de la base, del puesto y de la tienda de campaña. "Dormiste en el saco de dormir: descansas mejor que en el suelo, pero no como en una cama."</li>
+<li><b>Vida</b>: solo vuelve durmiendo si no estás sangrando ni con infección zombi.</li>
+<li><b>Cabeza</b>: durmiendo con descanso de base, el estrés baja 30 y la tristeza 5 por hora; con descanso común, 10 y 1 por hora. La columna muestra el multiplicador de las horas: en la cama cada hora cuenta como 1,5. Consulta <a href="mente.html">Mente</a>.</li>
+</ul>
+<p>Los mensajes al terminar dicen dónde dormiste: "Dormiste en la base. Descanso completo mientras la app esté cerrada.", "Dormiste en la tienda. ...", "Dormiste en el puesto avanzado. ...".</p>
+
+<h3>Lo que pasa mientras duermes</h3>
+<ul>
+<li>El hambre y la sed siguen bajando, pero se detienen en 11% (consulta <a href="necessidades.html">Necesidades</a>).</li>
+<li>Las heridas tratadas siguen cicatrizando en tiempo real (sin el bono de la camilla).</li>
+<li>El sangrado no quita vida con la app cerrada, y las heridas no contraen infección común.</li>
+<li>La infección zombi sigue avanzando y puede matarte antes de que vuelvas.</li>
+<li>Tu base puede sufrir <a href="ataque-noturno.html">ataques nocturnos</a>.</li>
+</ul>
+
+<div class="tip"><b>Cuánto dormir</b>En la base sin cama, 8 h cerrada llevan el cansancio a cero y devuelven 40 de vida. Con cama, poco más de 5 h ya llevan el cansancio a cero, y 8 h devuelven 60 de vida. La cama (receta "Cama", 3 tablas, 2 clavos y 4 trapos, en el banco de trabajo) es uno de los primeros muebles que valen la pena.</div>

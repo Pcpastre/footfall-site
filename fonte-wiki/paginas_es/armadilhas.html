@@ -1,0 +1,54 @@
+<!-- titulo: Trampas | categoria: Base | resumo: Estacas, pozo cubierto y alambre con latas: usos, rearmado, efecto en la pantalla de acción y en el ataque nocturno. -->
+<p>Las <b>trampas</b> son <a href="moveis-da-base.html">muebles de la base</a> que colocas en el suelo, dentro de las paredes o en el patio (hasta 15 m del borde). Funcionan de dos maneras: en la <a href="tela-de-acao.html">pantalla de acción</a>, cuando un zombi las pisa, y en el <a href="ataque-noturno.html">ataque nocturno</a>, atrapando a parte de los atacantes antes de que lleguen a las paredes.</p>
+
+<h2>Resumen</h2>
+<div class="tbl"><table>
+<tr><th>Trampa</th><th>Receta</th><th>Costo</th><th>Usos</th><th>Rearmar</th><th>Efecto en el zombi</th><th>En el ataque nocturno</th></tr>
+<tr><td>Estacas</td><td>M08 (sin banco de trabajo, Carpintería, 20 XP)</td><td>2 <a href="item-tabuas.html">tablas</a>, 4 <a href="item-pregos.html">clavos</a></td><td>6</td><td>1 tabla + 2 clavos</td><td>12 de daño y 12 de daño en la pierna; puede volverse rastrero</td><td>Atrapa atacantes (gasta usos)</td></tr>
+<tr><td>Pozo cubierto</td><td>M10 (sin banco de trabajo)</td><td>2 tablas, 2 <a href="item-pano.html">trapos de tela</a></td><td>3</td><td>1 tabla + 2 trapos</td><td>Cae y queda en el suelo ~16 s</td><td>Atrapa atacantes (gasta usos)</td></tr>
+<tr><td>Alambre con latas</td><td>M09 (sin banco de trabajo)</td><td>1 <a href="item-arame.html">alambre</a>, 2 <a href="item-garrafa.html">botellas vacías</a>, 2 clavos</td><td>nunca se gasta</td><td>no hace falta</td><td>Ruido de latas y aviso "¡latas!"</td><td>Golpes 15% más débiles</td></tr>
+</table></div>
+
+<h2>Estacas</h2>
+<p>Una hilera de estacas de 1,2 × 0,6 m. Cuando un zombi pasa por encima:</p>
+<ul>
+<li>recibe <b>12 de daño</b> (aparece <i>"¡estacas!"</i>) y suma 12 al daño acumulado en la pierna;</li>
+<li>si el daño en la pierna supera el 60% de su vida máxima, <b>se vuelve rastrero</b>;</li>
+<li>si su vida llega a 0, muere ahí mismo;</li>
+<li>gasta 1 de los 6 usos.</li>
+</ul>
+<p>Rearmar: acércate y toca <kbd>USAR ESTACAS</kbd>. Cuesta 1 tabla + 2 clavos (de la mochila o de los cofres), vuelve a 6 usos y da 6 XP de Carpintería. Si ya está llena: <i>"Ya está armada (6 veces)."</i></p>
+
+<h2>Pozo cubierto</h2>
+<p>Un pozo de 1 × 1 m disimulado con tablas y tela. El zombi que lo pisa <b>cae</b> (<i>"cayó en el pozo"</i>) y queda en el suelo el triple del tiempo normal de caída más el tiempo de levantarse: 5 × 3 + 1,2 = <b>16,2 segundos</b> sin atacar. Gasta 1 de los 3 usos.</p>
+<p>Rearmar: <kbd>USAR POZO CUBIERTO</kbd>. Cuesta 1 tabla + 2 trapos de tela, vuelve a 3 usos y da 6 XP de Carpintería.</p>
+
+<h2>Alambre con latas</h2>
+<p>Un alambre bajo de 1,6 m con latas colgadas. Cuando pasa un zombi, suenan las latas y aparece <i>"¡latas!"</i> sobre él: oyes que alguien llegó. <b>Nunca se gasta</b> y no hace falta rearmarlo (<i>"La alarma de latas no necesita nada."</i>). <kbd>USAR ALAMBRE CON LATAS</kbd> solo explica: <i>"Alambre con latas: cuando pasa un zombi, las latas suenan y lo escuchas."</i></p>
+
+<h2>Reglas en la pantalla de acción</h2>
+<ul>
+<li>El zombi activa la trampa cuando entra en su área.</li>
+<li>Después de activar una trampa, el mismo zombi pasa <b>3 segundos</b> sin activar otra.</li>
+<li>Los usos gastados en la pantalla de acción quedan gastados en la base (incluso cuando la escena se reinicia al moverte libremente).</li></ul>
+
+<h2>Reglas en el ataque nocturno</h2>
+<p>En el <a href="ataque-noturno.html">ataque nocturno</a> y en el paso de la horda, las trampas actúan <b>antes</b> que las paredes:</p>
+<ol class="steps">
+<li>El juego recorre cada estaca y cada pozo colocados que todavía tienen usos.</li>
+<li>Cada uno atrapa hasta <b>un tercio</b> de los atacantes que todavía no fueron atrapados (división entera), limitado a los usos que tiene.</li>
+<li>Los usos que atrapan se gastan.</li>
+<li>Solo los que sobran golpean las paredes, puertas y ventanas.</li>
+</ol>
+<p>Ejemplo: 9 atacantes, un pozo lleno (3 usos) y estacas llenas (6 usos). El pozo atrapa ⌊9 ÷ 3⌋ = 3 (queda con 0 usos); las estacas atrapan ⌊6 ÷ 3⌋ = 2 (quedan con 4). Sobran 4 zombis golpeando.</p>
+<p>El alambre con latas no atrapa a nadie, pero, si hay al menos uno colocado, cada golpe del ataque se multiplica por 0,85 (te avisaron). Lo mismo vale para la torre de vigía (×0,85) y para el reflector encendido (×0,8); los tres se multiplican entre sí.</p>
+<p>El aviso del ataque muestra cuántos cayeron en las trampas (<i>"..., 5 en las trampas."</i>). El panel de la base recuerda: <i>"Las trampas atrapan a algunos zombis en el ataque."</i></p>
+
+<div class="tip"><b>Consejo</b>Pon estacas y pozos por donde van a pasar los zombis: frente a las puertas y ventanas y en los caminos del patio. Rearma después de cada noche: una trampa sin usos no atrapa a nadie en el próximo ataque.</div>
+
+<h2>Ver también</h2>
+<ul>
+<li><a href="moveis-da-base.html">Muebles de la base</a></li>
+<li><a href="ataque-noturno.html">Ataque nocturno</a></li>
+<li><a href="paredes-portas-e-janelas.html">Paredes, puertas y ventanas</a></li>
+</ul>

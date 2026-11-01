@@ -1,0 +1,122 @@
+<!-- titulo: Tratamiento | categoria: Salud | resumo: Cada paso de primeros auxilios: tiempo, ítems aceptados, probabilidad de fallo, el vendaje rápido y cómo acelerar la cicatrización. -->
+<p>Toda <a href="feridas.html">herida</a> se trata <b>por pasos</b> en la pestaña <kbd>Salud</kbd> del panel del personaje. Cada herida muestra solo los pasos que todavía faltan, en el orden correcto. Solo cicatriza con todos los pasos hechos y sin infección. Tratar da XP de <a href="habilidades.html">Primeros auxilios</a>, y el nivel de la habilidad hace cada paso más rápido y más seguro.</p>
+
+<h2>Dónde tratar</h2>
+<ul>
+<li><b>En el mapa</b>: abre el panel del personaje (ícono de corazón, <i>Personaje</i>) y ve a la pestaña <kbd>Salud</kbd>. El muñeco de Vitruvio arriba muestra el estado de cada parte; tocar una parte la resalta. Abajo están las barras (Vida, Hambre, Sed, Cansancio, Estrés, Tristeza, Aburrimiento, Dolor) y una tarjeta por herida.</li>
+<li><b>En la pantalla de acción</b>: el mismo panel se abre directamente en la pestaña Salud cuando estás herido. También puedes tratarte en medio de la pelea.</li>
+<li><b>En la camilla de la base</b>: tocar la camilla en la pantalla de acción abre Salud y recuerda que ahí las heridas cicatrizan más rápido.</li>
+</ul>
+<div class="tip warn"><b>Cuándo no se puede tratar</b>En el mapa, no se puede hacer ningún paso con un zombi persiguiéndote: "Hay un zombi detrás de ti. Aléjate primero.". En la pantalla de acción, el bloqueo es cualquier zombi a menos de 6 m: "Hay un zombi demasiado cerca. Aléjate unos metros para curarte.".</div>
+
+<h2>El flujo de un paso</h2>
+<ol class="steps">
+<li>En la tarjeta de la herida, cada paso que falta es un botón con el nombre del paso y, debajo, el ítem que se va a usar (o <i>en la mano</i>, o <i>falta &lt;ítem&gt;</i> si no tienes ninguno; entonces el botón queda desactivado).</li>
+<li>Al tocarlo, se abre una ventana con el nombre del paso, el ítem usado, avisos ("Está al fondo de la mochila: buscarlo tarda más.", "Probabilidad de fallar: N% (cuentan el nivel y el pánico).") y una barra con los segundos que faltan.</li>
+<li>Puedes tocar <kbd>Parar</kbd> para desistir antes de que la barra se llene; no se gasta nada.</li>
+<li>Cuando la barra se llena, el ítem se gasta y el paso queda hecho (o falla). Aparece el resultado, por ejemplo "Vendar (con Gasa): hecho.".</li>
+</ol>
+<p>El ítem se busca en la mochila y, si estás en la base, en los cofres. En la pantalla de acción, el juego prefiere lo que está en los bolsillos; si el ítem solo está al fondo de la mochila, el paso tarda 2,5 s más.</p>
+
+<h2>Los pasos</h2>
+<div class="tbl"><table>
+<tr><th>Paso</th><th>Tiempo (nivel 0)</th><th>Ítems aceptados (el primero que tengas)</th><th>Fallo</th><th>XP</th></tr>
+<tr><td>Limpiar y desinfectar</td><td>4 s</td><td><a href="item-soro.html">Suero fisiológico</a>, <a href="item-alcool.html">Alcohol 70%</a>, <a href="item-cachaca.html">Botella de cachaza</a></td><td>—</td><td>5</td></tr>
+<tr><td>Quitar la esquirla</td><td>8 s</td><td><a href="item-pinca.html">Pinzas</a> (no se gastan) o a mano</td><td>25%</td><td>15</td></tr>
+<tr><td>Suturar</td><td>12 s</td><td><a href="item-kit_sutura.html">Kit de sutura</a></td><td>35%</td><td>20</td></tr>
+<tr><td>Vendar</td><td>5 s</td><td><a href="item-bandagem_esteril.html">Venda estéril</a>, <a href="item-gaze.html">Gasa</a>, <a href="item-bandagem.html">Vendaje</a>, <a href="item-kit_socorros.html">Botiquín de primeros auxilios</a>, <a href="item-pano.html">Trapos de tela</a></td><td>—</td><td>10</td></tr>
+<tr><td>Torniquete</td><td>3 s</td><td><a href="item-torniquete.html">Torniquete</a>, <a href="item-pano.html">Trapos de tela</a></td><td>—</td><td>10</td></tr>
+<tr><td>Inmovilizar (férula)</td><td>10 s</td><td><a href="item-tala.html">Férula</a></td><td>—</td><td>15</td></tr>
+<tr><td>Pomada</td><td>4 s</td><td><a href="item-pomada.html">Pomada para quemaduras</a></td><td>—</td><td>8</td></tr>
+</table></div>
+
+<h3>Detalles de cada paso</h3>
+<ul>
+<li><b>Limpiar y desinfectar</b>: marca la herida como <i>limpia</i>. Con cachaza, queda la <a href="item-garrafa.html">Botella vacía</a>.</li>
+<li><b>Quitar la esquirla</b>: con pinzas, las pinzas no se gastan. Sin pinzas, se hace a mano: el paso sigue siendo posible ("Sin pinzas: se hace a mano (duele y sangra).") y quita 3 de vida.</li>
+<li><b>Suturar</b>: gasta 1 kit de sutura por intento. Cierra el corte profundo y la hemorragia; en la hemorragia, también suelta el torniquete.</li>
+<li><b>Vendar</b>: con Venda estéril o Botiquín de primeros auxilios, la herida también cuenta como limpia. Con trapo, el vendaje ya nace sucio. Si tienes <a href="item-esparadrapo.html">Esparadrapo</a>, se gasta junto y el vendaje tarda 24 h en vez de 12 h en ensuciarse. Cuando el vendaje se ensucia, el botón vuelve como <kbd>Cambiar vendaje</kbd>.</li>
+<li><b>Torniquete</b>: detiene la hemorragia en el acto. No lo dejes más de 2 h sin suturar: después de eso quita 1 HP cada 120 s.</li>
+<li><b>Inmovilizar (férula)</b>: único paso de la fractura. La férula se hace con 1 tabla y 2 trapos.</li>
+<li><b>Pomada</b>: primer paso de la quemadura; después venda.</li>
+</ul>
+
+<h2>Tiempo de cada paso</h2>
+<p>Tiempo = tiempo base × (1 − 0,08 × nivel de Primeros auxilios) × modificadores:</p>
+<div class="tbl"><table>
+<tr><th>Modificador</th><th>Efecto</th></tr>
+<tr><td>Cada nivel de Primeros auxilios</td><td>−8% (nivel 10 = 20% del tiempo)</td></tr>
+<tr><td>Bajo el efecto de <a href="item-ansiolitico.html">Ansiolítico</a></td><td>×1,1</td></tr>
+<tr><td>Rol Médico en el grupo</td><td>×0,9</td></tr>
+<tr><td>Ítem solo al fondo de la mochila (pantalla de acción)</td><td>+2,5 s</td></tr>
+</table></div>
+
+<h2>Probabilidad de fallo</h2>
+<p>Solo la sutura y quitar la esquirla pueden fallar. La probabilidad es:</p>
+<p><b>base − 12% × nivel de Primeros auxilios + temblor</b>, entre 0% y 80%, con base 35% (sutura) o 25% (esquirla). El temblor suma 8% en En pánico, 16% en Pánico fuerte y 24% en Pánico extremo, más 5% si estás Muy estresado.</p>
+<div class="tbl"><table>
+<tr><th>Nivel</th><th>Sutura (en calma)</th><th>Esquirla (en calma)</th></tr>
+<tr><td>0</td><td>35%</td><td>25%</td></tr>
+<tr><td>1</td><td>23%</td><td>13%</td></tr>
+<tr><td>2</td><td>11%</td><td>1%</td></tr>
+<tr><td>3 o más</td><td>0%</td><td>0%</td></tr>
+</table></div>
+<p>Cuando falla, el ítem ya se gastó (el kit de sutura se pierde; las pinzas, no), pierdes 3 de vida y ganas 2 de XP. Los mensajes son "La mano tembló y la sutura se abrió (-3 de vida). Inténtalo de nuevo." y "La esquirla se resbaló (-3 de vida). Inténtalo de nuevo.". Ningún paso deja la vida por debajo de 1.</p>
+<div class="tip"><b>Cálmate antes de coser</b>El pánico de nivel 2 o más pesa mucho en la sutura. Aléjate, espera a que baje el pánico o toma un <a href="item-betabloqueador.html">Betabloqueante</a> (el pánico sube menos) antes de suturar. La <a href="item-cachaca.html">cachaza</a> lleva el pánico a cero en el acto. Consulta <a href="mente.html">Mente</a>.</div>
+
+<h2>Vendaje rápido</h2>
+<p>Cuando alguna herida sangra, la pestaña Salud muestra el botón <kbd>Vendaje rápido (&lt;ítem&gt;)</kbd> (o <kbd>Sin vendaje en la mochila</kbd>, desactivado). Usa el primero que tengas, en la mochila o, en la base, en los cofres: <a href="item-bandagem.html">Vendaje</a>, <a href="item-gaze.html">Gasa</a>, <a href="item-bandagem_esteril.html">Venda estéril</a>, <a href="item-kit_socorros.html">Botiquín de primeros auxilios</a>. También puedes usar esos ítems directamente desde el inventario (<kbd>Usar</kbd>).</p>
+<ul>
+<li>Es instantáneo y venda la herida que más sangra (sin contar hemorragias).</li>
+<li>Si la única herida que sangra es una hemorragia, el vendaje se convierte en <b>torniquete</b> sobre ella.</li>
+<li><b>No limpia</b> la herida, ni siquiera con venda estéril: "Te pusiste un vendaje rápido. Una herida sin limpiar puede infectarse: mira la pantalla Salud.".</li>
+<li>Gasta esparadrapo si lo hay.</li>
+<li>Da 15 de XP de Primeros auxilios (Hemofóbico: +35 de pánico).</li>
+<li>El ítem también devuelve vida (ver abajo).</li>
+</ul>
+<p>Usa el vendaje rápido para dejar de sangrar en un apuro y trátate bien después.</p>
+
+<h2>Ítems que devuelven vida</h2>
+<p>Algunos ítems devuelven vida en el acto al usarlos, multiplicada por 1 + 10% por nivel de Primeros auxilios:</p>
+<div class="tbl"><table>
+<tr><th>Ítem</th><th>Vida</th></tr>
+<tr><td><a href="item-kit_socorros.html">Botiquín de primeros auxilios</a></td><td>30</td></tr>
+<tr><td><a href="item-antibiotico.html">Antibiótico</a></td><td>20</td></tr>
+<tr><td><a href="item-bandagem_esteril.html">Venda estéril</a></td><td>12</td></tr>
+<tr><td><a href="item-analgesico.html">Analgésico</a></td><td>6</td></tr>
+<tr><td><a href="item-bandagem.html">Vendaje</a></td><td>5</td></tr>
+<tr><td><a href="item-alcool.html">Alcohol 70%</a></td><td>2</td></tr>
+</table></div>
+<p>Estos números solo valen con <kbd>Usar</kbd>/<kbd>Tomar</kbd> desde el inventario o con el vendaje rápido; usado como paso en la pantalla Salud, el ítem solo hace el paso.</p>
+
+<h2>Medicamentos</h2>
+<div class="tbl"><table>
+<tr><th>Medicamento</th><th>Efecto</th><th>Duración</th></tr>
+<tr><td><a href="item-analgesico.html">Analgésico</a></td><td>Dolor ×0,35</td><td>4 h</td></tr>
+<tr><td><a href="item-morfina.html">Morfina</a></td><td>Dolor cero; golpes 10% más lentos; +15 de cansancio</td><td>2 h</td></tr>
+<tr><td><a href="item-antibiotico.html">Antibiótico</a></td><td>Cura la infección común de todas las heridas</td><td>En el acto</td></tr>
+</table></div>
+<p>El antibiótico no tiene efecto sobre la infección zombi. Los medicamentos para la cabeza están en <a href="mente.html">Mente</a>.</p>
+
+<h2>Cicatrización</h2>
+<p>Con todos los pasos hechos, la herida muestra la barra <i>cicatrizando</i> y el tiempo que falta. El tiempo base de cada tipo (ver <a href="feridas.html">Heridas</a>) se multiplica por:</p>
+<div class="tbl"><table>
+<tr><th>Factor</th><th>Multiplicador del tiempo</th></tr>
+<tr><td>Rasgo Curación rápida</td><td>×0,7</td></tr>
+<tr><td>Rasgo Curación lenta</td><td>×1,3</td></tr>
+<tr><td>Cada nivel de Primeros auxilios</td><td>−5% (nivel 10 = ×0,5)</td></tr>
+<tr><td>Camilla en la base, contigo dentro de la base</td><td>×0,67</td></tr>
+</table></div>
+<p>La cicatrización avanza en tiempo real, también con la app cerrada. La <b>camilla</b> (<a href="moveis-da-base.html">mueble de la base</a>, receta "Camilla", pide Carpintería 1) solo cuenta mientras estás dentro de la base con la sesión activa; al abrir la app después de un tiempo fuera, el tiempo que pasó se cuenta sin ella.</p>
+
+<h2>Libro de primeros auxilios</h2>
+<p>Leer el <a href="item-livro_medicina.html">Libro de primeros auxilios</a> da +50% de XP en Primeros auxilios durante 1 día real y quita 20 de aburrimiento.</p>
+
+<h2>Recetas médicas</h2>
+<p>Todas las recetas del juego están en <a href="receitas.html">Recetas</a>.</p>
+<div class="tbl"><table>
+<tr><th>Receta</th><th>Produce</th><th>Gasta</th><th>Banco de trabajo</th><th>Nivel</th><th>XP</th></tr>
+<tr><td>Venda</td><td><a href="item-bandagem.html">Vendaje</a></td><td>2 <a href="item-pano.html">trapos</a></td><td>No</td><td>—</td><td>10</td></tr>
+<tr><td>Venda estéril</td><td><a href="item-bandagem_esteril.html">Venda estéril</a></td><td>1 <a href="item-bandagem.html">vendaje</a> + 1 <a href="item-alcool.html">alcohol</a></td><td>No</td><td>Primeros auxilios 1</td><td>15</td></tr>
+<tr><td>Férula</td><td><a href="item-tala.html">Férula</a></td><td>1 <a href="item-tabuas.html">tabla</a> + 2 <a href="item-pano.html">trapos</a></td><td>No</td><td>—</td><td>8</td></tr>
+</table></div>

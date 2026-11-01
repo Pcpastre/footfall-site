@@ -1,0 +1,139 @@
+<!-- titulo: Noise | categoria: World | resumo: Every noise source in the game, with values, and the math behind the radius in which zombies hear you. -->
+<p>Zombies hear as well as they see. On the map, everything you do has a <b>noise level</b> from 0 (silence) to 1 (maximum), and that level becomes a radius in meters: anyone inside the radius hears you. On the <a href="tela-de-acao.html">action screen</a> noise is measured directly in meters. This page lists every source.</p>
+
+<h2>The radius math on the map</h2>
+<p><b>Hearing radius = noise × 120 m</b> (120 m is the noise of a car). Then:</p>
+<div class="tbl"><table>
+<tr><th>Factor</th><th>Effect on the radius</th></tr>
+<tr><td>Rain</td><td>×0.7</td></tr>
+<tr><td>Storm (the thunder muffles footsteps)</td><td>×0.6</td></tr>
+</table></div>
+<p>On the zombie's side, the radius changes further:</p>
+<div class="tbl"><table>
+<tr><th>Zombie</th><th>Radius it uses</th></tr>
+<tr><td>Awake (wandering, or dormant that has already woken up)</td><td>the full radius</td></tr>
+<tr><td>Dormant that hasn't noticed anything yet</td><td>half</td></tr>
+<tr><td>Downed, lying down</td><td>30%</td></tr>
+<tr><td>Any of them, in the small hours (night before 5 AM)</td><td>×1.3</td></tr>
+</table></div>
+<p>What happens when it hears you:</p>
+<ul>
+<li>within <b>8 m</b>: it comes after you immediately;</li>
+<li>within <b>100 m</b> (or if it was already heading toward another sound): it wakes up and goes to the spot where it heard you. Once there (within 8 m), it searches for <b>8 s</b> and, if it is dormant or downed, goes back to "sleep".</li>
+</ul>
+<p>The noise level doesn't change all at once: every half second it moves 60% of the way when rising and only 15% when falling. Running for a bit leaves a noise "trail" for a few seconds after you stop. The meter at the top of the map shows the current radius.</p>
+
+<h2>Footsteps</h2>
+<div class="tbl"><table>
+<tr><th>Speed</th><th>Noise</th><th>Radius (no rain)</th></tr>
+<tr><td>Standing still (up to 0.3 m/s)</td><td>0.01</td><td>1.2 m</td></tr>
+<tr><td>Walking (up to 2 m/s)</td><td>0.05</td><td>6 m</td></tr>
+<tr><td>Running (up to 4 m/s)</td><td>0.18</td><td>21.6 m</td></tr>
+<tr><td>Sprinting or cycling (up to 7 m/s)</td><td>0.30</td><td>36 m</td></tr>
+<tr><td>Vehicle (above 7 m/s for 3 s)</td><td>1.0</td><td>120 m</td></tr>
+</table></div>
+<p>Normal walking (6 m) doesn't draw anyone 10 m away. Footsteps are multiplied by:</p>
+<div class="tbl"><table>
+<tr><th>Source</th><th>Footstep multiplier</th></tr>
+<tr><td>Light-footed trait</td><td>-30%</td></tr>
+<tr><td>Hunter trait</td><td>-15%</td></tr>
+<tr><td>Clumsy trait</td><td>+30%</td></tr>
+<tr><td>Stealth skill</td><td>-4% per level</td></tr>
+<tr><td><a href="item-tenis.html">Running shoes</a> worn</td><td>×0.8</td></tr>
+<tr><td><a href="item-calca_moletom.html">Sweatpants</a> worn</td><td>×0.92</td></tr>
+</table></div>
+<p>Traits and Stealth add up with each other, and their multiplier never goes below 0.3. Shoes and pants multiply on top of that. In vehicle mode none of this applies: the noise is always 1.</p>
+
+<h2>Load</h2>
+<div class="tbl"><table>
+<tr><th>Source</th><th>Extra noise</th></tr>
+<tr><td>Heavy load (pockets or backpack over the limit)</td><td>+0.03 (about 3.6 m)</td></tr>
+<tr><td><a href="item-mochila_cargueira.html">Expedition pack</a> worn (it rattles)</td><td>+0.015 (about 1.8 m)</td></tr>
+</table></div>
+<p>See <a href="mochila-e-peso.html">Backpack and weight</a>.</p>
+
+<h2>Looting on the map</h2>
+<p>With a loot screen open, the noise is at least <b>0.02</b> (2.4 m). While you rummage through a piece of furniture, it rises to that furniture's noise, from 0.02 to 0.25 (2.4 to 30 m). The Clumsy trait multiplies furniture noise by 1.5. The full furniture table is in <a href="saque.html#moveis">Looting</a>. The game sums up each piece of furniture as:</p>
+<ul>
+<li><b>silent</b>: below 0.10 (less than 12 m);</li>
+<li><b>moderate noise</b>: from 0.10 to 0.17 (12 to 20 m);</li>
+<li><b>loud noise</b>: 0.18 or more (21.6 m or more).</li>
+</ul>
+<p>On the action screen, finishing rummaging through a piece of furniture makes a noise of <b>furniture noise × 120 m</b> around it.</p>
+
+<h2>Gunshots</h2>
+<h3>Inside the action screen</h3>
+<div class="tbl"><table>
+<tr><th>Weapon</th><th>Shot radius in the scene</th></tr>
+<tr><td>Firearms in general</td><td>the whole scene (every unaware zombie wakes up)</td></tr>
+<tr><td><a href="item-carabina.html">.22 rifle</a></td><td>320 m (in practice, the whole scene: the arena is 120 m)</td></tr>
+<tr><td>9 mm with a <a href="item-silenciador.html">silencer</a></td><td>30 m</td></tr>
+<tr><td><a href="item-arco.html">Bow</a> and <a href="item-besta.html">crossbow</a></td><td>5 m (and an arrow that hits makes no noise)</td></tr>
+</table></div>
+<p>A wall in between halves the reach of any noise in the scene: anyone behind a wall only wakes up if they're in the nearer half of the radius.</p>
+<h3>After the fight, on the map</h3>
+<p>When the fight ends, the gunshots echo across the map:</p>
+<ul>
+<li>any loud shot (no silencer, not .22, including shotgun blasts): every zombie on the map within <b>150 m</b> of the fight's location that wasn't chasing you heads there;</li>
+<li>only .22 shots: the same, but within <b>52.5 m</b> (35% of 150);</li>
+<li>silenced shots and arrows don't count.</li>
+</ul>
+<p>See <a href="armas-de-fogo.html">Firearms</a>.</p>
+
+<h2>Melee and fighting</h2>
+<div class="tbl"><table>
+<tr><th>Source</th><th>Radius</th></tr>
+<tr><td>Hitting a zombie (strike or shot, except stealth kills and arrows)</td><td>4 m around it</td></tr>
+<tr><td>Searching a body on the action screen</td><td>4 m</td></tr>
+<tr><td>Pulling something from the bottom of the backpack during a fight</td><td>10 m</td></tr>
+<tr><td>Zombie banging on a door or window</td><td>8 m per blow</td></tr>
+<tr><td>Door broken down by a zombie</td><td>18 m</td></tr>
+<tr><td>Window broken by a zombie</td><td>25 m</td></tr>
+<tr><td>Forcing a locked door (you, with a crowbar)</td><td>30 m</td></tr>
+<tr><td>Dismantling a piece of furniture</td><td>30 m</td></tr>
+<tr><td>Running in the scene</td><td>unaware zombies within 5 m (times the footstep multiplier) notice you</td></tr>
+</table></div>
+
+<h2>Throwables</h2>
+<div class="tbl"><table>
+<tr><th>Item</th><th>On the map (attraction radius)</th><th>On the action screen</th></tr>
+<tr><td><a href="item-rojao.html">Firework</a></td><td>120 m</td><td>stuns anyone within 3 m and attracts within 60 m</td></tr>
+<tr><td><a href="item-despertador.html">Alarm clock</a></td><td>60 m</td><td>rings for 30 s; every 2 s it attracts within 35 m</td></tr>
+<tr><td><a href="item-garrafa.html">Empty bottle</a></td><td>30 m</td><td>attracts within 20 m</td></tr>
+<tr><td><a href="item-pedra.html">Rock</a></td><td>18 m</td><td>attracts within 12 m</td></tr>
+<tr><td><a href="item-molotov.html">Molotov cocktail</a></td><td>can't be thrown on the map</td><td>25 m noise where it lands</td></tr>
+</table></div>
+<p>Details in <a href="arremesso.html">Throwing</a>.</p>
+
+<h2>Fire, light and engines</h2>
+<div class="tbl"><table>
+<tr><th>Source</th><th>Effect</th></tr>
+<tr><td>Campfire lit at the base, at night</td><td>every zombie within 100 m of the base heads there (the wood stove doesn't draw them)</td></tr>
+<tr><td>Flashlight on at night</td><td>every 3 s, zombies within 50 m with a clear line to you come to check</td></tr>
+<tr><td><a href="bunkers.html">Bunker</a> basement generator</td><td>80 m noise and every zombie on the floor heads to the generator</td></tr>
+<tr><td>Forcing the bunker vault door with a <a href="item-pe_de_cabra.html">crowbar</a></td><td>45 m every 4 s during the 60 s, and 60 m when it gives way</td></tr>
+<tr><td>Opening the vault door with the <a href="item-cartao_bunker.html">card</a></td><td>no noise</td></tr>
+<tr><td>Bunker cell panel</td><td>30 m</td></tr>
+</table></div>
+
+<h2>Alarms and events</h2>
+<div class="tbl"><table>
+<tr><th>Source</th><th>Effect</th></tr>
+<tr><td>Random alarm (every 8 to 15 min, at a place 300-600 m away)</td><td>every zombie within 300 m of the alarm heads there for 3 min</td></tr>
+<tr><td>Supply drop falling (helicopter)</td><td>zombies within 300 m of the crate head there; the noise lasts 20 min</td></tr>
+</table></div>
+<p>See <a href="horda-e-alarmes.html">Horde and alarms</a>.</p>
+
+<h2>Traits that change what you hear</h2>
+<ul>
+<li><b>Keen hearing</b>: the warning of a zombie approaching out of sight (a groan from the side it's coming from) reaches 70 m instead of 40 m. On the action screen, the sound markers around your character reach 10 m instead of 6 m.</li>
+<li><b>Bad hearing</b>: no groan warning on the map; on the action screen, sound markers only at 3 m.</li>
+<li>Full-face helmet (<a href="item-capacete.html">motorcycle</a>, <a href="item-capacete_policial.html">riot</a>): the action screen's sound markers are 30% smaller.</li>
+</ul>
+
+<h2>See also</h2>
+<ul>
+<li><a href="visao.html">Vision</a></li>
+<li><a href="zumbis.html">Zombies</a></li>
+<li><a href="clima-e-hora.html">Weather and time</a></li>
+</ul>

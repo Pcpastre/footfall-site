@@ -1,0 +1,80 @@
+<!-- titulo: Infección | categoria: Salud | resumo: La infección zombi (fases, plazo de 7 días, probabilidad por herida y por rasgo) y la infección común de herida, que el antibiótico cura. -->
+<p>Footfall tiene dos tipos de infección, que no tienen nada que ver una con la otra:</p>
+<ul>
+<li><b>Infección zombi</b>: viene de heridas causadas por un zombi. No tiene cura y mata en 7 días de tiempo real.</li>
+<li><b>Infección común</b>: aparece en una <a href="feridas.html">herida</a> sucia o mal tratada. Estorba bastante, pero el <a href="item-antibiotico.html">Antibiótico</a> la cura.</li>
+</ul>
+
+<h2>Infección zombi</h2>
+<h3>Cómo se contagia</h3>
+<p>Cada herida que causa un zombi sortea, en el momento, si transmite la infección:</p>
+<div class="tbl"><table>
+<tr><th>Herida</th><th>Normal</th><th>Inmunidad fuerte</th><th>Inmunidad débil</th></tr>
+<tr><td>Mordida</td><td>85%</td><td>60%</td><td>100%</td></tr>
+<tr><td>Laceración</td><td>25%</td><td>12,5%</td><td>40%</td></tr>
+<tr><td>Hemorragia</td><td>25%</td><td>12,5%</td><td>40%</td></tr>
+<tr><td>Arañazo</td><td>7%</td><td>3,5%</td><td>11,2%</td></tr>
+<tr><td>Cualquier otra (contusión, fractura, quemadura, corte, esquirla)</td><td>0%</td><td>0%</td><td>0%</td></tr>
+</table></div>
+<p>Cuando la ropa frena una mordida, se convierte en contusión y no infecta. Las heridas de guardias y de accidentes (vidrio roto, herramienta, fuego) nunca transmiten la infección zombi. Ser mordido siempre avisa "Te mordieron..." y suma 20 de estrés y 15 de tristeza, infecte o no.</p>
+<p>La infección es una sola: si ya estás infectado, otra herida infectada no cambia el reloj. El plazo cuenta desde el momento de la primera herida que infectó.</p>
+
+<h3>Fases</h3>
+<div class="tbl"><table>
+<tr><th>Tiempo desde la herida</th><th>Fase</th><th>Moodle</th><th>Efectos</th></tr>
+<tr><td>0 a 3 días</td><td>Incubación</td><td>—</td><td>Ningún síntoma ("Mordido. Todavía sin síntomas.")</td></tr>
+<tr><td>3 a 5 días</td><td>Fiebre</td><td>Con fiebre (nivel 2)</td><td>−25 de aliento máximo; −10% de daño en la pelea; el estrés sube</td></tr>
+<tr><td>5 a 7 días</td><td>Delirio</td><td>Delirando (nivel 3)</td><td>−35 de aliento máximo; visión en el mapa ×0,6; −20% de daño en la pelea; el estrés sube</td></tr>
+<tr><td>7 días</td><td>Muerte</td><td>—</td><td>"La infección ganó."</td></tr>
+</table></div>
+<p>Los días son <b>reales</b> y corren con la app cerrada. Si el plazo vence mientras no estás, el personaje muere al abrir el juego ("La infección ganó mientras no estabas."). Consulta <a href="morte.html">Muerte</a>.</p>
+<p>En la pestaña <kbd>Salud</kbd>, mientras haya infección, aparece el texto de la fase y "Tiempo restante: ... (real). Aún no hay cura.".</p>
+
+<h3>Otros efectos</h3>
+<ul>
+<li>Infectado, no recuperas vida durmiendo (ni en la base, ni en la cama, ni en el saco de dormir). Jugando, la vida sigue volviendo 1 por minuto si las demás condiciones lo permiten (consulta <a href="necessidades.html">Necesidades</a>).</li>
+<li>En la fiebre y en el delirio, el estrés sube 0,05 por segundo con la app abierta (consulta <a href="mente.html">Mente</a>).</li>
+<li>Ningún objeto ni medicamento cura ni retrasa la infección zombi. El antibiótico no tiene efecto en ella.</li>
+</ul>
+
+<h3>Cómo evitarla</h3>
+<ul>
+<li>Ponte protección en los brazos y el torso, donde caen la mayoría de las mordidas (consulta <a href="feridas.html">Heridas</a>). El cuero y las piezas rígidas frenan del 85% al 95% de las mordidas donde cubren.</li>
+<li>El rasgo <a href="tracos.html">Inmunidad fuerte</a> baja la mordida a 60% y reduce a la mitad la probabilidad de laceración y arañazo.</li>
+<li>Un zombi de pie solo muerde después de agarrarte (o cuando estás caído en el suelo); uno que se arrastra muerde directo. Suéltate del agarre rápido y evita que te derriben.</li>
+</ul>
+<div class="tip warn"><b>Mordido no es muerto (todavía)</b>Con 15% de probabilidad la mordida no infecta. E incluso infectado tienes 7 días reales: tiempo para llevar lo que importa a la base y a los cofres, que siguen después de la muerte.</div>
+
+<h2>Infección común</h2>
+<h3>Cómo se contagia</h3>
+<p>Cada hora con la <b>sesión activa</b>, cada herida que puede sangrar (arañazo, laceración, mordida, corte profundo, esquirla; hemorragia no) tiene una probabilidad que es la suma de:</p>
+<div class="tbl"><table>
+<tr><th>Situación</th><th>Probabilidad por hora</th></tr>
+<tr><td>Vendada sin haber sido limpiada</td><td>6%</td></tr>
+<tr><td>Vendaje sucio (venda con más de 12 h, 24 h con esparadrapo, o de trapo)</td><td>4%</td></tr>
+<tr><td>Esquirla todavía dentro</td><td>5%</td></tr>
+<tr><td>Sin ningún vendaje (excepto arañazo)</td><td>2%</td></tr>
+</table></div>
+<p>La quemadura sin pomada tiene 3% por hora, aparte. La contusión y la fractura nunca se infectan. Ejemplo: una laceración vendada con trapo y sin limpiar suma 6% + 4% = 10% por hora.</p>
+<p>La probabilidad solo se sortea con la app abierta, fuera de la pantalla de acción. Con la app cerrada, la herida no se infecta.</p>
+
+<h3>Efectos</h3>
+<ul>
+<li>La herida queda <i>INFECTADA</i> y deja de cicatrizar (incluso con todos los pasos hechos).</li>
+<li>Dolor +10 en esa herida.</li>
+<li>Moodle <i>Herida infectada</i> (nivel 2) y −15 de aliento máximo.</li>
+<li>Con la app abierta, la vida no vuelve.</li>
+<li>Después de 72 h infectada, la herida quita 1 HP cada 600 s (6 por hora).</li>
+</ul>
+
+<h3>Cura</h3>
+<p>Toma un <a href="item-antibiotico.html">Antibiótico</a> (<kbd>Tomar</kbd> en el inventario): cura la infección común de <b>todas</b> las heridas a la vez ("Antibiótico: la infección de la herida se va a pasar.") y además devuelve 20 de vida (más 10% por nivel de Primeros auxilios). La herida vuelve a cicatrizar desde cero. Tomarlo sin tener infección gasta el medicamento igual ("Tomaste un antibiótico (no había herida infectada).").</p>
+
+<h3>Cómo evitarla</h3>
+<ul>
+<li>Limpia antes de vendar (<a href="item-soro.html">Suero fisiológico</a>, <a href="item-alcool.html">Alcohol</a> o <a href="item-cachaca.html">Cachaza</a>), o venda con <a href="item-bandagem_esteril.html">Venda estéril</a> o <a href="item-kit_socorros.html">Botiquín de primeros auxilios</a>, que ya cuentan como limpieza.</li>
+<li>Saca la esquirla pronto.</li>
+<li>Cambia el vendaje cuando aparezca <i>vendaje sucio</i>, y usa <a href="item-esparadrapo.html">Esparadrapo</a> para que dure 24 h.</li>
+<li>Evita vendar con trapo, salvo en un apuro.</li>
+</ul>
+<p>Paso a paso en <a href="tratamento.html">Tratamiento</a>.</p>

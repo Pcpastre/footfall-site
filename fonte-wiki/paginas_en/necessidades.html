@@ -1,0 +1,107 @@
+<!-- titulo: Needs | categoria: Health | resumo: Hunger and thirst: reserves, consumption per day and per km, levels, damage, the closed-app rule and when health comes back. -->
+<p>Footfall measures hunger and thirst like a real person's consumption: a <b>calorie reserve</b> and a <b>water reserve</b> that go down over time and with every kilometer walked. The <i>Hunger</i> (in kcal) and <i>Thirst</i> (in ml) bars are on the <kbd>Health</kbd> tab of the character panel. Tiredness, which is also there, has its own page: <a href="cansaco-e-sono.html">Tiredness and sleep</a>.</p>
+
+<h2>Reserves and consumption</h2>
+<div class="tbl"><table>
+<tr><th></th><th>Hunger</th><th>Thirst</th></tr>
+<tr><td>Full reserve</td><td>2,400 kcal</td><td>2,400 ml</td></tr>
+<tr><td>Consumption per day (24 real hours)</td><td>2,200 kcal</td><td>2,300 ml</td></tr>
+<tr><td>Consumption per km walked</td><td>55 kcal</td><td>60 ml</td></tr>
+<tr><td>Consumption per km running (above 3 m/s)</td><td>82.5 kcal</td><td>90 ml</td></tr>
+</table></div>
+<p>The daily consumption runs all the time, with the app open or closed. The per-kilometer consumption only counts what you walk with the session active; when running, each meter counts as 1.5. A full reserve lasts a little over a day standing still.</p>
+<p>Traits multiply all consumption (by time and by km):</p>
+<div class="tbl"><table>
+<tr><th>Trait</th><th>Hunger</th><th>Thirst</th></tr>
+<tr><td>Light eater</td><td>×0.75</td><td>—</td></tr>
+<tr><td>Big eater</td><td>×1.25</td><td>—</td></tr>
+<tr><td>Low thirst</td><td>—</td><td>×0.75</td></tr>
+<tr><td>High thirst</td><td>—</td><td>×1.25</td></tr>
+</table></div>
+<p><a href="temperatura.html">Temperature</a> also uses them up: in the cold you burn 14.4 extra kcal per hour per cold level; in the heat you lose 43.2 extra ml per hour per heat level.</p>
+
+<h2>Levels</h2>
+<div class="tbl"><table>
+<tr><th>Reserve</th><th>Hunger moodle</th><th>Thirst moodle</th><th>Effect</th></tr>
+<tr><td>50% or more (1,200 or more)</td><td>—</td><td>—</td><td>None</td></tr>
+<tr><td>25% to 50% (600 to 1,199)</td><td>Hungry</td><td>Thirsty</td><td>None</td></tr>
+<tr><td>10% to 25% (240 to 599)</td><td>Starving</td><td>Very thirsty</td><td>Hunger: −10% damage in fights. Thirst: stamina recovers 20% slower in fights. Health stops coming back; stress rises.</td></tr>
+<tr><td>Less than 10% (below 240)</td><td>Sick with hunger</td><td>Dehydrated</td><td>Hunger: −20% damage and 1 HP every 30 s. Thirst: stamina recovers 40% slower and 1 HP every 20 s.</td></tr>
+</table></div>
+<p>The effects of hunger and thirst add up: sick with hunger and dehydrated at the same time, you lose 5 HP per minute. Dying this way gives the cause "You succumbed to hunger and thirst.".</p>
+<p>From level 2 (Starving or Very thirsty), <a href="mente.html">stress</a> rises by 0.02 per second with the app open.</p>
+
+<h2>With the app closed</h2>
+<p>Outside the session nobody starves: consumption continues, but the reserve <b>stops at 11%</b> (264 kcal and 264 ml), just before the damage level. If you were already below that when you closed the app, the reserve stays where it was. Damage from hunger and thirst only happens with the session active, on the map.</p>
+<div class="tip warn"><b>Come back with food</b>After a day or two without playing, you open the app near 11%, already Starving and Very thirsty. Eat and drink before you start walking: below 10% your health starts dropping.</div>
+
+<h2>When health comes back</h2>
+<h3>While playing</h3>
+<p>With the session active, on the map, health comes back at <b>1 HP per minute</b> as long as all of these conditions hold:</p>
+<ul>
+<li>no bleeding wound (a deep cut bandaged without a suture counts as bleeding);</li>
+<li>no wound with a common infection;</li>
+<li>hunger below Starving (reserve of 25% or more);</li>
+<li>thirst below Very thirsty (reserve of 25% or more).</li>
+</ul>
+<p>The zombie infection doesn't prevent this regeneration. Max health is 100.</p>
+<h3>While sleeping</h3>
+<p>With the app closed, health only comes back if you ended the session in a safe place or with a sleeping bag, and you're not bleeding or carrying the zombie infection:</p>
+<div class="tbl"><table>
+<tr><th>Where you ended it</th><th>Health per hour</th></tr>
+<tr><td>At the base, with a bed</td><td>7.5</td></tr>
+<tr><td>At the base, an outpost or a tent</td><td>5</td></tr>
+<tr><td>Outside those, with a <a href="item-saco_dormir.html">Sleeping bag</a> in the backpack</td><td>2.5</td></tr>
+<tr><td>Outside those, without a sleeping bag</td><td>0</td></tr>
+</table></div>
+<p>Details in <a href="cansaco-e-sono.html">Tiredness and sleep</a>.</p>
+<h3>Items</h3>
+<p>Some medical items give health back instantly; see <a href="tratamento.html">Treatment</a>.</p>
+
+<h2>Eating and drinking</h2>
+<p>In the inventory, the item's button is <kbd>Eat</kbd> or <kbd>Drink</kbd>. Calories are multiplied like this (water doesn't change):</p>
+<div class="tbl"><table>
+<tr><th>Situation</th><th>Calories</th></tr>
+<tr><td>Spoiled food</td><td>×0.5 (and you get sick)</td></tr>
+<tr><td>Skilled cook trait</td><td>×1.25</td></tr>
+<tr><td>Eating at the base table</td><td>×1.1</td></tr>
+</table></div>
+<p>Eating beyond the full reserve doesn't store the excess: everything stops at 2,400.</p>
+
+<h3>Getting sick</h3>
+<div class="tbl"><table>
+<tr><th>What you ate</th><th>Chance</th><th>Health</th><th>Message</th></tr>
+<tr><td>Any spoiled food</td><td>Always</td><td>−8</td><td>"&lt;food&gt; was spoiled. You got sick." (+10 sadness)</td></tr>
+<tr><td><a href="item-agua_suja.html">Rainwater (not boiled)</a></td><td>1 in 3</td><td>−4</td><td>"The rainwater didn't sit well: nausea. Boil it before drinking."</td></tr>
+<tr><td>Raw <a href="item-carne.html">Fresh meat</a></td><td>35%</td><td>−5</td><td>"Raw meat didn't sit well: nausea. Roast it on the base fire."</td></tr>
+</table></div>
+<p>Getting sick leaves you <b>Nauseous</b> for 2 h: max stamina ×0.85 and −10% damage in fights. Health never drops below 1 from eating.</p>
+<p>Drinking a <a href="item-agua.html">Water bottle</a> or rainwater gives back the <a href="item-garrafa.html">Empty bottle</a>.</p>
+
+<h3>Food and drink</h3>
+<div class="tbl"><table>
+<tr><th>Item</th><th>kcal</th><th>ml</th><th>Spoils in</th></tr>
+<tr><td><a href="item-enlatados.html">Box of canned food</a></td><td>2,400</td><td>600</td><td>—</td></tr>
+<tr><td><a href="item-racao_combate.html">Combat ration</a></td><td>1,200</td><td>150</td><td>—</td></tr>
+<tr><td><a href="item-carne_assada.html">Roast meat</a></td><td>980</td><td>—</td><td>2 days</td></tr>
+<tr><td><a href="item-bolacha.html">Pack of crackers</a></td><td>900</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-pao_panela.html">Pot bread</a></td><td>800</td><td>—</td><td>4 days</td></tr>
+<tr><td><a href="item-carne.html">Fresh meat</a></td><td>700</td><td>—</td><td>1 day</td></tr>
+<tr><td><a href="item-carne_seca.html">Jerky (charque)</a></td><td>650</td><td>—</td><td>60 days</td></tr>
+<tr><td><a href="item-arroz_cozido.html">Cooked rice</a></td><td>600</td><td>—</td><td>2 days</td></tr>
+<tr><td><a href="item-leite.html">Milk carton</a></td><td>600</td><td>900</td><td>4 days</td></tr>
+<tr><td><a href="item-sopa.html">Hot soup</a></td><td>550</td><td>400</td><td>2 days</td></tr>
+<tr><td><a href="item-chocolate.html">Chocolate bar</a></td><td>500</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-feijao_quente.html">Hot beans</a></td><td>420</td><td>—</td><td>2 days</td></tr>
+<tr><td><a href="item-pao.html">Bread</a></td><td>400</td><td>—</td><td>3 days</td></tr>
+<tr><td><a href="item-legumes_cozidos.html">Cooked vegetables</a></td><td>350</td><td>300</td><td>3 days</td></tr>
+<tr><td><a href="item-feijao.html">Can of beans</a></td><td>300</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-conserva.html">Canned vegetables</a></td><td>300</td><td>150</td><td>90 days</td></tr>
+<tr><td><a href="item-frutas.html">Fruit</a></td><td>250</td><td>150</td><td>5 days</td></tr>
+<tr><td><a href="item-legumes.html">Garden vegetables</a></td><td>250</td><td>100</td><td>4 days</td></tr>
+<tr><td><a href="item-cafe_coado.html">Drip coffee</a></td><td>20</td><td>250</td><td>1 day</td></tr>
+<tr><td><a href="item-cafe.html">Ground coffee</a></td><td>10</td><td>200</td><td>—</td></tr>
+<tr><td><a href="item-agua.html">Water bottle</a></td><td>—</td><td>500</td><td>—</td></tr>
+<tr><td><a href="item-agua_suja.html">Rainwater (not boiled)</a></td><td>—</td><td>500</td><td>—</td></tr>
+</table></div>
+<p>The <a href="item-arroz.html">Bag of rice</a> and the <a href="item-farinha.html">Bag of flour</a> can't be eaten raw: they need the base fire. Some foods also affect your mind and tiredness (chocolate, coffee, soup): see <a href="mente.html">Mind</a>, <a href="cansaco-e-sono.html">Tiredness and sleep</a> and <a href="temperatura.html">Temperature</a>.</p>

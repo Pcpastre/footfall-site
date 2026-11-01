@@ -1,0 +1,119 @@
+<!-- titulo: Backpack and weight | categoria: Character | resumo: How much you carry in your pockets and backpack, what changes the limit, the effect of a heavy load, belt, back, the pockets-first rule and dropping items on the ground. -->
+<p>Everything you carry is in one of two places: your <b>pockets</b> (quick access, at hand during a fight) or the <b>worn backpack</b> (holds more, but taking something out of it mid-fight takes time and makes noise). What is worn or hung on the body weighs nothing. Going over the limit of either one leaves you with a <b>heavy load</b>.</p>
+
+<h2>Capacity</h2>
+<h3>Pockets</h3>
+<p><b>Pockets = (4 kg + pockets of each worn piece of clothing) × multiplier + 0.5 kg per Strength level.</b></p>
+<p>The 4 kg are the body (hands and shallow pockets). Torn clothing counts only half its pockets until it is sewn.</p>
+<div class="tbl"><table>
+<tr><th>Piece</th><th>Slot</th><th>Extra pockets</th></tr>
+<tr><td><a href="item-colete_bolsos.html">Multi-pocket vest</a></td><td>Vest</td><td>4 kg</td></tr>
+<tr><td><a href="item-colete_tatico.html">Tactical vest</a></td><td>Vest</td><td>3 kg (and unlocks the 3rd belt slot)</td></tr>
+<tr><td><a href="item-calca_cargo.html">Cargo pants</a></td><td>Pants</td><td>3 kg</td></tr>
+<tr><td><a href="item-calca_tatica.html">Tactical pants</a></td><td>Pants</td><td>3 kg</td></tr>
+<tr><td><a href="item-jaqueta_bolsos.html">Jacket with pockets</a></td><td>Clothing</td><td>2 kg</td></tr>
+<tr><td><a href="item-corta_vento.html">Windbreaker</a></td><td>Clothing</td><td>1.5 kg</td></tr>
+<tr><td><a href="item-bolsa_coxa.html">Tactical thigh pouch</a></td><td>Leg pouch</td><td>1.5 kg</td></tr>
+<tr><td><a href="item-pochete.html">Fanny pack</a></td><td>Fanny pack</td><td>1.5 kg</td></tr>
+<tr><td><a href="item-calca_jeans.html">Jeans</a></td><td>Pants</td><td>1 kg</td></tr>
+<tr><td><a href="item-jaqueta.html">Leather jacket</a></td><td>Clothing</td><td>1 kg</td></tr>
+<tr><td><a href="item-casaco.html">Thick coat</a></td><td>Clothing</td><td>1 kg</td></tr>
+<tr><td><a href="item-colete.html">Ballistic vest</a></td><td>Vest</td><td>1 kg</td></tr>
+<tr><td><a href="item-bolsa_canela.html">Tactical shin pouch</a></td><td>Leg pouch</td><td>0.8 kg</td></tr>
+<tr><td><a href="item-moletom.html">Dark sweatshirt</a></td><td>Clothing</td><td>0.5 kg</td></tr>
+<tr><td><a href="item-calca_moletom.html">Sweatpants</a></td><td>Pants</td><td>0.5 kg</td></tr>
+<tr><td><a href="item-bolsa_braco.html">Arm pouch</a></td><td>Arm pouch</td><td>0.5 kg</td></tr>
+</table></div>
+<p>Since each slot takes only one piece, the maximum pocket space from clothing is: 4 (body) + 4 (multi-pocket vest) + 3 (cargo or tactical pants) + 2 (jacket with pockets) + 1.5 (thigh pouch) + 1.5 (fanny pack) + 0.5 (arm pouch) = <b>16.5 kg</b> before multipliers.</p>
+<h3>Backpack</h3>
+<p><b>Backpack = capacity of the worn backpack × multiplier</b> (Strength doesn't add here).</p>
+<div class="tbl"><table>
+<tr><th>Backpack</th><th>Holds</th><th>Its weight</th><th>Rarity</th><th>Note</th></tr>
+<tr><td><a href="item-mochila_academia.html">Gym bag</a></td><td>5 kg</td><td>0.4 kg</td><td>common</td><td>-</td></tr>
+<tr><td><a href="item-mochila_escolar.html">School backpack</a></td><td>6 kg</td><td>0.5 kg</td><td>common</td><td>comes in the starter kit</td></tr>
+<tr><td><a href="item-mochila.html">Daypack</a></td><td>10 kg</td><td>0.8 kg</td><td>rare</td><td>-</td></tr>
+<tr><td><a href="item-mochila_tatica.html">Tactical backpack</a></td><td>12 kg</td><td>1.2 kg</td><td>rare</td><td>the MOLLE straps unlock the 3rd belt slot</td></tr>
+<tr><td><a href="item-mochila_cargueira.html">Expedition pack</a></td><td>16 kg</td><td>2.0 kg</td><td>rare</td><td>5% slower in combat and +0.015 noise on the map</td></tr>
+</table></div>
+<p>With no backpack worn, only the pockets count.</p>
+<h3>Multiplier (traits)</h3>
+<div class="tbl"><table>
+<tr><th>Trait</th><th>Effect on the limit</th></tr>
+<tr><td>Strong</td><td>+20%</td></tr>
+<tr><td>Organized</td><td>+30%</td></tr>
+<tr><td>Weak</td><td>-20%</td></tr>
+<tr><td>Disorganized</td><td>-30%</td></tr>
+</table></div>
+<p>The traits add up (Strong and Organized together give ×1.5) and apply to both pockets and backpack. <b>Strength</b> adds 0.5 kg per level, only to the pockets, after the multiplier.</p>
+<div class="tip"><b>Example</b>Jeans and school backpack, no traits, Strength 0: pockets 4 + 1 = 5 kg; backpack 6 kg; total 11 kg. With cargo pants, multi-pocket vest and tactical backpack, Organized and Strength 2: pockets (4 + 3 + 4) × 1.3 + 1 = 15.3 kg; backpack 12 × 1.3 = 15.6 kg.</div>
+
+<h2>Heavy load</h2>
+<p>You have a heavy load when the weight in your pockets goes over the pocket limit <b>or</b> the weight in the backpack goes over the backpack limit. The "Heavy load" status appears and the border of the backpack icon turns orange.</p>
+<div class="tbl"><table>
+<tr><th>Situation</th><th>On the map</th><th>On the action screen</th></tr>
+<tr><td>More than 75% of the total used</td><td>-</td><td>slower: 1 - 0.4 × (usage - 0.75), up to 10% slower ("Backpack almost full")</td></tr>
+<tr><td>Heavy load</td><td>+0.03 noise (about 3.6 m)</td><td>speed ×0.8 and swings 15% slower ("Backpack too heavy")</td></tr>
+<tr><td>Expedition pack worn</td><td>+0.015 noise</td><td>speed ×0.95</td></tr>
+</table></div>
+<p>Picking up something that makes you heavy shows "Heavy backpack: slower and noisier.". Nothing stops you from picking it up: what doesn't fit anywhere stays in the backpack (or in your pockets, with no backpack) and you're just heavy.</p>
+
+<h2>The pockets-first rule</h2>
+<p>A new item is stored automatically:</p>
+<ul>
+<li><b>Goes to the pockets first</b>: medicine and dressings (everything in the medical category), ammo, throwables (<a href="item-molotov.html">molotov</a>, <a href="item-rojao.html">firework</a>, <a href="item-despertador.html">alarm clock</a>, <a href="item-garrafa.html">bottle</a>, <a href="item-pedra.html">rock</a>), <a href="item-pilhas.html">batteries</a> and <a href="item-lanterna.html">flashlight</a>. If it doesn't fit in the pockets, it goes to the backpack.</li>
+<li><b>Everything else goes to the backpack first</b>, and to the pockets if the backpack is full.</li>
+<li>With no backpack, everything goes to the pockets.</li>
+</ul>
+<p>When an item is used, it comes out of the pockets first if you're on the action screen, or out of the backpack first if you're on the map (so the pockets always hold what you need in a fight). You can move items between pockets and backpack on the backpack screen ("Does not fit in your pockets.", "Does not fit in the backpack.", "You have no backpack.").</p>
+<p>Taking off the backpack outside of combat moves everything that was in it to your pockets (it can make you heavy). New clothing that goes into the backpack is put on automatically in an empty slot, unless you emptied that slot on purpose.</p>
+
+<h2>Using the backpack during combat</h2>
+<p>On the action screen, anything that's only in the backpack has to be <b>searched for</b> first:</p>
+<ul>
+<li>it takes <b>2.5 s</b> and makes <b>10 m</b> of noise ("Looking for ... in the backpack...");</li>
+<li>one search at a time ("Already digging through the backpack.");</li>
+<li>when it finishes, the item goes to your pockets (as much as fits, at least 1) and, if you asked to use it, it's used right away (a weapon goes to your hand, the flashlight turns on, medicine is taken);</li>
+<li>putting on clothing or hanging a weapon that's in the backpack: first it searches, then puts it on;</li>
+<li>swapping or taking off the backpack mid-fight also takes the same 2.5 s ("Swapping backpacks...");</li>
+<li>throwables can only be thrown if they're in your pockets;</li>
+<li>ammo only in the backpack makes reloading <b>2× slower</b> ("ammo at the bottom of the backpack..."); see <a href="armas-de-fogo.html">Firearms</a>.</li>
+</ul>
+
+<h2>Body slots</h2>
+<div class="tbl"><table>
+<tr><th>Slot</th><th>What goes there</th></tr>
+<tr><td>Head</td><td>helmets, headlamp, beanie, cap</td></tr>
+<tr><td>Clothing</td><td>jacket, sweatshirt, coat, raincoat, jacket with pockets, windbreaker</td></tr>
+<tr><td>Vest</td><td>ballistic vest, tactical vest, multi-pocket vest</td></tr>
+<tr><td>Arms</td><td>elbow pads, forearm guard</td></tr>
+<tr><td>Hands</td><td>work gloves, tactical gloves</td></tr>
+<tr><td>Pants</td><td>jeans, cargo, tactical, sweatpants</td></tr>
+<tr><td>Legs</td><td>shin guards, knee pads</td></tr>
+<tr><td>Feet</td><td>boots, sneakers, combat boots</td></tr>
+<tr><td>Backpack</td><td>the five backpacks</td></tr>
+<tr><td>Leg pouch</td><td>thigh or shin pouch</td></tr>
+<tr><td>Arm pouch</td><td>arm pouch</td></tr>
+<tr><td>Fanny pack</td><td>fanny pack</td></tr>
+<tr><td>Back</td><td>one long weapon</td></tr>
+<tr><td>Belt (2 slots; 3 with MOLLE)</td><td>short weapons</td></tr>
+</table></div>
+<h3>Back and belt</h3>
+<p>Long weapons go on the <b>back</b>: <a href="item-escopeta.html">shotgun</a>, <a href="item-arco.html">bow</a>, <a href="item-besta.html">crossbow</a>, <a href="item-lanca.html">spear</a>, <a href="item-machado_incendio.html">fire axe</a>, <a href="item-cano.html">pipe</a>, <a href="item-machado.html">axe</a>, <a href="item-taco.html">bat</a>, <a href="item-taco_pregos.html">nail bat</a>, <a href="item-pe_de_cabra.html">crowbar</a>, <a href="item-rifle.html">hunting rifle</a>, <a href="item-carabina.html">.22 rifle</a>, <a href="item-fuzil.html">5.56 rifle</a>, <a href="item-submetralhadora.html">submachine gun</a>, <a href="item-marreta.html">sledgehammer</a>, <a href="item-foice.html">scythe</a> and <a href="item-katana.html">katana</a>. Any other weapon goes on the <b>belt</b> (knife, hammer, baton, machete, combat knife, wrench, pistol, revolver, sawed-off shotgun).</p>
+<p>The belt has 2 slots. The <b>3rd slot</b> only exists with the <a href="item-colete_tatico.html">tactical vest</a> or the <a href="item-mochila_tatica.html">tactical backpack</a> worn (MOLLE straps).</p>
+<p>Mid-fight, you can only switch to the weapons on your back or belt (and, if it's a firearm, with ammo in the backpack). The others have to be searched for in the backpack first.</p>
+
+<h2>Dropping items</h2>
+<p>From the backpack you can drop an item (or all of them) on the ground where you are:</p>
+<ul>
+<li>it forms a <b>"Dropped items"</b> pile; dropping something else within 5 m goes into the same pile;</li>
+<li>the pile lasts <b>1 day</b> and shows up in looting like anything else on the ground;</li>
+<li>you can't drop items in the radio vault, at the base via the radio or in the arena;</li>
+<li>a worn or hung item has to be taken off first ("It's on your body: take it off before dropping it.").</li>
+</ul>
+
+<h2>See also</h2>
+<ul>
+<li><a href="saque.html">Looting</a></li>
+<li><a href="controles.html">Controls</a></li>
+<li><a href="armas-de-fogo.html">Firearms</a></li>
+</ul>

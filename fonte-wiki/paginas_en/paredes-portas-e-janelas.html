@@ -1,0 +1,105 @@
+<!-- titulo: Walls, doors and windows | categoria: Base | resumo: Costs, health, reinforcement and repair of each wall, door and window of the base. -->
+<p>The walls of the <a href="base.html">base</a> are the sides of the polygon you marked out. Each real wall has its own health and a reinforcement level (wood, sheet metal or concrete). Doors and windows cut into a wall and are the weak point in the <a href="ataque-noturno.html">night attack</a>.</p>
+
+<h2>Wall types</h2>
+<div class="tbl"><table>
+<tr><th>Wall</th><th>Max health</th><th>How to get it</th><th>Cost</th></tr>
+<tr><td>Building</td><td>none (never falls)</td><td>Side against a real building when marking out</td><td>free</td></tr>
+<tr><td>Marked out only</td><td>— (holds nothing)</td><td>Every new side, before raising it</td><td>free</td></tr>
+<tr><td>Wood</td><td>100</td><td>Raise the marked-out wall</td><td>1 <a href="item-tabuas.html">plank</a> + 1 <a href="item-pregos.html">nail</a> per 4 m</td></tr>
+<tr><td>Sheet metal</td><td>200</td><td>Reinforce a wood wall</td><td>N <a href="item-chapa.html">sheet metal</a> + 2N <a href="item-pregos.html">nails</a></td></tr>
+<tr><td>Concrete</td><td>350</td><td>Reinforce a sheet metal wall</td><td>N <a href="item-cimento.html">bags of cement</a> + N <a href="item-agua.html">water bottles</a></td></tr>
+</table></div>
+<p>For reinforcement, <b>N = ⌈length ÷ 3 m⌉</b> (minimum 1): a 7 m wall needs 3 sheet metal and 6 nails to become sheet metal, and then 3 cement and 3 water bottles to become concrete.</p>
+<p>On the action screen reinforced walls show the label "sheet metal" or "concrete". The panel shows how many walls you have of each type (e.g.: <i>"Walls: 3 wood, 1 sheet metal, 0 concrete."</i>) and a bar with the average health (each wall against its own max health).</p>
+
+<h3>Raising</h3>
+<p>Raising cost formula: planks = nails = ⌈(meters − 0.05) ÷ 4⌉ (a wall of up to 0.5 m costs nothing). Gain: 5 Carpentry XP per plank, plus 5. See <a href="base.html">Raising the walls</a>.</p>
+
+<h3>Reinforcing</h3>
+<p><kbd>Base</kbd> → <kbd>BASE</kbd> → <kbd>Reinforce with sheet metal (200 health): ...</kbd> or <kbd>Reinforce with concrete (350 health): ...</kbd>. The button only appears if there's a wall to reinforce and only works <b>inside the base</b>.</p>
+<ul>
+<li>The game automatically picks the standing wall with the <b>weakest reinforcement</b> (walls that are already concrete and fallen walls are ignored).</li>
+<li>The material can come from the backpack and the chests.</li>
+<li>When reinforced, the wall comes back with the full health of the new level.</li>
+<li>Wood → sheet metal gives 20 Mechanics XP; sheet metal → concrete gives 20 Carpentry XP.</li>
+<li>When there's nothing left to reinforce: <i>"All standing walls are already concrete."</i></li>
+</ul>
+
+<h3>Repairing</h3>
+<p><kbd>Repair the weakest wall (1 plank + 1 nail)</kbd>, only inside the base:</p>
+<ul>
+<li>picks the wall with the lowest health fraction;</li>
+<li>restores <b>50 + 5 × Carpentry level</b> health, without going over its reinforcement's maximum;</li>
+<li>costs 1 <a href="item-tabuas.html">plank</a> + 1 <a href="item-pregos.html">nail</a> and gives 10 Carpentry XP;</li>
+<li>also repairs knocked-down walls (health 0), which hold again.</li>
+</ul>
+<p>A concrete wall at 0 health needs 7 repairs with no Carpentry level (350 ÷ 50), or 4 with Carpentry 10 (100 per repair).</p>
+
+<h3>What knocks down walls</h3>
+<p>Walls only lose health in the <a href="ataque-noturno.html">night attack</a> and when the weekly horde passes. Zombies on the action screen don't hit walls: with no path to you, they look for the nearest intact door or window (up to 40 m) and force their way through there. A knocked-down wall (health 0) disappears from the action screen and leaves the base open.</p>
+
+<h2>Doors and windows</h2>
+<div class="tbl"><table>
+<tr><th></th><th>Door</th><th>Window</th><th>Boarded window</th></tr>
+<tr><td>Cost</td><td>3 <a href="item-tabuas.html">planks</a> + 2 <a href="item-pregos.html">nails</a></td><td>2 <a href="item-tabuas.html">planks</a> + 1 <a href="item-pregos.html">nail</a></td><td>+2 planks + 2 nails</td></tr>
+<tr><td>Width</td><td>1.0 m</td><td>1.2 m</td><td>1.2 m</td></tr>
+<tr><td>Health</td><td>100</td><td>40</td><td>100 (40 + 60)</td></tr>
+<tr><td>Lets people/zombies through?</td><td>only when open</td><td>no</td><td>no</td></tr>
+<tr><td>Can you see through it?</td><td>only when open</td><td>yes</td><td>yes</td></tr>
+<tr><td>Carpentry XP</td><td>8 when made</td><td>8 when made</td><td>8 when nailed</td></tr>
+</table></div>
+
+<h3>How to place</h3>
+<ol class="steps">
+<li>At the base, open the action screen and tap the hammer (build mode).</li>
+<li><kbd>BUILD (door, window, furniture)</kbd> → <kbd>Door</kbd> or <kbd>Window</kbd>.</li>
+<li>Get close to a wall and aim at it: the opening's ghost snaps to the wall closest to the front of the figure (up to 2 m).</li>
+<li>Tap the check mark to place it.</li>
+</ol>
+<p>Rules for opening a door or window in a side:</p>
+<ul>
+<li>The wall must be raised and standing (<i>"Raise that wall first."</i>, <i>"That wall fell."</i>).</li>
+<li>It can't be a building wall (<i>"That wall belongs to a building."</i>).</li>
+<li>The wall must be at least the width of the opening + 0.6 m, and the opening stays at least 0.3 m from each corner (<i>"Too close to the corner."</i>).</li>
+<li>Two openings on the same side stay at least 0.3 m from each other (<i>"Too close to another opening."</i>).</li>
+</ul>
+<div class="tip"><b>The first door</b>The first door you place in the character's life brings the <a href="corvo.html">crow</a>: <i>"A crow landed on your door. It stays."</i></div>
+
+<h3>Opening and closing the door</h3>
+<p>Get close to the door and tap <kbd>OPEN DOOR</kbd> / <kbd>CLOSE DOOR</kbd>. The main rule:</p>
+<div class="tip warn"><b>Open door = open base</b>An open door lets everyone through, zombies too, and the base <b>is no longer closed</b>. In the night attack, each open door counts as a wall on the ground (and opens the way to chest losses). <b>Broken</b> doors and windows (health 0) become a hole in the wall and count the same.</div>
+<p>A closed door holds like a wall and blocks vision. When open, the door leaf rests against the inside of the base.</p>
+
+<h3>Nailing planks over the window</h3>
+<p>Near an intact window without planks: <kbd>NAIL PLANKS</kbd>. It costs 2 planks + 2 nails, adds 60 max health (40 → 100) and leaves the window at full health right away. Only once per window (<i>"Already has planks."</i>).</p>
+
+<h3>Repairing a door or window</h3>
+<p>Near the damaged (or broken) opening: <kbd>REPAIR (N%)</kbd> or <kbd>REPAIR</kbd>. It costs 1 plank + 1 nail, comes back at <b>full health</b> and, if it's a door, it ends up closed. Gives 6 Carpentry XP. The label above shows the state (<i>"Door · 72%"</i>, <i>"Boarded window · 40%"</i>, <i>"Broken door"</i>).</p>
+
+<h3>Removing a door or window</h3>
+<p>In build mode, near the opening: <kbd>Remove</kbd>. The wall closes again and the opening's cost goes back to the backpack (plus 2 planks if the window had planks nailed on).</p>
+
+<h3>Zombies against doors and windows</h3>
+<p>On the action screen, a zombie with no path to you walks to the nearest intact door or window (up to 40 m) and pounds on it:</p>
+<ul>
+<li>each blow takes <b>5 to 9</b> health and makes noise (8 m), drawing anyone nearby;</li>
+<li>door falling: <i>"door fell!"</i> and 18 m of noise; window: <i>"glass broke!"</i> and 25 m of noise;</li>
+<li>at <b>another player's</b> base, the zombie pounds and makes noise but takes no health.</li>
+</ul>
+<p>In the night attack, about 1 in 3 blows (35%) goes to a random closed door or window, and windows take 30% more damage. See <a href="ataque-noturno.html">Night attack</a>.</p>
+
+<h2>Material back</h2>
+<div class="tbl"><table>
+<tr><th>Action</th><th>What comes back</th></tr>
+<tr><td>Removing a door/window (build mode)</td><td>The opening's cost + 2 planks if it had planks nailed on</td></tr>
+<tr><td>Disbanding the base</td><td>Planks and nails from each raised wall, the cost of each opening, 2 planks + 2 nails per boarded window (sheet metal/concrete reinforcements don't come back)</td></tr>
+<tr><td>Joining a group with a base</td><td>The same as disbanding, but everything goes to the <a href="deposito-do-radio.html">radio vault</a></td></tr>
+</table></div>
+
+<h2>See also</h2>
+<ul>
+<li><a href="base.html">Base</a></li>
+<li><a href="armadilhas.html">Traps</a></li>
+<li><a href="ataque-noturno.html">Night attack</a></li>
+</ul>

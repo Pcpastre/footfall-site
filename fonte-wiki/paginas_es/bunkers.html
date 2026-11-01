@@ -1,0 +1,110 @@
+<!-- titulo: Búnkeres | categoria: Saqueo | resumo: Los búnkeres militares del mes: dónde aparecen, los pisos del sótano y sus temas, salas seguras, oscuridad y generador, cuarentena, radio, puerta del cofre, saqueo por piso y el reinicio mensual. -->
+<p>Cada mes, algunas plazas de la ciudad esconden un <b>búnker militar</b>. Por arriba es un edificio como los demás; por abajo, una escalera lleva a pisos de sótano cada vez más peligrosos, oscuros y llenos de militares muertos, hasta el cofre del fondo. El búnker es solo tuyo: nadie más ve lo que sacaste de adentro.</p>
+
+<h2>Dónde aparecen</h2>
+<ul>
+<li>Cada plaza del mapa tiene un <b>10%</b> de probabilidad de volverse búnker en el mes. El sorteo es por plaza y por mes: todo el mundo ve los mismos búnkeres.</li>
+<li>En el mapa aparece como "Búnker militar (nombre de la plaza)", tipo de lugar <a href="lugar-bunker.html">Búnker militar</a>.</li>
+<li>Los búnkeres cambian al comienzo de cada mes.</li>
+</ul>
+
+<h2>Pisos</h2>
+<p>Cada búnker tiene de <b>3 a 6 pisos</b> en total, igual para todos: la planta baja (sorteada como un edificio común, con los muebles de la entrada) y de 2 a 5 sótanos diseñados. La radio de los otros búnkeres muestra ese total.</p>
+<p>Los temas de los sótanos siguen la profundidad: el primero siempre es la <b>Guarnición</b> y el último siempre el <b>Cofre</b>. En el medio entran, sin repetirse y en este orden, hasta 3 entre Logística, Comando, Armamento y Laboratorio.</p>
+<div class="tbl"><table>
+<tr><th>Tema</th><th>Salas</th><th>Qué tiene de especial</th></tr>
+<tr><td>Guarnición</td><td>sala segura, comedor, cocina, pasillo, barracones, vestuario, enfermería, escalera</td><td>cocina con 60% de probabilidad de <a href="item-racao_combate.html">ración de combate</a> en cada mueble; armarios de EPI; en los barracones la mitad de los zombis está acostada</td></tr>
+<tr><td>Logística</td><td>sala segura, almacén, pasillo, taller, lavandería, sala de máquinas, escalera</td><td><b>banco de trabajo militar</b> (se usa como banco de trabajo), cestos de ropa, <b>generador</b> en la sala de máquinas</td></tr>
+<tr><td>Comando</td><td>sala segura, sala de instrucciones, comunicaciones, pasillo, archivo, comandante, escalera</td><td><b>radio del búnker</b>; archivadores de acero; un oficial en la sala de instrucciones; sala del comandante cerrada con llave con la <b>caja fuerte pequeña</b> (tarjeta de acceso + 1 raro)</td></tr>
+<tr><td>Armamento</td><td>sala segura, galería de tiro, pasillo, mantenimiento de armas, polvorín, escalera</td><td>banco de armas (lista del arsenal); polvorín cerrado con llave con cajas de munición; galería con 3 + piso÷2 zombis</td></tr>
+<tr><td>Laboratorio</td><td>sala segura, laboratorio, cuarentena, pasillo, cámara fría, quirófano, escalera</td><td>mesas de laboratorio (remedios fuertes); <b>panel de las celdas</b>; cajones de morgue</td></tr>
+<tr><td>Cofre</td><td>sala segura, antesala, pasillo, cofre, sala de máquinas, garita</td><td><b>puerta del cofre</b>; el <a href="zumbi-chefe.html">Bruto</a> en la antesala; caja fuerte del búnker, arsenales cerrados y armero; generador</td></tr>
+</table></div>
+<p>Cada plano tiene 4 versiones espejadas, sorteadas por el búnker.</p>
+<p>En la escalera: <kbd>BAJAR (sótano N)</kbd>, <kbd>SUBIR (sótano N)</kbd> y, en el primero, <kbd>SUBIR (entrada)</kbd>.</p>
+
+<h2>Zombis del sótano</h2>
+<ul>
+<li>Por piso: 6 + 2 por cada piso debajo del primero + 0 a 2 sorteados, repartidos por el área de las salas (nunca en la sala segura).</li>
+<li>Más los especiales del plano: 3 encerrados en las celdas de la cuarentena, los de la galería, el oficial de la sala de instrucciones, el Bruto de la antesala.</li>
+<li>Cada zombi del búnker tiene una probabilidad de ser <a href="zumbi-militar.html">militar</a> de 50% + 12% por piso, como máximo 85%. El resto es <a href="zumbi-comum.html">común</a>.</li>
+<li>El 15% de ellos está acostado (en los barracones, el 50%).</li>
+<li>Los zombis vuelven cada vez que sales y entras al búnker. El cuerpo de cada uno solo da botín una vez por mes.</li>
+</ul>
+
+<h2>Salas seguras y punto de regreso</h2>
+<p>Todo sótano empieza en una <b>sala segura</b>: la escalera de subida, una <b>puerta blindada</b> (tú pasas, los zombis no pasan ni la rompen), el <kbd>PLANO DEL PISO</kbd> en la pared y un armario de suministros con algo simple (agua, vendaje, pilas, galletas, gasa o analgésico).</p>
+<ul>
+<li>El plano muestra las salas y puertas del piso, sin zombis ni botín.</li>
+<li>Pisar una sala segura guarda ahí tu <b>punto de regreso</b>. Si la app se cierra en medio de la visita, volver a entrar al búnker te lleva directo a la última sala segura ("De vuelta en la sala segura del sótano N.").</li>
+<li>Salir por la puerta principal borra el punto de regreso: la próxima visita empieza desde la planta baja. Morir adentro también lo borra.</li>
+</ul>
+
+<h2>Oscuridad y generador</h2>
+<p>Los sótanos son oscuros como la noche: la visión en la pantalla de acción baja a 12 m (22 m con linterna, 26 m con Visión nocturna). Lleva <a href="item-lanterna.html">linterna</a> y <a href="item-pilhas.html">pilas</a>.</p>
+<p>Los pisos con sala de máquinas (Logística y Cofre) tienen un <b>generador</b>: <kbd>ENCENDER EL GENERADOR (biodiésel)</kbd>.</p>
+<ul>
+<li>Gasta 1 <a href="item-biodiesel.html">bidón de biodiésel</a> ("Necesitas un bidón de biodiésel (hazlo en el fuego de la base: aceite, alcohol y soda cáustica).").</li>
+<li>Todo el piso se ilumina hasta que salgas del búnker.</li>
+<li>El motor hace un ruido de 80 m y <b>todos los zombis del piso</b> van hacia el generador.</li>
+</ul>
+<p>El biodiésel se hace en el fuego de la base: 2 <a href="item-oleo_cozinha.html">aceite de cocina</a>, 2 <a href="item-alcool.html">alcohol 70%</a> y 1 <a href="item-soda_caustica.html">soda cáustica</a>.</p>
+
+<h2>Cuarentena</h2>
+<p>En el Laboratorio, la cuarentena tiene celdas detrás de una reja, con 3 zombis encerrados. El <kbd>PANEL DE LAS CELDAS</kbd> sube todas las rejas a la vez ("¡Clang! Las rejas de las celdas subieron... todas."), con un ruido de 30 m. Las celdas quedan abiertas hasta que salgas del búnker.</p>
+
+<h2>Radio del búnker</h2>
+<p>En el piso de Comando, la <kbd>RADIO DEL BÚNKER</kbd> lista los otros búnkeres del mes en un radio de <b>5 km</b>, con distancia, dirección y número de pisos. Si no hay ninguno: "Solo estática: ningún otro búnker en 5 km."</p>
+
+<h2>La puerta del cofre</h2>
+<p>En el último piso, la puerta entre la antesala y el cofre es una puerta de cofre. Cerca de ella aparece:</p>
+<div class="tbl"><table>
+<tr><th>Forma</th><th>Botón</th><th>Tiempo</th><th>Ruido</th></tr>
+<tr><td>Con la <a href="item-cartao_bunker.html">tarjeta de acceso</a> en la mochila</td><td><kbd>ABRIR CON LA TARJETA (5 s)</kbd></td><td>5 s</td><td>ninguno ("Bip. La puerta del cofre se abrió."); gasta la tarjeta</td></tr>
+<tr><td>Con <a href="item-pe_de_cabra.html">palanca</a></td><td><kbd>FORZAR LA PUERTA DEL COFRE (60 s)</kbd></td><td>60 s quieto</td><td>45 m cada 4 s, y 60 m cuando cede</td></tr>
+</table></div>
+<p>Sin ninguna de las dos: "Puerta del cofre: necesitas la tarjeta de acceso, o una palanca y mucho tiempo.".</p>
+<h3>Dónde está la tarjeta</h3>
+<ul>
+<li>Si el búnker tiene piso de <b>Comando</b>: en la caja fuerte pequeña de la sala del comandante, que está cerrada con llave (palanca, 3 s).</li>
+<li>Si no lo tiene: un <b>oficial</b> muerto viviente en el penúltimo piso lleva la tarjeta en el cuerpo ("Cuerpo: Oficial").</li>
+<li>La tarjeta solo vale en el mes en que se encontró: con el cambio de mes desaparece de la mochila y del depósito.</li>
+</ul>
+
+<h2>Saqueo por piso</h2>
+<p>El multiplicador de rareza del búnker crece con la profundidad: <b>1,5 + 0,8 por piso</b> debajo de la planta baja (mira <a href="saque.html#raridade">el sorteo de rareza</a>).</p>
+<div class="tbl"><table>
+<tr><th>Piso</th><th>Multiplicador de raro</th></tr>
+<tr><td>Planta baja</td><td>1,5 (los 3 muebles de la entrada: 0)</td></tr>
+<tr><td>Sótano 1</td><td>2,3</td></tr>
+<tr><td>Sótano 2</td><td>3,1</td></tr>
+<tr><td>Sótano 3</td><td>3,9</td></tr>
+<tr><td>Sótano 4</td><td>4,7</td></tr>
+<tr><td>Sótano 5</td><td>5,5</td></tr>
+</table></div>
+<p>Además:</p>
+<ul>
+<li><b>Un raro garantizado</b> en cada sótano, menos en el último (el del cofre), en cualquier mueble del piso. La planta baja no tiene.</li>
+<li><b>Polvorín</b>: cada caja de munición tiene 1 o 2 calibres en caja (6 a 15 balas cada una) y 12% de probabilidad de un raro.</li>
+<li><b>Cajón de morgue</b>: el bolsillo de un cuerpo (y 25% de probabilidad de que alguien se levante).</li>
+<li><b>Caja fuerte del búnker</b>: 2 raros más y, a veces, un objeto especial: <a href="item-sinalizador_dificil.html">bengala difícil</a> (15%), <a href="item-barraca.html">tienda de campaña</a> (10%) o <a href="item-sinalizador_medio.html">bengala media</a> (20%). Afortunado y Desafortunado cambian esas probabilidades en 10%.</li>
+</ul>
+<p>Los raros del búnker vienen de la lista de raros del <a href="lugar-bunker.html">búnker militar</a>: chaleco balístico, chaleco táctico, casco balístico, casco táctico, fusil, rifle, subfusil, pistola, escopeta, antibiótico, morfina, munición 5,56 y .308, enlatados, radio, mochila táctica, pantalón táctico, protector de antebrazo y lona.</p>
+
+<h2>Reinicio mensual</h2>
+<ul>
+<li>Una vez saqueado, el búnker queda marcado hasta el comienzo del mes siguiente (no se repone cada semana como los otros lugares).</li>
+<li>En el mes nuevo los búnkeres cambian de plaza, los zombis del mapa vuelven ("Nuevo mes: los zombis volvieron.") y las tarjetas de acceso viejas desaparecen.</li>
+<li>El generador encendido y las celdas abiertas valen solo para la visita actual.</li>
+</ul>
+
+<h2>Consejos</h2>
+<div class="tip"><b>Lleva la palanca</b>Abre la sala del comandante, el polvorín y, como último recurso, la puerta del cofre.</div>
+<div class="tip warn"><b>El generador es una invitación</b>Encender el generador trae a todo el piso a la sala de máquinas. Enciéndelo ya con una ruta de regreso a la sala segura.</div>
+
+<h2>Ver también</h2>
+<ul>
+<li><a href="zumbi-militar.html">Zombi militar</a> y <a href="zumbi-chefe.html">Bruto</a></li>
+<li><a href="saque.html">Saqueo</a></li>
+<li><a href="tela-de-acao.html">Pantalla de acción</a></li>
+</ul>

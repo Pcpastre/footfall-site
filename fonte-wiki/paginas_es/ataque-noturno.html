@@ -1,0 +1,90 @@
+<!-- titulo: Ataque nocturno | categoria: Base | resumo: La fórmula del asedio de cada noche a la base: horario, número de atacantes, trampas, daño, pérdidas en los cofres y la horda de la semana. -->
+<p>Cada noche tu <a href="base.html">base</a> sufre un <b>ataque nocturno</b>: un grupo de zombis golpea las paredes, puertas y ventanas. El ataque ocurre incluso con la app cerrada y se resuelve cuando vuelves. El panel de la base avisa: <i>"Cada noche (1h) la base sufre un ataque. Dormir dentro ayuda a defenderla."</i></p>
+
+<h2>Cuándo ocurre</h2>
+<ul>
+<li>Cada noche se resuelve a la <b>1h de la madrugada</b> (hora del celular).</li>
+<li>Con la app cerrada, las noches perdidas se resuelven cuando el juego vuelve a correr: se aplican <b>como máximo 3 noches</b>; las que pasen de eso se saltan.</li>
+<li>Base nueva: el conteo empieza la noche siguiente.</li>
+<li>Solo ocurre si la base tiene al menos una pared levantada o solo demarcada. Una base hecha solo de paredes de edificio no sufre ataques.</li>
+<li><b>Base del grupo</b>: cada noche cuenta una sola vez para todos; el servidor elige un celular para aplicarla y el resultado les llega a los demás.</li>
+</ul>
+
+<h2>Cuántos atacan</h2>
+<p>Ataque común:</p>
+<p><b>atacantes = 2 + sorteo de 0 a (2 + M) + 3 si la fogata está encendida</b></p>
+<p>donde <b>M</b> = metros de pared levantada ÷ 10, redondeado. Las paredes de edificio no cuentan (no caen). Después:</p>
+<ul>
+<li><b>+2</b> si es de noche y el <a href="moveis-da-base.html">reflector</a> está encendido (la luz atrae).</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Paredes levantadas</th><th>M</th><th>Atacantes (sin fuego ni luz)</th></tr>
+<tr><td>0 a 4 m</td><td>0</td><td>2 a 4</td></tr>
+<tr><td>20 m</td><td>2</td><td>2 a 6</td></tr>
+<tr><td>30 m</td><td>3</td><td>2 a 7</td></tr>
+<tr><td>50 m</td><td>5</td><td>2 a 9</td></tr>
+</table></div>
+<p>La fogata y el reflector se verifican en el momento en que se resuelve el ataque.</p>
+
+<h2>Primero las trampas</h2>
+<p>Antes de cualquier golpe, cada <a href="armadilhas.html">estaca</a> y cada pozo cubierto con usos atrapa hasta un tercio de los atacantes que todavía no fueron atrapados (división entera), gastando un uso por zombi. Los atrapados no golpean.</p>
+
+<h2>Daño de cada golpe</h2>
+<p>Cada atacante que queda da <b>un golpe</b>:</p>
+<p><b>daño = (8 + sorteo de 0 a 12) × avisado × defendido</b></p>
+<div class="tbl"><table>
+<tr><th>Multiplicador</th><th>Condición</th><th>Valor</th></tr>
+<tr><td>Latas</td><td>Al menos un <a href="armadilhas.html">alambre con latas</a> colocado</td><td>× 0,85</td></tr>
+<tr><td>Torre</td><td>Torre de vigía colocada</td><td>× 0,85</td></tr>
+<tr><td>Luz</td><td>De noche y con el reflector encendido</td><td>× 0,8</td></tr>
+<tr><td>Defendido</td><td>Sesión abierta y tú <b>en la base según el GPS</b> en el momento del ataque</td><td>× 0,5</td></tr>
+<tr><td>Ventana</td><td>Golpe que cayó en una ventana</td><td>× 1,3</td></tr>
+</table></div>
+<p>Con todo junto (latas, torre, luz y defendiendo), un golpe hace de 2,3 a 5,8 de daño en lugar de 8 a 20.</p>
+
+<h3>Dónde cae cada golpe</h3>
+<ol class="steps">
+<li>Si existe alguna puerta o ventana <b>cerrada y entera</b>, hay un <b>35%</b> de probabilidad de que el golpe vaya a una de ellas (sorteada). La ventana recibe 30% más.</li>
+<li>Si no, el golpe va a una pared levantada sorteada (las paredes de edificio nunca reciben golpes). Una pared ya derribada también puede salir sorteada.</li>
+<li>Sin ninguna pared levantada, el golpe se pierde.</li>
+</ol>
+<p>Las paredes y aberturas nunca quedan por debajo de 0. Con vida 0, la pared cae y la puerta o ventana se vuelve un hueco.</p>
+
+<h2>Pérdidas en los cofres</h2>
+<p>Después de los golpes, el juego cuenta los puntos abiertos:</p>
+<p><b>abiertos = paredes derribadas + paredes solo demarcadas + puertas abiertas + puertas y ventanas rotas</b></p>
+<p>Si hay al menos un punto abierto, para <b>cada tipo de objeto</b> en los cofres (menos la ropa):</p>
+<ul>
+<li>20% de probabilidad de que el tipo sea afectado;</li>
+<li>si lo es, desaparece la <b>mitad</b> de ese objeto (redondeada hacia arriba).</li>
+</ul>
+<p>Una base cerrada al final del ataque no pierde nada. El aviso lo resume todo, por ejemplo: <i>"Ataque nocturno a la base: 7 zombi(s) (defendiste), 2 en las trampas. 1 pared(es) caída(s)/puerta(s) abierta(s): ¡3 tipo(s) de objeto desaparecieron de los cofres!"</i> o <i>"... Las paredes aguantaron."</i></p>
+<div class="tip warn"><b>Puerta abierta a la 1h</b>Dejar la puerta abierta cuenta como una pared en el suelo: aunque no caiga ninguna pared, los cofres quedan expuestos. Cierra las puertas antes de terminar la sesión.</div>
+
+<h2>La horda de la semana pasando por la base</h2>
+<p>Cada semana una <a href="horda-e-alarmes.html">horda</a> de 30 a 60 zombis atraviesa tu región en línea recta (de miércoles a domingo, entre las 19h y las 22h, durante 2 h). Cuando la manada pasa por el punto de la ruta más cercano a tu base:</p>
+<ul>
+<li>si la ruta pasa a <b>más de 300 m</b> del centro de la base, no pasa nada;</li>
+<li>si pasa a hasta 300 m, la base sufre un ataque con <b>n = tamaño de la horda × (1 − distancia ÷ 400)</b>, redondeado, como mínimo 6 y como máximo el tamaño de la horda.</li>
+</ul>
+<p>Ese ataque sigue las mismas reglas del ataque nocturno (trampas, daño por golpe, multiplicadores, defensa y pérdidas), con dos diferencias: el número de atacantes es el de la horda (la fogata no suma) y el reflector encendido sigue sumando +2. Cada horda golpea la base una sola vez (en la base del grupo, una vez para todos). El aviso empieza con <i>"La horda pasó por la base: ..."</i>.</p>
+<p>Ejemplo: horda de 50 con la ruta a 100 m del centro de la base: 50 × (1 − 100/400) = 37,5 → 38 atacantes.</p>
+
+<h2>Cómo defenderte</h2>
+<ul>
+<li>Cierra la base: levanta todas las paredes demarcadas y cierra las puertas.</li>
+<li>Refuerza las paredes (chapa 200, concreto 350) y clava tablas en las ventanas (40 → 100). Mira <a href="paredes-portas-e-janelas.html">Paredes, puertas y ventanas</a>.</li>
+<li>Las estacas y los pozos rearmados atrapan hasta un tercio de los atacantes cada uno.</li>
+<li>Las latas y la torre reducen el daño un 15% cada una.</li>
+<li>Estar en la base con la sesión abierta a la 1h reduce el daño a la mitad.</li>
+<li>Apaga la fogata de noche (o usa la cocina de leña): la fogata encendida trae 3 más.</li>
+<li>Base más pequeña = menos pared expuesta = menos atacantes.</li>
+<li>Repara las paredes todos los días: 1 tabla + 1 clavo devuelven 50 + 5 por nivel de Carpintería.</li>
+</ul>
+
+<h2>Ver también</h2>
+<ul>
+<li><a href="armadilhas.html">Trampas</a></li>
+<li><a href="paredes-portas-e-janelas.html">Paredes, puertas y ventanas</a></li>
+<li><a href="radio.html">Radio</a> (aviso de la horda)</li>
+</ul>

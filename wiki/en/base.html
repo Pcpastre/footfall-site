@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Base — Footfall Wiki</title>
+<meta name="description" content="How to mark out, raise, expand, defend and abandon your base, alone or in a group.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="alternate" hreflang="pt-BR" href="https://footfall.pcpastre.com/wiki/base.html"><link rel="alternate" hreflang="en" href="https://footfall.pcpastre.com/wiki/en/base.html"><link rel="alternate" hreflang="es" href="https://footfall.pcpastre.com/wiki/es/base.html">
+<link rel="icon" type="image/png" href="../../img/icone.png">
+<link rel="stylesheet" href="../../estilo.css">
+<link rel="stylesheet" href="../wiki.css">
+</head>
+<body class="wiki" data-a="../">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../../index.html?lang=en" aria-label="Footfall"><img class="px" src="../../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <div class="langs" role="group" aria-label="Language"><a class="flag" href="../base.html" hreflang="pt-BR" title="Português"><img class="px" src="../../img/flags/pt.png" alt="Português" width="18" height="12"></a><a class="flag" href="base.html" hreflang="en" title="English" aria-current="true"><img class="px" src="../../img/flags/en.png" alt="English" width="18" height="12"></a><a class="flag" href="../es/base.html" hreflang="es" title="Español"><img class="px" src="../../img/flags/es.png" alt="Español" width="18" height="12"></a></div>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Sections</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Wiki sections"><details open><summary>Indexes</summary><ul><li><a href="itens.html">All items</a></li><li><a href="lugares.html">Places</a></li><li><a href="zumbis-lista.html">Zombie types</a></li><li><a href="memorias-lista.html">The memories</a></li></ul></details><details open><summary>Getting started</summary><ul><li><a href="criacao-de-personagem.html">Character creation</a></li><li><a href="sessao-e-mapa.html">Session and map</a></li></ul></details><details open><summary>Character</summary><ul><li><a href="mochila-e-peso.html">Backpack and weight</a></li><li><a href="morte.html">Death</a></li><li><a href="profissoes.html">Professions</a></li><li><a href="habilidades.html">Skills</a></li><li><a href="costura-e-roupas.html">Tailoring and clothes</a></li><li><a href="tracos.html">Traits</a></li></ul></details><details open><summary>Health</summary><ul><li><a href="cansaco-e-sono.html">Fatigue and sleep</a></li><li><a href="infeccao.html">Infection</a></li><li><a href="mente.html">Mind</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Needs</a></li><li><a href="temperatura.html">Temperature</a></li><li><a href="tratamento.html">Treatment</a></li><li><a href="feridas.html">Wounds</a></li></ul></details><details open><summary>World</summary><ul><li><a href="horda-e-alarmes.html">Horde and alarms</a></li><li><a href="barulho.html">Noise</a></li><li><a href="visao.html">Vision</a></li><li><a href="clima-e-hora.html">Weather and time</a></li><li><a href="zumbis.html">Zombies</a></li></ul></details><details open><summary>Looting</summary><ul><li><a href="corpos.html">Bodies</a></li><li><a href="bunkers.html">Bunkers</a></li><li><a href="saque.html">Looting</a></li></ul></details><details open><summary>Combat</summary><ul><li><a href="tela-de-acao.html">Action screen</a></li><li><a href="controles.html">Controls</a></li><li><a href="armas-de-fogo.html">Firearms</a></li><li><a href="combate-corpo-a-corpo.html">Melee combat</a></li><li><a href="arremesso.html">Throwing</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="base.html" aria-current=page>Base</a></li><li><a href="moveis-da-base.html">Base furniture</a></li><li><a href="horta.html">Garden</a></li><li><a href="cozinha.html">Kitchen</a></li><li><a href="ataque-noturno.html">Night attack</a></li><li><a href="deposito-do-radio.html">Radio vault and outposts</a></li><li><a href="receitas.html">Recipes</a></li><li><a href="armadilhas.html">Traps</a></li><li><a href="paredes-portas-e-janelas.html">Walls, doors and windows</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Group</a></li><li><a href="mercado-e-selos.html">Market and stamps</a></li><li><a href="pontos-dominados.html">Strongholds</a></li></ul></details><details open><summary>Crow and radio</summary><ul><li><a href="corvo.html">Crow</a></li><li><a href="radio.html">Radio</a></li></ul></details><details open><summary>Memories</summary><ul><li><a href="memorias.html">Memories</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Base</p>
+<h1>Base</h1>
+<p class="sub">How to mark out, raise, expand, defend and abandon your base, alone or in a group.</p>
+
+<p>The <b>base</b> is a closed polygon that you mark out on the real map. Each side of the polygon is a wall: either a wall you raise with <a href="item-tabuas.html">planks</a> and <a href="item-pregos.html">nails</a> (it has health and can fall in the <a href="ataque-noturno.html">night attack</a>), or the wall of a real building (free and indestructible). Inside it go the <a href="moveis-da-base.html">furniture</a>, the chests, the <a href="horta.html">garden</a> and the <a href="cozinha.html">kitchen</a>. You only have one base at a time.</p>
+
+<p>The base menu is under the <kbd>Base</kbd> icon on the map, with the <kbd>BASE</kbd> tab (walls, outposts, rest, garden, abandon) and the <kbd>CHESTS</kbd> tab (all chests together).</p>
+
+<h2>Privacy notice</h2>
+<p>The first time you tap <kbd>Mark out base</kbd>, the game shows the notice <i>"Your base is visible"</i>: in the online game, your base's area shows up for anyone who passes nearby (without your name). The game explicitly asks you <b>not to build your base where you live</b>.</p>
+<p>To play from home, the game's own recommendation is to set up an <a href="deposito-do-radio.html">outpost</a> there: only you see outposts, and from them you go to the base through the action screen. The notice appears only once (buttons <kbd>Cancel</kbd> and <kbd>Got it</kbd>).</p>
+<div class="tip warn"><b>What others see</b>Other survivors within 300 m receive your base's layout from the server: the walls (health and whether they're raised), the doors and windows, and the placed furniture. Never your nickname, and never what's in the chests.</div>
+
+<h2>Marking out the base</h2>
+<ol class="steps">
+<li>Start the session (you can't mark out without a session: the button shows as <kbd>Mark out base (start the session)</kbd>).</li>
+<li>Open <kbd>Base</kbd> and tap <kbd>Mark out base</kbd>. A 1 m grid appears on the map.</li>
+<li>Tap the grid to place the corners. Each corner must be <b>within 60 m of you</b>.</li>
+<li>Tap the 1st corner (less than 1.5 m from it) or the <kbd>Mark out base</kbd> button on the bar to close it. Use <kbd>Undo point</kbd> to remove the last corner and <kbd>Cancel</kbd> to give up.</li>
+<li>Then raise each wall with planks and nails (see below).</li>
+</ol>
+<p>Marking out is <b>free</b>: the area becomes yours the moment it closes. The build bar shows how many corners you've placed, the current area against the limit, and how many planks and nails the walls will cost.</p>
+
+<h3>Grid rules</h3>
+<ul>
+<li>The grid has 1 m squares and is aligned with the nearest building (the building's corner within 40 m is a grid node). With no building nearby, it follows north.</li>
+<li>Only <b>right angles</b>: each new corner is pulled onto the same row or column as the previous one.</li>
+<li>A corner in the same direction as the previous side stretches the wall instead of creating a new corner. Going back over the same wall is refused (<i>"Don't go back over the same wall."</i>).</li>
+<li>Walls can't cross each other, and you can't mark the same corner twice.</li>
+<li>When closing, if the last corner isn't aligned with the first, the game adds the missing "elbow" on its own. Corners in the middle of a straight line are removed. If it can't be closed at a right angle, you get <i>"Can't close at a right angle from here. Undo a corner."</i></li>
+<li>At least 3 corners are needed.</li>
+</ul>
+
+<h3>Building walls</h3>
+<p>A whole side lying against a building's wall (every point of the side within 1.5 m of the building's wall) becomes a <b>building wall</b>: it costs no material, starts out "raised", has no health and <b>never falls</b>. The build bar reminds you: <i>"Hug the buildings: building walls are free."</i> A base with only building walls is already closed the moment it's marked out. You can't open a door or window in a building wall, nor push it to expand.</p>
+
+<h2>Area: limit and growth</h2>
+<div class="tbl"><table>
+<tr><th>Source</th><th>Area</th></tr>
+<tr><td>New base (free)</td><td>50 m²</td></tr>
+<tr><td>Each <a href="item-expansor.html">Base expansion kit</a> used</td><td>+10 m² (forever)</td></tr>
+<tr><td>Each <a href="grupo.html">group</a> member beyond the first</td><td>+15 m²</td></tr>
+<tr><td>Minimum for any base</td><td>4 m²</td></tr>
+</table></div>
+<p>Formula: <b>limit = 50 + 10 × kits + 15 × (group members − 1)</b>. A base larger than the limit is refused (<i>"Too big: X m² (your limit is Y m²). Base expansion kits raise the limit."</i>).</p>
+<p>The Expansion kit is extremely rare: it isn't on any loot list; it drops with a 0.5% chance per place searched <b>inside</b> (rolled once per place, in the interior furniture), and whoever lights a <a href="item-sinalizador_medio.html">Rescue flare (medium)</a> has a 50% chance of finding one in the crate (the other half is an <a href="item-radio_posto.html">Outpost radio</a>). Using the kit (<kbd>Use</kbd> in the backpack) adds 10 m² to your limit; in a group, the kit goes to the group's base.</p>
+
+<h3>Expanding the base (pushing a wall)</h3>
+<p>With area to spare, you enlarge the base by pushing a wall outward, 1 m at a time:</p>
+<ol class="steps">
+<li>At the base, open the action screen and tap the hammer (build mode).</li>
+<li>Get within 1.5 m of a wall (raised or only marked out).</li>
+<li>Tap <kbd>EXPAND (push the wall 1 m)</kbd>.</li>
+</ol>
+<p>The two neighboring walls get longer and you only pay for their extra wood (planks and nails in equal amounts, calculated by the 1-per-4-m rule). Furniture and doors stay where they are. You can't push when:</p>
+<ul>
+<li>the wall or one of its neighbors is a building wall;</li>
+<li>the new area goes over the limit (<i>"Over the limit... An expansion kit gives +10 m² (and each group member, +15)."</i>);</li>
+<li>the walls would cross, or a neighbor would be shorter than 1 m;</li>
+<li>the new edge is less than 30 m from another base;</li>
+<li>a door or window on the neighboring wall would end up less than 0.3 m from the corner;</li>
+<li>a piece of furniture is in the way of the new wall (<i>"... in the way of the wall: remove or move it first."</i>);</li>
+<li>you're standing less than 0.6 m from where the wall will go (<i>"Step aside..."</i>).</li>
+</ul>
+<p>Each expansion gives 3 Carpentry XP per plank spent. With an online account, the server checks the new area before accepting it.</p>
+
+<h2>Distance rules</h2>
+<div class="tbl"><table>
+<tr><th>Rule</th><th>Distance</th></tr>
+<tr><td>Base corners relative to you</td><td>up to 60 m</td></tr>
+<tr><td>Edge of your base to the edge of another survivor's base</td><td>at least 30 m</td></tr>
+<tr><td>Base to any of your outposts</td><td>at least 200 m</td></tr>
+<tr><td>Outposts to the base</td><td>200 m to 20 km</td></tr>
+<tr><td>Tent to the base</td><td>at least 200 m</td></tr>
+<tr><td>Yard beyond the edge</td><td>up to 15 m</td></tr>
+</table></div>
+<p>On top of that, the area must be <b>clear</b>: if there are zombies inside the polygon, marking out is refused (<i>"Clear the area first: N zombie(s) inside."</i>). Near one of your outposts, the game suggests taking the outpost down first (the free outpost can be set up again).</p>
+
+<h2>Raising the walls</h2>
+<p>Once marked out, each real wall is still only "on the ground". While there's a wall that's only marked out, <b>zombies get through there</b> and the base isn't closed.</p>
+<div class="tbl"><table>
+<tr><th>Wall length</th><th>Cost</th></tr>
+<tr><td>Up to 0.5 m</td><td>nothing</td></tr>
+<tr><td>Every 4 m (or fraction)</td><td>1 <a href="item-tabuas.html">plank</a> + 1 <a href="item-pregos.html">nail</a></td></tr>
+</table></div>
+<p>Formula: planks = nails = ⌈(meters − 0.05) ÷ 4⌉. An 8 m wall costs 2 planks and 2 nails; an 8.1 m one, 3 of each.</p>
+<ul>
+<li><b>On the action screen</b>: get within 1.5 m of the marked-out wall and tap <kbd>RAISE WALL (N plank + N nail)</kbd>.</li>
+<li><b>In the panel</b>: <kbd>Base</kbd> → <kbd>BASE</kbd> → <kbd>Raise walls (...)</kbd> raises all the ones your material covers (only inside the base).</li>
+</ul>
+<p>Each raised wall starts as wood with 100 health and gives 5 Carpentry XP per plank + 5. When the last one goes up: <i>"Last wall standing: the base is closed!"</i>. The material can come from the backpack and, inside the base, from the chests. Details on reinforcement, doors and windows in <a href="paredes-portas-e-janelas.html">Walls, doors and windows</a>.</p>
+
+<h2>Closed base</h2>
+<p>The base is <b>closed</b> when: all walls are raised, none has been knocked down (health 0), and no door is open or broken (a broken window also counts as a hole). Only a closed base truly protects you.</p>
+
+<h2>Being "at the base"</h2>
+<p>The game uses several notions of "being at the base":</p>
+<div class="tbl"><table>
+<tr><th>Situation</th><th>How it counts</th><th>What it unlocks</th></tr>
+<tr><td>At the base by GPS</td><td>You're inside the polygon or within 3 m of the edge (GPS margin), with the session open. The action screen button turns into a little house.</td><td>Sleeping at the base when ending the session, the stretcher, defense in the night attack, using the chests, structure recipes</td></tr>
+<tr><td>Closed base + GPS inside</td><td>Both of the above</td><td>Map zombies stop chasing you, forget the noise, don't start fights on their own, and panic doesn't rise from zombies in sight. Street points inside the base are blocked for them.</td></tr>
+<tr><td>On the action screen, inside the walls</td><td>The character is inside the polygon</td><td>Same as being at the base for chests, recipes, garden, fire and barrel</td></tr>
+<tr><td>On the action screen, in the yard</td><td>The character is outside the walls, within 15 m of the edge</td><td>Garden, barrel, campfire, yard furniture and recipes</td></tr>
+<tr><td>Coming from an outpost or the tent</td><td>Through the <a href="deposito-do-radio.html">depot</a> radio</td><td>Only the base and the yard: if you try to leave, the character turns back (<i>"You came through the outpost: you can only stay in the base and the yard..."</i>)</td></tr>
+</table></div>
+<div class="tip"><b>Nothing goes to the base on its own</b>What you carry isn't stored automatically. Store it in the chests (the <kbd>CHESTS</kbd> tab inside the base, or at a chest on the action screen). Outside the session, nothing moves between the backpack and the base.</div>
+
+<h3>The yard</h3>
+<p>The yard is the strip up to 15 m beyond the edge. There you can place furniture (garden, barrel, campfire and anything else) and use it through the action screen. The yard isn't protected by the walls.</p>
+
+<h3>Sleeping at the base</h3>
+<p>Ending the session inside the base (by GPS) is sleeping: the menu shows <kbd>Sleep (end here)</kbd>. With the app closed, tiredness drops to zero in about 8 h and health comes back at 5 per hour (with no bleeding or infection). With a <a href="moveis-da-base.html">bed</a> placed, rest is 50% more effective and health comes back at 7.5 per hour. Ending at an outpost or in the tent also counts as sleeping, but without the bed bonus.</p>
+
+<h2>Group base</h2>
+<p>In a <a href="grupo.html">group</a> there's only one base, shared:</p>
+<ul>
+<li><b>Creating a group with a base</b>: your base becomes the group's and the chests are uploaded to the server. Your expansion kits start counting for it.</li>
+<li><b>Group without a base</b>: whoever marks one out first makes the group's base.</li>
+<li>The area limit gains +15 m² per member beyond the first; kits used by any member go to the group's base.</li>
+<li>Walls, furniture and chests are synced with the server every 15 s and right after any change. Everyone uses the same chests.</li>
+<li>The <a href="ataque-noturno.html">night attack</a> and the horde passing happen <b>once for everyone</b>: the server picks one phone to apply it and the result reaches the others.</li>
+<li>The group base <b>can't be abandoned</b> while anyone else is in the group (<i>"The base belongs to the group: you can only take it down when you are the only one left in the group."</i>).</li>
+<li><b>Leaving the group</b>: the base and the chests stay with the group; you take nothing from them (the radio depot is still yours). If you were the last one, the group ends and the base stays with you.</li>
+</ul>
+
+<h2>Joining a group while having a base</h2>
+<p>When you join a group, <b>your base is taken down</b>. The game asks for confirmation (<i>"Join the group?"</i>) and then:</p>
+<ul>
+<li>everything that was in the chests goes to the <a href="deposito-do-radio.html">radio depot</a>, <b>even if it goes over 300 kg</b> (above the limit you can only take things out until you sort it);</li>
+<li>the material from all raised walls, doors, windows (with the nailed planks: 2 planks + 2 nails) and furniture comes back, also to the depot;</li>
+<li>the planted garden is lost and the base disappears from the server.</li>
+</ul>
+<p>The final notice says how much the depot weighs and suggests going to an outpost to sort it.</p>
+
+<h2>Abandoning the base</h2>
+<p><kbd>Base</kbd> → <kbd>BASE</kbd> → <kbd>Abandon base</kbd> (only inside the base). Confirmation: <i>"Abandon the base?"</i>. When you abandon it:</p>
+<ul>
+<li>what's in the chests goes <b>entirely to the backpack</b> (it can get heavy);</li>
+<li>all the material comes back to the backpack: planks and nails from each raised wall, the cost of each door and window (plus 2 planks + 2 nails from each boarded window) and the cost of each piece of furniture;</li>
+<li>the garden is lost and the night attack count starts over.</li>
+</ul>
+<p>Sheet metal and concrete reinforcements are <b>not</b> returned (only the wall's wood). After that, just mark out again.</p>
+
+<h2>See also</h2>
+<ul>
+<li><a href="paredes-portas-e-janelas.html">Walls, doors and windows</a></li>
+<li><a href="moveis-da-base.html">Base furniture</a></li>
+<li><a href="armadilhas.html">Traps</a></li>
+<li><a href="ataque-noturno.html">Night attack</a></li>
+<li><a href="deposito-do-radio.html">Radio depot and outposts</a></li>
+</ul>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Footer">
+      <a href="../../index.html?lang=en">Site</a>
+      <a href="../../guias.html?lang=en">Guides</a>
+      <a href="index.html">Wiki</a>
+      <a href="../../privacidade.html?lang=en">Privacy policy</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki generated from the game code. Values may change between versions.</div>
+</footer>
+<script src="../wiki.js" defer></script>
+</body>
+</html>

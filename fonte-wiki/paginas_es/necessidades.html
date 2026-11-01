@@ -1,0 +1,107 @@
+<!-- titulo: Necesidades | categoria: Salud | resumo: Hambre y sed: reservas, gasto por día y por km, niveles, daño, la regla de la app cerrada y cuándo vuelve la vida. -->
+<p>Footfall mide el hambre y la sed como el gasto real de una persona: una <b>reserva de calorías</b> y una <b>reserva de agua</b> que van bajando con el tiempo y con cada kilómetro caminado. Las barras <i>Hambre</i> (en kcal) y <i>Sed</i> (en ml) están en la pestaña <kbd>Salud</kbd> del panel del personaje. El cansancio, que también está ahí, tiene su propia página: <a href="cansaco-e-sono.html">Cansancio y sueño</a>.</p>
+
+<h2>Reservas y gasto</h2>
+<div class="tbl"><table>
+<tr><th></th><th>Hambre</th><th>Sed</th></tr>
+<tr><td>Reserva llena</td><td>2.400 kcal</td><td>2.400 ml</td></tr>
+<tr><td>Gasto por día (24 h reales)</td><td>2.200 kcal</td><td>2.300 ml</td></tr>
+<tr><td>Gasto por km caminado</td><td>55 kcal</td><td>60 ml</td></tr>
+<tr><td>Gasto por km corriendo (por encima de 3 m/s)</td><td>82,5 kcal</td><td>90 ml</td></tr>
+</table></div>
+<p>El gasto por día corre todo el tiempo, con la app abierta o cerrada. El gasto por kilómetro solo cuenta lo que caminas con la sesión activa; corriendo, cada metro vale 1,5. Una reserva llena dura poco más de un día sin moverte.</p>
+<p>Los rasgos multiplican todo el gasto (por tiempo y por km):</p>
+<div class="tbl"><table>
+<tr><th>Rasgo</th><th>Hambre</th><th>Sed</th></tr>
+<tr><td>Come poco</td><td>×0,75</td><td>—</td></tr>
+<tr><td>Glotón</td><td>×1,25</td><td>—</td></tr>
+<tr><td>Poca sed</td><td>—</td><td>×0,75</td></tr>
+<tr><td>Sed alta</td><td>—</td><td>×1,25</td></tr>
+</table></div>
+<p>La <a href="temperatura.html">temperatura</a> también gasta: con frío quemas 14,4 kcal más por hora por nivel de frío; con calor pierdes 43,2 ml más por hora por nivel de calor.</p>
+
+<h2>Niveles</h2>
+<div class="tbl"><table>
+<tr><th>Reserva</th><th>Moodle de hambre</th><th>Moodle de sed</th><th>Efecto</th></tr>
+<tr><td>50% o más (1.200 o más)</td><td>—</td><td>—</td><td>Ninguno</td></tr>
+<tr><td>25% a 50% (600 a 1.199)</td><td>Con hambre</td><td>Con sed</td><td>Ninguno</td></tr>
+<tr><td>10% a 25% (240 a 599)</td><td>Hambriento</td><td>Mucha sed</td><td>Hambre: −10% de daño en la pelea. Sed: el aliento se recupera 20% más lento en la pelea. La vida deja de volver; el estrés sube.</td></tr>
+<tr><td>Menos de 10% (por debajo de 240)</td><td>Enfermo de hambre</td><td>Deshidratado</td><td>Hambre: −20% de daño y 1 HP cada 30 s. Sed: el aliento se recupera 40% más lento y 1 HP cada 20 s.</td></tr>
+</table></div>
+<p>Los efectos de hambre y sed se suman: enfermo de hambre y deshidratado al mismo tiempo, pierdes 5 HP por minuto. Morir así da la causa "No resististe el hambre y la sed.".</p>
+<p>A partir del nivel 2 (Hambriento o Mucha sed) el <a href="mente.html">estrés</a> sube 0,02 por segundo con la app abierta.</p>
+
+<h2>Con la app cerrada</h2>
+<p>Fuera de la sesión nadie muere de hambre: el gasto continúa, pero la reserva <b>se detiene en 11%</b> (264 kcal y 264 ml), justo antes del nivel de daño. Si al cerrar la app ya estabas por debajo de eso, la reserva queda donde estaba. El daño por hambre y sed solo ocurre con la sesión activa, en el mapa.</p>
+<div class="tip warn"><b>Vuelve con comida</b>Después de uno o dos días sin jugar, abres la app cerca del 11%, ya Hambriento y con Mucha sed. Come y bebe antes de salir a caminar: por debajo del 10% la vida empieza a bajar.</div>
+
+<h2>Cuándo vuelve la vida</h2>
+<h3>Jugando</h3>
+<p>Con la sesión activa, en el mapa, la vida vuelve <b>1 HP por minuto</b> mientras se cumplan todas estas condiciones:</p>
+<ul>
+<li>ninguna herida sangrando (el corte profundo vendado sin sutura cuenta como sangrando);</li>
+<li>ninguna herida con infección común;</li>
+<li>hambre por debajo de Hambriento (reserva del 25% o más);</li>
+<li>sed por debajo de Mucha sed (reserva del 25% o más).</li>
+</ul>
+<p>La infección zombi no impide esta regeneración. La vida máxima es 100.</p>
+<h3>Durmiendo</h3>
+<p>Con la app cerrada, la vida solo vuelve si terminaste la sesión en un lugar seguro o con saco de dormir, y no estás sangrando ni con infección zombi:</p>
+<div class="tbl"><table>
+<tr><th>Dónde terminaste</th><th>Vida por hora</th></tr>
+<tr><td>En la base, con cama</td><td>7,5</td></tr>
+<tr><td>En la base, puesto avanzado o tienda de campaña</td><td>5</td></tr>
+<tr><td>Fuera de ellos, con <a href="item-saco_dormir.html">Saco de dormir</a> en la mochila</td><td>2,5</td></tr>
+<tr><td>Fuera de ellos, sin saco de dormir</td><td>0</td></tr>
+</table></div>
+<p>Detalles en <a href="cansaco-e-sono.html">Cansancio y sueño</a>.</p>
+<h3>Objetos</h3>
+<p>Algunos objetos médicos devuelven vida al instante; consulta <a href="tratamento.html">Tratamiento</a>.</p>
+
+<h2>Comer y beber</h2>
+<p>En el inventario, el botón del objeto es <kbd>Comer</kbd> o <kbd>Beber</kbd>. Las calorías se multiplican así (el agua no cambia):</p>
+<div class="tbl"><table>
+<tr><th>Situación</th><th>Calorías</th></tr>
+<tr><td>Comida en mal estado</td><td>×0,5 (y te sientes mal)</td></tr>
+<tr><td>Rasgo Gran cocinero</td><td>×1,25</td></tr>
+<tr><td>Comiendo en la mesa de la base</td><td>×1,1</td></tr>
+</table></div>
+<p>Comer por encima de la reserva llena no guarda el exceso: todo se detiene en 2.400.</p>
+
+<h3>Sentirse mal</h3>
+<div class="tbl"><table>
+<tr><th>Qué comiste</th><th>Probabilidad</th><th>Vida</th><th>Mensaje</th></tr>
+<tr><td>Cualquier comida en mal estado</td><td>Siempre</td><td>−8</td><td>"&lt;comida&gt; estaba en mal estado. Te sentiste mal." (+10 de tristeza)</td></tr>
+<tr><td><a href="item-agua_suja.html">Agua de lluvia (sin hervir)</a></td><td>1 de cada 3</td><td>−4</td><td>"El agua de lluvia no te cayó bien: náuseas. Hiérvela antes de beber."</td></tr>
+<tr><td><a href="item-carne.html">Carne fresca</a> cruda</td><td>35%</td><td>−5</td><td>"La carne cruda no te cayó bien: náuseas. Ásala en el fuego de la base."</td></tr>
+</table></div>
+<p>Sentirte mal te deja <b>Con náuseas</b> durante 2 h: aliento máximo ×0,85 y −10% de daño en la pelea. La vida nunca baja de 1 por comer.</p>
+<p>Beber una <a href="item-agua.html">Botella de agua</a> o agua de lluvia te devuelve la <a href="item-garrafa.html">Botella vacía</a>.</p>
+
+<h3>Comida y bebida</h3>
+<div class="tbl"><table>
+<tr><th>Objeto</th><th>kcal</th><th>ml</th><th>Se echa a perder en</th></tr>
+<tr><td><a href="item-enlatados.html">Caja de enlatados</a></td><td>2.400</td><td>600</td><td>—</td></tr>
+<tr><td><a href="item-racao_combate.html">Ración de combate</a></td><td>1.200</td><td>150</td><td>—</td></tr>
+<tr><td><a href="item-carne_assada.html">Carne asada</a></td><td>980</td><td>—</td><td>2 días</td></tr>
+<tr><td><a href="item-bolacha.html">Paquete de galletas</a></td><td>900</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-pao_panela.html">Pan de olla</a></td><td>800</td><td>—</td><td>4 días</td></tr>
+<tr><td><a href="item-carne.html">Carne fresca</a></td><td>700</td><td>—</td><td>1 día</td></tr>
+<tr><td><a href="item-carne_seca.html">Cecina (charque)</a></td><td>650</td><td>—</td><td>60 días</td></tr>
+<tr><td><a href="item-arroz_cozido.html">Arroz cocido</a></td><td>600</td><td>—</td><td>2 días</td></tr>
+<tr><td><a href="item-leite.html">Caja de leche</a></td><td>600</td><td>900</td><td>4 días</td></tr>
+<tr><td><a href="item-sopa.html">Sopa caliente</a></td><td>550</td><td>400</td><td>2 días</td></tr>
+<tr><td><a href="item-chocolate.html">Barra de chocolate</a></td><td>500</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-feijao_quente.html">Frijoles calientes</a></td><td>420</td><td>—</td><td>2 días</td></tr>
+<tr><td><a href="item-pao.html">Pan</a></td><td>400</td><td>—</td><td>3 días</td></tr>
+<tr><td><a href="item-legumes_cozidos.html">Verduras cocidas</a></td><td>350</td><td>300</td><td>3 días</td></tr>
+<tr><td><a href="item-feijao.html">Lata de frijoles</a></td><td>300</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-conserva.html">Verduras en conserva</a></td><td>300</td><td>150</td><td>90 días</td></tr>
+<tr><td><a href="item-frutas.html">Frutas</a></td><td>250</td><td>150</td><td>5 días</td></tr>
+<tr><td><a href="item-legumes.html">Verduras del huerto</a></td><td>250</td><td>100</td><td>4 días</td></tr>
+<tr><td><a href="item-cafe_coado.html">Café colado</a></td><td>20</td><td>250</td><td>1 día</td></tr>
+<tr><td><a href="item-cafe.html">Café molido</a></td><td>10</td><td>200</td><td>—</td></tr>
+<tr><td><a href="item-agua.html">Botella de agua</a></td><td>—</td><td>500</td><td>—</td></tr>
+<tr><td><a href="item-agua_suja.html">Agua de lluvia (sin hervir)</a></td><td>—</td><td>500</td><td>—</td></tr>
+</table></div>
+<p>El <a href="item-arroz.html">Paquete de arroz</a> y el <a href="item-farinha.html">Paquete de harina</a> no se comen crudos: necesitan el fuego de la base. Algunos alimentos también afectan la cabeza y el cansancio (chocolate, café, sopa): consulta <a href="mente.html">Mente</a>, <a href="cansaco-e-sono.html">Cansancio y sueño</a> y <a href="temperatura.html">Temperatura</a>.</p>

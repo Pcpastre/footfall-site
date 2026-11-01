@@ -1,0 +1,114 @@
+<!-- titulo: Zombis | categoria: Mundo | resumo: Cómo viven los zombis en el mapa (durmientes, errantes y caídos), cómo te notan y te persiguen, dónde nacen, cuándo vuelven y todos los tipos de uniforme con sus multiplicadores. -->
+<p>La ciudad tiene una <b>población fija</b> de zombis: cada tramo de calle tiene los suyos, siempre los mismos durante el mes, y todos los celulares ven los mismos zombis en el mismo lugar. Algunos murieron de uniforme (policías, médicos, militares...), son más duros y llevan el botín del oficio.</p>
+
+<h2>Los tres estados en el mapa</h2>
+<div class="tbl"><table>
+<tr><th>Estado</th><th>Probabilidad</th><th>Comportamiento</th></tr>
+<tr><td><b>Durmiente</b></td><td>65%</td><td>quieto, con los ojos entrecerrados. Ve y oye a medias hasta que nota algo. De noche, 3 de cada 8 se levantan y vagan (6 de cada 8 con luna llena)</td></tr>
+<tr><td><b>Errante</b></td><td>25%</td><td>camina un poco por las calles cerca de su casa y se detiene un rato (de día descansa de 20 a 60 s, de noche de 8 a 25 s, con tormenta la mitad); cada caminata dura de 5 a 15 s</td></tr>
+<tr><td><b>Caído</b></td><td>10%</td><td>acostado como un cuerpo. No ve; solo oye pegado (30% del radio). Solo se levanta cuando oye algo o cuando empieza una pelea cerca de él</td></tr>
+</table></div>
+<p>Los zombis caminan por las calles (el grafo de calles del mapa). Cerca de ti, cuando te persiguen, salen de la calle y vienen directo (a menos de 20 m, o cuando están en el mismo tramo de calle). Vagando, ninguno se aleja más de <b>40 m</b> del punto donde vive; si se pasa, vuelve.</p>
+<div class="tbl"><table>
+<tr><th>Velocidad en el mapa</th><th>m/s</th></tr>
+<tr><td>Persiguiendo</td><td>1,2 (un poco más lento que tú caminando)</td></tr>
+<tr><td>Yendo tras un sonido</td><td>1,08</td></tr>
+<tr><td>Atraído por una alarma</td><td>0,96</td></tr>
+<tr><td>Vagando</td><td>0,4</td></tr>
+</table></div>
+<p>De madrugada todos caminan 15% más rápido. En el mapa la velocidad no cambia con el uniforme; solo en la pantalla de acción.</p>
+
+<h2>Cómo te notan</h2>
+<ul>
+<li><b>Vista</b>: cono de 100° hacia donde mira, 15 m de día, 8 m de noche, 30 m si tu linterna está encendida. Te va notando: 1 s pegado, 2 s en el límite. Detalles en <a href="visao.html">Visión</a>.</li>
+<li><b>Oído</b>: radio = ruido × 120 m. A hasta 8 m ya viene; a hasta 100 m va hacia el sonido. Detalles en <a href="barulho.html">Ruido</a>.</li>
+<li><b>Vecinos</b>: el que te <b>vio</b> hace que todos los que están a hasta 20 m de él también empiecen a perseguirte.</li>
+<li>Solo los zombis a hasta 150 m de ti "piensan" (caminan y notan). Los que están a más de 750 m salen de la memoria y recuerdan dónde quedaron.</li>
+</ul>
+
+<h2>Persecución y regreso</h2>
+<ol class="steps">
+<li>Persiguiendo, va por el camino de calle más corto hasta ti.</li>
+<li>Si llega a 25 m, empieza la <a href="tela-de-acao.html">pantalla de acción</a>.</li>
+<li>Si pasa <b>15 s</b> sin verte ni oírte (y a más de 20 m), pierde el rastro y va hasta el último lugar donde te vio.</li>
+<li>Ahí busca durante <b>8 s</b>, mirando alrededor. Después el durmiente y el caído vuelven a dormir; el errante vuelve a vagar.</li>
+<li>A más de <b>450 m</b> de ti desiste en el acto.</li>
+<li>Dentro de la base cerrada, todos desisten y olvidan el sonido.</li>
+</ol>
+<p>Un zombi que fue atraído a otro lugar (por alarma, sonido o persecución) pasa a vivir donde quedó.</p>
+
+<h2>Dónde nacen y cuántos</h2>
+<p>La ciudad se divide en celdas de unos 100 × 100 m. Cada celda tiene:</p>
+<div class="tbl"><table>
+<tr><th>Celda</th><th>Zombis</th></tr>
+<tr><td>Con lugares de saqueo</td><td>10 + 4 por cada "guardia" de los lugares + 0 a 4, entre 5 y 30. Cada lugar cuenta por el número de guardias de su tipo (Salud, Mercado y Policía 3; Restaurante, Construcción, Puesto, Bomberos y Escuela 2; los demás 1)</td></tr>
+<tr><td>Sin lugares, en área verde</td><td>5</td></tr>
+<tr><td>Sin lugares, calle común</td><td>6 a 10</td></tr>
+</table></div>
+<p>Dentro de la celda, los puntos de calle a hasta 40 m de un lugar de saqueo tienen 4× más probabilidad de recibir un zombi. Nadie nace dentro de tu base. La población se genera a hasta 500 m de ti.</p>
+<p>Dentro de los lugares hay otros zombis, que dependen del tipo y del tamaño del lugar; esos vuelven cada semana (consulta <a href="saque.html">Saqueo</a>).</p>
+
+<h2>Cuándo vuelven</h2>
+<ul>
+<li>Abatido en el mapa, el zombi no vuelve hasta que cambia el <b>mes</b>.</li>
+<li>En el mes nuevo todos vuelven ("Nuevo mes: los zombis volvieron."), con la misma distribución para todos.</li>
+<li>Los zombis de dentro de los lugares vuelven cada semana; los del búnker vuelven en cada visita.</li>
+</ul>
+
+<h2 id="classes">Tipos de uniforme</h2>
+<p>La vida de un zombi en la pantalla de acción es de 12 a 20, y la velocidad de 0,9 a 1,35, ambas multiplicadas por el uniforme. Los multiplicadores de cabeza y torso valen para el daño que recibe ahí (casco y chaleco).</p>
+<div class="tbl"><table>
+<tr><th>Tipo</th><th>Vida</th><th>Velocidad</th><th>Daño en el torso</th><th>Daño en la cabeza</th><th>Preparación del ataque</th><th>Otros</th></tr>
+<tr><td><a href="zumbi-comum.html">Zombi</a></td><td>×1</td><td>×1</td><td>×1</td><td>×1</td><td>×1</td><td>-</td></tr>
+<tr><td><a href="zumbi-policia.html">Policía</a></td><td>×1,3</td><td>×1</td><td>×0,5</td><td>×1</td><td>×1</td><td>-</td></tr>
+<tr><td><a href="zumbi-militar.html">Militar</a></td><td>×1,8</td><td>×0,95</td><td>×0,5</td><td>×0,6</td><td>×1</td><td>-</td></tr>
+<tr><td><a href="zumbi-medico.html">Médico</a></td><td>×1</td><td>×1,12</td><td>×1</td><td>×1</td><td>×1</td><td>-</td></tr>
+<tr><td><a href="zumbi-bombeiro.html">Bombero</a></td><td>×1,45</td><td>×0,95</td><td>×1</td><td>×0,7</td><td>×1</td><td>el fuego no prende</td></tr>
+<tr><td><a href="zumbi-obra.html">Albañil</a></td><td>×1,2</td><td>×1</td><td>×1</td><td>×0,6</td><td>×1</td><td>-</td></tr>
+<tr><td><a href="zumbi-presidiario.html">Presidiario</a></td><td>×0,8</td><td>×1,25</td><td>×1</td><td>×1</td><td>×0,8 (más agresivo)</td><td>-</td></tr>
+<tr><td><a href="zumbi-mochileiro.html">Mochilero</a></td><td>×1,1</td><td>×1</td><td>×1</td><td>×1</td><td>×1</td><td>mochila llena</td></tr>
+<tr><td><a href="zumbi-seguranca.html">Guardia de seguridad</a></td><td>×1,25</td><td>×1</td><td>×0,7</td><td>×1</td><td>×1</td><td>-</td></tr>
+<tr><td><a href="zumbi-mercado.html">Empleado de supermercado</a></td><td>×1,1</td><td>×1</td><td>×1</td><td>×1</td><td>×1</td><td>-</td></tr>
+<tr><td><a href="zumbi-chefe.html">Bruto</a></td><td>×6</td><td>×0,85</td><td>×0,6</td><td>×0,75</td><td>×1,25</td><td>embestida, golpe que derriba, no agarra</td></tr>
+</table></div>
+
+<h3>Dónde aparece cada uno</h3>
+<p>El tipo de cada zombi se sortea de forma fija (todos los celulares ven la misma ropa):</p>
+<ul>
+<li><b>Cerca del lugar del oficio</b> (lugar a hasta 50 m de donde vive): 25% de probabilidad de ser uno de los tipos de ese lugar.</li>
+<li><b>En la calle</b>: si no, 7% de probabilidad de ser especial, con estos pesos: mochilero 20%, militar 18%, policía 12%, médico 12%, albañil 10%, presidiario 8%, guardia de seguridad 8%, bombero 6%, empleado de supermercado 6%.</li>
+<li>El resto es zombi común.</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Lugar</th><th>Tipos que aparecen cerca (mismo peso cada uno)</th></tr>
+<tr><td><a href="lugar-policia.html">Policía</a></td><td>policía, policía, presidiario</td></tr>
+<tr><td><a href="lugar-saude.html">Salud</a></td><td>médico</td></tr>
+<tr><td><a href="lugar-bombeiros.html">Bomberos</a></td><td>bombero</td></tr>
+<tr><td><a href="lugar-construcao.html">Construcción</a></td><td>albañil</td></tr>
+<tr><td><a href="lugar-mercado.html">Mercado</a></td><td>empleado de supermercado, empleado de supermercado, guardia de seguridad</td></tr>
+<tr><td><a href="lugar-restaurante.html">Restaurante</a></td><td>empleado de supermercado</td></tr>
+<tr><td><a href="lugar-posto.html">Gasolinera</a>, <a href="lugar-loja.html">Tienda</a>, <a href="lugar-eletronicos.html">Electrónicos</a>, <a href="lugar-roupas.html">Ropa</a></td><td>guardia de seguridad</td></tr>
+<tr><td><a href="lugar-bunker.html">Búnker militar</a></td><td>militar</td></tr>
+</table></div>
+<p>Los zombis de dentro de un lugar siguen la misma regla con el tipo del propio lugar. Otras fuentes:</p>
+<ul>
+<li><b>Horda de la semana</b>: 6% militares (los que intentaron contenerla), más 7% de especiales de la calle.</li>
+<li><b>Búnker</b>: 50% + 12% por piso de militares (como máximo 85%), más el oficial y el Bruto. Consulta <a href="bunkers.html">Búnkeres</a>.</li>
+<li><b>Bengala de rescate</b>: fácil 8% policías; media 15% presidiarios y 15% policías; difícil 25% militares, 15% bomberos y 10% presidiarios, y el Bruto al frente de la última oleada. Consulta <a href="horda-e-alarmes.html">Horda y alarmas</a>.</li>
+</ul>
+
+<h3>Botín y uniforme</h3>
+<p>Los especiales llevan, además del bolsillo común, el botín del oficio (cada página tiene la tabla) y 10% de probabilidad del <b>conjunto de ropa</b> del uniforme (el Bruto no tiene). Consulta <a href="corpos.html">Cuerpos</a>.</p>
+
+<h2>Ataques y heridas</h2>
+<p>En la pantalla de acción los zombis arañan (4 a 7), agarran (40% de las veces, como máximo 2 al mismo tiempo) y muerden (6 a 10). Los que se arrastran muerden pies y piernas (3 a 5). Todo con una preparación visible antes. Detalles en <a href="combate-corpo-a-corpo.html">Combate cuerpo a cuerpo</a>.</p>
+
+<h2>El Bruto</h2>
+<p>El <a href="zumbi-chefe.html">Bruto</a> es el jefe: 6 veces la vida de un zombi, un golpe doble que derriba y una embestida en línea recta. Aparece al frente de la última oleada de la <a href="item-sinalizador_dificil.html">bengala difícil</a> y en la antesala del cofre de los <a href="bunkers.html">búnkeres</a>.</p>
+
+<h2>Ver también</h2>
+<ul>
+<li><a href="visao.html">Visión</a> y <a href="barulho.html">Ruido</a></li>
+<li><a href="horda-e-alarmes.html">Horda y alarmas</a></li>
+<li><a href="corpos.html">Cuerpos</a></li>
+</ul>

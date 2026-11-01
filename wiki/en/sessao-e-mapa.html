@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Session and map — Footfall Wiki</title>
+<meta name="description" content="How to start and end a session, what each map button does, the compass and the GPS rules.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="alternate" hreflang="pt-BR" href="https://footfall.pcpastre.com/wiki/sessao-e-mapa.html"><link rel="alternate" hreflang="en" href="https://footfall.pcpastre.com/wiki/en/sessao-e-mapa.html"><link rel="alternate" hreflang="es" href="https://footfall.pcpastre.com/wiki/es/sessao-e-mapa.html">
+<link rel="icon" type="image/png" href="../../img/icone.png">
+<link rel="stylesheet" href="../../estilo.css">
+<link rel="stylesheet" href="../wiki.css">
+</head>
+<body class="wiki" data-a="../">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../../index.html?lang=en" aria-label="Footfall"><img class="px" src="../../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Search the wiki" aria-label="Search the wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <div class="langs" role="group" aria-label="Language"><a class="flag" href="../sessao-e-mapa.html" hreflang="pt-BR" title="Português"><img class="px" src="../../img/flags/pt.png" alt="Português" width="18" height="12"></a><a class="flag" href="sessao-e-mapa.html" hreflang="en" title="English" aria-current="true"><img class="px" src="../../img/flags/en.png" alt="English" width="18" height="12"></a><a class="flag" href="../es/sessao-e-mapa.html" hreflang="es" title="Español"><img class="px" src="../../img/flags/es.png" alt="Español" width="18" height="12"></a></div>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Sections</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Wiki sections"><details open><summary>Indexes</summary><ul><li><a href="itens.html">All items</a></li><li><a href="lugares.html">Places</a></li><li><a href="zumbis-lista.html">Zombie types</a></li><li><a href="memorias-lista.html">The memories</a></li></ul></details><details open><summary>Getting started</summary><ul><li><a href="criacao-de-personagem.html">Character creation</a></li><li><a href="sessao-e-mapa.html" aria-current=page>Session and map</a></li></ul></details><details open><summary>Character</summary><ul><li><a href="mochila-e-peso.html">Backpack and weight</a></li><li><a href="morte.html">Death</a></li><li><a href="profissoes.html">Professions</a></li><li><a href="habilidades.html">Skills</a></li><li><a href="costura-e-roupas.html">Tailoring and clothes</a></li><li><a href="tracos.html">Traits</a></li></ul></details><details open><summary>Health</summary><ul><li><a href="cansaco-e-sono.html">Fatigue and sleep</a></li><li><a href="infeccao.html">Infection</a></li><li><a href="mente.html">Mind</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Needs</a></li><li><a href="temperatura.html">Temperature</a></li><li><a href="tratamento.html">Treatment</a></li><li><a href="feridas.html">Wounds</a></li></ul></details><details open><summary>World</summary><ul><li><a href="horda-e-alarmes.html">Horde and alarms</a></li><li><a href="barulho.html">Noise</a></li><li><a href="visao.html">Vision</a></li><li><a href="clima-e-hora.html">Weather and time</a></li><li><a href="zumbis.html">Zombies</a></li></ul></details><details open><summary>Looting</summary><ul><li><a href="corpos.html">Bodies</a></li><li><a href="bunkers.html">Bunkers</a></li><li><a href="saque.html">Looting</a></li></ul></details><details open><summary>Combat</summary><ul><li><a href="tela-de-acao.html">Action screen</a></li><li><a href="controles.html">Controls</a></li><li><a href="armas-de-fogo.html">Firearms</a></li><li><a href="combate-corpo-a-corpo.html">Melee combat</a></li><li><a href="arremesso.html">Throwing</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="base.html">Base</a></li><li><a href="moveis-da-base.html">Base furniture</a></li><li><a href="horta.html">Garden</a></li><li><a href="cozinha.html">Kitchen</a></li><li><a href="ataque-noturno.html">Night attack</a></li><li><a href="deposito-do-radio.html">Radio vault and outposts</a></li><li><a href="receitas.html">Recipes</a></li><li><a href="armadilhas.html">Traps</a></li><li><a href="paredes-portas-e-janelas.html">Walls, doors and windows</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Group</a></li><li><a href="mercado-e-selos.html">Market and stamps</a></li><li><a href="pontos-dominados.html">Strongholds</a></li></ul></details><details open><summary>Crow and radio</summary><ul><li><a href="corvo.html">Crow</a></li><li><a href="radio.html">Radio</a></li></ul></details><details open><summary>Memories</summary><ul><li><a href="memorias.html">Memories</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Getting started</p>
+<h1>Session and map</h1>
+<p class="sub">How to start and end a session, what each map button does, the compass and the GPS rules.</p>
+
+<p>In Footfall you play by actually walking. Everything that happens on the map (zombies moving, looting, distance traveled, noise) only runs while a <b>session</b> is open. Outside a session the character is "sleeping" or "standing still" where you ended, and only real time passes (hunger, thirst, fatigue, healing).</p>
+
+<h2>Starting a session</h2>
+<ol class="steps">
+<li>Have a character created. Without one, the map shows <kbd>Create character</kbd> and starting is refused with "Create a character before you start.".</li>
+<li>Tap <kbd>START SESSION</kbd> at the bottom of the map.</li>
+<li>The game checks whether the device's location is on ("GPS off. Turn on your device's location.") and whether permission was granted ("Location permission denied.").</li>
+<li>It asks for your current position for up to <b>12 s</b>. If the GPS doesn't respond, it uses the last known position and corrects it later. Without either, "Couldn't get your GPS position. Go somewhere open and tap again." appears.</li>
+<li>The whole attempt has a <b>30 s</b> limit. Past that: "The GPS took too long to respond. Go somewhere open and tap again.". Tapping twice doesn't open two sessions.</li>
+</ol>
+<p>When it starts, the game:</p>
+<ul>
+<li>applies the rest from the time the app was closed (see <a href="#dormir">Sleeping or ending</a>);</li>
+<li>resets the <b>session distance</b> (it's used for the rare item chance, see <a href="saque.html">Looting</a>);</li>
+<li>checks the month (zombies come back every month, see <a href="zumbis.html">Zombies</a>), the night attacks on the base and the <a href="horda-e-alarmes.html">weekly horde</a>;</li>
+<li>schedules the first <a href="horda-e-alarmes.html">random alarm</a> for 8 to 11 minutes from now;</li>
+<li>loads the streets and places around you (first 500 m, to start quickly, then 1,400 m) and fetches the <a href="clima-e-hora.html">real weather</a>.</li>
+</ul>
+<p>The map is downloaded within a <b>1,400 m</b> radius. When you get more than <b>550 m</b> from the center of the downloaded chunk (and enter another chunk), the game downloads the new chunk on its own. If the internet fails, it tries again after 5, 15, 30, 60, 120 and then every 300 s; the notice at the top shows the countdown and tapping it retries right away.</p>
+<div class="tip"><b>Delivery driver profession</b>In the first session, the delivery driver already starts with about 400 m around them marked on the explored map ("You know this neighborhood well: it's already on your map.").</div>
+<p>The start message in the log is "Session started. You can be attacked.": from here on the zombies on the map can see, hear and chase you.</p>
+
+<h2 id="dormir">Sleeping or ending</h2>
+<p>To finish, open the <kbd>Menu</kbd> (three-dot icon in the left corner) and choose:</p>
+<ul>
+<li><kbd>Sleep (end here)</kbd>, when you're somewhere safe: inside the base, at an outpost or at the <a href="item-barraca.html">tent</a> camp.</li>
+<li><kbd>End session</kbd>, anywhere else ("Outside the base: poor rest, without losing anything.").</li>
+</ul>
+<p>A window confirms (<kbd>Sleep</kbd> / <kbd>End</kbd> or <kbd>Keep playing</kbd>). Ending anywhere keeps everything you're carrying. The difference is in the rest while the app stays closed:</p>
+<div class="tbl"><table>
+<tr><th>Where you ended</th><th>Rest rate</th><th>Health per hour closed</th><th>Mind (stress, sadness)</th></tr>
+<tr><td>Base, with a <b>bed</b> placed</td><td>18.75 (the best)</td><td>+7.5</td><td>counts 1.5× the hours</td></tr>
+<tr><td>Base without a bed, outpost or tent</td><td>12.5</td><td>+5</td><td>counts the normal hours</td></tr>
+<tr><td>Outside, with a <a href="item-saco_dormir.html">sleeping bag</a> in the backpack</td><td>8</td><td>+2.5</td><td>counts 1.2× the hours</td></tr>
+<tr><td>Outside, on the ground</td><td>4</td><td>nothing</td><td>counts the normal hours</td></tr>
+</table></div>
+<p>Health only comes back while sleeping if you're not bleeding or infected. Hunger and thirst keep running in any case. Ending also turns off the flashlight, closes any open loot and the action screen.</p>
+<p>The menu's <kbd>Home screen</kbd> button is locked during the session ("End the session first.").</p>
+
+<h2>Map buttons</h2>
+<h3>Left column (info)</h3>
+<div class="tbl"><table>
+<tr><th>Icon</th><th>Opens</th><th>Colored border when</th></tr>
+<tr><td>Heart</td><td><kbd>Character</kbd>: health, body, skills</td><td>health is below 100 (gray above 60, orange from 31 to 60, red up to 30)</td></tr>
+<tr><td>Backpack</td><td><kbd>Backpack</kbd>: inventory, clothes, workbench (see <a href="mochila-e-peso.html">Backpack and weight</a>)</td><td>you're carrying a heavy load</td></tr>
+<tr><td>Fence</td><td><kbd>Base</kbd>: marking out, walls, chests</td><td>there's a wall that's only planned or has fallen</td></tr>
+<tr><td>People</td><td><kbd>Group</kbd></td><td>there's a notice from another member</td></tr>
+<tr><td>Map</td><td><kbd>Map</kbd>: the explored map</td><td>-</td></tr>
+<tr><td>Three dots</td><td><kbd>Menu</kbd>: <kbd>Settings</kbd>, <kbd>Radio</kbd>, <kbd>Trade with someone here</kbd> (a survivor within 40 m, by code), sleep/end and <kbd>Home screen</kbd></td><td>-</td></tr>
+</table></div>
+<h3>Top</h3>
+<ul>
+<li>Row of body and mind statuses (hunger, thirst, panic, heavy load, cold, etc.).</li>
+<li>Noise meter: shows the radius in meters at which zombies can hear you right now (see <a href="barulho.html">Noise</a>).</li>
+<li>One notice at a time, most important first: <b>ALERT</b> (zombie seen or following you less than 50 m away, with "THEY SAW YOU" or "walk slowly"), missing map, tent pitching, flare lit, binoculars, map loading.</li>
+</ul>
+<h3>Actions (right, bottom, near your thumb)</h3>
+<div class="tbl"><table>
+<tr><th>Button</th><th>Appears when</th><th>Does</th></tr>
+<tr><td>Antenna</td><td>you're at an outpost or the camp</td><td>goes to the radio vault</td></tr>
+<tr><td>Crow</td><td>you have the mail crow</td><td>opens the crow panel (red border if it's hungry)</td></tr>
+<tr><td>Eye</td><td>there are <a href="item-binoculo.html">binoculars</a> in the backpack</td><td>looks through the binoculars (standing still); see <a href="visao.html">Vision</a></td></tr>
+<tr><td>Ball</td><td>you have something to throw (<a href="item-despertador.html">alarm clock</a>, <a href="item-rojao.html">firework</a>, <a href="item-garrafa.html">bottle</a> or <a href="item-pedra.html">rock</a>)</td><td>throws it forward; see <a href="arremesso.html">Throwing</a></td></tr>
+<tr><td>Flashlight</td><td>it's night</td><td>turns the <a href="item-lanterna.html">flashlight</a> on or off</td></tr>
+<tr><td>Magnifying glass (medium)</td><td>always</td><td><kbd>Loot</kbd> the nearest place or body, or continue the open loot; it glows when there's something within 35 m. See <a href="saque.html">Looting</a></td></tr>
+<tr><td>Fight (large)</td><td>always</td><td>opens the <a href="tela-de-acao.html">action screen</a> right away, with all zombies in the radius. The number shows how many zombies you know are in the fight radius (in sight or chasing you). Inside the base the icon becomes a house</td></tr>
+</table></div>
+<h3>Bottom left</h3>
+<ul>
+<li><kbd>Compass</kbd>: turns the compass on and off (green when it's getting a reading).</li>
+<li><kbd>Center</kbd>: brings the camera back to you. Dragging the map with one finger releases the camera.</li>
+</ul>
+<p>With the compass off, an amber stick appears on the right for looking around.</p>
+
+<h2>Compass and calibration</h2>
+<p>You only spot zombies in a cone in front of you (see <a href="visao.html">Vision</a>), so where your character is facing matters. There are two ways to turn:</p>
+<h3>Compass on</h3>
+<ul>
+<li>The top of the phone is in charge: the reading uses the accelerometer and magnetometer with tilt compensation.</li>
+<li>The direction snaps to <b>12 fixed positions, every 30 degrees</b>. To switch positions the reading has to go past the halfway point with <b>5 degrees</b> of slack, so it doesn't jitter.</li>
+<li>The compass counts as "alive" if it sent a reading in the last 2 s; otherwise the game acts as if it were off.</li>
+<li><b>Automatic calibration</b>: when walking between 0.7 and 3.5 m/s, every 4 m the game compares the direction you're walking with the reading and corrects 10% of the difference.</li>
+<li><b>Calibrate using the street</b> (<kbd>Settings</kbd> → <kbd>Calibrate using the street</kbd>, only with the session open): stand on a street, point the top of the phone along it and tap. There must be a street within 25 m and the reading must be no more than 60 degrees off the street's direction.</li>
+<li><kbd>Fine tuning</kbd>: a slider from -45 to +45 degrees added to the reading.</li>
+</ul>
+<h3>Compass off</h3>
+<ul>
+<li>Every 4 m walked, the character faces where you're walking.</li>
+<li>The amber stick turns your gaze instantly (up = north). After you move it, the gaze stays locked for <b>6 s</b> before movement turns the character again.</li>
+</ul>
+
+<h2>What counts as distance</h2>
+<p>The session distance goes up with each GPS reading, but only when <b>all</b> of these conditions hold:</p>
+<ul>
+<li>you're not on the action screen or on the confirmation screen before it ("Walking with this screen or the action screen open doesn't count distance");</li>
+<li>the game hasn't flagged you as a vehicle (see below);</li>
+<li>GPS accuracy is <b>30 m or better</b>;</li>
+<li>the estimated speed is greater than <b>0.4 m/s</b>;</li>
+<li>the jump between two readings is less than <b>80 m</b> (bigger jumps are GPS errors and are ignored).</li>
+</ul>
+<p>The GPS only sends a new position when you walk at least 3 m. Speed is the average between the previous and the new one (the GPS's, when it reports it; otherwise, the distance over the last few seconds). With no new reading for 3 s, the speed halves every half second.</p>
+<p>The same distance also gives <b>Stamina</b> experience (1 point every 40 m running above 3 m/s, 1 every 150 m walking) and <b>Stealth</b> experience (1 every 15 m walking below 1.8 m/s with an awake zombie less than 40 m away).</p>
+
+<h2>Speed and vehicles</h2>
+<div class="tbl"><table>
+<tr><th>Band</th><th>Speed</th><th>Noise on the map</th></tr>
+<tr><td>Standing still</td><td>up to 0.3 m/s</td><td>0.01 (about 1 m)</td></tr>
+<tr><td>Walking</td><td>up to 2 m/s (~7 km/h)</td><td>0.05 (about 6 m)</td></tr>
+<tr><td>Running</td><td>up to 4 m/s (~14 km/h)</td><td>0.18 (about 22 m)</td></tr>
+<tr><td>Running hard / bicycle</td><td>up to 7 m/s (~25 km/h)</td><td>0.30 (about 36 m)</td></tr>
+<tr><td>Vehicle</td><td>above 7 m/s</td><td>1.0 (120 m, the max)</td></tr>
+</table></div>
+<p>Above 7 m/s for <b>3 s in a row</b>, the game flags you as a vehicle: "Too fast! Maximum noise, distance doesn't count." appears, noise goes to the max and nothing you travel counts (neither distance nor experience). The flag clears as soon as your speed drops below 7 m/s.</p>
+
+<h2>Standing still</h2>
+<ul>
+<li>Standing still (below 0.4 m/s) you rest a little from fatigue while the session runs.</li>
+<li>Noise stays at the minimum (0.01).</li>
+<li>Some things require standing still: looking through binoculars (up to 0.8 m/s and without moving 4 m from the spot), pitching the tent (1 minute) and looting (moving 20 m from the point where you started cancels; see <a href="saque.html">Looting</a>).</li>
+<li>With no bleeding or infection, and hunger and thirst below level 2, health rises 1 point per minute with the session open.</li>
+</ul>
+
+<h2>Pause on avenues</h2>
+<p>Crossing an avenue while looking at your phone is dangerous, so the game pauses the threat when you're on a major road. This applies to primary, secondary and trunk roads (and their links), which the game treats as 12 m wide: if the nearest street is within 8 m and you're less than 7 m from its centerline (half the width + 1 m), the banner <b>"Cross carefully — threat paused"</b> appears.</p>
+<p>While it's on screen:</p>
+<ul>
+<li>zombies on the map stop completely (they don't move, don't notice you, don't chase);</li>
+<li>the action screen doesn't start on its own.</li>
+</ul>
+<p>The fight button still works if you want to open the action screen yourself.</p>
+
+<h2>No internet</h2>
+<p>The game is online. Without a connection the session is paused: nothing moves, nothing counts and the GPS is ignored until the connection comes back.</p>
+
+<h2>See also</h2>
+<ul>
+<li><a href="visao.html">Vision</a> and <a href="barulho.html">Noise</a>: how you see and are heard on the map.</li>
+<li><a href="tela-de-acao.html">Action screen</a>: when the fight begins.</li>
+<li><a href="clima-e-hora.html">Weather and time</a>.</li>
+</ul>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Footer">
+      <a href="../../index.html?lang=en">Site</a>
+      <a href="../../guias.html?lang=en">Guides</a>
+      <a href="index.html">Wiki</a>
+      <a href="../../privacidade.html?lang=en">Privacy policy</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki generated from the game code. Values may change between versions.</div>
+</footer>
+<script src="../wiki.js" defer></script>
+</body>
+</html>

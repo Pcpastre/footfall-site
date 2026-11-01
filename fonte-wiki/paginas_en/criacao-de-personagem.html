@@ -1,0 +1,109 @@
+<!-- titulo: Character creation | categoria: Getting started | resumo: From the PLAY button to the map: safety notice, appearance, profession, traits, starter kit and the opening story. -->
+<p>Character creation in Footfall follows the Project Zomboid model: you choose a <a href="profissoes.html">profession</a>, spend or earn points with <a href="tracos.html">traits</a> and start with a basic kit in your backpack. The first time you play, the full path is: <b>safety notice → appearance (step 1 of 2) → profession and traits (step 2 of 2) → invitation to the opening story → map tutorial → map</b>, with the session already starting.</p>
+
+<h2>Screen order</h2>
+<ol class="steps">
+<li>On the start screen, tap <kbd>PLAY</kbd>. If the game requires an account (the text below says "Sign in or create an account to play"), the button opens the login; there is also the <kbd>LOG IN / CREATE ACCOUNT</kbd> button. While the cloud save loads ("Loading the game from the cloud…"), <kbd>PLAY</kbd> is disabled.</li>
+<li><b>Safety notice</b> (<i>BEFORE YOU HEAD OUT</i>): appears once per phone. You only get past it by tapping <kbd>GOT IT, LET'S GO</kbd>.</li>
+<li><b>New survivor · 1 of 2</b>: nickname and appearance. Ends with <kbd>Continue</kbd>.</li>
+<li><b>New survivor · 2 of 2</b>: profession and traits. Ends with <kbd>Start with the basic kit in your backpack</kbd>.</li>
+<li><b>THE LAST DELIVERY</b>: invitation to the short opening story (only appears until you play it or decline it once).</li>
+<li>Paged map tutorial (first time only) and then the map, with the session starting on its own.</li>
+</ol>
+<p>Steps 1 and 2 only appear when the account has no character yet <i>and</i> has never had one that died. After a <a href="morte.html">death</a>, the new character is created straight at step 2 (<kbd>New survivor</kbd> button on the death screen, or <kbd>Create character</kbd> on the map's "Your survivor died" card); the appearance stays the same.</p>
+
+<h2>Safety notice</h2>
+<p>The <i>BEFORE YOU HEAD OUT</i> screen lists five rules and cannot be closed with the back button the first time:</p>
+<ul>
+<li>Never play while driving, cycling or crossing the street. Stop somewhere safe before looking at the screen.</li>
+<li>Look around, not at the phone: holes, cars, bikes and people are real.</li>
+<li>The game's places are just map references. Don't enter real houses, shops, lots or buildings.</li>
+<li>At night, stick to lit, busy streets and tell someone where you are going.</li>
+<li>Bring water, respect your body and stop if you get tired. The game waits.</li>
+</ul>
+<p>The acceptance is stored on the phone (not on the account): if you switch devices, it appears again. Afterwards you can review the notice through the Tutorial in Settings.</p>
+
+<h2>Step 1: nickname and appearance</h2>
+<h3>Nickname</h3>
+<p>The <kbd>Nickname (optional)</kbd> field can be left empty. If filled in, it must have 3 to 16 characters, only letters (accented allowed), numbers and <code>_</code>, no spaces. The error messages are "At least 3 letters.", "At most 16 letters." and "Only letters, numbers and _ (no spaces).". The nickname is only shown to your group and can be set later.</p>
+<h3>Appearance</h3>
+<p>You choose three colors, each from five options:</p>
+<div class="tbl"><table>
+<tr><th>Row</th><th>Options</th><th>Default</th></tr>
+<tr><td>Skin</td><td>5 tones, from lightest to darkest</td><td>2nd tone</td></tr>
+<tr><td>Hair</td><td>5 tones</td><td>2nd tone</td></tr>
+<tr><td>Colored part of the outfit</td><td>5 colors</td><td>1st color</td></tr>
+</table></div>
+<p>The name of the third row changes with the outfit you're wearing: in the starting outfit, <i>Survivor</i> (scarf, backpack and chest flashlight), it's called <b>Scarf</b>. The outfit itself isn't chosen here: "New outfits are found by exploring; change them at the wardrobe in the radio vault." A preview of the figure shows the result.</p>
+<p>Your appearance is what sets you apart from other players on the action screen (there's no name above the figure), and it's what shows on the zombie that stands over your belongings when you <a href="morte.html">die</a>.</p>
+<div class="tip"><b>Privacy</b>Step 1 itself warns: other players only see your figure, with no name, and only on the action screen; your base shows up for anyone passing nearby (no name), so don't build where you live (use an outpost at home, which only you see); your location is only used while the session is active.</div>
+
+<h2>Step 2: profession and traits</h2>
+<p>At the top there's a scrollable strip with the 14 professions. Each card shows the name, the points (<i>+8 points</i>, <i>-4 points</i>...) and what it gives: skill levels, free traits and notes. The initially selected profession is <b>Unemployed</b>. Details are in <a href="profissoes.html">Professions</a>.</p>
+<p>Below, two buttons switch the trait list between <kbd>Positive</kbd> and <kbd>Negatives</kbd>, and next to them is the <b>points</b> balance (it turns red when negative). Each trait has a checkbox, the effect, an icon and the cost: positives show as <i>-N</i> (they spend points) and negatives as <i>+N</i> (they give points back). The full list is in <a href="tracos.html">Traits</a>.</p>
+
+<h3>How points work</h3>
+<p>The balance is: <b>profession points − sum of the costs of the chosen traits</b>. Positive traits have a positive cost and lower the balance; negative ones have a negative cost and raise it. The character can only be created with a balance of 0 or more. Professions with negative points (for example Military veteran, -8) force you to take negative traits before starting.</p>
+<ul>
+<li>Free traits from the profession appear checked, with the note "free from profession", and can't be unchecked or cost anything.</li>
+<li>Switching profession removes from your selection the traits the new profession already gives for free.</li>
+<li>A trait that conflicts with one already chosen (or with a free one) is disabled, with the note "conflicts with &lt;trait&gt;".</li>
+<li>The chosen traits appear as tags above the final button (positives in green, negatives in red); the tag's <i>x</i> removes the trait.</li>
+</ul>
+<p>While the selection is invalid, the final button is disabled and shows the reason instead of the normal text:</p>
+<div class="tbl"><table>
+<tr><th>Text on the button</th><th>When it appears</th></tr>
+<tr><td>Not enough points.</td><td>Balance below zero.</td></tr>
+<tr><td>&lt;Trait&gt; conflicts with &lt;Trait&gt;.</td><td>Two mutually exclusive traits checked.</td></tr>
+<tr><td>&lt;Trait&gt; already comes with the profession.</td><td>A checked trait the profession already gives.</td></tr>
+<tr><td>Choose a profession.</td><td>Invalid profession.</td></tr>
+</table></div>
+
+<h2>When creating the character</h2>
+<p>Tapping <kbd>Start with the basic kit in your backpack</kbd> makes the game create the survivor from scratch:</p>
+<ul>
+<li><a href="habilidades.html">Skills</a> start at 0, plus the levels from the profession and from traits that give levels (Handyman, First responder, Baseball player, Hunter, Gardener).</li>
+<li>Health 100, <a href="necessidades.html">hunger and thirst</a> full (2,400 kcal and 2,400 ml), <a href="cansaco-e-sono.html">fatigue</a> 0, no <a href="feridas.html">wounds</a> or <a href="infeccao.html">infection</a>, and the <a href="mente.html">mind</a> reset (stress, sadness and boredom at 0).</li>
+<li>The backpack is emptied and receives the basic kit; the kit's clothes are put on automatically and the bat goes into your hand.</li>
+<li>Delivery driver: in the next session the map already starts revealed in a 400 m radius around where you are ("You know this neighborhood well: it's already on your map.").</li>
+</ul>
+
+<h2>Basic kit</h2>
+<p>Every new character receives:</p>
+<div class="tbl"><table>
+<tr><th>Item</th><th>Qty.</th><th>Where it goes</th></tr>
+<tr><td><a href="item-taco.html">Baseball bat</a></td><td>1</td><td>In hand (equipped weapon)</td></tr>
+<tr><td><a href="item-revolver.html">.38 revolver</a></td><td>1</td><td>On the belt</td></tr>
+<tr><td><a href="item-municao_38.html">.38 ammo</a></td><td>12</td><td>Backpack/pockets</td></tr>
+<tr><td><a href="item-bandagem.html">Bandage</a></td><td>5</td><td>Backpack/pockets</td></tr>
+<tr><td><a href="item-agua.html">Water bottle</a></td><td>2</td><td>Backpack/pockets</td></tr>
+<tr><td><a href="item-feijao.html">Can of beans</a></td><td>2 (600 kcal total)</td><td>Backpack/pockets</td></tr>
+<tr><td><a href="item-pao.html">Bread</a></td><td>1 (400 kcal; spoils in 3 days, eat it first)</td><td>Backpack/pockets</td></tr>
+<tr><td><a href="item-calca_jeans.html">Jeans</a></td><td>1</td><td>Worn</td></tr>
+<tr><td><a href="item-mochila_escolar.html">School backpack</a></td><td>1</td><td>Worn (holds 6 kg)</td></tr>
+</table></div>
+
+<h3>Revolver rule (every 24 h)</h3>
+<p>The <a href="item-revolver.html">.38 revolver</a> and the 12 rounds of <a href="item-municao_38.html">.38 ammo</a> only come in the kit if at least <b>24 hours</b> have passed since the last time a kit on your account came with them. If you die and create another character before that, the kit comes complete except for the revolver and ammo, and you get the notice: "This time the kit came without the revolver (it returns 24 h after the last one)." The rule exists so that dying and restarting doesn't become a gun farm. The account's first character always gets the revolver.</p>
+
+<h3>First character bonus</h3>
+<p>Only the account's first character gets, on top of the kit:</p>
+<div class="tbl"><table>
+<tr><th>Item</th><th>Qty.</th><th>Note</th></tr>
+<tr><td><a href="item-selo.html">Stamp</a></td><td>10</td><td>Go straight to the wallet (to get started at the post office).</td></tr>
+<tr><td><a href="item-radio_posto.html">Outpost radio</a></td><td>1</td><td>In the backpack.</td></tr>
+</table></div>
+<p>With an account and internet, the server checks the bonus: it's valid <b>once per device and once per account</b>, so creating new accounts on the same phone doesn't give another radio. When the server confirms, you see "First survivor's gift: an outpost radio and 10 stamps.". Without a connection, the bonus is delivered right away. Later characters (after a death) don't get the bonus again.</p>
+
+<h2>The opening story</h2>
+<p>Right after creating the first character comes the invitation <b>THE LAST DELIVERY</b>, a playable tutorial of about six minutes that teaches walking, sneaking, searching, fighting, shooting and running. There are two buttons:</p>
+<ul>
+<li><kbd>PLAY THE FIRST NIGHT</kbd>: plays the story. It uses its own character; your survivor, backpack and the rest of the save come back as they were when it ends. Completing it unlocks the <b>Mail carrier</b> outfit.</li>
+<li><kbd>GO STRAIGHT TO THE CITY</kbd>: skips it. The invitation doesn't appear again.</li>
+</ul>
+<p>Skipping or closing midway doesn't give the outfit. The story remains available in the game's Settings to play whenever you like. See <a href="memoria-entrega.html">The last delivery</a>.</p>
+
+<h2>Afterwards: the map</h2>
+<p>The first time on the map, the paged tutorial opens (it's later in Menu ⋯ → Settings → Tutorial). When you close it, the session starts on its own: the GPS turns on and the world starts reacting to you (see <a href="sessao-e-mapa.html">Session and map</a>). From then on the rules for <a href="necessidades.html">hunger and thirst</a>, <a href="feridas.html">wounds</a> and the rest of the Health category apply.</p>
+
+<div class="tip"><b>Build tip</b>The traits that most affect early survival are those for <a href="infeccao.html">immunity</a>, skin and healing. Spending points to avoid dying from a bite isn't possible (a bite still infects most of the time), but Thick skin reduces how many wounds you take.</div>
