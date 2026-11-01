@@ -1,0 +1,108 @@
+<!-- titulo: Cozinha | categoria: Base | resumo: Fogueira e fogão a lenha, como acender, cada receita de cozinhar, validade, água de chuva, ferver e filtrar. -->
+<p>Cozinhar transforma comida crua ou pouca em comida que rende mais, e transforma <a href="item-agua_suja.html">água de chuva</a> em <a href="item-agua.html">água limpa</a>. Todas as receitas de cozinhar exigem um <b>fogo aceso da base</b>: uma <a href="moveis-da-base.html">fogueira</a> ou um <a href="moveis-da-base.html">fogão a lenha</a> posicionados.</p>
+
+<h2>Os dois fogos</h2>
+<div class="tbl"><table>
+<tr><th>Fogo</th><th>Receita</th><th>Custo</th><th>Bancada</th><th>À noite</th></tr>
+<tr><td>Fogueira</td><td>M05</td><td>3 <a href="item-pedra.html">pedras</a> + 2 <a href="item-tabuas.html">tábuas</a></td><td>não</td><td>A luz chama os zumbis a até 100 m e soma 3 atacantes no <a href="ataque-noturno.html">ataque noturno</a></td></tr>
+<tr><td>Fogão a lenha</td><td>M06</td><td>1 <a href="item-chapa.html">chapa de metal</a> + 1 <a href="item-cano.html">cano de ferro</a> + 2 <a href="item-pregos.html">pregos</a></td><td>sim (Mecânica, 30 XP)</td><td>Fechado: quase sem luz, não chama ninguém</td></tr>
+</table></div>
+
+<h2>Acender</h2>
+<ol class="steps">
+<li>Na tela de ação, chegue perto do fogo posicionado e toque em <kbd>ACENDER FOGUEIRA</kbd> ou <kbd>ACENDER FOGÃO A LENHA</kbd>.</li>
+<li>Precisa de um <a href="item-isqueiro.html">isqueiro</a> (não é gasto) e gasta <b>1 tábua</b> de lenha.</li>
+<li>O fogo fica aceso por <b>30 minutos</b> (tempo real). Aceso, ele brilha na tela de ação e o botão vira <kbd>COZINHAR</kbd>.</li>
+<li><kbd>COZINHAR</kbd> abre a aba <kbd>CRIAR</kbd> com as receitas de fogo no topo e o aviso <i>"No fogo: cozinhar rende mais e a comida dura de novo."</i></li>
+</ol>
+<div class="tbl"><table>
+<tr><th>Acender</th><th>Valor</th></tr>
+<tr><td>Duração</td><td>30 min</td></tr>
+<tr><td>Lenha</td><td>1 <a href="item-tabuas.html">tábua</a></td></tr>
+<tr><td>Ferramenta</td><td>1 <a href="item-isqueiro.html">isqueiro</a> (fica com você)</td></tr>
+<tr><td>Chance de queimar a mão</td><td>4% a cada vez que acende (queimadura na mão)</td></tr>
+</table></div>
+<p>Sem isqueiro: <i>"Precisa de isqueiro."</i>. Sem tábua: <i>"Precisa de 1 tábua de lenha."</i>. Tentar cozinhar sem estar no fogo: <i>"Só no fogo aceso da base (fogueira ou fogão): ande até ele e toque em USAR."</i></p>
+<div class="tip warn"><b>Fogueira à noite</b>Ao acender a fogueira, o jogo avisa: <i>"Fogueira acesa (30 min). À noite a luz chama zumbis de longe."</i> Os zumbis a até 100 m da base que não estão te perseguindo vão até ela ver a luz. Para cozinhar à noite sem chamar ninguém, use o fogão a lenha.</div>
+
+<h2>Receitas de cozinhar</h2>
+<p>Nenhuma precisa de bancada; todas precisam do fogo aceso. Os ingredientes saem da mochila e dos baús.</p>
+<div class="tbl"><table>
+<tr><th>Id</th><th>Receita</th><th>Entra</th><th>Sai</th><th>Habilidade</th><th>XP</th></tr>
+<tr><td>C01</td><td>Cozinhar arroz</td><td>1 <a href="item-arroz.html">pacote de arroz</a> + 2 <a href="item-agua.html">garrafas d'água</a></td><td>3 <a href="item-arroz_cozido.html">arroz cozido</a></td><td>—</td><td>—</td></tr>
+<tr><td>C02</td><td>Assar carne</td><td>1 <a href="item-carne.html">carne fresca</a></td><td>1 <a href="item-carne_assada.html">carne assada</a></td><td>—</td><td>—</td></tr>
+<tr><td>C03</td><td>Cozinhar legumes</td><td>1 <a href="item-legumes.html">legumes da horta</a> + 1 garrafa d'água</td><td>1 <a href="item-legumes_cozidos.html">legumes cozidos</a></td><td>—</td><td>—</td></tr>
+<tr><td>C04</td><td>Esquentar feijão</td><td>1 <a href="item-feijao.html">lata de feijão</a></td><td>1 <a href="item-feijao_quente.html">feijão quente</a></td><td>—</td><td>—</td></tr>
+<tr><td>C05</td><td>Ferver água</td><td>2 <a href="item-agua_suja.html">águas de chuva</a></td><td>2 <a href="item-agua.html">garrafas d'água</a></td><td>—</td><td>—</td></tr>
+<tr><td>C06</td><td>Carne seca no fogo (dura 2 meses)</td><td>1 carne fresca</td><td>2 <a href="item-carne_seca.html">carne seca (charque)</a></td><td>—</td><td>—</td></tr>
+<tr><td>C07</td><td>Legumes em conserva (duram 3 meses)</td><td>2 legumes + 2 <a href="item-garrafa.html">garrafas vazias</a> + 1 garrafa d'água</td><td>2 <a href="item-conserva.html">legumes em conserva</a></td><td>Agricultura</td><td>12</td></tr>
+<tr><td>C08</td><td>Sopa (esquenta)</td><td>1 legumes + 2 garrafas d'água + 1 lata de feijão</td><td>2 <a href="item-sopa.html">sopa quente</a></td><td>—</td><td>—</td></tr>
+<tr><td>C09</td><td>Café coado</td><td>1 <a href="item-cafe.html">pó de café</a> + 1 garrafa d'água + 1 <a href="item-pano.html">trapo de pano</a></td><td>2 <a href="item-cafe_coado.html">café coado</a></td><td>—</td><td>—</td></tr>
+<tr><td>C10</td><td>Pão de panela</td><td>1 <a href="item-farinha.html">pacote de farinha</a> + 1 garrafa d'água</td><td>2 <a href="item-pao_panela.html">pão de panela</a></td><td>—</td><td>—</td></tr>
+<tr><td>E04</td><td>Biodiesel (óleo, álcool e soda cáustica, no fogo)</td><td>2 <a href="item-oleo_cozinha.html">óleo de cozinha</a> + 2 <a href="item-alcool.html">álcool 70%</a> + 1 <a href="item-soda_caustica.html">soda cáustica</a></td><td>1 <a href="item-biodiesel.html">galão de biodiesel</a></td><td>—</td><td>—</td></tr>
+</table></div>
+<p>Receitas sem habilidade não dão experiência (o valor de XP delas só vale quando há habilidade). Só a conserva treina Agricultura.</p>
+
+<h2>Rendimento: cru contra cozido</h2>
+<div class="tbl"><table>
+<tr><th>Ingrediente</th><th>kcal cru</th><th>Resultado</th><th>kcal total</th><th>Validade do resultado</th></tr>
+<tr><td>1 pacote de arroz</td><td>0 (cru não se come)</td><td>3 arroz cozido (600 cada)</td><td>1.800</td><td>2 dias</td></tr>
+<tr><td>1 carne fresca</td><td>700 (35% de chance de enjoo)</td><td>1 carne assada</td><td>980</td><td>2 dias</td></tr>
+<tr><td>1 carne fresca</td><td>700</td><td>2 carnes secas (650 cada)</td><td>1.300</td><td>60 dias</td></tr>
+<tr><td>1 legumes + 1 água</td><td>250 kcal, 600 ml</td><td>1 legumes cozidos</td><td>350 kcal, 300 ml</td><td>3 dias</td></tr>
+<tr><td>1 lata de feijão</td><td>300</td><td>1 feijão quente</td><td>420</td><td>2 dias</td></tr>
+<tr><td>1 farinha + 1 água</td><td>0 (crua não se come)</td><td>2 pães de panela (800 cada)</td><td>1.600</td><td>4 dias</td></tr>
+<tr><td>1 legumes + 2 águas + 1 feijão</td><td>550 kcal, 1.100 ml</td><td>2 sopas (550 kcal, 400 ml cada)</td><td>1.100 kcal, 800 ml</td><td>2 dias</td></tr>
+<tr><td>2 legumes + 2 garrafas + 1 água</td><td>500</td><td>2 conservas (300 kcal, 150 ml cada)</td><td>600</td><td>90 dias</td></tr>
+<tr><td>1 pó de café + 1 água + 1 trapo</td><td>10 kcal, 700 ml</td><td>2 cafés coados (20 kcal, 250 ml cada)</td><td>40 kcal, 500 ml</td><td>1 dia</td></tr>
+</table></div>
+<p>Tudo o que sai do fogo entra na mochila como <b>novo</b>: a validade começa a contar na hora em que você cozinhou.</p>
+
+<h3>Efeitos especiais</h3>
+<div class="tbl"><table>
+<tr><th>Comida</th><th>Efeito ao comer</th></tr>
+<tr><td><a href="item-sopa.html">Sopa quente</a></td><td>Tira o frio por 3 horas e melhora o humor</td></tr>
+<tr><td><a href="item-cafe_coado.html">Café coado</a></td><td>Tira 25 de cansaço e melhora o humor (o pó de café cru tira só 10)</td></tr>
+<tr><td><a href="item-carne.html">Carne fresca</a> crua</td><td>35% de chance de enjoo (−5 de vida e 2 h enjoado)</td></tr>
+</table></div>
+
+<h2>Validade</h2>
+<p>Comida perecível estraga depois do prazo, em tempo real. Comer comida estragada rende só metade das calorias, tira 8 de vida e deixa você <b>enjoado</b> por 2 horas.</p>
+<div class="tbl"><table>
+<tr><th>Comida</th><th>Validade</th></tr>
+<tr><td><a href="item-carne.html">Carne fresca</a>, <a href="item-cafe_coado.html">café coado</a></td><td>1 dia</td></tr>
+<tr><td><a href="item-arroz_cozido.html">Arroz cozido</a>, <a href="item-carne_assada.html">carne assada</a>, <a href="item-feijao_quente.html">feijão quente</a>, <a href="item-sopa.html">sopa quente</a></td><td>2 dias</td></tr>
+<tr><td><a href="item-legumes_cozidos.html">Legumes cozidos</a>, <a href="item-pao.html">pão</a></td><td>3 dias</td></tr>
+<tr><td><a href="item-legumes.html">Legumes da horta</a>, <a href="item-leite.html">caixa de leite</a>, <a href="item-pao_panela.html">pão de panela</a></td><td>4 dias</td></tr>
+<tr><td><a href="item-frutas.html">Frutas</a></td><td>5 dias</td></tr>
+<tr><td><a href="item-carne_seca.html">Carne seca</a></td><td>60 dias</td></tr>
+<tr><td><a href="item-conserva.html">Legumes em conserva</a></td><td>90 dias</td></tr>
+<tr><td>Feijão em lata, arroz e farinha crus, bolacha, chocolate, enlatados, ração de combate</td><td>não estragam</td></tr>
+</table></div>
+
+<h2>Água de chuva</h2>
+<p>O <a href="moveis-da-base.html">barril de chuva</a> junta 1 garrafa a cada 10 min de chuva (até 20). Ao usar o barril, cada <a href="item-garrafa.html">garrafa vazia</a> da mochila vira uma <a href="item-agua_suja.html">Água de chuva (não fervida)</a>: <i>"Encheu N garrafa(s) com água de chuva. Ferva no fogo antes de beber."</i></p>
+<div class="tbl"><table>
+<tr><th>Item</th><th>Água</th><th>Risco</th></tr>
+<tr><td><a href="item-agua_suja.html">Água de chuva (não fervida)</a></td><td>500 ml</td><td>1 em 3 (33%) dá enjoo: −4 de vida e 2 h enjoado</td></tr>
+<tr><td><a href="item-agua.html">Garrafa d'água</a></td><td>500 ml</td><td>nenhum</td></tr>
+</table></div>
+<p>Enjoado, você fica com o aviso <i>"Enjoado"</i> e o fôlego máximo cai 15%. Beber qualquer garrafa devolve a <a href="item-garrafa.html">garrafa vazia</a>.</p>
+
+<h3>Ferver ou filtrar</h3>
+<div class="tbl"><table>
+<tr><th>Método</th><th>Receita</th><th>Entra</th><th>Sai</th><th>Precisa</th><th>Funciona</th></tr>
+<tr><td>Ferver</td><td>C05 · Ferver água</td><td>2 águas de chuva</td><td>2 garrafas d'água</td><td>fogo aceso</td><td>sempre</td></tr>
+<tr><td>Filtrar no pano</td><td>R09 · Filtrar água no pano (metade das vezes não basta)</td><td>1 água de chuva + 1 <a href="item-pano.html">trapo de pano</a></td><td>1 garrafa d'água</td><td>nada (em qualquer lugar)</td><td>50%: na outra metade, o pano é gasto e a água continua turva</td></tr>
+</table></div>
+<p>Quando o filtro falha: <i>"O pano não deu conta: a água continua turva. Melhor ferver."</i></p>
+
+<h2>Outros lugares para cozinhar</h2>
+<p>Só os fogos da sua base cozinham. Comer à <a href="moveis-da-base.html">mesa</a> da base rende 10% mais calorias.</p>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="horta.html">Horta</a></li>
+<li><a href="receitas.html">Receitas</a></li>
+<li><a href="moveis-da-base.html">Móveis da base</a></li>
+</ul>

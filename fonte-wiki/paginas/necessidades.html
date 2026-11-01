@@ -1,0 +1,107 @@
+<!-- titulo: Necessidades | categoria: Saúde | resumo: Fome e sede: estoques, gasto por dia e por km, níveis, dano, a regra do app fechado e quando a vida volta. -->
+<p>O Footfall mede fome e sede como um gasto real de uma pessoa: um <b>estoque de calorias</b> e um <b>estoque de água</b> que vão baixando com o tempo e com cada quilômetro andado. As barras <i>Fome</i> (em kcal) e <i>Sede</i> (em ml) ficam na aba <kbd>Saúde</kbd> do painel do personagem. O cansaço, que também está ali, tem página própria: <a href="cansaco-e-sono.html">Cansaço e sono</a>.</p>
+
+<h2>Estoques e gasto</h2>
+<div class="tbl"><table>
+<tr><th></th><th>Fome</th><th>Sede</th></tr>
+<tr><td>Estoque cheio</td><td>2.400 kcal</td><td>2.400 ml</td></tr>
+<tr><td>Gasto por dia (24 h reais)</td><td>2.200 kcal</td><td>2.300 ml</td></tr>
+<tr><td>Gasto por km andado</td><td>55 kcal</td><td>60 ml</td></tr>
+<tr><td>Gasto por km correndo (acima de 3 m/s)</td><td>82,5 kcal</td><td>90 ml</td></tr>
+</table></div>
+<p>O gasto por dia corre o tempo todo, com o app aberto ou fechado. O gasto por quilômetro só conta o que você anda com a sessão ativa; correndo, cada metro vale 1,5. Um estoque cheio dura pouco mais de um dia parado.</p>
+<p>Os traços multiplicam todo o gasto (por tempo e por km):</p>
+<div class="tbl"><table>
+<tr><th>Traço</th><th>Fome</th><th>Sede</th></tr>
+<tr><td>Come pouco</td><td>×0,75</td><td>—</td></tr>
+<tr><td>Comilão</td><td>×1,25</td><td>—</td></tr>
+<tr><td>Bebe pouco</td><td>—</td><td>×0,75</td></tr>
+<tr><td>Sede alta</td><td>—</td><td>×1,25</td></tr>
+</table></div>
+<p>A <a href="temperatura.html">temperatura</a> também gasta: com frio você queima 14,4 kcal por hora a mais por nível de frio; com calor perde 43,2 ml por hora a mais por nível de calor.</p>
+
+<h2>Níveis</h2>
+<div class="tbl"><table>
+<tr><th>Estoque</th><th>Moodle de fome</th><th>Moodle de sede</th><th>Efeito</th></tr>
+<tr><td>50% ou mais (1.200 ou mais)</td><td>—</td><td>—</td><td>Nenhum</td></tr>
+<tr><td>25% a 50% (600 a 1.199)</td><td>Com fome</td><td>Com sede</td><td>Nenhum</td></tr>
+<tr><td>10% a 25% (240 a 599)</td><td>Faminto</td><td>Muita sede</td><td>Fome: −10% de dano na luta. Sede: fôlego volta 20% mais devagar na luta. A vida para de voltar; o estresse sobe.</td></tr>
+<tr><td>Menos de 10% (abaixo de 240)</td><td>Passando mal de fome</td><td>Desidratado</td><td>Fome: −20% de dano e 1 HP a cada 30 s. Sede: fôlego volta 40% mais devagar e 1 HP a cada 20 s.</td></tr>
+</table></div>
+<p>Os efeitos de fome e sede se somam: passando mal de fome e desidratado ao mesmo tempo, você perde 5 HP por minuto. Morrer assim dá a causa "Você não resistiu à fome e à sede.".</p>
+<p>A partir do nível 2 (Faminto ou Muita sede) o <a href="mente.html">estresse</a> sobe 0,02 por segundo com o app aberto.</p>
+
+<h2>Com o app fechado</h2>
+<p>Fora da sessão ninguém morre de fome: o gasto continua, mas o estoque <b>para em 11%</b> (264 kcal e 264 ml), logo antes do nível de dano. Se ao fechar o app você já estava abaixo disso, o estoque fica onde estava. O dano por fome e sede só acontece com a sessão ativa, no mapa.</p>
+<div class="tip warn"><b>Volte com comida</b>Depois de um ou dois dias sem jogar, você abre o app perto de 11%, já Faminto e com Muita sede. Coma e beba antes de sair andando: abaixo de 10% a vida começa a cair.</div>
+
+<h2>Quando a vida volta</h2>
+<h3>Jogando</h3>
+<p>Com a sessão ativa, no mapa, a vida volta <b>1 HP por minuto</b> enquanto todas estas condições valem:</p>
+<ul>
+<li>nenhuma ferida sangrando (o corte profundo enfaixado sem sutura conta como sangrando);</li>
+<li>nenhuma ferida com infecção comum;</li>
+<li>fome abaixo de Faminto (estoque de 25% ou mais);</li>
+<li>sede abaixo de Muita sede (estoque de 25% ou mais).</li>
+</ul>
+<p>A infecção zumbi não impede essa regeneração. A vida máxima é 100.</p>
+<h3>Dormindo</h3>
+<p>Com o app fechado, a vida só volta se você encerrou a sessão num lugar seguro ou com saco de dormir, e não está sangrando nem com infecção zumbi:</p>
+<div class="tbl"><table>
+<tr><th>Onde encerrou</th><th>Vida por hora</th></tr>
+<tr><td>Na base, com cama</td><td>7,5</td></tr>
+<tr><td>Na base, posto avançado ou barraca</td><td>5</td></tr>
+<tr><td>Fora deles, com <a href="item-saco_dormir.html">Saco de dormir</a> na mochila</td><td>2,5</td></tr>
+<tr><td>Fora deles, sem saco de dormir</td><td>0</td></tr>
+</table></div>
+<p>Detalhes em <a href="cansaco-e-sono.html">Cansaço e sono</a>.</p>
+<h3>Itens</h3>
+<p>Alguns itens médicos devolvem vida na hora; veja <a href="tratamento.html">Tratamento</a>.</p>
+
+<h2>Comer e beber</h2>
+<p>No inventário, o botão do item é <kbd>Comer</kbd> ou <kbd>Beber</kbd>. As calorias são multiplicadas assim (a água não muda):</p>
+<div class="tbl"><table>
+<tr><th>Situação</th><th>Calorias</th></tr>
+<tr><td>Comida estragada</td><td>×0,5 (e você passa mal)</td></tr>
+<tr><td>Traço Cozinheiro de mão cheia</td><td>×1,25</td></tr>
+<tr><td>Comendo na mesa da base</td><td>×1,1</td></tr>
+</table></div>
+<p>Comer acima do estoque cheio não guarda o excesso: tudo para em 2.400.</p>
+
+<h3>Passar mal</h3>
+<div class="tbl"><table>
+<tr><th>O que comeu</th><th>Chance</th><th>Vida</th><th>Mensagem</th></tr>
+<tr><td>Qualquer comida estragada</td><td>Sempre</td><td>−8</td><td>"&lt;comida&gt; estava estragado(a). Você passou mal." (+10 de tristeza)</td></tr>
+<tr><td><a href="item-agua_suja.html">Água de chuva (não fervida)</a></td><td>1 em 3</td><td>−4</td><td>"A água de chuva não caiu bem: enjoo. Ferva antes de beber."</td></tr>
+<tr><td><a href="item-carne.html">Carne fresca</a> crua</td><td>35%</td><td>−5</td><td>"Carne crua não caiu bem: enjoo. Asse no fogo da base."</td></tr>
+</table></div>
+<p>Passar mal deixa você <b>Enjoado</b> por 2 h: fôlego máximo ×0,85 e −10% de dano na luta. A vida nunca cai abaixo de 1 por comer.</p>
+<p>Beber <a href="item-agua.html">Garrafa d'água</a> ou água de chuva devolve a <a href="item-garrafa.html">Garrafa vazia</a>.</p>
+
+<h3>Comida e bebida</h3>
+<div class="tbl"><table>
+<tr><th>Item</th><th>kcal</th><th>ml</th><th>Estraga em</th></tr>
+<tr><td><a href="item-enlatados.html">Caixa de enlatados</a></td><td>2.400</td><td>600</td><td>—</td></tr>
+<tr><td><a href="item-racao_combate.html">Ração de combate</a></td><td>1.200</td><td>150</td><td>—</td></tr>
+<tr><td><a href="item-carne_assada.html">Carne assada</a></td><td>980</td><td>—</td><td>2 dias</td></tr>
+<tr><td><a href="item-bolacha.html">Pacote de bolacha</a></td><td>900</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-pao_panela.html">Pão de panela</a></td><td>800</td><td>—</td><td>4 dias</td></tr>
+<tr><td><a href="item-carne.html">Carne fresca</a></td><td>700</td><td>—</td><td>1 dia</td></tr>
+<tr><td><a href="item-carne_seca.html">Carne seca (charque)</a></td><td>650</td><td>—</td><td>60 dias</td></tr>
+<tr><td><a href="item-arroz_cozido.html">Arroz cozido</a></td><td>600</td><td>—</td><td>2 dias</td></tr>
+<tr><td><a href="item-leite.html">Caixa de leite</a></td><td>600</td><td>900</td><td>4 dias</td></tr>
+<tr><td><a href="item-sopa.html">Sopa quente</a></td><td>550</td><td>400</td><td>2 dias</td></tr>
+<tr><td><a href="item-chocolate.html">Barra de chocolate</a></td><td>500</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-feijao_quente.html">Feijão quente</a></td><td>420</td><td>—</td><td>2 dias</td></tr>
+<tr><td><a href="item-pao.html">Pão</a></td><td>400</td><td>—</td><td>3 dias</td></tr>
+<tr><td><a href="item-legumes_cozidos.html">Legumes cozidos</a></td><td>350</td><td>300</td><td>3 dias</td></tr>
+<tr><td><a href="item-feijao.html">Lata de feijão</a></td><td>300</td><td>—</td><td>—</td></tr>
+<tr><td><a href="item-conserva.html">Legumes em conserva</a></td><td>300</td><td>150</td><td>90 dias</td></tr>
+<tr><td><a href="item-frutas.html">Frutas</a></td><td>250</td><td>150</td><td>5 dias</td></tr>
+<tr><td><a href="item-legumes.html">Legumes da horta</a></td><td>250</td><td>100</td><td>4 dias</td></tr>
+<tr><td><a href="item-cafe_coado.html">Café coado</a></td><td>20</td><td>250</td><td>1 dia</td></tr>
+<tr><td><a href="item-cafe.html">Pó de café</a></td><td>10</td><td>200</td><td>—</td></tr>
+<tr><td><a href="item-agua.html">Garrafa d'água</a></td><td>—</td><td>500</td><td>—</td></tr>
+<tr><td><a href="item-agua_suja.html">Água de chuva (não fervida)</a></td><td>—</td><td>500</td><td>—</td></tr>
+</table></div>
+<p>O <a href="item-arroz.html">Pacote de arroz</a> e o <a href="item-farinha.html">Pacote de farinha</a> não se comem crus: precisam do fogo da base. Alguns alimentos também mexem com a cabeça e o cansaço (chocolate, café, sopa): veja <a href="mente.html">Mente</a>, <a href="cansaco-e-sono.html">Cansaço e sono</a> e <a href="temperatura.html">Temperatura</a>.</p>

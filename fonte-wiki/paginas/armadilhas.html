@@ -1,0 +1,54 @@
+<!-- titulo: Armadilhas | categoria: Base | resumo: Estacas, buraco coberto e arame com latas: usos, rearme, efeito na tela de ação e no ataque noturno. -->
+<p>As <b>armadilhas</b> são <a href="moveis-da-base.html">móveis da base</a> que você posiciona no chão, dentro das paredes ou no quintal (até 15 m da borda). Elas funcionam de dois jeitos: na <a href="tela-de-acao.html">tela de ação</a>, quando um zumbi pisa nelas, e no <a href="ataque-noturno.html">ataque noturno</a>, pegando parte dos atacantes antes que cheguem às paredes.</p>
+
+<h2>Resumo</h2>
+<div class="tbl"><table>
+<tr><th>Armadilha</th><th>Receita</th><th>Custo</th><th>Usos</th><th>Rearmar</th><th>Efeito no zumbi</th><th>No ataque noturno</th></tr>
+<tr><td>Estacas</td><td>M08 (sem bancada, Carpintaria, 20 XP)</td><td>2 <a href="item-tabuas.html">tábuas</a>, 4 <a href="item-pregos.html">pregos</a></td><td>6</td><td>1 tábua + 2 pregos</td><td>12 de dano e 12 de dano na perna; pode virar rastejante</td><td>Pega atacantes (gasta usos)</td></tr>
+<tr><td>Buraco coberto</td><td>M10 (sem bancada)</td><td>2 tábuas, 2 <a href="item-pano.html">trapos de pano</a></td><td>3</td><td>1 tábua + 2 trapos</td><td>Cai e fica no chão ~16 s</td><td>Pega atacantes (gasta usos)</td></tr>
+<tr><td>Arame com latas</td><td>M09 (sem bancada)</td><td>1 <a href="item-arame.html">arame</a>, 2 <a href="item-garrafa.html">garrafas vazias</a>, 2 pregos</td><td>nunca gasta</td><td>não precisa</td><td>Barulho de latas e aviso "latas!"</td><td>Golpes 15% mais fracos</td></tr>
+</table></div>
+
+<h2>Estacas</h2>
+<p>Uma fileira de estacas de 1,2 × 0,6 m. Quando um zumbi passa por cima:</p>
+<ul>
+<li>leva <b>12 de dano</b> (aparece <i>"estacas!"</i>) e soma 12 ao dano acumulado na perna;</li>
+<li>se o dano na perna passar de 60% da vida máxima dele, ele <b>vira rastejante</b>;</li>
+<li>se a vida chegar a 0, ele morre ali mesmo;</li>
+<li>gasta 1 dos 6 usos.</li>
+</ul>
+<p>Rearmar: chegue perto e toque em <kbd>USAR ESTACAS</kbd>. Custa 1 tábua + 2 pregos (da mochila ou dos baús), volta para 6 usos e dá 6 XP de Carpintaria. Já cheia: <i>"Já está armada (6 vezes)."</i></p>
+
+<h2>Buraco coberto</h2>
+<p>Um buraco de 1 × 1 m disfarçado com tábuas e pano. O zumbi que pisa nele <b>cai</b> (<i>"caiu no buraco"</i>) e fica no chão o triplo do tempo normal de queda mais o tempo de levantar: 5 × 3 + 1,2 = <b>16,2 segundos</b> sem atacar. Gasta 1 dos 3 usos.</p>
+<p>Rearmar: <kbd>USAR BURACO COBERTO</kbd>. Custa 1 tábua + 2 trapos de pano, volta para 3 usos e dá 6 XP de Carpintaria.</p>
+
+<h2>Arame com latas</h2>
+<p>Um arame baixo de 1,6 m com latas penduradas. Quando um zumbi passa, toca o som das latas e aparece <i>"latas!"</i> em cima dele: você ouve que alguém chegou. <b>Nunca gasta</b> e não precisa ser rearmado (<i>"O alarme de latas não precisa de nada."</i>). <kbd>USAR ARAME COM LATAS</kbd> só explica: <i>"Arame com latas: quando um zumbi passa, as latas batem e você escuta."</i></p>
+
+<h2>Regras na tela de ação</h2>
+<ul>
+<li>O zumbi aciona a armadilha quando entra na área dela.</li>
+<li>Depois de acionar uma armadilha, o mesmo zumbi fica <b>3 segundos</b> sem acionar outra.</li>
+<li>Os usos gastos na tela de ação ficam gastos na base (inclusive quando a cena recomeça ao andar livre).</li></ul>
+
+<h2>Regras no ataque noturno</h2>
+<p>No <a href="ataque-noturno.html">ataque noturno</a> e na passagem da horda, as armadilhas agem <b>antes</b> das paredes:</p>
+<ol class="steps">
+<li>O jogo percorre cada estaca e cada buraco posicionados que ainda têm usos.</li>
+<li>Cada um pega até <b>um terço</b> dos atacantes que ainda não foram pegos (divisão inteira), limitado aos usos que tem.</li>
+<li>Os usos pegos são gastos.</li>
+<li>Só os que sobram batem nas paredes, portas e janelas.</li>
+</ol>
+<p>Exemplo: 9 atacantes, um buraco cheio (3 usos) e estacas cheias (6 usos). O buraco pega ⌊9 ÷ 3⌋ = 3 (fica com 0 usos); as estacas pegam ⌊6 ÷ 3⌋ = 2 (ficam com 4). Sobram 4 zumbis batendo.</p>
+<p>O arame com latas não pega ninguém, mas, se houver pelo menos um posicionado, cada golpe do ataque é multiplicado por 0,85 (você foi avisado). O mesmo vale para a torre de vigia (×0,85) e para o holofote aceso (×0,8); os três se multiplicam.</p>
+<p>O aviso do ataque mostra quantos caíram nas armadilhas (<i>"..., 5 nas armadilhas."</i>). O painel da base lembra: <i>"Armadilhas pegam alguns zumbis no ataque."</i></p>
+
+<div class="tip"><b>Dica</b>Ponha estacas e buracos onde os zumbis vão passar: na frente das portas e janelas e nos caminhos do quintal. Rearme depois de cada noite: armadilha sem uso não pega ninguém no próximo ataque.</div>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="moveis-da-base.html">Móveis da base</a></li>
+<li><a href="ataque-noturno.html">Ataque noturno</a></li>
+<li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li>
+</ul>

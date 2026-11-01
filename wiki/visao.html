@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Visão — Wiki do Footfall</title>
+<meta name="description" content="O cone de visão no mapa e na tela de ação, alcances de dia e de noite, lanterna, binóculo, clima, paredes e mata, e como os zumbis te enxergam.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html">Mochila e peso</a></li><li><a href="morte.html">Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html">Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html">Cansaço e sono</a></li><li><a href="feridas.html">Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html">Temperatura</a></li><li><a href="tratamento.html">Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html" aria-current=page>Visão</a></li><li><a href="zumbis.html">Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html">Corpos</a></li><li><a href="saque.html">Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html">Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html">Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Mundo</p>
+<h1>Visão</h1>
+<p class="sub">O cone de visão no mapa e na tela de ação, alcances de dia e de noite, lanterna, binóculo, clima, paredes e mata, e como os zumbis te enxergam.</p>
+<p>No Footfall você não vê o mapa inteiro: só enxerga zumbis dentro de um <b>cone à sua frente</b>, até uma distância que muda com a hora, o clima, a lanterna e os seus traços. Paredes cortam a visão e mata fechada encurta. Os zumbis também têm um cone, menor, e só te veem dentro dele. Esta página explica os dois lados.</p>
+
+<h2>O seu cone no mapa</h2>
+<p>Um zumbi aparece no mapa quando qualquer uma destas vale:</p>
+<ul>
+<li>ele está a até <b>6 m</b> de você, em qualquer direção (som e cheiro). De binóculo esse raio cai para 2 m;</li>
+<li>ou ele está dentro do cone, até o alcance atual, e nenhuma parede tapa a linha até ele.</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Situação</th><th>Abertura do cone</th><th>Alcance</th></tr>
+<tr><td>Dia</td><td>110°</td><td>120 m</td></tr>
+<tr><td>Noite, sem lanterna</td><td>110°</td><td>40 m</td></tr>
+<tr><td>Noite de lua cheia, sem lanterna</td><td>110°</td><td>60 m (40 × 1,5)</td></tr>
+<tr><td>Noite com lanterna</td><td>60°</td><td>90 m</td></tr>
+<tr><td>Noite com o traço Visão noturna</td><td>110° (60° com lanterna)</td><td>120 m (sem perda à noite)</td></tr>
+<tr><td>De binóculo, de dia</td><td>28°</td><td>300 m</td></tr>
+<tr><td>De binóculo, de noite (sem Visão noturna)</td><td>28°</td><td>140 m</td></tr>
+</table></div>
+<p>O <b>pânico</b> estreita o cone no mapa: 0,25 grau a menos por ponto de pânico (até 25 graus com pânico 100). Isso não vale para o binóculo, que fica sempre em 28°.</p>
+
+<h3>Multiplicadores do alcance</h3>
+<p>Depois da base da tabela, o alcance é multiplicado por tudo o que se aplica (em sequência):</p>
+<div class="tbl"><table>
+<tr><th>Fator</th><th>Multiplicador</th></tr>
+<tr><td>Traço Olhos de águia</td><td>×1,3</td></tr>
+<tr><td>Traço Míope</td><td>×0,7</td></tr>
+<tr><td>Tempestade</td><td>×0,85</td></tr>
+<tr><td>Torre de vigia: base com torre posicionada e você a menos de 40 m da base</td><td>×1,5</td></tr>
+<tr><td>Papel Batedor no grupo</td><td>×1,05</td></tr>
+<tr><td>Chuva</td><td>×0,75</td></tr>
+<tr><td>Neblina</td><td>×0,6</td></tr>
+<tr><td>Infecção na fase de delírio</td><td>×0,6</td></tr>
+</table></div>
+<p>Exemplo: à noite, de lanterna, na chuva: 90 × 0,75 = 67,5 m num cone de 60°.</p>
+
+<h3>Paredes e mata</h3>
+<ul>
+<li>O jogo lança 360 raios a partir de você. Cada raio para na primeira parede de prédio. O prédio onde você está agora é ignorado (o GPS às vezes te põe dentro de uma casa).</li>
+<li><b>Mata fechada</b> (áreas de vegetação do mapa) não para a visão, mas cada metro dentro dela gasta <b>4 m</b> de alcance. Com 120 m de alcance, 30 m de mata já acabam com a visão naquela direção.</li>
+<li>O que você enxerga vai sendo marcado no mapa explorado (painel <kbd>Mapa</kbd>).</li>
+</ul>
+
+<h3>Susto</h3>
+<p>Um zumbi que aparece de repente a menos de 15 m soma até 6 pontos de pânico (mais quanto mais perto). Com a vibração ligada, o celular dá um toque quando algum zumbi novo entra na visão.</p>
+
+<h2>Lanterna</h2>
+<p>Precisa de uma <a href="item-lanterna.html">lanterna</a> na mochila, ou de um capacete com lanterna vestido (<a href="item-capacete_mineiro.html">capacete de mineiro</a>, <a href="item-capacete_tatico.html">capacete tático</a> ou <a href="item-lanterna_cabeca.html">lanterna de cabeça</a>), e de <a href="item-pilhas.html">pilhas</a>.</p>
+<ul>
+<li>O botão só aparece de noite, e a lanterna desliga sozinha quando amanhece.</li>
+<li>Gasta 1 pilha a cada <b>20 min</b> ligada (30 min com lanterna de cabeça ou capacete). Sem pilhas ela apaga ("As pilhas acabaram.").</li>
+<li>Muda o seu cone para 60° e 90 m (veja a tabela acima).</li>
+<li>Te denuncia: com a lanterna ligada os zumbis te enxergam a <b>30 m</b> em vez de 8 m. Além disso, a cada 3 s, todo zumbi a até 50 m com linha livre até você (e que não esteja deitado nem já te perseguindo) acorda e vai até onde você está.</li>
+<li>Na tela de ação, uma lanterna de mão que está só no fundo da mochila precisa ser procurada antes (2,5 s; veja <a href="mochila-e-peso.html">Mochila e peso</a>).</li>
+</ul>
+
+<h2>Binóculo</h2>
+<p>Com um <a href="item-binoculo.html">binóculo</a> na mochila, o botão de olho no mapa liga a visão de longe. Só funciona parado (até 0,8 m/s: "Pare para olhar de binóculo."). Enquanto olha:</p>
+<ul>
+<li>o cone vira 28° e o alcance sobe para 300 m de dia ou 140 m de noite (com Visão noturna, 300 m também à noite), antes dos multiplicadores;</li>
+<li>o que está perto some: o raio de 6 m "em volta" cai para 2 m;</li>
+<li>vire o celular (ou o analógico) para onde quer ver: ruas, lugares e zumbis do cone ficam marcados no mapa.</li>
+</ul>
+<p>Andar mais de 0,8 m/s, se afastar 4 m de onde começou ou tirar o binóculo da mochila guarda ele ("Guardou o binóculo.").</p>
+
+<h2>Visão na tela de ação</h2>
+<p>Na <a href="tela-de-acao.html">tela de ação</a> a visão é outra conta, em metros de cena:</p>
+<div class="tbl"><table>
+<tr><th>Situação</th><th>Alcance</th></tr>
+<tr><td>Dia</td><td>30 m (×1,3 Olhos de águia, ×0,7 Míope)</td></tr>
+<tr><td>Noite ou subsolo escuro do <a href="bunkers.html">bunker</a></td><td>12 m</td></tr>
+<tr><td>Noite com Visão noturna</td><td>26 m</td></tr>
+<tr><td>Noite com lanterna</td><td>22 m (vale mesmo para quem tem Visão noturna: com a lanterna ligada fica 22, não 26)</td></tr>
+<tr><td>Neblina</td><td>×0,6 sobre o resultado</td></tr>
+<tr><td>Lanterna presa na arma da mão (modificação), à noite</td><td>×1,35</td></tr>
+</table></div>
+<p>À noite os valores também levam o multiplicador de Olhos de águia ou Míope e ficam com o menor entre o valor de noite e o de dia. O resultado final fica sempre entre <b>8 e 40 m</b>.</p>
+<p>A abertura do cone na tela de ação é <b>160°</b> (180° com Olhos de águia), 20° a menos com capacete fechado (<a href="item-capacete.html">capacete de moto</a> ou <a href="item-capacete_policial.html">capacete de choque</a>). O pânico tira 0,5 grau por ponto e ficar com menos de 15 de fôlego tira mais 15°, mas o cone nunca fecha abaixo de <b>110°</b>. Paredes, móveis altos e carros cortam os raios; um zumbi colado a até 0,9 m é sempre sentido.</p>
+<p>Zumbis que saem do cone somem aos poucos (0,8 s; 1,6 s para quem é Míope). Os que estão atrás de você e fora da visão aparecem como marcas de som em volta do boneco, num raio de 6 m (10 m com Audição aguçada, 3 m com Ouvido ruim, e 30% menos com capacete fechado).</p>
+
+<h2>Como os zumbis te veem no mapa</h2>
+<p>Cada zumbi tem um cone de <b>100°</b> para onde está virado. Ele só te vê se você estiver dentro dele, dentro do alcance e sem parede no meio.</p>
+<div class="tbl"><table>
+<tr><th>Situação</th><th>Alcance da visão do zumbi</th></tr>
+<tr><td>Dia</td><td>15 m</td></tr>
+<tr><td>Noite</td><td>8 m</td></tr>
+<tr><td>Noite de lua cheia</td><td>10,4 m (8 × 1,3)</td></tr>
+<tr><td>Noite, com a sua lanterna ligada</td><td>30 m</td></tr>
+</table></div>
+<p>Multiplicadores sobre esse alcance:</p>
+<ul>
+<li><a href="item-moletom.html">Moletom escuro</a> vestido, à noite: ×0,85.</li>
+<li>Chuva: ×0,75.</li>
+<li>Habilidade Furtividade: 4% a menos por nível.</li>
+<li>Zumbi <b>dormente</b> (ainda sem perceber nada): vê e ouve pela metade.</li>
+<li>Zumbi <b>caído</b> deitado: não vê; só ouve colado (30% do raio de audição).</li>
+</ul>
+<p>Ver não é instantâneo: o zumbi vai <b>reparando</b> em você. Colado, leva cerca de 1 s; no limite do alcance, 2 s. Se você sai da visão, ele vai esquecendo aos poucos. Quando termina de reparar, ele começa a te perseguir, e todo zumbi a até <b>20 m</b> dele também (quem te viu acorda os vizinhos; isso não acontece quando ele só te ouviu). Para o som, veja <a href="barulho.html">Barulho</a>.</p>
+
+<h2>Agachar (tela de ação)</h2>
+<p>No mapa não há agachar. Na tela de ação, o botão <kbd>AGACHAR</kbd> muda como os zumbis desatentos te percebem:</p>
+<ul>
+<li>um zumbi desatento em pé só te vê dentro de ±50° de onde está olhando, com linha livre, a até <b>7 m</b>; agachado, só a até <b>4,5 m</b>;</li>
+<li>a velocidade com que ele repara em você cai pela metade agachado (e ainda é multiplicada pelo seu barulho de passos: traços, Furtividade, <a href="item-tenis.html">tênis</a> e <a href="item-calca_moletom.html">calça de moletom</a>);</li>
+<li>zumbi deitado e desatento só te nota a menos de 1,2 m;</li>
+<li>agachado você anda a 45% da velocidade e não corre.</li>
+</ul>
+<p>Correndo, qualquer desatento a menos de 5 m (vezes o multiplicador de passos) te percebe na hora. Mais detalhes em <a href="controles.html">Controles</a>.</p>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="barulho.html">Barulho</a>: o outro sentido dos zumbis.</li>
+<li><a href="clima-e-hora.html">Clima e hora</a>: chuva, neblina, noite e lua cheia.</li>
+<li><a href="zumbis.html">Zumbis</a>.</li>
+</ul>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

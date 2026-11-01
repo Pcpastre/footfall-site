@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Morte — Wiki do Footfall</title>
+<meta name="description" content="O que acontece quando o sobrevivente morre: a pilha com tudo que você carregava, o zumbi com a sua cara, a carteira, o que fica, as lápides e o novo personagem.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html">Mochila e peso</a></li><li><a href="morte.html" aria-current=page>Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html">Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html">Cansaço e sono</a></li><li><a href="feridas.html">Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html">Temperatura</a></li><li><a href="tratamento.html">Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html">Visão</a></li><li><a href="zumbis.html">Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html">Corpos</a></li><li><a href="saque.html">Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html">Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html">Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Personagem</p>
+<h1>Morte</h1>
+<p class="sub">O que acontece quando o sobrevivente morre: a pilha com tudo que você carregava, o zumbi com a sua cara, a carteira, o que fica, as lápides e o novo personagem.</p>
+<p>A morte no Footfall é permanente para o personagem: profissão, traços e habilidades vão embora. Mas o mundo continua: a base, os baús e boa parte da carteira ficam, e tudo o que você carregava fica no chão onde você caiu, com você zumbi em cima, esperando o próximo sobrevivente ir buscar.</p>
+
+<h2>Como se morre</h2>
+<div class="tbl"><table>
+<tr><th>Causa</th><th>Mensagem</th></tr>
+<tr><td>Vida chegou a 0 no mapa com alguma ferida sangrando</td><td>Você sangrou até a morte.</td></tr>
+<tr><td>Vida chegou a 0 no mapa sem sangramento</td><td>Você não resistiu à fome e à sede.</td></tr>
+<tr><td>Vida chegou a 0 na tela de ação</td><td>Morto pela horda.</td></tr>
+<tr><td>Fim do prazo de 7 dias da <a href="infeccao.html">infecção zumbi</a>, jogando</td><td>A infecção venceu.</td></tr>
+<tr><td>Fim do prazo da infecção com o app fechado</td><td>A infecção venceu enquanto você estava fora.</td></tr>
+</table></div>
+<p>No mapa a vida cai por <a href="feridas.html">sangramento</a>, torniquete esquecido, ferida infeccionada há mais de 72 h e <a href="necessidades.html">fome e sede</a> abaixo de 10%. Na tela de ação, pelos golpes dos zumbis e guardas.</p>
+
+<h2>A tela de morte</h2>
+<p>Ao morrer, a sessão termina e aparece a tela <i>É assim que você morreu</i>, com o corvo e a frase "Nunca mais.". Ela mostra a causa, a profissão, quanto tempo você sobreviveu e três números da vida: <b>Distância</b> (km), <b>Zumbis abatidos</b> e <b>Lugares saqueados</b>. Os botões são <kbd>Novo sobrevivente</kbd> (vai direto para profissão e traços) e <kbd>Ver o mapa</kbd>. O resumo do último personagem fica também na aba <kbd>Estatísticas</kbd> do painel, em <i>O ÚLTIMO</i>.</p>
+
+<h2>A pilha da morte</h2>
+<p>Tudo o que você carregava vira uma pilha no lugar onde caiu: a mochila inteira, o que estava nos bolsos, as roupas vestidas, o que estava no cinto e nas costas, e a arma na mão.</p>
+<div class="tbl"><table>
+<tr><th>Período</th><th>Quem vê e pode pegar</th></tr>
+<tr><td>Primeiras 24 h</td><td>Só você (o seu próximo personagem). No mapa aparece como <i>Seu corpo</i>, e o recipiente se chama <i>O que você carregava</i>.</td></tr>
+<tr><td>Das 24 h aos 4 dias</td><td>Qualquer sobrevivente que passar perto. Para os outros aparece como <i>Corpo de sobrevivente</i>, com a <i>Mochila do morto</i>.</td></tr>
+<tr><td>Depois de 4 dias</td><td>A pilha some.</td></tr>
+</table></div>
+<ul>
+<li>A pilha também some quando fica vazia.</li>
+<li>Com conta e internet, as 24 h e os 4 dias contam do momento em que a pilha chega ao servidor. Se você morreu sem conexão, a pilha fica guardada no celular e sobe na próxima vez que houver rede; até lá, só você a vê.</li>
+<li>Saquear a pilha é igual a revistar um <a href="corpos.html">corpo</a>. Quando duas pessoas pegam o mesmo item, o servidor confirma e leva quem pegou antes.</li>
+</ul>
+
+<h3>O zumbi com a sua cara</h3>
+<p>Em cima de cada pilha fica um <a href="zumbi-comum.html">zumbi</a> com a sua aparência: a cor de pele e da roupa do morto, desbotadas. Ele aparece quando a pilha está visível para você e você está a até 500 m dela, e começa <b>dormente</b> (vê e ouve pela metade). Ele fica ali até alguém abater; depois de abatido, não volta, nem para você nem para os outros jogadores. Lembre que ele é você: para pegar suas coisas de volta, primeiro é preciso derrubar o seu antigo personagem.</p>
+<div class="tip"><b>Recupere o que perdeu</b>Você tem 24 h exclusivas. O novo personagem começa com o kit básico (taco e, se fizer mais de 24 h do último, revólver), o bastante para enfrentar um zumbi dormente. Vá com calma, de dia se puder.</div>
+
+<h2>A carteira</h2>
+<p>Os <a href="item-selo.html">selos</a> da carteira ficam com a conta, menos <b>15%</b> (arredondado), que somem do jogo. Ex.: com 40 selos você perde 6 e fica com 34. A perda aparece no registro como "Perdeu N selo(s) da carteira.".</p>
+
+<h2>O que se perde e o que fica</h2>
+<div class="tbl"><table>
+<tr><th>Perde</th><th>Fica</th></tr>
+<tr><td>Profissão e traços</td><td>A <a href="base.html">base</a>, as paredes e os móveis</td></tr>
+<tr><td>Todas as habilidades e a XP</td><td>Os baús e o estoque da base</td></tr>
+<tr><td>Tudo o que carregava (vai para a pilha)</td><td>85% dos selos da carteira</td></tr>
+<tr><td>15% dos selos</td><td>As roupas (conjuntos) do armário e as memórias da estante</td></tr>
+<tr><td>Feridas, infecções e remédios ativos</td><td>A aparência e o apelido</td></tr>
+<tr><td>O costume ao pânico (dias vivo)</td><td>O relógio do revólver do kit</td></tr>
+</table></div>
+<p>Fome, sede, cansaço e vida voltam ao normal no novo personagem, e a cabeça (estresse, tristeza, tédio) é zerada na criação. Se você morreu dentro de um bunker, o próximo personagem não herda a sala segura.</p>
+
+<h2>Lápides e marcas</h2>
+<ul>
+<li><b>No mapa</b> (com conta): cada morte vira uma <b>lápide</b> no lugar. As lápides de outros sobreviventes por perto aparecem sem nome, só com quantos dias a pessoa sobreviveu (<i>N dia(s)</i>); as suas aparecem como <i>Você caiu aqui</i>. A lista de lápides próximas é atualizada a cada 5 minutos ou quando você anda 400 m.</li>
+<li><b>No mapa explorado</b>: os lugares onde você morreu ficam marcados com um X vermelho.</li>
+<li><b>No grupo</b>: o <i>Memorial</i> (aba social, "Quem do grupo caiu") lista os membros que morreram, com apelido, dias, abates, km e causa. Vazio, ele diz "Ninguém ainda. Que continue assim.".</li>
+</ul>
+
+<h2>O novo sobrevivente</h2>
+<p>Depois da morte, crie outro personagem pelo botão <kbd>Novo sobrevivente</kbd> da tela de morte ou por <kbd>Criar personagem</kbd> no cartão "Seu sobrevivente morreu" do mapa. O passo da aparência é pulado (fica a mesma) e você vai direto para profissão e traços. Ele recebe o kit básico de novo, mas:</p>
+<ul>
+<li>o <a href="item-revolver.html">Revólver .38</a> e a munição só vêm se tiverem passado 24 h desde o último kit com revólver;</li>
+<li>o bônus do primeiro personagem (rádio de posto e 10 selos) não se repete.</li>
+</ul>
+<p>Detalhes em <a href="criacao-de-personagem.html">Criação de personagem</a>.</p>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

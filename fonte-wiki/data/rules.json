@@ -1,0 +1,677 @@
+{
+  "doc": "Todas as constantes de balanceamento num lugar so, para facilitar ajustes.",
+  "constants": [
+    {
+      "name": "walkSpeed",
+      "type": "double",
+      "value": 2.0,
+      "line": 4,
+      "comment": "~7 km/h",
+      "section": "Faixas de velocidade (m/s)",
+      "comment_above": "Faixas de velocidade (m/s)"
+    },
+    {
+      "name": "runSpeed",
+      "type": "double",
+      "value": 4.0,
+      "line": 5,
+      "comment": "~14 km/h",
+      "section": "Faixas de velocidade (m/s)",
+      "comment_above": ""
+    },
+    {
+      "name": "vehicleSpeed",
+      "type": "double",
+      "value": 7.0,
+      "line": 6,
+      "comment": "~25 km/h: acima disso e bicicleta/carro",
+      "section": "Faixas de velocidade (m/s)",
+      "comment_above": ""
+    },
+    {
+      "name": "tickMs",
+      "type": "int",
+      "value": 500,
+      "line": 8,
+      "comment": "",
+      "section": "Faixas de velocidade (m/s)",
+      "comment_above": ""
+    },
+    {
+      "name": "worldRadius",
+      "type": "double",
+      "value": 1400,
+      "line": 11,
+      "comment": "m baixados em volta do jogador",
+      "section": "Mundo (ruas e lugares vindos do OpenStreetMap)",
+      "comment_above": "Mundo (ruas e lugares vindos do OpenStreetMap)"
+    },
+    {
+      "name": "worldReloadDist",
+      "type": "double",
+      "value": 550,
+      "line": 12,
+      "comment": "recarrega quando se afasta disso do centro",
+      "section": "Mundo (ruas e lugares vindos do OpenStreetMap)",
+      "comment_above": ""
+    },
+    {
+      "name": "worldFirstRadius",
+      "type": "double",
+      "value": 500,
+      "line": 14,
+      "comment": "",
+      "section": "Mundo (ruas e lugares vindos do OpenStreetMap)",
+      "comment_above": "Primeira leva: so isso em volta, para a sessao comecar logo; o resto chega depois."
+    },
+    {
+      "name": "populationRadius",
+      "type": "double",
+      "value": 500,
+      "line": 17,
+      "comment": "celulas geradas em volta do jogador",
+      "section": "Populacao fixa de zumbis",
+      "comment_above": "Populacao fixa de zumbis"
+    },
+    {
+      "name": "unloadRadius",
+      "type": "double",
+      "value": 750,
+      "line": 18,
+      "comment": "longe disso o zumbi \"dorme\" (sai da memoria)",
+      "section": "Populacao fixa de zumbis",
+      "comment_above": ""
+    },
+    {
+      "name": "awakeRadius",
+      "type": "double",
+      "value": 150,
+      "line": 19,
+      "comment": "perto disso o zumbi roda a logica",
+      "section": "Populacao fixa de zumbis",
+      "comment_above": ""
+    },
+    {
+      "name": "homeLeash",
+      "type": "double",
+      "value": 40,
+      "line": 20,
+      "comment": "vagando, nao se afasta disso do ponto de origem",
+      "section": "Populacao fixa de zumbis",
+      "comment_above": ""
+    },
+    {
+      "name": "maxHorde",
+      "type": "int",
+      "value": 40,
+      "line": 21,
+      "comment": "zumbis que entram na luta de uma vez",
+      "section": "Populacao fixa de zumbis",
+      "comment_above": ""
+    },
+    {
+      "name": "zombieSpeed",
+      "type": "double",
+      "value": 1.2,
+      "line": 24,
+      "comment": "m/s perseguindo (um pouco mais lento que andar)",
+      "section": "Zumbis no mapa",
+      "comment_above": "Zumbis no mapa"
+    },
+    {
+      "name": "wanderSpeed",
+      "type": "double",
+      "value": 0.4,
+      "line": 25,
+      "comment": "m/s vagando",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "baseAggroRadius",
+      "type": "double",
+      "value": 0.0,
+      "line": 28,
+      "comment": "",
+      "section": "Zumbis no mapa",
+      "comment_above": "Sentidos dos zumbis Audicao em metros = barulho x 120. Andar normal (~6 m) nao atrai quem esta a 10 m."
+    },
+    {
+      "name": "maxHearRadius",
+      "type": "double",
+      "value": 120.0,
+      "line": 29,
+      "comment": "barulho maximo (carro)",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "maxAggroRadius",
+      "type": "double",
+      "value": 300.0,
+      "line": 30,
+      "comment": "longe disso desistem de perseguir (x1,5)",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "zombieSightDay",
+      "type": "double",
+      "value": 15,
+      "line": 31,
+      "comment": "m",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "asleepSenseFactor",
+      "type": "double",
+      "value": 0.5,
+      "line": 32,
+      "comment": "dormente: ve e ouve pela metade",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "caidoHearFactor",
+      "type": "double",
+      "value": 0.3,
+      "line": 33,
+      "comment": "caido: so percebe colado",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "loseTrackAfter",
+      "type": "double",
+      "value": 15,
+      "line": 34,
+      "comment": "s sem te ver nem ouvir: perde o rastro",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "searchTime",
+      "type": "double",
+      "value": 8,
+      "line": 35,
+      "comment": "s procurando no ultimo lugar",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "groupWakeRadius",
+      "type": "double",
+      "value": 20,
+      "line": 36,
+      "comment": "quem te viu acorda os vizinhos",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "tacticalRadius",
+      "type": "double",
+      "value": 50,
+      "line": 37,
+      "comment": "zumbi visto ate aqui: modo alerta (camera perto)",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "tacticalScreenMeters",
+      "type": "double",
+      "value": 90,
+      "line": 38,
+      "comment": "zoom do modo alerta",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "noticeFast",
+      "type": "double",
+      "value": 1.0,
+      "line": 39,
+      "comment": "s para reparar em voce colado",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "noticeSlow",
+      "type": "double",
+      "value": 2.0,
+      "line": 40,
+      "comment": "s para reparar no limite da visao",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "hearChase",
+      "type": "double",
+      "value": 8,
+      "line": 41,
+      "comment": "ouviu tao perto que ja vem atras",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "followSoundDist",
+      "type": "double",
+      "value": 100,
+      "line": 42,
+      "comment": "vai ate o som se estiver a ate isso",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "investigateArrive",
+      "type": "double",
+      "value": 8,
+      "line": 43,
+      "comment": "chegou no lugar do som",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "zombieSightNight",
+      "type": "double",
+      "value": 8,
+      "line": 44,
+      "comment": "",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "zombieSightFlashlight",
+      "type": "double",
+      "value": 30,
+      "line": 45,
+      "comment": "lanterna ligada te denuncia",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "zombieFovDeg",
+      "type": "double",
+      "value": 100,
+      "line": 46,
+      "comment": "",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "gunshotRadius",
+      "type": "double",
+      "value": 150,
+      "line": 47,
+      "comment": "tiro na luta: zumbis ate aqui vem ver",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "offroadApproach",
+      "type": "double",
+      "value": 20,
+      "line": 48,
+      "comment": "perto assim, saem da rua e vem direto",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "engageRange",
+      "type": "double",
+      "value": 25,
+      "line": 49,
+      "comment": "te viu e chegou a isso: comeca a luta",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "graceAfterFlee",
+      "type": "Duration",
+      "value": {
+        "seconds": 20,
+        "total_seconds": 20
+      },
+      "line": 50,
+      "comment": "zumbis atordoados apos a fuga",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "graceAfterWin",
+      "type": "Duration",
+      "value": {
+        "seconds": 3,
+        "total_seconds": 3
+      },
+      "line": 51,
+      "comment": "",
+      "section": "Zumbis no mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "lootRange",
+      "type": "double",
+      "value": 35,
+      "line": 54,
+      "comment": "m (precisao do GPS)",
+      "section": "Saque",
+      "comment_above": "Saque"
+    },
+    {
+      "name": "lootCancelDist",
+      "type": "double",
+      "value": 20,
+      "line": 55,
+      "comment": "",
+      "section": "Saque",
+      "comment_above": ""
+    },
+    {
+      "name": "poiReset",
+      "type": "Duration",
+      "value": {
+        "days": 7,
+        "total_seconds": 604800
+      },
+      "line": 56,
+      "comment": "lugar saqueado volta a ter coisas",
+      "section": "Saque",
+      "comment_above": ""
+    },
+    {
+      "name": "corpseLife",
+      "type": "Duration",
+      "value": {
+        "hours": 2,
+        "total_seconds": 7200
+      },
+      "line": 57,
+      "comment": "corpos somem do chao",
+      "section": "Saque",
+      "comment_above": ""
+    },
+    {
+      "name": "fovDeg",
+      "type": "double",
+      "value": 110,
+      "line": 60,
+      "comment": "",
+      "section": "Visao: so se ve zumbi dentro do cone a frente (ou bem perto, pelo som/cheiro).",
+      "comment_above": "Visao: so se ve zumbi dentro do cone a frente (ou bem perto, pelo som/cheiro)."
+    },
+    {
+      "name": "viewDist",
+      "type": "double",
+      "value": 120,
+      "line": 61,
+      "comment": "",
+      "section": "Visao: so se ve zumbi dentro do cone a frente (ou bem perto, pelo som/cheiro).",
+      "comment_above": ""
+    },
+    {
+      "name": "nightViewDist",
+      "type": "double",
+      "value": 40,
+      "line": 62,
+      "comment": "",
+      "section": "Visao: so se ve zumbi dentro do cone a frente (ou bem perto, pelo som/cheiro).",
+      "comment_above": ""
+    },
+    {
+      "name": "flashlightViewDist",
+      "type": "double",
+      "value": 90,
+      "line": 63,
+      "comment": "",
+      "section": "Visao: so se ve zumbi dentro do cone a frente (ou bem perto, pelo som/cheiro).",
+      "comment_above": ""
+    },
+    {
+      "name": "flashlightFovDeg",
+      "type": "double",
+      "value": 60,
+      "line": 64,
+      "comment": "",
+      "section": "Visao: so se ve zumbi dentro do cone a frente (ou bem perto, pelo som/cheiro).",
+      "comment_above": ""
+    },
+    {
+      "name": "flashlightAggroBonus",
+      "type": "double",
+      "value": 0,
+      "line": 65,
+      "comment": "a lanterna agora pesa na visao dos zumbis",
+      "section": "Visao: so se ve zumbi dentro do cone a frente (ou bem perto, pelo som/cheiro).",
+      "comment_above": ""
+    },
+    {
+      "name": "flashlightPerBattery",
+      "type": "Duration",
+      "value": {
+        "minutes": 20,
+        "total_seconds": 1200
+      },
+      "line": 66,
+      "comment": "",
+      "section": "Visao: so se ve zumbi dentro do cone a frente (ou bem perto, pelo som/cheiro).",
+      "comment_above": ""
+    },
+    {
+      "name": "rainNoiseFactor",
+      "type": "double",
+      "value": 0.7,
+      "line": 67,
+      "comment": "",
+      "section": "Visao: so se ve zumbi dentro do cone a frente (ou bem perto, pelo som/cheiro).",
+      "comment_above": ""
+    },
+    {
+      "name": "rainViewFactor",
+      "type": "double",
+      "value": 0.75,
+      "line": 68,
+      "comment": "",
+      "section": "Visao: so se ve zumbi dentro do cone a frente (ou bem perto, pelo som/cheiro).",
+      "comment_above": ""
+    },
+    {
+      "name": "senseRadius",
+      "type": "double",
+      "value": 6,
+      "line": 69,
+      "comment": "",
+      "section": "Visao: so se ve zumbi dentro do cone a frente (ou bem perto, pelo som/cheiro).",
+      "comment_above": ""
+    },
+    {
+      "name": "foliageCost",
+      "type": "double",
+      "value": 4,
+      "line": 70,
+      "comment": "cada metro de mata fechada gasta 4 m de visao",
+      "section": "Visao: so se ve zumbi dentro do cone a frente (ou bem perto, pelo som/cheiro).",
+      "comment_above": ""
+    },
+    {
+      "name": "ghostTime",
+      "type": "Duration",
+      "value": {
+        "seconds": 6,
+        "total_seconds": 6
+      },
+      "line": 71,
+      "comment": "marca de onde foi visto pela ultima vez",
+      "section": "Visao: so se ve zumbi dentro do cone a frente (ou bem perto, pelo som/cheiro).",
+      "comment_above": ""
+    },
+    {
+      "name": "mapTilt",
+      "type": "double",
+      "value": 50,
+      "line": 74,
+      "comment": "graus (3D)",
+      "section": "Camera do mapa",
+      "comment_above": "Camera do mapa"
+    },
+    {
+      "name": "maxScreenMeters",
+      "type": "double",
+      "value": 200,
+      "line": 75,
+      "comment": "chao visivel da base ao topo da tela",
+      "section": "Camera do mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "playerScreenFrac",
+      "type": "double",
+      "value": 0.4,
+      "line": 76,
+      "comment": "jogador a 40% da altura, de baixo para cima (norte sempre para cima)",
+      "section": "Camera do mapa",
+      "comment_above": ""
+    },
+    {
+      "name": "vehicleConfirm",
+      "type": "Duration",
+      "value": {
+        "seconds": 3,
+        "total_seconds": 3
+      },
+      "line": 79,
+      "comment": "rapido por tanto tempo = veiculo",
+      "section": "Velocidade",
+      "comment_above": "Velocidade"
+    },
+    {
+      "name": "maxGpsAccuracy",
+      "type": "double",
+      "value": 30,
+      "line": 80,
+      "comment": "m; pior que isso nao conta distancia",
+      "section": "Velocidade",
+      "comment_above": ""
+    },
+    {
+      "name": "buildRange",
+      "type": "double",
+      "value": 60,
+      "line": 83,
+      "comment": "m: ate onde da para pôr canto de parede",
+      "section": "Base e mochila",
+      "comment_above": "Base e mochila"
+    },
+    {
+      "name": "packCapacity",
+      "type": "double",
+      "value": 8,
+      "line": 84,
+      "comment": "kg",
+      "section": "Base e mochila",
+      "comment_above": ""
+    },
+    {
+      "name": "overweightSpeed",
+      "type": "double",
+      "value": 0.8,
+      "line": 85,
+      "comment": "na luta",
+      "section": "Base e mochila",
+      "comment_above": ""
+    },
+    {
+      "name": "overweightNoise",
+      "type": "double",
+      "value": 0.03,
+      "line": 86,
+      "comment": "a mais no mapa (~4 m)",
+      "section": "Base e mochila",
+      "comment_above": ""
+    },
+    {
+      "name": "alarmDuration",
+      "type": "Duration",
+      "value": {
+        "minutes": 3,
+        "total_seconds": 180
+      },
+      "line": 89,
+      "comment": "",
+      "section": "Eventos de alarme",
+      "comment_above": "Eventos de alarme"
+    },
+    {
+      "name": "alarmMinGapMin",
+      "type": "int",
+      "value": 8,
+      "line": 90,
+      "comment": "",
+      "section": "Eventos de alarme",
+      "comment_above": ""
+    },
+    {
+      "name": "alarmMaxGapMin",
+      "type": null,
+      "value": 15,
+      "line": 90,
+      "comment": "",
+      "section": "Eventos de alarme",
+      "comment_above": ""
+    },
+    {
+      "name": "alarmMinDist",
+      "type": "double",
+      "value": 300,
+      "line": 91,
+      "comment": "",
+      "section": "Eventos de alarme",
+      "comment_above": ""
+    },
+    {
+      "name": "alarmMaxDist",
+      "type": null,
+      "value": 600,
+      "line": 91,
+      "comment": "",
+      "section": "Eventos de alarme",
+      "comment_above": ""
+    },
+    {
+      "name": "alarmPullRadius",
+      "type": "double",
+      "value": 300,
+      "line": 92,
+      "comment": "",
+      "section": "Eventos de alarme",
+      "comment_above": ""
+    }
+  ],
+  "functions": [
+    {
+      "name": "noiseFromSpeed",
+      "returns": "double",
+      "params": "double s",
+      "doc": "Barulho de 0 (silencio) a 1 (maximo), derivado da velocidade.",
+      "source": "static double noiseFromSpeed(double s) {\n    if (s <= 0.3) return 0.01; // parado: ~1 m\n    if (s <= walkSpeed) return 0.05; // andando: ~6 m\n    if (s <= runSpeed) return 0.18; // correndo: ~22 m\n    if (s <= vehicleSpeed) return 0.3; // correndo muito / bicicleta: ~36 m\n    return 1.0;\n  }"
+    },
+    {
+      "name": "aggroRadius",
+      "returns": "double",
+      "params": "double noise",
+      "doc": "Raio em que os zumbis te percebem.",
+      "source": "static double aggroRadius(double noise) =>\n      baseAggroRadius + (maxHearRadius - baseAggroRadius) * noise;"
+    },
+    {
+      "name": "rareChance",
+      "returns": "double",
+      "params": "double totalMeters",
+      "doc": "Quanto mais voce andou na sessao, maior a chance de item raro. 1% parado, +1,5% por km andado na sessao, no maximo 15%.",
+      "source": "static double rareChance(double totalMeters) =>\n      (0.01 + 0.015 * totalMeters / 1000).clamp(0.0, 0.15);"
+    }
+  ],
+  "_meta": {
+    "source": "/mnt/user-data/outputs/footfall",
+    "generator": "extract.py"
+  }
+}

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Horta — Wiki do Footfall</title>
+<meta name="description" content="Canteiros, sementes, rega, tempo de crescimento, efeito da Agricultura e colheita.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html">Mochila e peso</a></li><li><a href="morte.html">Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html">Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html">Cansaço e sono</a></li><li><a href="feridas.html">Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html">Temperatura</a></li><li><a href="tratamento.html">Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html">Visão</a></li><li><a href="zumbis.html">Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html">Corpos</a></li><li><a href="saque.html">Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html">Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html" aria-current=page>Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Base</p>
+<h1>Horta</h1>
+<p class="sub">Canteiros, sementes, rega, tempo de crescimento, efeito da Agricultura e colheita.</p>
+<p>A <b>horta</b> é feita de canteiros posicionados na <a href="base.html">base</a> ou no quintal. Cada canteiro recebe um pacote de <a href="item-sementes.html">sementes</a>, cresce em <b>tempo real</b> enquanto estiver regado e dá <a href="item-legumes.html">legumes da horta</a> na colheita. O painel fica em <kbd>Base</kbd> → <kbd>BASE</kbd> → <i>Horta (N/4 canteiros · Agricultura N)</i>.</p>
+
+<h2>Canteiros</h2>
+<div class="tbl"><table>
+<tr><th>Receita</th><th>Custo</th><th>Bancada</th><th>Habilidade</th><th>XP</th><th>Limite</th></tr>
+<tr><td>H01 · Canteiro da horta</td><td>2 <a href="item-tabuas.html">tábuas</a> + 2 <a href="item-pregos.html">pregos</a></td><td>não</td><td>Agricultura</td><td>15</td><td>4 canteiros por base</td></tr>
+</table></div>
+<p>Faça em <kbd>Mochila</kbd> → <kbd>CRIAR</kbd> (dentro da base) e posicione com o martelo na tela de ação (veja <a href="moveis-da-base.html">Móveis da base</a>). O canteiro mede 1,2 × 1,2 m e pode ficar no quintal (até 15 m da borda). Para desmontar, ele precisa estar vazio.</p>
+
+<h2>Passo a passo</h2>
+<ol class="steps">
+<li><b>Plantar</b>: <kbd>Plantar</kbd> gasta 1 <a href="item-sementes.html">pacote de sementes</a> (da mochila ou dos baús). +8 XP de Agricultura. Aviso: <i>"Plantou. Regue todo dia para crescer."</i></li>
+<li><b>Regar</b>: <kbd>Regar</kbd> gasta 1 <a href="item-agua.html">garrafa d'água</a> limpa. Cada rega vale <b>24 horas</b>. +3 XP de Agricultura.</li>
+<li><b>Esperar</b>: o canteiro só cresce durante as horas cobertas por uma rega. Seco, para de crescer (sem perder o que já cresceu).</li>
+<li><b>Colher</b>: pronto, o botão vira <kbd>Colher</kbd>. Os legumes vão para a mochila. +25 XP de Agricultura.</li>
+</ol>
+<p>Tudo isso só funciona com você na base ou no quintal (<i>"Só na base ou no quintal."</i>), pelo painel ou por <kbd>USAR CANTEIRO</kbd> na tela de ação.</p>
+<div class="tip"><b>Tempo real</b>A horta cresce com o app fechado também, desde que a última rega ainda esteja valendo. Regar logo antes de dormir garante 24 h de crescimento.</div>
+
+<h2>Tempo de crescimento</h2>
+<p>Base: <b>72 horas</b> (3 dias) de crescimento regado. A Agricultura acelera <b>5% por nível</b>:</p>
+<p><b>horas = 72 × (1 − 0,05 × nível)</b>, com o fator nunca abaixo de 0,4.</p>
+<div class="tbl"><table>
+<tr><th>Nível de Agricultura</th><th>Horas para ficar pronto</th><th>Regas mínimas</th><th>Legumes por colheita</th></tr>
+<tr><td>0</td><td>72</td><td>3</td><td>3</td></tr>
+<tr><td>1</td><td>68,4</td><td>3</td><td>3</td></tr>
+<tr><td>2</td><td>64,8</td><td>3</td><td>4</td></tr>
+<tr><td>3</td><td>61,2</td><td>3</td><td>4</td></tr>
+<tr><td>4</td><td>57,6</td><td>3</td><td>5</td></tr>
+<tr><td>5</td><td>54</td><td>3</td><td>5</td></tr>
+<tr><td>6</td><td>50,4</td><td>3</td><td>6</td></tr>
+<tr><td>7</td><td>46,8</td><td>2</td><td>6</td></tr>
+<tr><td>8</td><td>43,2</td><td>2</td><td>7</td></tr>
+<tr><td>9</td><td>39,6</td><td>2</td><td>7</td></tr>
+<tr><td>10</td><td>36</td><td>2</td><td>8</td></tr>
+</table></div>
+<p>O nível vale no momento de conferir: subir de nível enquanto a planta cresce já encurta o tempo dela.</p>
+
+<h2>Colheita</h2>
+<p>Só há uma cultura no jogo: a semente sempre vira <a href="item-legumes.html">Legumes da horta</a>.</p>
+<p><b>legumes = 3 + ⌊nível de Agricultura ÷ 2⌋</b></p>
+<div class="tbl"><table>
+<tr><th>Item</th><th>Peso</th><th>Calorias</th><th>Água</th><th>Validade</th></tr>
+<tr><td><a href="item-legumes.html">Legumes da horta</a></td><td>0,4 kg</td><td>250 kcal</td><td>100 ml</td><td>4 dias</td></tr>
+</table></div>
+<p>Os legumes podem ser comidos crus ou usados na <a href="cozinha.html">cozinha</a>: Cozinhar legumes (C03), Sopa (C08) e Legumes em conserva (C07, que duram 3 meses). Também alimentam o <a href="corvo.html">corvo</a> (6 de vínculo).</p>
+
+<h2>Estado na tela</h2>
+<div class="tbl"><table>
+<tr><th>Texto</th><th>Significado</th></tr>
+<tr><td><i>Canteiro N: vazio</i> · <i>Plante 1 pacote de sementes.</i></td><td>Sem planta</td></tr>
+<tr><td><i>Canteiro N: 45%</i> · <i>Regado (cresce por 24 h). Falta ~40 h.</i></td><td>Crescendo</td></tr>
+<tr><td><i>Seco: não cresce. Regue com 1 garrafa d'água.</i></td><td>Rega vencida</td></tr>
+<tr><td><i>Canteiro N: pronto para colher</i></td><td>Pode colher</td></tr>
+</table></div>
+<p>Na tela de ação o canteiro aparece vazio, com brotos ou maduro.</p>
+
+<h2>Onde arrumar sementes e água</h2>
+<ul>
+<li><a href="item-sementes.html">Pacote de sementes</a>: <a href="lugar-mercado.html">mercados</a>, <a href="lugar-construcao.html">construção</a>, <a href="lugar-loja.html">lojas</a>, <a href="lugar-casa.html">casas</a>, e o <a href="mercado-e-selos.html">armazém</a> (5 por dia).</li>
+<li><a href="item-agua.html">Garrafa d'água</a>: saque, armazém, ou fervendo a água de chuva do <a href="moveis-da-base.html">barril</a> (veja <a href="cozinha.html">Cozinha</a>). Água de chuva não fervida não serve para regar.</li>
+</ul>
+<div class="tip warn"><b>Grupo</b>Entrar num grupo desfaz a sua base: a horta plantada se perde. Desmontar um canteiro exige colher antes.</div>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="cozinha.html">Cozinha</a></li>
+<li><a href="moveis-da-base.html">Móveis da base</a></li>
+<li><a href="habilidades.html">Habilidades</a></li>
+</ul>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

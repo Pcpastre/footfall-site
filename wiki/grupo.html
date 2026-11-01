@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Grupo — Wiki do Footfall</title>
+<meta name="description" content="Criar e entrar num grupo, código, avisos rápidos, conversa, trocas, papéis, privacidade e a base compartilhada.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html">Mochila e peso</a></li><li><a href="morte.html">Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html">Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html">Cansaço e sono</a></li><li><a href="feridas.html">Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html">Temperatura</a></li><li><a href="tratamento.html">Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html">Visão</a></li><li><a href="zumbis.html">Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html">Corpos</a></li><li><a href="saque.html">Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html">Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html">Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html" aria-current=page>Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Social</p>
+<h1>Grupo</h1>
+<p class="sub">Criar e entrar num grupo, código, avisos rápidos, conversa, trocas, papéis, privacidade e a base compartilhada.</p>
+<p>Um <b>grupo</b> junta até 10 sobreviventes. Os membros veem no painel onde cada um está e a que distância, mandam avisos rápidos com o lugar, conversam, trocam itens lado a lado e dividem uma <a href="base.html">base</a> com baús compartilhados. O painel fica no ícone <kbd>Grupo</kbd> do mapa. Tudo do grupo precisa de <b>conta online</b>: sem conexão, o painel mostra <i>"Sem conexão com o servidor. Entre na conta para usar o grupo."</i> e o botão <kbd>Entrar na conta</kbd>.</p>
+
+<h2>Criar ou entrar</h2>
+<div class="tbl"><table>
+<tr><th>Ação</th><th>Como</th><th>O que acontece com a sua base</th></tr>
+<tr><td>Criar</td><td>Escreva o <i>Nome do grupo novo</i> (até 24 letras; vazio vira "Grupo") e toque em <kbd>Criar grupo</kbd></td><td>Se você tem base, <b>ela vira a base do grupo</b> e os baús sobem para o servidor (<i>"Grupo criado. Código: ... A sua base agora é do grupo."</i>)</td></tr>
+<tr><td>Entrar</td><td>Digite o <i>Código do grupo</i> (6 caracteres) e toque em <kbd>Entrar no grupo</kbd></td><td>Se você tem base, <b>ela é desfeita</b>: baús e material vão para o <a href="deposito-do-radio.html">depósito do rádio</a> e a horta se perde (o jogo pede confirmação)</td></tr>
+</table></div>
+<p>Você só pode estar num grupo por vez (<i>"Você já está num grupo."</i>). Dentro do grupo, o painel mostra o código com o botão de copiar e quantos membros há (<i>N/10</i>).</p>
+<div class="tip"><b>Apelido</b>Sem apelido, o painel sugere: <i>"Dica: ponha um apelido em Ajustes → Aparência para o grupo saber quem é você."</i> O apelido tem de 3 a 16 caracteres (letras, números e _, sem espaço).</div>
+
+<h2>Membros no painel</h2>
+<p>Cada membro aparece com a cor da camiseta, o apelido e o estado, atualizado a cada 15 s (a cada 5 s com o painel aberto):</p>
+<div class="tbl"><table>
+<tr><th>Estado</th><th>Quando</th></tr>
+<tr><td><i>fora de sessão</i></td><td>Sem sessão aberta</td></tr>
+<tr><td><i>em sessão</i></td><td>Jogando</td></tr>
+<tr><td><i>na base</i></td><td>Dentro da base</td></tr>
+<tr><td><i>lutando</i></td><td>Na tela de ação, lutando</td></tr>
+<tr><td><i>em perigo</i></td><td>Vida abaixo de 30 (em vermelho)</td></tr>
+</table></div>
+<p>Com você em sessão, cada membro mostra também a distância até você.</p>
+
+<h2>Privacidade</h2>
+<ul>
+<li>O seu <b>apelido é privado</b>: ninguém vê no mapa nem em cima do boneco; só o seu grupo. Fora do grupo, os outros só te reconhecem pela roupa e pelas cores.</li>
+<li>O grupo vê onde você está (painel e avisos). Os outros sobreviventes nunca te veem no mapa: só aparecem para você, e você para eles, na tela de ação, quando estão perto, sem nome.</li>
+<li>Ninguém de fora vê nomes (<i>"Ninguém de fora vê nomes."</i>).</li>
+</ul>
+
+<h2>Avisos rápidos (pings)</h2>
+<p>Três botões mandam um aviso com o <b>seu lugar</b> para todo o grupo (precisa estar em sessão: <i>"Os avisos usam o seu lugar: inicie a sessão."</i>):</p>
+<div class="tbl"><table>
+<tr><th>Botão</th><th>Texto</th></tr>
+<tr><td>horda</td><td><kbd>HORDA AQUI</kbd></td></tr>
+<tr><td>loot</td><td><kbd>LOOT AQUI</kbd></td></tr>
+<tr><td>socorro</td><td><kbd>SOCORRO!</kbd></td></tr>
+</table></div>
+<p>Quem recebe vê um aviso com o apelido e a distância (<i>"Ana: SOCORRO! a 340 m"</i>), o celular vibra e, se tiver <a href="corvo.html">corvo</a>, ele chega voando da direção do colega. O aviso fica marcado no mapa por <b>10 minutos</b>.</p>
+
+<h2>Conversa</h2>
+<p>O campo <i>Mensagem para o grupo</i> aceita até 200 caracteres. O painel mostra as últimas 30 mensagens (o jogo guarda até 100), com quem mandou e há quanto tempo. Avisos rápidos aparecem na mesma lista, em destaque.</p>
+
+<h2>Papéis no grupo</h2>
+<p>Cada membro pode escolher um papel (só vale estando num grupo). O papel dá <b>+25% de experiência</b> nas habilidades dele (+50% com o traço Líder) e um efeito extra:</p>
+<div class="tbl"><table>
+<tr><th>Papel</th><th>Habilidades com +25%</th><th>Efeito extra</th></tr>
+<tr><td>Médico</td><td>Primeiros socorros, Costura</td><td>Cada passo de tratamento leva 10% menos tempo</td></tr>
+<tr><td>Construtor</td><td>Carpintaria, Mecânica</td><td>—</td></tr>
+<tr><td>Batedor</td><td>Furtividade, Fôlego</td><td>Enxerga 5% mais longe no mapa</td></tr>
+</table></div>
+
+<h2>Trocas</h2>
+<h3>Lado a lado, com o grupo</h3>
+<p>Um membro em sessão a <b>até 40 m</b> de você ganha o botão <kbd>Trocar</kbd> no painel.</p>
+<h3>Com qualquer pessoa por perto</h3>
+<p>Menu (...) → <kbd>Trocar com alguém aqui</kbd>: <i>"Os dois em sessão, a até 40 m. Um cria o código e o outro digita."</i> Um toca em <kbd>Criar código</kbd> e mostra o código de 6 números (vale 10 min); o outro digita em <i>Código do outro</i> e toca em <kbd>Entrar</kbd>.</p>
+<h3>Como a troca funciona</h3>
+<ol class="steps">
+<li>Cada um escolhe o que oferecer e toca em <kbd>Oferecer</kbd>. Mexer na oferta tira o "ok" dos dois.</li>
+<li>Os dois tocam em <kbd>Aceitar</kbd>.</li>
+<li>Na tela final (<i>"Confira com calma: esta é a tela final. Os dois confirmando, a troca acontece."</i>), cada um confirma em <kbd>Aceitar troca</kbd> ou desiste em <kbd>Recusar</kbd>.</li>
+</ol>
+<ul>
+<li>Na confirmação final, os seus itens <b>saem do inventário</b> até a troca fechar: não dá para usar, guardar ou vender enquanto a outra pessoa decide. Se a troca for cancelada ou mudar, eles voltam.</li>
+<li>Cada lado mostra o valor pelo guia de preço (<i>~N selo(s)</i>). Se você está dando bem mais do que recebe, aparece <i>"Atenção: você está dando bem mais do que recebe (pelo guia)."</i></li>
+<li>Selo não entra em troca (<i>"Selo fica na carteira: para vender por selo, use o mercado."</i>).</li>
+<li>Vale o que está solto na mochila e, na base, nos baús.</li>
+</ul>
+
+<h2>Base e baús do grupo</h2>
+<ul>
+<li>O grupo tem <b>uma</b> base. Se ninguém tem, quem demarcar primeiro faz a do grupo (<i>"O grupo ainda não tem base: quem demarcar primeiro faz a do grupo (até N m²)."</i>).</li>
+<li>Limite de área: 50 m² + 10 por kit de expansão usado no grupo + <b>15 por membro além do primeiro</b>.</li>
+<li>Todos mexem nas mesmas paredes, móveis e baús; as mudanças são combinadas com o servidor a cada 15 s e logo depois de mexer.</li>
+<li>O ataque noturno e a horda valem uma vez para todos (veja <a href="ataque-noturno.html">Ataque noturno</a>).</li>
+<li>Pontos dominados tomados por um membro são do grupo (veja <a href="pontos-dominados.html">Pontos dominados</a>).</li>
+<li>A missão semanal do <a href="radio.html">rádio</a> é a mesma para o grupo todo.</li>
+<li>A base do grupo só pode ser desfeita quando sobra só você.</li>
+</ul>
+
+<h2>Sair do grupo</h2>
+<p><kbd>Sair do grupo</kbd> pede confirmação:</p>
+<ul>
+<li>com mais gente: <i>"A base e os baús são do grupo: você não leva nada deles. O depósito do rádio continua seu."</i></li>
+<li>sendo o último: <i>"Você é o último: o grupo acaba e a base fica com você."</i></li>
+</ul>
+
+<h2>Memorial</h2>
+<p>A seção <i>Memorial</i> (<i>Quem do grupo caiu</i>) lista os membros que morreram, com dias vivo, abates, quilômetros e causa. Vazio: <i>"Ninguém ainda. Que continue assim."</i></p>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="base.html">Base</a></li>
+<li><a href="mercado-e-selos.html">Mercado e selos</a></li>
+<li><a href="corvo.html">Corvo</a></li>
+</ul>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

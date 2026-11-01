@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Temperatura — Wiki do Footfall</title>
+<meta name="description" content="Sensação térmica pelo clima real, roupas que esquentam e pesam, níveis de frio e calor e o que eles custam.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html">Mochila e peso</a></li><li><a href="morte.html">Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html">Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html">Cansaço e sono</a></li><li><a href="feridas.html">Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html" aria-current=page>Temperatura</a></li><li><a href="tratamento.html">Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html">Visão</a></li><li><a href="zumbis.html">Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html">Corpos</a></li><li><a href="saque.html">Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html">Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html">Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Saúde</p>
+<h1>Temperatura</h1>
+<p class="sub">Sensação térmica pelo clima real, roupas que esquentam e pesam, níveis de frio e calor e o que eles custam.</p>
+<p>O Footfall usa o clima de verdade da sua região. A temperatura, a chuva, a neblina e as trovoadas vêm de um serviço meteorológico pela sua posição arredondada (cerca de 1 km) e são atualizadas a cada 30 minutos. Sem internet, o jogo mantém a última leitura; se nunca conseguiu ler, não há efeitos de temperatura. A aba Mochila mostra a temperatura atual ("Agora N °C") e avisa quando falta roupa quente ou sobra roupa pesada.</p>
+
+<h2>Sensação térmica</h2>
+<p>Para o <b>frio</b>, o jogo usa a sensação térmica:</p>
+<p><b>sensação = temperatura − 4 (se chove e você não está protegido) − 2 (se é noite)</b></p>
+<ul>
+<li><b>Chuva</b>: tira 4 °C, a não ser que você esteja vestindo <a href="item-capa_chuva.html">Capa de chuva</a> ou <a href="item-corta_vento.html">Corta-vento</a>.</li>
+<li><b>Noite</b>: tira 2 °C. Noite é do pôr ao nascer do sol, calculado pela sua posição e data.</li>
+<li><b>Vento</b>: não entra na conta. O vento real muda o som ambiente e, acima de 30 km/h, gasta mais rápido a lona da barraca montada.</li>
+</ul>
+<p>Para o <b>calor</b>, o jogo usa a temperatura real, sem descontos, e só de dia.</p>
+
+<h2>Frio</h2>
+<p>Primeiro o jogo vê quanta roupa quente a sensação pede:</p>
+<div class="tbl"><table>
+<tr><th>Sensação térmica</th><th>Pede</th></tr>
+<tr><td>16 °C ou mais</td><td>0 de calor</td></tr>
+<tr><td>10 °C a 15,9 °C</td><td>1 de calor</td></tr>
+<tr><td>Abaixo de 10 °C</td><td>2 de calor</td></tr>
+</table></div>
+<p>Depois subtrai o calor das roupas vestidas (peças rasgadas não esquentam):</p>
+<div class="tbl"><table>
+<tr><th>Roupa</th><th>Calor</th></tr>
+<tr><td><a href="item-casaco.html">Casaco grosso</a></td><td>2</td></tr>
+<tr><td><a href="item-jaqueta.html">Jaqueta de couro</a></td><td>1</td></tr>
+<tr><td><a href="item-jaqueta_bolsos.html">Jaqueta com bolsos</a></td><td>1</td></tr>
+<tr><td><a href="item-moletom.html">Moletom escuro</a></td><td>1</td></tr>
+<tr><td><a href="item-gorro.html">Gorro</a></td><td>1</td></tr>
+</table></div>
+<p>O que falta é o <b>nível de frio</b> (0 a 2). Exemplo: 8 °C de noite e chovendo dá sensação de 2 °C, que pede 2; de moletom (1), sobra frio 1. Casaco e gorro juntos somam 3, o bastante para qualquer temperatura.</p>
+<p>Não há frio:</p>
+<ul>
+<li>dentro da base;</li>
+<li>fora da sessão;</li>
+<li>por 3 h depois de tomar uma <a href="item-sopa.html">Sopa quente</a>.</li>
+</ul>
+
+<h2>Calor</h2>
+<p>O calor depende da temperatura real e da carga de roupa pesada vestida:</p>
+<div class="tbl"><table>
+<tr><th>Roupa pesada</th><th>Carga</th></tr>
+<tr><td><a href="item-casaco.html">Casaco grosso</a></td><td>2</td></tr>
+<tr><td><a href="item-jaqueta.html">Jaqueta de couro</a></td><td>1</td></tr>
+<tr><td><a href="item-jaqueta_bolsos.html">Jaqueta com bolsos</a></td><td>1</td></tr>
+<tr><td><a href="item-colete.html">Colete balístico</a></td><td>1</td></tr>
+<tr><td><a href="item-colete_tatico.html">Colete tático</a></td><td>1</td></tr>
+<tr><td><a href="item-capacete_militar.html">Capacete balístico</a></td><td>1</td></tr>
+<tr><td><a href="item-capacete_tatico.html">Capacete tático com lanterna</a></td><td>1</td></tr>
+<tr><td><a href="item-capacete_bombeiro.html">Capacete de bombeiro</a></td><td>1</td></tr>
+<tr><td><a href="item-mochila_cargueira.html">Mochila cargueira</a></td><td>1</td></tr>
+</table></div>
+<div class="tbl"><table>
+<tr><th>Temperatura</th><th>Carga 0</th><th>Carga 1</th><th>Carga 2 ou mais</th></tr>
+<tr><td>28 °C ou menos</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>Acima de 28 °C até 33 °C</td><td>0</td><td>1</td><td>2</td></tr>
+<tr><td>Acima de 33 °C</td><td>1</td><td>2</td><td>2</td></tr>
+</table></div>
+<p>O <a href="item-bone.html">Boné</a> tira 1 do nível de calor. Acima de 33 °C, mesmo sem roupa pesada, você sente calor 1, a não ser que esteja de boné. À noite não há calor. Ao contrário do frio, o calor vale também dentro da base (mas só com a sessão ativa). Peças rasgadas continuam pesando.</p>
+
+<h2>Efeitos</h2>
+<div class="tbl"><table>
+<tr><th>Nível</th><th>Frio</th><th>Calor</th></tr>
+<tr><td>1</td><td>Com frio: −8 de fôlego máximo; +14,4 kcal gastas por hora</td><td>Com calor: −8 de fôlego máximo; +43,2 ml de água gastos por hora</td></tr>
+<tr><td>2</td><td>Congelando: −16 de fôlego máximo; +28,8 kcal por hora</td><td>Fervendo: −16 de fôlego máximo; +86,4 ml por hora</td></tr>
+</table></div>
+<p>A penalidade de fôlego entra antes dos multiplicadores dos traços (veja <a href="tracos.html">Traços</a>). O gasto extra sai do estoque de <a href="necessidades.html">fome e sede</a> e só corre com a sessão ativa, no mapa.</p>
+
+<h2>Chuva, neblina e tempestade</h2>
+<p>Além da sensação térmica, o tempo muda outras coisas que não são temperatura: chuva reduz a sua visão e abafa o seu barulho, neblina reduz bastante a visão e a trovoada abafa os passos. Esses efeitos estão em <a href="clima-e-hora.html">Clima e hora</a>, <a href="visao.html">Visão</a> e <a href="barulho.html">Barulho</a>.</p>
+
+<div class="tip"><b>Vestir pela previsão</b>Num dia frio e chuvoso, a capa de chuva sozinha já tira os 4 °C da chuva. Num dia quente, troque o casaco pelo moletom ou pela jaqueta e ponha o boné: o casaco sozinho já é carga 2.</div>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

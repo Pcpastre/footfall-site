@@ -1,0 +1,995 @@
+{
+  "classes": [
+    {
+      "name": "comum",
+      "id": "",
+      "label": "Zumbi",
+      "hp": 1,
+      "speed": 1,
+      "torso": 1,
+      "head": 1,
+      "fireproof": false,
+      "windup": 1,
+      "label_en": "Zombie",
+      "label_es": "Zombi",
+      "special": false,
+      "skin_item": null,
+      "loot": [],
+      "places": [],
+      "place_weight": {},
+      "street_weight": null,
+      "extra_backpack": false
+    },
+    {
+      "name": "policia",
+      "id": "policia",
+      "label": "Policial",
+      "hp": 1.3,
+      "torso": 0.5,
+      "speed": 1,
+      "head": 1,
+      "fireproof": false,
+      "windup": 1,
+      "label_en": "Police officer",
+      "label_es": "Policía",
+      "special": true,
+      "skin_item": "roupa_policia",
+      "loot": [
+        {
+          "item": "municao",
+          "chance": 0.5,
+          "max": 5,
+          "item_name": "Munição 9mm"
+        },
+        {
+          "item": "municao_38",
+          "chance": 0.3,
+          "max": 4,
+          "item_name": "Munição .38"
+        },
+        {
+          "item": "cassetete",
+          "chance": 0.25,
+          "max": 1,
+          "item_name": "Cassetete"
+        },
+        {
+          "item": "lanterna",
+          "chance": 0.3,
+          "max": 1,
+          "item_name": "Lanterna"
+        },
+        {
+          "item": "radio",
+          "chance": 0.15,
+          "max": 1,
+          "item_name": "Rádio"
+        },
+        {
+          "item": "pistola",
+          "chance": 0.06,
+          "max": 1,
+          "item_name": "Pistola 9mm"
+        },
+        {
+          "item": "revolver",
+          "chance": 0.05,
+          "max": 1,
+          "item_name": "Revólver .38"
+        },
+        {
+          "item": "colete",
+          "chance": 0.05,
+          "max": 1,
+          "item_name": "Colete balístico"
+        },
+        {
+          "item": "capacete_policial",
+          "chance": 0.04,
+          "max": 1,
+          "item_name": "Capacete de choque"
+        },
+        {
+          "item": "bolsa_coxa",
+          "chance": 0.08,
+          "max": 1,
+          "item_name": "Bolsa tática de coxa"
+        },
+        {
+          "item": "calca_tatica",
+          "chance": 0.05,
+          "max": 1,
+          "item_name": "Calça tática"
+        }
+      ],
+      "places": [
+        "policia"
+      ],
+      "place_weight": {
+        "policia": 0.6666666666666666
+      },
+      "street_weight": 0.12,
+      "extra_backpack": false
+    },
+    {
+      "name": "militar",
+      "id": "militar",
+      "label": "Militar",
+      "hp": 1.8,
+      "speed": 0.95,
+      "torso": 0.5,
+      "head": 0.6,
+      "fireproof": false,
+      "windup": 1,
+      "label_en": "Soldier",
+      "label_es": "Militar",
+      "special": true,
+      "skin_item": "roupa_militar",
+      "loot": [
+        {
+          "item": "municao_556",
+          "chance": 0.55,
+          "max": 8,
+          "item_name": "Munição 5,56"
+        },
+        {
+          "item": "enlatados",
+          "chance": 0.4,
+          "max": 2,
+          "item_name": "Caixa de enlatados"
+        },
+        {
+          "item": "faca_combate",
+          "chance": 0.12,
+          "max": 1,
+          "item_name": "Faca de combate"
+        },
+        {
+          "item": "luvas_taticas",
+          "chance": 0.15,
+          "max": 1,
+          "item_name": "Luvas táticas"
+        },
+        {
+          "item": "coturno",
+          "chance": 0.08,
+          "max": 1,
+          "item_name": "Coturno"
+        },
+        {
+          "item": "capacete_militar",
+          "chance": 0.08,
+          "max": 1,
+          "item_name": "Capacete balístico"
+        },
+        {
+          "item": "colete_tatico",
+          "chance": 0.05,
+          "max": 1,
+          "item_name": "Colete tático"
+        },
+        {
+          "item": "fuzil",
+          "chance": 0.025,
+          "max": 1,
+          "item_name": "Fuzil 5,56"
+        },
+        {
+          "item": "calca_tatica",
+          "chance": 0.08,
+          "max": 1,
+          "item_name": "Calça tática"
+        },
+        {
+          "item": "bolsa_coxa",
+          "chance": 0.1,
+          "max": 1,
+          "item_name": "Bolsa tática de coxa"
+        },
+        {
+          "item": "mochila_tatica",
+          "chance": 0.05,
+          "max": 1,
+          "item_name": "Mochila tática"
+        },
+        {
+          "item": "capacete_tatico",
+          "chance": 0.04,
+          "max": 1,
+          "item_name": "Capacete tático com lanterna"
+        }
+      ],
+      "places": [
+        "bunker"
+      ],
+      "place_weight": {
+        "bunker": 1.0
+      },
+      "street_weight": 0.18,
+      "extra_backpack": false
+    },
+    {
+      "name": "medico",
+      "id": "medico",
+      "label": "Médico",
+      "speed": 1.12,
+      "hp": 1,
+      "torso": 1,
+      "head": 1,
+      "fireproof": false,
+      "windup": 1,
+      "label_en": "Doctor",
+      "label_es": "Médico",
+      "special": true,
+      "skin_item": "roupa_medico",
+      "loot": [
+        {
+          "item": "bandagem",
+          "chance": 0.5,
+          "max": 2,
+          "item_name": "Bandagem"
+        },
+        {
+          "item": "gaze",
+          "chance": 0.4,
+          "max": 2,
+          "item_name": "Gaze"
+        },
+        {
+          "item": "esparadrapo",
+          "chance": 0.25,
+          "max": 1,
+          "item_name": "Esparadrapo"
+        },
+        {
+          "item": "analgesico",
+          "chance": 0.35,
+          "max": 2,
+          "item_name": "Analgésico"
+        },
+        {
+          "item": "soro",
+          "chance": 0.25,
+          "max": 1,
+          "item_name": "Soro fisiológico"
+        },
+        {
+          "item": "bandagem_esteril",
+          "chance": 0.15,
+          "max": 1,
+          "item_name": "Atadura estéril"
+        },
+        {
+          "item": "antibiotico",
+          "chance": 0.1,
+          "max": 1,
+          "item_name": "Antibiótico"
+        },
+        {
+          "item": "kit_sutura",
+          "chance": 0.08,
+          "max": 1,
+          "item_name": "Kit de sutura"
+        },
+        {
+          "item": "morfina",
+          "chance": 0.07,
+          "max": 1,
+          "item_name": "Morfina"
+        }
+      ],
+      "places": [
+        "saude"
+      ],
+      "place_weight": {
+        "saude": 1.0
+      },
+      "street_weight": 0.12,
+      "extra_backpack": false
+    },
+    {
+      "name": "bombeiro",
+      "id": "bombeiro",
+      "label": "Bombeiro",
+      "hp": 1.45,
+      "speed": 0.95,
+      "head": 0.7,
+      "fireproof": true,
+      "torso": 1,
+      "windup": 1,
+      "label_en": "Firefighter",
+      "label_es": "Bombero",
+      "special": true,
+      "skin_item": "roupa_bombeiro",
+      "loot": [
+        {
+          "item": "lanterna",
+          "chance": 0.3,
+          "max": 1,
+          "item_name": "Lanterna"
+        },
+        {
+          "item": "luvas",
+          "chance": 0.25,
+          "max": 1,
+          "item_name": "Luvas de trabalho"
+        },
+        {
+          "item": "agua",
+          "chance": 0.3,
+          "max": 1,
+          "item_name": "Garrafa d'água"
+        },
+        {
+          "item": "pilhas",
+          "chance": 0.2,
+          "max": 2,
+          "item_name": "Pilhas"
+        },
+        {
+          "item": "machado_incendio",
+          "chance": 0.12,
+          "max": 1,
+          "item_name": "Machado de incêndio"
+        },
+        {
+          "item": "capacete_bombeiro",
+          "chance": 0.15,
+          "max": 1,
+          "item_name": "Capacete de bombeiro"
+        }
+      ],
+      "places": [
+        "bombeiros"
+      ],
+      "place_weight": {
+        "bombeiros": 1.0
+      },
+      "street_weight": 0.06,
+      "extra_backpack": false
+    },
+    {
+      "name": "obra",
+      "id": "obra",
+      "label": "Peão de obra",
+      "hp": 1.2,
+      "head": 0.6,
+      "speed": 1,
+      "torso": 1,
+      "fireproof": false,
+      "windup": 1,
+      "label_en": "Construction worker",
+      "label_es": "Albañil",
+      "special": true,
+      "skin_item": "roupa_obra",
+      "loot": [
+        {
+          "item": "pregos",
+          "chance": 0.5,
+          "max": 8,
+          "item_name": "Pregos"
+        },
+        {
+          "item": "fita",
+          "chance": 0.35,
+          "max": 1,
+          "item_name": "Fita adesiva"
+        },
+        {
+          "item": "arame",
+          "chance": 0.3,
+          "max": 1,
+          "item_name": "Arame"
+        },
+        {
+          "item": "chave_inglesa",
+          "chance": 0.15,
+          "max": 1,
+          "item_name": "Chave inglesa"
+        },
+        {
+          "item": "martelo",
+          "chance": 0.12,
+          "max": 1,
+          "item_name": "Martelo"
+        },
+        {
+          "item": "capacete_obra",
+          "chance": 0.1,
+          "max": 1,
+          "item_name": "Capacete de obra"
+        },
+        {
+          "item": "pe_de_cabra",
+          "chance": 0.08,
+          "max": 1,
+          "item_name": "Pé de cabra"
+        },
+        {
+          "item": "calca_cargo",
+          "chance": 0.1,
+          "max": 1,
+          "item_name": "Calça cargo"
+        },
+        {
+          "item": "capacete_mineiro",
+          "chance": 0.06,
+          "max": 1,
+          "item_name": "Capacete de mineiro"
+        }
+      ],
+      "places": [
+        "construcao"
+      ],
+      "place_weight": {
+        "construcao": 1.0
+      },
+      "street_weight": 0.1,
+      "extra_backpack": false
+    },
+    {
+      "name": "presidiario",
+      "id": "presidiario",
+      "label": "Presidiário",
+      "hp": 0.8,
+      "speed": 1.25,
+      "windup": 0.8,
+      "torso": 1,
+      "head": 1,
+      "fireproof": false,
+      "label_en": "Inmate",
+      "label_es": "Presidiario",
+      "special": true,
+      "skin_item": "roupa_presidiario",
+      "loot": [
+        {
+          "item": "cigarros",
+          "chance": 0.5,
+          "max": 2,
+          "item_name": "Maço de cigarros"
+        },
+        {
+          "item": "faca",
+          "chance": 0.3,
+          "max": 1,
+          "item_name": "Faca de cozinha"
+        },
+        {
+          "item": "selo",
+          "chance": 0.35,
+          "max": 3,
+          "item_name": "Selo"
+        }
+      ],
+      "places": [
+        "policia"
+      ],
+      "place_weight": {
+        "policia": 0.3333333333333333
+      },
+      "street_weight": 0.08,
+      "extra_backpack": false
+    },
+    {
+      "name": "mochileiro",
+      "id": "mochileiro",
+      "label": "Mochileiro",
+      "hp": 1.1,
+      "speed": 1,
+      "torso": 1,
+      "head": 1,
+      "fireproof": false,
+      "windup": 1,
+      "label_en": "Backpacker",
+      "label_es": "Mochilero",
+      "special": true,
+      "skin_item": "roupa_mochileiro",
+      "loot": [
+        {
+          "item": "mochila_cargueira",
+          "chance": 0.12,
+          "max": 1,
+          "item_name": "Mochila cargueira"
+        },
+        {
+          "item": "pochete",
+          "chance": 0.15,
+          "max": 1,
+          "item_name": "Pochete"
+        },
+        {
+          "item": "bolsa_braco",
+          "chance": 0.1,
+          "max": 1,
+          "item_name": "Bolsa de braço"
+        },
+        {
+          "item": "lanterna_cabeca",
+          "chance": 0.12,
+          "max": 1,
+          "item_name": "Lanterna de cabeça"
+        },
+        {
+          "item": "saco_dormir",
+          "chance": 0.06,
+          "max": 1,
+          "item_name": "Saco de dormir"
+        },
+        {
+          "item": "corda",
+          "chance": 0.25,
+          "max": 2,
+          "item_name": "Corda"
+        },
+        {
+          "item": "binoculo",
+          "chance": 0.15,
+          "max": 1,
+          "item_name": "Binóculo"
+        },
+        {
+          "item": "barraca",
+          "chance": 0.04,
+          "max": 1,
+          "item_name": "Barraca"
+        }
+      ],
+      "places": [],
+      "place_weight": {},
+      "street_weight": 0.2,
+      "extra_backpack": true
+    },
+    {
+      "name": "seguranca",
+      "id": "seguranca",
+      "label": "Segurança",
+      "hp": 1.25,
+      "torso": 0.7,
+      "speed": 1,
+      "head": 1,
+      "fireproof": false,
+      "windup": 1,
+      "label_en": "Security guard",
+      "label_es": "Guardia de seguridad",
+      "special": true,
+      "skin_item": "roupa_seguranca",
+      "loot": [
+        {
+          "item": "municao_38",
+          "chance": 0.35,
+          "max": 4,
+          "item_name": "Munição .38"
+        },
+        {
+          "item": "cassetete",
+          "chance": 0.25,
+          "max": 1,
+          "item_name": "Cassetete"
+        },
+        {
+          "item": "lanterna",
+          "chance": 0.3,
+          "max": 1,
+          "item_name": "Lanterna"
+        },
+        {
+          "item": "radio",
+          "chance": 0.15,
+          "max": 1,
+          "item_name": "Rádio"
+        },
+        {
+          "item": "revolver",
+          "chance": 0.04,
+          "max": 1,
+          "item_name": "Revólver .38"
+        },
+        {
+          "item": "colete",
+          "chance": 0.04,
+          "max": 1,
+          "item_name": "Colete balístico"
+        },
+        {
+          "item": "pochete",
+          "chance": 0.1,
+          "max": 1,
+          "item_name": "Pochete"
+        }
+      ],
+      "places": [
+        "eletronicos",
+        "loja",
+        "mercado",
+        "posto",
+        "roupas"
+      ],
+      "place_weight": {
+        "mercado": 0.3333333333333333,
+        "posto": 1.0,
+        "loja": 1.0,
+        "eletronicos": 1.0,
+        "roupas": 1.0
+      },
+      "street_weight": 0.08,
+      "extra_backpack": false
+    },
+    {
+      "name": "mercado",
+      "id": "mercado",
+      "label": "Funcionário de mercado",
+      "hp": 1.1,
+      "speed": 1,
+      "torso": 1,
+      "head": 1,
+      "fireproof": false,
+      "windup": 1,
+      "label_en": "Supermarket clerk",
+      "label_es": "Empleado de supermercado",
+      "special": true,
+      "skin_item": "roupa_mercado",
+      "loot": [
+        {
+          "item": "agua",
+          "chance": 0.4,
+          "max": 1,
+          "item_name": "Garrafa d'água"
+        },
+        {
+          "item": "enlatados",
+          "chance": 0.35,
+          "max": 2,
+          "item_name": "Caixa de enlatados"
+        },
+        {
+          "item": "bolacha",
+          "chance": 0.3,
+          "max": 1,
+          "item_name": "Pacote de bolacha"
+        },
+        {
+          "item": "conserva",
+          "chance": 0.2,
+          "max": 1,
+          "item_name": "Legumes em conserva"
+        },
+        {
+          "item": "chocolate",
+          "chance": 0.2,
+          "max": 1,
+          "item_name": "Barra de chocolate"
+        },
+        {
+          "item": "selo",
+          "chance": 0.3,
+          "max": 2,
+          "item_name": "Selo"
+        }
+      ],
+      "places": [
+        "mercado",
+        "restaurante"
+      ],
+      "place_weight": {
+        "mercado": 0.6666666666666666,
+        "restaurante": 1.0
+      },
+      "street_weight": 0.06,
+      "extra_backpack": false
+    },
+    {
+      "name": "chefe",
+      "id": "chefe",
+      "label": "Brutamontes",
+      "hp": 6,
+      "speed": 0.85,
+      "torso": 0.6,
+      "head": 0.75,
+      "windup": 1.25,
+      "fireproof": false,
+      "label_en": "Brute",
+      "label_es": "Bruto",
+      "special": true,
+      "skin_item": null,
+      "loot": [
+        {
+          "item": "municao_556",
+          "chance": 0.6,
+          "max": 12,
+          "item_name": "Munição 5,56"
+        },
+        {
+          "item": "colete_tatico",
+          "chance": 0.3,
+          "max": 1,
+          "item_name": "Colete tático"
+        },
+        {
+          "item": "capacete_militar",
+          "chance": 0.3,
+          "max": 1,
+          "item_name": "Capacete balístico"
+        },
+        {
+          "item": "morfina",
+          "chance": 0.4,
+          "max": 1,
+          "item_name": "Morfina"
+        },
+        {
+          "item": "enlatados",
+          "chance": 0.5,
+          "max": 2,
+          "item_name": "Caixa de enlatados"
+        }
+      ],
+      "places": [],
+      "place_weight": {},
+      "street_weight": null,
+      "extra_backpack": false
+    }
+  ],
+  "field_docs": {
+    "id": "",
+    "label": "",
+    "hp": "multiplica a vida",
+    "speed": "multiplica a velocidade",
+    "torso": "dano no corpo (colete)",
+    "head": "dano na cabeca (capacete)",
+    "fireproof": "roupa de bombeiro: fogo nao pega",
+    "windup": "preparo do golpe (menor = mais agressivo)"
+  },
+  "missing_fields_note": "ZClass não tem multiplicador de dano nem de loot: só hp, speed, torso, head, fireproof e windup (preparo do golpe; menor = ataca mais rápido).",
+  "skin_drop": 0.1,
+  "street_chance": 0.07,
+  "near_chance": 0.25,
+  "horde_militar": 0.06,
+  "statics": [
+    {
+      "name": "skinDrop",
+      "type": "double",
+      "value": 0.1,
+      "line": 53,
+      "comment": "Chance do corpo ter o conjunto de roupa (nem rara, nem comum)."
+    },
+    {
+      "name": "streetChance",
+      "type": "double",
+      "value": 0.07,
+      "line": 56,
+      "comment": "Chance de um zumbi qualquer da rua ser especial; perto do lugar do oficio dele, bem mais."
+    },
+    {
+      "name": "nearChance",
+      "type": "double",
+      "value": 0.25,
+      "line": 57,
+      "comment": ""
+    },
+    {
+      "name": "hordeMilitar",
+      "type": "double",
+      "value": 0.06,
+      "line": 58,
+      "comment": ""
+    },
+    {
+      "name": "byPlace",
+      "type": "Map<String, List<ZClass>>",
+      "value": {
+        "policia": [
+          "policia",
+          "policia",
+          "presidiario"
+        ],
+        "saude": [
+          "medico"
+        ],
+        "bombeiros": [
+          "bombeiro"
+        ],
+        "construcao": [
+          "obra"
+        ],
+        "mercado": [
+          "mercado",
+          "mercado",
+          "seguranca"
+        ],
+        "restaurante": [
+          "mercado"
+        ],
+        "posto": [
+          "seguranca"
+        ],
+        "loja": [
+          "seguranca"
+        ],
+        "eletronicos": [
+          "seguranca"
+        ],
+        "roupas": [
+          "seguranca"
+        ],
+        "bunker": [
+          "militar",
+          "militar",
+          "militar"
+        ]
+      },
+      "line": 61,
+      "comment": "Quem aparece perto de cada tipo de lugar (repetido = mais chance)."
+    },
+    {
+      "name": "streetWeights",
+      "type": "Map<ZClass, double>",
+      "value": {
+        "militar": 0.18,
+        "mochileiro": 0.2,
+        "policia": 0.12,
+        "medico": 0.12,
+        "bombeiro": 0.06,
+        "obra": 0.1,
+        "presidiario": 0.08,
+        "seguranca": 0.08,
+        "mercado": 0.06
+      },
+      "line": 76,
+      "comment": "Na rua, longe de tudo: peso de cada um entre os especiais."
+    }
+  ],
+  "by_place": {
+    "policia": [
+      "policia",
+      "policia",
+      "presidiario"
+    ],
+    "saude": [
+      "medico"
+    ],
+    "bombeiros": [
+      "bombeiro"
+    ],
+    "construcao": [
+      "obra"
+    ],
+    "mercado": [
+      "mercado",
+      "mercado",
+      "seguranca"
+    ],
+    "restaurante": [
+      "mercado"
+    ],
+    "posto": [
+      "seguranca"
+    ],
+    "loja": [
+      "seguranca"
+    ],
+    "eletronicos": [
+      "seguranca"
+    ],
+    "roupas": [
+      "seguranca"
+    ],
+    "bunker": [
+      "militar",
+      "militar",
+      "militar"
+    ]
+  },
+  "street_weights": {
+    "militar": 0.18,
+    "mochileiro": 0.2,
+    "policia": 0.12,
+    "medico": 0.12,
+    "bombeiro": 0.06,
+    "obra": 0.1,
+    "presidiario": 0.08,
+    "seguranca": 0.08,
+    "mercado": 0.06
+  },
+  "mochileiro_backpack": {
+    "items": [
+      3,
+      5
+    ],
+    "corpse_loot_chance": 0.5,
+    "else": "backpack_loot"
+  },
+  "pick_rules": "static ZClass pick(String key, Iterable<String> nearPlaces) {\n    if (key.isEmpty || key.startsWith('m|')) return ZClass.comum; // o zumbi da pilha e um jogador\n    final r = _u(key, 'c');\n    if (key.startsWith('h|')) {\n      // Horda: vem gente de toda parte; os militares que tentaram conter vem junto.\n      if (r < hordeMilitar) return ZClass.militar;\n      return r < hordeMilitar + streetChance ? _weighted(_u(key, 'w')) : ZClass.comum;\n    }\n    final local = [for (final p in nearPlaces) ...?byPlace[p]];\n    if (local.isNotEmpty && r < nearChance) return local[(_u(key, 'l') * local.length).floor() % local.length];\n    if (r > 1 - streetChance) return _weighted(_u(key, 'w'));\n    return ZClass.comum;\n  }",
+  "map_states": [
+    {
+      "id": "dormente",
+      "description": "parado, olhos meio fechados; acorda com barulho ou se te ver."
+    },
+    {
+      "id": "errante",
+      "description": "anda de vez em quando pelas ruas perto de casa."
+    },
+    {
+      "id": "caido",
+      "description": "deitado como um corpo; so levanta quando a luta comeca perto dele."
+    }
+  ],
+  "asleep_rule": "dormente e caido começam adormecidos (asleep = type != errante)",
+  "zombies_per_place_interior": {
+    "saude": [
+      3,
+      6
+    ],
+    "mercado": [
+      5,
+      12
+    ],
+    "restaurante": [
+      2,
+      6
+    ],
+    "construcao": [
+      3,
+      8
+    ],
+    "posto": [
+      2,
+      5
+    ],
+    "policia": [
+      6,
+      14
+    ],
+    "bombeiros": [
+      4,
+      9
+    ],
+    "escola": [
+      8,
+      20
+    ],
+    "roupas": [
+      1,
+      4
+    ],
+    "eletronicos": [
+      1,
+      4
+    ],
+    "loja": [
+      1,
+      4
+    ],
+    "suprimentos": [
+      1,
+      4
+    ],
+    "casa": [
+      0,
+      3
+    ],
+    "bunker": [
+      6,
+      10
+    ]
+  },
+  "guards_per_place": {
+    "saude": 3,
+    "mercado": 3,
+    "restaurante": 2,
+    "construcao": 2,
+    "posto": 2,
+    "policia": 3,
+    "bombeiros": 2,
+    "escola": 2,
+    "roupas": 1,
+    "eletronicos": 1,
+    "loja": 1,
+    "suprimentos": 0,
+    "casa": 0,
+    "bunker": 0
+  },
+  "_meta": {
+    "source": "/mnt/user-data/outputs/footfall",
+    "generator": "extract.py"
+  }
+}

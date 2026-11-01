@@ -1,0 +1,57 @@
+/* Wiki do Footfall — por cima de ../estilo.css */
+.wiki .top .wrap{max-width:1280px}
+.wiki .wk{font-family:var(--pixel);font-size:1.5rem;color:var(--amber);text-decoration:none;letter-spacing:.04em}
+.busca{position:relative;margin-left:auto;flex:1;max-width:340px}
+.busca input{width:100%;background:var(--panel);border:2px solid var(--line);color:var(--bone);padding:7px 10px;font:inherit;font-size:.95rem}
+.busca input:focus{outline:none;border-color:var(--amber)}
+.sug{position:absolute;top:calc(100% + 4px);left:0;right:0;background:var(--panel);border:2px solid var(--line);z-index:30;max-height:60vh;overflow:auto}
+.sug a,.res a{display:block;padding:8px 10px;text-decoration:none;color:var(--bone);border-bottom:1px solid var(--line)}
+.sug a:hover,.sug a.on{background:var(--raised)}
+.sug small,.res small{display:block;color:var(--bone3);font-size:.8rem}
+.menu{display:none;background:var(--raised);color:var(--bone);border:0;font-family:var(--pixel);font-size:1.2rem;padding:6px 10px;cursor:pointer}
+.wiki-wrap{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:250px minmax(0,1fr);gap:28px;padding:0 16px}
+.side{position:sticky;top:64px;align-self:start;max-height:calc(100vh - 72px);overflow:auto;padding:24px 0 40px;font-size:.92rem}
+.side summary{font-family:var(--pixel);font-size:1.25rem;color:var(--blood-light);letter-spacing:.06em;cursor:pointer;margin-top:10px}
+.side ul{list-style:none;padding:0 0 0 4px;margin:4px 0}
+.side a{display:block;color:var(--bone2);text-decoration:none;padding:3px 8px;border-left:2px solid transparent}
+.side a:hover{color:var(--bone)}
+.side a[aria-current]{color:var(--bone);border-left-color:var(--amber);background:var(--panel)}
+.wdoc{max-width:none;margin:0;padding:28px 0 72px;min-width:0}
+.wdoc h1{font-size:clamp(2.2rem,6vw,3rem)}
+.wdoc h2{clear:none}
+.wdoc table td small{color:var(--bone3)}
+.wdoc .tbl table{min-width:0}
+.wdoc .tbl table.kv{width:auto;min-width:320px}
+.wdoc .tbl table.kv td:first-child{color:var(--bone2)}
+.il{white-space:nowrap}
+.il .ic{display:inline-block;width:24px;height:24px;vertical-align:-6px;margin-right:4px}
+.infobox{float:right;width:260px;margin:0 0 16px 20px;background:var(--panel);border-top:3px solid var(--plum);padding:14px;text-align:center}
+.infobox img{width:96px;height:96px;margin:0 auto 6px;background:var(--raised)}
+.infobox>b{font-family:var(--pixel);font-weight:400;font-size:1.5rem;color:var(--bone);display:block;line-height:1.1}
+.infobox .alt{font-size:.8rem;color:var(--bone3);margin:4px 0 8px}
+.infobox table{width:100%;min-width:0;text-align:left}
+.infobox th{background:none;font-family:var(--text);font-size:.82rem;color:var(--bone3);font-weight:400;padding:5px 6px}
+.infobox td{font-size:.88rem;padding:5px 6px}
+@media (max-width:700px){.infobox{float:none;width:auto;margin:0 0 16px}}
+.r-comum{color:var(--bone2)}.r-incomum{color:var(--moss)}.r-raro{color:var(--water)}.r-lendario{color:var(--amber)}
+.lead2{font-size:1.05rem;color:var(--bone)}
+.code{color:var(--bone3);font-size:.85rem;margin-top:28px;clear:both}
+.wstats{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 28px}
+.wstats a{background:var(--panel);padding:12px 18px;text-decoration:none;color:var(--bone2);font-size:.9rem}
+.wstats b{display:block;font-family:var(--pixel);font-weight:400;font-size:2rem;color:var(--amber);line-height:1}
+.wcats{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+.wcat{background:var(--panel);padding:16px 18px;border-top:3px solid var(--plum)}
+.wcat h2{font-size:1.6rem;margin:0 0 6px;color:var(--bone)}
+.wcat ul{list-style:none;padding:0;margin:0}
+.wcat li{margin:3px 0}
+.filtro input{width:100%;max-width:420px;background:var(--panel);border:2px solid var(--line);color:var(--bone);padding:8px 10px;font:inherit}
+.wdoc h2 small{font-family:var(--text);font-size:.9rem;color:var(--bone3)}
+@media (max-width:900px){
+  .wiki-wrap{grid-template-columns:1fr;gap:0}
+  .menu{display:block}
+  .side{display:none;position:static;max-height:none;padding:8px 0 16px;border-bottom:1px solid var(--line)}
+  .side.open{display:block}
+  .busca{max-width:none}
+  .wiki .top .brand{display:none}
+}
+.wdoc .tbl:has(table.kv){display:inline-block;max-width:100%;vertical-align:top}

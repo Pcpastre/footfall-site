@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Feridas — Wiki do Footfall</title>
+<meta name="description" content="Os nove tipos de ferida, onde cada golpe pega, quanto sangra, quanto demora a cicatrizar, os passos que pede e como a roupa segura.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html">Mochila e peso</a></li><li><a href="morte.html">Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html">Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html">Cansaço e sono</a></li><li><a href="feridas.html" aria-current=page>Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html">Temperatura</a></li><li><a href="tratamento.html">Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html">Visão</a></li><li><a href="zumbis.html">Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html">Corpos</a></li><li><a href="saque.html">Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html">Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html">Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Saúde</p>
+<h1>Feridas</h1>
+<p class="sub">Os nove tipos de ferida, onde cada golpe pega, quanto sangra, quanto demora a cicatrizar, os passos que pede e como a roupa segura.</p>
+<p>Feridas ficam numa das seis partes do corpo e cada uma pede passos de <a href="tratamento.html">tratamento</a> próprios. Uma ferida só começa a cicatrizar quando <b>todos</b> os passos que ela pede estão feitos e ela não está infeccionada. Feridas abertas sangram, doem, podem pegar infecção comum e algumas passam a <a href="infeccao.html">infecção zumbi</a>. Você vê tudo no painel do personagem, aba <kbd>Saúde</kbd>, no boneco vitruviano (cada parte fica mais vermelha quanto pior a ferida e puxa para o verde se infeccionada) e nos cartões de ferida embaixo dele.</p>
+
+<h2>Tipos de ferida</h2>
+<div class="tbl"><table>
+<tr><th>Ferida</th><th>Sangra (sem tratar)</th><th>Cicatriza em</th><th>Passos que pede</th><th>Dor</th><th>Passa infecção zumbi</th></tr>
+<tr><td>Arranhão</td><td>1 HP a cada 30 s (2/min)</td><td>1 dia</td><td>Limpar, Enfaixar</td><td>5</td><td>7%</td></tr>
+<tr><td>Laceração</td><td>1 HP a cada 12 s (5/min)</td><td>3 dias</td><td>Limpar, Enfaixar</td><td>12</td><td>25%</td></tr>
+<tr><td>Mordida</td><td>1 HP a cada 15 s (4/min)</td><td>5 dias</td><td>Limpar, Enfaixar</td><td>15</td><td>85%</td></tr>
+<tr><td>Corte profundo</td><td>1 HP a cada 8 s (7,5/min); enfaixado sem sutura, 1 a cada 40 s</td><td>4 dias</td><td>Limpar, Suturar, Enfaixar</td><td>15</td><td>Não</td></tr>
+<tr><td>Estilhaço</td><td>1 HP a cada 25 s (2,4/min)</td><td>2 dias</td><td>Tirar o estilhaço, Limpar, Enfaixar</td><td>18 com o estilhaço, 8 sem</td><td>Não</td></tr>
+<tr><td>Hemorragia</td><td>1 HP a cada 3 s (20/min)</td><td>5 dias</td><td>Torniquete, Limpar, Suturar, Enfaixar</td><td>20</td><td>25%</td></tr>
+<tr><td>Fratura</td><td>Não sangra</td><td>7 dias</td><td>Imobilizar (tala)</td><td>32 sem tala, 15 com</td><td>Não</td></tr>
+<tr><td>Queimadura</td><td>Não sangra</td><td>3 dias</td><td>Pomada, Enfaixar</td><td>20 sem pomada, 8 com</td><td>Não</td></tr>
+<tr><td>Contusão</td><td>Não sangra</td><td>12 horas</td><td>Nenhum</td><td>8</td><td>Não</td></tr>
+</table></div>
+<p>As chances de infecção zumbi da tabela são as normais; os traços de imunidade mudam esses números (veja <a href="infeccao.html">Infecção</a>). Os tempos de cicatrização são em <b>tempo real</b> e contam a partir do momento em que o último passo foi feito; eles são multiplicados pelo traço de cura, pelo nível de Primeiros socorros e pela maca da base (veja <a href="tratamento.html">Tratamento</a>). A ferida tratada continua no corpo, doendo pela metade, até a barra <i>cicatrizando</i> encher.</p>
+
+<h3>Notas sobre cada tipo</h3>
+<ul>
+<li><b>Arranhão, laceração e mordida</b>: param de sangrar assim que enfaixadas. Limpar só é pedido enquanto a ferida não está enfaixada: se você enfaixar primeiro, o jogo não pede mais a limpeza, mas a ferida enfaixada sem limpar tem a maior chance de infecção comum (veja abaixo).</li>
+<li><b>Corte profundo</b>: enfaixar reduz o sangramento, mas não para. Enquanto não for suturado o cartão mostra <i>vazando (falta sutura)</i> e você perde 1 HP a cada 40 s.</li>
+<li><b>Estilhaço</b>: o caco fica dentro (<i>estilhaço dentro</i>) até você tirar. Com o caco dentro a ferida dói mais e tem chance extra de infecção comum. Enfaixar estanca o sangue, mas não substitui tirar o estilhaço.</li>
+<li><b>Hemorragia</b>: só para de sangrar com <a href="item-torniquete.html">torniquete</a> ou sutura; atadura não basta. O torniquete pode ficar no máximo 2 horas: depois disso o membro sem sangue tira 1 HP a cada 120 s até você suturar (a sutura solta o torniquete).</li>
+<li><b>Fratura</b>: deixa você lento na tela de ação (velocidade ×0,65 sem tala, ×0,85 com tala) e gera o moodle <i>Fratura</i>.</li>
+<li><b>Queimadura</b>: sem pomada, tem 3% por hora de pegar infecção comum.</li>
+<li><b>Contusão</b>: é o hematoma. Não pede nada e some sozinha em 12 horas. Não rasga roupa e nunca infecta.</li>
+</ul>
+
+<h2>De onde vem cada ferida</h2>
+<div class="tbl"><table>
+<tr><th>Origem</th><th>Ferida</th><th>Parte</th><th>Dano</th></tr>
+<tr><td>Arranhão de zumbi</td><td>60% arranhão; 40% laceração, e destas 12% viram hemorragia</td><td>Sorteada pelo peso das partes</td><td>4 a 7</td></tr>
+<tr><td>Mordida de zumbi</td><td>70% mordida, 30% laceração</td><td>Ver tabela de mordida</td><td>6 a 10 (rastejante: 3 a 5)</td></tr>
+<tr><td>Mordida segurada pela roupa</td><td>Contusão</td><td>A da mordida</td><td>Metade</td></tr>
+<tr><td>Pancada e investida do Brutamontes</td><td>Como o arranhão</td><td>Sorteada pelo peso</td><td>8 a 14, e derruba</td></tr>
+<tr><td>Ser derrubado</td><td>5% fratura (braços ou pernas); 35% contusão (braços, pernas, tronco ou cabeça)</td><td>—</td><td>—</td></tr>
+<tr><td>Pisar no fogo (tela de ação)</td><td>Queimadura</td><td>Pernas ou pés</td><td>4 a cada 2 s (2 com <a href="item-capacete_bombeiro.html">Capacete de bombeiro</a>)</td></tr>
+<tr><td>Tiro ou flecha de guarda</td><td>Estilhaço</td><td>Qualquer, por igual</td><td>Metade do dano da arma, entre 3 e 9</td></tr>
+<tr><td>Golpe de guarda</td><td>Corte profundo (arma de dano 6 ou mais) ou contusão</td><td>Qualquer, por igual</td><td>70% do dano da arma, entre 2 e 10</td></tr>
+<tr><td>Abrir um móvel no saque</td><td>Estilhaço (caco de vidro), 4% de chance</td><td>Mãos</td><td>—</td></tr>
+<tr><td>Receita de carpintaria ou mecânica</td><td>Corte profundo, 3% − 0,5% por nível</td><td>Mãos</td><td>—</td></tr>
+<tr><td>Acender fogueira ou fogão</td><td>Queimadura, 4% de chance</td><td>Mãos</td><td>—</td></tr>
+</table></div>
+<p>A mordida ou pancada do Brutamontes (<a href="zumbi-chefe.html">zumbi-chefe</a>) causa o dobro do dano. Feridas de guarda e acidentes (vidro, ferramenta, fogo) nunca passam a infecção zumbi. Cada ferida fora da luta também soma 4 de estresse.</p>
+
+<h2>Onde o golpe pega</h2>
+<h3>Arranhão e pancada</h3>
+<div class="tbl"><table>
+<tr><th>Parte</th><th>Chance</th></tr>
+<tr><td>Cabeça</td><td>8%</td></tr>
+<tr><td>Tronco</td><td>22%</td></tr>
+<tr><td>Braços</td><td>25%</td></tr>
+<tr><td>Mãos</td><td>15%</td></tr>
+<tr><td>Pernas</td><td>20%</td></tr>
+<tr><td>Pés</td><td>10%</td></tr>
+</table></div>
+<h3>Mordida</h3>
+<div class="tbl"><table>
+<tr><th>Zumbi</th><th>Partes</th></tr>
+<tr><td>Em pé (ou te agarrando)</td><td>Braços 55%, tronco 30%, cabeça (rosto e pescoço) 10%, mãos 5%</td></tr>
+<tr><td>Rastejante</td><td>Pés 50%, pernas 50%</td></tr>
+</table></div>
+<p>O braço é o lugar mais mordido: um <a href="item-protetor_antebraco.html">Protetor de antebraço</a> ou uma <a href="item-jaqueta.html">Jaqueta de couro</a> seguram a maioria. Contra rastejantes, o que importa é <a href="item-coturno.html">Coturno</a>, <a href="item-botas.html">Botas</a> e <a href="item-caneleiras.html">Caneleiras</a>.</p>
+
+<h2>Como a roupa segura</h2>
+<p>Cada peça vestida tem uma <b>cobertura</b> por parte do corpo (o quanto ela cobre, ex.: a jaqueta de couro cobre 85% do tronco e 88% dos braços) e um <b>material</b>, que segura cada tipo de ataque de um jeito:</p>
+<div class="tbl"><table>
+<tr><th>Material</th><th>Mordida</th><th>Arranhão</th><th>Golpe</th><th>Tiro</th><th>Desgaste por mordida segurada</th></tr>
+<tr><td>Tecido</td><td>10%</td><td>30%</td><td>10%</td><td>0%</td><td>25%</td></tr>
+<tr><td>Jeans/lona</td><td>35%</td><td>60%</td><td>20%</td><td>0%</td><td>15%</td></tr>
+<tr><td>Couro</td><td>85%</td><td>90%</td><td>35%</td><td>5%</td><td>8%</td></tr>
+<tr><td>Rígido</td><td>95%</td><td>95%</td><td>70%</td><td>30%</td><td>4%</td></tr>
+<tr><td>Balístico</td><td>95%</td><td>95%</td><td>60%</td><td>80%</td><td>5%</td></tr>
+</table></div>
+<p>A chance de uma peça segurar é <b>cobertura × resistência do material × estado</b>, onde o estado vai de 100% (nova) a 50% (rasgada). Peças em camadas na mesma parte somam: o ataque precisa passar por todas. Exemplo: calça jeans nas pernas (cobertura 95%, jeans 35% contra mordida) segura cerca de 33% das mordidas na perna.</p>
+<p>Quando a roupa segura:</p>
+<ul>
+<li><b>Arranhão, pancada, golpe ou tiro</b>: nenhuma ferida e só metade do dano ("a roupa segurou").</li>
+<li><b>Mordida</b>: vira <b>contusão</b> e você leva metade do dano. Dói, mas não sangra nem infecta.</li>
+</ul>
+<p>Segurar gasta a roupa: uma mordida gasta o valor da tabela × cobertura; arranhão gasta metade disso, golpe 70% e tiro 120%. Quando a ferida passa, a roupa daquela parte também rasga um pouco (35 pontos de desgaste por ferida, exceto contusão). Com 100% de desgaste a peça está rasgada e protege a metade até ser costurada. A habilidade Costura reduz todo esse desgaste em 5% por nível. A proteção de cada peça está na página do item e em <a href="costura-e-roupas.html">Costura e roupas</a>.</p>
+
+<h3>Pele grossa e Pele fina</h3>
+<p>Depois da roupa entra o traço: com <a href="tracos.html">Pele grossa</a>, 30% das feridas que passariam são canceladas (sobra metade do dano). Com Pele fina, quando a roupa segura um arranhão, golpe ou tiro, o mesmo ataque é sorteado de novo em 30% das vezes.</p>
+
+<h2>Sangramento</h2>
+<p>Cada ferida que sangra tira vida no ritmo da tabela, e várias feridas somam. O moodle <i>Sangrando</i> mostra quantas feridas estão sangrando (1, 2 ou 3+). Enquanto houver sangramento a vida não se regenera e o fôlego volta 15% mais devagar na luta. O sangue só corre no mapa com a sessão ativa: com o app fechado ele não tira vida, mas o descanso também não devolve vida a quem está sangrando.</p>
+<p>Morrer com feridas sangrando dá a causa "Você sangrou até a morte.". Veja <a href="morte.html">Morte</a>.</p>
+
+<h2>Curativo sujo</h2>
+<p>Todo curativo suja com o tempo:</p>
+<ul>
+<li>atadura ou gaze limpa: suja depois de <b>12 h</b>;</li>
+<li>com <a href="item-esparadrapo.html">Esparadrapo</a> (gasto ao enfaixar, se você tiver): suja depois de <b>24 h</b>;</li>
+<li>com <a href="item-pano.html">Trapos de pano</a>: já nasce sujo.</li>
+</ul>
+<p>O cartão mostra <i>curativo sujo</i> e aparece o botão <kbd>Trocar curativo</kbd>. O curativo sujo não impede a cicatrização, mas soma 4% por hora à chance de infecção comum. Trocar o curativo zera o relógio.</p>
+
+<h2>Infecção comum</h2>
+<p>A cada hora com a sessão ativa, toda ferida que pode sangrar (menos hemorragia) tem chance de infeccionar, somando:</p>
+<div class="tbl"><table>
+<tr><th>Situação</th><th>Por hora</th></tr>
+<tr><td>Enfaixada sem ter sido limpa</td><td>+6%</td></tr>
+<tr><td>Curativo sujo (passou do prazo ou é trapo)</td><td>+4%</td></tr>
+<tr><td>Estilhaço ainda dentro</td><td>+5%</td></tr>
+<tr><td>Aberta, sem curativo (menos arranhão)</td><td>+2%</td></tr>
+<tr><td>Queimadura sem pomada</td><td>3%</td></tr>
+</table></div>
+<p>A ferida infeccionada fica marcada <i>INFECCIONADA</i>, para de cicatrizar, dói +10, impede a vida de voltar enquanto você joga (dormindo ela volta normalmente), tira 15 do fôlego máximo e gera o moodle <i>Ferida infeccionada</i>. Depois de 72 h infeccionada ela tira 1 HP a cada 600 s. Só o <a href="item-antibiotico.html">Antibiótico</a> cura; detalhes em <a href="infeccao.html">Infecção</a>.</p>
+
+<h2>Dor</h2>
+<p>A dor total é a soma da dor de cada ferida (tabela acima; metade se a ferida já está tratada, +10 se infeccionada), até 100.</p>
+<div class="tbl"><table>
+<tr><th>Dor</th><th>Moodle</th><th>Efeito na tela de ação</th></tr>
+<tr><td>Menos de 15</td><td>—</td><td>—</td></tr>
+<tr><td>15 a 34</td><td>Dor</td><td>Golpes 7% mais lentos, −5% de dano</td></tr>
+<tr><td>35 a 59</td><td>Muita dor</td><td>Golpes 14% mais lentos, −10% de dano, velocidade ×0,93</td></tr>
+<tr><td>60 ou mais</td><td>Dor insuportável</td><td>Golpes 21% mais lentos, −15% de dano, velocidade ×0,85; −10 de fôlego máximo</td></tr>
+</table></div>
+<p>O <a href="item-analgesico.html">Analgésico</a> corta 65% da dor por 4 h; a <a href="item-morfina.html">Morfina</a> zera a dor por 2 h, mas deixa os golpes 10% mais lentos e soma 15 de cansaço.</p>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!-- titulo: Clima e hora | categoria: Mundo | resumo: O clima real e a hora real do lugar onde você joga, e tudo o que chuva, neblina, tempestade, vento, temperatura, noite, madrugada e lua cheia mudam. -->
+<p>O Footfall usa o <b>clima de verdade</b> e a <b>hora de verdade</b> de onde você está. Se está chovendo na sua rua, chove no jogo; se escureceu, é noite no jogo. Esta página lista cada efeito.</p>
+
+<h2>De onde vem o clima</h2>
+<ul>
+<li>O jogo consulta o serviço gratuito Open-Meteo, mandando só a posição arredondada em duas casas decimais (cerca de 1 km).</li>
+<li>Atualiza ao começar a sessão e depois a cada <b>30 min</b>. Sem internet, fica valendo a última leitura.</li>
+<li>Lê: precipitação, código do tempo, temperatura a 2 m, velocidade e direção do vento a 10 m.</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Estado</th><th>Quando o jogo considera</th></tr>
+<tr><td>Chuva</td><td>precipitação acima de 0,05 mm, ou código de garoa, chuva, chuva congelada, pancadas ou trovoada (51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82, 95, 96, 99)</td></tr>
+<tr><td>Neblina</td><td>códigos 45 ou 48</td></tr>
+<tr><td>Tempestade</td><td>códigos de trovoada 95, 96 ou 99 (tempestade também conta como chuva)</td></tr>
+</table></div>
+
+<h2>Chuva</h2>
+<div class="tbl"><table>
+<tr><th>Efeito</th><th>Valor</th></tr>
+<tr><td>Seu alcance de visão no mapa</td><td>×0,75</td></tr>
+<tr><td>Alcance em que os zumbis te veem</td><td>×0,75</td></tr>
+<tr><td>Raio em que os zumbis te ouvem</td><td>×0,7</td></tr>
+<tr><td>Sensação térmica</td><td>-4 °C, a não ser que você vista <a href="item-capa_chuva.html">capa de chuva</a> ou <a href="item-corta_vento.html">corta-vento</a></td></tr>
+<tr><td>Barril de chuva da base</td><td>enche 1 garrafa a cada 10 min de chuva com o app aberto (vira <a href="item-agua_suja.html">água de chuva</a>, que precisa ser fervida)</td></tr>
+<tr><td>Lona da <a href="item-barraca.html">barraca</a> montada</td><td>gasta 1,5× mais rápido</td></tr>
+</table></div>
+<p>Na tela de ação a chuva aparece no desenho e nas notas do começo da luta ("Chuva: chão molhado, barulho abafado"), mas a luta em si não muda.</p>
+
+<h2>Neblina</h2>
+<ul>
+<li>Seu alcance de visão no mapa: ×0,6.</li>
+<li>Alcance de visão na tela de ação: ×0,6 (aviso "Neblina: vê até X m").</li>
+<li>Não muda a visão dos zumbis.</li>
+</ul>
+
+<h2>Tempestade</h2>
+<p>Ao começar, aparece "Tempestade: o trovão abafa os seus passos, mas eles ficam inquietos."</p>
+<div class="tbl"><table>
+<tr><th>Efeito</th><th>Valor</th></tr>
+<tr><td>Raio em que os zumbis te ouvem</td><td>×0,6 (além do ×0,7 da chuva: ×0,42 no total)</td></tr>
+<tr><td>Seu alcance de visão no mapa</td><td>×0,85 (além do ×0,75 da chuva)</td></tr>
+<tr><td>Zumbis errantes</td><td>descansam metade do tempo entre uma caminhada e outra</td></tr>
+<tr><td>Lona da barraca montada</td><td>gasta 2× mais rápido</td></tr>
+</table></div>
+
+<h2>Vento</h2>
+<ul>
+<li>Vento acima de <b>30 km/h</b> faz a lona da barraca montada gastar 1,5× mais rápido (se não houver chuva ou tempestade, que já contam).</li>
+<li>O resto é ambiente: som de vento (a partir de 12 km/h) e a direção das coisas voando no mapa e na tela de ação.</li>
+</ul>
+
+<h2>Temperatura</h2>
+<p>A <b>sensação</b> é a temperatura real menos 4 °C na chuva (sem capa ou corta-vento) e menos 2 °C de noite.</p>
+<h3>Frio</h3>
+<p>O frio só conta com a sessão aberta e fora da base. A roupa quente que você precisa:</p>
+<div class="tbl"><table>
+<tr><th>Sensação</th><th>Pontos de roupa quente necessários</th></tr>
+<tr><td>16 °C ou mais</td><td>0</td></tr>
+<tr><td>de 10 °C a menos de 16 °C</td><td>1</td></tr>
+<tr><td>abaixo de 10 °C</td><td>2</td></tr>
+</table></div>
+<p>Cada peça vestida e inteira soma: <a href="item-jaqueta.html">jaqueta de couro</a> 1, <a href="item-moletom.html">moletom</a> 1, <a href="item-jaqueta_bolsos.html">jaqueta com bolsos</a> 1, <a href="item-gorro.html">gorro</a> 1, <a href="item-casaco.html">casaco grosso</a> 2. Roupa rasgada não esquenta. O que faltar vira o nível de frio (0 a 2: "Com frio", "Congelando"). Comer <a href="item-sopa.html">sopa quente</a> tira o frio por um tempo.</p>
+<h3>Calor</h3>
+<p>O calor só conta de dia, com a sessão aberta. Peças pesadas: <a href="item-casaco.html">casaco</a> conta 2; <a href="item-jaqueta.html">jaqueta de couro</a>, <a href="item-colete.html">colete balístico</a>, <a href="item-colete_tatico.html">colete tático</a>, <a href="item-capacete_militar.html">capacete balístico</a>, <a href="item-jaqueta_bolsos.html">jaqueta com bolsos</a>, <a href="item-capacete_tatico.html">capacete tático</a>, <a href="item-capacete_bombeiro.html">capacete de bombeiro</a> e <a href="item-mochila_cargueira.html">mochila cargueira</a> contam 1.</p>
+<div class="tbl"><table>
+<tr><th>Temperatura real</th><th>Sem peça pesada</th><th>Com 1 ponto</th><th>Com 2 ou mais</th></tr>
+<tr><td>até 28 °C</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>acima de 28 °C</td><td>0</td><td>1</td><td>2</td></tr>
+<tr><td>acima de 33 °C</td><td>1</td><td>2</td><td>2</td></tr>
+</table></div>
+<p>Um <a href="item-bone.html">boné</a> vestido tira 1 nível de calor.</p>
+<h3>O que frio e calor fazem</h3>
+<ul>
+<li>Frio: gasta 0,004 kcal por segundo por nível (tremer).</li>
+<li>Calor: gasta 0,012 de água por segundo por nível (suor).</li>
+<li>Cada nível de frio ou de calor tira 8 pontos do fôlego máximo.</li>
+</ul>
+
+<h2>Noite</h2>
+<p>A noite vai do pôr ao nascer do sol do seu lugar, calculados pela posição e pela data. Ao escurecer: "Anoiteceu: zumbis mais ativos. A lanterna chama atenção de longe."</p>
+<div class="tbl"><table>
+<tr><th>Efeito</th><th>Valor</th></tr>
+<tr><td>Seu alcance de visão no mapa</td><td>40 m (90 m num cone de 60° com lanterna); Visão noturna ignora</td></tr>
+<tr><td>Alcance em que os zumbis te veem</td><td>8 m (30 m com a sua lanterna ligada)</td></tr>
+<tr><td>Dormentes que levantam e vagam</td><td>3 em cada 8</td></tr>
+<tr><td>Zumbis errantes</td><td>descansam 8 a 25 s entre caminhadas (de dia, 20 a 60 s)</td></tr>
+<tr><td>Visão na tela de ação</td><td>12 m (22 com lanterna, 26 com Visão noturna)</td></tr>
+<tr><td><a href="item-moletom.html">Moletom escuro</a></td><td>os zumbis te veem a 85% da distância</td></tr>
+<tr><td>Fogueira acesa na base</td><td>chama os zumbis a até 100 m</td></tr>
+<tr><td>Calor</td><td>não conta</td></tr>
+<tr><td>Sensação térmica</td><td>-2 °C</td></tr>
+<tr><td>Botão da lanterna</td><td>só aparece de noite (ela desliga sozinha ao amanhecer)</td></tr>
+</table></div>
+<p>Toda noite, à 1 h da madrugada, a base sofre um ataque noturno (com o app fechado, até 3 noites perdidas são resolvidas quando você volta). O corvo-correio não voa de noite: pousa e termina o voo de manhã.</p>
+
+<h2>Madrugada</h2>
+<p>É a parte da noite antes das 5 h. Aviso: "Madrugada: os zumbis estão agitados e ouvem melhor."</p>
+<ul>
+<li>O raio em que os zumbis te ouvem fica ×1,3.</li>
+<li>Os zumbis do mapa andam 15% mais rápido (perseguindo, investigando ou vagando).</li>
+</ul>
+
+<h2>Lua cheia</h2>
+<p>O jogo calcula a fase da lua real. Conta como lua cheia quando a fase está a menos de 0,04 do meio do ciclo (um dia e pouco de cada lado). Só vale de noite. Aviso: "Lua cheia: dá para ver mais longe, mas eles também. Mais deles vagam esta noite."</p>
+<div class="tbl"><table>
+<tr><th>Efeito</th><th>Valor</th></tr>
+<tr><td>Seu alcance de visão sem lanterna</td><td>40 × 1,5 = 60 m</td></tr>
+<tr><td>Alcance em que os zumbis te veem sem lanterna</td><td>8 × 1,3 = 10,4 m</td></tr>
+<tr><td>Dormentes que levantam e vagam</td><td>6 em cada 8 (em vez de 3)</td></tr>
+</table></div>
+
+<h2>A hora do jogo</h2>
+<p>Online, o relógio do jogo segue a hora do servidor. Adiantar ou atrasar o relógio do celular não muda noite, semana, mês, estoque dos lugares nem eventos.</p>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="visao.html">Visão</a></li>
+<li><a href="barulho.html">Barulho</a></li>
+<li><a href="horda-e-alarmes.html">Horda e alarmes</a> (a horda vem à noite)</li>
+</ul>

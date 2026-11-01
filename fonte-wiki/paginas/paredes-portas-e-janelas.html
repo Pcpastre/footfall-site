@@ -1,0 +1,105 @@
+<!-- titulo: Paredes, portas e janelas | categoria: Base | resumo: Custos, vida, reforço e conserto de cada parede, porta e janela da base. -->
+<p>As paredes da <a href="base.html">base</a> são os lados do polígono que você demarcou. Cada parede de verdade tem vida própria e um nível de reforço (madeira, chapa ou concreto). Portas e janelas cortam uma parede e são o ponto fraco no <a href="ataque-noturno.html">ataque noturno</a>.</p>
+
+<h2>Tipos de parede</h2>
+<div class="tbl"><table>
+<tr><th>Parede</th><th>Vida máxima</th><th>Como obter</th><th>Custo</th></tr>
+<tr><td>De prédio</td><td>não tem (nunca cai)</td><td>Lado encostado num prédio real ao demarcar</td><td>de graça</td></tr>
+<tr><td>Só demarcada</td><td>— (não segura nada)</td><td>Todo lado novo, antes de levantar</td><td>de graça</td></tr>
+<tr><td>Madeira</td><td>100</td><td>Levantar a parede demarcada</td><td>1 <a href="item-tabuas.html">tábua</a> + 1 <a href="item-pregos.html">prego</a> a cada 4 m</td></tr>
+<tr><td>Chapa</td><td>200</td><td>Reforçar uma parede de madeira</td><td>N <a href="item-chapa.html">chapas de metal</a> + 2N <a href="item-pregos.html">pregos</a></td></tr>
+<tr><td>Concreto</td><td>350</td><td>Reforçar uma parede de chapa</td><td>N <a href="item-cimento.html">sacos de cimento</a> + N <a href="item-agua.html">garrafas d'água</a></td></tr>
+</table></div>
+<p>No reforço, <b>N = ⌈comprimento ÷ 3 m⌉</b> (mínimo 1): uma parede de 7 m pede 3 chapas e 6 pregos para virar chapa, e depois 3 cimentos e 3 garrafas d'água para virar concreto.</p>
+<p>Na tela de ação as paredes reforçadas aparecem com o rótulo "chapa" ou "concreto". O painel mostra quantas paredes você tem de cada tipo (ex.: <i>"Paredes: 3 de madeira, 1 de chapa, 0 de concreto."</i>) e uma barra com a vida média (cada parede pela sua própria vida máxima).</p>
+
+<h3>Levantar</h3>
+<p>Fórmula do custo de levantar: tábuas = pregos = ⌈(metros − 0,05) ÷ 4⌉ (parede de até 0,5 m não custa nada). Ganho: 5 XP de Carpintaria por tábua, mais 5. Veja <a href="base.html">Levantar as paredes</a>.</p>
+
+<h3>Reforçar</h3>
+<p><kbd>Base</kbd> → <kbd>BASE</kbd> → <kbd>Reforçar com chapa (200 de vida): ...</kbd> ou <kbd>Reforçar com concreto (350 de vida): ...</kbd>. O botão só aparece se houver parede para reforçar e só funciona <b>dentro da base</b>.</p>
+<ul>
+<li>O jogo escolhe sozinho a parede de pé com o <b>reforço mais fraco</b> (paredes já de concreto e paredes caídas são ignoradas).</li>
+<li>O material pode vir da mochila e dos baús.</li>
+<li>Ao reforçar, a parede volta com a vida cheia do novo nível.</li>
+<li>Madeira → chapa dá 20 XP de Mecânica; chapa → concreto dá 20 XP de Carpintaria.</li>
+<li>Quando não há mais o que reforçar: <i>"Todas as paredes de pé já são de concreto."</i></li>
+</ul>
+
+<h3>Consertar</h3>
+<p><kbd>Consertar a parede mais fraca (1 tábua + 1 prego)</kbd>, só dentro da base:</p>
+<ul>
+<li>escolhe a parede com a menor fração de vida;</li>
+<li>devolve <b>50 + 5 × nível de Carpintaria</b> de vida, sem passar do máximo do reforço dela;</li>
+<li>custa 1 <a href="item-tabuas.html">tábua</a> + 1 <a href="item-pregos.html">prego</a> e dá 10 XP de Carpintaria;</li>
+<li>conserta também paredes derrubadas (vida 0), que voltam a segurar.</li>
+</ul>
+<p>Uma parede de concreto com 0 de vida precisa de 7 consertos sem nível de Carpintaria (350 ÷ 50), ou 4 com Carpintaria 10 (100 por conserto).</p>
+
+<h3>O que derruba parede</h3>
+<p>Paredes só perdem vida no <a href="ataque-noturno.html">ataque noturno</a> e na passagem da horda da semana. Os zumbis da tela de ação não batem nas paredes: sem caminho até você, eles procuram a porta ou janela inteira mais perto (até 40 m) e forçam por ali. Parede derrubada (vida 0) some da tela de ação e deixa a base aberta.</p>
+
+<h2>Portas e janelas</h2>
+<div class="tbl"><table>
+<tr><th></th><th>Porta</th><th>Janela</th><th>Janela com tábuas</th></tr>
+<tr><td>Custo</td><td>3 <a href="item-tabuas.html">tábuas</a> + 2 <a href="item-pregos.html">pregos</a></td><td>2 <a href="item-tabuas.html">tábuas</a> + 1 <a href="item-pregos.html">prego</a></td><td>+2 tábuas + 2 pregos</td></tr>
+<tr><td>Largura</td><td>1,0 m</td><td>1,2 m</td><td>1,2 m</td></tr>
+<tr><td>Vida</td><td>100</td><td>40</td><td>100 (40 + 60)</td></tr>
+<tr><td>Passa gente/zumbi?</td><td>só aberta</td><td>não</td><td>não</td></tr>
+<tr><td>Dá para ver através?</td><td>só aberta</td><td>sim</td><td>sim</td></tr>
+<tr><td>XP de Carpintaria</td><td>8 ao fazer</td><td>8 ao fazer</td><td>8 ao pregar</td></tr>
+</table></div>
+
+<h3>Como pôr</h3>
+<ol class="steps">
+<li>Na base, abra a tela de ação e toque no martelo (modo construir).</li>
+<li><kbd>CONSTRUIR (porta, janela, móvel)</kbd> → <kbd>Porta</kbd> ou <kbd>Janela</kbd>.</li>
+<li>Chegue perto de uma parede e mire nela: o fantasma da abertura gruda na parede mais perto da frente do boneco (até 2 m).</li>
+<li>Toque no visto para pôr.</li>
+</ol>
+<p>Regras para abrir uma porta ou janela num lado:</p>
+<ul>
+<li>A parede precisa estar levantada e de pé (<i>"Levante essa parede antes."</i>, <i>"Essa parede caiu."</i>).</li>
+<li>Não pode ser parede de prédio (<i>"Essa parede é de prédio."</i>).</li>
+<li>A parede precisa ter pelo menos a largura da abertura + 0,6 m, e a abertura fica a pelo menos 0,3 m de cada canto (<i>"Muito perto do canto."</i>).</li>
+<li>Duas aberturas no mesmo lado ficam a pelo menos 0,3 m uma da outra (<i>"Encostado em outra abertura."</i>).</li>
+</ul>
+<div class="tip"><b>A primeira porta</b>A primeira porta que você põe na vida do personagem traz o <a href="corvo.html">corvo</a>: <i>"Um corvo pousou na sua porta. Ele fica."</i></div>
+
+<h3>Abrir e fechar a porta</h3>
+<p>Chegue perto da porta e toque em <kbd>ABRIR PORTA</kbd> / <kbd>FECHAR PORTA</kbd>. A regra principal:</p>
+<div class="tip warn"><b>Porta aberta = base aberta</b>Porta aberta deixa passar todo mundo, zumbi também, e a base <b>deixa de estar fechada</b>. No ataque noturno, cada porta aberta conta como uma parede no chão (e abre caminho para a perda nos baús). Porta e janela <b>quebradas</b> (vida 0) viram buraco na parede e contam igual.</div>
+<p>Porta fechada segura como parede e tapa a visão. Aberta, a folha fica encostada para dentro da base.</p>
+
+<h3>Pregar tábuas na janela</h3>
+<p>Perto de uma janela sem tábuas e inteira: <kbd>PREGAR TÁBUAS</kbd>. Custa 2 tábuas + 2 pregos, soma 60 de vida máxima (40 → 100) e já deixa a janela com a vida cheia. Só uma vez por janela (<i>"Já tem tábuas."</i>).</p>
+
+<h3>Consertar porta ou janela</h3>
+<p>Perto da abertura danificada (ou quebrada): <kbd>CONSERTAR (N%)</kbd> ou <kbd>CONSERTAR</kbd>. Custa 1 tábua + 1 prego, volta com a <b>vida cheia</b> e, se for porta, ela fica fechada. Dá 6 XP de Carpintaria. A etiqueta em cima mostra o estado (<i>"Porta · 72%"</i>, <i>"Janela com tábuas · 40%"</i>, <i>"Porta quebrada"</i>).</p>
+
+<h3>Tirar uma porta ou janela</h3>
+<p>No modo construir, perto da abertura: <kbd>Tirar</kbd>. A parede fecha de novo e o custo da abertura volta para a mochila (mais 2 tábuas se a janela tinha tábuas pregadas).</p>
+
+<h3>Zumbis contra portas e janelas</h3>
+<p>Na tela de ação, um zumbi sem caminho até você anda até a porta ou janela inteira mais perto (até 40 m) e bate:</p>
+<ul>
+<li>cada pancada tira <b>5 a 9</b> de vida e faz barulho (8 m), chamando quem está perto;</li>
+<li>porta caindo: <i>"porta caiu!"</i> e barulho de 18 m; janela: <i>"vidro quebrou!"</i> e barulho de 25 m;</li>
+<li>na base de <b>outro jogador</b>, o zumbi bate e faz barulho mas não tira vida.</li>
+</ul>
+<p>No ataque noturno, cerca de 1 em 3 golpes (35%) vai numa porta ou janela fechada sorteada, e janelas levam 30% mais dano. Veja <a href="ataque-noturno.html">Ataque noturno</a>.</p>
+
+<h2>Material de volta</h2>
+<div class="tbl"><table>
+<tr><th>Ação</th><th>O que volta</th></tr>
+<tr><td>Tirar porta/janela (modo construir)</td><td>Custo da abertura + 2 tábuas se tinha tábuas pregadas</td></tr>
+<tr><td>Desfazer a base</td><td>Tábuas e pregos de cada parede levantada, custo de cada abertura, 2 tábuas + 2 pregos por janela pregada (reforços de chapa/concreto não voltam)</td></tr>
+<tr><td>Entrar num grupo com base</td><td>O mesmo que desfazer, mas tudo vai para o <a href="deposito-do-radio.html">depósito do rádio</a></td></tr>
+</table></div>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="base.html">Base</a></li>
+<li><a href="armadilhas.html">Armadilhas</a></li>
+<li><a href="ataque-noturno.html">Ataque noturno</a></li>
+</ul>

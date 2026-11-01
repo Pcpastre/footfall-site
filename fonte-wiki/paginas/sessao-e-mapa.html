@@ -1,0 +1,141 @@
+<!-- titulo: Sessão e mapa | categoria: Começo | resumo: Como começar e encerrar uma sessão, o que cada botão do mapa faz, a bússola e as regras do GPS. -->
+<p>No Footfall você joga andando de verdade. Tudo o que acontece no mapa (zumbis andando, saque, distância percorrida, barulho) só corre enquanto uma <b>sessão</b> está aberta. Fora da sessão o personagem está "dormindo" ou "parado" onde você encerrou, e só o tempo real passa (fome, sede, cansaço, cura).</p>
+
+<h2>Começar uma sessão</h2>
+<ol class="steps">
+<li>Tenha um personagem criado. Sem ele, o mapa mostra <kbd>Criar personagem</kbd> e o início é recusado com "Crie um personagem antes de começar.".</li>
+<li>Toque em <kbd>INICIAR SESSÃO</kbd> na parte de baixo do mapa.</li>
+<li>O jogo confere se a localização do aparelho está ligada ("GPS desligado. Ative a localização do aparelho.") e se a permissão foi dada ("Permissão de localização negada.").</li>
+<li>Ele pede a posição atual por até <b>12 s</b>. Se o GPS não responder, usa a última posição conhecida e corrige depois. Sem nenhuma das duas, aparece "Não consegui a sua posição pelo GPS. Vá para um lugar aberto e toque de novo.".</li>
+<li>A tentativa inteira tem limite de <b>30 s</b>. Passou disso: "O GPS demorou demais para responder. Vá para um lugar aberto e toque de novo.". Tocar duas vezes não abre duas sessões.</li>
+</ol>
+<p>Ao começar, o jogo:</p>
+<ul>
+<li>aplica o descanso do tempo em que o app ficou fechado (veja <a href="#dormir">Dormir ou encerrar</a>);</li>
+<li>zera a <b>distância da sessão</b> (ela é usada para a chance de item raro, veja <a href="saque.html">Saque</a>);</li>
+<li>confere o mês (zumbis voltam todo mês, veja <a href="zumbis.html">Zumbis</a>), os ataques noturnos à base e a <a href="horda-e-alarmes.html">horda da semana</a>;</li>
+<li>marca o primeiro <a href="horda-e-alarmes.html">alarme aleatório</a> para daqui a 8 a 11 minutos;</li>
+<li>carrega as ruas e lugares em volta (primeiro 500 m, para começar logo, depois 1.400 m) e busca o <a href="clima-e-hora.html">clima real</a>.</li>
+</ul>
+<p>O mapa é baixado num raio de <b>1.400 m</b>. Quando você se afasta mais de <b>550 m</b> do centro do pedaço baixado (e entra em outro pedaço), o jogo baixa o pedaço novo sozinho. Se a internet falhar, ele tenta de novo em 5, 15, 30, 60, 120 e depois a cada 300 s; o aviso no topo mostra a contagem e tocar nele tenta na hora.</p>
+<div class="tip"><b>Profissão Entregador(a)</b>Na primeira sessão, o entregador já começa com uns 400 m em volta marcados no mapa explorado ("Você conhece bem este bairro: ele já está no seu mapa.").</div>
+<p>A mensagem de início no registro é "Sessão iniciada. Você pode ser atacado.": a partir daqui os zumbis do mapa podem te ver, ouvir e perseguir.</p>
+
+<h2 id="dormir">Dormir ou encerrar</h2>
+<p>Para terminar, abra o <kbd>Menu</kbd> (ícone de três pontos no canto esquerdo) e escolha:</p>
+<ul>
+<li><kbd>Dormir (encerrar aqui)</kbd>, quando você está num lugar seguro: dentro da base, num posto avançado ou no acampamento da <a href="item-barraca.html">barraca</a>.</li>
+<li><kbd>Encerrar sessão</kbd>, em qualquer outro lugar ("Fora da base: descanso ruim, sem perder nada.").</li>
+</ul>
+<p>Uma janela confirma (<kbd>Dormir</kbd> / <kbd>Encerrar</kbd> ou <kbd>Continuar jogando</kbd>). Encerrar em qualquer lugar mantém tudo o que você carrega. A diferença está no descanso enquanto o app fica fechado:</p>
+<div class="tbl"><table>
+<tr><th>Onde encerrou</th><th>Ritmo de descanso</th><th>Vida por hora fechado</th><th>Cabeça (estresse, tristeza)</th></tr>
+<tr><td>Base, com <b>cama</b> posicionada</td><td>18,75 (o melhor)</td><td>+7,5</td><td>conta 1,5× as horas</td></tr>
+<tr><td>Base sem cama, posto avançado ou barraca</td><td>12,5</td><td>+5</td><td>conta as horas normais</td></tr>
+<tr><td>Fora, com <a href="item-saco_dormir.html">saco de dormir</a> na mochila</td><td>8</td><td>+2,5</td><td>conta 1,2× as horas</td></tr>
+<tr><td>Fora, no chão</td><td>4</td><td>nada</td><td>conta as horas normais</td></tr>
+</table></div>
+<p>A vida só volta dormindo se você não estiver sangrando nem com infecção. Fome e sede continuam correndo em qualquer caso. Encerrar também desliga a lanterna, fecha qualquer saque aberto e a tela de ação.</p>
+<p>O botão <kbd>Tela inicial</kbd> do menu fica bloqueado durante a sessão ("Encerre a sessão antes.").</p>
+
+<h2>Botões do mapa</h2>
+<h3>Coluna da esquerda (consultas)</h3>
+<div class="tbl"><table>
+<tr><th>Ícone</th><th>Abre</th><th>Borda colorida quando</th></tr>
+<tr><td>Coração</td><td><kbd>Personagem</kbd>: vida, corpo, habilidades</td><td>a vida está abaixo de 100 (cinza acima de 60, laranja de 31 a 60, vermelho até 30)</td></tr>
+<tr><td>Mochila</td><td><kbd>Mochila</kbd>: inventário, roupas, bancada (veja <a href="mochila-e-peso.html">Mochila e peso</a>)</td><td>você está com carga pesada</td></tr>
+<tr><td>Cerca</td><td><kbd>Base</kbd>: demarcar, paredes, baús</td><td>há parede só planejada ou caída</td></tr>
+<tr><td>Pessoas</td><td><kbd>Grupo</kbd></td><td>há aviso de outro membro</td></tr>
+<tr><td>Mapa</td><td><kbd>Mapa</kbd>: o mapa explorado</td><td>-</td></tr>
+<tr><td>Três pontos</td><td><kbd>Menu</kbd>: <kbd>Ajustes</kbd>, <kbd>Rádio</kbd>, <kbd>Trocar com alguém aqui</kbd> (sobrevivente a até 40 m, por código), dormir/encerrar e <kbd>Tela inicial</kbd></td><td>-</td></tr>
+</table></div>
+<h3>Topo</h3>
+<ul>
+<li>Fileira de estados do corpo e da cabeça (fome, sede, pânico, carga pesada, frio etc.).</li>
+<li>Medidor de barulho: mostra o raio em metros em que os zumbis te ouvem agora (veja <a href="barulho.html">Barulho</a>).</li>
+<li>Um aviso por vez, do mais importante: <b>ALERTA</b> (zumbi visto ou te seguindo a menos de 50 m, com "TE VIRAM" ou "ande devagar"), falta de mapa, montagem da barraca, sinalizador aceso, binóculo, carregamento do mapa.</li>
+</ul>
+<h3>Ações (direita, embaixo, perto do polegar)</h3>
+<div class="tbl"><table>
+<tr><th>Botão</th><th>Aparece quando</th><th>Faz</th></tr>
+<tr><td>Antena</td><td>você está num posto avançado ou no acampamento</td><td>vai ao depósito do rádio</td></tr>
+<tr><td>Corvo</td><td>você tem o corvo-correio</td><td>abre o painel do corvo (borda vermelha se ele estiver com fome)</td></tr>
+<tr><td>Olho</td><td>tem <a href="item-binoculo.html">binóculo</a> na mochila</td><td>olha de binóculo (parado); veja <a href="visao.html">Visão</a></td></tr>
+<tr><td>Bola</td><td>tem algo para jogar (<a href="item-despertador.html">despertador</a>, <a href="item-rojao.html">rojão</a>, <a href="item-garrafa.html">garrafa</a> ou <a href="item-pedra.html">pedra</a>)</td><td>joga para a frente; veja <a href="arremesso.html">Arremesso</a></td></tr>
+<tr><td>Lanterna</td><td>é noite</td><td>liga ou desliga a <a href="item-lanterna.html">lanterna</a></td></tr>
+<tr><td>Lupa (média)</td><td>sempre</td><td><kbd>Saquear</kbd> o lugar ou corpo mais perto, ou continuar o saque aberto; brilha quando há algo a até 35 m. Veja <a href="saque.html">Saque</a></td></tr>
+<tr><td>Luta (grande)</td><td>sempre</td><td>abre a <a href="tela-de-acao.html">tela de ação</a> na hora, com todos os zumbis do raio. O número mostra quantos zumbis você sabe que estão no raio da luta (à vista ou te perseguindo). Dentro da base o ícone vira uma casa</td></tr>
+</table></div>
+<h3>Embaixo à esquerda</h3>
+<ul>
+<li><kbd>Bússola</kbd>: liga e desliga a bússola (verde quando está recebendo leitura).</li>
+<li><kbd>Centralizar</kbd>: volta a câmera para você. Arrastar o mapa com um dedo solta a câmera.</li>
+</ul>
+<p>Com a bússola desligada aparece um analógico âmbar à direita para olhar em volta.</p>
+
+<h2>Bússola e calibração</h2>
+<p>Você só enxerga zumbis num cone à sua frente (veja <a href="visao.html">Visão</a>), então para onde o boneco olha importa. Há dois jeitos de virar:</p>
+<h3>Bússola ligada</h3>
+<ul>
+<li>O topo do celular manda: a leitura usa acelerômetro e magnetômetro com compensação de inclinação.</li>
+<li>A direção é presa em <b>12 posições fixas, de 30 em 30 graus</b>. Para trocar de posição a leitura precisa passar da metade do caminho com <b>5 graus</b> de folga, para não tremer.</li>
+<li>A bússola conta como "viva" se mandou leitura nos últimos 2 s; senão o jogo age como se ela estivesse desligada.</li>
+<li><b>Calibração automática</b>: andando entre 0,7 e 3,5 m/s, a cada 4 m o jogo compara a direção em que você anda com a leitura e corrige 10% da diferença.</li>
+<li><b>Calibrar pela rua</b> (<kbd>Ajustes</kbd> → <kbd>Calibrar pela rua</kbd>, só com a sessão aberta): fique numa rua, aponte o topo do celular ao longo dela e toque. Precisa haver rua a menos de 25 m e a leitura precisa estar a no máximo 60 graus da direção da rua.</li>
+<li><kbd>Ajuste fino</kbd>: um controle de -45 a +45 graus somado à leitura.</li>
+</ul>
+<h3>Bússola desligada</h3>
+<ul>
+<li>A cada 4 m andados, o boneco olha para onde você está andando.</li>
+<li>O analógico âmbar vira o olhar na hora (para cima = norte). Depois de mexer nele, o olhar fica preso por <b>6 s</b> antes de o movimento virar o boneco de novo.</li>
+</ul>
+
+<h2>O que conta como distância</h2>
+<p>A distância da sessão sobe a cada leitura do GPS, mas só quando <b>todas</b> estas condições valem:</p>
+<ul>
+<li>você não está na tela de ação nem na tela de confirmação antes dela ("Andar com esta tela ou com a tela de ação aberta não conta distância");</li>
+<li>o jogo não te marcou como veículo (veja abaixo);</li>
+<li>a precisão do GPS é de <b>30 m ou melhor</b>;</li>
+<li>a velocidade estimada é maior que <b>0,4 m/s</b>;</li>
+<li>o salto entre duas leituras é menor que <b>80 m</b> (saltos maiores são erro do GPS e são ignorados).</li>
+</ul>
+<p>O GPS só manda posição nova quando você anda pelo menos 3 m. A velocidade é a média entre a anterior e a nova (a do GPS, quando ele informa; senão, a distância dos últimos segundos). Sem leitura nova por 3 s, a velocidade cai pela metade a cada meio segundo.</p>
+<p>A mesma distância também dá experiência de <b>Fôlego</b> (1 ponto a cada 40 m correndo acima de 3 m/s, 1 a cada 150 m andando) e de <b>Furtividade</b> (1 a cada 15 m andando abaixo de 1,8 m/s com zumbi acordado a menos de 40 m).</p>
+
+<h2>Velocidade e veículos</h2>
+<div class="tbl"><table>
+<tr><th>Faixa</th><th>Velocidade</th><th>Barulho no mapa</th></tr>
+<tr><td>Parado</td><td>até 0,3 m/s</td><td>0,01 (uns 1 m)</td></tr>
+<tr><td>Andando</td><td>até 2 m/s (~7 km/h)</td><td>0,05 (uns 6 m)</td></tr>
+<tr><td>Correndo</td><td>até 4 m/s (~14 km/h)</td><td>0,18 (uns 22 m)</td></tr>
+<tr><td>Correndo muito / bicicleta</td><td>até 7 m/s (~25 km/h)</td><td>0,30 (uns 36 m)</td></tr>
+<tr><td>Veículo</td><td>acima de 7 m/s</td><td>1,0 (120 m, o máximo)</td></tr>
+</table></div>
+<p>Acima de 7 m/s por <b>3 s seguidos</b>, o jogo te marca como veículo: aparece "Rápido demais! Barulho máximo, distância não conta.", o barulho vai ao máximo e nada do que você anda conta (nem distância, nem experiência). A marca sai assim que a velocidade cai abaixo de 7 m/s.</p>
+
+<h2>Parado</h2>
+<ul>
+<li>Parado (abaixo de 0,4 m/s) você descansa um pouco do cansaço enquanto a sessão corre.</li>
+<li>O barulho fica no mínimo (0,01).</li>
+<li>Algumas coisas exigem ficar parado: olhar de binóculo (até 0,8 m/s e sem sair 4 m do lugar), montar a barraca (1 minuto) e saquear (sair 20 m do ponto onde começou cancela; veja <a href="saque.html">Saque</a>).</li>
+<li>Sem sangramento, infecção e com fome e sede abaixo do nível 2, a vida sobe 1 ponto por minuto com a sessão aberta.</li>
+</ul>
+
+<h2>Pausa nas avenidas</h2>
+<p>Atravessar avenida olhando o celular é perigoso, então o jogo pausa a ameaça quando você está numa via grande. Vale para ruas do tipo primária, secundária e tronco (e os acessos delas), que o jogo trata como tendo 12 m de largura: se a rua mais perto está a até 8 m e você está a menos de 7 m do eixo dela (meia largura + 1 m), aparece a faixa <b>"Atravesse com atenção — ameaça pausada"</b>.</p>
+<p>Enquanto ela está na tela:</p>
+<ul>
+<li>os zumbis do mapa param completamente (não andam, não reparam em você, não perseguem);</li>
+<li>a tela de ação não começa sozinha.</li>
+</ul>
+<p>O botão de luta continua funcionando se você mesmo quiser abrir a tela de ação.</p>
+
+<h2>Sem internet</h2>
+<p>O jogo é online. Sem conexão a sessão fica em pausa: nada anda, nada conta e o GPS é ignorado até a conexão voltar.</p>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="visao.html">Visão</a> e <a href="barulho.html">Barulho</a>: como você vê e é ouvido no mapa.</li>
+<li><a href="tela-de-acao.html">Tela de ação</a>: quando a luta começa.</li>
+<li><a href="clima-e-hora.html">Clima e hora</a>.</li>
+</ul>

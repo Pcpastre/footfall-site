@@ -1,0 +1,139 @@
+<!-- titulo: Barulho | categoria: Mundo | resumo: Todas as fontes de barulho do jogo, com valores, e a conta do raio em que os zumbis te ouvem. -->
+<p>Os zumbis ouvem tão bem quanto enxergam. No mapa, tudo o que você faz tem um <b>nível de barulho</b> de 0 (silêncio) a 1 (máximo), e esse nível vira um raio em metros: quem está dentro do raio te ouve. Na <a href="tela-de-acao.html">tela de ação</a> o barulho é medido direto em metros. Esta página lista todas as fontes.</p>
+
+<h2>A conta do raio no mapa</h2>
+<p><b>Raio de audição = barulho × 120 m</b> (120 m é o barulho de um carro). Depois:</p>
+<div class="tbl"><table>
+<tr><th>Fator</th><th>Efeito no raio</th></tr>
+<tr><td>Chuva</td><td>×0,7</td></tr>
+<tr><td>Tempestade (o trovão abafa os passos)</td><td>×0,6</td></tr>
+</table></div>
+<p>Do lado do zumbi, o raio ainda muda:</p>
+<div class="tbl"><table>
+<tr><th>Zumbi</th><th>Raio que ele usa</th></tr>
+<tr><td>Acordado (errante, ou dormente que já despertou)</td><td>o raio inteiro</td></tr>
+<tr><td>Dormente ainda sem perceber nada</td><td>metade</td></tr>
+<tr><td>Caído deitado</td><td>30%</td></tr>
+<tr><td>Qualquer um, de madrugada (noite antes das 5 h)</td><td>×1,3</td></tr>
+</table></div>
+<p>O que acontece quando ele te ouve:</p>
+<ul>
+<li>a até <b>8 m</b>: ele já vem atrás de você na hora;</li>
+<li>a até <b>100 m</b> (ou se já estava indo atrás de outro som): ele acorda e vai até o ponto onde ouviu. Chegando lá (a 8 m), procura por <b>8 s</b> e, se for dormente ou caído, volta a "dormir".</li>
+</ul>
+<p>O nível de barulho não muda de uma vez: a cada meio segundo ele anda 60% do caminho quando sobe e só 15% quando desce. Correr um pouco deixa um "rastro" de barulho por alguns segundos depois que você para. O medidor no topo do mapa mostra o raio de agora.</p>
+
+<h2>Passos</h2>
+<div class="tbl"><table>
+<tr><th>Velocidade</th><th>Barulho</th><th>Raio (sem chuva)</th></tr>
+<tr><td>Parado (até 0,3 m/s)</td><td>0,01</td><td>1,2 m</td></tr>
+<tr><td>Andando (até 2 m/s)</td><td>0,05</td><td>6 m</td></tr>
+<tr><td>Correndo (até 4 m/s)</td><td>0,18</td><td>21,6 m</td></tr>
+<tr><td>Correndo muito ou de bicicleta (até 7 m/s)</td><td>0,30</td><td>36 m</td></tr>
+<tr><td>Veículo (acima de 7 m/s por 3 s)</td><td>1,0</td><td>120 m</td></tr>
+</table></div>
+<p>Andar normal (6 m) não atrai quem está a 10 m. Os passos são multiplicados por:</p>
+<div class="tbl"><table>
+<tr><th>Fonte</th><th>Multiplicador nos passos</th></tr>
+<tr><td>Traço Passos leves</td><td>-30%</td></tr>
+<tr><td>Traço Caçador</td><td>-15%</td></tr>
+<tr><td>Traço Desastrado</td><td>+30%</td></tr>
+<tr><td>Habilidade Furtividade</td><td>-4% por nível</td></tr>
+<tr><td><a href="item-tenis.html">Tênis de corrida</a> vestido</td><td>×0,8</td></tr>
+<tr><td><a href="item-calca_moletom.html">Calça de moletom</a> vestida</td><td>×0,92</td></tr>
+</table></div>
+<p>Os traços e a Furtividade somam entre si, e o multiplicador deles nunca fica abaixo de 0,3. Tênis e calça multiplicam por cima. No modo veículo nada disso vale: o barulho é sempre 1.</p>
+
+<h2>Carga</h2>
+<div class="tbl"><table>
+<tr><th>Fonte</th><th>Barulho a mais</th></tr>
+<tr><td>Carga pesada (bolsos ou mochila acima do limite)</td><td>+0,03 (uns 3,6 m)</td></tr>
+<tr><td><a href="item-mochila_cargueira.html">Mochila cargueira</a> vestida (ela chacoalha)</td><td>+0,015 (uns 1,8 m)</td></tr>
+</table></div>
+<p>Veja <a href="mochila-e-peso.html">Mochila e peso</a>.</p>
+
+<h2>Saquear no mapa</h2>
+<p>Com uma tela de saque aberta, o barulho é pelo menos <b>0,02</b> (2,4 m). Enquanto você vasculha um móvel, ele sobe para o barulho daquele móvel, de 0,02 a 0,25 (2,4 a 30 m). O traço Desastrado multiplica o barulho do móvel por 1,5. A tabela completa de móveis está em <a href="saque.html#moveis">Saque</a>. O jogo resume cada móvel como:</p>
+<ul>
+<li><b>silencioso</b>: abaixo de 0,10 (menos de 12 m);</li>
+<li><b>barulho médio</b>: de 0,10 a 0,17 (12 a 20 m);</li>
+<li><b>barulho alto</b>: 0,18 ou mais (21,6 m ou mais).</li>
+</ul>
+<p>Na tela de ação, terminar de vasculhar um móvel faz um barulho de <b>barulho do móvel × 120 m</b> em volta dele.</p>
+
+<h2>Tiros</h2>
+<h3>Dentro da tela de ação</h3>
+<div class="tbl"><table>
+<tr><th>Arma</th><th>Raio do tiro na cena</th></tr>
+<tr><td>Armas de fogo em geral</td><td>a cena inteira (todo zumbi desatento acorda)</td></tr>
+<tr><td><a href="item-carabina.html">Carabina .22</a></td><td>320 m (na prática, a cena toda: a arena tem 120 m)</td></tr>
+<tr><td>9 mm com <a href="item-silenciador.html">silenciador</a></td><td>30 m</td></tr>
+<tr><td><a href="item-arco.html">Arco</a> e <a href="item-besta.html">besta</a></td><td>5 m (e a flecha que acerta não faz barulho)</td></tr>
+</table></div>
+<p>Parede no meio corta pela metade o alcance de qualquer barulho da cena: quem está atrás de parede só acorda se estiver na metade mais perto do raio.</p>
+<h3>Depois da luta, no mapa</h3>
+<p>Quando a luta acaba, os tiros ecoam no mapa:</p>
+<ul>
+<li>qualquer tiro barulhento (sem silenciador, que não seja .22, incluindo os de escopeta): todo zumbi do mapa a até <b>150 m</b> do lugar da luta que não estava te perseguindo vai até lá;</li>
+<li>só tiros de .22: o mesmo, mas a até <b>52,5 m</b> (35% de 150);</li>
+<li>tiros com silenciador e flechas não contam.</li>
+</ul>
+<p>Veja <a href="armas-de-fogo.html">Armas de fogo</a>.</p>
+
+<h2>Corpo a corpo e luta</h2>
+<div class="tbl"><table>
+<tr><th>Fonte</th><th>Raio</th></tr>
+<tr><td>Acertar um zumbi (golpe ou tiro, menos abate furtivo e flecha)</td><td>4 m em volta dele</td></tr>
+<tr><td>Revistar um corpo na tela de ação</td><td>4 m</td></tr>
+<tr><td>Tirar algo do fundo da mochila na luta</td><td>10 m</td></tr>
+<tr><td>Zumbi batendo numa porta ou janela</td><td>8 m a cada pancada</td></tr>
+<tr><td>Porta derrubada por zumbi</td><td>18 m</td></tr>
+<tr><td>Janela quebrada por zumbi</td><td>25 m</td></tr>
+<tr><td>Arrombar uma porta trancada (você, com pé de cabra)</td><td>30 m</td></tr>
+<tr><td>Desmontar um móvel</td><td>30 m</td></tr>
+<tr><td>Correr na cena</td><td>desatentos a menos de 5 m (vezes o multiplicador de passos) te percebem</td></tr>
+</table></div>
+
+<h2>Arremessos</h2>
+<div class="tbl"><table>
+<tr><th>Item</th><th>No mapa (raio que atrai)</th><th>Na tela de ação</th></tr>
+<tr><td><a href="item-rojao.html">Rojão</a></td><td>120 m</td><td>atordoa quem está a 3 m e atrai a 60 m</td></tr>
+<tr><td><a href="item-despertador.html">Despertador</a></td><td>60 m</td><td>toca 30 s; a cada 2 s atrai a 35 m</td></tr>
+<tr><td><a href="item-garrafa.html">Garrafa vazia</a></td><td>30 m</td><td>atrai a 20 m</td></tr>
+<tr><td><a href="item-pedra.html">Pedra</a></td><td>18 m</td><td>atrai a 12 m</td></tr>
+<tr><td><a href="item-molotov.html">Coquetel molotov</a></td><td>não se joga no mapa</td><td>barulho de 25 m onde cai</td></tr>
+</table></div>
+<p>Detalhes em <a href="arremesso.html">Arremesso</a>.</p>
+
+<h2>Fogo, luz e motores</h2>
+<div class="tbl"><table>
+<tr><th>Fonte</th><th>Efeito</th></tr>
+<tr><td>Fogueira acesa na base, à noite</td><td>todo zumbi a até 100 m da base vai até lá (o fogão a lenha não chama)</td></tr>
+<tr><td>Lanterna ligada à noite</td><td>a cada 3 s, zumbis a até 50 m com linha livre até você vêm ver</td></tr>
+<tr><td>Gerador do subsolo do <a href="bunkers.html">bunker</a></td><td>barulho de 80 m e todos os zumbis do andar vão até o gerador</td></tr>
+<tr><td>Arrombar a porta-cofre do bunker com <a href="item-pe_de_cabra.html">pé de cabra</a></td><td>45 m a cada 4 s durante os 60 s, e 60 m quando ela cede</td></tr>
+<tr><td>Abrir a porta-cofre com o <a href="item-cartao_bunker.html">cartão</a></td><td>sem barulho</td></tr>
+<tr><td>Painel das celas do bunker</td><td>30 m</td></tr>
+</table></div>
+
+<h2>Alarmes e eventos</h2>
+<div class="tbl"><table>
+<tr><th>Fonte</th><th>Efeito</th></tr>
+<tr><td>Alarme aleatório (a cada 8 a 15 min, num lugar a 300-600 m)</td><td>todo zumbi a até 300 m do alarme vai para lá por 3 min</td></tr>
+<tr><td>Caixa de suprimentos caindo (helicóptero)</td><td>zumbis a até 300 m da caixa vão para lá; o barulho dura 20 min</td></tr>
+</table></div>
+<p>Veja <a href="horda-e-alarmes.html">Horda e alarmes</a>.</p>
+
+<h2>Traços que mudam o que você ouve</h2>
+<ul>
+<li><b>Audição aguçada</b>: o aviso de zumbi se aproximando fora da visão (gemido do lado de onde ele vem) chega a 70 m em vez de 40 m. Na tela de ação, as marcas de som em volta do boneco vão a 10 m em vez de 6 m.</li>
+<li><b>Ouvido ruim</b>: sem aviso de gemido no mapa; na tela de ação, as marcas de som só a 3 m.</li>
+<li>Capacete fechado (<a href="item-capacete.html">moto</a>, <a href="item-capacete_policial.html">choque</a>): as marcas de som da tela de ação ficam 30% menores.</li>
+</ul>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="visao.html">Visão</a></li>
+<li><a href="zumbis.html">Zumbis</a></li>
+<li><a href="clima-e-hora.html">Clima e hora</a></li>
+</ul>

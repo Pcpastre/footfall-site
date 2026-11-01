@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Zumbis — Wiki do Footfall</title>
+<meta name="description" content="Como os zumbis vivem no mapa (dormentes, errantes e caídos), como te notam e perseguem, onde nascem, quando voltam e todos os tipos de uniforme com seus multiplicadores.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html">Mochila e peso</a></li><li><a href="morte.html">Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html">Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html">Cansaço e sono</a></li><li><a href="feridas.html">Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html">Temperatura</a></li><li><a href="tratamento.html">Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html">Visão</a></li><li><a href="zumbis.html" aria-current=page>Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html">Corpos</a></li><li><a href="saque.html">Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html">Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html">Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Mundo</p>
+<h1>Zumbis</h1>
+<p class="sub">Como os zumbis vivem no mapa (dormentes, errantes e caídos), como te notam e perseguem, onde nascem, quando voltam e todos os tipos de uniforme com seus multiplicadores.</p>
+<p>A cidade tem uma <b>população fixa</b> de zumbis: cada pedaço de rua tem os seus, sempre os mesmos durante o mês, e todo celular vê os mesmos zumbis no mesmo lugar. Alguns morreram de uniforme (policiais, médicos, militares...) e são mais duros e levam o saque do ofício.</p>
+
+<h2>Os três estados no mapa</h2>
+<div class="tbl"><table>
+<tr><th>Estado</th><th>Chance</th><th>Comportamento</th></tr>
+<tr><td><b>Dormente</b></td><td>65%</td><td>parado, olhos meio fechados. Vê e ouve pela metade até perceber algo. À noite, 3 em cada 8 levantam e vagam (6 em 8 na lua cheia)</td></tr>
+<tr><td><b>Errante</b></td><td>25%</td><td>anda um pouco pelas ruas perto de casa e para um tempo (de dia descansa 20 a 60 s, de noite 8 a 25 s, na tempestade metade disso); cada caminhada dura 5 a 15 s</td></tr>
+<tr><td><b>Caído</b></td><td>10%</td><td>deitado como um corpo. Não vê; só ouve colado (30% do raio). Só levanta quando ouve algo ou quando a luta começa perto dele</td></tr>
+</table></div>
+<p>Os zumbis andam pelas ruas (o grafo de ruas do mapa). Perto de você, perseguindo, saem da rua e vêm direto (a menos de 20 m, ou quando estão no mesmo trecho de rua). Vagando, nenhum se afasta mais de <b>40 m</b> do ponto onde mora; se passar, volta.</p>
+<div class="tbl"><table>
+<tr><th>Velocidade no mapa</th><th>m/s</th></tr>
+<tr><td>Perseguindo</td><td>1,2 (um pouco mais lento que você andando)</td></tr>
+<tr><td>Indo atrás de um som</td><td>1,08</td></tr>
+<tr><td>Atraído por alarme</td><td>0,96</td></tr>
+<tr><td>Vagando</td><td>0,4</td></tr>
+</table></div>
+<p>De madrugada todos andam 15% mais rápido. No mapa a velocidade não muda com o uniforme; só na tela de ação.</p>
+
+<h2>Como te notam</h2>
+<ul>
+<li><b>Visão</b>: cone de 100° para onde ele olha, 15 m de dia, 8 m de noite, 30 m se a sua lanterna está ligada. Ele vai reparando: 1 s colado, 2 s no limite. Detalhes em <a href="visao.html">Visão</a>.</li>
+<li><b>Audição</b>: raio = barulho × 120 m. A até 8 m ele já vem; a até 100 m vai até o som. Detalhes em <a href="barulho.html">Barulho</a>.</li>
+<li><b>Vizinhos</b>: quem te <b>viu</b> faz todos a até 20 m dele começarem a perseguir também.</li>
+<li>Só os zumbis a até 150 m de você "pensam" (andam e reparam). Os a mais de 750 m saem da memória e lembram onde ficaram.</li>
+</ul>
+
+<h2>Perseguição e volta</h2>
+<ol class="steps">
+<li>Perseguindo, ele vai pelo caminho de rua mais curto até você.</li>
+<li>Se chegar a 25 m, a <a href="tela-de-acao.html">tela de ação</a> começa.</li>
+<li>Se ficar <b>15 s</b> sem te ver nem ouvir (e a mais de 20 m), perde o rastro e vai até o último lugar onde te viu.</li>
+<li>Lá, procura por <b>8 s</b>, olhando em volta. Depois o dormente e o caído voltam a dormir; o errante volta a vagar.</li>
+<li>A mais de <b>450 m</b> de você ele desiste na hora.</li>
+<li>Dentro da base fechada, todos desistem e esquecem o som.</li>
+</ol>
+<p>Zumbi que foi atraído para outro lugar (por alarme, som ou perseguição) passa a morar onde ficou.</p>
+
+<h2>Onde nascem e quantos</h2>
+<p>A cidade é dividida em células de uns 100 × 100 m. Cada célula tem:</p>
+<div class="tbl"><table>
+<tr><th>Célula</th><th>Zumbis</th></tr>
+<tr><td>Com lugares de saque</td><td>10 + 4 por "guarda" dos lugares + 0 a 4, entre 5 e 30. Cada lugar conta pelo número de guardas do tipo dele (Saúde, Mercado e Polícia 3; Restaurante, Construção, Posto, Bombeiros e Escola 2; os outros 1)</td></tr>
+<tr><td>Sem lugares, em área verde</td><td>5</td></tr>
+<tr><td>Sem lugares, rua comum</td><td>6 a 10</td></tr>
+</table></div>
+<p>Dentro da célula, os pontos de rua a até 40 m de um lugar de saque têm 4× mais chance de receber um zumbi. Ninguém nasce dentro da sua base. A população é gerada a até 500 m de você.</p>
+<p>Por dentro dos lugares há outros zumbis, que dependem do tipo e do tamanho do lugar; esses voltam toda semana (veja <a href="saque.html">Saque</a>).</p>
+
+<h2>Quando voltam</h2>
+<ul>
+<li>Abatido no mapa, o zumbi não volta até o <b>mês</b> virar.</li>
+<li>No mês novo todos voltam ("Novo mês: os zumbis voltaram."), com a mesma distribuição para todo mundo.</li>
+<li>Zumbis de dentro dos lugares voltam toda semana; os de bunker voltam a cada visita.</li>
+</ul>
+
+<h2 id="classes">Tipos de uniforme</h2>
+<p>A vida de um zumbi na tela de ação é de 12 a 20, e a velocidade de 0,9 a 1,35, ambas multiplicadas pelo uniforme. Os multiplicadores de cabeça e tronco valem para o dano que ele recebe ali (capacete e colete).</p>
+<div class="tbl"><table>
+<tr><th>Tipo</th><th>Vida</th><th>Velocidade</th><th>Dano no tronco</th><th>Dano na cabeça</th><th>Preparo do ataque</th><th>Outros</th></tr>
+<tr><td><a href="zumbi-comum.html">Zumbi</a></td><td>×1</td><td>×1</td><td>×1</td><td>×1</td><td>×1</td><td>-</td></tr>
+<tr><td><a href="zumbi-policia.html">Policial</a></td><td>×1,3</td><td>×1</td><td>×0,5</td><td>×1</td><td>×1</td><td>-</td></tr>
+<tr><td><a href="zumbi-militar.html">Militar</a></td><td>×1,8</td><td>×0,95</td><td>×0,5</td><td>×0,6</td><td>×1</td><td>-</td></tr>
+<tr><td><a href="zumbi-medico.html">Médico</a></td><td>×1</td><td>×1,12</td><td>×1</td><td>×1</td><td>×1</td><td>-</td></tr>
+<tr><td><a href="zumbi-bombeiro.html">Bombeiro</a></td><td>×1,45</td><td>×0,95</td><td>×1</td><td>×0,7</td><td>×1</td><td>o fogo não pega</td></tr>
+<tr><td><a href="zumbi-obra.html">Peão de obra</a></td><td>×1,2</td><td>×1</td><td>×1</td><td>×0,6</td><td>×1</td><td>-</td></tr>
+<tr><td><a href="zumbi-presidiario.html">Presidiário</a></td><td>×0,8</td><td>×1,25</td><td>×1</td><td>×1</td><td>×0,8 (mais agressivo)</td><td>-</td></tr>
+<tr><td><a href="zumbi-mochileiro.html">Mochileiro</a></td><td>×1,1</td><td>×1</td><td>×1</td><td>×1</td><td>×1</td><td>mochila cheia</td></tr>
+<tr><td><a href="zumbi-seguranca.html">Segurança</a></td><td>×1,25</td><td>×1</td><td>×0,7</td><td>×1</td><td>×1</td><td>-</td></tr>
+<tr><td><a href="zumbi-mercado.html">Funcionário de mercado</a></td><td>×1,1</td><td>×1</td><td>×1</td><td>×1</td><td>×1</td><td>-</td></tr>
+<tr><td><a href="zumbi-chefe.html">Brutamontes</a></td><td>×6</td><td>×0,85</td><td>×0,6</td><td>×0,75</td><td>×1,25</td><td>investida, pancada que derruba, não agarra</td></tr>
+</table></div>
+
+<h3>Onde cada um aparece</h3>
+<p>O tipo de cada zumbi é sorteado de forma fixa (todo celular vê a mesma roupa):</p>
+<ul>
+<li><b>Perto do lugar do ofício</b> (lugar a até 50 m de onde ele mora): 25% de chance de ser um dos tipos daquele lugar.</li>
+<li><b>Na rua</b>: senão, 7% de chance de ser especial, com estes pesos: mochileiro 20%, militar 18%, policial 12%, médico 12%, peão de obra 10%, presidiário 8%, segurança 8%, bombeiro 6%, funcionário de mercado 6%.</li>
+<li>O resto é zumbi comum.</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Lugar</th><th>Tipos que aparecem perto (mesmo peso cada)</th></tr>
+<tr><td><a href="lugar-policia.html">Polícia</a></td><td>policial, policial, presidiário</td></tr>
+<tr><td><a href="lugar-saude.html">Saúde</a></td><td>médico</td></tr>
+<tr><td><a href="lugar-bombeiros.html">Bombeiros</a></td><td>bombeiro</td></tr>
+<tr><td><a href="lugar-construcao.html">Construção</a></td><td>peão de obra</td></tr>
+<tr><td><a href="lugar-mercado.html">Mercado</a></td><td>funcionário de mercado, funcionário de mercado, segurança</td></tr>
+<tr><td><a href="lugar-restaurante.html">Restaurante</a></td><td>funcionário de mercado</td></tr>
+<tr><td><a href="lugar-posto.html">Posto</a>, <a href="lugar-loja.html">Loja</a>, <a href="lugar-eletronicos.html">Eletrônicos</a>, <a href="lugar-roupas.html">Roupas</a></td><td>segurança</td></tr>
+<tr><td><a href="lugar-bunker.html">Bunker militar</a></td><td>militar</td></tr>
+</table></div>
+<p>Os zumbis de dentro de um lugar seguem a mesma regra com o tipo do próprio lugar. Outras fontes:</p>
+<ul>
+<li><b>Horda da semana</b>: 6% militares (os que tentaram conter), mais 7% de especiais da rua.</li>
+<li><b>Bunker</b>: 50% + 12% por andar de militares (no máximo 85%), mais o oficial e o Brutamontes. Veja <a href="bunkers.html">Bunkers</a>.</li>
+<li><b>Sinalizador de resgate</b>: fácil 8% policiais; médio 15% presidiários e 15% policiais; difícil 25% militares, 15% bombeiros e 10% presidiários, e o Brutamontes à frente da última onda. Veja <a href="horda-e-alarmes.html">Horda e alarmes</a>.</li>
+</ul>
+
+<h3>Saque e uniforme</h3>
+<p>Os especiais levam, além do bolso comum, o saque do ofício (cada página tem a tabela) e 10% de chance do <b>conjunto de roupa</b> do uniforme (o Brutamontes não tem). Veja <a href="corpos.html">Corpos</a>.</p>
+
+<h2>Ataques e ferimentos</h2>
+<p>Na tela de ação os zumbis arranham (4 a 7), agarram (40% das vezes, no máximo 2 ao mesmo tempo) e mordem (6 a 10). Rastejantes mordem pés e pernas (3 a 5). Tudo com preparo visível antes. Detalhes em <a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a>.</p>
+
+<h2>O Brutamontes</h2>
+<p>O <a href="zumbi-chefe.html">Brutamontes</a> é o chefe: 6 vezes a vida de um zumbi, pancada dobrada que derruba e uma investida em linha reta. Aparece à frente da última onda do <a href="item-sinalizador_dificil.html">sinalizador difícil</a> e na antessala do cofre dos <a href="bunkers.html">bunkers</a>.</p>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="visao.html">Visão</a> e <a href="barulho.html">Barulho</a></li>
+<li><a href="horda-e-alarmes.html">Horda e alarmes</a></li>
+<li><a href="corpos.html">Corpos</a></li>
+</ul>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

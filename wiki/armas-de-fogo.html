@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Armas de fogo — Wiki do Footfall</title>
+<meta name="description" content="Todas as armas de fogo, arcos e bestas com dano, alcance, carregador, recarga, chumbos, rajada, barulho e munição, e as regras de recarga, mira, tiro na cabeça, silenciador e flechas.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html">Mochila e peso</a></li><li><a href="morte.html">Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html">Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html">Cansaço e sono</a></li><li><a href="feridas.html">Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html">Temperatura</a></li><li><a href="tratamento.html">Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html">Visão</a></li><li><a href="zumbis.html">Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html">Corpos</a></li><li><a href="saque.html">Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html" aria-current=page>Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html">Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Combate</p>
+<h1>Armas de fogo</h1>
+<p class="sub">Todas as armas de fogo, arcos e bestas com dano, alcance, carregador, recarga, chumbos, rajada, barulho e munição, e as regras de recarga, mira, tiro na cabeça, silenciador e flechas.</p>
+<p>Armas de fogo matam de longe, mas fazem barulho: cada tiro acorda a cena inteira e, depois da luta, chama os zumbis do mapa a até 150 m. Arcos e bestas são a exceção silenciosa. Tudo aqui vale para a <a href="tela-de-acao.html">tela de ação</a>.</p>
+
+<h2>Tabela</h2>
+<p>Intervalo é o tempo mínimo entre dois tiros. Barulho é o raio do tiro dentro da cena ("toda a cena" = todo zumbi desatento acorda).</p>
+<div class="tbl"><table>
+<tr><th>Arma</th><th>Dano</th><th>Alcance (m)</th><th>Intervalo (s)</th><th>Carregador</th><th>Recarga (s)</th><th>Chumbos</th><th>Abertura</th><th>Rajada</th><th>Barulho</th><th>Munição</th><th>Peso (kg)</th><th>Onde vai</th></tr>
+<tr><td><a href="item-pistola.html">Pistola 9mm</a></td><td>14</td><td>20</td><td>0,35</td><td>12</td><td>1,6</td><td>1</td><td>6°</td><td>não</td><td>toda a cena</td><td><a href="item-municao.html">9 mm</a></td><td>0,9</td><td>cinto</td></tr>
+<tr><td><a href="item-revolver.html">Revólver .38</a></td><td>16</td><td>18</td><td>0,55</td><td>6</td><td>2,2</td><td>1</td><td>6°</td><td>não</td><td>toda a cena</td><td><a href="item-municao_38.html">.38</a></td><td>0,9</td><td>cinto</td></tr>
+<tr><td><a href="item-carabina.html">Carabina .22</a></td><td>9</td><td>30</td><td>0,30</td><td>10</td><td>1,8</td><td>1</td><td>4°</td><td>não</td><td>320 m</td><td><a href="item-municao_22.html">.22</a></td><td>2,2</td><td>costas</td></tr>
+<tr><td><a href="item-rifle.html">Rifle de caça .308</a></td><td>30</td><td>40</td><td>1,40</td><td>5</td><td>2,8</td><td>1</td><td>3°</td><td>não</td><td>toda a cena</td><td><a href="item-municao_308.html">.308</a></td><td>3,6</td><td>costas</td></tr>
+<tr><td><a href="item-submetralhadora.html">Submetralhadora 9mm</a></td><td>11</td><td>18</td><td>0,09</td><td>30</td><td>2,0</td><td>1</td><td>8°</td><td>3 por toque</td><td>toda a cena</td><td><a href="item-municao.html">9 mm</a></td><td>2,8</td><td>costas</td></tr>
+<tr><td><a href="item-fuzil.html">Fuzil 5,56</a></td><td>22</td><td>35</td><td>0,14</td><td>30</td><td>2,2</td><td>1</td><td>5°</td><td>3 por toque</td><td>toda a cena</td><td><a href="item-municao_556.html">5,56</a></td><td>3,4</td><td>costas</td></tr>
+<tr><td><a href="item-escopeta.html">Escopeta calibre 12</a></td><td>6 por chumbo</td><td>12</td><td>0,90</td><td>6</td><td>2,4</td><td>7</td><td>18°</td><td>não</td><td>toda a cena</td><td><a href="item-cartucho.html">cartucho 12</a></td><td>3,2</td><td>costas</td></tr>
+<tr><td><a href="item-escopeta_serrada.html">Escopeta serrada</a></td><td>7 por chumbo</td><td>8</td><td>0,80</td><td>2</td><td>1,6</td><td>8</td><td>30°</td><td>não</td><td>toda a cena</td><td><a href="item-cartucho.html">cartucho 12</a></td><td>2,2</td><td>cinto</td></tr>
+<tr><td><a href="item-arco.html">Arco improvisado</a></td><td>11</td><td>18</td><td>0,90</td><td>1</td><td>0,6</td><td>1</td><td>6°</td><td>não</td><td>5 m</td><td><a href="item-flecha.html">flecha</a></td><td>0,9</td><td>costas</td></tr>
+<tr><td><a href="item-besta.html">Besta</a></td><td>17</td><td>24</td><td>1,20</td><td>1</td><td>2,2</td><td>1</td><td>4°</td><td>não</td><td>5 m</td><td><a href="item-flecha.html">flecha</a></td><td>2,4</td><td>costas</td></tr>
+</table></div>
+<p>Todas são raras, menos o arco (incomum, feito na bancada com 1 tábua, 1 arame e 1 fita, Carpintaria 1). Armas de fogo não gastam durabilidade.</p>
+<h3>Munição</h3>
+<div class="tbl"><table>
+<tr><th>Munição</th><th>Peso por unidade</th><th>Raridade</th><th>Armas</th></tr>
+<tr><td><a href="item-municao.html">Munição 9mm</a></td><td>0,012 kg</td><td>incomum</td><td>pistola, submetralhadora</td></tr>
+<tr><td><a href="item-municao_38.html">Munição .38</a></td><td>0,012 kg</td><td>incomum</td><td>revólver</td></tr>
+<tr><td><a href="item-municao_22.html">Munição .22</a></td><td>0,004 kg</td><td>incomum</td><td>carabina</td></tr>
+<tr><td><a href="item-municao_308.html">Munição .308</a></td><td>0,025 kg</td><td>raro</td><td>rifle</td></tr>
+<tr><td><a href="item-municao_556.html">Munição 5,56</a></td><td>0,012 kg</td><td>raro</td><td>fuzil</td></tr>
+<tr><td><a href="item-cartucho.html">Cartucho calibre 12</a></td><td>0,015 kg</td><td>incomum</td><td>escopeta, escopeta serrada</td></tr>
+<tr><td><a href="item-flecha.html">Flecha</a></td><td>0,03 kg</td><td>comum</td><td>arco, besta</td></tr>
+</table></div>
+<p>A munição sempre vai para o bolso primeiro (veja <a href="mochila-e-peso.html">Mochila e peso</a>). Cada tiro de escopeta deixa um <a href="item-cartucho_vazio.html">cartucho vazio</a>: 4 vazios + 1 <a href="item-polvora.html">pólvora</a> + 2 pregos viram 4 cartuchos na bancada (Mecânica 1). A pólvora sai de um <a href="item-rojao.html">rojão</a>.</p>
+
+<h2>Recarga</h2>
+<ul>
+<li>A arma começa cada luta com o carregador cheio (se você tiver munição).</li>
+<li>Quando você dispara o carregador inteiro e ainda tem munição, a recarga começa sozinha ("recarregando...").</li>
+<li><b>Tempo de recarga</b> = recarga da arma × (1 - 0,05 × nível de Armas de fogo).</li>
+<li>Se a munição daquela arma está só no <b>fundo da mochila</b> (nenhuma no bolso), a recarga leva o <b>dobro</b> ("munição no fundo da mochila...").</li>
+<li>Trocar de arma cancela a recarga.</li>
+<li>Sem munição: "sem munição" (arco: "sem flechas"; escopeta: "sem cartucho").</li>
+</ul>
+
+<h2>Mira e dispersão</h2>
+<p>Cada tiro sai na direção em que você olha, com um desvio sorteado dentro da <b>dispersão</b> (em graus, para cada lado):</p>
+<p><b>Dispersão</b> = máx(1, abertura da arma - 0,5 × Armas de fogo) + 0,04 × pânico + 6 correndo + 2 mirando na cabeça + estresse/remédios - 1 agachado + 3 nos tiros seguintes de uma rajada. Nunca abaixo de 0,5°.</p>
+<ul>
+<li>Estresse muito alto: +2; betabloqueador: -1,5; cachaça: +2,5.</li>
+<li>O tiro para na primeira parede e acerta o primeiro zumbi na linha (não atravessa).</li>
+<li><b>Rajada</b> (submetralhadora e fuzil): um toque dispara 3 tiros seguidos na cadência da arma. No modo Automático a arma atira tiro a tiro.</li>
+<li>No modo Automático, o boneco só atira em zumbis que ele vê a até 14 m.</li>
+</ul>
+
+<h2>Dano do tiro</h2>
+<ol class="steps">
+<li>Dano da arma × 0,85 a 1,15 sorteado.</li>
+<li>Pânico forte: ×0,85; pânico extremo: ×0,75. Some com Armas de fogo 6 ou mais.</li>
+<li><b>Na cabeça</b>: ×2,5 × proteção de cabeça do zumbi ("NA CABEÇA!").</li>
+<li>Mirando nas pernas (zumbi em pé): ×0,6 e dano na perna (pode quebrar e ele rasteja; veja <a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a>).</li>
+<li>No corpo: × proteção de tronco do zumbi (colete).</li>
+</ol>
+<h3>Chance de tiro na cabeça</h3>
+<div class="tbl"><table>
+<tr><th>Mirando</th><th>Chance</th></tr>
+<tr><td>Na cabeça</td><td>40% + 4% por nível de Armas de fogo (+15% com rifle ou carabina)</td></tr>
+<tr><td>Corpo ou pernas</td><td>10% + 3% por nível de Armas de fogo (+7,5% com rifle ou carabina)</td></tr>
+<tr><td>Zumbi caído ou rastejando</td><td>sempre na cabeça (×2,5, sem a proteção do uniforme)</td></tr>
+</table></div>
+<p>Rifle e carabina vão no ombro e miram melhor.</p>
+
+<h2>Escopetas</h2>
+<p>Cada tiro solta os chumbos num leque do tamanho da abertura (18° na escopeta, 30° na serrada), mais um desvio do leque inteiro de máx(1, 4 - 0,4 × Armas de fogo) + 0,03 × pânico + 5 correndo + estresse/remédios graus.</p>
+<ul>
+<li>Cada chumbo acerta o primeiro zumbi na linha dele. Os chumbos que pegam o mesmo zumbi somam.</li>
+<li>Dano no zumbi = dano por chumbo × chumbos que pegaram × queda pela distância × 0,85 a 1,15.</li>
+<li>Queda: até 4 m, dano cheio; depois o dano é multiplicado por 1 - (distância - 4) ÷ alcance, nunca abaixo de 30%. Na escopeta (12 m), a 8 m sobra 67%; na serrada (8 m), a 6 m sobra 75%.</li>
+<li>Chance de cabeça: 6% por chumbo que pegou, ×1,6 no dano.</li>
+<li>Cinco chumbos ou mais no mesmo zumbi: "EM CHEIO!".</li>
+<li>O tiro de escopeta não leva em conta a proteção do uniforme.</li>
+<li>Pânico forte e extremo tiram dano do mesmo jeito que nas outras armas.</li>
+</ul>
+<p>Exemplo: escopeta, 7 chumbos colados num zumbi a 3 m: 6 × 7 = 42 de dano (antes do sorteio), o bastante para qualquer zumbi comum (12 a 20 de vida).</p>
+
+<h2>Silenciador</h2>
+<p>Com <a href="item-silenciador.html">silenciadores improvisados</a> na mochila, cada um abafa <b>6 tiros</b> de munição 9 mm. O tiro abafado só acorda quem está a até <b>30 m</b> na cena e não conta como barulho no mapa depois da luta. A cada 6 tiros abafados, um silenciador se desfaz ("O silenciador se desfez."). Ele se faz na bancada: 1 garrafa, 2 panos e 2 fitas (Mecânica).</p>
+
+<h2>Arcos, bestas e flechas</h2>
+<ul>
+<li>Barulho de só 5 m ao disparar, e a flecha que acerta não acorda o zumbi atingido nem os vizinhos.</li>
+<li>Carregador de 1: cada flecha é uma recarga (arco 0,6 s, besta 2,2 s).</li>
+<li>Depois da luta você recolhe <b>60%</b> das flechas atiradas, arredondado para baixo ("Recolheu N flecha(s).").</li>
+<li>Flechas: 1 tábua, 5 pregos e 1 fita fazem 5 na bancada (Carpintaria).</li>
+</ul>
+
+<h2>Barulho depois da luta</h2>
+<p>Qualquer tiro barulhento (sem silenciador, sem ser .22) chama todo zumbi do mapa a até <b>150 m</b> do lugar da luta. Só com .22, a até <b>52,5 m</b>. Veja <a href="barulho.html">Barulho</a>.</p>
+
+<h2>Lanterna na arma</h2>
+<p>A modificação "lanterna presa" (1 lanterna, 1 fita, 1 arame) aumenta a visão da tela de ação à noite em 35%.</p>
+
+<h2>Dicas</h2>
+<div class="tip"><b>Munição no bolso</b>Antes de uma luta planejada, confira se a munição está nos bolsos: no fundo da mochila a recarga dobra.</div>
+<div class="tip warn"><b>Cada tiro é um convite</b>Um tiro sem silenciador acorda todos os zumbis desatentos da cena. Use a arma de fogo quando a luta já estiver perdida no silêncio.</div>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li>
+<li><a href="controles.html">Controles</a></li>
+<li><a href="barulho.html">Barulho</a></li>
+</ul>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

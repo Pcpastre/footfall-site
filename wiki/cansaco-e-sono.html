@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Cansaço e sono — Wiki do Footfall</title>
+<meta name="description" content="Como o cansaço sobe e desce, seus níveis e efeitos, e quanto você descansa e se cura dormindo na base, na cama, no saco de dormir ou na rua.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html">Mochila e peso</a></li><li><a href="morte.html">Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html">Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html" aria-current=page>Cansaço e sono</a></li><li><a href="feridas.html">Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html">Temperatura</a></li><li><a href="tratamento.html">Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html">Visão</a></li><li><a href="zumbis.html">Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html">Corpos</a></li><li><a href="saque.html">Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html">Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html">Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Saúde</p>
+<h1>Cansaço e sono</h1>
+<p class="sub">Como o cansaço sobe e desce, seus níveis e efeitos, e quanto você descansa e se cura dormindo na base, na cama, no saco de dormir ou na rua.</p>
+<p>O cansaço vai de 0 a 100% e aparece na barra <i>Cansaço</i> da aba <kbd>Saúde</kbd>. Ele sobe andando e correndo e só cai de verdade quando você para ou encerra a sessão. No Footfall, <b>dormir é encerrar a sessão</b>: o tempo com o app fechado é o tempo de sono, e onde você encerrou define quanto ele rende.</p>
+
+<h2>Como o cansaço sobe</h2>
+<div class="tbl"><table>
+<tr><th>Atividade</th><th>Cansaço</th></tr>
+<tr><td>Andar (até 3 m/s)</td><td>+1,5 por km</td></tr>
+<tr><td>Correr (acima de 3 m/s)</td><td>+9 por km (6 por km, e cada metro correndo vale 1,5)</td></tr>
+<tr><td><a href="item-ansiolitico.html">Ansiolítico</a></td><td>+10 (+25 se já estava sob efeito de outro)</td></tr>
+<tr><td><a href="item-morfina.html">Morfina</a></td><td>+15</td></tr>
+</table></div>
+<p>Em veículo (acima de uns 25 km/h por mais de 3 s) a distância não conta, então também não cansa.</p>
+
+<h2>Como o cansaço desce</h2>
+<div class="tbl"><table>
+<tr><th>Situação</th><th>Recuperação</th></tr>
+<tr><td>Parado (abaixo de 0,4 m/s) com a sessão ativa</td><td>−0,5 por minuto (−30 por hora)</td></tr>
+<tr><td><a href="item-cafe.html">Pó de café</a></td><td>−10 na hora</td></tr>
+<tr><td><a href="item-cafe_coado.html">Café coado</a></td><td>−25 na hora</td></tr>
+<tr><td>App fechado</td><td>Depende de onde encerrou (tabela abaixo)</td></tr>
+</table></div>
+
+<h2>Níveis</h2>
+<div class="tbl"><table>
+<tr><th>Cansaço</th><th>Moodle</th><th>Efeito</th></tr>
+<tr><td>0 a 39</td><td>—</td><td>Fôlego máximo −0,4 por ponto</td></tr>
+<tr><td>40 a 69</td><td>Cansado</td><td>Fôlego máximo −16 a −27,6</td></tr>
+<tr><td>70 a 89</td><td>Exausto</td><td>Fôlego máximo −28 a −35,6; golpes 10% mais lentos na luta</td></tr>
+<tr><td>90 a 100</td><td>No limite</td><td>Fôlego máximo −36 a −40; golpes 20% mais lentos na luta</td></tr>
+</table></div>
+<p>O fôlego máximo começa em 100 e perde 0,4 por ponto de cansaço antes dos multiplicadores dos traços. O resultado nunca fica abaixo de 30.</p>
+
+<h2>Dormir</h2>
+<p>Para dormir, abra o menu e toque em <kbd>Dormir (encerrar aqui)</kbd> quando estiver num lugar seguro, ou <kbd>Encerrar sessão</kbd> fora dele. O jogo confirma: <i>Dormir na base?</i> / <i>Dormir no posto?</i> com o botão <kbd>Dormir</kbd>, ou <i>Encerrar aqui?</i> com o botão <kbd>Encerrar</kbd>. Encerrar em qualquer lugar mantém tudo o que você carrega.</p>
+<p>São lugares seguros para dormir: dentro da sua base, num posto avançado seu ou na sua barraca montada.</p>
+
+<h3>Quanto rende</h3>
+<div class="tbl"><table>
+<tr><th>Onde encerrou</th><th>Cansaço por hora</th><th>Para zerar 100%</th><th>Vida por hora</th><th>Cabeça (horas contadas)</th></tr>
+<tr><td>Base, com cama</td><td>−18,75</td><td>5 h 20 min</td><td>+7,5</td><td>×1,5, com descanso de base</td></tr>
+<tr><td>Base sem cama, posto avançado ou barraca</td><td>−12,5</td><td>8 h</td><td>+5</td><td>×1, com descanso de base</td></tr>
+<tr><td>Fora deles, com <a href="item-saco_dormir.html">Saco de dormir</a> na mochila</td><td>−8</td><td>12 h 30 min</td><td>+2,5</td><td>×1,2, descanso comum</td></tr>
+<tr><td>Fora deles, no chão</td><td>−4</td><td>25 h</td><td>0</td><td>×1, descanso comum</td></tr>
+</table></div>
+<ul>
+<li><b>Cama</b>: precisa ser um <a href="moveis-da-base.html">móvel</a> <i>Cama</i> colocado na sua <a href="base.html">base</a>, e você precisa ter encerrado dentro da base (não num posto). Rende 50% mais que a base sem cama.</li>
+<li><b>Saco de dormir</b>: basta estar na mochila ao encerrar fora da base, do posto e da barraca. "Você dormiu no saco de dormir: descansa melhor que no chão, mas não como numa cama."</li>
+<li><b>Vida</b>: só volta dormindo se você não estiver sangrando nem com infecção zumbi.</li>
+<li><b>Cabeça</b>: dormindo com descanso de base o estresse cai 30 e a tristeza 5 por hora; com descanso comum, 10 e 1 por hora. A coluna mostra o multiplicador das horas: na cama cada hora conta como 1,5. Veja <a href="mente.html">Mente</a>.</li>
+</ul>
+<p>As mensagens ao encerrar dizem onde você dormiu: "Você dormiu na base. Descanso completo enquanto o app estiver fechado.", "Você dormiu na barraca. ...", "Você dormiu no posto avançado. ...".</p>
+
+<h3>O que acontece enquanto você dorme</h3>
+<ul>
+<li>Fome e sede continuam caindo, mas param em 11% (veja <a href="necessidades.html">Necessidades</a>).</li>
+<li>Feridas tratadas continuam cicatrizando em tempo real (sem o bônus da maca).</li>
+<li>Sangramento não tira vida com o app fechado, e feridas não pegam infecção comum.</li>
+<li>A infecção zumbi continua correndo e pode te matar antes de você voltar.</li>
+<li>A sua base pode sofrer <a href="ataque-noturno.html">ataques noturnos</a>.</li>
+</ul>
+
+<div class="tip"><b>Quanto dormir</b>Na base sem cama, 8 h fechado zeram o cansaço e devolvem 40 de vida. Com cama, pouco mais de 5 h já zeram o cansaço, e 8 h devolvem 60 de vida. A cama (receita "Cama", 3 tábuas, 2 pregos e 4 trapos, na bancada) é um dos primeiros móveis que valem a pena.</div>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,2136 @@
+{
+  "professions": [
+    {
+      "id": "desempregado",
+      "name": "Desempregado(a)",
+      "points": 8,
+      "note": "Sem bônus; mais pontos para traços",
+      "skills": {},
+      "freeTraits": [],
+      "name_en": "Unemployed",
+      "name_es": "Desempleado(a)",
+      "note_en": "No bonus; more points for traits",
+      "note_es": "Sin bonificación; más puntos para rasgos",
+      "free_trait_names": [],
+      "free_traits_value": 0,
+      "skill_names": {},
+      "code_refs": []
+    },
+    {
+      "id": "policial",
+      "name": "Policial",
+      "points": -4,
+      "skills": {
+        "armas_fogo": 3,
+        "armas_brancas": 1
+      },
+      "freeTraits": [],
+      "note": "",
+      "name_en": "Police officer",
+      "name_es": "Policía",
+      "free_trait_names": [],
+      "free_traits_value": 0,
+      "skill_names": {
+        "armas_fogo": "Armas de fogo",
+        "armas_brancas": "Armas brancas"
+      },
+      "code_refs": []
+    },
+    {
+      "id": "bombeiro",
+      "name": "Bombeiro(a)",
+      "points": 0,
+      "skills": {
+        "armas_brancas": 1
+      },
+      "freeTraits": [
+        "em_forma",
+        "robusto"
+      ],
+      "note": "",
+      "name_en": "Firefighter",
+      "name_es": "Bombero(a)",
+      "free_trait_names": [
+        "Em forma",
+        "Robusto"
+      ],
+      "free_traits_value": 8,
+      "skill_names": {
+        "armas_brancas": "Armas brancas"
+      },
+      "code_refs": []
+    },
+    {
+      "id": "enfermeiro",
+      "name": "Enfermeiro(a)",
+      "points": 2,
+      "skills": {
+        "primeiros_socorros": 2
+      },
+      "freeTraits": [
+        "passos_leves"
+      ],
+      "note": "",
+      "name_en": "Nurse",
+      "name_es": "Enfermero(a)",
+      "free_trait_names": [
+        "Passos leves"
+      ],
+      "free_traits_value": 4,
+      "skill_names": {
+        "primeiros_socorros": "Primeiros socorros"
+      },
+      "code_refs": []
+    },
+    {
+      "id": "medico",
+      "name": "Médico(a)",
+      "points": -2,
+      "skills": {
+        "primeiros_socorros": 4
+      },
+      "freeTraits": [],
+      "note": "",
+      "name_en": "Doctor",
+      "name_es": "Médico(a)",
+      "free_trait_names": [],
+      "free_traits_value": 0,
+      "skill_names": {
+        "primeiros_socorros": "Primeiros socorros"
+      },
+      "code_refs": []
+    },
+    {
+      "id": "marceneiro",
+      "name": "Marceneiro(a)",
+      "points": 2,
+      "skills": {
+        "carpintaria": 3
+      },
+      "freeTraits": [],
+      "note": "",
+      "name_en": "Carpenter",
+      "name_es": "Carpintero(a)",
+      "free_trait_names": [],
+      "free_traits_value": 0,
+      "skill_names": {
+        "carpintaria": "Carpintaria"
+      },
+      "code_refs": []
+    },
+    {
+      "id": "mecanico",
+      "name": "Mecânico(a)",
+      "points": 2,
+      "skills": {
+        "mecanica": 3
+      },
+      "freeTraits": [],
+      "note": "",
+      "name_en": "Mechanic",
+      "name_es": "Mecánico(a)",
+      "free_trait_names": [],
+      "free_traits_value": 0,
+      "skill_names": {
+        "mecanica": "Mecânica"
+      },
+      "code_refs": []
+    },
+    {
+      "id": "agricultor",
+      "name": "Agricultor(a)",
+      "points": 2,
+      "skills": {
+        "agricultura": 3
+      },
+      "freeTraits": [],
+      "note": "",
+      "name_en": "Farmer",
+      "name_es": "Agricultor(a)",
+      "free_trait_names": [],
+      "free_traits_value": 0,
+      "skill_names": {
+        "agricultura": "Agricultura"
+      },
+      "code_refs": []
+    },
+    {
+      "id": "militar",
+      "name": "Militar veterano(a)",
+      "points": -8,
+      "skills": {
+        "armas_fogo": 2,
+        "armas_brancas": 1
+      },
+      "freeTraits": [
+        "desensibilizado"
+      ],
+      "note": "",
+      "name_en": "Military veteran",
+      "name_es": "Militar veterano(a)",
+      "free_trait_names": [
+        "Desensibilizado"
+      ],
+      "free_traits_value": 8,
+      "skill_names": {
+        "armas_fogo": "Armas de fogo",
+        "armas_brancas": "Armas brancas"
+      },
+      "code_refs": []
+    },
+    {
+      "id": "personal",
+      "name": "Personal trainer",
+      "points": -6,
+      "freeTraits": [
+        "atletico"
+      ],
+      "skills": {},
+      "note": "",
+      "name_en": "Personal trainer",
+      "name_es": "Entrenador personal",
+      "free_trait_names": [
+        "Atlético"
+      ],
+      "free_traits_value": 8,
+      "skill_names": {},
+      "code_refs": []
+    },
+    {
+      "id": "seguranca",
+      "name": "Segurança noturno(a)",
+      "points": 2,
+      "skills": {
+        "armas_brancas": 1
+      },
+      "freeTraits": [
+        "visao_noturna"
+      ],
+      "note": "",
+      "name_en": "Night watchman",
+      "name_es": "Vigilante nocturno(a)",
+      "free_trait_names": [
+        "Visão noturna"
+      ],
+      "free_traits_value": 2,
+      "skill_names": {
+        "armas_brancas": "Armas brancas"
+      },
+      "code_refs": []
+    },
+    {
+      "id": "entregador",
+      "name": "Entregador(a)",
+      "points": 2,
+      "freeTraits": [
+        "andarilho"
+      ],
+      "note": "Conhece a cidade: começa com o bairro no mapa",
+      "skills": {},
+      "name_en": "Delivery driver",
+      "name_es": "Repartidor(a)",
+      "note_en": "Knows the city: starts with the neighborhood on the map",
+      "note_es": "Conoce la ciudad: empieza con el barrio en el mapa",
+      "free_trait_names": [
+        "Andarilho"
+      ],
+      "free_traits_value": 5,
+      "skill_names": {},
+      "code_refs": [
+        "game/session_controller.dart:3768: _revealOnStart = professionId == 'entregador';"
+      ]
+    },
+    {
+      "id": "cozinheiro_p",
+      "name": "Cozinheiro(a)",
+      "points": 2,
+      "freeTraits": [
+        "cozinheiro"
+      ],
+      "skills": {},
+      "note": "",
+      "name_en": "Cook",
+      "name_es": "Cocinero(a)",
+      "free_trait_names": [
+        "Cozinheiro de mão cheia"
+      ],
+      "free_traits_value": 3,
+      "skill_names": {},
+      "code_refs": []
+    },
+    {
+      "id": "arrombador",
+      "name": "Arrombador(a)",
+      "points": -2,
+      "freeTraits": [
+        "passos_leves"
+      ],
+      "note": "Saqueia mais rápido",
+      "skills": {},
+      "name_en": "Burglar",
+      "name_es": "Ladrón(a)",
+      "note_en": "Loots faster",
+      "note_es": "Saquea más rápido",
+      "free_trait_names": [
+        "Passos leves"
+      ],
+      "free_traits_value": 4,
+      "skill_names": {},
+      "code_refs": [
+        "game/character.dart:316: double get lootSpeedMult => professionId == 'arrombador' ? 1.5 : 1.0;"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "atletico",
+      "name": "Atlético",
+      "cost": 8,
+      "effect": "+40% fôlego máximo",
+      "conflicts": [
+        "em_forma",
+        "fora_de_forma",
+        "sedentario"
+      ],
+      "name_en": "Athletic",
+      "name_es": "Atlético",
+      "effect_en": "+40% max stamina",
+      "effect_es": "+40% de aliento máximo",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "staminaMult",
+          "op": "add",
+          "value": 0.4
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Em forma",
+        "Fora de forma",
+        "Sedentário"
+      ],
+      "granted_by_professions": [
+        "personal"
+      ]
+    },
+    {
+      "id": "em_forma",
+      "name": "Em forma",
+      "cost": 4,
+      "effect": "+20% fôlego máximo",
+      "conflicts": [
+        "atletico",
+        "fora_de_forma",
+        "sedentario"
+      ],
+      "name_en": "Fit",
+      "name_es": "En forma",
+      "effect_en": "+20% max stamina",
+      "effect_es": "+20% de aliento máximo",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "staminaMult",
+          "op": "add",
+          "value": 0.2
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Atlético",
+        "Fora de forma",
+        "Sedentário"
+      ],
+      "granted_by_professions": [
+        "bombeiro"
+      ]
+    },
+    {
+      "id": "forte",
+      "name": "Forte",
+      "cost": 8,
+      "effect": "+30% dano corpo a corpo, +20% limite de peso",
+      "conflicts": [
+        "robusto",
+        "fraco",
+        "franzino"
+      ],
+      "name_en": "Strong",
+      "name_es": "Fuerte",
+      "effect_en": "+30% melee damage, +20% weight limit",
+      "effect_es": "+30% de daño cuerpo a cuerpo, +20% de límite de peso",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "meleeDamageMult",
+          "op": "add",
+          "value": 0.3
+        },
+        {
+          "stat": "capacityMult",
+          "op": "add",
+          "value": 0.2
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Robusto",
+        "Fraco",
+        "Franzino"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "robusto",
+      "name": "Robusto",
+      "cost": 4,
+      "effect": "+15% dano corpo a corpo",
+      "conflicts": [
+        "forte",
+        "fraco",
+        "franzino"
+      ],
+      "name_en": "Sturdy",
+      "name_es": "Robusto",
+      "effect_en": "+15% melee damage",
+      "effect_es": "+15% de daño cuerpo a cuerpo",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "meleeDamageMult",
+          "op": "add",
+          "value": 0.15
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Forte",
+        "Fraco",
+        "Franzino"
+      ],
+      "granted_by_professions": [
+        "bombeiro"
+      ]
+    },
+    {
+      "id": "passos_leves",
+      "name": "Passos leves",
+      "cost": 4,
+      "effect": "-30% barulho ao andar e correr",
+      "conflicts": [
+        "desastrado"
+      ],
+      "name_en": "Light-footed",
+      "name_es": "Pasos ligeros",
+      "effect_en": "-30% noise when walking and running",
+      "effect_es": "-30% de ruido al caminar y correr",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "noiseMult",
+          "op": "add",
+          "value": -0.3
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Desastrado"
+      ],
+      "granted_by_professions": [
+        "enfermeiro",
+        "arrombador"
+      ]
+    },
+    {
+      "id": "olhos_de_aguia",
+      "name": "Olhos de águia",
+      "cost": 4,
+      "effect": "+30% alcance da visão",
+      "conflicts": [
+        "miope"
+      ],
+      "name_en": "Eagle eyes",
+      "name_es": "Ojos de águila",
+      "effect_en": "+30% vision range",
+      "effect_es": "+30% de alcance de visión",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "viewMult",
+          "op": "set",
+          "value": 1.3
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:9278: fovDeg: ((character?.has('olhos_de_aguia') ?? false) ? 180 : 160) - (_closedHelmet ? 20 : 0),"
+      ],
+      "conflict_names": [
+        "Míope"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "visao_noturna",
+      "name": "Visão noturna",
+      "cost": 2,
+      "effect": "Sem perda de visão à noite",
+      "conflicts": [],
+      "name_en": "Night vision",
+      "name_es": "Visión nocturna",
+      "effect_en": "No vision loss at night",
+      "effect_es": "Sin pérdida de visión de noche",
+      "positive": true,
+      "effects": [],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:2806: final nightEyes = character?.has('visao_noturna') ?? false;",
+        "game/session_controller.dart:9394: final nv = ch?.has('visao_noturna') ?? false;"
+      ],
+      "conflict_names": [],
+      "granted_by_professions": [
+        "seguranca"
+      ]
+    },
+    {
+      "id": "audicao_agucada",
+      "name": "Audição aguçada",
+      "cost": 4,
+      "effect": "Aviso de zumbis se aproximando fora da visão",
+      "conflicts": [
+        "ouvido_ruim"
+      ],
+      "name_en": "Keen hearing",
+      "name_es": "Oído agudo",
+      "effect_en": "Warning of zombies approaching out of sight",
+      "effect_es": "Aviso de zombis acercándose fuera de la vista",
+      "positive": true,
+      "effects": [],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:9280: hearRadius: ((character?.has('audicao_agucada') ?? false)",
+        "game/session_controller.dart:11685: final hear = (ch?.has('audicao_agucada') ?? false) ? 70.0 : 40.0;"
+      ],
+      "conflict_names": [
+        "Ouvido ruim"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "reflexos_rapidos",
+      "name": "Reflexos rápidos",
+      "cost": 6,
+      "effect": "+15% janela de crítico; +10% cadência no automático",
+      "conflicts": [
+        "reflexos_lentos"
+      ],
+      "name_en": "Fast reflexes",
+      "name_es": "Reflejos rápidos",
+      "effect_en": "+15% critical window; +10% full-auto fire rate",
+      "effect_es": "+15% de ventana de crítico; +10% de cadencia en automático",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "critWindowBonus",
+          "op": "set",
+          "value": 0.15
+        },
+        {
+          "stat": "autoCadenceMult",
+          "op": "set",
+          "value": 0.9
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:9249: reflexMult: (character?.has('reflexos_rapidos') ?? false)"
+      ],
+      "conflict_names": [
+        "Reflexos lentos"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "pele_grossa",
+      "name": "Pele grossa",
+      "cost": 6,
+      "effect": "-30% chance de golpe virar ferimento",
+      "conflicts": [
+        "pele_fina"
+      ],
+      "name_en": "Thick skin",
+      "name_es": "Piel gruesa",
+      "effect_en": "-30% chance a hit becomes a wound",
+      "effect_es": "-30% de probabilidad de que un golpe se vuelva herida",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "woundChanceMult",
+          "op": "set",
+          "value": 0.7
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Pele fina"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "cura_rapida",
+      "name": "Cura rápida",
+      "cost": 4,
+      "effect": "Ferimentos curam 30% mais rápido",
+      "conflicts": [
+        "cura_lenta"
+      ],
+      "name_en": "Fast healer",
+      "name_es": "Curación rápida",
+      "effect_en": "Wounds heal 30% faster",
+      "effect_es": "Las heridas sanan 30% más rápido",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "healTimeMult",
+          "op": "set",
+          "value": 0.7
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Cura lenta"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "imunidade_forte",
+      "name": "Imunidade forte",
+      "cost": 4,
+      "effect": "-30% chance de mordida infeccionar",
+      "conflicts": [
+        "imunidade_fraca"
+      ],
+      "name_en": "Strong immunity",
+      "name_es": "Inmunidad fuerte",
+      "effect_en": "-30% chance a bite gets infected",
+      "effect_es": "-30% de probabilidad de que una mordida se infecte",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "infectChance",
+          "op": "set",
+          "value": 0.6
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:5663: final m = ch == null ? 1.0 : (ch.has('imunidade_forte') ? 0.5 : (ch.has('imunidade_fraca') ? 1.6 : 1.0));"
+      ],
+      "conflict_names": [
+        "Imunidade fraca"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "organizado",
+      "name": "Organizado",
+      "cost": 6,
+      "effect": "+30% capacidade da mochila",
+      "conflicts": [
+        "desorganizado"
+      ],
+      "name_en": "Organized",
+      "name_es": "Organizado",
+      "effect_en": "+30% backpack capacity",
+      "effect_es": "+30% de capacidad de la mochila",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "capacityMult",
+          "op": "add",
+          "value": 0.3
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Desorganizado"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "sortudo",
+      "name": "Sortudo",
+      "cost": 4,
+      "effect": "+10% chance de loot raro",
+      "conflicts": [
+        "azarado"
+      ],
+      "name_en": "Lucky",
+      "name_es": "Afortunado",
+      "effect_en": "+10% rare loot chance",
+      "effect_es": "+10% de probabilidad de botín raro",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "rareMult",
+          "op": "set",
+          "value": 1.1
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:9254: luck: (character?.has('sortudo') ?? false)"
+      ],
+      "conflict_names": [
+        "Azarado"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "come_pouco",
+      "name": "Come pouco",
+      "cost": 3,
+      "effect": "Fome 25% mais lenta",
+      "conflicts": [
+        "comilao"
+      ],
+      "name_en": "Light eater",
+      "name_es": "Come poco",
+      "effect_en": "Hunger 25% slower",
+      "effect_es": "Hambre 25% más lenta",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "hungerMult",
+          "op": "set",
+          "value": 0.75
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Comilão"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "bebe_pouco",
+      "name": "Bebe pouco",
+      "cost": 3,
+      "effect": "Sede 25% mais lenta",
+      "conflicts": [
+        "sede_alta"
+      ],
+      "name_en": "Low thirst",
+      "name_es": "Poca sed",
+      "effect_en": "Thirst 25% slower",
+      "effect_es": "Sed 25% más lenta",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "thirstMult",
+          "op": "set",
+          "value": 0.75
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Sede alta"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "corajoso",
+      "name": "Corajoso",
+      "cost": 4,
+      "effect": "Pânico cresce 70% mais devagar",
+      "conflicts": [
+        "covarde",
+        "desensibilizado"
+      ],
+      "name_en": "Brave",
+      "name_es": "Valiente",
+      "effect_en": "Panic builds 70% slower",
+      "effect_es": "El pánico crece 70% más despacio",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "panicMult",
+          "op": "set",
+          "value": 0.3
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Covarde",
+        "Desensibilizado"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "adrenalina",
+      "name": "Viciado em adrenalina",
+      "cost": 4,
+      "effect": "Na luta, +10% velocidade em pânico forte e +25% no extremo",
+      "conflicts": [],
+      "name_en": "Adrenaline junkie",
+      "name_es": "Adicto a la adrenalina",
+      "effect_en": "In a fight, +10% speed in strong panic and +25% in extreme",
+      "effect_es": "En la pelea, +10% de velocidad con pánico fuerte y +25% en el extremo",
+      "positive": true,
+      "effects": [],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:9230: adrenaline: character?.has('adrenalina') ?? false,"
+      ],
+      "conflict_names": [],
+      "granted_by_professions": []
+    },
+    {
+      "id": "desensibilizado",
+      "name": "Desensibilizado",
+      "cost": 8,
+      "effect": "Imune a pânico",
+      "conflicts": [
+        "corajoso",
+        "covarde",
+        "hemofobico"
+      ],
+      "name_en": "Desensitized",
+      "name_es": "Insensibilizado",
+      "effect_en": "Immune to panic",
+      "effect_es": "Inmune al pánico",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "panicMult",
+          "op": "set",
+          "value": 0.0
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:5727: if (ws.isNotEmpty && !(character?.has('desensibilizado') ?? false)) {",
+        "game/session_controller.dart:7694: final numb = ch?.has('desensibilizado') ?? false;",
+        "game/session_controller.dart:9434: if (ch == null || w == null || ch.has('desensibilizado')) return 0;"
+      ],
+      "conflict_names": [
+        "Corajoso",
+        "Covarde",
+        "Hemofóbico"
+      ],
+      "granted_by_professions": [
+        "militar"
+      ]
+    },
+    {
+      "id": "aprende_rapido",
+      "name": "Aprende rápido",
+      "cost": 6,
+      "effect": "+30% XP em todas as habilidades",
+      "conflicts": [
+        "aprende_devagar"
+      ],
+      "name_en": "Fast learner",
+      "name_es": "Aprende rápido",
+      "effect_en": "+30% XP in all skills",
+      "effect_es": "+30% de XP en todas las habilidades",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "xpMult",
+          "op": "set",
+          "value": 1.3
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Aprende devagar"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "faz_tudo",
+      "name": "Faz-tudo",
+      "cost": 6,
+      "effect": "+1 Carpintaria e +1 Mecânica",
+      "conflicts": [],
+      "name_en": "Handyman",
+      "name_es": "Manitas",
+      "effect_en": "+1 Carpentry and +1 Mechanics",
+      "effect_es": "+1 Carpintería y +1 Mecánica",
+      "positive": true,
+      "effects": [],
+      "skill_bonus": [
+        "carpintaria",
+        "mecanica"
+      ],
+      "code_refs": [],
+      "conflict_names": [],
+      "granted_by_professions": []
+    },
+    {
+      "id": "socorrista",
+      "name": "Socorrista",
+      "cost": 2,
+      "effect": "+1 Primeiros socorros",
+      "conflicts": [
+        "hemofobico"
+      ],
+      "name_en": "First responder",
+      "name_es": "Socorrista",
+      "effect_en": "+1 First aid",
+      "effect_es": "+1 Primeros auxilios",
+      "positive": true,
+      "effects": [],
+      "skill_bonus": [
+        "primeiros_socorros"
+      ],
+      "code_refs": [],
+      "conflict_names": [
+        "Hemofóbico"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "jogador_beisebol",
+      "name": "Jogador de beisebol",
+      "cost": 4,
+      "effect": "+1 Armas brancas; +15% dano com tacos",
+      "conflicts": [],
+      "name_en": "Baseball player",
+      "name_es": "Jugador de béisbol",
+      "effect_en": "+1 Melee weapons; +15% damage with bats",
+      "effect_es": "+1 Armas blancas; +15% de daño con bates",
+      "positive": true,
+      "effects": [],
+      "skill_bonus": [
+        "armas_brancas"
+      ],
+      "code_refs": [
+        "game/session_controller.dart:9321: if (ch.has('jogador_beisebol') && weaponId.startsWith('taco')) m *= 1.15;"
+      ],
+      "conflict_names": [],
+      "granted_by_professions": []
+    },
+    {
+      "id": "cacador",
+      "name": "Caçador",
+      "cost": 6,
+      "effect": "+1 Armas de fogo; -15% barulho ao andar",
+      "conflicts": [],
+      "name_en": "Hunter",
+      "name_es": "Cazador",
+      "effect_en": "+1 Firearms; -15% walking noise",
+      "effect_es": "+1 Armas de fuego; -15% de ruido al caminar",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "noiseMult",
+          "op": "add",
+          "value": -0.15
+        }
+      ],
+      "skill_bonus": [
+        "armas_fogo"
+      ],
+      "code_refs": [],
+      "conflict_names": [],
+      "granted_by_professions": []
+    },
+    {
+      "id": "jardineiro",
+      "name": "Jardineiro",
+      "cost": 3,
+      "effect": "+1 Agricultura",
+      "conflicts": [],
+      "name_en": "Gardener",
+      "name_es": "Jardinero",
+      "effect_en": "+1 Farming",
+      "effect_es": null,
+      "positive": true,
+      "effects": [],
+      "skill_bonus": [
+        "agricultura"
+      ],
+      "code_refs": [],
+      "conflict_names": [],
+      "granted_by_professions": []
+    },
+    {
+      "id": "cozinheiro",
+      "name": "Cozinheiro de mão cheia",
+      "cost": 3,
+      "effect": "Comida rende 25% mais",
+      "conflicts": [],
+      "name_en": "Skilled cook",
+      "name_es": "Gran cocinero",
+      "effect_en": "Food goes 25% further",
+      "effect_es": "La comida rinde 25% más",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "foodYieldMult",
+          "op": "set",
+          "value": 1.25
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [],
+      "granted_by_professions": [
+        "cozinheiro_p"
+      ]
+    },
+    {
+      "id": "lider",
+      "name": "Líder",
+      "cost": 4,
+      "effect": "No grupo, o bônus de XP do seu papel vale o dobro (+50%)",
+      "conflicts": [],
+      "name_en": "Leader",
+      "name_es": "Líder",
+      "effect_en": "In a group, your role's XP bonus is doubled (+50%)",
+      "effect_es": "En el grupo, la bonificación de XP de tu rol vale el doble (+50%)",
+      "positive": true,
+      "effects": [],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:3860: final roleMult = role ? (ch.has('lider') ? 1.5 : 1.25) : 1.0; // Lider: o papel no grupo rende o dobro"
+      ],
+      "conflict_names": [],
+      "granted_by_professions": []
+    },
+    {
+      "id": "andarilho",
+      "name": "Andarilho",
+      "cost": 5,
+      "effect": "+10% na distância que conta para o loot",
+      "conflicts": [
+        "caseiro"
+      ],
+      "name_en": "Wanderer",
+      "name_es": "Errante",
+      "effect_en": "+10% to distance counted for loot",
+      "effect_es": "+10% en la distancia que cuenta para el botín",
+      "positive": true,
+      "effects": [
+        {
+          "stat": "distanceMult",
+          "op": "set",
+          "value": 1.1
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Caseiro"
+      ],
+      "granted_by_professions": [
+        "entregador"
+      ]
+    },
+    {
+      "id": "fora_de_forma",
+      "name": "Fora de forma",
+      "cost": -4,
+      "effect": "-20% fôlego máximo",
+      "conflicts": [
+        "atletico",
+        "em_forma",
+        "sedentario"
+      ],
+      "name_en": "Out of shape",
+      "name_es": "Fuera de forma",
+      "effect_en": "-20% max stamina",
+      "effect_es": "-20% de aliento máximo",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "staminaMult",
+          "op": "add",
+          "value": -0.2
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Atlético",
+        "Em forma",
+        "Sedentário"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "sedentario",
+      "name": "Sedentário",
+      "cost": -8,
+      "effect": "-40% fôlego máximo",
+      "conflicts": [
+        "atletico",
+        "em_forma",
+        "fora_de_forma"
+      ],
+      "name_en": "Sedentary",
+      "name_es": "Sedentario",
+      "effect_en": "-40% max stamina",
+      "effect_es": "-40% de aliento máximo",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "staminaMult",
+          "op": "add",
+          "value": -0.4
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Atlético",
+        "Em forma",
+        "Fora de forma"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "fraco",
+      "name": "Fraco",
+      "cost": -8,
+      "effect": "-30% dano corpo a corpo, -20% limite de peso",
+      "conflicts": [
+        "forte",
+        "robusto",
+        "franzino"
+      ],
+      "name_en": "Weak",
+      "name_es": "Débil",
+      "effect_en": "-30% melee damage, -20% weight limit",
+      "effect_es": "-30% de daño cuerpo a cuerpo, -20% de límite de peso",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "meleeDamageMult",
+          "op": "add",
+          "value": -0.3
+        },
+        {
+          "stat": "capacityMult",
+          "op": "add",
+          "value": -0.2
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Forte",
+        "Robusto",
+        "Franzino"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "franzino",
+      "name": "Franzino",
+      "cost": -4,
+      "effect": "-15% dano corpo a corpo",
+      "conflicts": [
+        "forte",
+        "robusto",
+        "fraco"
+      ],
+      "name_en": "Scrawny",
+      "name_es": "Enclenque",
+      "effect_en": "-15% melee damage",
+      "effect_es": "-15% de daño cuerpo a cuerpo",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "meleeDamageMult",
+          "op": "add",
+          "value": -0.15
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Forte",
+        "Robusto",
+        "Fraco"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "desastrado",
+      "name": "Desastrado",
+      "cost": -2,
+      "effect": "+30% barulho; saquear faz mais barulho",
+      "conflicts": [
+        "passos_leves"
+      ],
+      "name_en": "Clumsy",
+      "name_es": "Torpe",
+      "effect_en": "+30% noise; looting is louder",
+      "effect_es": "+30% de ruido; saquear hace más ruido",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "noiseMult",
+          "op": "add",
+          "value": 0.3
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:11456: n = max(n, base * ((ch?.has('desastrado') ?? false) ? 1.5 : 1.0));"
+      ],
+      "conflict_names": [
+        "Passos leves"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "miope",
+      "name": "Míope",
+      "cost": -2,
+      "effect": "-30% alcance da visão",
+      "conflicts": [
+        "olhos_de_aguia"
+      ],
+      "name_en": "Nearsighted",
+      "name_es": "Miope",
+      "effect_en": "-30% vision range",
+      "effect_es": "-30% de alcance de visión",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "viewMult",
+          "op": "set",
+          "value": 0.7
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:9279: fadeSeconds: (character?.has('miope') ?? false) ? 1.6 : 0.8,",
+        "game/session_controller.dart:9403: notes.add(ch!.has('miope') ? 'Míope: vê só até ${view.round()} m' : 'Olhos de águia: vê até ${view.round()} m');"
+      ],
+      "conflict_names": [
+        "Olhos de águia"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "ouvido_ruim",
+      "name": "Ouvido ruim",
+      "cost": -4,
+      "effect": "Sem aviso de zumbis fora da visão",
+      "conflicts": [
+        "audicao_agucada"
+      ],
+      "name_en": "Bad hearing",
+      "name_es": "Mal oído",
+      "effect_en": "No alert for zombies out of sight",
+      "effect_es": "Sin aviso de zombis fuera de la vista",
+      "positive": false,
+      "effects": [],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:9282: : (character?.has('ouvido_ruim') ?? false)",
+        "game/session_controller.dart:11684: if (ch?.has('ouvido_ruim') ?? false) return;"
+      ],
+      "conflict_names": [
+        "Audição aguçada"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "reflexos_lentos",
+      "name": "Reflexos lentos",
+      "cost": -4,
+      "effect": "-15% janela de crítico; -10% cadência",
+      "conflicts": [
+        "reflexos_rapidos"
+      ],
+      "name_en": "Slow reflexes",
+      "name_es": "Reflejos lentos",
+      "effect_en": "-15% critical window; -10% fire rate",
+      "effect_es": "-15% de ventana de crítico; -10% de cadencia",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "critWindowBonus",
+          "op": "set",
+          "value": -0.15
+        },
+        {
+          "stat": "autoCadenceMult",
+          "op": "set",
+          "value": 1.1
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:9251: : (character?.has('reflexos_lentos') ?? false)"
+      ],
+      "conflict_names": [
+        "Reflexos rápidos"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "pele_fina",
+      "name": "Pele fina",
+      "cost": -6,
+      "effect": "+30% chance de golpe virar ferimento",
+      "conflicts": [
+        "pele_grossa"
+      ],
+      "name_en": "Thin skin",
+      "name_es": "Piel fina",
+      "effect_en": "+30% chance a hit becomes a wound",
+      "effect_es": "+30% de probabilidad de que un golpe se vuelva herida",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "woundChanceMult",
+          "op": "set",
+          "value": 1.3
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Pele grossa"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "cura_lenta",
+      "name": "Cura lenta",
+      "cost": -3,
+      "effect": "Ferimentos curam 30% mais devagar",
+      "conflicts": [
+        "cura_rapida"
+      ],
+      "name_en": "Slow healer",
+      "name_es": "Curación lenta",
+      "effect_en": "Wounds heal 30% slower",
+      "effect_es": "Las heridas sanan 30% más lento",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "healTimeMult",
+          "op": "set",
+          "value": 1.3
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Cura rápida"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "imunidade_fraca",
+      "name": "Imunidade fraca",
+      "cost": -4,
+      "effect": "+30% chance de infeccionar (até laceração)",
+      "conflicts": [
+        "imunidade_forte"
+      ],
+      "name_en": "Weak immunity",
+      "name_es": "Inmunidad débil",
+      "effect_en": "+30% chance of infection (up to laceration)",
+      "effect_es": "+30% de probabilidad de infección (hasta laceración)",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "infectChance",
+          "op": "set",
+          "value": 1.0
+        },
+        {
+          "stat": "infectChance",
+          "op": "set",
+          "value": 0.15
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:5663: final m = ch == null ? 1.0 : (ch.has('imunidade_forte') ? 0.5 : (ch.has('imunidade_fraca') ? 1.6 : 1.0));"
+      ],
+      "conflict_names": [
+        "Imunidade forte"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "desorganizado",
+      "name": "Desorganizado",
+      "cost": -4,
+      "effect": "-30% capacidade da mochila",
+      "conflicts": [
+        "organizado"
+      ],
+      "name_en": "Disorganized",
+      "name_es": "Desorganizado",
+      "effect_en": "-30% backpack capacity",
+      "effect_es": "-30% de capacidad de la mochila",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "capacityMult",
+          "op": "add",
+          "value": -0.3
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Organizado"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "azarado",
+      "name": "Azarado",
+      "cost": -4,
+      "effect": "-10% chance de loot raro",
+      "conflicts": [
+        "sortudo"
+      ],
+      "name_en": "Unlucky",
+      "name_es": "Desafortunado",
+      "effect_en": "-10% rare loot chance",
+      "effect_es": "-10% de probabilidad de botín raro",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "rareMult",
+          "op": "set",
+          "value": 0.9
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:9256: : (character?.has('azarado') ?? false)"
+      ],
+      "conflict_names": [
+        "Sortudo"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "comilao",
+      "name": "Comilão",
+      "cost": -3,
+      "effect": "Fome 25% mais rápida",
+      "conflicts": [
+        "come_pouco"
+      ],
+      "name_en": "Big eater",
+      "name_es": "Glotón",
+      "effect_en": "Hunger 25% faster",
+      "effect_es": "Hambre 25% más rápida",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "hungerMult",
+          "op": "set",
+          "value": 1.25
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Come pouco"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "sede_alta",
+      "name": "Sede alta",
+      "cost": -3,
+      "effect": "Sede 25% mais rápida",
+      "conflicts": [
+        "bebe_pouco"
+      ],
+      "name_en": "High thirst",
+      "name_es": "Sed alta",
+      "effect_en": "Thirst 25% faster",
+      "effect_es": "Sed 25% más rápida",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "thirstMult",
+          "op": "set",
+          "value": 1.25
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Bebe pouco"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "covarde",
+      "name": "Covarde",
+      "cost": -2,
+      "effect": "Pânico cresce 2× mais rápido",
+      "conflicts": [
+        "corajoso",
+        "desensibilizado"
+      ],
+      "name_en": "Cowardly",
+      "name_es": "Cobarde",
+      "effect_en": "Panic builds 2× faster",
+      "effect_es": "El pánico crece 2× más rápido",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "panicMult",
+          "op": "set",
+          "value": 2.0
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Corajoso",
+        "Desensibilizado"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "claustrofobico",
+      "name": "Claustrofóbico",
+      "cost": -4,
+      "effect": "Pânico perto de paredes e becos",
+      "conflicts": [
+        "agorafobico",
+        "desensibilizado"
+      ],
+      "name_en": "Claustrophobic",
+      "name_es": "Claustrofóbico",
+      "effect_en": "Panic near walls and alleys",
+      "effect_es": "Pánico cerca de paredes y callejones",
+      "positive": false,
+      "effects": [],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:9435: if (ch.has('claustrofobico') && w.walls.polysNear(p, 15).length >= 4) return 35;"
+      ],
+      "conflict_names": [
+        "Agorafóbico",
+        "Desensibilizado"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "agorafobico",
+      "name": "Agorafóbico",
+      "cost": -4,
+      "effect": "Pânico em avenidas e áreas abertas",
+      "conflicts": [
+        "claustrofobico",
+        "desensibilizado"
+      ],
+      "name_en": "Agoraphobic",
+      "name_es": "Agorafóbico",
+      "effect_en": "Panic on avenues and open areas",
+      "effect_es": "Pánico en avenidas y áreas abiertas",
+      "positive": false,
+      "effects": [],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:9436: if (ch.has('agorafobico')) {"
+      ],
+      "conflict_names": [
+        "Claustrofóbico",
+        "Desensibilizado"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "hemofobico",
+      "name": "Hemofóbico",
+      "cost": -3,
+      "effect": "Pânico ao fazer curativo",
+      "conflicts": [
+        "desensibilizado",
+        "socorrista"
+      ],
+      "name_en": "Hemophobic",
+      "name_es": "Hemofóbico",
+      "effect_en": "Panic when dressing wounds",
+      "effect_es": "Pánico al vendar heridas",
+      "positive": false,
+      "effects": [],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:5784: if (character?.has('hemofobico') ?? false) mapPanic = min(100.0, mapPanic + 10);",
+        "game/session_controller.dart:5901: if (ch?.has('hemofobico') ?? false) mapPanic = min(100.0, mapPanic + 35);",
+        "game/session_controller.dart:9259: hemophobic: character?.has('hemofobico') ?? false,"
+      ],
+      "conflict_names": [
+        "Desensibilizado",
+        "Socorrista"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "aprende_devagar",
+      "name": "Aprende devagar",
+      "cost": -6,
+      "effect": "-30% XP em todas as habilidades",
+      "conflicts": [
+        "aprende_rapido"
+      ],
+      "name_en": "Slow learner",
+      "name_es": "Aprende despacio",
+      "effect_en": "-30% XP in all skills",
+      "effect_es": "-30% de XP en todas las habilidades",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "xpMult",
+          "op": "set",
+          "value": 0.7
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Aprende rápido"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "asmatico",
+      "name": "Asmático",
+      "cost": -5,
+      "effect": "Fôlego recupera 50% mais devagar",
+      "conflicts": [
+        "atletico"
+      ],
+      "name_en": "Asthmatic",
+      "name_es": "Asmático",
+      "effect_en": "Stamina recovers 50% slower",
+      "effect_es": "El aliento se recupera 50% más lento",
+      "positive": false,
+      "effects": [
+        {
+          "stat": "staminaRegenMult",
+          "op": "set",
+          "value": 0.5
+        }
+      ],
+      "skill_bonus": [],
+      "code_refs": [],
+      "conflict_names": [
+        "Atlético"
+      ],
+      "granted_by_professions": []
+    },
+    {
+      "id": "fumante",
+      "name": "Fumante",
+      "cost": -2,
+      "effect": "Precisa de cigarro a cada 4 h de jogo; sem ele, -10% fôlego",
+      "conflicts": [],
+      "name_en": "Smoker",
+      "name_es": "Fumador",
+      "effect_en": "Needs a cigarette every 4 h of play; without it, -10% stamina",
+      "effect_es": "Necesita un cigarrillo cada 4 h de juego; sin él, -10% de aliento",
+      "positive": false,
+      "effects": [],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:2790: if (ch == null || !ch.has('fumante')) return false;",
+        "game/session_controller.dart:5907: if (id == 'cigarros' && ch != null && ch.has('fumante')) {",
+        "screens/panels.dart:1599: (id == 'cigarros' && (c.character?.has('fumante') ?? false));"
+      ],
+      "conflict_names": [],
+      "granted_by_professions": []
+    },
+    {
+      "id": "caseiro",
+      "name": "Caseiro",
+      "cost": -4,
+      "effect": "A mais de 2 km da base, -20% fôlego máximo",
+      "conflicts": [
+        "andarilho"
+      ],
+      "name_en": "Homebody",
+      "name_es": "Hogareño",
+      "effect_en": "More than 2 km from base, -20% max stamina",
+      "effect_es": "A más de 2 km de la base, -20% de aliento máximo",
+      "positive": false,
+      "effects": [],
+      "skill_bonus": [],
+      "code_refs": [
+        "game/session_controller.dart:3178: if (ch.has('caseiro') && db != null && db > 2000) s *= 0.8;"
+      ],
+      "conflict_names": [
+        "Andarilho"
+      ],
+      "granted_by_professions": []
+    }
+  ],
+  "skills": [
+    {
+      "id": "armas_brancas",
+      "name": "Armas brancas",
+      "name_en": "Melee weapons",
+      "name_es": "Armas blancas",
+      "effects_per_level": [
+        {
+          "stat": "meleeDamageMult",
+          "per_level": 0.05
+        },
+        {
+          "stat": "critWindowBonus",
+          "per_level": 0.02
+        }
+      ],
+      "books": [
+        "livro_armas"
+      ],
+      "group_roles": [],
+      "starting_from_professions": {
+        "policial": 1,
+        "bombeiro": 1,
+        "militar": 1,
+        "seguranca": 1
+      },
+      "starting_from_traits": [
+        "jogador_beisebol"
+      ],
+      "xp_sources": [
+        {
+          "amount": "10.0 * guards.length",
+          "line": 10098,
+          "code": "if (won) _xp('armas_brancas', 10.0 * guards.length);"
+        }
+      ]
+    },
+    {
+      "id": "forca",
+      "name": "Força",
+      "name_en": "Strength",
+      "name_es": "Fuerza",
+      "effects_per_level": [
+        {
+          "stat": "meleeDamageMult",
+          "per_level": 0.03
+        },
+        {
+          "stat": "capacityBonusKg",
+          "per_level": 0.5
+        }
+      ],
+      "books": [],
+      "group_roles": [],
+      "starting_from_professions": {},
+      "starting_from_traits": [],
+      "xp_sources": [
+        {
+          "amount": "slain.length * 6.0 + r.shoves * 2.0",
+          "line": 7640,
+          "code": "_xp('forca', slain.length * 6.0 + r.shoves * 2.0);"
+        }
+      ]
+    },
+    {
+      "id": "folego",
+      "name": "Fôlego",
+      "name_en": "Stamina",
+      "name_es": "Aliento",
+      "effects_per_level": [
+        {
+          "stat": "staminaMult",
+          "per_level": 0.03
+        },
+        {
+          "stat": "staminaRegenMult",
+          "per_level": 0.05
+        }
+      ],
+      "books": [],
+      "group_roles": [
+        "batedor"
+      ],
+      "starting_from_professions": {},
+      "starting_from_traits": [],
+      "xp_sources": [
+        {
+          "amount": "r.hits * 1.0",
+          "line": 7641,
+          "code": "_xp('folego', r.hits * 1.0);"
+        },
+        {
+          "amount": "meters / (speed > 3 ? 40 : 150",
+          "line": 11644,
+          "code": "_xp('folego', meters / (speed > 3 ? 40 : 150));"
+        }
+      ]
+    },
+    {
+      "id": "furtividade",
+      "name": "Furtividade",
+      "name_en": "Stealth",
+      "name_es": "Sigilo",
+      "effects_per_level": [
+        {
+          "stat": "noiseMult",
+          "per_level": 0.04
+        }
+      ],
+      "books": [],
+      "group_roles": [
+        "batedor"
+      ],
+      "starting_from_professions": {},
+      "starting_from_traits": [],
+      "xp_sources": [
+        {
+          "amount": "3",
+          "line": 2007,
+          "code": "_xp('furtividade', 3);"
+        },
+        {
+          "amount": "meters / 15",
+          "line": 11647,
+          "code": "_xp('furtividade', meters / 15);"
+        }
+      ]
+    },
+    {
+      "id": "primeiros_socorros",
+      "name": "Primeiros socorros",
+      "name_en": "First aid",
+      "name_es": "Primeros auxilios",
+      "effects_per_level": [
+        {
+          "stat": "healTimeMult",
+          "per_level": 0.05
+        },
+        {
+          "stat": "healItemMult",
+          "per_level": 0.1
+        }
+      ],
+      "books": [],
+      "group_roles": [
+        "medico"
+      ],
+      "starting_from_professions": {
+        "enfermeiro": 2,
+        "medico": 4
+      },
+      "starting_from_traits": [
+        "socorrista"
+      ],
+      "xp_sources": [
+        {
+          "amount": "2",
+          "line": 5771,
+          "code": "_xp('primeiros_socorros', 2);"
+        },
+        {
+          "amount": "treatXp[t] ?? 5",
+          "line": 5783,
+          "code": "_xp('primeiros_socorros', treatXp[t] ?? 5);"
+        },
+        {
+          "amount": "15",
+          "line": 5900,
+          "code": "_xp('primeiros_socorros', 15);"
+        }
+      ]
+    },
+    {
+      "id": "carpintaria",
+      "name": "Carpintaria",
+      "name_en": "Carpentry",
+      "name_es": "Carpintería",
+      "effects_per_level": [],
+      "books": [
+        "livro_carpintaria"
+      ],
+      "group_roles": [
+        "construtor"
+      ],
+      "starting_from_professions": {
+        "marceneiro": 3
+      },
+      "starting_from_traits": [
+        "faz_tudo"
+      ],
+      "xp_sources": [
+        {
+          "amount": "6",
+          "line": 4006,
+          "code": "_xp('carpintaria', 6);"
+        },
+        {
+          "amount": "10",
+          "line": 4060,
+          "code": "_xp('carpintaria', 10);"
+        },
+        {
+          "amount": "8",
+          "line": 5290,
+          "code": "_xp('carpintaria', 8);"
+        },
+        {
+          "amount": "10",
+          "line": 6584,
+          "code": "_xp('carpintaria', 10);"
+        },
+        {
+          "amount": "5.0 * cost['tabuas']! + 5",
+          "line": 6757,
+          "code": "_xp('carpintaria', 5.0 * cost['tabuas']! + 5);"
+        },
+        {
+          "amount": "3.0 * plan.cost['tabuas']!",
+          "line": 6936,
+          "code": "if (plan.cost.isNotEmpty) _xp('carpintaria', 3.0 * plan.cost['tabuas']!);"
+        },
+        {
+          "amount": "8",
+          "line": 6993,
+          "code": "_xp('carpintaria', 8);"
+        },
+        {
+          "amount": "6",
+          "line": 7036,
+          "code": "_xp('carpintaria', 6);"
+        },
+        {
+          "amount": "8",
+          "line": 7055,
+          "code": "_xp('carpintaria', 8);"
+        }
+      ]
+    },
+    {
+      "id": "mecanica",
+      "name": "Mecânica",
+      "name_en": "Mechanics",
+      "name_es": "Mecánica",
+      "effects_per_level": [],
+      "books": [
+        "livro_mecanica"
+      ],
+      "group_roles": [
+        "construtor"
+      ],
+      "starting_from_professions": {
+        "mecanico": 3
+      },
+      "starting_from_traits": [
+        "faz_tudo"
+      ],
+      "xp_sources": []
+    },
+    {
+      "id": "agricultura",
+      "name": "Agricultura",
+      "name_en": "Farming",
+      "name_es": "Agricultura",
+      "effects_per_level": [],
+      "books": [
+        "livro_agricultura"
+      ],
+      "group_roles": [],
+      "starting_from_professions": {
+        "agricultor": 3
+      },
+      "starting_from_traits": [
+        "jardineiro"
+      ],
+      "xp_sources": [
+        {
+          "amount": "8",
+          "line": 4139,
+          "code": "_xp('agricultura', 8);"
+        },
+        {
+          "amount": "3",
+          "line": 4152,
+          "code": "_xp('agricultura', 3);"
+        },
+        {
+          "amount": "25",
+          "line": 4167,
+          "code": "_xp('agricultura', 25);"
+        }
+      ]
+    },
+    {
+      "id": "armas_fogo",
+      "name": "Armas de fogo",
+      "name_en": "Firearms",
+      "name_es": "Armas de fuego",
+      "effects_per_level": [],
+      "books": [
+        "livro_armas"
+      ],
+      "group_roles": [],
+      "starting_from_professions": {
+        "policial": 3,
+        "militar": 2
+      },
+      "starting_from_traits": [
+        "cacador"
+      ],
+      "xp_sources": []
+    },
+    {
+      "id": "costura",
+      "name": "Costura",
+      "name_en": "Tailoring",
+      "name_es": "Costura",
+      "effects_per_level": [],
+      "books": [
+        "livro_costura"
+      ],
+      "group_roles": [
+        "medico"
+      ],
+      "starting_from_professions": {},
+      "starting_from_traits": [],
+      "xp_sources": [
+        {
+          "amount": "5",
+          "line": 3159,
+          "code": "_xp('costura', 5);"
+        },
+        {
+          "amount": "6",
+          "line": 7962,
+          "code": "_xp('costura', 6);"
+        }
+      ]
+    }
+  ],
+  "skill_max": 10,
+  "xp_formula": "xpToNext(level) = 60 * (level + 1)",
+  "xp_to_next": [
+    60,
+    120,
+    180,
+    240,
+    300,
+    360,
+    420,
+    480,
+    540,
+    600
+  ],
+  "xp_cumulative": [
+    60,
+    180,
+    360,
+    600,
+    900,
+    1260,
+    1680,
+    2160,
+    2700,
+    3300
+  ],
+  "xp_multipliers": {
+    "traits": "double get xpMult => has('aprende_rapido')\n      ? 1.3\n      : has('aprende_devagar')\n          ? 0.7\n          : 1.0;",
+    "book": "+50% por 1 dia real na(s) habilidade(s) do livro",
+    "group_role": "+25% nas habilidades do papel (traço Líder: dobro)"
+  },
+  "book_skills": {
+    "livro_carpintaria": [
+      "carpintaria"
+    ],
+    "livro_mecanica": [
+      "mecanica"
+    ],
+    "livro_agricultura": [
+      "agricultura"
+    ],
+    "livro_armas": [
+      "armas_fogo",
+      "armas_brancas"
+    ],
+    "livro_costura": [
+      "costura"
+    ]
+  },
+  "group_roles": {
+    "medico": {
+      "name": "Médico",
+      "skills": [
+        "primeiros_socorros",
+        "costura"
+      ]
+    },
+    "construtor": {
+      "name": "Construtor",
+      "skills": [
+        "carpintaria",
+        "mecanica"
+      ]
+    },
+    "batedor": {
+      "name": "Batedor",
+      "skills": [
+        "furtividade",
+        "folego"
+      ]
+    }
+  },
+  "computed_stats": {
+    "xpMult": "double get xpMult => has('aprende_rapido')\n      ? 1.3\n      : has('aprende_devagar')\n          ? 0.7\n          : 1.0;",
+    "meleeDamageMult": "double get meleeDamageMult {\n    var m = 0.75;\n    if (has('forte')) m += 0.30;\n    if (has('robusto')) m += 0.15;\n    if (has('fraco')) m -= 0.30;\n    if (has('franzino')) m -= 0.15;\n    m += 0.05 * level('armas_brancas') + 0.03 * level('forca');\n    return m;\n  }",
+    "capacityMult": "double get capacityMult {\n    var m = 1.0;\n    if (has('forte')) m += 0.2;\n    if (has('fraco')) m -= 0.2;\n    if (has('organizado')) m += 0.3;\n    if (has('desorganizado')) m -= 0.3;\n    return m;\n  }",
+    "capacityBonusKg": "double get capacityBonusKg => 0.5 * level('forca');",
+    "staminaMult": "double get staminaMult {\n    var m = 1.0;\n    if (has('atletico')) m += 0.4;\n    if (has('em_forma')) m += 0.2;\n    if (has('fora_de_forma')) m -= 0.2;\n    if (has('sedentario')) m -= 0.4;\n    m += 0.03 * level('folego');\n    return m;\n  }",
+    "staminaRegenMult": "double get staminaRegenMult => (has('asmatico') ? 0.5 : 1.0) * (1 + 0.05 * level('folego'));",
+    "noiseMult": "double get noiseMult {\n    var m = 1.0;\n    if (has('passos_leves')) m -= 0.3;\n    if (has('desastrado')) m += 0.3;\n    if (has('cacador')) m -= 0.15;\n    m -= 0.04 * level('furtividade');\n    return max(0.3, m);\n  }",
+    "viewMult": "double get viewMult => has('olhos_de_aguia')\n      ? 1.3\n      : has('miope')\n          ? 0.7\n          : 1.0;",
+    "woundChanceMult": "double get woundChanceMult => has('pele_grossa')\n      ? 0.7\n      : has('pele_fina')\n          ? 1.3\n          : 1.0;",
+    "healTimeMult": "double get healTimeMult {\n    var m = has('cura_rapida')\n        ? 0.7\n        : has('cura_lenta')\n            ? 1.3\n            : 1.0;\n    m *= 1 - 0.05 * level('primeiros_socorros');\n    return m;\n  }",
+    "infectChance": "double infectChance(bool bite) {\n    if (bite) {\n      return has('imunidade_forte')\n          ? 0.6\n          : has('imunidade_fraca')\n              ? 1.0\n              : 0.85;\n    }\n    return has('imunidade_fraca') ? 0.15 : 0;\n  }",
+    "panicMult": "double get panicMult => has('desensibilizado')\n      ? 0.0\n      : has('corajoso')\n          ? 0.3\n          : has('covarde')\n              ? 2.0\n              : 1.0;",
+    "critWindowBonus": "double get critWindowBonus => (has('reflexos_rapidos')\n          ? 0.15\n          : has('reflexos_lentos')\n              ? -0.15\n              : 0.0) +\n      0.02 * level('armas_brancas');",
+    "autoCadenceMult": "double get autoCadenceMult => has('reflexos_rapidos')\n      ? 0.9\n      : has('reflexos_lentos')\n          ? 1.1\n          : 1.0;",
+    "rareMult": "double get rareMult => has('sortudo')\n      ? 1.1\n      : has('azarado')\n          ? 0.9\n          : 1.0;",
+    "distanceMult": "double get distanceMult => has('andarilho') ? 1.1 : 1.0;",
+    "hungerMult": "double get hungerMult => has('come_pouco')\n      ? 0.75\n      : has('comilao')\n          ? 1.25\n          : 1.0;",
+    "thirstMult": "double get thirstMult => has('bebe_pouco')\n      ? 0.75\n      : has('sede_alta')\n          ? 1.25\n          : 1.0;",
+    "foodYieldMult": "double get foodYieldMult => has('cozinheiro') ? 1.25 : 1.0;",
+    "healItemMult": "double get healItemMult => 1 + 0.1 * level('primeiros_socorros');",
+    "lootSpeedMult": "double get lootSpeedMult => professionId == 'arrombador' ? 1.5 : 1.0;"
+  },
+  "build_rules": {
+    "validate": "String? validateBuild(String professionId, Set<String> chosen) {\n  final p = professionById[professionId];\n  if (p == null) return 'Escolha uma profissão.';\n  final all = {...p.freeTraits, ...chosen};\n  for (final id in chosen) {\n    final t = traitById[id];\n    if (t == null) return 'Traço desconhecido.';\n    if (p.freeTraits.contains(id)) return '${t.name} já vem da profissão.';\n    for (final c in t.conflicts) {\n      if (all.contains(c)) return '${t.name} conflita com ${traitById[c]!.name}.';\n    }\n  }\n  if (pointsLeft(professionId, chosen) < 0) return 'Pontos insuficientes.';\n  return null;\n}",
+    "points_left": "int pointsLeft(String professionId, Set<String> chosen) {\n  final p = professionById[professionId];\n  if (p == null) return 0;\n  return p.points - chosen.fold(0, (s, id) => s + (traitById[id]?.cost ?? 0));\n}"
+  },
+  "_meta": {
+    "source": "/mnt/user-data/outputs/footfall",
+    "generator": "extract.py"
+  }
+}

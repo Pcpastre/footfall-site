@@ -1,0 +1,98 @@
+<!-- titulo: Tela de ação | categoria: Combate | resumo: Quando a tela de ação começa, a confirmação de lugar seguro, o raio da arena, o máximo de zumbis, os tempos de folga, onde não há luta e como sair. -->
+<p>A <b>tela de ação</b> é onde a luta acontece: uma cena vista de cima, montada com as ruas, prédios, carros e móveis reais em volta de você, e todos os zumbis do raio. Nela você anda com o analógico (não com o GPS), luta, vasculha lugares por dentro e revista corpos.</p>
+
+<h2>Quando ela começa</h2>
+<h3>Sozinha</h3>
+<p>Se um zumbi que está te <b>perseguindo</b> chega a <b>25 m</b> de você no mapa, a tela de ação abre sozinha. Isso não acontece:</p>
+<ul>
+<li>durante um tempo de folga (veja abaixo);</li>
+<li>dentro da base com as paredes de pé (base fechada);</li>
+<li>na pausa das avenidas ("Atravesse com atenção — ameaça pausada", veja <a href="sessao-e-mapa.html">Sessão e mapa</a>).</li>
+</ul>
+<h3>Pelo botão</h3>
+<p>O botão grande de luta do mapa abre a tela de ação na hora, em qualquer lugar. Quem não te viu começa <b>desatento</b>: dá para chegar por trás.</p>
+<h3>Outros caminhos</h3>
+<ul>
+<li><kbd>Entrar</kbd> num lugar pela tela de saque (veja <a href="saque.html">Saque</a>).</li>
+<li>Ir à base por um posto avançado ou pela barraca.</li>
+<li>O depósito do rádio e a arena de um ponto dominado também usam a tela de ação.</li>
+</ul>
+
+<h2>Confirmação: "ELES CHEGARAM"</h2>
+<p>Quando a luta começou sozinha, antes da cena aparece uma tela de aviso com o número de zumbis no raio: "Antes de lutar, pare num lugar seguro: na calçada, longe da rua, sem atravessar nada. A luta espera você." A luta não anda enquanto ela está aberta. Toque em <kbd>ESTOU PARADO E SEGURO · LUTAR</kbd> para começar.</p>
+<p>Com essa tela ou com a tela de ação aberta, andar de verdade <b>não conta distância</b> (nem para raros, nem para missões).</p>
+
+<h2>A arena</h2>
+<div class="tbl"><table>
+<tr><th>Regra</th><th>Valor</th></tr>
+<tr><td>Raio da cena</td><td>120 m em volta de onde você estava</td></tr>
+<tr><td>Zumbis que entram</td><td>todos os do mapa dentro dos 120 m, do mais perto ao mais longe, até <b>40</b></td></tr>
+<tr><td>Quem já te perseguia ou já tinha reparado em você pela metade</td><td>começa atento</td></tr>
+<tr><td>Caídos deitados no mapa</td><td>começam deitados (desatentos ficam no chão até perceber você)</td></tr>
+</table></div>
+<p>A cena começa com você olhando para onde olhava no mapa. Se o GPS te pôs dentro de um prédio, você começa na rua mais perto.</p>
+<p>No começo aparecem por alguns segundos as notas do que pesa nesta luta: fome, sede, cansaço, dor, fratura, doença, carga, noite, neblina, chuva, estresse, remédios.</p>
+<h3>Andar livre</h3>
+<p>A tela de ação comum, aberta na rua (pelo botão ou sozinha), é de <b>andar livre</b>:</p>
+<ul>
+<li>passando de 40 m do centro, a cena recomeça em volta de você: o terreno é refeito, entram os zumbis novos do raio (até completar 40 na cena) e saem os que ficaram longe;</li>
+<li>você só pisa onde já está no seu mapa explorado (o resto fica no escuro), na base e no quintal dela;</li>
+<li>chegar a até 3,5 m da porta de um lugar abre ele por dentro ali mesmo; sair de dentro e se afastar 6 m da porta fecha de novo;</li>
+<li>não há borda de fuga.</li>
+</ul>
+<p>Nas outras cenas (lugar aberto pelo <kbd>Entrar</kbd>, base pelo posto) há uma <b>borda vermelha</b> a 120 m: passar dela é fugir.</p>
+
+<h2>Lugares sem luta</h2>
+<ul>
+<li><b>Base fechada</b>: dentro da base com as paredes de pé, os zumbis do mapa param de te perseguir e esquecem o barulho que ouviram, e a luta não começa sozinha. As ruas dentro dela ficam bloqueadas para eles.</li>
+<li><b>Avenidas</b>: na pausa de travessia os zumbis param de vez.</li>
+<li><b>Depósito do rádio</b> e <b>arena</b>: nenhum zumbi do mapa entra.</li>
+<li><b>Salas seguras do bunker</b>: a porta blindada não deixa zumbi passar (veja <a href="bunkers.html">Bunkers</a>).</li>
+</ul>
+
+<h2>Tempos de folga</h2>
+<p>Quando a tela de ação fecha, você ganha um tempo em que a luta não recomeça sozinha:</p>
+<div class="tbl"><table>
+<tr><th>Como terminou</th><th>Folga</th><th>O que os zumbis fazem</th></tr>
+<tr><td>Fugiu (pela borda, despistando numa cena com fim, ou saiu com zumbis atrás)</td><td><b>20 s</b></td><td>os que sabiam de você ficam atordoados (parados) durante a folga, e depois vão até o lugar de onde você fugiu; o barulho vai ao máximo</td></tr>
+<tr><td>Saiu pelo botão sem abater ninguém</td><td>3 s</td><td>ficam como estavam</td></tr>
+<tr><td>Saiu pelo botão com abates, ou venceu</td><td>3 s</td><td>-</td></tr>
+<tr><td>Só passou pela porta de um lugar (andar livre)</td><td>3 s</td><td>a tela de ação reabre na porta</td></tr>
+</table></div>
+<p>Avisos: "Você fugiu! N abatido(s). Corra.", "Saiu da tela de ação com zumbis atrás de você.", "N abatido(s). Dá para revistar os corpos.", "Horda derrotada: N abatido(s). Dá para revistar os corpos."</p>
+
+<h2>Sair</h2>
+<p>A tela de ação comum não acaba sozinha quando todos morrem: você sai quando quiser. Há três jeitos:</p>
+<h3>Ícone da porta</h3>
+<p>No canto de cima à direita, o ícone de saída fica com borda verde quando dá para sair. Ele só funciona se:</p>
+<ul>
+<li>nenhum zumbi vivo está a menos de <b>10 m</b> ("Zumbi a menos de 10 m: afaste-se para sair.");</li>
+<li>ninguém está te perseguindo ("N zumbi(s) te perseguindo: despiste (fique a 40 m deles por 3 s), abata ou fuja pela borda.");</li>
+<li>você não está no chão ("Levante primeiro.") nem agarrado ("Solte-se primeiro.").</li>
+</ul>
+<h3>Despistar</h3>
+<p>Se todos os zumbis que sabem de você ficam a mais de <b>40 m</b> por <b>3 s</b> seguidos, aparece "despistou!". Na tela de ação comum eles só perdem você de vista (voltam a ficar desatentos) e aí o ícone da porta libera. Numa cena que acaba sozinha (a arena), despistar conta como fuga.</p>
+<h3>Borda vermelha</h3>
+<p>Nas cenas com borda, passar dos 120 m do centro termina a luta como fuga ("Você fugiu").</p>
+<h3>Lugar por dentro</h3>
+<p>Num lugar aberto pelo <kbd>Entrar</kbd>, sair andando pela porta (depois de ter pisado lá dentro) já volta para a rua.</p>
+<p>No fim aparece o resumo (<b>Você morreu</b>, <b>Você fugiu</b> ou <b>Horda derrotada</b>, com abatidos, vida e tempo) e <kbd>Voltar ao mapa</kbd>.</p>
+
+<h2>O que a luta leva para o mapa</h2>
+<ul>
+<li>Vida, pânico, munição, arremessos, arma na mão e durabilidade passam direto para o personagem (a mochila é acertada ao vivo durante a luta).</li>
+<li>Feridas viram ferimentos no corpo. Mordida dá estresse e tristeza.</li>
+<li>Flechas: 60% das atiradas voltam. Cada tiro de escopeta deixa um <a href="item-cartucho_vazio.html">cartucho vazio</a>.</li>
+<li>Os abatidos viram uma pilha de <a href="corpos.html">corpos</a> no mapa (menos em bunker e arena) e não voltam até o mês virar.</li>
+<li>Tiros ecoam: veja <a href="barulho.html">Barulho</a>.</li>
+<li>Experiência: cada acerto dá 4 em Armas brancas (6 em Armas de fogo com arma de fogo; com os punhos, 4 em Força) e 1 em Fôlego; cada abate dá 6 em Força e cada empurrão 2.</li>
+<li>Vida em 0: "Morto pela horda.".</li>
+</ul>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="controles.html">Controles</a></li>
+<li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li>
+<li><a href="armas-de-fogo.html">Armas de fogo</a></li>
+<li><a href="arremesso.html">Arremesso</a></li>
+</ul>

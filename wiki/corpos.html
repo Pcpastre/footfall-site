@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Corpos — Wiki do Footfall</title>
+<meta name="description" content="Quanto tempo os corpos ficam no chão, como revistar a pilha, as chances do bolso de cada zumbi, o saque dos zumbis de uniforme e o selo no bolso.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html">Mochila e peso</a></li><li><a href="morte.html">Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html">Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html">Cansaço e sono</a></li><li><a href="feridas.html">Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html">Temperatura</a></li><li><a href="tratamento.html">Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html">Visão</a></li><li><a href="zumbis.html">Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html" aria-current=page>Corpos</a></li><li><a href="saque.html">Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html">Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html">Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Saque</p>
+<h1>Corpos</h1>
+<p class="sub">Quanto tempo os corpos ficam no chão, como revistar a pilha, as chances do bolso de cada zumbi, o saque dos zumbis de uniforme e o selo no bolso.</p>
+<p>Todo zumbi abatido deixa um corpo que pode ser revistado. Na tela de ação você revista cada um ali mesmo; quando a luta acaba, os corpos que sobraram viram uma <b>pilha</b> no mapa, que fica um tempo no chão para você voltar e revistar.</p>
+
+<h2>Revistar na tela de ação</h2>
+<ul>
+<li>Chegue a até 1,3 m de um corpo: aparece <kbd>REVISTAR CORPO (2,0 s)</kbd>.</li>
+<li>Fique parado até terminar. Faz barulho de 4 m.</li>
+<li>Revistado, o botão vira <kbd>CORPO (n)</kbd> com o número de itens. Corpo já revistado e vazio não aparece mais.</li>
+<li>O tempo segue a mesma regra do saque: dividido pela velocidade de saque (Arrombador 1,5×, triste 10% mais lento).</li>
+</ul>
+
+<h2>A pilha no mapa</h2>
+<ul>
+<li>Todos os corpos de uma luta caem numa pilha só (uma tela de saque). Se já existe uma pilha de corpos de zumbi a até <b>40 m</b>, os novos entram nela.</li>
+<li>O nome mostra quantos são: "Corpo de zumbi" ou "N corpos de zumbi".</li>
+<li>A pilha dura <b>2 h</b> a partir do último corpo que entrou. Também some quando tudo foi revistado e esvaziado.</li>
+<li>Corpo revistado na tela de ação e esvaziado não entra na pilha; revistado com sobra entra com o que sobrou.</li>
+<li>Lutas dentro de <a href="bunkers.html">bunkers</a> e na arena dos pontos dominados não deixam pilha no mapa.</li>
+</ul>
+<p>Pelo botão <kbd>Saquear</kbd> (a pilha conta a partir do corpo mais perto, a até 35 m), a tela mostra todos os corpos juntos:</p>
+<ul>
+<li><kbd>Revistar todos (X s)</kbd> revista um corpo depois do outro, sem precisar tocar de novo. Cada corpo leva 2,0 s e é silencioso (0,03, uns 3,6 m).</li>
+<li>Se parar no meio, o botão vira <kbd>Revistar o resto</kbd>.</li>
+<li>Os itens de todos os corpos revistados aparecem juntos; <kbd>Pegar tudo</kbd> pega todos.</li>
+</ul>
+<div class="tip warn"><b>Barulho</b>A própria tela avisa: "Abrir faz barulho. Se um zumbi te vir, a luta começa e você sai daqui."</div>
+
+<h2>O bolso de um zumbi comum</h2>
+<p>Cada corpo é sorteado assim:</p>
+<ol class="steps">
+<li><b>45%</b> de chance de ter <a href="item-pano.html">trapos de pano</a> (a roupa rasgada).</li>
+<li>Do bolso: <b>35%</b> de não ter nada; senão 1 item (70%) ou 2 itens (30%) da lista abaixo.</li>
+<li>Se sair munição, vem de 1 a 4 balas.</li>
+<li><b>6%</b> de chance de ter um <a href="item-selo.html">selo</a> (uma carta no bolso).</li>
+</ol>
+<p>Lista do bolso (cada um com peso 1, menos os indicados):</p>
+<p><a href="item-pano.html">pano</a>, <a href="item-bandagem.html">bandagem</a>, <a href="item-agua.html">garrafa d'água</a>, <a href="item-bolacha.html">bolacha</a>, <a href="item-chocolate.html">chocolate</a>, <a href="item-isqueiro.html">isqueiro</a>, <a href="item-cigarros.html">cigarros</a> (peso 2: aparece duas vezes), <a href="item-pilhas.html">pilhas</a>, <a href="item-faca.html">faca de cozinha</a>, <a href="item-analgesico.html">analgésico</a>, <a href="item-enlatados.html">caixa de enlatados</a>, <a href="item-lanterna.html">lanterna</a>, <a href="item-municao.html">munição 9 mm</a> (0,5), <a href="item-garrafa.html">garrafa vazia</a>, <a href="item-ansiolitico.html">ansiolítico</a>, <a href="item-cartucho.html">cartucho</a> (0,5), <a href="item-gaze.html">gaze</a>, <a href="item-esparadrapo.html">esparadrapo</a>, <a href="item-municao_38.html">munição .38</a> (0,5), <a href="item-municao_22.html">munição .22</a> (0,6), <a href="item-faca_combate.html">faca de combate</a>, <a href="item-chave_inglesa.html">chave inglesa</a>, <a href="item-joelheiras.html">joelheiras</a>.</p>
+
+<h2>Zumbis de uniforme</h2>
+<p>Os zumbis especiais (policial, militar, médico...) têm, além do bolso comum, o <b>saque do ofício</b>: uma lista de itens, cada um com sua chance e quantidade. E <b>10%</b> de chance de o corpo ter o <b>conjunto de roupa</b> inteiro do uniforme (menos o Brutamontes, que não tem conjunto). Os uniformes só saem assim: nunca aparecem no saque dos lugares.</p>
+<div class="tbl"><table>
+<tr><th>Zumbi</th><th>Destaques do saque</th><th>Conjunto (10%)</th></tr>
+<tr><td><a href="zumbi-policia.html">Policial</a></td><td>munição 9 mm e .38, cassetete, lanterna, rádio, às vezes pistola ou revólver</td><td><a href="item-roupa_policia.html">Policial</a></td></tr>
+<tr><td><a href="zumbi-militar.html">Militar</a></td><td>munição 5,56, enlatados, equipamento tático, raramente fuzil</td><td><a href="item-roupa_militar.html">Militar</a></td></tr>
+<tr><td><a href="zumbi-medico.html">Médico</a></td><td>curativos, remédios, às vezes kit de sutura ou morfina</td><td><a href="item-roupa_medico.html">Médico</a></td></tr>
+<tr><td><a href="zumbi-bombeiro.html">Bombeiro</a></td><td>lanterna, luvas, água, pilhas, machado de incêndio, capacete</td><td><a href="item-roupa_bombeiro.html">Bombeiro</a></td></tr>
+<tr><td><a href="zumbi-obra.html">Peão de obra</a></td><td>pregos, fita, arame, ferramentas, capacetes</td><td><a href="item-roupa_obra.html">Peão de obra</a></td></tr>
+<tr><td><a href="zumbi-presidiario.html">Presidiário</a></td><td>cigarros, faca, selos</td><td><a href="item-roupa_presidiario.html">Presidiário</a></td></tr>
+<tr><td><a href="zumbi-mochileiro.html">Mochileiro</a></td><td>mochilas e bolsas, corda, binóculo, a mochila cheia (3 a 5 coisas)</td><td><a href="item-roupa_mochileiro.html">Mochileiro</a></td></tr>
+<tr><td><a href="zumbi-seguranca.html">Segurança</a></td><td>munição .38, cassetete, lanterna, rádio, pochete</td><td><a href="item-roupa_seguranca.html">Segurança</a></td></tr>
+<tr><td><a href="zumbi-mercado.html">Funcionário de mercado</a></td><td>água, comida, selos</td><td><a href="item-roupa_mercado.html">Funcionário de mercado</a></td></tr>
+<tr><td><a href="zumbi-chefe.html">Brutamontes</a></td><td>munição 5,56, colete tático, capacete balístico, morfina, enlatados</td><td>não tem</td></tr>
+</table></div>
+<p>As tabelas completas, com chance e quantidade de cada item, estão na página de cada zumbi. Um zumbi de uniforme que ninguém revistou na tela de ação vai para a pilha já com o saque do ofício.</p>
+<p>Conjuntos vão para o armário do depósito do rádio (só lá dá para vestir). Um conjunto repetido vira selos: 2 (comum), 5 (incomum), 12 (raro) ou 30 (lendário).</p>
+
+<h2>Cada um vê o seu</h2>
+<p>O bolso de cada zumbi abatido na tela de ação é sorteado por jogador e por semana: dois sobreviventes revistando o mesmo zumbi acham coisas diferentes, e o mesmo zumbi dá sempre o mesmo resultado para você durante a semana.</p>
+<p>Nos <a href="bunkers.html">bunkers</a> os zumbis voltam toda vez que você sai e entra, mas o corpo de cada um só rende uma vez por mês. As gavetas mortuárias do bunker têm o bolso de um corpo e, em 25% das vezes, quem estava lá levanta.</p>
+
+<h2>Corpo de outro sobrevivente</h2>
+<p>Quem morre deixa tudo o que carregava numa pilha onde caiu, com um zumbi com a cara dele em cima. Nas primeiras 24 h só o dono vê a pilha; depois qualquer um que passar perto. A pilha dura 4 dias.</p>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="saque.html">Saque</a></li>
+<li><a href="zumbis.html">Zumbis</a></li>
+</ul>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

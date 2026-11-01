@@ -1,0 +1,95 @@
+<!-- titulo: Controles | categoria: Combate | resumo: Os três modos de controle da tela de ação, as metades da tela, o botão LUTAR, agachar, o seletor de alvo e o limite para correr. -->
+<p>A <a href="tela-de-acao.html">tela de ação</a> tem três modos de controle. Escolha em <kbd>Ajustes</kbd> → <kbd>CONTROLES</kbd>. O modo vale também nas memórias.</p>
+
+<h2>Os três modos</h2>
+<div class="tbl"><table>
+<tr><th>Modo</th><th>Descrição no jogo</th><th>Analógicos</th></tr>
+<tr><td><b>Simples</b> (padrão)</td><td>"Um analógico e o botão LUTAR; toque golpeia, correr sai da luta"</td><td>esquerdo move; botão <kbd>LUTAR</kbd> à direita</td></tr>
+<tr><td><b>Dois analógicos</b></td><td>"Mira no analógico direito; toque na tela golpeia e empurra"</td><td>esquerdo move; direito mira</td></tr>
+<tr><td><b>Automático</b></td><td>"Um analógico; golpe, tiro e empurrão sozinhos"</td><td>um só, no meio, embaixo</td></tr>
+</table></div>
+
+<h2>As metades da tela</h2>
+<p>Não há botão de ataque: a tela toda é o botão. Um <b>toque rápido</b>:</p>
+<ul>
+<li>na <b>metade esquerda</b>: empurrão;</li>
+<li>na <b>metade direita</b>: golpe (com arma de fogo, tiro).</li>
+</ul>
+<p>Segurar e arrastar a tela move a câmera para ver mais de um lado; <kbd>Centralizar</kbd> (em cima) volta. Os toques não atacam com um painel aberto nem no modo construir da base.</p>
+<p>Apertar o golpe antes de a arma estar pronta atrasa o próximo golpe em 0,15 s ("cedo!"). Parado e sem mirar, o golpe vira sozinho para o zumbi mais perto dentro de 1,6× o alcance da arma.</p>
+
+<h2>Modo Simples e o botão LUTAR</h2>
+<p>O botão <kbd>LUTAR</kbd> liga a <b>postura de luta</b> e passa a mostrar <kbd>LUTANDO</kbd>, em âmbar.</p>
+<ul>
+<li>Na postura você encara sozinho o zumbi mais perto (com arma de fogo, o mais perto que você vê a até 14 m; com arma branca, até 2,2× o alcance da arma) e anda de lado, a <b>60%</b> da velocidade.</li>
+<li>Postura conta como <b>mirar o tempo todo</b>: golpes mais certeiros e com chance de crítico (veja <a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a>).</li>
+<li>Tocar na tela fora da postura já liga a postura e golpeia na hora.</li>
+<li><b>Correr desliga a postura</b> ("quem corre não luta").</li>
+<li>Ela também desliga sozinha depois de <b>6 s</b> sem nenhum zumbi a 12 m ("relaxou").</li>
+<li>Desligado, o botão pulsa em vermelho quando um zumbi atento está a até 8 m.</li>
+</ul>
+
+<h2>Modo Dois analógicos</h2>
+<ul>
+<li>O analógico direito (vermelho) mira: para onde ele aponta, o boneco olha e golpeia.</li>
+<li>Segurar o direito liga a postura de luta enquanto você segura e mais 0,4 s depois de soltar.</li>
+<li>Com arma de fogo, a mira dada fica valendo por 1,5 s mesmo andando (dá para andar de lado atirando).</li>
+<li>Golpear <b>sem mirar</b> (analógico direito solto) é pior: dano ×0,85, 25% de chance de pegar de raspão (metade do dano) e mais chance de errar a cabeça.</li>
+</ul>
+
+<h2>Modo Automático</h2>
+<p>Você só anda. O boneco encara o zumbi mais perto e:</p>
+<ul>
+<li>golpeia sozinho quando há zumbi ao alcance da arma;</li>
+<li>atira sozinho quando vê um zumbi a até <b>14 m</b> (mesmo com armas de alcance maior);</li>
+<li>empurra sozinho quando está no chão ou agarrado, e quando há <b>3 ou mais</b> zumbis a 1,1 m (se tiver fôlego para o empurrão + 5);</li>
+<li>o empurrão pega em volta toda (360°), não só na frente.</li>
+</ul>
+<p>O preço: o intervalo entre golpes automáticos é 1,35× maior, multiplicado ainda por 1 + pânico ÷ 200 (com pânico 100, cerca de 2× o normal) e pela cadência dos reflexos (Reflexos rápidos ×0,9, Reflexos lentos ×1,1), bate 15% mais fraco e só tem 4% de chance base de crítico. As rajadas automáticas saem tiro a tiro, na cadência da arma.</p>
+<p>Os toques nas metades da tela também funcionam neste modo.</p>
+
+<h2>Andar e correr</h2>
+<div class="tbl"><table>
+<tr><th>Analógico</th><th>Velocidade</th></tr>
+<tr><td>Até 72% do curso</td><td>andando, proporcional, até 2,0 m/s</td></tr>
+<tr><td>Além de 72% (a borda)</td><td>correndo, 4,2 m/s</td></tr>
+</table></div>
+<p>Correr precisa de mais de 5 de fôlego e gasta 10 por segundo (4% menos por nível de Fôlego). Não dá para correr agachado, no chão nem agarrado. Andar gasta 2 de fôlego por segundo (proporcional ao analógico). Com menos de 10 de fôlego você anda a 70%.</p>
+<p>Correndo, qualquer zumbi desatento a menos de 5 m (vezes o multiplicador de passos) te percebe na hora. Outros multiplicadores de velocidade: carga (veja <a href="mochila-e-peso.html">Mochila e peso</a>), dor, fratura, chão bagunçado e o traço Viciado em adrenalina (+10% com pânico forte, +25% no extremo).</p>
+<p>No chão, mexer o analógico faz levantar mais rápido.</p>
+
+<h2>Agachar</h2>
+<p>O botão <kbd>AGACHAR</kbd> (vira <kbd>EM PÉ</kbd>) fica à esquerda, acima do analógico.</p>
+<ul>
+<li>Você anda a <b>45%</b> da velocidade e não corre.</li>
+<li>Desatentos só te veem a até 4,5 m (em pé, 7 m) e demoram o dobro para reparar.</li>
+<li>Tiros abrem 1 grau a menos.</li>
+<li>Guardas armados acertam menos (−10 pontos percentuais).</li>
+<li>Ser derrubado te deixa em pé de novo.</li>
+</ul>
+
+<h2>Seletor de alvo</h2>
+<p>No canto de cima à direita, abaixo da arma, o ícone do alvo troca onde você mira a cada toque, nesta ordem: <kbd>CORPO</kbd> → <kbd>PERNAS</kbd> → <kbd>CABEÇA</kbd> → <kbd>CORPO</kbd>.</p>
+<div class="tbl"><table>
+<tr><th>Alvo</th><th>Efeito</th></tr>
+<tr><td>CABEÇA</td><td>dano alto, mas pode errar e pegar no ombro; tiro mirado na cabeça abre 2 graus a mais</td></tr>
+<tr><td>CORPO</td><td>dano normal, sem risco (o colete do zumbi segura parte)</td></tr>
+<tr><td>PERNAS</td><td>menos dano, mas acumula dano na perna até ele cair e rastejar</td></tr>
+</table></div>
+<p>Zumbi caído ou rastejando é sempre atingido na cabeça. Os números estão em <a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a> e <a href="armas-de-fogo.html">Armas de fogo</a>.</p>
+
+<h2>Outros botões da tela</h2>
+<ul>
+<li><b>Arma</b> (canto de cima à direita): toque para abrir a lista de armas que dá para pegar agora (costas e cinto) e trocar. Mostra a durabilidade (arma branca) ou as balas (arma de fogo). Trocar leva 0,7 s (0,3 s para os punhos), sem atacar.</li>
+<li><b>Construir</b> (martelo, só na base): liga o modo construir; nele os toques não atacam.</li>
+<li><b>Sair</b>: ícone de saída; veja <a href="tela-de-acao.html">Tela de ação</a>.</li>
+<li><b>Arremesso</b>: ao lado do agachar, com o nome e quantos restam; segurar troca o item. Veja <a href="arremesso.html">Arremesso</a>.</li>
+<li><b>Coração</b> (canto de cima à esquerda): toque para ver vida, fôlego, pânico e o modo.</li>
+<li>Botões de contexto (aparecem perto das coisas): <kbd>VASCULHAR</kbd>, <kbd>REVISTAR CORPO</kbd>, <kbd>ARROMBAR PORTA</kbd>, <kbd>DESMONTAR</kbd>, <kbd>SUBIR</kbd>/<kbd>DESCER</kbd>, <kbd>ENTRAR: nome</kbd>, <kbd>USAR</kbd>.</li>
+</ul>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li>
+<li><a href="armas-de-fogo.html">Armas de fogo</a></li>
+</ul>

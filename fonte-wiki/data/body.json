@@ -1,0 +1,1049 @@
+{
+  "body_parts": [
+    "cabeca",
+    "tronco",
+    "bracos",
+    "maos",
+    "pernas",
+    "pes"
+  ],
+  "body_part_labels": {
+    "cabeca": "Cabeça",
+    "tronco": "Tronco",
+    "bracos": "Braços",
+    "maos": "Mãos",
+    "pernas": "Pernas",
+    "pes": "Pés"
+  },
+  "hit_location_weights": {
+    "cabeca": 0.08,
+    "tronco": 0.22,
+    "bracos": 0.25,
+    "maos": 0.15,
+    "pernas": 0.2,
+    "pes": 0.1
+  },
+  "wounds": [
+    {
+      "id": "arranhao",
+      "label": "Arranhão",
+      "label_en": "Scratch",
+      "label_es": "Arañazo",
+      "heal_time": {
+        "days": 1,
+        "total_seconds": 86400
+      },
+      "heal_days": 1.0,
+      "can_bleed": true,
+      "bleed_seconds_per_hp": 30,
+      "pain": 5.0,
+      "treatment_steps": [
+        {
+          "treat": "estilhaco",
+          "when": "shard"
+        },
+        {
+          "treat": "limpar",
+          "when": "!cleaned && !bandaged"
+        },
+        {
+          "treat": "enfaixar",
+          "when": "!bandaged"
+        }
+      ],
+      "zombie_infection_chance": null,
+      "hit_roll_chance": 0.6
+    },
+    {
+      "id": "laceracao",
+      "label": "Laceração",
+      "label_en": "Laceration",
+      "label_es": "Laceración",
+      "heal_time": {
+        "days": 3,
+        "total_seconds": 259200
+      },
+      "heal_days": 3.0,
+      "can_bleed": true,
+      "bleed_seconds_per_hp": 12,
+      "pain": 12.0,
+      "treatment_steps": [
+        {
+          "treat": "estilhaco",
+          "when": "shard"
+        },
+        {
+          "treat": "limpar",
+          "when": "!cleaned && !bandaged"
+        },
+        {
+          "treat": "enfaixar",
+          "when": "!bandaged"
+        }
+      ],
+      "zombie_infection_chance": {
+        "default": 0,
+        "imunidade_fraca": 0.15
+      },
+      "hit_roll_chance": 0.22
+    },
+    {
+      "id": "mordida",
+      "label": "Mordida",
+      "label_en": "Bite",
+      "label_es": "Mordida",
+      "heal_time": {
+        "days": 5,
+        "total_seconds": 432000
+      },
+      "heal_days": 5.0,
+      "can_bleed": true,
+      "bleed_seconds_per_hp": 15,
+      "pain": 15.0,
+      "treatment_steps": [
+        {
+          "treat": "estilhaco",
+          "when": "shard"
+        },
+        {
+          "treat": "limpar",
+          "when": "!cleaned && !bandaged"
+        },
+        {
+          "treat": "enfaixar",
+          "when": "!bandaged"
+        }
+      ],
+      "zombie_infection_chance": {
+        "default": 0.85,
+        "imunidade_forte": 0.6,
+        "imunidade_fraca": 1.0
+      },
+      "hit_roll_chance": 0.15
+    },
+    {
+      "id": "corte",
+      "label": "Corte profundo",
+      "label_en": "Deep cut",
+      "label_es": "Corte profundo",
+      "heal_time": {
+        "days": 4,
+        "total_seconds": 345600
+      },
+      "heal_days": 4.0,
+      "can_bleed": true,
+      "bleed_seconds_per_hp": 8,
+      "bleed_seconds_per_hp_bandaged_unsutured": 40.0,
+      "pain": 15.0,
+      "treatment_steps": [
+        {
+          "treat": "estilhaco",
+          "when": "shard"
+        },
+        {
+          "treat": "limpar",
+          "when": "!cleaned && !bandaged"
+        },
+        {
+          "treat": "suturar",
+          "when": "!sutured"
+        },
+        {
+          "treat": "enfaixar",
+          "when": "!bandaged"
+        }
+      ],
+      "zombie_infection_chance": null,
+      "hit_roll_chance": 0
+    },
+    {
+      "id": "estilhaco",
+      "label": "Estilhaço",
+      "label_en": "Shard",
+      "label_es": "Esquirla",
+      "heal_time": {
+        "days": 2,
+        "total_seconds": 172800
+      },
+      "heal_days": 2.0,
+      "can_bleed": true,
+      "bleed_seconds_per_hp": 25,
+      "pain": {
+        "if": "shard",
+        "then": 18.0,
+        "else": 8.0
+      },
+      "treatment_steps": [
+        {
+          "treat": "estilhaco",
+          "when": "shard"
+        },
+        {
+          "treat": "limpar",
+          "when": "!cleaned && !bandaged"
+        },
+        {
+          "treat": "enfaixar",
+          "when": "!bandaged"
+        }
+      ],
+      "zombie_infection_chance": null,
+      "hit_roll_chance": 0
+    },
+    {
+      "id": "hemorragia",
+      "label": "Hemorragia",
+      "label_en": "Hemorrhage",
+      "label_es": "Hemorragia",
+      "heal_time": {
+        "days": 5,
+        "total_seconds": 432000
+      },
+      "heal_days": 5.0,
+      "can_bleed": true,
+      "bleed_seconds_per_hp": 3,
+      "pain": 20.0,
+      "treatment_steps": [
+        {
+          "treat": "torniquete",
+          "when": "tourniquetAt == null && !sutured"
+        },
+        {
+          "treat": "limpar",
+          "when": "!cleaned"
+        },
+        {
+          "treat": "suturar",
+          "when": "!sutured"
+        },
+        {
+          "treat": "enfaixar",
+          "when": "!bandaged"
+        }
+      ],
+      "zombie_infection_chance": null,
+      "hit_roll_chance": 0.03
+    },
+    {
+      "id": "fratura",
+      "label": "Fratura",
+      "label_en": "Fracture",
+      "label_es": "Fractura",
+      "heal_time": {
+        "days": 7,
+        "total_seconds": 604800
+      },
+      "heal_days": 7.0,
+      "can_bleed": false,
+      "bleed_seconds_per_hp": null,
+      "pain": {
+        "if": "splinted",
+        "then": 15.0,
+        "else": 32.0
+      },
+      "treatment_steps": [
+        {
+          "treat": "tala",
+          "when": "!splinted"
+        }
+      ],
+      "zombie_infection_chance": null,
+      "hit_roll_chance": 0
+    },
+    {
+      "id": "queimadura",
+      "label": "Queimadura",
+      "label_en": "Burn",
+      "label_es": "Quemadura",
+      "heal_time": {
+        "days": 3,
+        "total_seconds": 259200
+      },
+      "heal_days": 3.0,
+      "can_bleed": false,
+      "bleed_seconds_per_hp": null,
+      "pain": {
+        "if": "ointment",
+        "then": 8.0,
+        "else": 20.0
+      },
+      "treatment_steps": [
+        {
+          "treat": "pomada",
+          "when": "!ointment"
+        },
+        {
+          "treat": "enfaixar",
+          "when": "!bandaged"
+        }
+      ],
+      "zombie_infection_chance": null,
+      "hit_roll_chance": 0
+    },
+    {
+      "id": "contusao",
+      "label": "Contusão",
+      "label_en": "Bruise",
+      "label_es": "Contusión",
+      "heal_time": {
+        "hours": 12,
+        "total_seconds": 43200
+      },
+      "heal_days": 0.5,
+      "can_bleed": false,
+      "bleed_seconds_per_hp": null,
+      "pain": 8.0,
+      "treatment_steps": [],
+      "zombie_infection_chance": null,
+      "hit_roll_chance": 0
+    }
+  ],
+  "hit_roll": {
+    "arranhao_below": 0.6,
+    "laceracao_below": 0.85,
+    "hemorragia_share_of_laceracao": 0.12,
+    "mordida": "resto",
+    "armor": "chance da roupa bloquear = proteção da parte para o ataque"
+  },
+  "treatments": [
+    {
+      "id": "limpar",
+      "label": "Limpar e desinfetar",
+      "items": [
+        "soro",
+        "alcool",
+        "cachaca"
+      ],
+      "tools_not_consumed": [],
+      "seconds": 4.0,
+      "xp": 5.0,
+      "skill": "primeiros_socorros",
+      "label_en": "Clean and disinfect",
+      "label_es": "Limpiar y desinfectar",
+      "item_names": [
+        "Soro fisiológico",
+        "Álcool 70%",
+        "Garrafa de cachaça"
+      ]
+    },
+    {
+      "id": "estilhaco",
+      "label": "Tirar o estilhaço",
+      "items": [
+        "pinca"
+      ],
+      "tools_not_consumed": [
+        "pinca"
+      ],
+      "seconds": 8.0,
+      "xp": 15.0,
+      "skill": "primeiros_socorros",
+      "label_en": "Remove the shrapnel",
+      "label_es": "Quitar la esquirla",
+      "item_names": [
+        "Pinça"
+      ]
+    },
+    {
+      "id": "suturar",
+      "label": "Suturar",
+      "items": [
+        "kit_sutura"
+      ],
+      "tools_not_consumed": [],
+      "seconds": 12.0,
+      "xp": 20.0,
+      "skill": "primeiros_socorros",
+      "label_en": "Suture",
+      "label_es": "Suturar",
+      "item_names": [
+        "Kit de sutura"
+      ]
+    },
+    {
+      "id": "enfaixar",
+      "label": "Enfaixar",
+      "items": [
+        "bandagem_esteril",
+        "gaze",
+        "bandagem",
+        "kit_socorros",
+        "pano"
+      ],
+      "tools_not_consumed": [],
+      "seconds": 5.0,
+      "xp": 10.0,
+      "skill": "primeiros_socorros",
+      "label_en": "Bandage",
+      "label_es": "Vendar",
+      "item_names": [
+        "Atadura estéril",
+        "Gaze",
+        "Bandagem",
+        "Kit de primeiros socorros",
+        "Trapos de pano"
+      ]
+    },
+    {
+      "id": "torniquete",
+      "label": "Torniquete",
+      "items": [
+        "torniquete",
+        "pano"
+      ],
+      "tools_not_consumed": [],
+      "seconds": 3.0,
+      "xp": 10.0,
+      "skill": "primeiros_socorros",
+      "label_en": "Tourniquet",
+      "label_es": "Torniquete",
+      "item_names": [
+        "Torniquete",
+        "Trapos de pano"
+      ]
+    },
+    {
+      "id": "tala",
+      "label": "Imobilizar (tala)",
+      "items": [
+        "tala"
+      ],
+      "tools_not_consumed": [],
+      "seconds": 10.0,
+      "xp": 15.0,
+      "skill": "primeiros_socorros",
+      "label_en": "Immobilize (splint)",
+      "label_es": "Inmovilizar (férula)",
+      "item_names": [
+        "Tala"
+      ]
+    },
+    {
+      "id": "pomada",
+      "label": "Pomada",
+      "items": [
+        "pomada"
+      ],
+      "tools_not_consumed": [],
+      "seconds": 4.0,
+      "xp": 8.0,
+      "skill": "primeiros_socorros",
+      "label_en": "Ointment",
+      "label_es": "Pomada",
+      "item_names": [
+        "Pomada para queimadura"
+      ]
+    }
+  ],
+  "treatment_seconds_cut_per_level": 0.08,
+  "zombie_infection": {
+    "phases": [
+      {
+        "phase": "incubando",
+        "from_day": 0,
+        "effect": "sem sintomas"
+      },
+      {
+        "phase": "febre",
+        "from_day": 3,
+        "effect": "menos folego"
+      },
+      {
+        "phase": "delirio",
+        "from_day": 5,
+        "effect": "visao menor, tontura"
+      },
+      {
+        "phase": "morte",
+        "from_day": 7,
+        "effect": ""
+      }
+    ],
+    "lethal": {
+      "days": 7,
+      "total_seconds": 604800
+    },
+    "cure": "nenhuma"
+  },
+  "common_infection": {
+    "per_hour_chances": [
+      {
+        "when": "w.bandaged && !w.cleaned",
+        "chance_per_hour": 0.06
+      },
+      {
+        "when": "w.dirty(now)",
+        "chance_per_hour": 0.04
+      },
+      {
+        "when": "w.shard",
+        "chance_per_hour": 0.05
+      },
+      {
+        "when": "!w.bandaged && w.type != WoundType.arranhao",
+        "chance_per_hour": 0.02
+      }
+    ],
+    "burn_without_ointment_per_hour": 0.03,
+    "cure": "antibiotico",
+    "hp_drain_after_hours": 72,
+    "hp_drain_seconds_per_hp": 600
+  },
+  "tourniquet": {
+    "max": {
+      "hours": 2,
+      "total_seconds": 7200
+    },
+    "seconds_per_hp_after_max": 120
+  },
+  "dressing_dirty_after_hours": {
+    "normal": 12,
+    "with_esparadrapo": 24
+  },
+  "pain": {
+    "painkiller_factor": 0.35,
+    "morphine": "zera",
+    "levels_from": [
+      15,
+      35,
+      60
+    ]
+  },
+  "body_constants": [
+    {
+      "name": "partWeights",
+      "type": null,
+      "value": {
+        "cabeca": 0.08,
+        "tronco": 0.22,
+        "bracos": 0.25,
+        "maos": 0.15,
+        "pernas": 0.2,
+        "pes": 0.1
+      },
+      "line": 280,
+      "comment": "Chance de cada parte ser atingida (arranhao)."
+    },
+    {
+      "name": "infectionLethal",
+      "type": "Duration",
+      "value": {
+        "days": 7,
+        "total_seconds": 604800
+      },
+      "line": 281,
+      "comment": ""
+    },
+    {
+      "name": "tourniquetMax",
+      "type": "Duration",
+      "value": {
+        "hours": 2,
+        "total_seconds": 7200
+      },
+      "line": 282,
+      "comment": ""
+    }
+  ],
+  "moodles": [
+    {
+      "id": "fome",
+      "labels": [
+        "",
+        "Com fome",
+        "Faminto",
+        "Passando mal de fome"
+      ],
+      "labels_en": [
+        null,
+        "Hungry",
+        "Starving",
+        "Sick with hunger"
+      ],
+      "labels_es": [
+        null,
+        "Con hambre",
+        "Hambriento",
+        "Enfermo de hambre"
+      ],
+      "thresholds": {
+        "unit": "fração do estoque de kcal",
+        "level_1_below": 0.5,
+        "level_2_below": 0.25,
+        "level_3_below": 0.1
+      }
+    },
+    {
+      "id": "sede",
+      "labels": [
+        "",
+        "Com sede",
+        "Muita sede",
+        "Desidratado"
+      ],
+      "labels_en": [
+        null,
+        "Thirsty",
+        "Very thirsty",
+        "Dehydrated"
+      ],
+      "labels_es": [
+        null,
+        "Con sed",
+        "Mucha sed",
+        "Deshidratado"
+      ],
+      "thresholds": {
+        "unit": "fração da água",
+        "level_1_below": 0.5,
+        "level_2_below": 0.25,
+        "level_3_below": 0.1
+      }
+    },
+    {
+      "id": "cansaco",
+      "labels": [
+        "",
+        "Cansado",
+        "Exausto",
+        "No limite"
+      ],
+      "labels_en": [
+        null,
+        "Tired",
+        "Exhausted",
+        "At the limit"
+      ],
+      "labels_es": [
+        null,
+        "Cansado",
+        "Exhausto",
+        "Al límite"
+      ],
+      "thresholds": {
+        "unit": "fadiga 0..100",
+        "level_1_from": 40,
+        "level_2_from": 70,
+        "level_3_from": 90
+      }
+    },
+    {
+      "id": "panico",
+      "labels": [
+        "",
+        "Pânico leve",
+        "Em pânico",
+        "Pânico forte",
+        "Pânico extremo"
+      ],
+      "labels_en": [
+        null,
+        "Mild panic",
+        "Panicked",
+        "Strong panic",
+        "Extreme panic"
+      ],
+      "labels_es": [
+        null,
+        "Pánico leve",
+        "En pánico",
+        "Pánico fuerte",
+        "Pánico extremo"
+      ],
+      "thresholds": {
+        "unit": "pânico 0..100",
+        "level_1_from": 15,
+        "level_2_from": 35,
+        "level_3_from": 60,
+        "level_4_from": 80,
+        "note": "moodle mostra até nível 3"
+      }
+    },
+    {
+      "id": "sangrando",
+      "labels": [
+        "Sangrando"
+      ],
+      "labels_en": [
+        "Bleeding"
+      ],
+      "labels_es": [
+        "Sangrando"
+      ],
+      "thresholds": {
+        "unit": "número de feridas sangrando",
+        "level": "min(3, n)"
+      }
+    },
+    {
+      "id": "dor",
+      "labels": [
+        "",
+        "Dor",
+        "Muita dor",
+        "Dor insuportável"
+      ],
+      "labels_en": [
+        null,
+        "Pain",
+        "Severe pain",
+        "Unbearable pain"
+      ],
+      "labels_es": [
+        null,
+        "Dolor",
+        "Mucho dolor",
+        "Dolor insoportable"
+      ],
+      "thresholds": {
+        "unit": "dor 0..100",
+        "level_1_from": 15,
+        "level_2_from": 35,
+        "level_3_from": 60
+      }
+    },
+    {
+      "id": "infeccao",
+      "labels": [
+        "Ferida infeccionada"
+      ],
+      "labels_en": [
+        "Infected wound"
+      ],
+      "labels_es": [
+        "Herida infectada"
+      ],
+      "thresholds": null
+    },
+    {
+      "id": "fratura",
+      "labels": [
+        "Fratura (imobilizada)",
+        "Fratura"
+      ],
+      "labels_en": [
+        "Fracture (splinted)",
+        "Fracture"
+      ],
+      "labels_es": [
+        "Fractura (inmovilizada)",
+        "Fractura"
+      ],
+      "thresholds": null
+    },
+    {
+      "id": "doente",
+      "labels": [
+        "Com febre",
+        "Delirando"
+      ],
+      "labels_en": [
+        "Feverish",
+        "Delirious"
+      ],
+      "labels_es": [
+        "Con fiebre",
+        "Delirando"
+      ],
+      "thresholds": null
+    },
+    {
+      "id": "peso",
+      "labels": [
+        "Carga pesada"
+      ],
+      "labels_en": [
+        "Heavy load"
+      ],
+      "labels_es": [
+        "Carga pesada"
+      ],
+      "thresholds": null
+    },
+    {
+      "id": "enjoo",
+      "labels": [
+        "Enjoado"
+      ],
+      "labels_en": [
+        "Nauseous"
+      ],
+      "labels_es": [
+        "Con náuseas"
+      ],
+      "thresholds": null
+    },
+    {
+      "id": "fumo",
+      "labels": [
+        "Quer fumar"
+      ],
+      "labels_en": [
+        "Craving a smoke"
+      ],
+      "labels_es": [
+        "Con ganas de fumar"
+      ],
+      "thresholds": null
+    },
+    {
+      "id": "estresse",
+      "labels": [
+        "",
+        "Tenso",
+        "Estressado",
+        "Muito estressado"
+      ],
+      "labels_en": [
+        null,
+        "Tense",
+        "Stressed",
+        "Very stressed"
+      ],
+      "labels_es": [
+        null,
+        "Tenso",
+        "Estresado",
+        "Muy estresado"
+      ],
+      "thresholds": {
+        "unit": "0..100",
+        "level_1_from": 25,
+        "level_2_from": 50,
+        "level_3_from": 75
+      }
+    },
+    {
+      "id": "tristeza",
+      "labels": [
+        "",
+        "Para baixo",
+        "Triste",
+        "Deprimido"
+      ],
+      "labels_en": [
+        null,
+        "Down",
+        "Sad",
+        "Depressed"
+      ],
+      "labels_es": [
+        null,
+        "Hacia abajo",
+        "Triste",
+        "Deprimido"
+      ],
+      "thresholds": {
+        "unit": "0..100",
+        "level_1_from": 20,
+        "level_2_from": 45,
+        "level_3_from": 70
+      }
+    },
+    {
+      "id": "tedio",
+      "labels": [
+        "",
+        "Entediado",
+        "Muito entediado",
+        "Morrendo de tédio"
+      ],
+      "labels_en": [
+        null,
+        "Bored",
+        "Very bored",
+        "Bored to death"
+      ],
+      "labels_es": [
+        null,
+        "Aburrido",
+        "Muy aburrido",
+        "Muriéndose de aburrimiento"
+      ],
+      "thresholds": {
+        "unit": "0..100",
+        "level_1_from": 25,
+        "level_2_from": 50,
+        "level_3_from": 75
+      }
+    },
+    {
+      "id": "frio",
+      "labels": [
+        "",
+        "Com frio",
+        "Congelando"
+      ],
+      "labels_en": [
+        null,
+        "Cold",
+        "Freezing"
+      ],
+      "labels_es": [
+        null,
+        "Con frío",
+        "Congelándose"
+      ],
+      "thresholds": {
+        "unit": "sensação térmica °C (chuva sem capa -4, noite -2)",
+        "need_level_1_below": 16,
+        "need_level_2_below": 10,
+        "level": "max(0, need - calor das roupas)",
+        "warmth_items": {
+          "jaqueta": 1,
+          "moletom": 1,
+          "casaco": 2,
+          "jaqueta_bolsos": 1,
+          "gorro": 1
+        }
+      }
+    },
+    {
+      "id": "calor",
+      "labels": [
+        "",
+        "Com calor",
+        "Fervendo"
+      ],
+      "labels_en": [
+        null,
+        "Hot",
+        "Boiling"
+      ],
+      "labels_es": [
+        null,
+        "Acalorado",
+        "Hirviendo"
+      ],
+      "thresholds": {
+        "unit": "temperatura °C (de dia)",
+        "hot_above": 28,
+        "very_hot_above": 33,
+        "heavy_items": {
+          "casaco": 2,
+          "jaqueta": 1,
+          "colete": 1,
+          "colete_tatico": 1,
+          "capacete_militar": 1,
+          "jaqueta_bolsos": 1,
+          "capacete_tatico": 1,
+          "capacete_bombeiro": 1,
+          "mochila_cargueira": 1
+        },
+        "bone_reduces": 1
+      }
+    },
+    {
+      "id": "roupa",
+      "labels": [
+        "Roupa rasgada"
+      ],
+      "labels_en": [
+        "Torn clothes"
+      ],
+      "labels_es": [
+        "Ropa rasgada"
+      ],
+      "thresholds": null
+    }
+  ],
+  "needs": {
+    "constants": [
+      {
+        "name": "maxKcal",
+        "type": "double",
+        "value": 2400,
+        "line": 5,
+        "comment": "estoque cheio (~1 dia)"
+      },
+      {
+        "name": "maxWater",
+        "type": "double",
+        "value": 2400,
+        "line": 6,
+        "comment": "ml"
+      },
+      {
+        "name": "kcalPerDay",
+        "type": "double",
+        "value": 2200,
+        "line": 7,
+        "comment": "gasto basal + atividade leve"
+      },
+      {
+        "name": "waterPerDay",
+        "type": "double",
+        "value": 2300,
+        "line": 8,
+        "comment": "ml"
+      },
+      {
+        "name": "kcalPerKm",
+        "type": "double",
+        "value": 55,
+        "line": 9,
+        "comment": ""
+      },
+      {
+        "name": "waterPerKm",
+        "type": "double",
+        "value": 60,
+        "line": 10,
+        "comment": ""
+      },
+      {
+        "name": "damageLevel",
+        "type": "double",
+        "value": 0.1,
+        "line": 11,
+        "comment": "abaixo de 10% comeca a tirar HP"
+      }
+    ],
+    "starvation_seconds_per_hp": {
+      "hunger": 30,
+      "thirst": 20
+    },
+    "fatigue_per_km": {
+      "walking": 1.5,
+      "running": 6.0
+    },
+    "running_km_mult": 1.5,
+    "default_rest_rate_per_hour": 12.5,
+    "rest_while_still_per_minute": 0.5,
+    "offline_floor": "fora da sessão a fome/sede param em damageLevel + 1% (ninguém morre offline)"
+  },
+  "mind": {
+    "doc": "Cabeca do sobrevivente, no estilo do Project Zomboid: - Estresse: sobe com perseguicao, ferimento, fome, abstinencia. Deixa o panico subir mais rapido, o folego voltar mais devagar e, alto, a mao tremer. - Tristeza: sobe com estresse alto, tedio, comida estragada, ferimentos e abates. Aprende menos (XP) e, no fundo do poco, bate mais fraco. - Tedio: sobe parado na base (com o app aberto); some andando por ai ou lendo. Tedio alto vira tristeza. Remedios: ansiolitico (corta panico e estresse, da sono), betabloqueador (panico sobe menos, mao firme) e antidepressivo (tristeza cai aos poucos, depois de 1 h).",
+    "levels": {
+      "stress": [
+        25,
+        50,
+        75
+      ],
+      "unhappy": [
+        20,
+        45,
+        70
+      ],
+      "bored": [
+        25,
+        50,
+        75
+      ]
+    },
+    "formulas": {
+      "panicMult": "double panicMult(DateTime now) {\n    var m = 1 + stress / 133; // 75 de estresse = +56%\n    if (calm(now)) m *= 0.4;\n    if (beta(now)) m *= 0.5;\n    if (drunk(now)) m *= 0.4;\n    return m;\n  }",
+      "xpMult": "double get xpMult => (1 - [0.0, 0.1, 0.25, 0.4][unhappyLevel]) * (boredLevel >= 3 ? 0.9 : 1.0);",
+      "regenMult": "double get regenMult => [1.0, 1.0, 0.9, 0.8][stressLevel];",
+      "damageMult": "double get damageMult => unhappyLevel >= 3 ? 0.9 : 1.0;",
+      "spread": "double spread(DateTime now) => (beta(now) ? -1.5 : (stressLevel >= 3 ? 2.0 : 0.0)) + (drunk(now) ? 2.5 : 0.0);",
+      "lootMult": "double get lootMult => unhappyLevel >= 2 ? 0.9 : 1.0;",
+      "tick": "void tick(\n    double secs,\n    DateTime now, {\n    required double panic, // 0..100 (panico no mapa)\n    required bool hurt, // sangrando, febre...\n    required bool needy, // fome/sede altas\n    required bool craving,\n    required bool inBase,\n    required bool moving,\n  }",
+      "offline": "void offline(double hours, DateTime now, {required bool sleptInBase}"
+    }
+  },
+  "_meta": {
+    "source": "/mnt/user-data/outputs/footfall",
+    "generator": "extract.py"
+  }
+}

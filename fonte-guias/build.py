@@ -46,6 +46,7 @@ def shell(page, title_en, desc_en, main):
     <nav aria-label="Pages">
       <a href="index.html#jogo" data-i18n="nav.game">The game</a>
       <a href="guias.html" data-i18n="nav.guides">Guides</a>
+      <a href="wiki/index.html">Wiki</a>
       <a class="go bevel" href="index.html#baixar" data-i18n="nav.download">Download</a>
     </nav>
 {FLAGS}
@@ -60,6 +61,7 @@ def shell(page, title_en, desc_en, main):
     <nav aria-label="Footer">
       <a href="index.html" data-i18n="ft.home">Home</a>
       <a href="guias.html" data-i18n="nav.guides">Guides</a>
+      <a href="wiki/index.html">Wiki</a>
       <a href="privacidade.html" data-i18n="ft.privacy">Privacy policy</a>
       <a href="excluir-conta.html" data-i18n="ft.delete">Delete account</a>
       <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
@@ -87,6 +89,7 @@ def hub():
 <div class="guides">
 {chr(10).join(cards)}
 </div>
+<div class="tip"><b>{ {'en':'Want every number?','pt':'Quer todos os números?','es':'¿Quieres todos los números?'}[L] }</b>{ {'en':'The <a href="wiki/index.html">Footfall wiki</a> (in Portuguese for now) has every item, place, zombie and mechanic straight from the game code.','pt':'A <a href="wiki/index.html">wiki do Footfall</a> tem cada item, lugar, zumbi e mecânica, direto do código do jogo.','es':'La <a href="wiki/index.html">wiki de Footfall</a> (por ahora en portugués) tiene cada objeto, lugar, zombi y mecánica, directo del código del juego.'}[L] }</div>
 <div class="tip warn"><b>{ {'en':'Before you go out','pt':'Antes de sair','es':'Antes de salir'}[L] }</b>{UI['safe'][L]}</div>
 </div>''')
     return shell('guias', 'Footfall — Guides', UI['hub_sub']['en'], '\n'.join(parts))

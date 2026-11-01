@@ -1,0 +1,90 @@
+<!-- titulo: Ataque noturno | categoria: Base | resumo: A fórmula do cerco de toda noite à base: horário, número de atacantes, armadilhas, dano, perdas nos baús e a horda da semana. -->
+<p>Toda noite a sua <a href="base.html">base</a> sofre um <b>ataque noturno</b>: um grupo de zumbis bate nas paredes, portas e janelas. O ataque acontece mesmo com o app fechado e é resolvido quando você volta. O painel da base avisa: <i>"Toda noite (1h) a base sofre um ataque. Dormir dentro dela ajuda a defender."</i></p>
+
+<h2>Quando acontece</h2>
+<ul>
+<li>Cada noite é resolvida à <b>1h da madrugada</b> (hora do celular).</li>
+<li>Com o app fechado, as noites perdidas são resolvidas quando o jogo volta a rodar: <b>no máximo 3 noites</b> são aplicadas; as que passarem disso são puladas.</li>
+<li>Base nova: a contagem começa na noite seguinte.</li>
+<li>Só acontece se a base tiver pelo menos uma parede levantada ou só demarcada. Base só de paredes de prédio não sofre ataque.</li>
+<li><b>Base do grupo</b>: cada noite vale uma vez só para todos; o servidor escolhe um celular para aplicar e o resultado chega aos outros.</li>
+</ul>
+
+<h2>Quantos atacam</h2>
+<p>Ataque comum:</p>
+<p><b>atacantes = 2 + sorteio de 0 a (2 + M) + 3 se a fogueira estiver acesa</b></p>
+<p>onde <b>M</b> = metros de parede levantada ÷ 10, arredondado. Paredes de prédio não contam (não caem). Depois:</p>
+<ul>
+<li><b>+2</b> se for noite e o <a href="moveis-da-base.html">holofote</a> estiver aceso (a luz chama).</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Paredes levantadas</th><th>M</th><th>Atacantes (sem fogo nem luz)</th></tr>
+<tr><td>0 a 4 m</td><td>0</td><td>2 a 4</td></tr>
+<tr><td>20 m</td><td>2</td><td>2 a 6</td></tr>
+<tr><td>30 m</td><td>3</td><td>2 a 7</td></tr>
+<tr><td>50 m</td><td>5</td><td>2 a 9</td></tr>
+</table></div>
+<p>A fogueira e o holofote são verificados no momento em que o ataque é resolvido.</p>
+
+<h2>Armadilhas primeiro</h2>
+<p>Antes de qualquer pancada, cada <a href="armadilhas.html">estaca</a> e cada buraco coberto com usos pega até um terço dos atacantes que ainda não foram pegos (divisão inteira), gastando um uso por zumbi. Os pegos não batem.</p>
+
+<h2>Dano de cada golpe</h2>
+<p>Cada atacante que sobrou dá <b>um golpe</b>:</p>
+<p><b>dano = (8 + sorteio de 0 a 12) × avisado × defendido</b></p>
+<div class="tbl"><table>
+<tr><th>Multiplicador</th><th>Condição</th><th>Valor</th></tr>
+<tr><td>Latas</td><td>Pelo menos um <a href="armadilhas.html">arame com latas</a> posicionado</td><td>× 0,85</td></tr>
+<tr><td>Torre</td><td>Torre de vigia posicionada</td><td>× 0,85</td></tr>
+<tr><td>Luz</td><td>Noite e holofote aceso</td><td>× 0,8</td></tr>
+<tr><td>Defendido</td><td>Sessão aberta e você <b>na base pelo GPS</b> no momento do ataque</td><td>× 0,5</td></tr>
+<tr><td>Janela</td><td>Golpe que caiu numa janela</td><td>× 1,3</td></tr>
+</table></div>
+<p>Com tudo junto (latas, torre, luz e defendendo), um golpe vai de 2,3 a 5,8 de dano em vez de 8 a 20.</p>
+
+<h3>Onde cada golpe cai</h3>
+<ol class="steps">
+<li>Se existe alguma porta ou janela <b>fechada e inteira</b>, há <b>35%</b> de chance de o golpe ir numa delas (sorteada). Janela leva 30% a mais.</li>
+<li>Senão, o golpe vai numa parede levantada sorteada (paredes de prédio nunca levam golpe). Parede já derrubada também pode ser sorteada.</li>
+<li>Sem nenhuma parede levantada, o golpe se perde.</li>
+</ol>
+<p>Paredes e aberturas nunca ficam abaixo de 0. Com vida 0, a parede cai e a porta ou janela vira buraco.</p>
+
+<h2>Perdas nos baús</h2>
+<p>Depois dos golpes, o jogo conta os pontos abertos:</p>
+<p><b>abertos = paredes derrubadas + paredes só demarcadas + portas abertas + portas e janelas quebradas</b></p>
+<p>Se houver pelo menos um ponto aberto, para <b>cada tipo de item</b> nos baús (menos roupas):</p>
+<ul>
+<li>20% de chance de o tipo ser atingido;</li>
+<li>se for, some <b>metade</b> daquele item (arredondada para cima).</li>
+</ul>
+<p>Base fechada no fim do ataque não perde nada. O aviso resume tudo, por exemplo: <i>"Ataque noturno à base: 7 zumbi(s) (você defendeu), 2 nas armadilhas. 1 parede(s) caída(s)/porta(s) aberta(s): 3 tipo(s) de item sumiram dos baús!"</i> ou <i>"... As paredes aguentaram."</i></p>
+<div class="tip warn"><b>Porta aberta à 1h</b>Deixar a porta aberta conta como parede no chão: mesmo que nenhuma parede caia, os baús ficam expostos. Feche as portas antes de encerrar a sessão.</div>
+
+<h2>A horda da semana passando pela base</h2>
+<p>Toda semana uma <a href="horda-e-alarmes.html">horda</a> de 30 a 60 zumbis atravessa a sua região em linha reta (quarta a domingo, entre 19h e 22h, durante 2 h). Quando o bando passa pelo ponto da rota mais perto da sua base:</p>
+<ul>
+<li>se a rota passa a <b>mais de 300 m</b> do centro da base, nada acontece;</li>
+<li>se passa a até 300 m, a base sofre um ataque com <b>n = tamanho da horda × (1 − distância ÷ 400)</b>, arredondado, no mínimo 6 e no máximo o tamanho da horda.</li>
+</ul>
+<p>Esse ataque segue as mesmas regras do ataque noturno (armadilhas, dano por golpe, multiplicadores, defesa e perdas), com duas diferenças: o número de atacantes é o da horda (a fogueira não soma) e o holofote aceso ainda soma +2. Cada horda bate na base só uma vez (na base do grupo, uma vez para todos). O aviso começa com <i>"A horda passou pela base: ..."</i>.</p>
+<p>Exemplo: horda de 50 com a rota a 100 m do centro da base: 50 × (1 − 100/400) = 37,5 → 38 atacantes.</p>
+
+<h2>Como se defender</h2>
+<ul>
+<li>Feche a base: levante todas as paredes demarcadas e feche as portas.</li>
+<li>Reforce as paredes (chapa 200, concreto 350) e pregue tábuas nas janelas (40 → 100). Veja <a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a>.</li>
+<li>Estacas e buracos rearmados pegam até um terço dos atacantes cada.</li>
+<li>Latas e torre reduzem o dano em 15% cada.</li>
+<li>Estar na base com a sessão aberta à 1h corta o dano pela metade.</li>
+<li>Apague a fogueira à noite (ou use o fogão a lenha): fogueira acesa traz 3 a mais.</li>
+<li>Base menor = menos parede exposta = menos atacantes.</li>
+<li>Conserte as paredes todo dia: 1 tábua + 1 prego devolvem 50 + 5 por nível de Carpintaria.</li>
+</ul>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="armadilhas.html">Armadilhas</a></li>
+<li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li>
+<li><a href="radio.html">Rádio</a> (aviso da horda)</li>
+</ul>

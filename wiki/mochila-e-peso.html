@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mochila e peso — Wiki do Footfall</title>
+<meta name="description" content="Quanto você carrega nos bolsos e na mochila, o que muda o limite, o efeito da carga pesada, cinto, costas, a regra do bolso primeiro e largar itens no chão.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html" aria-current=page>Mochila e peso</a></li><li><a href="morte.html">Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html">Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html">Cansaço e sono</a></li><li><a href="feridas.html">Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html">Temperatura</a></li><li><a href="tratamento.html">Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html">Visão</a></li><li><a href="zumbis.html">Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html">Corpos</a></li><li><a href="saque.html">Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html">Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html">Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Personagem</p>
+<h1>Mochila e peso</h1>
+<p class="sub">Quanto você carrega nos bolsos e na mochila, o que muda o limite, o efeito da carga pesada, cinto, costas, a regra do bolso primeiro e largar itens no chão.</p>
+<p>Tudo o que você carrega fica em dois lugares: nos <b>bolsos</b> (acesso rápido, na mão na hora da luta) ou na <b>mochila vestida</b> (cabe mais, mas tirar algo dela no meio da luta demora e faz barulho). O que está vestido ou pendurado no corpo não pesa. Passar do limite de qualquer um dos dois deixa você com <b>carga pesada</b>.</p>
+
+<h2>Capacidade</h2>
+<h3>Bolsos</h3>
+<p><b>Bolsos = (4 kg + bolsos de cada roupa vestida) × multiplicador + 0,5 kg por nível de Força.</b></p>
+<p>Os 4 kg são o corpo (mãos e bolsos rasos). Roupa rasgada conta só a metade dos bolsos até ser costurada.</p>
+<div class="tbl"><table>
+<tr><th>Peça</th><th>Espaço</th><th>Bolsos a mais</th></tr>
+<tr><td><a href="item-colete_bolsos.html">Colete multibolsos</a></td><td>Colete</td><td>4 kg</td></tr>
+<tr><td><a href="item-colete_tatico.html">Colete tático</a></td><td>Colete</td><td>3 kg (e libera o 3º espaço do cinto)</td></tr>
+<tr><td><a href="item-calca_cargo.html">Calça cargo</a></td><td>Calça</td><td>3 kg</td></tr>
+<tr><td><a href="item-calca_tatica.html">Calça tática</a></td><td>Calça</td><td>3 kg</td></tr>
+<tr><td><a href="item-jaqueta_bolsos.html">Jaqueta com bolsos</a></td><td>Roupa</td><td>2 kg</td></tr>
+<tr><td><a href="item-corta_vento.html">Corta-vento</a></td><td>Roupa</td><td>1,5 kg</td></tr>
+<tr><td><a href="item-bolsa_coxa.html">Bolsa tática de coxa</a></td><td>Bolsa perna</td><td>1,5 kg</td></tr>
+<tr><td><a href="item-pochete.html">Pochete</a></td><td>Pochete</td><td>1,5 kg</td></tr>
+<tr><td><a href="item-calca_jeans.html">Calça jeans</a></td><td>Calça</td><td>1 kg</td></tr>
+<tr><td><a href="item-jaqueta.html">Jaqueta de couro</a></td><td>Roupa</td><td>1 kg</td></tr>
+<tr><td><a href="item-casaco.html">Casaco grosso</a></td><td>Roupa</td><td>1 kg</td></tr>
+<tr><td><a href="item-colete.html">Colete balístico</a></td><td>Colete</td><td>1 kg</td></tr>
+<tr><td><a href="item-bolsa_canela.html">Bolsa tática de canela</a></td><td>Bolsa perna</td><td>0,8 kg</td></tr>
+<tr><td><a href="item-moletom.html">Moletom escuro</a></td><td>Roupa</td><td>0,5 kg</td></tr>
+<tr><td><a href="item-calca_moletom.html">Calça de moletom</a></td><td>Calça</td><td>0,5 kg</td></tr>
+<tr><td><a href="item-bolsa_braco.html">Bolsa de braço</a></td><td>Bolsa braço</td><td>0,5 kg</td></tr>
+</table></div>
+<p>Como cada espaço leva uma peça só, o máximo de bolsos com roupa é: 4 (corpo) + 4 (colete multibolsos) + 3 (calça cargo ou tática) + 2 (jaqueta com bolsos) + 1,5 (bolsa de coxa) + 1,5 (pochete) + 0,5 (bolsa de braço) = <b>16,5 kg</b> antes dos multiplicadores.</p>
+<h3>Mochila</h3>
+<p><b>Mochila = capacidade da mochila vestida × multiplicador</b> (a Força não soma aqui).</p>
+<div class="tbl"><table>
+<tr><th>Mochila</th><th>Cabe</th><th>Peso dela</th><th>Raridade</th><th>Observação</th></tr>
+<tr><td><a href="item-mochila_academia.html">Bolsa de academia</a></td><td>5 kg</td><td>0,4 kg</td><td>comum</td><td>-</td></tr>
+<tr><td><a href="item-mochila_escolar.html">Mochila escolar</a></td><td>6 kg</td><td>0,5 kg</td><td>comum</td><td>vem no kit inicial</td></tr>
+<tr><td><a href="item-mochila.html">Mochila de caminhada</a></td><td>10 kg</td><td>0,8 kg</td><td>raro</td><td>-</td></tr>
+<tr><td><a href="item-mochila_tatica.html">Mochila tática</a></td><td>12 kg</td><td>1,2 kg</td><td>raro</td><td>as alças MOLLE liberam o 3º espaço do cinto</td></tr>
+<tr><td><a href="item-mochila_cargueira.html">Mochila cargueira</a></td><td>16 kg</td><td>2,0 kg</td><td>raro</td><td>5% mais lento na luta e +0,015 de barulho no mapa</td></tr>
+</table></div>
+<p>Sem mochila vestida, só os bolsos contam.</p>
+<h3>Multiplicador (traços)</h3>
+<div class="tbl"><table>
+<tr><th>Traço</th><th>Efeito no limite</th></tr>
+<tr><td>Forte</td><td>+20%</td></tr>
+<tr><td>Organizado</td><td>+30%</td></tr>
+<tr><td>Fraco</td><td>-20%</td></tr>
+<tr><td>Desorganizado</td><td>-30%</td></tr>
+</table></div>
+<p>Os traços somam (Forte e Organizado juntos dão ×1,5) e valem para bolsos e mochila. A <b>Força</b> soma 0,5 kg por nível, só nos bolsos, depois do multiplicador.</p>
+<div class="tip"><b>Exemplo</b>Calça jeans e mochila escolar, sem traços, Força 0: bolsos 4 + 1 = 5 kg; mochila 6 kg; total 11 kg. Com calça cargo, colete multibolsos e mochila tática, Organizado e Força 2: bolsos (4 + 3 + 4) × 1,3 + 1 = 15,3 kg; mochila 12 × 1,3 = 15,6 kg.</div>
+
+<h2>Carga pesada</h2>
+<p>Você fica com carga pesada quando o peso nos bolsos passa do limite dos bolsos <b>ou</b> o peso na mochila passa do limite da mochila. Aparece o estado "Carga pesada" e a borda do ícone da mochila fica laranja.</p>
+<div class="tbl"><table>
+<tr><th>Situação</th><th>No mapa</th><th>Na tela de ação</th></tr>
+<tr><td>Mais de 75% do total ocupado</td><td>-</td><td>mais lento: 1 - 0,4 × (ocupação - 0,75), até 10% mais lento ("Mochila quase cheia")</td></tr>
+<tr><td>Carga pesada</td><td>+0,03 de barulho (uns 3,6 m)</td><td>velocidade ×0,8 e golpes 15% mais lentos ("Mochila pesada demais")</td></tr>
+<tr><td>Mochila cargueira vestida</td><td>+0,015 de barulho</td><td>velocidade ×0,95</td></tr>
+</table></div>
+<p>Pegar algo que te deixa pesado mostra "Mochila pesada: mais lento e barulhento.". Nada te impede de pegar: o que não cabe em lugar nenhum fica na mochila (ou nos bolsos, sem mochila) e você só fica pesado.</p>
+
+<h2>A regra do bolso primeiro</h2>
+<p>Item novo é guardado sozinho:</p>
+<ul>
+<li><b>Vai para o bolso primeiro</b>: remédios e curativos (tudo da categoria médica), munição, os arremessáveis (<a href="item-molotov.html">molotov</a>, <a href="item-rojao.html">rojão</a>, <a href="item-despertador.html">despertador</a>, <a href="item-garrafa.html">garrafa</a>, <a href="item-pedra.html">pedra</a>), <a href="item-pilhas.html">pilhas</a> e <a href="item-lanterna.html">lanterna</a>. Se não couber no bolso, vai para a mochila.</li>
+<li><b>Todo o resto vai para a mochila primeiro</b>, e para o bolso se a mochila estiver cheia.</li>
+<li>Sem mochila, tudo vai para o bolso.</li>
+</ul>
+<p>Quando um item é usado, sai do bolso primeiro se você está na tela de ação, ou da mochila primeiro se está no mapa (para o bolso ficar sempre com o que você precisa na luta). Você pode mover itens entre bolso e mochila na tela da mochila ("Não cabe nos bolsos.", "Não cabe na mochila.", "Você está sem mochila.").</p>
+<p>Tirar a mochila fora da luta joga tudo o que estava nela para os bolsos (pode deixar você pesado). Roupa nova que entra na mochila é vestida sozinha num espaço vazio, a não ser que você tenha esvaziado aquele espaço de propósito.</p>
+
+<h2>Mexer na mochila durante a luta</h2>
+<p>Na tela de ação, o que está só na mochila precisa ser <b>procurado</b> antes:</p>
+<ul>
+<li>leva <b>2,5 s</b> e faz barulho de <b>10 m</b> ("Procurando ... na mochila...");</li>
+<li>uma procura por vez ("Já está mexendo na mochila.");</li>
+<li>quando acaba, o item vai para o bolso (quanto couber, pelo menos 1) e, se foi pedido para usar, já é usado (arma vai para a mão, lanterna liga, remédio é tomado);</li>
+<li>vestir roupa ou pendurar arma que estão na mochila: primeiro procura, depois veste;</li>
+<li>trocar ou tirar a mochila no meio da luta também leva os mesmos 2,5 s ("Trocando de mochila...");</li>
+<li>arremessáveis só podem ser jogados se estiverem no bolso;</li>
+<li>munição só na mochila deixa a recarga <b>2× mais lenta</b> ("munição no fundo da mochila..."); veja <a href="armas-de-fogo.html">Armas de fogo</a>.</li>
+</ul>
+
+<h2>Espaços do corpo</h2>
+<div class="tbl"><table>
+<tr><th>Espaço</th><th>O que vai</th></tr>
+<tr><td>Cabeça</td><td>capacetes, lanterna de cabeça, gorro, boné</td></tr>
+<tr><td>Roupa</td><td>jaqueta, moletom, casaco, capa de chuva, jaqueta com bolsos, corta-vento</td></tr>
+<tr><td>Colete</td><td>colete balístico, colete tático, colete multibolsos</td></tr>
+<tr><td>Braços</td><td>cotoveleiras, protetor de antebraço</td></tr>
+<tr><td>Mãos</td><td>luvas de trabalho, luvas táticas</td></tr>
+<tr><td>Calça</td><td>calça jeans, cargo, tática, de moletom</td></tr>
+<tr><td>Pernas</td><td>caneleiras, joelheiras</td></tr>
+<tr><td>Pés</td><td>botas, tênis, coturno</td></tr>
+<tr><td>Mochila</td><td>as cinco mochilas</td></tr>
+<tr><td>Bolsa perna</td><td>bolsa de coxa ou de canela</td></tr>
+<tr><td>Bolsa braço</td><td>bolsa de braço</td></tr>
+<tr><td>Pochete</td><td>pochete</td></tr>
+<tr><td>Costas</td><td>uma arma longa</td></tr>
+<tr><td>Cinto (2 espaços; 3 com MOLLE)</td><td>armas curtas</td></tr>
+</table></div>
+<h3>Costas e cinto</h3>
+<p>Armas longas vão nas <b>costas</b>: <a href="item-escopeta.html">escopeta</a>, <a href="item-arco.html">arco</a>, <a href="item-besta.html">besta</a>, <a href="item-lanca.html">lança</a>, <a href="item-machado_incendio.html">machado de incêndio</a>, <a href="item-cano.html">cano</a>, <a href="item-machado.html">machado</a>, <a href="item-taco.html">taco</a>, <a href="item-taco_pregos.html">taco com pregos</a>, <a href="item-pe_de_cabra.html">pé de cabra</a>, <a href="item-rifle.html">rifle</a>, <a href="item-carabina.html">carabina</a>, <a href="item-fuzil.html">fuzil</a>, <a href="item-submetralhadora.html">submetralhadora</a>, <a href="item-marreta.html">marreta</a>, <a href="item-foice.html">foice</a> e <a href="item-katana.html">katana</a>. Qualquer outra arma vai no <b>cinto</b> (faca, martelo, cassetete, facão, faca de combate, chave inglesa, pistola, revólver, escopeta serrada).</p>
+<p>O cinto tem 2 espaços. O <b>3º espaço</b> só existe com o <a href="item-colete_tatico.html">colete tático</a> ou a <a href="item-mochila_tatica.html">mochila tática</a> vestidos (alças MOLLE).</p>
+<p>No meio da luta, só dá para trocar para as armas que estão nas costas ou no cinto (e, se for arma de fogo, com munição na mochila). As outras precisam ser procuradas na mochila primeiro.</p>
+
+<h2>Largar itens</h2>
+<p>Pela mochila dá para largar um item (ou todos) no chão onde você está:</p>
+<ul>
+<li>forma uma pilha <b>"Itens largados"</b>; largar outra coisa a até 5 m entra na mesma pilha;</li>
+<li>a pilha dura <b>1 dia</b> e aparece no saque como qualquer outra coisa do chão;</li>
+<li>não dá para largar no depósito do rádio, na base pelo rádio nem na arena;</li>
+<li>item vestido ou pendurado precisa ser tirado antes ("Está no corpo: tire antes de largar.").</li>
+</ul>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="saque.html">Saque</a></li>
+<li><a href="controles.html">Controles</a></li>
+<li><a href="armas-de-fogo.html">Armas de fogo</a></li>
+</ul>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

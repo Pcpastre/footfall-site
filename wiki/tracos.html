@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Traços — Wiki do Footfall</title>
+<meta name="description" content="Todos os traços positivos e negativos: custo, efeito exato no código e conflitos.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html">Mochila e peso</a></li><li><a href="morte.html">Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html" aria-current=page>Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html">Cansaço e sono</a></li><li><a href="feridas.html">Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html">Temperatura</a></li><li><a href="tratamento.html">Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html">Visão</a></li><li><a href="zumbis.html">Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html">Corpos</a></li><li><a href="saque.html">Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html">Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html">Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Personagem</p>
+<h1>Traços</h1>
+<p class="sub">Todos os traços positivos e negativos: custo, efeito exato no código e conflitos.</p>
+<p>Traços são características escolhidas na <a href="criacao-de-personagem.html">criação de personagem</a>. Os positivos custam pontos; os negativos devolvem pontos. O saldo final (pontos da <a href="profissoes.html">profissão</a> menos o custo dos traços) precisa ser 0 ou maior. Traços conflitantes não podem ser escolhidos juntos, e a regra vale nos dois sentidos: se A conflita com B, marcar A desliga B.</p>
+<p>Há 28 traços positivos e 23 negativos. Os traços valem até a <a href="morte.html">morte</a>; não dá para ganhar nem perder traços durante o jogo.</p>
+
+<h2>Traços positivos</h2>
+<div class="tbl"><table>
+<tr><th>Traço</th><th>Custo</th><th>Efeito (texto do jogo)</th><th>Conflita com</th></tr>
+<tr><td>Atlético</td><td>8</td><td>+40% fôlego máximo</td><td>Em forma, Fora de forma, Sedentário, Asmático</td></tr>
+<tr><td>Em forma</td><td>4</td><td>+20% fôlego máximo</td><td>Atlético, Fora de forma, Sedentário</td></tr>
+<tr><td>Forte</td><td>8</td><td>+30% dano corpo a corpo, +20% limite de peso</td><td>Robusto, Fraco, Franzino</td></tr>
+<tr><td>Robusto</td><td>4</td><td>+15% dano corpo a corpo</td><td>Forte, Fraco, Franzino</td></tr>
+<tr><td>Passos leves</td><td>4</td><td>-30% barulho ao andar e correr</td><td>Desastrado</td></tr>
+<tr><td>Olhos de águia</td><td>4</td><td>+30% alcance da visão</td><td>Míope</td></tr>
+<tr><td>Visão noturna</td><td>2</td><td>Sem perda de visão à noite</td><td>—</td></tr>
+<tr><td>Audição aguçada</td><td>4</td><td>Aviso de zumbis se aproximando fora da visão</td><td>Ouvido ruim</td></tr>
+<tr><td>Reflexos rápidos</td><td>6</td><td>+15% janela de crítico; +10% cadência no automático</td><td>Reflexos lentos</td></tr>
+<tr><td>Pele grossa</td><td>6</td><td>-30% chance de golpe virar ferimento</td><td>Pele fina</td></tr>
+<tr><td>Cura rápida</td><td>4</td><td>Ferimentos curam 30% mais rápido</td><td>Cura lenta</td></tr>
+<tr><td>Imunidade forte</td><td>4</td><td>-30% chance de mordida infeccionar</td><td>Imunidade fraca</td></tr>
+<tr><td>Organizado</td><td>6</td><td>+30% capacidade da mochila</td><td>Desorganizado</td></tr>
+<tr><td>Sortudo</td><td>4</td><td>+10% chance de loot raro</td><td>Azarado</td></tr>
+<tr><td>Come pouco</td><td>3</td><td>Fome 25% mais lenta</td><td>Comilão</td></tr>
+<tr><td>Bebe pouco</td><td>3</td><td>Sede 25% mais lenta</td><td>Sede alta</td></tr>
+<tr><td>Corajoso</td><td>4</td><td>Pânico cresce 70% mais devagar</td><td>Covarde, Desensibilizado</td></tr>
+<tr><td>Viciado em adrenalina</td><td>4</td><td>Na luta, +10% velocidade em pânico forte e +25% no extremo</td><td>—</td></tr>
+<tr><td>Desensibilizado</td><td>8</td><td>Imune a pânico</td><td>Corajoso, Covarde, Hemofóbico, Claustrofóbico, Agorafóbico</td></tr>
+<tr><td>Aprende rápido</td><td>6</td><td>+30% XP em todas as habilidades</td><td>Aprende devagar</td></tr>
+<tr><td>Faz-tudo</td><td>6</td><td>+1 Carpintaria e +1 Mecânica</td><td>—</td></tr>
+<tr><td>Socorrista</td><td>2</td><td>+1 Primeiros socorros</td><td>Hemofóbico</td></tr>
+<tr><td>Jogador de beisebol</td><td>4</td><td>+1 Armas brancas; +15% dano com tacos</td><td>—</td></tr>
+<tr><td>Caçador</td><td>6</td><td>+1 Armas de fogo; -15% barulho ao andar</td><td>—</td></tr>
+<tr><td>Jardineiro</td><td>3</td><td>+1 Agricultura</td><td>—</td></tr>
+<tr><td>Cozinheiro de mão cheia</td><td>3</td><td>Comida rende 25% mais</td><td>—</td></tr>
+<tr><td>Líder</td><td>4</td><td>No grupo, o bônus de XP do seu papel vale o dobro (+50%)</td><td>—</td></tr>
+<tr><td>Andarilho</td><td>5</td><td>+10% na distância que conta para o loot</td><td>Caseiro</td></tr>
+</table></div>
+
+<h2>Traços negativos</h2>
+<div class="tbl"><table>
+<tr><th>Traço</th><th>Devolve</th><th>Efeito (texto do jogo)</th><th>Conflita com</th></tr>
+<tr><td>Fora de forma</td><td>4</td><td>-20% fôlego máximo</td><td>Atlético, Em forma, Sedentário</td></tr>
+<tr><td>Sedentário</td><td>8</td><td>-40% fôlego máximo</td><td>Atlético, Em forma, Fora de forma</td></tr>
+<tr><td>Fraco</td><td>8</td><td>-30% dano corpo a corpo, -20% limite de peso</td><td>Forte, Robusto, Franzino</td></tr>
+<tr><td>Franzino</td><td>4</td><td>-15% dano corpo a corpo</td><td>Forte, Robusto, Fraco</td></tr>
+<tr><td>Desastrado</td><td>2</td><td>+30% barulho; saquear faz mais barulho</td><td>Passos leves</td></tr>
+<tr><td>Míope</td><td>2</td><td>-30% alcance da visão</td><td>Olhos de águia</td></tr>
+<tr><td>Ouvido ruim</td><td>4</td><td>Sem aviso de zumbis fora da visão</td><td>Audição aguçada</td></tr>
+<tr><td>Reflexos lentos</td><td>4</td><td>-15% janela de crítico; -10% cadência</td><td>Reflexos rápidos</td></tr>
+<tr><td>Pele fina</td><td>6</td><td>+30% chance de golpe virar ferimento</td><td>Pele grossa</td></tr>
+<tr><td>Cura lenta</td><td>3</td><td>Ferimentos curam 30% mais devagar</td><td>Cura rápida</td></tr>
+<tr><td>Imunidade fraca</td><td>4</td><td>+30% chance de infeccionar (até laceração)</td><td>Imunidade forte</td></tr>
+<tr><td>Desorganizado</td><td>4</td><td>-30% capacidade da mochila</td><td>Organizado</td></tr>
+<tr><td>Azarado</td><td>4</td><td>-10% chance de loot raro</td><td>Sortudo</td></tr>
+<tr><td>Comilão</td><td>3</td><td>Fome 25% mais rápida</td><td>Come pouco</td></tr>
+<tr><td>Sede alta</td><td>3</td><td>Sede 25% mais rápida</td><td>Bebe pouco</td></tr>
+<tr><td>Covarde</td><td>2</td><td>Pânico cresce 2× mais rápido</td><td>Corajoso, Desensibilizado</td></tr>
+<tr><td>Claustrofóbico</td><td>4</td><td>Pânico perto de paredes e becos</td><td>Agorafóbico, Desensibilizado</td></tr>
+<tr><td>Agorafóbico</td><td>4</td><td>Pânico em avenidas e áreas abertas</td><td>Claustrofóbico, Desensibilizado</td></tr>
+<tr><td>Hemofóbico</td><td>3</td><td>Pânico ao fazer curativo</td><td>Desensibilizado, Socorrista</td></tr>
+<tr><td>Aprende devagar</td><td>6</td><td>-30% XP em todas as habilidades</td><td>Aprende rápido</td></tr>
+<tr><td>Asmático</td><td>5</td><td>Fôlego recupera 50% mais devagar</td><td>Atlético</td></tr>
+<tr><td>Fumante</td><td>2</td><td>Precisa de cigarro a cada 4 h de jogo; sem ele, -10% fôlego</td><td>—</td></tr>
+<tr><td>Caseiro</td><td>4</td><td>A mais de 2 km da base, -20% fôlego máximo</td><td>Andarilho</td></tr>
+</table></div>
+
+<h2>O que cada traço faz, em detalhe</h2>
+
+<h3>Fôlego: Atlético, Em forma, Fora de forma, Sedentário, Asmático</h3>
+<p>O fôlego máximo começa em 100, perde 0,4 por ponto de <a href="cansaco-e-sono.html">cansaço</a> e outras penalidades (febre, dor, frio...), e só então é multiplicado pelo traço: Atlético ×1,4, Em forma ×1,2, Fora de forma ×0,8, Sedentário ×0,6. A habilidade Fôlego soma +3% por nível ao mesmo multiplicador. O resultado fica sempre entre 30 e 150. Asmático não mexe no máximo: multiplica por 0,5 a velocidade com que o fôlego volta na luta.</p>
+
+<h3>Dano: Forte, Robusto, Fraco, Franzino, Jogador de beisebol</h3>
+<p>O dano corpo a corpo de um iniciante começa em 75%. Forte soma 30 pontos, Robusto 15, Fraco tira 30 e Franzino tira 15. Armas brancas soma 5 por nível e Força 3 por nível (veja <a href="habilidades.html">Habilidades</a>). Jogador de beisebol multiplica o resultado por 1,15 quando a arma na mão é o <a href="item-taco.html">Taco de beisebol</a> ou o <a href="item-taco_pregos.html">Taco com pregos</a>, além de dar +1 em Armas brancas. Forte e Fraco também mudam o limite de peso em ±20% (bolsos e mochila).</p>
+
+<h3>Barulho: Passos leves, Caçador, Desastrado</h3>
+<p>O barulho dos passos é multiplicado por 1 − 0,3 (Passos leves) − 0,15 (Caçador) + 0,3 (Desastrado) − 0,04 por nível de Furtividade, com mínimo de 0,3. Passos leves e Caçador podem ser somados. Desastrado também multiplica por 1,5 o barulho de abrir móveis e recipientes ao saquear. O mesmo multiplicador vale dentro da tela de ação, onde ele define o quanto os zumbis demoram a reparar em você.</p>
+
+<h3>Visão: Olhos de águia, Míope, Visão noturna</h3>
+<ul>
+<li><b>Olhos de águia</b>: alcance da visão ×1,3 no mapa e na tela de ação; na tela de ação o cone de visão abre 180° em vez de 160°.</li>
+<li><b>Míope</b>: alcance ×0,7; na tela de ação os zumbis que saem da visão somem mais devagar da tela (1,6 s em vez de 0,8 s).</li>
+<li><b>Visão noturna</b>: à noite a visão no mapa continua 120 m (sem o traço cai para 40 m, ou 60 m em noite de lua cheia, ou 90 m com lanterna). Na tela de ação, à noite e sem lanterna, você vê até 26 m em vez de 12 m.</li>
+</ul>
+
+<h3>Audição: Audição aguçada, Ouvido ruim</h3>
+<p>No mapa, o jogo toca o gemido do zumbi mais perto que esteja te perseguindo ou a menos de 25 m, na direção dele. Sem traço, isso vale até 40 m; com Audição aguçada, até 70 m; com Ouvido ruim o aviso não existe. Na tela de ação, o raio em que você percebe zumbis fora da visão é 6 m (10 m com Audição aguçada, 3 m com Ouvido ruim), e capacete fechado multiplica esse raio por 0,7.</p>
+
+<h3>Reflexos rápidos e lentos</h3>
+<p>Mexem na tela de ação: a janela de acerto crítico fica 15% maior (ou menor); no modo Automático o intervalo entre golpes automáticos é ×0,9 (ou ×1,1); e o preparo do golpe dos zumbis parece mais lento (×1,12) ou mais rápido (×0,9), dando mais ou menos tempo para desviar.</p>
+
+<h3>Pele grossa e Pele fina</h3>
+<p>Quando um golpe vai virar <a href="feridas.html">ferida</a>, Pele grossa cancela a ferida em 30% das vezes (sobra só o dano, pela metade). Pele fina faz o contrário: quando a roupa segura o golpe, em 30% das vezes o jogo sorteia de novo o mesmo ataque, com a mesma roupa, e ele pode passar. A mordida segurada pela roupa vira contusão e não é sorteada de novo.</p>
+
+<h3>Cura rápida e Cura lenta</h3>
+<p>Multiplicam por 0,7 (ou 1,3) o tempo de cicatrização de toda ferida tratada. Combinam com o −5% por nível de Primeiros socorros e com a maca da base (×0,67).</p>
+
+<h3>Imunidade forte e Imunidade fraca</h3>
+<p>Mudam a chance de uma ferida de zumbi passar a <a href="infeccao.html">infecção zumbi</a>:</p>
+<div class="tbl"><table>
+<tr><th>Ferida</th><th>Normal</th><th>Imunidade forte</th><th>Imunidade fraca</th></tr>
+<tr><td>Mordida</td><td>85%</td><td>60%</td><td>100%</td></tr>
+<tr><td>Laceração ou hemorragia</td><td>25%</td><td>12,5%</td><td>40%</td></tr>
+<tr><td>Arranhão</td><td>7%</td><td>3,5%</td><td>11,2%</td></tr>
+</table></div>
+<p>Repare que os números reais não batem exatamente com os textos dos traços: Imunidade forte também corta pela metade a chance de laceração e arranhão, e Imunidade fraca multiplica essas por 1,6.</p>
+
+<h3>Organizado e Desorganizado</h3>
+<p>Multiplicam por 1,3 (ou 0,7) a capacidade dos bolsos e da mochila vestida, junto com Forte/Fraco (os bônus somam: Forte + Organizado = ×1,5).</p>
+
+<h3>Sortudo e Azarado</h3>
+<p>Multiplicam por 1,1 (ou 0,9) a chance de item raro no saque. Na tela de ação, Sortudo também soma 3% à chance de crítico e à chance de a arma branca não gastar durabilidade no golpe; Azarado tira 3% da chance de crítico.</p>
+
+<h3>Come pouco, Comilão, Bebe pouco, Sede alta</h3>
+<p>Multiplicam por 0,75 (ou 1,25) todo o gasto de calorias ou de água: o do dia e o de cada quilômetro andado. Veja <a href="necessidades.html">Necessidades</a>.</p>
+
+<h3>Pânico: Corajoso, Covarde, Desensibilizado, Viciado em adrenalina</h3>
+<p>O quanto o <a href="mente.html">pânico</a> sobe é multiplicado por 0,3 (Corajoso), 2 (Covarde) ou 0 (Desensibilizado). Desensibilizado também zera o estresse e a tristeza que lutas e feridas causam e anula as fobias. Viciado em adrenalina deixa você 10% mais rápido na tela de ação em Pânico forte e 25% em Pânico extremo.</p>
+
+<h3>Experiência: Aprende rápido, Aprende devagar, Líder</h3>
+<p>Aprende rápido multiplica toda XP por 1,3; Aprende devagar por 0,7. Líder muda o bônus do papel no grupo de ×1,25 para ×1,5. Veja <a href="habilidades.html">Habilidades</a>.</p>
+
+<h3>Habilidade inicial: Faz-tudo, Socorrista, Jogador de beisebol, Caçador, Jardineiro</h3>
+<p>Dão +1 nível na habilidade indicada, somado ao da profissão (teto 10). Ex.: Médico(a) com Socorrista começa com Primeiros socorros 5.</p>
+
+<h3>Cozinheiro de mão cheia</h3>
+<p>Comida não estragada rende 25% mais calorias. Comendo na mesa da base o rendimento sobe mais 10% (×1,25 × 1,1). A água da comida não muda.</p>
+
+<h3>Andarilho</h3>
+<p>A chance de item raro cresce com a distância andada na sessão (1% parado, +1,5% por km, até 15%). Andarilho conta essa distância como 10% maior, e o mesmo vale para a chance de achar conjuntos de roupa.</p>
+
+<h2>Os traços mais traiçoeiros</h2>
+
+<h3>Fumante</h3>
+<p>Fumante devolve só 2 pontos, mas exige um <a href="item-cigarros.html">Maço de cigarros</a> a cada 4 horas reais. O relógio começa na criação do personagem: 4 h depois de criado, se você ainda não fumou, entra a abstinência (moodle <i>Quer fumar</i>). Enquanto ela durar:</p>
+<ul>
+<li>fôlego máximo ×0,9;</li>
+<li>o estresse sobe 0,03 por segundo com o app aberto (cerca de 1,8 por minuto);</li>
+<li>toda luta começa com 10 de pânico a mais.</li>
+</ul>
+<p>Fumar (botão <kbd>Fumar</kbd> no item) zera o relógio, tira 20 de pânico e 25 de estresse ("Fumou um cigarro. Mais calmo."). Quem não é fumante não consegue fumar. O relógio corre também com o app fechado, então quem fica muito tempo fora volta já com vontade de fumar.</p>
+
+<h3>Caseiro</h3>
+<p>Só vale se você tiver uma base. A mais de <b>2 km</b> do trecho de base mais perto, o fôlego máximo é multiplicado por 0,8. Sem base, o traço não faz nada. Postos avançados e barraca não contam como base para essa regra.</p>
+
+<h3>Claustrofóbico e Agorafóbico</h3>
+<p>As fobias criam um <b>piso de pânico</b> em certos lugares:</p>
+<ul>
+<li><b>Claustrofóbico</b>: quando há 4 ou mais prédios a até 15 m de você.</li>
+<li><b>Agorafóbico</b>: quando a rua mais perto (até 15 m) é larga, de 9 m ou mais: avenidas e ruas principais e secundárias do mapa (tipos <i>primary</i>, <i>secondary</i>, <i>trunk</i>, <i>tertiary</i> e suas alças).</li>
+</ul>
+<p>O piso é 35. No mapa o pânico não cai abaixo de 17,5 (metade do piso) enquanto você estiver nesses lugares; na tela de ação ele sobe sozinho até 35 (Em pânico). Como o pânico estreita a visão, tira dano e piora a sutura, a fobia pesa bastante. Desensibilizado anula as duas, e elas não podem ser escolhidas juntas.</p>
+
+<h3>Hemofóbico</h3>
+<p>Ver sangue dá pânico:</p>
+<ul>
+<li>+10 de pânico a cada passo de <a href="tratamento.html">tratamento</a> feito na tela Saúde;</li>
+<li>+35 de pânico no curativo rápido;</li>
+<li>+12 de pânico (multiplicado pelo seu ganho de pânico, no mínimo ×0,5) cada vez que você é ferido na tela de ação.</li>
+</ul>
+<p>Conflita com Socorrista e Desensibilizado. Como o pânico de nível 2 ou mais aumenta a chance de a sutura falhar, o hemofóbico pode entrar num ciclo ruim ao se tratar sozinho logo depois de uma luta.</p>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,694 @@
+{
+  "furniture": [
+    {
+      "id": "bancada",
+      "name": "Bancada",
+      "w": 1.8,
+      "d": 0.8,
+      "h": 0.95,
+      "use": "Libera as receitas de bancada",
+      "name_en": "Workbench",
+      "name_es": "Banco de trabajo",
+      "use_en": "Unlocks workbench recipes",
+      "use_es": "Desbloquea las recetas del banco de trabajo",
+      "recipe": "R14",
+      "cost": {
+        "tabuas": 4,
+        "pregos": 3
+      },
+      "tools": [],
+      "needsBench": false,
+      "skill": "carpintaria",
+      "minLevel": 0,
+      "xp": 40,
+      "trap": false,
+      "uses": null,
+      "rearm_cost": null,
+      "fire": false
+    },
+    {
+      "id": "bau",
+      "name": "Baú",
+      "w": 1.0,
+      "d": 0.6,
+      "h": 0.6,
+      "use": "+40 kg de espaço cada",
+      "name_en": "Chest",
+      "name_es": "Cofre",
+      "use_en": "+40 kg of space each",
+      "use_es": "+40 kg de espacio cada uno",
+      "recipe": "M01",
+      "cost": {
+        "tabuas": 4,
+        "pregos": 4
+      },
+      "tools": [],
+      "needsBench": false,
+      "skill": "carpintaria",
+      "minLevel": 0,
+      "xp": 25,
+      "trap": false,
+      "uses": null,
+      "rearm_cost": null,
+      "fire": false,
+      "capacity_kg": 40
+    },
+    {
+      "id": "cama",
+      "name": "Cama",
+      "w": 1.0,
+      "d": 2.0,
+      "h": 0.5,
+      "use": "Dormir na base recupera 50% mais",
+      "name_en": "Bed",
+      "name_es": "Cama",
+      "use_en": "Sleeping at the base recovers 50% more",
+      "use_es": "Dormir en la base recupera 50% más",
+      "recipe": "M02",
+      "cost": {
+        "tabuas": 3,
+        "pregos": 2,
+        "pano": 4
+      },
+      "tools": [],
+      "needsBench": true,
+      "skill": "carpintaria",
+      "minLevel": 0,
+      "xp": 30,
+      "trap": false,
+      "uses": null,
+      "rearm_cost": null,
+      "fire": false
+    },
+    {
+      "id": "mesa",
+      "name": "Mesa",
+      "w": 1.2,
+      "d": 0.8,
+      "h": 0.75,
+      "use": "Comer na base rende 10% mais",
+      "name_en": "Table",
+      "name_es": "Mesa",
+      "use_en": "Eating at the base goes 10% further",
+      "use_es": "Comer en la base rinde 10% más",
+      "recipe": "M03",
+      "cost": {
+        "tabuas": 3,
+        "pregos": 2
+      },
+      "tools": [],
+      "needsBench": true,
+      "skill": "carpintaria",
+      "minLevel": 0,
+      "xp": 20,
+      "trap": false,
+      "uses": null,
+      "rearm_cost": null,
+      "fire": false
+    },
+    {
+      "id": "canteiro",
+      "name": "Canteiro",
+      "w": 1.2,
+      "d": 1.2,
+      "h": 0.3,
+      "use": "Horta (plantar, regar, colher)",
+      "name_en": "Garden bed",
+      "name_es": "Huerto",
+      "use_en": "Garden bed (plant, water, harvest)",
+      "use_es": "Huerto (plantar, regar, cosechar)",
+      "recipe": "H01",
+      "cost": {
+        "tabuas": 2,
+        "pregos": 2
+      },
+      "tools": [],
+      "needsBench": false,
+      "skill": "agricultura",
+      "minLevel": 0,
+      "xp": 15,
+      "trap": false,
+      "uses": null,
+      "rearm_cost": null,
+      "fire": false
+    },
+    {
+      "id": "barril",
+      "name": "Barril de chuva",
+      "w": 0.7,
+      "d": 0.7,
+      "h": 1.0,
+      "use": "Enche com a chuva: água para as garrafas",
+      "name_en": "Rain barrel",
+      "name_es": "Barril de lluvia",
+      "use_en": "Fills with rain: water for the bottles",
+      "use_es": "Se llena con la lluvia: agua para las botellas",
+      "recipe": "M04",
+      "cost": {
+        "tabuas": 4,
+        "chapa": 1
+      },
+      "tools": [],
+      "needsBench": true,
+      "skill": "carpintaria",
+      "minLevel": 0,
+      "xp": 25,
+      "trap": false,
+      "uses": null,
+      "rearm_cost": null,
+      "fire": false,
+      "max_bottles": 20
+    },
+    {
+      "id": "fogueira",
+      "name": "Fogueira",
+      "w": 1.0,
+      "d": 1.0,
+      "h": 0.3,
+      "use": "Cozinhar (faz luz e barulho à noite)",
+      "name_en": "Campfire",
+      "name_es": "Fogata",
+      "use_en": "Cook (makes light and noise at night)",
+      "use_es": "Cocinar (hace luz y ruido de noche)",
+      "recipe": "M05",
+      "cost": {
+        "pedra": 3,
+        "tabuas": 2
+      },
+      "tools": [],
+      "needsBench": false,
+      "skill": null,
+      "minLevel": 0,
+      "xp": 15,
+      "trap": false,
+      "uses": null,
+      "rearm_cost": null,
+      "fire": true
+    },
+    {
+      "id": "fogao",
+      "name": "Fogão a lenha",
+      "w": 0.9,
+      "d": 0.7,
+      "h": 0.9,
+      "use": "Cozinhar (fechado: quase sem luz)",
+      "name_en": "Wood stove",
+      "name_es": "Cocina de leña",
+      "use_en": "Cook (enclosed: almost no light)",
+      "use_es": "Cocinar (cerrado: casi sin luz)",
+      "recipe": "M06",
+      "cost": {
+        "chapa": 1,
+        "cano": 1,
+        "pregos": 2
+      },
+      "tools": [],
+      "needsBench": true,
+      "skill": "mecanica",
+      "minLevel": 0,
+      "xp": 30,
+      "trap": false,
+      "uses": null,
+      "rearm_cost": null,
+      "fire": true
+    },
+    {
+      "id": "maca",
+      "name": "Maca (enfermaria)",
+      "w": 0.9,
+      "d": 2.0,
+      "h": 0.75,
+      "use": "Na base, ferida tratada cicatriza 50% mais rápido",
+      "name_en": "Stretcher (infirmary)",
+      "name_es": "Camilla (enfermería)",
+      "use_en": "At the base, treated wounds heal 50% faster",
+      "use_es": "En la base, las heridas tratadas cicatrizan 50% más rápido",
+      "recipe": "M07",
+      "cost": {
+        "tabuas": 3,
+        "pano": 3,
+        "pregos": 2,
+        "cano": 1
+      },
+      "tools": [],
+      "needsBench": true,
+      "skill": "carpintaria",
+      "minLevel": 1,
+      "xp": 30,
+      "trap": false,
+      "uses": null,
+      "rearm_cost": null,
+      "fire": false
+    },
+    {
+      "id": "estacas",
+      "name": "Estacas",
+      "w": 1.2,
+      "d": 0.6,
+      "h": 0.5,
+      "use": "Armadilha: fere e aleija quem passa (6 vezes)",
+      "name_en": "Stakes",
+      "name_es": "Estacas",
+      "use_en": "Trap: wounds and cripples whoever passes (6 times)",
+      "use_es": "Trampa: hiere y lisia a quien pasa (6 veces)",
+      "recipe": "M08",
+      "cost": {
+        "tabuas": 2,
+        "pregos": 4
+      },
+      "tools": [],
+      "needsBench": false,
+      "skill": "carpintaria",
+      "minLevel": 0,
+      "xp": 20,
+      "trap": true,
+      "uses": 6,
+      "rearm_cost": {
+        "tabuas": 1,
+        "pregos": 2
+      },
+      "fire": false
+    },
+    {
+      "id": "latas",
+      "name": "Arame com latas",
+      "w": 1.6,
+      "d": 0.2,
+      "h": 0.4,
+      "use": "Alarme: avisa quando um zumbi passa",
+      "name_en": "Tin can wire",
+      "name_es": "Alambre con latas",
+      "use_en": "Alarm: warns you when a zombie passes",
+      "use_es": "Alarma: avisa cuando pasa un zombi",
+      "recipe": "M09",
+      "cost": {
+        "arame": 1,
+        "garrafa": 2,
+        "pregos": 2
+      },
+      "tools": [],
+      "needsBench": false,
+      "skill": null,
+      "minLevel": 0,
+      "xp": 15,
+      "trap": true,
+      "uses": 99,
+      "rearm_cost": null,
+      "fire": false
+    },
+    {
+      "id": "buraco",
+      "name": "Buraco coberto",
+      "w": 1.0,
+      "d": 1.0,
+      "h": 0.03,
+      "use": "Armadilha: o zumbi cai e fica preso (3 vezes)",
+      "name_en": "Covered pit",
+      "name_es": "Pozo cubierto",
+      "use_en": "Trap: the zombie falls in and gets stuck (3 times)",
+      "use_es": "Trampa: el zombi cae y queda atrapado (3 veces)",
+      "recipe": "M10",
+      "cost": {
+        "tabuas": 2,
+        "pano": 2
+      },
+      "tools": [],
+      "needsBench": false,
+      "skill": null,
+      "minLevel": 0,
+      "xp": 20,
+      "trap": true,
+      "uses": 3,
+      "rearm_cost": {
+        "tabuas": 1,
+        "pano": 2
+      },
+      "fire": false
+    },
+    {
+      "id": "holofote",
+      "name": "Holofote",
+      "w": 0.6,
+      "d": 0.6,
+      "h": 2.2,
+      "use": "Com gerador nos baús e gasolina: ilumina a base de noite (mas chama atenção)",
+      "name_en": "Floodlight",
+      "name_es": "Reflector",
+      "use_en": "With a generator in the chests and gasoline: lights the base at night (but draws attention)",
+      "use_es": "Con generador en los cofres y gasolina: ilumina la base de noche (pero llama la atención)",
+      "recipe": "M11",
+      "cost": {
+        "lanterna": 2,
+        "arame": 1,
+        "cano": 1
+      },
+      "tools": [],
+      "needsBench": true,
+      "skill": "mecanica",
+      "minLevel": 1,
+      "xp": 30,
+      "trap": false,
+      "uses": null,
+      "rearm_cost": null,
+      "fire": false
+    },
+    {
+      "id": "torre",
+      "name": "Torre de vigia",
+      "w": 2.0,
+      "d": 2.0,
+      "h": 3.5,
+      "use": "Perto da base você enxerga 50% mais longe",
+      "name_en": "Watchtower",
+      "name_es": "Torre de vigía",
+      "use_en": "Near the base you see 50% farther",
+      "use_es": "Cerca de la base ves 50% más lejos",
+      "recipe": "M12",
+      "cost": {
+        "tabuas": 8,
+        "pregos": 8
+      },
+      "tools": [],
+      "needsBench": true,
+      "skill": "carpintaria",
+      "minLevel": 2,
+      "xp": 50,
+      "trap": false,
+      "uses": null,
+      "rearm_cost": null,
+      "fire": false
+    },
+    {
+      "id": "correio",
+      "name": "Caixa de correio",
+      "w": 0.5,
+      "d": 0.5,
+      "h": 1.2,
+      "use": "Mercado: 6 vagas de compra e venda (selos)",
+      "name_en": "Mailbox",
+      "name_es": "Buzón",
+      "use_en": "Market: 6 buy and sell slots (stamps)",
+      "use_es": "Mercado: 6 espacios de compra y venta (sellos)",
+      "recipe": "M13",
+      "cost": {
+        "tabuas": 2,
+        "pregos": 2
+      },
+      "tools": [],
+      "needsBench": false,
+      "skill": "carpintaria",
+      "minLevel": 0,
+      "xp": 15,
+      "trap": false,
+      "uses": null,
+      "rearm_cost": null,
+      "fire": false
+    }
+  ],
+  "walls": [
+    {
+      "tier": 0,
+      "name": "madeira",
+      "hp": 100.0,
+      "cost": {
+        "tabuas": "1 a cada 4 m",
+        "pregos": "1 a cada 4 m"
+      }
+    },
+    {
+      "tier": 1,
+      "name": "chapa",
+      "hp": 200.0,
+      "upgrade_cost": {
+        "chapa": "1 a cada 3 m",
+        "pregos": "2 a cada 3 m"
+      }
+    },
+    {
+      "tier": 2,
+      "name": "concreto",
+      "hp": 350.0,
+      "upgrade_cost": {
+        "cimento": "1 a cada 3 m",
+        "agua": "1 a cada 3 m"
+      }
+    }
+  ],
+  "wall_upgrade_rule": "reforço: 1 unidade a cada 3 m (mínimo 1); madeira -> chapa -> concreto",
+  "openings": [
+    {
+      "id": "porta",
+      "name": "Porta",
+      "width_m": 1.0,
+      "cost": {
+        "tabuas": 3,
+        "pregos": 2
+      },
+      "hp": 100,
+      "boards_hp_bonus": null,
+      "name_en": "Door",
+      "name_es": "Puerta"
+    },
+    {
+      "id": "janela",
+      "name": "Janela",
+      "width_m": 1.2,
+      "cost": {
+        "tabuas": 2,
+        "pregos": 1
+      },
+      "hp": 40,
+      "boards_hp_bonus": 60.0,
+      "name_en": "Window",
+      "name_es": "Ventana"
+    }
+  ],
+  "base_constants": [
+    {
+      "name": "maxHp",
+      "type": "double",
+      "value": 100,
+      "line": 230,
+      "comment": ""
+    },
+    {
+      "name": "metersPerBoard",
+      "type": "double",
+      "value": 4,
+      "line": 231,
+      "comment": "1 tabua + 1 prego a cada 4 m de parede"
+    },
+    {
+      "name": "baseArea",
+      "type": "double",
+      "value": 50,
+      "line": 241,
+      "comment": "m2 de graca; cada kit de expansao da +10"
+    },
+    {
+      "name": "otherGap",
+      "type": "double",
+      "value": 30,
+      "line": 242,
+      "comment": "m: ninguem demarca a menos disso da borda de outra base"
+    },
+    {
+      "name": "yard",
+      "type": "double",
+      "value": 15,
+      "line": 243,
+      "comment": "m: quintal alem da borda (horta, barril, fogueira...)"
+    }
+  ],
+  "furniture_constants": [
+    {
+      "name": "trapUses",
+      "type": null,
+      "value": {
+        "estacas": 6,
+        "buraco": 3,
+        "latas": 99
+      },
+      "line": 21,
+      "comment": "Usos de cada armadilha nova (o alarme de latas nao gasta)."
+    },
+    {
+      "name": "trapKinds",
+      "type": null,
+      "value": [
+        "estacas",
+        "buraco",
+        "latas"
+      ],
+      "line": 22,
+      "comment": ""
+    },
+    {
+      "name": "barrelMax",
+      "type": "double",
+      "value": 20,
+      "line": 24,
+      "comment": "garrafas"
+    },
+    {
+      "name": "fireKinds",
+      "type": null,
+      "value": [
+        "fogueira",
+        "fogao"
+      ],
+      "line": 25,
+      "comment": ""
+    },
+    {
+      "name": "chestCapacity",
+      "type": "double",
+      "value": 40,
+      "line": 37,
+      "comment": "kg por bau"
+    }
+  ],
+  "opening_constants": [
+    {
+      "name": "boardsHp",
+      "type": null,
+      "value": 60.0,
+      "line": 168,
+      "comment": ""
+    },
+    {
+      "name": "width",
+      "type": null,
+      "value": {
+        "porta": 1.0,
+        "janela": 1.2
+      },
+      "line": 175,
+      "comment": ""
+    },
+    {
+      "name": "cost",
+      "type": null,
+      "value": {
+        "porta": {
+          "tabuas": 3,
+          "pregos": 2
+        },
+        "janela": {
+          "tabuas": 2,
+          "pregos": 1
+        }
+      },
+      "line": 176,
+      "comment": ""
+    },
+    {
+      "name": "names",
+      "type": null,
+      "value": {
+        "porta": "Porta",
+        "janela": "Janela"
+      },
+      "line": 180,
+      "comment": ""
+    }
+  ],
+  "outpost_constants": [
+    {
+      "name": "max",
+      "type": "int",
+      "value": 10,
+      "line": 551,
+      "comment": ""
+    },
+    {
+      "name": "maxFromBase",
+      "type": "double",
+      "value": 20000,
+      "line": 552,
+      "comment": "m"
+    },
+    {
+      "name": "minFromBase",
+      "type": "double",
+      "value": 200,
+      "line": 553,
+      "comment": "m (base a 200 m de qualquer posto)"
+    },
+    {
+      "name": "minBetween",
+      "type": "double",
+      "value": 100,
+      "line": 554,
+      "comment": "m entre postos"
+    },
+    {
+      "name": "useRadius",
+      "type": "double",
+      "value": 25,
+      "line": 555,
+      "comment": "m: \"estou no posto\""
+    }
+  ],
+  "window_boards": {
+    "cost": {
+      "tabuas": 2,
+      "pregos": 2
+    },
+    "xp_carpintaria": 8
+  },
+  "trap_effects_in_combat": {
+    "estacas": {
+      "leg_damage": 12,
+      "damage": 12,
+      "cripples_when_leg_damage_over_maxhp_frac": 0.6
+    },
+    "buraco": {
+      "down_time": "downTime * 3 + riseTime"
+    },
+    "latas": "alarme sonoro, não gasta",
+    "zombie_cooldown_s": 3
+  },
+  "night_siege": {
+    "trap_catches": "1 zumbi a cada 3 atacantes por armadilha (até os usos dela)",
+    "warned_damage_mult": {
+      "latas": 0.85,
+      "torre": 0.85,
+      "holofote": 0.8
+    },
+    "holofote_extra_attackers": 2,
+    "damage_per_attacker": "8 + _rng.nextDouble() * 12",
+    "defended_mult": 0.5,
+    "opening_target_chance": 0.35,
+    "attackers": "2 + _rng.nextInt(3 + (base.wallMeters / 10).round()) + (fire ? 3 : 0)"
+  },
+  "trap_rearm_xp": 6,
+  "dismantleable_furniture": [
+    "Prateleira",
+    "Armário",
+    "Armário da cozinha",
+    "Armários dos alunos",
+    "Balcão",
+    "Gaveta",
+    "Despensa",
+    "Mesa",
+    "Carteira",
+    "Estante",
+    "Guarda-roupa",
+    "Criado-mudo",
+    "Cama",
+    "Estoque nos fundos",
+    "Depósito"
+  ],
+  "tear_tools": [
+    "martelo",
+    "pe_de_cabra",
+    "machado",
+    "machado_incendio",
+    "marreta"
+  ],
+  "_meta": {
+    "source": "/mnt/user-data/outputs/footfall",
+    "generator": "extract.py"
+  }
+}

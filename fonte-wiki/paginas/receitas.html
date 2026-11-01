@@ -1,0 +1,124 @@
+<!-- titulo: Receitas | categoria: Base | resumo: Todas as 46 receitas de fabricação: ingredientes, ferramentas, bancada, fogo, habilidade, experiência e resultado. -->
+<p>As <b>receitas</b> ficam em <kbd>Mochila</kbd> → <kbd>CRIAR</kbd>. Cada uma mostra os ingredientes, as ferramentas e o que precisa (<i>bancada</i>, <i>fogo aceso</i>, nível de habilidade) e um botão <kbd>Fazer</kbd>. Quando falta algo, a receita diz o motivo (ex.: <i>"Falta Tábuas (1/4)."</i>, <i>"Precisa de Carpintaria 2."</i>, <i>"Falta ferramenta: Martelo."</i>).</p>
+
+<h2>Regras gerais</h2>
+<ul>
+<li><b>Ingredientes</b> são gastos. Saem do que está solto na mochila (o que está vestido não conta), dos baús da base (se você está na base) e do depósito do rádio (se você está nele).</li>
+<li><b>Ferramentas</b> não são gastas. Contam se estiverem na mochila ou na mão.</li>
+<li><b>Bancada</b>: é preciso estar usando uma bancada pela tela de ação (<kbd>USAR BANCADA</kbd>). Valem a bancada da base, a do <a href="deposito-do-radio.html">depósito do rádio</a> e a do subsolo dos <a href="bunkers.html">bunkers</a>.</li>
+<li><b>Fogo</b>: só no fogo aceso da base (fogueira ou fogão), tocando em <kbd>COZINHAR</kbd>. Veja <a href="cozinha.html">Cozinha</a>.</li>
+<li><b>Estrutura</b> (móveis): só dentro da base ou no quintal. O móvel sai "guardado" e você posiciona com o martelo (veja <a href="moveis-da-base.html">Móveis da base</a>).</li>
+<li><b>Experiência</b>: só receitas com habilidade dão XP, e só se você tiver o nível mínimo. Refazer um móvel que você desmontou não dá XP. Ler o livro da habilidade dá +50% de XP por 1 dia.</li>
+<li><b>Acidente</b>: receitas de Carpintaria ou Mecânica têm chance de 3% − 0,5% por nível da habilidade de cortar fundo a mão.</li>
+</ul>
+
+<h2>Móveis e estruturas</h2>
+<div class="tbl"><table>
+<tr><th>Id</th><th>Receita</th><th>Ingredientes</th><th>Bancada</th><th>Habilidade (mín.)</th><th>XP</th><th>Resultado</th></tr>
+<tr><td>R14</td><td>Bancada de trabalho</td><td>4 <a href="item-tabuas.html">tábuas</a>, 3 <a href="item-pregos.html">pregos</a></td><td>não</td><td>Carpintaria</td><td>40</td><td>Bancada (1 por base)</td></tr>
+<tr><td>H01</td><td>Canteiro da horta</td><td>2 tábuas, 2 pregos</td><td>não</td><td>Agricultura</td><td>15</td><td>Canteiro (até 4)</td></tr>
+<tr><td>M01</td><td>Baú (+40 kg de espaço)</td><td>4 tábuas, 4 pregos</td><td>não</td><td>Carpintaria</td><td>25</td><td>Baú</td></tr>
+<tr><td>M02</td><td>Cama (dormir na base rende mais)</td><td>3 tábuas, 2 pregos, 4 <a href="item-pano.html">trapos de pano</a></td><td>sim</td><td>Carpintaria</td><td>30</td><td>Cama</td></tr>
+<tr><td>M03</td><td>Mesa (comer na base rende mais)</td><td>3 tábuas, 2 pregos</td><td>sim</td><td>Carpintaria</td><td>20</td><td>Mesa</td></tr>
+<tr><td>M04</td><td>Barril de chuva (água)</td><td>4 tábuas, 1 <a href="item-chapa.html">chapa de metal</a></td><td>sim</td><td>Carpintaria</td><td>25</td><td>Barril de chuva</td></tr>
+<tr><td>M05</td><td>Fogueira (cozinhar)</td><td>3 <a href="item-pedra.html">pedras</a>, 2 tábuas</td><td>não</td><td>—</td><td>—</td><td>Fogueira</td></tr>
+<tr><td>M06</td><td>Fogão a lenha (cozinhar sem chamar atenção)</td><td>1 chapa, 1 <a href="item-cano.html">cano de ferro</a>, 2 pregos</td><td>sim</td><td>Mecânica</td><td>30</td><td>Fogão a lenha</td></tr>
+<tr><td>M07</td><td>Maca (enfermaria: cicatriza mais rápido na base)</td><td>3 tábuas, 3 trapos, 2 pregos, 1 cano</td><td>sim</td><td>Carpintaria (1)</td><td>30</td><td>Maca</td></tr>
+<tr><td>M08</td><td>Estacas (armadilha: fere quem passa)</td><td>2 tábuas, 4 pregos</td><td>não</td><td>Carpintaria</td><td>20</td><td>Estacas</td></tr>
+<tr><td>M09</td><td>Arame com latas (alarme)</td><td>1 <a href="item-arame.html">arame</a>, 2 <a href="item-garrafa.html">garrafas vazias</a>, 2 pregos</td><td>não</td><td>—</td><td>—</td><td>Arame com latas</td></tr>
+<tr><td>M10</td><td>Buraco coberto (armadilha: o zumbi cai)</td><td>2 tábuas, 2 trapos</td><td>não</td><td>—</td><td>—</td><td>Buraco coberto</td></tr>
+<tr><td>M11</td><td>Holofote (com gerador e gasolina)</td><td>2 <a href="item-lanterna.html">lanternas</a>, 1 arame, 1 cano</td><td>sim</td><td>Mecânica (1)</td><td>30</td><td>Holofote</td></tr>
+<tr><td>M12</td><td>Torre de vigia (enxerga mais longe perto da base)</td><td>8 tábuas, 8 pregos</td><td>sim</td><td>Carpintaria (2)</td><td>50</td><td>Torre de vigia</td></tr>
+<tr><td>M13</td><td>Caixa de correio (mercado)</td><td>2 tábuas, 2 pregos</td><td>não</td><td>Carpintaria</td><td>15</td><td>Caixa de correio</td></tr>
+</table></div>
+
+<h2>Primeiros socorros</h2>
+<div class="tbl"><table>
+<tr><th>Id</th><th>Receita</th><th>Ingredientes</th><th>Bancada</th><th>Habilidade (mín.)</th><th>XP</th><th>Resultado</th></tr>
+<tr><td>R04</td><td>Atadura</td><td>2 <a href="item-pano.html">trapos de pano</a></td><td>não</td><td>Primeiros socorros</td><td>10</td><td>1 <a href="item-bandagem.html">Bandagem</a></td></tr>
+<tr><td>R05</td><td>Atadura estéril</td><td>1 <a href="item-bandagem.html">bandagem</a>, 1 <a href="item-alcool.html">álcool 70%</a></td><td>não</td><td>Primeiros socorros (1)</td><td>15</td><td>1 <a href="item-bandagem_esteril.html">Atadura estéril</a></td></tr>
+<tr><td>R07</td><td>Tala</td><td>1 tábua, 2 trapos</td><td>não</td><td>Primeiros socorros</td><td>8</td><td>1 <a href="item-tala.html">Tala</a></td></tr>
+</table></div>
+
+<h2>Armas e munição</h2>
+<div class="tbl"><table>
+<tr><th>Id</th><th>Receita</th><th>Ingredientes</th><th>Ferramenta</th><th>Bancada</th><th>Habilidade (mín.)</th><th>XP</th><th>Resultado</th></tr>
+<tr><td>R01</td><td>Lança improvisada</td><td>1 <a href="item-cano.html">cano de ferro</a>, 1 <a href="item-faca.html">faca de cozinha</a>, 2 <a href="item-fita.html">fitas adesivas</a></td><td>—</td><td>sim</td><td>Mecânica (1)</td><td>30</td><td>1 <a href="item-lanca.html">Lança improvisada</a></td></tr>
+<tr><td>R02</td><td>Taco com pregos</td><td>1 <a href="item-taco.html">taco de beisebol</a>, 1 prego</td><td><a href="item-martelo.html">Martelo</a></td><td>sim</td><td>Carpintaria</td><td>25</td><td>1 <a href="item-taco_pregos.html">Taco com pregos</a></td></tr>
+<tr><td>A01</td><td>Arco improvisado</td><td>1 tábua, 1 arame, 1 fita</td><td>—</td><td>sim</td><td>Carpintaria (1)</td><td>30</td><td>1 <a href="item-arco.html">Arco improvisado</a></td></tr>
+<tr><td>A02</td><td>Flechas (5)</td><td>1 tábua, 5 pregos, 1 fita</td><td>—</td><td>sim</td><td>Carpintaria</td><td>12</td><td>5 <a href="item-flecha.html">Flechas</a></td></tr>
+<tr><td>A03</td><td>Silenciador improvisado (garrafa e pano)</td><td>1 <a href="item-garrafa.html">garrafa vazia</a>, 2 trapos, 2 fitas</td><td>—</td><td>sim</td><td>Mecânica</td><td>15</td><td>1 <a href="item-silenciador.html">Silenciador improvisado</a></td></tr>
+<tr><td>A04</td><td>Tirar a pólvora de um rojão</td><td>1 <a href="item-rojao.html">rojão</a></td><td>—</td><td>não</td><td>—</td><td>—</td><td>1 <a href="item-polvora.html">Pólvora</a></td></tr>
+<tr><td>A05</td><td>Recarregar cartuchos (4)</td><td>4 <a href="item-cartucho_vazio.html">cartuchos vazios</a>, 1 <a href="item-polvora.html">pólvora</a>, 2 pregos</td><td>—</td><td>sim</td><td>Mecânica (1)</td><td>20</td><td>4 <a href="item-cartucho.html">Cartuchos calibre 12</a></td></tr>
+<tr><td>R10</td><td>Coquetel molotov (3)</td><td>3 garrafas vazias, 1 <a href="item-gasolina.html">galão de gasolina</a>, 3 trapos</td><td>—</td><td>não</td><td>—</td><td>—</td><td>3 <a href="item-molotov.html">Coquetéis molotov</a></td></tr>
+</table></div>
+
+<h2>Modificações de arma</h2>
+<p>Modificam a arma <b>que está na mão</b> (por tipo de arma: todas as armas daquele tipo ficam modificadas). Cada modificação só uma vez por arma (<i>"Essa arma já tem ..."</i>).</p>
+<div class="tbl"><table>
+<tr><th>Id</th><th>Receita</th><th>Ingredientes</th><th>Bancada</th><th>Habilidade</th><th>XP</th><th>Efeito</th><th>Restrição</th></tr>
+<tr><td>X01</td><td>Enrolar o cabo da arma (golpe 10% mais rápido)</td><td>2 <a href="item-fita.html">fitas adesivas</a></td><td>não</td><td>—</td><td>—</td><td>Cabo enrolado: golpe 10% mais rápido</td><td>Só arma de golpe</td></tr>
+<tr><td>X02</td><td>Lâmina na ponta da arma longa (+3 de dano)</td><td>1 <a href="item-faca.html">faca de cozinha</a>, 2 fitas</td><td>sim</td><td>Mecânica</td><td>15</td><td>Lâmina na ponta: +3 de dano</td><td>Só arma de golpe com alcance de 1,4 m ou mais (lança, cano, taco, pé de cabra...)</td></tr>
+<tr><td>X03</td><td>Lanterna presa na arma (enxerga longe de noite)</td><td>1 <a href="item-lanterna.html">lanterna</a>, 1 fita, 1 <a href="item-arame.html">arame</a></td><td>sim</td><td>Mecânica</td><td>15</td><td>Lanterna presa: de noite enxerga mais na tela de ação</td><td>—</td></tr>
+</table></div>
+
+<h2>Reparos de arma</h2>
+<div class="tbl"><table>
+<tr><th>Id</th><th>Receita</th><th>Ingredientes</th><th>Ferramenta</th><th>Bancada</th><th>Habilidade (mín.)</th><th>XP</th><th>Base do conserto</th></tr>
+<tr><td>R06</td><td>Reparar arma na mão (+50%, rende menos a cada conserto)</td><td>1 <a href="item-fita.html">fita adesiva</a>, 1 <a href="item-pregos.html">prego</a></td><td>—</td><td>sim</td><td>Mecânica</td><td>20</td><td>50% da durabilidade total</td></tr>
+<tr><td>R08</td><td>Reparar arma na bancada (+100%, rende menos a cada conserto)</td><td>1 <a href="item-arame.html">arame</a>, 1 fita</td><td><a href="item-martelo.html">Martelo</a></td><td>sim</td><td>Mecânica (1)</td><td>30</td><td>100% da durabilidade total</td></tr>
+</table></div>
+<p>Os dois consertam a arma que está na mão (<i>"Segure uma arma para reparar."</i>). Quanto volta:</p>
+<p><b>durabilidade recuperada = total × base × 0,8<sup>consertos</sup> × (1 + 0,05 × nível de Mecânica)</b>, no mínimo 1, sem passar do total.</p>
+<ul>
+<li><b>base</b> = 0,5 no R06 e 1,0 no R08;</li>
+<li><b>consertos</b> = quantas vezes aquela arma já foi remendada; cada conserto soma 1 (<i>"Arma reparada (35/40). Remendada 2 vez(es)."</i>).</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Conserto nº</th><th>Fator 0,8<sup>n</sup></th><th>R06 (Mecânica 0)</th><th>R08 (Mecânica 0)</th></tr>
+<tr><td>1º</td><td>1,00</td><td>50%</td><td>100%</td></tr>
+<tr><td>2º</td><td>0,80</td><td>40%</td><td>80%</td></tr>
+<tr><td>3º</td><td>0,64</td><td>32%</td><td>64%</td></tr>
+<tr><td>4º</td><td>0,51</td><td>25,6%</td><td>51,2%</td></tr>
+<tr><td>5º</td><td>0,41</td><td>20,5%</td><td>41%</td></tr>
+<tr><td>6º</td><td>0,33</td><td>16,4%</td><td>32,8%</td></tr>
+</table></div>
+<p>Exemplo: um <a href="item-pe_de_cabra.html">pé de cabra</a> (70 golpes) consertado pela 3ª vez com R08 e Mecânica 4 recebe 70 × 1,0 × 0,64 × 1,2 = 53,8 → 54 de durabilidade. A contagem de consertos acompanha a arma quando você troca e guarda (guardar não conserta).</p>
+
+<h2>Expedição</h2>
+<div class="tbl"><table>
+<tr><th>Id</th><th>Receita</th><th>Ingredientes</th><th>Ferramenta</th><th>Bancada</th><th>Habilidade (mín.)</th><th>XP</th><th>Resultado</th></tr>
+<tr><td>E01</td><td>Saco de dormir</td><td>8 <a href="item-pano.html">trapos</a>, 2 <a href="item-fita.html">fitas</a>, 1 <a href="item-corda.html">corda</a></td><td><a href="item-agulha.html">Agulha e linha</a></td><td>sim</td><td>Costura (1)</td><td>35</td><td>1 <a href="item-saco_dormir.html">Saco de dormir</a></td></tr>
+<tr><td>E02</td><td>Barraca (lona, canos e corda)</td><td>2 <a href="item-lona.html">lonas</a>, 2 <a href="item-cano.html">canos</a>, 3 cordas, 2 fitas</td><td>Agulha e linha</td><td>sim</td><td>Costura (2)</td><td>80</td><td>1 <a href="item-barraca.html">Barraca</a></td></tr>
+<tr><td>E03</td><td>Remendar a lona da barraca (+40%, a lona aguenta menos a cada remendo)</td><td>3 trapos, 2 fitas</td><td>Agulha e linha</td><td>sim</td><td>Costura</td><td>25</td><td>Lona da barraca guardada mais gasta: +40%; o máximo cai 10 (nunca abaixo de 20)</td></tr>
+<tr><td>E04</td><td>Biodiesel (óleo, álcool e soda cáustica, no fogo)</td><td>2 <a href="item-oleo_cozinha.html">óleo de cozinha</a>, 2 <a href="item-alcool.html">álcool 70%</a>, 1 <a href="item-soda_caustica.html">soda cáustica</a></td><td>—</td><td>não (fogo)</td><td>—</td><td>—</td><td>1 <a href="item-biodiesel.html">Galão de biodiesel</a></td></tr>
+</table></div>
+<p>O remendo E03 precisa de uma barraca <b>desmontada e gasta</b> guardada (<i>"Nenhuma barraca gasta guardada para remendar."</i>; montada: <i>"A barraca está montada: desmonte e guarde para remendar."</i>). Veja <a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a>.</p>
+
+<h2>Cozinha e água</h2>
+<p>Todas sem bancada; as "C" e a E04 precisam do fogo aceso. Detalhes de rendimento e validade em <a href="cozinha.html">Cozinha</a>.</p>
+<div class="tbl"><table>
+<tr><th>Id</th><th>Receita</th><th>Ingredientes</th><th>Fogo</th><th>Habilidade</th><th>XP</th><th>Resultado</th></tr>
+<tr><td>C01</td><td>Cozinhar arroz</td><td>1 <a href="item-arroz.html">arroz</a>, 2 <a href="item-agua.html">águas</a></td><td>sim</td><td>—</td><td>—</td><td>3 <a href="item-arroz_cozido.html">Arroz cozido</a></td></tr>
+<tr><td>C02</td><td>Assar carne</td><td>1 <a href="item-carne.html">carne fresca</a></td><td>sim</td><td>—</td><td>—</td><td>1 <a href="item-carne_assada.html">Carne assada</a></td></tr>
+<tr><td>C03</td><td>Cozinhar legumes</td><td>1 <a href="item-legumes.html">legumes</a>, 1 água</td><td>sim</td><td>—</td><td>—</td><td>1 <a href="item-legumes_cozidos.html">Legumes cozidos</a></td></tr>
+<tr><td>C04</td><td>Esquentar feijão</td><td>1 <a href="item-feijao.html">lata de feijão</a></td><td>sim</td><td>—</td><td>—</td><td>1 <a href="item-feijao_quente.html">Feijão quente</a></td></tr>
+<tr><td>C05</td><td>Ferver água</td><td>2 <a href="item-agua_suja.html">águas de chuva</a></td><td>sim</td><td>—</td><td>—</td><td>2 <a href="item-agua.html">Garrafas d'água</a></td></tr>
+<tr><td>C06</td><td>Carne seca no fogo (dura 2 meses)</td><td>1 carne fresca</td><td>sim</td><td>—</td><td>—</td><td>2 <a href="item-carne_seca.html">Carne seca</a></td></tr>
+<tr><td>C07</td><td>Legumes em conserva (duram 3 meses)</td><td>2 legumes, 2 <a href="item-garrafa.html">garrafas vazias</a>, 1 água</td><td>sim</td><td>Agricultura</td><td>12</td><td>2 <a href="item-conserva.html">Legumes em conserva</a></td></tr>
+<tr><td>C08</td><td>Sopa (esquenta)</td><td>1 legumes, 2 águas, 1 lata de feijão</td><td>sim</td><td>—</td><td>—</td><td>2 <a href="item-sopa.html">Sopa quente</a></td></tr>
+<tr><td>C09</td><td>Café coado</td><td>1 <a href="item-cafe.html">pó de café</a>, 1 água, 1 trapo</td><td>sim</td><td>—</td><td>—</td><td>2 <a href="item-cafe_coado.html">Café coado</a></td></tr>
+<tr><td>C10</td><td>Pão de panela</td><td>1 <a href="item-farinha.html">farinha</a>, 1 água</td><td>sim</td><td>—</td><td>—</td><td>2 <a href="item-pao_panela.html">Pão de panela</a></td></tr>
+<tr><td>R09</td><td>Filtrar água no pano (metade das vezes não basta)</td><td>1 água de chuva, 1 <a href="item-pano.html">trapo</a></td><td>não</td><td>—</td><td>—</td><td>1 garrafa d'água (50%) ou a água continua turva</td></tr>
+</table></div>
+
+<h2>Ordem na tela</h2>
+<p>A lista segue a ordem do jogo. Quando você abre a aba pelo fogo (<kbd>COZINHAR</kbd>), as receitas de fogo vêm primeiro. O texto acima da lista diz onde você está: <i>"Na bancada: usa o que está na mochila e nos baús."</i>, <i>"No fogo: cozinhar rende mais e a comida dura de novo."</i> ou <i>"Sem bancada: faça uma e posicione dentro da base. Algumas receitas não precisam dela."</i></p>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="moveis-da-base.html">Móveis da base</a></li>
+<li><a href="cozinha.html">Cozinha</a></li>
+<li><a href="costura-e-roupas.html">Costura e roupas</a></li>
+<li><a href="habilidades.html">Habilidades</a></li>
+</ul>

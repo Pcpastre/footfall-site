@@ -1,0 +1,60 @@
+<!-- titulo: Arremesso | categoria: Combate | resumo: Tudo o que dá para jogar no mapa e na tela de ação, com alcance, efeito e duração, e o fogo do coquetel molotov. -->
+<p>Jogar coisas serve para <b>distrair</b>: o barulho puxa os zumbis para longe de você, e na tela de ação o rojão atordoa e o molotov queima. Há cinco itens arremessáveis.</p>
+
+<h2>Os itens</h2>
+<div class="tbl"><table>
+<tr><th>Item</th><th>Peso</th><th>Raridade</th><th>No mapa</th><th>Na tela de ação</th></tr>
+<tr><td><a href="item-molotov.html">Coquetel molotov</a></td><td>0,9 kg</td><td>incomum</td><td>não dá para jogar</td><td>fogo no chão de 2,4 m de raio por 9 s; barulho de 25 m</td></tr>
+<tr><td><a href="item-rojao.html">Rojão</a></td><td>0,3 kg</td><td>incomum</td><td>chama tudo num raio de 120 m</td><td>atordoa quem está a até 3 m e atrai os de até 60 m</td></tr>
+<tr><td><a href="item-despertador.html">Despertador</a></td><td>0,3 kg</td><td>comum</td><td>chama quem está a até 60 m</td><td>toca por 30 s; a cada 2 s atrai quem está a até 35 m</td></tr>
+<tr><td><a href="item-garrafa.html">Garrafa vazia</a></td><td>0,3 kg</td><td>comum</td><td>vidro quebrando: 30 m</td><td>atrai quem está a até 20 m</td></tr>
+<tr><td><a href="item-pedra.html">Pedra</a></td><td>0,4 kg</td><td>comum</td><td>barulho curto: 18 m</td><td>atrai quem está a até 12 m</td></tr>
+</table></div>
+<p>O molotov se faz sem bancada: 3 <a href="item-garrafa.html">garrafas</a>, 1 <a href="item-gasolina.html">galão de gasolina</a> e 3 <a href="item-pano.html">panos</a> dão 3 molotovs.</p>
+
+<h2>No mapa</h2>
+<ul>
+<li>O botão de bola aparece quando você tem despertador, rojão, garrafa ou pedra. Com mais de um tipo, ele abre a lista para escolher.</li>
+<li>O item cai <b>18 m + 1,5 m por nível de Força</b> à sua frente (para onde o boneco olha). Se houver parede antes, ele cai 1 m antes dela; nunca a menos de 3 m.</li>
+<li>Todo zumbi dentro do raio do item que não estava te perseguindo acorda, esquece o que estava fazendo e vai até o ponto da queda. Lá ele procura por 8 s.</li>
+<li>O ponto da queda fica marcado no mapa.</li>
+<li>Cada arremesso dá 3 de experiência de Furtividade.</li>
+</ul>
+<p>Mensagens: "O rojão estourou a N m. A vizinhança inteira vai ver o que foi.", "O despertador está tocando a N m. Eles vão até lá.", "Garrafa quebrou a N m. Quem estiver perto vai ver.", "Pedra caiu a N m."</p>
+
+<h2>Na tela de ação</h2>
+<ul>
+<li>Só dá para jogar o que está no <b>bolso</b>. O que está no fundo da mochila precisa ser procurado antes (2,5 s; veja <a href="mochila-e-peso.html">Mochila e peso</a>).</li>
+<li>O botão fica ao lado do <kbd>AGACHAR</kbd>, com o nome (<kbd>MOLOTOV</kbd>, <kbd>ROJÃO</kbd>, <kbd>RELÓGIO</kbd>, <kbd>GARRAFA</kbd>, <kbd>PEDRA</kbd>) e quantos restam. Tocar joga; <b>segurar troca</b> para o próximo tipo.</li>
+<li>Sem escolha, o botão começa nesta ordem: molotov, rojão, despertador, garrafa, pedra.</li>
+<li>O item cai <b>9 m</b> à sua frente (no máximo 14 m). Se houver parede no caminho, ele cai antes dela.</li>
+<li>Não dá para jogar no chão.</li>
+</ul>
+<h3>Como os zumbis reagem à distração</h3>
+<ul>
+<li>Zumbi <b>desatento</b> dentro do raio vai até o ponto do barulho.</li>
+<li>Zumbi <b>atento</b> dentro do raio perde você e vai até o barulho se: estiver a mais de 6 m de você, não estiver te agarrando nem no meio de um ataque, e não tiver você à vista com linha livre.</li>
+</ul>
+<h3>Rojão</h3>
+<p>Estoura onde cai ("BUM!"). Quem está a até 3 m é jogado para longe do estouro (2,5 m/s por 0,6 s) e tem 50% de chance de cair. Depois atrai quem está a até 60 m.</p>
+<h3>Despertador</h3>
+<p>Fica tocando por 30 s ("trrrim"). A cada 2 s, o toque atrai os zumbis a até 35 m de novo. Bom para segurar um grupo longe enquanto você vasculha.</p>
+
+<h2>O fogo do molotov</h2>
+<div class="tbl"><table>
+<tr><th>Regra</th><th>Valor</th></tr>
+<tr><td>Raio do fogo</td><td>2,4 m</td></tr>
+<tr><td>Duração</td><td>9 s</td></tr>
+<tr><td>Barulho ao quebrar</td><td>25 m</td></tr>
+<tr><td>Dano nos zumbis dentro</td><td>8 de vida por segundo</td></tr>
+<tr><td>Zumbi de <a href="zumbi-bombeiro.html">bombeiro</a></td><td>imune (a roupa não pega fogo)</td></tr>
+<tr><td>Você dentro do fogo</td><td>a cada 2 s: -4 de vida (-2 com <a href="item-capacete_bombeiro.html">capacete de bombeiro</a>) e uma queimadura nas pernas ou nos pés</td></tr>
+</table></div>
+<p>Um zumbi comum (12 a 20 de vida) parado no fogo morre em 1,5 a 2,5 s. O fogo não queima enquanto você está caído no chão.</p>
+<div class="tip warn"><b>Não pise nele</b>O fogo dura 9 s e machuca você do mesmo jeito. Jogue entre você e o grupo e recue.</div>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="barulho.html">Barulho</a></li>
+<li><a href="controles.html">Controles</a></li>
+</ul>

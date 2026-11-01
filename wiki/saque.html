@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Saque — Wiki do Footfall</title>
+<meta name="description" content="Como saquear pela porta ou por dentro, tempo e barulho de cada móvel, quantos itens vêm, o sorteio de raridade, achados raríssimos, reposição semanal, portas trancadas e cortes de vidro.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html">Mochila e peso</a></li><li><a href="morte.html">Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html">Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html">Cansaço e sono</a></li><li><a href="feridas.html">Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html">Temperatura</a></li><li><a href="tratamento.html">Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html">Visão</a></li><li><a href="zumbis.html">Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html">Corpos</a></li><li><a href="saque.html" aria-current=page>Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html">Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html">Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Saque</p>
+<h1>Saque</h1>
+<p class="sub">Como saquear pela porta ou por dentro, tempo e barulho de cada móvel, quantos itens vêm, o sorteio de raridade, achados raríssimos, reposição semanal, portas trancadas e cortes de vidro.</p>
+<p>Saquear é abrir móveis de lugares reais do mapa (farmácias, mercados, delegacias, casas...) para achar itens. Cada móvel leva um tempo e faz barulho. Quanto mais você andou na sessão, e quanto mais fundo entra no lugar, maior a chance de sair coisa rara. O que você pega some para os outros sobreviventes até o lugar repor.</p>
+
+<h2>Onde dá para saquear</h2>
+<p>O botão <kbd>Saquear</kbd> do mapa procura, a até <b>35 m</b> de você (a margem do GPS):</p>
+<ul>
+<li>lugares do mapa (lojas, serviços; veja os tipos em <a href="lugar-saude.html">Saúde</a>, <a href="lugar-mercado.html">Mercado</a>, <a href="lugar-restaurante.html">Restaurante</a>, <a href="lugar-construcao.html">Construção</a>, <a href="lugar-posto.html">Posto</a>, <a href="lugar-policia.html">Polícia</a>, <a href="lugar-bombeiros.html">Bombeiros</a>, <a href="lugar-escola.html">Escola</a>, <a href="lugar-roupas.html">Roupas</a>, <a href="lugar-eletronicos.html">Eletrônicos</a>, <a href="lugar-loja.html">Loja</a>);</li>
+<li><a href="lugar-casa.html">casas</a>: qualquer prédio de 20 a 600 m² sem loja, com você a até <b>12 m</b> da parede;</li>
+<li><a href="corpos.html">corpos</a> de zumbis abatidos e itens largados no chão (corpos têm preferência quando tudo está perto);</li>
+<li>caixas de suprimentos e caixas de resgate (veja <a href="horda-e-alarmes.html">Horda e alarmes</a>);</li>
+<li>os <a href="bunkers.html">bunkers</a> do mês.</li>
+</ul>
+<p>Com uma coisa só por perto, ela abre direto. Com mais de uma, aparece a lista <kbd>Saquear</kbd> (até 8, da mais perto à mais longe), e os lugares já saqueados aparecem com "já saqueado (dá para entrar)". Sem nada: "Nada para saquear aqui perto".</p>
+
+<h2>Pela porta ou entrando</h2>
+<p>A tela de saque de um lugar mostra duas opções lado a lado:</p>
+<div class="tbl"><table>
+<tr><th></th><th><kbd>Pela porta</kbd></th><th><kbd>Entrar</kbd></th></tr>
+<tr><td>Onde</td><td>na própria tela de saque, no mapa</td><td>abre a <a href="tela-de-acao.html">tela de ação</a> do lado de fora da porta principal, com o prédio por dentro</td></tr>
+<tr><td>Móveis</td><td>os 3 móveis do térreo mais perto da porta principal</td><td>todos os outros, em todos os andares</td></tr>
+<tr><td>Raros</td><td>nunca (multiplicador de raridade 0)</td><td>multiplicador 1,5 (no bunker, maior a cada andar)</td></tr>
+<tr><td>Achados raríssimos</td><td>não</td><td>sim (veja abaixo)</td></tr>
+<tr><td>Perigo</td><td>só os zumbis da rua</td><td>os zumbis de dentro, mais os de fora que ouvirem o barulho</td></tr>
+</table></div>
+<p>Prédios com altura de 9 m ou mais têm 2 andares, com 12 m ou mais têm 3; escola, delegacia e bombeiros têm sempre pelo menos 2; casa tem 2 com 6 m ou mais. Os andares de cima têm menos zumbis (60%).</p>
+<p>Por dentro você também pode entrar pela tela de ação andando: chegando a até 3,5 m da porta de um lugar, ele abre por dentro sozinho; fora do modo de andar livre aparece o botão <kbd>ENTRAR: nome do lugar</kbd>.</p>
+
+<h2>Vasculhar</h2>
+<ol class="steps">
+<li>Na tela de saque, toque em <kbd>Vasculhar (X s · barulho)</kbd> num móvel. Na tela de ação, chegue a até 1,3 m dele e toque em <kbd>VASCULHAR NOME DO MÓVEL</kbd>.</li>
+<li>Fique parado até a barra encher. Um móvel por vez.</li>
+<li>Abriu: toque num item para pegar (munição vem a pilha inteira) ou em <kbd>Pegar tudo</kbd>.</li>
+</ol>
+<p><b>Tempo</b> = tempo do móvel ÷ (velocidade de saque). A profissão <b>Arrombador(a)</b> saqueia 1,5× mais rápido; ficar triste (tristeza nível 2 ou mais) deixa 10% mais lento.</p>
+<p><b>Interrupções</b>:</p>
+<ul>
+<li>No mapa, se afastar mais de <b>20 m</b> do ponto onde abriu o saque cancela ("Saque interrompido: você se afastou.").</li>
+<li>Se a tela de ação começa (um zumbi te viu), o saque fecha ("Saque interrompido!") e reabre sozinho quando a luta acaba, se você ainda estiver a até 35 m.</li>
+<li>Na tela de ação, andar mais de 0,45 m, ser derrubado ou agarrado para a busca ("Parou de vasculhar.").</li>
+</ul>
+<p>Abrir o primeiro móvel marca o lugar como <b>saqueado</b> por 7 dias (o bunker, até o começo do mês seguinte). Lugar saqueado ainda pode ser aberto: o que sobrou continua lá.</p>
+
+<h3>Corte de vidro</h3>
+<p>Cada móvel aberto (não vale para corpos) tem <b>4%</b> de chance de você cortar a mão num caco: fica um estilhaço na mão ("Cortou a mão num caco de vidro: tem um estilhaço. Veja a tela Saúde.").</p>
+
+<h2 id="moveis">Tempo e barulho de cada móvel</h2>
+<p>O barulho é o nível de 0 a 1 enquanto você vasculha; o raio é barulho × 120 m (antes da chuva). Veja <a href="barulho.html">Barulho</a>.</p>
+<div class="tbl"><table>
+<tr><th>Móvel</th><th>Tempo (s)</th><th>Barulho</th><th>Raio</th><th>Rótulo</th><th>Só tem</th></tr>
+<tr><td>Cesto de roupa</td><td>1,2</td><td>0,02</td><td>2,4 m</td><td>silencioso</td><td>roupas e trapos</td></tr>
+<tr><td>Mochilas perdidas</td><td>1,5</td><td>0,03</td><td>3,6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Arara</td><td>1,2</td><td>0,03</td><td>3,6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Provador</td><td>1,0</td><td>0,03</td><td>3,6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Criado-mudo</td><td>1,0</td><td>0,03</td><td>3,6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Corpo</td><td>2,0</td><td>0,03</td><td>3,6 m</td><td>silencioso</td><td>veja <a href="corpos.html">Corpos</a></td></tr>
+<tr><td>Prateleira</td><td>1,2</td><td>0,04</td><td>4,8 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Gaveta</td><td>1,0</td><td>0,04</td><td>4,8 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Estante</td><td>1,4</td><td>0,04</td><td>4,8 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Mesa de escritório</td><td>1,2</td><td>0,04</td><td>4,8 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Armário do banheiro</td><td>1,2</td><td>0,04</td><td>4,8 m</td><td>silencioso</td><td>curativos e remédios leves</td></tr>
+<tr><td>Despensa</td><td>2,0</td><td>0,05</td><td>6 m</td><td>silencioso</td><td>comida</td></tr>
+<tr><td>Guarda-roupa</td><td>1,8</td><td>0,05</td><td>6 m</td><td>silencioso</td><td>roupas, mochilas, trapos</td></tr>
+<tr><td>Armário de suprimento</td><td>1,5</td><td>0,05</td><td>6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Caixa de suprimentos / de resgate</td><td>4,0</td><td>0,05</td><td>6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Geladeira</td><td>2,0</td><td>0,06</td><td>7,2 m</td><td>silencioso</td><td>água, carne, frutas, leite, pão</td></tr>
+<tr><td>Freezer</td><td>2,0</td><td>0,06</td><td>7,2 m</td><td>silencioso</td><td>água, carne, frutas, leite, pão</td></tr>
+<tr><td>Balcão</td><td>1,5</td><td>0,06</td><td>7,2 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Carrinho de medicação</td><td>1,6</td><td>0,06</td><td>7,2 m</td><td>silencioso</td><td>remédios e curativos</td></tr>
+<tr><td>Arquivo de aço</td><td>2,0</td><td>0,06</td><td>7,2 m</td><td>silencioso</td><td>mapas, livros, pilhas, lanterna, rádio</td></tr>
+<tr><td>Armário da cozinha</td><td>1,8</td><td>0,07</td><td>8,4 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Cozinha (escola)</td><td>2,0</td><td>0,07</td><td>8,4 m</td><td>silencioso</td><td>comida</td></tr>
+<tr><td>Armário</td><td>2,0</td><td>0,08</td><td>9,6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Armário de EPI</td><td>2,2</td><td>0,08</td><td>9,6 m</td><td>silencioso</td><td>equipamento de proteção</td></tr>
+<tr><td>Sacos de cimento</td><td>2,5</td><td>0,08</td><td>9,6 m</td><td>silencioso</td><td>cimento, pedra, arame, pregos</td></tr>
+<tr><td>Caixa de munição</td><td>2,0</td><td>0,08</td><td>9,6 m</td><td>silencioso</td><td>-</td></tr>
+<tr><td>Bancada de armas</td><td>2,5</td><td>0,08</td><td>9,6 m</td><td>silencioso</td><td>armas de fogo, munição, faca de combate, fita</td></tr>
+<tr><td>Estoque nos fundos</td><td>3,5</td><td>0,10</td><td>12 m</td><td>barulho médio</td><td>-</td></tr>
+<tr><td>Armário de remédios</td><td>2,5</td><td>0,10</td><td>12 m</td><td>barulho médio</td><td>-</td></tr>
+<tr><td>Depósito</td><td>3,0</td><td>0,10</td><td>12 m</td><td>barulho médio</td><td>-</td></tr>
+<tr><td>Armários dos alunos</td><td>2,0</td><td>0,10</td><td>12 m</td><td>barulho médio</td><td>-</td></tr>
+<tr><td>Garagem</td><td>2,5</td><td>0,10</td><td>12 m</td><td>barulho médio</td><td>tábuas, pregos, martelo, fita, arame, chave inglesa, cano</td></tr>
+<tr><td>Armário de evidências</td><td>2,5</td><td>0,10</td><td>12 m</td><td>barulho médio</td><td>cassetete, lanterna, rádio, munição, facas, cigarros, cachaça...</td></tr>
+<tr><td>Bancada de laboratório</td><td>2,5</td><td>0,10</td><td>12 m</td><td>barulho médio</td><td>remédios fortes</td></tr>
+<tr><td>Caixa de ferramentas</td><td>2,0</td><td>0,12</td><td>14,4 m</td><td>barulho médio</td><td>-</td></tr>
+<tr><td>Gaveta mortuária</td><td>3,0</td><td>0,12</td><td>14,4 m</td><td>barulho médio</td><td>o bolso de um corpo</td></tr>
+<tr><td>Viatura</td><td>2,5</td><td>0,14</td><td>16,8 m</td><td>barulho médio</td><td>-</td></tr>
+<tr><td>Caminhão (bombeiros)</td><td>3,0</td><td>0,15</td><td>18 m</td><td>barulho médio</td><td>-</td></tr>
+<tr><td>Cofre pequeno</td><td>4,0</td><td>0,15</td><td>18 m</td><td>barulho médio</td><td>-</td></tr>
+<tr><td>Caixa registradora</td><td>2,5</td><td>0,16</td><td>19,2 m</td><td>barulho médio</td><td>-</td></tr>
+<tr><td>Armário de armas</td><td>4,0</td><td>0,20</td><td>24 m</td><td>barulho alto</td><td>armas de fogo, munição, cassetete</td></tr>
+<tr><td>Cofre do bunker</td><td>6,0</td><td>0,20</td><td>24 m</td><td>barulho alto</td><td>-</td></tr>
+<tr><td>Vitrine de vidro</td><td>3,0</td><td>0,22</td><td>26,4 m</td><td>barulho alto</td><td>-</td></tr>
+<tr><td>Arsenal trancado</td><td>5,0</td><td>0,25</td><td>30 m</td><td>barulho alto</td><td>armas de fogo, munição, colete, cassetete, capacete de choque, colete tático</td></tr>
+</table></div>
+<p>Um móvel sem entrada na tabela usa o tempo e o barulho da prateleira. "Só tem" quer dizer que o móvel aceita apenas aqueles itens: se o sorteio der outra coisa, ela é trocada por um item aceito da mesma raridade ou mais comum (sem nenhum, às vezes, 30%, por qualquer um aceito; senão aquele item não vem).</p>
+
+<h2>Quantos itens</h2>
+<div class="tbl"><table>
+<tr><th>Móvel</th><th>Itens</th></tr>
+<tr><td>Normal</td><td>20% de chance de vazio; senão 1 a 3</td></tr>
+<tr><td>Estoque (salas de estoque por dentro)</td><td>2 a 5</td></tr>
+<tr><td>Salas de arsenal e de remédios por dentro</td><td>1 a 3 (nunca vazio); cada item tem 45% de chance de vir da lista especial da sala</td></tr>
+<tr><td>Munição solta</td><td>cada sorteio de munição vem com 1 a 6 balas</td></tr>
+<tr><td>Munição em caixa (Arsenal trancado, salas de arsenal e de estoque)</td><td>6 a 15 balas</td></tr>
+</table></div>
+<p>A lista especial da sala de arsenal: pistola, munição 9 mm, colete, cassetete, lanterna, escopeta, cartuchos, revólver, munição .38, submetralhadora, fuzil, munição 5,56, capacete de choque, colete tático, luvas táticas, protetor de antebraço e escopeta serrada. A de remédios: antibiótico, kit de primeiros socorros, analgésico, ansiolítico, betabloqueador, antidepressivo, álcool, morfina, kit de sutura, torniquete e soro.</p>
+<p>Quando o prédio não consegue ser montado por dentro, o lugar usa uma lista rápida de 3 ou 4 móveis do tipo dele (só pela porta).</p>
+
+<h2 id="raridade">O sorteio de raridade</h2>
+<p>Cada item sai assim:</p>
+<ol class="steps">
+<li><b>Chance de raro base</b> = 1% + 1,5% por km andado na sessão, no máximo <b>15%</b>. O traço Andarilho conta 10% a mais de distância.</li>
+<li>Vezes <b>sorte</b>: Sortudo ×1,1, Azarado ×0,9.</li>
+<li>Vezes o <b>lugar</b>: pela porta ×0 (nunca raro), por dentro ×1,5, bunker ×(1,5 + 0,8 por andar abaixo do térreo).</li>
+<li>Sorteio: abaixo da chance de raro sai <b>raro</b>; até 22 pontos percentuais acima disso sai <b>incomum</b>; o resto é <b>comum</b>.</li>
+<li>Escolhe um item daquela raridade da lista do tipo de lugar. Se não houver nenhum daquela raridade, desce uma (raro → incomum → comum).</li>
+</ol>
+<p>Itens lendários nunca saem desse sorteio, só dos achados especiais abaixo. A distância é a da <b>sessão atual</b>: encerrar zera.</p>
+<div class="tbl"><table>
+<tr><th>Andado na sessão</th><th>Raro base</th><th>Por dentro (×1,5)</th><th>Incomum por dentro</th></tr>
+<tr><td>0 km</td><td>1%</td><td>1,5%</td><td>22%</td></tr>
+<tr><td>1 km</td><td>2,5%</td><td>3,75%</td><td>22%</td></tr>
+<tr><td>2 km</td><td>4%</td><td>6%</td><td>22%</td></tr>
+<tr><td>4 km</td><td>7%</td><td>10,5%</td><td>22%</td></tr>
+<tr><td>6 km</td><td>10%</td><td>15%</td><td>22%</td></tr>
+<tr><td>9,3 km ou mais</td><td>15%</td><td>22,5%</td><td>22%</td></tr>
+</table></div>
+<h3>Peso dentro da raridade</h3>
+<p>Dentro da mesma raridade, alguns itens saem menos (peso 1 = normal):</p>
+<div class="tbl"><table>
+<tr><th>Peso</th><th>Itens</th></tr>
+<tr><td>0,12 a 0,2</td><td><a href="item-fuzil.html">fuzil</a> 0,12, <a href="item-submetralhadora.html">submetralhadora</a> 0,15, <a href="item-rifle.html">rifle</a> 0,18, <a href="item-colete_tatico.html">colete tático</a> 0,2, <a href="item-capacete_militar.html">capacete balístico</a> 0,2</td></tr>
+<tr><td>0,25 a 0,5</td><td><a href="item-capacete_tatico.html">capacete tático</a> 0,25, <a href="item-escopeta.html">escopeta</a> 0,3, <a href="item-escopeta_serrada.html">escopeta serrada</a> 0,3, <a href="item-katana.html">katana</a> 0,3, <a href="item-mochila_tatica.html">mochila tática</a> 0,3, <a href="item-mochila_cargueira.html">mochila cargueira</a> 0,3, <a href="item-pistola.html">pistola</a> 0,35, <a href="item-revolver.html">revólver</a> 0,35, <a href="item-carabina.html">carabina</a> 0,35, <a href="item-municao_308.html">munição .308</a> 0,35, <a href="item-municao_556.html">munição 5,56</a> 0,35, <a href="item-besta.html">besta</a> 0,4, <a href="item-capacete_policial.html">capacete de choque</a> 0,4, <a href="item-colete.html">colete balístico</a> 0,45, <a href="item-protetor_antebraco.html">protetor de antebraço</a> 0,5, <a href="item-calca_tatica.html">calça tática</a> 0,5, <a href="item-municao.html">munição 9 mm</a> 0,5, <a href="item-municao_38.html">.38</a> 0,5, <a href="item-cartucho.html">cartucho</a> 0,5</td></tr>
+<tr><td>0,6</td><td><a href="item-municao_22.html">munição .22</a></td></tr>
+<tr><td>2,5</td><td><a href="item-tabuas.html">tábuas</a>, <a href="item-pregos.html">pregos</a></td></tr>
+</table></div>
+<p>Itens repetidos na lista do lugar também contam mais de uma vez.</p>
+
+<h2>Achados raríssimos</h2>
+<p>Só por dentro dos lugares:</p>
+<div class="tbl"><table>
+<tr><th>Achado</th><th>Chance</th></tr>
+<tr><td>Conjunto de roupa (cada item sorteado por dentro)</td><td>0,12% × 1,5 × (1 + km andados ÷ 2), no máximo 0,6%. Conjuntos comuns saem mais (pesos 1, 0,5, 0,2 e 0,05 por raridade) e cada um sai 4× mais no tipo de lugar dele. Uniformes só saem de <a href="zumbis.html">zumbis</a></td></tr>
+<tr><td><a href="item-radio_posto.html">Rádio de posto avançado</a> (uma vez por lugar)</td><td>0,3%</td></tr>
+<tr><td><a href="item-expansor.html">Kit de expansão da base</a> (uma vez por lugar)</td><td>0,5%</td></tr>
+<tr><td><a href="item-sinalizador_facil.html">Sinalizador fácil</a> (uma vez por lugar)</td><td>1,2%</td></tr>
+<tr><td><a href="item-sinalizador_medio.html">Sinalizador médio</a> (uma vez por lugar)</td><td>0,4%</td></tr>
+<tr><td><a href="item-sinalizador_dificil.html">Sinalizador difícil</a> (uma vez por lugar)</td><td>só depois de 3 km andados na sessão: 0,2% + 0,08% por km acima de 3, no máximo 0,8%</td></tr>
+<tr><td>Livro de memória (no tipo de lugar certo, só se você ainda não tem)</td><td>0,6% por livro</td></tr>
+</table></div>
+<p>O traço Sortudo aumenta e o Azarado diminui as chances dos achados por lugar (rádio, kit e sinalizadores) em 10%.</p>
+<h3>Pista do rádio</h3>
+<p>Com um <a href="item-radio.html">rádio</a>, uma vez por dia o rádio aponta um lugar ainda não saqueado entre 300 m e 1,2 km ("Sinal fraco: tem estoque intacto em..."). Esse lugar ganha 1 item raro a mais da lista dele, uma vez.</p>
+
+<h2>Reposição semanal e estoque do servidor</h2>
+<ul>
+<li>Cada lugar é montado <b>uma vez por semana</b>. A semana do estoque é contada em blocos de 7 dias do relógio do servidor.</li>
+<li>Logado, o servidor guarda a primeira montagem da semana e todo mundo vê o mesmo estoque: o que outro sobrevivente já levou não está mais lá. Se vocês pegarem a mesma coisa ao mesmo tempo, quem confirmou depois perde o item ("Outro sobrevivente pegou antes: ...").</li>
+<li>Zumbis abatidos por dentro, portas arrombadas e móveis desmontados ficam assim até a semana virar. Aí o lugar enche de novo.</li>
+<li>Bunkers, caixas de resgate e memórias são só seus: nada vai para o servidor.</li>
+<li>Sem conexão, as retiradas ficam na fila e são confirmadas quando a rede volta.</li>
+</ul>
+
+<h2>Portas trancadas e pé de cabra</h2>
+<p>Por dentro, algumas portas do térreo são trancadas. Chegando perto aparece <kbd>ARROMBAR PORTA</kbd>:</p>
+<ul>
+<li>precisa de um <a href="item-pe_de_cabra.html">pé de cabra</a>, na mão ou na mochila ("Trancada. Precisa de pé de cabra (ou um zumbi lá dentro quebra ela).");</li>
+<li>leva <b>3 s</b> parado e faz barulho de <b>30 m</b> ("Porta arrombada (barulho!).");</li>
+<li>a porta também cai se um zumbi bater nela até quebrar (100 de vida; cada pancada tira de 5 a 9). Janelas têm 40.</li>
+</ul>
+<p>Porta aberta continua aberta até a semana virar, para todos. As chaves (<a href="item-chave_arsenal.html">chave do arsenal</a>, <a href="item-chave_farmacia.html">chave da farmácia</a>) só aparecem dentro das memórias. A porta-cofre do bunker tem regras próprias: veja <a href="bunkers.html">Bunkers</a>.</p>
+
+<h2>Desmontar móveis</h2>
+<p>Um móvel de madeira já vasculhado e vazio pode ser desmontado com <kbd>DESMONTAR (tábuas · 8 s · barulho)</kbd>. Precisa de <a href="item-martelo.html">martelo</a>, <a href="item-pe_de_cabra.html">pé de cabra</a>, <a href="item-machado.html">machado</a>, <a href="item-machado_incendio.html">machado de incêndio</a> ou <a href="item-marreta.html">marreta</a>.</p>
+<ul>
+<li>Móveis: prateleira, armário, armário da cozinha, armários dos alunos, balcão, gaveta, despensa, mesa, carteira, estante, guarda-roupa, criado-mudo, cama, estoque nos fundos e depósito.</li>
+<li>Rende 1 a 2 <a href="item-tabuas.html">tábuas</a> (2 a 3 nos grandes: armário, guarda-roupa, estante, cama, balcão, estoque e depósito) e, com martelo, 1 a 3 <a href="item-pregos.html">pregos</a>.</li>
+<li>Leva 8 s, faz barulho de 30 m e dá 8 de experiência de Carpintaria.</li>
+</ul>
+
+<h2>Dicas</h2>
+<div class="tip"><b>Ande antes de entrar</b>A chance de raro só cresce com a distância da sessão. Entrar nos lugares bons depois de uns quilômetros rende muito mais que saquear na porta de casa logo ao abrir o app.</div>
+<div class="tip warn"><b>Vitrine e arsenal chamam a rua</b>Vitrine de vidro, armário de armas e arsenal trancado fazem 24 a 30 m de barulho. Limpe os zumbis por perto antes.</div>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="mochila-e-peso.html">Mochila e peso</a>: o que cabe.</li>
+<li><a href="corpos.html">Corpos</a></li>
+<li><a href="bunkers.html">Bunkers</a></li>
+</ul>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

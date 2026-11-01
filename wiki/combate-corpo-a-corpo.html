@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Combate corpo a corpo — Wiki do Footfall</title>
+<meta name="description" content="Como o dano corpo a corpo é calculado, partes do corpo, críticos, fôlego, empurrão, agarrões, abate furtivo, durabilidade e consertos, com a tabela de todas as armas brancas.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html">Mochila e peso</a></li><li><a href="morte.html">Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html">Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html">Cansaço e sono</a></li><li><a href="feridas.html">Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html">Temperatura</a></li><li><a href="tratamento.html">Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html">Visão</a></li><li><a href="zumbis.html">Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html">Corpos</a></li><li><a href="saque.html">Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html">Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html" aria-current=page>Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html">Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Combate</p>
+<h1>Combate corpo a corpo</h1>
+<p class="sub">Como o dano corpo a corpo é calculado, partes do corpo, críticos, fôlego, empurrão, agarrões, abate furtivo, durabilidade e consertos, com a tabela de todas as armas brancas.</p>
+<p>Na <a href="tela-de-acao.html">tela de ação</a> cada golpe sai num arco à sua frente, até o alcance da arma, e pega um ou mais zumbis. O dano depende da arma, do seu personagem, de onde você mirou, do pânico e do fôlego. Esta página tem todas as contas. Para os botões, veja <a href="controles.html">Controles</a>.</p>
+
+<h2>Armas brancas</h2>
+<p>Alcance é medido da borda do boneco até a ponta da arma. O fôlego por golpe é 6 + 3 × peso da arma (antes dos multiplicadores de cansaço e dor).</p>
+<div class="tbl"><table>
+<tr><th>Arma</th><th>Dano</th><th>Alcance (m)</th><th>Intervalo (s)</th><th>Arco</th><th>Alvos</th><th>Durabilidade</th><th>Peso (kg)</th><th>Fôlego/golpe</th><th>Onde vai</th><th>Raridade</th></tr>
+<tr><td>Punhos</td><td>3</td><td>0,9</td><td>0,55</td><td>80°</td><td>1</td><td>infinita</td><td>-</td><td>7,5</td><td>-</td><td>-</td></tr>
+<tr><td><a href="item-faca.html">Faca de cozinha</a></td><td>5</td><td>1,0</td><td>0,45</td><td>70°</td><td>1</td><td>25</td><td>0,3</td><td>6,9</td><td>cinto</td><td>comum</td></tr>
+<tr><td><a href="item-martelo.html">Martelo</a></td><td>6</td><td>1,1</td><td>0,60</td><td>90°</td><td>1</td><td>40</td><td>0,8</td><td>8,4</td><td>cinto</td><td>comum</td></tr>
+<tr><td><a href="item-chave_inglesa.html">Chave inglesa</a></td><td>6</td><td>1,1</td><td>0,55</td><td>90°</td><td>1</td><td>90</td><td>1,1</td><td>9,3</td><td>cinto</td><td>comum</td></tr>
+<tr><td><a href="item-cano.html">Cano de ferro</a></td><td>6</td><td>1,5</td><td>0,75</td><td>120°</td><td>2</td><td>30</td><td>1,5</td><td>10,5</td><td>costas</td><td>comum</td></tr>
+<tr><td><a href="item-cassetete.html">Cassetete</a></td><td>6</td><td>1,3</td><td>0,50</td><td>100°</td><td>1</td><td>60</td><td>0,7</td><td>8,1</td><td>cinto</td><td>incomum</td></tr>
+<tr><td><a href="item-taco.html">Taco de beisebol</a></td><td>7</td><td>1,4</td><td>0,70</td><td>110°</td><td>2</td><td>40</td><td>1,0</td><td>9,0</td><td>costas</td><td>incomum</td></tr>
+<tr><td><a href="item-faca_combate.html">Faca de combate</a></td><td>8</td><td>1,0</td><td>0,40</td><td>70°</td><td>1</td><td>80</td><td>0,4</td><td>7,2</td><td>cinto</td><td>incomum</td></tr>
+<tr><td><a href="item-pe_de_cabra.html">Pé de cabra</a></td><td>8</td><td>1,4</td><td>0,70</td><td>110°</td><td>2</td><td>70</td><td>1,6</td><td>10,8</td><td>costas</td><td>incomum</td></tr>
+<tr><td><a href="item-lanca.html">Lança improvisada</a></td><td>8</td><td>2,1</td><td>0,80</td><td>40°</td><td>2</td><td>40</td><td>1,6</td><td>10,8</td><td>costas</td><td>incomum</td></tr>
+<tr><td><a href="item-facao.html">Facão</a></td><td>9</td><td>1,3</td><td>0,60</td><td>100°</td><td>2</td><td>45</td><td>0,9</td><td>8,7</td><td>cinto</td><td>incomum</td></tr>
+<tr><td><a href="item-taco_pregos.html">Taco com pregos</a></td><td>10</td><td>1,4</td><td>0,75</td><td>110°</td><td>2</td><td>35</td><td>1,2</td><td>9,6</td><td>costas</td><td>incomum</td></tr>
+<tr><td><a href="item-foice.html">Foice</a></td><td>11</td><td>1,7</td><td>0,90</td><td>130°</td><td>3</td><td>35</td><td>1,3</td><td>9,9</td><td>costas</td><td>incomum</td></tr>
+<tr><td><a href="item-machado.html">Machado</a></td><td>12</td><td>1,4</td><td>0,95</td><td>110°</td><td>2</td><td>50</td><td>2,0</td><td>12,0</td><td>costas</td><td>raro</td></tr>
+<tr><td><a href="item-machado_incendio.html">Machado de incêndio</a></td><td>15</td><td>1,6</td><td>1,05</td><td>120°</td><td>3</td><td>80</td><td>2,8</td><td>14,4</td><td>costas</td><td>raro</td></tr>
+<tr><td><a href="item-katana.html">Katana</a></td><td>16</td><td>1,5</td><td>0,55</td><td>110°</td><td>2</td><td>60</td><td>1,1</td><td>9,3</td><td>costas</td><td>raro</td></tr>
+<tr><td><a href="item-marreta.html">Marreta</a></td><td>18</td><td>1,5</td><td>1,40</td><td>100°</td><td>3</td><td>90</td><td>4,5</td><td>19,5</td><td>costas</td><td>incomum</td></tr>
+</table></div>
+<p>A <a href="item-lanca.html">lança</a> e o <a href="item-taco_pregos.html">taco com pregos</a> se fazem na bancada (veja as receitas nas páginas dos itens). Ao pegar a primeira arma branca com os punhos vazios, você já a segura na mão (a de maior dano que tiver).</p>
+
+<h2>Como sai o golpe</h2>
+<ul>
+<li>O golpe pega os zumbis dentro do arco da arma e do alcance, do mais perto ao mais longe, até o número de <b>alvos</b> da arma.</li>
+<li>Zumbi baixo (caído ou rastejando) é alcançado com 20 graus a mais de cada lado, e colado (menos de 0,5 m) é sempre alcançado.</li>
+<li>Sem nenhum zumbi no arco: "errou" (com fôlego gasto mesmo assim).</li>
+<li>Cada acerto empurra o zumbi um pouco para trás e faz barulho de 4 m em volta dele.</li>
+</ul>
+
+<h2>A conta do dano</h2>
+<p>Para cada zumbi atingido:</p>
+<ol class="steps">
+<li><b>Base</b>: dano da arma (+3 com a modificação "lâmina na ponta").</li>
+<li><b>× seu multiplicador de dano</b>: 0,75 de base, +0,30 Forte, +0,15 Robusto, -0,30 Fraco, -0,15 Franzino, +0,05 por nível de Armas brancas e +0,03 por nível de Força. O Jogador de beisebol bate 15% mais com tacos. Fome forte (-10%) ou extrema (-20%), febre ou enjoo (-10%), delírio (-20%), dor (-5% por nível) e depressão (-10%) entram aqui também.</li>
+<li><b>× 0,85 a 1,15</b> sorteado.</li>
+<li><b>× 0,85</b> se o golpe foi automático.</li>
+<li><b>Pânico</b>: em pânico (nível 2) -10%, forte (nível 3) -20%, extremo (nível 4) -30%.</li>
+<li><b>Cabeça errada</b>: mirando na cabeça de um zumbi em pé, há chance de pegar no ombro (veja abaixo): o golpe vira no corpo com ×0,7.</li>
+<li><b>Sem mirar</b> (modo Dois analógicos com o direito solto): ×0,85, e 25% de chance de raspão (×0,5) se não for crítico.</li>
+<li><b>Crítico</b>: ×1,6.</li>
+<li><b>Sem fôlego</b> (menos de 15): ×0,6.</li>
+<li><b>Zumbi deitado</b>: ×1,5 (golpe de misericórdia).</li>
+<li><b>Parte do corpo</b> (só em zumbi em pé): veja a tabela.</li>
+</ol>
+<p>Iniciante (nível 0, sem traços) bate a 75% do dano da arma; com Armas brancas 5 chega a 100%.</p>
+<h3>Partes do corpo</h3>
+<div class="tbl"><table>
+<tr><th>Alvo</th><th>Multiplicador</th><th>Efeito</th></tr>
+<tr><td>Cabeça</td><td>×1,6 × proteção de cabeça do zumbi</td><td>"NA CABEÇA!" quando é crítico ou mata</td></tr>
+<tr><td>Corpo</td><td>× proteção de tronco do zumbi</td><td>empurra mais</td></tr>
+<tr><td>Pernas</td><td>×0,6</td><td>soma 60% do dano como dano na perna; quando passa de 35% da vida máxima (60% no <a href="zumbi-chefe.html">Brutamontes</a>) e o golpe não mata, a perna quebra: ele cai e passa a rastejar</td></tr>
+</table></div>
+<p>A proteção vem do uniforme: policial e militar levam metade do dano no corpo (colete), militar e peão de obra levam 60% na cabeça (capacete), e assim por diante. Veja a tabela em <a href="zumbis.html#classes">Zumbis</a>.</p>
+<p>Zumbi caído ou rastejando é sempre atingido na cabeça, mas sem o ×1,6 nem a proteção do uniforme (o caído ainda leva o ×1,5 de misericórdia).</p>
+<h3>Errar a cabeça</h3>
+<p>Chance de pegar no ombro = (0,40 - 0,03 × nível de Armas brancas + 0,002 × pânico), ×1,4 se você não está mirando no modo Dois analógicos. Fica sempre entre 5% e 70%.</p>
+<div class="tbl"><table>
+<tr><th>Armas brancas</th><th>Pânico 0</th><th>Pânico 50</th><th>Pânico 100</th></tr>
+<tr><td>0</td><td>40%</td><td>50%</td><td>60%</td></tr>
+<tr><td>5</td><td>25%</td><td>35%</td><td>45%</td></tr>
+<tr><td>10</td><td>10%</td><td>20%</td><td>30%</td></tr>
+</table></div>
+
+<h2>Críticos</h2>
+<p>O crítico só sai com a <b>ponta da arma</b>: o zumbi precisa estar na faixa final do alcance (ou estar caído/rastejando, que sempre conta).</p>
+<ul>
+<li>A faixa começa em <b>alcance × (0,8 - bônus + 0,15 × pânico ÷ 100)</b>, entre 50% e 97% do alcance. O bônus é +0,15 com Reflexos rápidos, -0,15 com Reflexos lentos, e +0,02 por nível de Armas brancas. Na tela, é a faixa amarela.</li>
+<li><b>Golpe manual</b> (toque) na faixa: crítico garantido se você está mirando (postura de luta ou analógico direito), senão 35% de chance (+3% Sortudo, -3% Azarado). Em qualquer caso, cada nível de pânico tira 5% (falha no último instante).</li>
+<li><b>Golpe automático</b>: 4% + 0,2 × bônus + sorte - 1,3% por nível de pânico, sem precisar da faixa.</li>
+<li>O crítico dá ×1,6 de dano, empurra forte e faz o zumbi cambalear (0,4 s, 30% de chance de cair), a não ser que ele já esteja no chão ou rastejando.</li>
+<li>Zumbi atingido por crítico (ou já caído) com menos de 45% da vida tem 35% de chance de não levantar mais e passar a rastejar.</li>
+</ul>
+
+<h2>Fôlego</h2>
+<div class="tbl"><table>
+<tr><th>Ação</th><th>Fôlego</th></tr>
+<tr><td>Golpe</td><td>-(6 + 3 × peso da arma) × lentidão de ataque</td></tr>
+<tr><td>Empurrão</td><td>-(20 - Força), no mínimo 12</td></tr>
+<tr><td>Correr</td><td>-10 por segundo (-4% por nível de Fôlego)</td></tr>
+<tr><td>Andar</td><td>-2 por segundo × quanto do analógico</td></tr>
+<tr><td>Agarrado, puxando</td><td>-5 por segundo</td></tr>
+<tr><td>Recuperação parado</td><td>+8 por segundo</td></tr>
+<tr><td>Recuperação logo depois de golpear (enquanto a arma não está pronta)</td><td>+2 por segundo</td></tr>
+</table></div>
+<p>A recuperação é multiplicada pelo seu ritmo: Asmático ×0,5, +5% por nível de Fôlego, e menos com muita sede (-20%), desidratado (-40%), sangrando (-15%) e estressado.</p>
+<p>O fôlego máximo é 100 menos 0,4 × cansaço, menos febre (-25), ferida infeccionada (-15), muita dor (-10), frio e calor (-8 por nível) e delírio (-35), vezes os traços (Atlético +40%, Em forma +20%, Fora de forma -20%, Sedentário -40%, +3% por nível de Fôlego), Fumante sem cigarro (-10%), Caseiro a mais de 2 km da base (-20%) e enjoo (-15%). Fica entre 30 e 150.</p>
+<h3>Sem fôlego</h3>
+<ul>
+<li>Abaixo de <b>15</b>: golpes 50% mais lentos, dano ×0,6 e o cone de visão fecha 15 graus.</li>
+<li>Abaixo de <b>10</b>: você anda a 70% da velocidade.</li>
+<li>Abaixo de <b>5</b>: não corre.</li>
+</ul>
+<h3>Velocidade dos golpes</h3>
+<p>O intervalo da arma é multiplicado por: 1,5 sem fôlego; 0,9 com a modificação "cabo enrolado"; e pela lentidão de ataque (exausto +10%, no limite +20%, carga pesada +15%, dor +7% por nível, morfina +10%, ansiolítico +8%).</p>
+
+<h2>Empurrão</h2>
+<ul>
+<li>Toque na metade esquerda da tela. Intervalo de 0,9 s.</li>
+<li>Custa 20 - Força de fôlego (mínimo 12).</li>
+<li>Pega todo zumbi a até <b>1,3 m</b> na frente (±100°; no modo Automático, em volta toda).</li>
+<li>Joga o zumbi para trás a (3,2 + 0,1 × Força) m/s, menos 8% por nível de pânico, por 0,55 s.</li>
+<li>Chance de derrubar: 45% + 4% por nível de Força, no máximo 80%, menos 10% por nível de pânico.</li>
+<li>Solta você de quem estiver agarrando.</li>
+<li>Tira 10 pontos de pânico.</li>
+<li>No chão, o empurrão gasta o fôlego mas não faz nada: mexa o analógico para levantar.</li>
+</ul>
+<p>Zumbi derrubado fica <b>5 s</b> no chão e leva mais 1,2 s para levantar (sem atacar). Enquanto está deitado, golpes nele levam ×1,5.</p>
+
+<h2>Ataques dos zumbis</h2>
+<p>Cada ataque tem um <b>preparo</b> visível (braço levantando, boca abrindo) antes do golpe. Saia do alcance durante o preparo e ele erra ("desviou").</p>
+<div class="tbl"><table>
+<tr><th>Ataque</th><th>Preparo</th><th>Dano</th><th>Ferida</th></tr>
+<tr><td>Arranhão</td><td>0,45 s</td><td>4 a 7</td><td>arranhão (60%), senão laceração, ou hemorragia (12% delas)</td></tr>
+<tr><td>Agarrão</td><td>0,35 s</td><td>-</td><td>prende você (veja abaixo)</td></tr>
+<tr><td>Mordida em pé</td><td>0,55 s</td><td>6 a 10</td><td>mordida (70%) ou laceração</td></tr>
+<tr><td>Mordida em você no chão</td><td>1,6 s (ele precisa se abaixar)</td><td>6 a 10</td><td>mordida ou laceração</td></tr>
+<tr><td>Mordida de rastejante</td><td>0,7 s</td><td>3 a 5</td><td>nos pés ou pernas; 10% de chance de te derrubar (20% correndo)</td></tr>
+</table></div>
+<p>O preparo é multiplicado pelo zumbi (o <a href="zumbi-presidiario.html">presidiário</a> prepara 20% mais rápido, o <a href="zumbi-chefe.html">Brutamontes</a> 25% mais devagar) e pelos seus reflexos (Reflexos rápidos te dão 12% a mais de tempo, Reflexos lentos 10% a menos). Depois de atacar, o zumbi espera 1,2 s. O alcance dele é 0,7 m (0,6 m rastejando), com 0,3 m de folga na hora do golpe.</p>
+<p>A roupa pode segurar o ataque: aí não há ferida e você leva só metade do dano ("a roupa segurou"). Mordida segurada vira hematoma. Os traços Pele grossa e Pele fina mudam a chance de o golpe virar ferida.</p>
+<p>Ser derrubado: 5% de chance de fratura (braço ou perna) e 35% de hematoma.</p>
+
+<h2>Agarrões</h2>
+<ul>
+<li>Quando ataca em pé, o zumbi tem <b>40%</b> de chance de tentar agarrar em vez de arranhar. No máximo <b>2</b> zumbis te agarram ao mesmo tempo. O Brutamontes nunca agarra.</li>
+<li>Agarrado: +10 de pânico, você anda a 25% e perde 5 de fôlego por segundo ("agarrado! corra para o outro lado").</li>
+<li>Depois de 0,7 s segurando, ele tenta morder.</li>
+<li><b>Soltar</b>: puxe o analógico para o lado contrário de quem segura. A força para se soltar sobe com o quanto você puxa na direção certa (×1,5; ×2,2 correndo), +8% por nível de Força. Ao chegar a 1: "se soltou!".</li>
+<li>Também soltam: o empurrão e qualquer golpe que acerte o zumbi que está agarrando.</li>
+<li>Ao soltar, ele é empurrado meio metro e espera pelo menos 0,8 s para atacar de novo.</li>
+</ul>
+
+<h2>Abate furtivo</h2>
+<p>Um zumbi <b>desatento</b> (que ainda não sabe de você) atingido por <b>qualquer arma</b> (não vale com os punhos) por trás morre na hora: "ABATE FURTIVO". Por trás quer dizer fora do cone dele (mais de 50 graus de onde ele olha) ou com ele deitado. O abate furtivo não faz barulho e não acorda ninguém.</p>
+<p>Na tela, quem ainda não te viu tem um cone desenhado no chão. Agache para chegar mais perto sem ser notado (veja <a href="visao.html">Visão</a>).</p>
+
+<h2>Durabilidade e consertos</h2>
+<ul>
+<li>Cada golpe que acerta pelo menos um zumbi gasta <b>1</b> de durabilidade (uma vez por golpe, mesmo pegando vários).</li>
+<li>Chance de não gastar: 3% por nível de Armas brancas, mais 3% com Sortudo.</li>
+<li>Chegou a 0: "Nome quebrou!". A arma some e você fica com os punhos.</li>
+<li>Guardar a arma e pegar de novo não conserta.</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>Conserto</th><th>Precisa</th><th>Recupera</th></tr>
+<tr><td>Reparar arma na mão</td><td>1 <a href="item-fita.html">fita adesiva</a> e 1 <a href="item-pregos.html">prego</a>, na bancada</td><td>50% da durabilidade cheia</td></tr>
+<tr><td>Reparar arma na bancada</td><td>1 <a href="item-arame.html">arame</a> e 1 <a href="item-fita.html">fita</a>, com <a href="item-martelo.html">martelo</a>, Mecânica 1</td><td>100% da durabilidade cheia</td></tr>
+</table></div>
+<p>Cada conserto rende 20% menos que o anterior (×0,8 por conserto já feito) e +5% por nível de Mecânica, sem passar da durabilidade cheia.</p>
+<h3>Modificações</h3>
+<div class="tbl"><table>
+<tr><th>Modificação</th><th>Custo</th><th>Efeito</th><th>Em que arma</th></tr>
+<tr><td>Enrolar o cabo</td><td>2 fitas</td><td>golpe 10% mais rápido</td><td>só arma de golpe</td></tr>
+<tr><td>Lâmina na ponta</td><td>1 <a href="item-faca.html">faca</a> e 2 fitas</td><td>+3 de dano</td><td>arma de golpe com alcance de 1,4 m ou mais</td></tr>
+<tr><td>Lanterna presa</td><td>1 <a href="item-lanterna.html">lanterna</a>, 1 fita, 1 arame</td><td>à noite, visão da tela de ação ×1,35</td><td>qualquer arma</td></tr>
+</table></div>
+<p>A modificação vale para aquele tipo de arma na mão e some se a arma quebrar.</p>
+
+<h2>Dicas</h2>
+<div class="tip"><b>Na ponta</b>Recue meio passo antes de bater: na faixa da ponta o crítico é garantido mirando, e o zumbi fica fora do alcance dele (0,7 m).</div>
+<div class="tip"><b>Pernas primeiro</b>Contra os mais resistentes, mire nas pernas: rastejando ele anda a 0,35 m/s e é sempre atingido na cabeça.</div>
+<div class="tip warn"><b>Pânico</b>Pânico tira dano, aumenta a chance de errar a cabeça e fecha a faixa de crítico. Empurrar tira 10 de pânico.</div>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="controles.html">Controles</a></li>
+<li><a href="armas-de-fogo.html">Armas de fogo</a></li>
+<li><a href="zumbis.html">Zumbis</a></li>
+</ul>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!-- titulo: Bunkers | categoria: Saque | resumo: Os bunkers militares do mês: onde aparecem, os andares do subsolo e seus temas, salas seguras, escuro e gerador, quarentena, rádio, porta-cofre, saque por andar e o reset mensal. -->
+<p>Todo mês, algumas praças da cidade escondem um <b>bunker militar</b>. Por cima é um prédio como os outros; por baixo, uma escada leva a andares de subsolo cada vez mais perigosos, escuros e cheios de militares mortos, até o cofre no fundo. O bunker é só seu: ninguém mais vê o que você pegou lá dentro.</p>
+
+<h2>Onde aparecem</h2>
+<ul>
+<li>Cada praça do mapa tem <b>10%</b> de chance de virar bunker no mês. O sorteio é pela praça e pelo mês: todo mundo vê os mesmos bunkers.</li>
+<li>No mapa aparece como "Bunker militar (nome da praça)", tipo de lugar <a href="lugar-bunker.html">Bunker militar</a>.</li>
+<li>Os bunkers mudam no começo de cada mês.</li>
+</ul>
+
+<h2>Andares</h2>
+<p>Cada bunker tem de <b>3 a 6 andares</b> no total, igual para todos: o térreo (sorteado como um prédio comum, com os móveis da entrada) e de 2 a 5 subsolos desenhados. O rádio dos outros bunkers mostra esse total.</p>
+<p>Os temas dos subsolos seguem a profundidade: o primeiro é sempre a <b>Guarnição</b> e o último sempre o <b>Cofre</b>. No meio entram, sem repetir e nesta ordem, até 3 entre Logística, Comando, Armamento e Laboratório.</p>
+<div class="tbl"><table>
+<tr><th>Tema</th><th>Salas</th><th>O que tem de especial</th></tr>
+<tr><td>Guarnição</td><td>sala segura, refeitório, cozinha, corredor, alojamento, vestiário, enfermaria, escada</td><td>cozinha com 60% de chance de <a href="item-racao_combate.html">ração de combate</a> em cada móvel; armários de EPI; no alojamento metade dos zumbis está deitada</td></tr>
+<tr><td>Logística</td><td>sala segura, almoxarifado, corredor, oficina, lavanderia, casa de máquinas, escada</td><td><b>bancada militar</b> (usa como bancada de trabalho), cestos de roupa, <b>gerador</b> na casa de máquinas</td></tr>
+<tr><td>Comando</td><td>sala segura, briefing, comunicações, corredor, arquivo, comandante, escada</td><td><b>rádio do bunker</b>; arquivos de aço; um oficial no briefing; sala do comandante trancada com o <b>cofre pequeno</b> (cartão de acesso + 1 raro)</td></tr>
+<tr><td>Armamento</td><td>sala segura, estande de tiro, corredor, manutenção de armas, paiol, escada</td><td>bancada de armas (lista do arsenal); paiol trancado com caixas de munição; estande com 3 + andar÷2 zumbis</td></tr>
+<tr><td>Laboratório</td><td>sala segura, laboratório, quarentena, corredor, câmara fria, enfermaria cirúrgica, escada</td><td>bancadas de laboratório (remédios fortes); <b>painel das celas</b>; gavetas mortuárias</td></tr>
+<tr><td>Cofre</td><td>sala segura, antessala, corredor, cofre, casa de máquinas, guarita</td><td><b>porta-cofre</b>; o <a href="zumbi-chefe.html">Brutamontes</a> na antessala; cofre do bunker, arsenais trancados e armário de armas; gerador</td></tr>
+</table></div>
+<p>Cada planta tem 4 versões espelhadas, sorteadas pelo bunker.</p>
+<p>Na escada: <kbd>DESCER (subsolo N)</kbd>, <kbd>SUBIR (subsolo N)</kbd> e, no primeiro, <kbd>SUBIR (entrada)</kbd>.</p>
+
+<h2>Zumbis do subsolo</h2>
+<ul>
+<li>Por andar: 6 + 2 por andar abaixo do primeiro + 0 a 2 sorteados, espalhados pela área das salas (nunca na sala segura).</li>
+<li>Mais os especiais da planta: 3 presos nas celas da quarentena, os do estande, o oficial do briefing, o Brutamontes da antessala.</li>
+<li>Cada zumbi do bunker tem chance de ser <a href="zumbi-militar.html">militar</a> de 50% + 12% por andar, no máximo 85%. O resto é <a href="zumbi-comum.html">comum</a>.</li>
+<li>15% deles estão deitados (no alojamento, 50%).</li>
+<li>Os zumbis voltam toda vez que você sai e entra no bunker. O corpo de cada um só rende saque uma vez por mês.</li>
+</ul>
+
+<h2>Salas seguras e ponto de volta</h2>
+<p>Todo subsolo começa numa <b>sala segura</b>: a escada de subida, uma <b>porta blindada</b> (você passa, zumbi não passa nem quebra), a <kbd>PLANTA DO ANDAR</kbd> na parede e um armário de suprimento com uma coisa simples (água, bandagem, pilhas, bolacha, gaze ou analgésico).</p>
+<ul>
+<li>A planta mostra as salas e portas do andar, sem zumbis nem saque.</li>
+<li>Pisar numa sala segura grava ali o seu <b>ponto de volta</b>. Se o app fechar no meio da visita, entrar de novo no bunker te leva direto para a última sala segura ("Voltou para a sala segura do subsolo N.").</li>
+<li>Sair pela porta da frente apaga o ponto de volta: a próxima visita começa do térreo. Morrer lá dentro também apaga.</li>
+</ul>
+
+<h2>Escuro e gerador</h2>
+<p>Os subsolos são escuros como a noite: a visão na tela de ação cai para 12 m (22 m com lanterna, 26 m com Visão noturna). Leve <a href="item-lanterna.html">lanterna</a> e <a href="item-pilhas.html">pilhas</a>.</p>
+<p>Os andares com casa de máquinas (Logística e Cofre) têm um <b>gerador</b>: <kbd>LIGAR O GERADOR (biodiesel)</kbd>.</p>
+<ul>
+<li>Gasta 1 <a href="item-biodiesel.html">galão de biodiesel</a> ("Precisa de um galão de biodiesel (faça no fogo da base: óleo, álcool e soda cáustica).").</li>
+<li>O andar inteiro acende até você sair do bunker.</li>
+<li>O motor faz barulho de 80 m e <b>todos os zumbis do andar</b> vão até o gerador.</li>
+</ul>
+<p>O biodiesel se faz no fogo da base: 2 <a href="item-oleo_cozinha.html">óleo de cozinha</a>, 2 <a href="item-alcool.html">álcool 70%</a> e 1 <a href="item-soda_caustica.html">soda cáustica</a>.</p>
+
+<h2>Quarentena</h2>
+<p>No Laboratório, a quarentena tem celas atrás de uma grade, com 3 zumbis presos. O <kbd>PAINEL DAS CELAS</kbd> sobe todas as grades de uma vez ("Clang! As grades das celas subiram... todas."), com barulho de 30 m. As celas ficam abertas até você sair do bunker.</p>
+
+<h2>Rádio do bunker</h2>
+<p>No andar de Comando, o <kbd>RÁDIO DO BUNKER</kbd> lista os outros bunkers do mês num raio de <b>5 km</b>, com distância, direção e número de andares. Sem nenhum: "Só estática: nenhum outro bunker num raio de 5 km."</p>
+
+<h2>A porta-cofre</h2>
+<p>No último andar, a porta entre a antessala e o cofre é uma porta-cofre. Perto dela aparece:</p>
+<div class="tbl"><table>
+<tr><th>Jeito</th><th>Botão</th><th>Tempo</th><th>Barulho</th></tr>
+<tr><td>Com o <a href="item-cartao_bunker.html">cartão de acesso</a> na mochila</td><td><kbd>ABRIR COM O CARTÃO (5 s)</kbd></td><td>5 s</td><td>nenhum ("Bip. A porta-cofre abriu."); gasta o cartão</td></tr>
+<tr><td>Com <a href="item-pe_de_cabra.html">pé de cabra</a></td><td><kbd>ARROMBAR PORTA-COFRE (60 s)</kbd></td><td>60 s parado</td><td>45 m a cada 4 s, e 60 m quando cede</td></tr>
+</table></div>
+<p>Sem nenhum dos dois: "Porta-cofre: precisa do cartão de acesso, ou de pé de cabra e muito tempo.".</p>
+<h3>Onde está o cartão</h3>
+<ul>
+<li>Se o bunker tem andar de <b>Comando</b>: no cofre pequeno da sala do comandante, que é trancada (pé de cabra, 3 s).</li>
+<li>Se não tem: um <b>oficial</b> morto-vivo no penúltimo andar leva o cartão no corpo ("Corpo: Oficial").</li>
+<li>O cartão só vale no mês em que foi achado: na virada do mês ele some da mochila e do depósito.</li>
+</ul>
+
+<h2>Saque por andar</h2>
+<p>O multiplicador de raridade do bunker cresce com a profundidade: <b>1,5 + 0,8 por andar</b> abaixo do térreo (veja <a href="saque.html#raridade">o sorteio de raridade</a>).</p>
+<div class="tbl"><table>
+<tr><th>Andar</th><th>Multiplicador de raro</th></tr>
+<tr><td>Térreo</td><td>1,5 (os 3 móveis da entrada: 0)</td></tr>
+<tr><td>Subsolo 1</td><td>2,3</td></tr>
+<tr><td>Subsolo 2</td><td>3,1</td></tr>
+<tr><td>Subsolo 3</td><td>3,9</td></tr>
+<tr><td>Subsolo 4</td><td>4,7</td></tr>
+<tr><td>Subsolo 5</td><td>5,5</td></tr>
+</table></div>
+<p>Além disso:</p>
+<ul>
+<li><b>Um raro garantido</b> em cada subsolo, menos no último (o do cofre), num móvel qualquer do andar. O térreo não tem.</li>
+<li><b>Paiol</b>: cada caixa de munição tem 1 ou 2 calibres em caixa (6 a 15 balas cada) e 12% de chance de um raro.</li>
+<li><b>Gaveta mortuária</b>: o bolso de um corpo (e 25% de chance de alguém levantar).</li>
+<li><b>Cofre do bunker</b>: 2 raros a mais e, às vezes, um item especial: <a href="item-sinalizador_dificil.html">sinalizador difícil</a> (15%), <a href="item-barraca.html">barraca</a> (10%) ou <a href="item-sinalizador_medio.html">sinalizador médio</a> (20%). Sortudo e Azarado mudam essas chances em 10%.</li>
+</ul>
+<p>Os raros do bunker vêm da lista raro do <a href="lugar-bunker.html">bunker militar</a>: colete balístico, colete tático, capacete balístico, capacete tático, fuzil, rifle, submetralhadora, pistola, escopeta, antibiótico, morfina, munição 5,56 e .308, enlatados, rádio, mochila tática, calça tática, protetor de antebraço e lona.</p>
+
+<h2>Reset mensal</h2>
+<ul>
+<li>Saqueado, o bunker fica marcado até o começo do mês seguinte (não repõe por semana como os outros lugares).</li>
+<li>No mês novo os bunkers mudam de praça, os zumbis do mapa voltam ("Novo mês: os zumbis voltaram.") e os cartões de acesso velhos somem.</li>
+<li>Gerador ligado e celas abertas valem só para a visita atual.</li>
+</ul>
+
+<h2>Dicas</h2>
+<div class="tip"><b>Leve o pé de cabra</b>Ele abre a sala do comandante, o paiol e, em último caso, a porta-cofre.</div>
+<div class="tip warn"><b>Gerador é convite</b>Ligar o gerador traz o andar inteiro para a casa de máquinas. Ligue já com uma rota de volta para a sala segura.</div>
+
+<h2>Veja também</h2>
+<ul>
+<li><a href="zumbi-militar.html">Zumbi militar</a> e <a href="zumbi-chefe.html">Brutamontes</a></li>
+<li><a href="saque.html">Saque</a></li>
+<li><a href="tela-de-acao.html">Tela de ação</a></li>
+</ul>

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Tratamento — Wiki do Footfall</title>
+<meta name="description" content="Cada passo de primeiros socorros: tempo, itens aceitos, chance de falha, o curativo rápido e como acelerar a cicatrização.">
+<meta name="theme-color" content="#0b0a10">
+<link rel="icon" type="image/png" href="../img/icone.png">
+<link rel="stylesheet" href="../estilo.css">
+<link rel="stylesheet" href="wiki.css">
+</head>
+<body class="wiki">
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Footfall"><img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58"></a>
+    <a class="wk" href="index.html">Wiki</a>
+    <form class="busca" role="search" action="busca.html"><input type="search" name="q" placeholder="Buscar na wiki" aria-label="Buscar na wiki" autocomplete="off"><div class="sug" hidden></div></form>
+    <button type="button" class="menu" aria-expanded="false" aria-controls="side">Seções</button>
+  </div>
+</header>
+<div class="wiki-wrap">
+<nav class="side" id="side" aria-label="Seções da wiki"><details open><summary>Índices</summary><ul><li><a href="itens.html">Todos os itens</a></li><li><a href="lugares.html">Lugares</a></li><li><a href="zumbis-lista.html">Tipos de zumbi</a></li><li><a href="memorias-lista.html">As memórias</a></li></ul></details><details open><summary>Começo</summary><ul><li><a href="criacao-de-personagem.html">Criação de personagem</a></li><li><a href="sessao-e-mapa.html">Sessão e mapa</a></li></ul></details><details open><summary>Personagem</summary><ul><li><a href="costura-e-roupas.html">Costura e roupas</a></li><li><a href="habilidades.html">Habilidades</a></li><li><a href="mochila-e-peso.html">Mochila e peso</a></li><li><a href="morte.html">Morte</a></li><li><a href="profissoes.html">Profissões</a></li><li><a href="tracos.html">Traços</a></li></ul></details><details open><summary>Saúde</summary><ul><li><a href="cansaco-e-sono.html">Cansaço e sono</a></li><li><a href="feridas.html">Feridas</a></li><li><a href="infeccao.html">Infecção</a></li><li><a href="mente.html">Mente</a></li><li><a href="moodles.html">Moodles</a></li><li><a href="necessidades.html">Necessidades</a></li><li><a href="temperatura.html">Temperatura</a></li><li><a href="tratamento.html" aria-current=page>Tratamento</a></li></ul></details><details open><summary>Mundo</summary><ul><li><a href="barulho.html">Barulho</a></li><li><a href="clima-e-hora.html">Clima e hora</a></li><li><a href="horda-e-alarmes.html">Horda e alarmes</a></li><li><a href="visao.html">Visão</a></li><li><a href="zumbis.html">Zumbis</a></li></ul></details><details open><summary>Saque</summary><ul><li><a href="bunkers.html">Bunkers</a></li><li><a href="corpos.html">Corpos</a></li><li><a href="saque.html">Saque</a></li></ul></details><details open><summary>Combate</summary><ul><li><a href="armas-de-fogo.html">Armas de fogo</a></li><li><a href="arremesso.html">Arremesso</a></li><li><a href="combate-corpo-a-corpo.html">Combate corpo a corpo</a></li><li><a href="controles.html">Controles</a></li><li><a href="tela-de-acao.html">Tela de ação</a></li></ul></details><details open><summary>Base</summary><ul><li><a href="armadilhas.html">Armadilhas</a></li><li><a href="ataque-noturno.html">Ataque noturno</a></li><li><a href="base.html">Base</a></li><li><a href="cozinha.html">Cozinha</a></li><li><a href="deposito-do-radio.html">Depósito do rádio e postos avançados</a></li><li><a href="horta.html">Horta</a></li><li><a href="moveis-da-base.html">Móveis da base</a></li><li><a href="paredes-portas-e-janelas.html">Paredes, portas e janelas</a></li><li><a href="receitas.html">Receitas</a></li></ul></details><details open><summary>Social</summary><ul><li><a href="grupo.html">Grupo</a></li><li><a href="mercado-e-selos.html">Mercado e selos</a></li><li><a href="pontos-dominados.html">Pontos dominados</a></li></ul></details><details open><summary>Corvo e rádio</summary><ul><li><a href="corvo.html">Corvo</a></li><li><a href="radio.html">Rádio</a></li></ul></details><details open><summary>Memórias</summary><ul><li><a href="memorias.html">Memórias</a></li></ul></details></nav>
+<main class="doc wdoc">
+<p class="crumbs"><a href="index.html">Wiki</a> / Saúde</p>
+<h1>Tratamento</h1>
+<p class="sub">Cada passo de primeiros socorros: tempo, itens aceitos, chance de falha, o curativo rápido e como acelerar a cicatrização.</p>
+<p>Toda <a href="feridas.html">ferida</a> é tratada <b>por passo</b> na aba <kbd>Saúde</kbd> do painel do personagem. Cada ferida mostra só os passos que ainda faltam, na ordem boa de fazer. Ela só cicatriza com todos os passos feitos e sem infecção. Tratar dá XP de <a href="habilidades.html">Primeiros socorros</a>, e o nível da habilidade deixa cada passo mais rápido e mais seguro.</p>
+
+<h2>Onde tratar</h2>
+<ul>
+<li><b>No mapa</b>: abra o painel do personagem (ícone de coração, <i>Personagem</i>) e vá na aba <kbd>Saúde</kbd>. O boneco vitruviano no topo mostra o estado de cada parte; tocar numa parte destaca ela. Embaixo ficam as barras (Vida, Fome, Sede, Cansaço, Estresse, Tristeza, Tédio, Dor) e um cartão por ferida.</li>
+<li><b>Na tela de ação</b>: o mesmo painel abre já na aba Saúde quando você está ferido. Também dá para tratar no meio da luta.</li>
+<li><b>Na maca da base</b>: tocar na maca na tela de ação abre a Saúde e lembra que ali as feridas cicatrizam mais rápido.</li>
+</ul>
+<div class="tip warn"><b>Quando não dá para tratar</b>No mapa, nenhum passo pode ser feito com zumbi te perseguindo: "Tem zumbi atrás de você. Saia de perto primeiro.". Na tela de ação, o bloqueio é qualquer zumbi a menos de 6 m: "Tem zumbi perto demais. Afaste-se uns metros para se tratar.".</div>
+
+<h2>O fluxo de um passo</h2>
+<ol class="steps">
+<li>No cartão da ferida, cada passo que falta é um botão com o nome do passo e, embaixo, o item que vai ser usado (ou <i>na mão</i>, ou <i>falta &lt;item&gt;</i> se você não tem nenhum; aí o botão fica desligado).</li>
+<li>Tocando, abre uma janela com o nome do passo, o item usado, avisos ("Está no fundo da mochila: procurar demora mais.", "Chance de falhar: N% (nível e pânico contam).") e uma barra com os segundos que faltam.</li>
+<li>Você pode tocar em <kbd>Parar</kbd> para desistir antes de a barra encher; nada é gasto.</li>
+<li>Quando a barra enche, o item é gasto e o passo é feito (ou falha). Aparece o resultado, por exemplo "Enfaixar (com Gaze): feito.".</li>
+</ol>
+<p>O item é procurado na mochila e, se você estiver na base, nos baús. Na tela de ação, o jogo prefere o que está nos bolsos; se o item só estiver no fundo da mochila, o passo leva 2,5 s a mais.</p>
+
+<h2>Os passos</h2>
+<div class="tbl"><table>
+<tr><th>Passo</th><th>Tempo (nível 0)</th><th>Itens aceitos (o primeiro que tiver)</th><th>Falha</th><th>XP</th></tr>
+<tr><td>Limpar e desinfetar</td><td>4 s</td><td><a href="item-soro.html">Soro fisiológico</a>, <a href="item-alcool.html">Álcool 70%</a>, <a href="item-cachaca.html">Garrafa de cachaça</a></td><td>—</td><td>5</td></tr>
+<tr><td>Tirar o estilhaço</td><td>8 s</td><td><a href="item-pinca.html">Pinça</a> (não se gasta) ou na mão</td><td>25%</td><td>15</td></tr>
+<tr><td>Suturar</td><td>12 s</td><td><a href="item-kit_sutura.html">Kit de sutura</a></td><td>35%</td><td>20</td></tr>
+<tr><td>Enfaixar</td><td>5 s</td><td><a href="item-bandagem_esteril.html">Atadura estéril</a>, <a href="item-gaze.html">Gaze</a>, <a href="item-bandagem.html">Bandagem</a>, <a href="item-kit_socorros.html">Kit de primeiros socorros</a>, <a href="item-pano.html">Trapos de pano</a></td><td>—</td><td>10</td></tr>
+<tr><td>Torniquete</td><td>3 s</td><td><a href="item-torniquete.html">Torniquete</a>, <a href="item-pano.html">Trapos de pano</a></td><td>—</td><td>10</td></tr>
+<tr><td>Imobilizar (tala)</td><td>10 s</td><td><a href="item-tala.html">Tala</a></td><td>—</td><td>15</td></tr>
+<tr><td>Pomada</td><td>4 s</td><td><a href="item-pomada.html">Pomada para queimadura</a></td><td>—</td><td>8</td></tr>
+</table></div>
+
+<h3>Detalhes de cada passo</h3>
+<ul>
+<li><b>Limpar e desinfetar</b>: marca a ferida como <i>limpa</i>. Com cachaça, sobra a <a href="item-garrafa.html">Garrafa vazia</a>.</li>
+<li><b>Tirar o estilhaço</b>: com pinça, a pinça não é gasta. Sem pinça, vai na mão: o passo continua possível ("Sem pinça: vai na mão (dói e sangra).") e tira 3 de vida.</li>
+<li><b>Suturar</b>: gasta 1 kit de sutura por tentativa. Fecha o corte profundo e a hemorragia; na hemorragia, também solta o torniquete.</li>
+<li><b>Enfaixar</b>: com Atadura estéril ou Kit de primeiros socorros, a ferida também conta como limpa. Com trapo, o curativo já nasce sujo. Se você tiver <a href="item-esparadrapo.html">Esparadrapo</a>, ele é gasto junto e o curativo demora 24 h em vez de 12 h para sujar. Quando o curativo suja, o botão volta como <kbd>Trocar curativo</kbd>.</li>
+<li><b>Torniquete</b>: para a hemorragia na hora. Não deixe mais de 2 h sem suturar: depois disso ele tira 1 HP a cada 120 s.</li>
+<li><b>Imobilizar (tala)</b>: único passo da fratura. A tala se faz com 1 tábua e 2 trapos.</li>
+<li><b>Pomada</b>: primeiro passo da queimadura; depois enfaixe.</li>
+</ul>
+
+<h2>Tempo de cada passo</h2>
+<p>Tempo = tempo base × (1 − 0,08 × nível de Primeiros socorros) × modificadores:</p>
+<div class="tbl"><table>
+<tr><th>Modificador</th><th>Efeito</th></tr>
+<tr><td>Cada nível de Primeiros socorros</td><td>−8% (nível 10 = 20% do tempo)</td></tr>
+<tr><td>Sob efeito de <a href="item-ansiolitico.html">Ansiolítico</a></td><td>×1,1</td></tr>
+<tr><td>Papel Médico no grupo</td><td>×0,9</td></tr>
+<tr><td>Item só no fundo da mochila (tela de ação)</td><td>+2,5 s</td></tr>
+</table></div>
+
+<h2>Chance de falha</h2>
+<p>Só a sutura e a retirada do estilhaço podem falhar. A chance é:</p>
+<p><b>base − 12% × nível de Primeiros socorros + tremedeira</b>, entre 0% e 80%, com base 35% (sutura) ou 25% (estilhaço). A tremedeira soma 8% em Em pânico, 16% em Pânico forte e 24% em Pânico extremo, mais 5% se você estiver Muito estressado.</p>
+<div class="tbl"><table>
+<tr><th>Nível</th><th>Sutura (calmo)</th><th>Estilhaço (calmo)</th></tr>
+<tr><td>0</td><td>35%</td><td>25%</td></tr>
+<tr><td>1</td><td>23%</td><td>13%</td></tr>
+<tr><td>2</td><td>11%</td><td>1%</td></tr>
+<tr><td>3 ou mais</td><td>0%</td><td>0%</td></tr>
+</table></div>
+<p>Quando falha, o item já foi gasto (o kit de sutura vai embora; a pinça, não), você perde 3 de vida e ganha 2 de XP. As mensagens são "A mão tremeu e a sutura abriu (-3 de vida). Tente de novo." e "O estilhaço escorregou (-3 de vida). Tente de novo.". Nenhum passo deixa a vida abaixo de 1.</p>
+<div class="tip"><b>Acalme-se antes de costurar</b>Pânico de nível 2 ou mais pesa muito na sutura. Afaste-se, espere o pânico baixar ou tome um <a href="item-betabloqueador.html">Betabloqueador</a> (pânico sobe menos) antes de suturar. A <a href="item-cachaca.html">cachaça</a> zera o pânico na hora. Veja <a href="mente.html">Mente</a>.</div>
+
+<h2>Curativo rápido</h2>
+<p>Quando alguma ferida sangra, a aba Saúde mostra o botão <kbd>Curativo rápido (&lt;item&gt;)</kbd> (ou <kbd>Sem bandagem na mochila</kbd>, desligado). Ele usa o primeiro que você tiver, na mochila ou, na base, nos baús: <a href="item-bandagem.html">Bandagem</a>, <a href="item-gaze.html">Gaze</a>, <a href="item-bandagem_esteril.html">Atadura estéril</a>, <a href="item-kit_socorros.html">Kit de primeiros socorros</a>. Também dá para usar esses itens direto do inventário (<kbd>Usar</kbd>).</p>
+<ul>
+<li>É instantâneo e enfaixa a ferida que mais sangra (sem contar hemorragias).</li>
+<li>Se a única ferida sangrando for uma hemorragia, o curativo vira <b>torniquete</b> nela.</li>
+<li><b>Não limpa</b> a ferida, nem com atadura estéril: "Fez curativo rápido. Ferida sem limpar pode infeccionar: veja a tela Saúde.".</li>
+<li>Gasta esparadrapo se houver.</li>
+<li>Dá 15 de XP de Primeiros socorros (Hemofóbico: +35 de pânico).</li>
+<li>O item também devolve vida (ver abaixo).</li>
+</ul>
+<p>Use o curativo rápido para parar de sangrar no aperto e trate direito depois.</p>
+
+<h2>Itens que devolvem vida</h2>
+<p>Alguns itens devolvem vida na hora ao serem usados, multiplicado por 1 + 10% por nível de Primeiros socorros:</p>
+<div class="tbl"><table>
+<tr><th>Item</th><th>Vida</th></tr>
+<tr><td><a href="item-kit_socorros.html">Kit de primeiros socorros</a></td><td>30</td></tr>
+<tr><td><a href="item-antibiotico.html">Antibiótico</a></td><td>20</td></tr>
+<tr><td><a href="item-bandagem_esteril.html">Atadura estéril</a></td><td>12</td></tr>
+<tr><td><a href="item-analgesico.html">Analgésico</a></td><td>6</td></tr>
+<tr><td><a href="item-bandagem.html">Bandagem</a></td><td>5</td></tr>
+<tr><td><a href="item-alcool.html">Álcool 70%</a></td><td>2</td></tr>
+</table></div>
+<p>Esses números só valem pelo <kbd>Usar</kbd>/<kbd>Tomar</kbd> do inventário ou pelo curativo rápido; usado como passo na tela Saúde, o item faz só o passo.</p>
+
+<h2>Remédios</h2>
+<div class="tbl"><table>
+<tr><th>Remédio</th><th>Efeito</th><th>Duração</th></tr>
+<tr><td><a href="item-analgesico.html">Analgésico</a></td><td>Dor ×0,35</td><td>4 h</td></tr>
+<tr><td><a href="item-morfina.html">Morfina</a></td><td>Dor zero; golpes 10% mais lentos; +15 de cansaço</td><td>2 h</td></tr>
+<tr><td><a href="item-antibiotico.html">Antibiótico</a></td><td>Cura a infecção comum de todas as feridas</td><td>Na hora</td></tr>
+</table></div>
+<p>O antibiótico não tem efeito na infecção zumbi. Remédios para a cabeça estão em <a href="mente.html">Mente</a>.</p>
+
+<h2>Cicatrização</h2>
+<p>Com todos os passos feitos, a ferida mostra a barra <i>cicatrizando</i> e o tempo que falta. O tempo base de cada tipo (ver <a href="feridas.html">Feridas</a>) é multiplicado por:</p>
+<div class="tbl"><table>
+<tr><th>Fator</th><th>Multiplicador do tempo</th></tr>
+<tr><td>Traço Cura rápida</td><td>×0,7</td></tr>
+<tr><td>Traço Cura lenta</td><td>×1,3</td></tr>
+<tr><td>Cada nível de Primeiros socorros</td><td>−5% (nível 10 = ×0,5)</td></tr>
+<tr><td>Maca na base, com você dentro da base</td><td>×0,67</td></tr>
+</table></div>
+<p>A cicatrização corre em tempo real, também com o app fechado. A <b>maca</b> (<a href="moveis-da-base.html">móvel da base</a>, receita "Maca", pede Carpintaria 1) só conta enquanto você está dentro da base com a sessão ativa; ao abrir o app depois de um tempo fora, o tempo que passou é contado sem ela.</p>
+
+<h2>Livro de primeiros socorros</h2>
+<p>Ler o <a href="item-livro_medicina.html">Livro de primeiros socorros</a> dá +50% de XP em Primeiros socorros por 1 dia real e tira 20 de tédio.</p>
+
+<h2>Receitas médicas</h2>
+<p>Todas as receitas do jogo estão em <a href="receitas.html">Receitas</a>.</p>
+<div class="tbl"><table>
+<tr><th>Receita</th><th>Produz</th><th>Gasta</th><th>Bancada</th><th>Nível</th><th>XP</th></tr>
+<tr><td>Atadura</td><td><a href="item-bandagem.html">Bandagem</a></td><td>2 <a href="item-pano.html">trapos</a></td><td>Não</td><td>—</td><td>10</td></tr>
+<tr><td>Atadura estéril</td><td><a href="item-bandagem_esteril.html">Atadura estéril</a></td><td>1 <a href="item-bandagem.html">bandagem</a> + 1 <a href="item-alcool.html">álcool</a></td><td>Não</td><td>Primeiros socorros 1</td><td>15</td></tr>
+<tr><td>Tala</td><td><a href="item-tala.html">Tala</a></td><td>1 <a href="item-tabuas.html">tábua</a> + 2 <a href="item-pano.html">trapos</a></td><td>Não</td><td>—</td><td>8</td></tr>
+</table></div>
+</main>
+</div>
+<footer class="foot">
+  <div class="wrap">
+    <img class="px" src="../img/logo.png" alt="Footfall" width="148" height="58">
+    <nav aria-label="Rodapé">
+      <a href="../index.html">Site</a>
+      <a href="../guias.html">Guias</a>
+      <a href="index.html">Wiki</a>
+      <a href="../privacidade.html">Política de privacidade</a>
+      <a href="mailto:contato@footfall.pcpastre.com">contato@footfall.pcpastre.com</a>
+    </nav>
+  </div>
+  <div class="wrap" style="margin-top:14px">Wiki gerada a partir do código do jogo. Valores podem mudar entre versões.</div>
+</footer>
+<script src="wiki.js" defer></script>
+</body>
+</html>

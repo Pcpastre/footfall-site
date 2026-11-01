@@ -1,0 +1,1415 @@
+{
+  "recipes": [
+    {
+      "id": "R14",
+      "name": "Bancada de trabalho",
+      "inputs": {
+        "tabuas": 4,
+        "pregos": 3
+      },
+      "needsBench": false,
+      "skill": "carpintaria",
+      "xp": 40,
+      "kind": "estrutura",
+      "furniture": "bancada",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "minLevel": 0,
+      "needsFire": false,
+      "name_en": "Workbench",
+      "name_es": "Banco de trabajo",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": "Carpintaria",
+      "output_name": null,
+      "input_names": {
+        "tabuas": "Tábuas",
+        "pregos": "Pregos"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "H01",
+      "name": "Canteiro da horta",
+      "inputs": {
+        "tabuas": 2,
+        "pregos": 2
+      },
+      "needsBench": false,
+      "skill": "agricultura",
+      "xp": 15,
+      "kind": "estrutura",
+      "furniture": "canteiro",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "minLevel": 0,
+      "needsFire": false,
+      "name_en": "Garden bed",
+      "name_es": "Cantero del huerto",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": "Agricultura",
+      "output_name": null,
+      "input_names": {
+        "tabuas": "Tábuas",
+        "pregos": "Pregos"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "M01",
+      "name": "Baú (+40 kg de espaço)",
+      "inputs": {
+        "tabuas": 4,
+        "pregos": 4
+      },
+      "needsBench": false,
+      "skill": "carpintaria",
+      "xp": 25,
+      "kind": "estrutura",
+      "furniture": "bau",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "minLevel": 0,
+      "needsFire": false,
+      "name_en": "Chest (+40 kg of space)",
+      "name_es": "Cofre (+40 kg de espacio)",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": "Carpintaria",
+      "output_name": null,
+      "input_names": {
+        "tabuas": "Tábuas",
+        "pregos": "Pregos"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "M02",
+      "name": "Cama (dormir na base rende mais)",
+      "inputs": {
+        "tabuas": 3,
+        "pregos": 2,
+        "pano": 4
+      },
+      "skill": "carpintaria",
+      "xp": 30,
+      "kind": "estrutura",
+      "furniture": "cama",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "needsBench": true,
+      "minLevel": 0,
+      "needsFire": false,
+      "name_en": "Bed (sleeping at base is more restful)",
+      "name_es": "Cama (dormir en la base rinde más)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Carpintaria",
+      "output_name": null,
+      "input_names": {
+        "tabuas": "Tábuas",
+        "pregos": "Pregos",
+        "pano": "Trapos de pano"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "M03",
+      "name": "Mesa (comer na base rende mais)",
+      "inputs": {
+        "tabuas": 3,
+        "pregos": 2
+      },
+      "skill": "carpintaria",
+      "xp": 20,
+      "kind": "estrutura",
+      "furniture": "mesa",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "needsBench": true,
+      "minLevel": 0,
+      "needsFire": false,
+      "name_en": "Table (eating at the base goes further)",
+      "name_es": "Mesa (comer en la base rinde más)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Carpintaria",
+      "output_name": null,
+      "input_names": {
+        "tabuas": "Tábuas",
+        "pregos": "Pregos"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "R04",
+      "name": "Atadura",
+      "output": "bandagem",
+      "inputs": {
+        "pano": 2
+      },
+      "needsBench": false,
+      "skill": "primeiros_socorros",
+      "xp": 10,
+      "qty": 1,
+      "tools": [],
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Dressing",
+      "name_es": "Venda",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": "Primeiros socorros",
+      "output_name": "Bandagem",
+      "input_names": {
+        "pano": "Trapos de pano"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "R05",
+      "name": "Atadura estéril",
+      "output": "bandagem_esteril",
+      "inputs": {
+        "bandagem": 1,
+        "alcool": 1
+      },
+      "needsBench": false,
+      "skill": "primeiros_socorros",
+      "minLevel": 1,
+      "xp": 15,
+      "qty": 1,
+      "tools": [],
+      "kind": "item",
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Sterile dressing",
+      "name_es": "Venda estéril",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": "Primeiros socorros",
+      "output_name": "Atadura estéril",
+      "input_names": {
+        "bandagem": "Bandagem",
+        "alcool": "Álcool 70%"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "R07",
+      "name": "Tala",
+      "output": "tala",
+      "inputs": {
+        "tabuas": 1,
+        "pano": 2
+      },
+      "needsBench": false,
+      "skill": "primeiros_socorros",
+      "xp": 8,
+      "qty": 1,
+      "tools": [],
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Splint",
+      "name_es": "Férula",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": "Primeiros socorros",
+      "output_name": "Tala",
+      "input_names": {
+        "tabuas": "Tábuas",
+        "pano": "Trapos de pano"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "R01",
+      "name": "Lança improvisada",
+      "output": "lanca",
+      "inputs": {
+        "cano": 1,
+        "faca": 1,
+        "fita": 2
+      },
+      "skill": "mecanica",
+      "minLevel": 1,
+      "xp": 30,
+      "qty": 1,
+      "tools": [],
+      "needsBench": true,
+      "kind": "item",
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Makeshift spear",
+      "name_es": "Lanza improvisada",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Mecânica",
+      "output_name": "Lança improvisada",
+      "input_names": {
+        "cano": "Cano de ferro",
+        "faca": "Faca de cozinha",
+        "fita": "Fita adesiva"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "R02",
+      "name": "Taco com pregos",
+      "output": "taco_pregos",
+      "inputs": {
+        "taco": 1,
+        "pregos": 1
+      },
+      "tools": [
+        "martelo"
+      ],
+      "skill": "carpintaria",
+      "xp": 25,
+      "qty": 1,
+      "needsBench": true,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Nail bat",
+      "name_es": "Bate con clavos",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Carpintaria",
+      "output_name": "Taco com pregos",
+      "input_names": {
+        "taco": "Taco de beisebol",
+        "pregos": "Pregos"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "R06",
+      "name": "Reparar arma na mão (+50%, rende menos a cada conserto)",
+      "inputs": {
+        "fita": 1,
+        "pregos": 1
+      },
+      "skill": "mecanica",
+      "xp": 20,
+      "kind": "reparo",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "needsBench": true,
+      "minLevel": 0,
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Repair weapon in hand (+50%, less effective with each repair)",
+      "name_es": "Reparar arma en la mano (+50%, rinde menos con cada reparación)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Mecânica",
+      "output_name": null,
+      "input_names": {
+        "fita": "Fita adesiva",
+        "pregos": "Pregos"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "R08",
+      "name": "Reparar arma na bancada (+100%, rende menos a cada conserto)",
+      "inputs": {
+        "arame": 1,
+        "fita": 1
+      },
+      "tools": [
+        "martelo"
+      ],
+      "skill": "mecanica",
+      "minLevel": 1,
+      "xp": 30,
+      "kind": "reparo",
+      "output": null,
+      "qty": 1,
+      "needsBench": true,
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Repair weapon at the workbench (+100%, less effective with each repair)",
+      "name_es": "Reparar arma en el banco de trabajo (+100%, rinde menos con cada reparación)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Mecânica",
+      "output_name": null,
+      "input_names": {
+        "arame": "Arame",
+        "fita": "Fita adesiva"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "M07",
+      "name": "Maca (enfermaria: cicatriza mais rápido na base)",
+      "inputs": {
+        "tabuas": 3,
+        "pano": 3,
+        "pregos": 2,
+        "cano": 1
+      },
+      "skill": "carpintaria",
+      "minLevel": 1,
+      "xp": 30,
+      "kind": "estrutura",
+      "furniture": "maca",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "needsBench": true,
+      "needsFire": false,
+      "name_en": "Stretcher (infirmary: heals faster at the base)",
+      "name_es": "Camilla (enfermería: cicatriza más rápido en la base)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Carpintaria",
+      "output_name": null,
+      "input_names": {
+        "tabuas": "Tábuas",
+        "pano": "Trapos de pano",
+        "pregos": "Pregos",
+        "cano": "Cano de ferro"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "M04",
+      "name": "Barril de chuva (água)",
+      "inputs": {
+        "tabuas": 4,
+        "chapa": 1
+      },
+      "skill": "carpintaria",
+      "xp": 25,
+      "kind": "estrutura",
+      "furniture": "barril",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "needsBench": true,
+      "minLevel": 0,
+      "needsFire": false,
+      "name_en": "Rain barrel (water)",
+      "name_es": "Barril de lluvia (agua)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Carpintaria",
+      "output_name": null,
+      "input_names": {
+        "tabuas": "Tábuas",
+        "chapa": "Chapa de metal"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "M05",
+      "name": "Fogueira (cozinhar)",
+      "inputs": {
+        "pedra": 3,
+        "tabuas": 2
+      },
+      "needsBench": false,
+      "xp": 15,
+      "kind": "estrutura",
+      "furniture": "fogueira",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "needsFire": false,
+      "name_en": "Campfire (cooking)",
+      "name_es": "Fogata (cocinar)",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": null,
+      "input_names": {
+        "pedra": "Pedra",
+        "tabuas": "Tábuas"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "M06",
+      "name": "Fogão a lenha (cozinhar sem chamar atenção)",
+      "inputs": {
+        "chapa": 1,
+        "cano": 1,
+        "pregos": 2
+      },
+      "skill": "mecanica",
+      "xp": 30,
+      "kind": "estrutura",
+      "furniture": "fogao",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "needsBench": true,
+      "minLevel": 0,
+      "needsFire": false,
+      "name_en": "Wood stove (cook without drawing attention)",
+      "name_es": "Cocina de leña (cocinar sin llamar la atención)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Mecânica",
+      "output_name": null,
+      "input_names": {
+        "chapa": "Chapa de metal",
+        "cano": "Cano de ferro",
+        "pregos": "Pregos"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "R10",
+      "name": "Coquetel molotov (3)",
+      "output": "molotov",
+      "qty": 3,
+      "inputs": {
+        "garrafa": 3,
+        "gasolina": 1,
+        "pano": 3
+      },
+      "needsBench": false,
+      "xp": 12,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Molotov cocktail (3)",
+      "name_es": "Cóctel molotov (3)",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": "Coquetel molotov",
+      "input_names": {
+        "garrafa": "Garrafa vazia",
+        "gasolina": "Galão de gasolina",
+        "pano": "Trapos de pano"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "M08",
+      "name": "Estacas (armadilha: fere quem passa)",
+      "inputs": {
+        "tabuas": 2,
+        "pregos": 4
+      },
+      "needsBench": false,
+      "skill": "carpintaria",
+      "xp": 20,
+      "kind": "estrutura",
+      "furniture": "estacas",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "minLevel": 0,
+      "needsFire": false,
+      "name_en": "Stakes (trap: hurts whoever passes)",
+      "name_es": "Estacas (trampa: hiere a quien pasa)",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": "Carpintaria",
+      "output_name": null,
+      "input_names": {
+        "tabuas": "Tábuas",
+        "pregos": "Pregos"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "M09",
+      "name": "Arame com latas (alarme)",
+      "inputs": {
+        "arame": 1,
+        "garrafa": 2,
+        "pregos": 2
+      },
+      "needsBench": false,
+      "xp": 15,
+      "kind": "estrutura",
+      "furniture": "latas",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "needsFire": false,
+      "name_en": "Tin can wire (alarm)",
+      "name_es": "Alambre con latas (alarma)",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": null,
+      "input_names": {
+        "arame": "Arame",
+        "garrafa": "Garrafa vazia",
+        "pregos": "Pregos"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "M10",
+      "name": "Buraco coberto (armadilha: o zumbi cai)",
+      "inputs": {
+        "tabuas": 2,
+        "pano": 2
+      },
+      "needsBench": false,
+      "xp": 20,
+      "kind": "estrutura",
+      "furniture": "buraco",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "needsFire": false,
+      "name_en": "Covered pit (trap: the zombie falls in)",
+      "name_es": "Pozo cubierto (trampa: el zombi cae)",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": null,
+      "input_names": {
+        "tabuas": "Tábuas",
+        "pano": "Trapos de pano"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "M11",
+      "name": "Holofote (com gerador e gasolina)",
+      "inputs": {
+        "lanterna": 2,
+        "arame": 1,
+        "cano": 1
+      },
+      "skill": "mecanica",
+      "minLevel": 1,
+      "xp": 30,
+      "kind": "estrutura",
+      "furniture": "holofote",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "needsBench": true,
+      "needsFire": false,
+      "name_en": "Floodlight (with generator and gasoline)",
+      "name_es": "Reflector (con generador y gasolina)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Mecânica",
+      "output_name": null,
+      "input_names": {
+        "lanterna": "Lanterna",
+        "arame": "Arame",
+        "cano": "Cano de ferro"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "M12",
+      "name": "Torre de vigia (enxerga mais longe perto da base)",
+      "inputs": {
+        "tabuas": 8,
+        "pregos": 8
+      },
+      "skill": "carpintaria",
+      "minLevel": 2,
+      "xp": 50,
+      "kind": "estrutura",
+      "furniture": "torre",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "needsBench": true,
+      "needsFire": false,
+      "name_en": "Watchtower (see farther near the base)",
+      "name_es": "Torre de vigía (ves más lejos cerca de la base)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Carpintaria",
+      "output_name": null,
+      "input_names": {
+        "tabuas": "Tábuas",
+        "pregos": "Pregos"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "M13",
+      "name": "Caixa de correio (mercado)",
+      "inputs": {
+        "tabuas": 2,
+        "pregos": 2
+      },
+      "needsBench": false,
+      "skill": "carpintaria",
+      "xp": 15,
+      "kind": "estrutura",
+      "furniture": "correio",
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "minLevel": 0,
+      "needsFire": false,
+      "name_en": "Mailbox (market)",
+      "name_es": "Buzón (mercado)",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": "Carpintaria",
+      "output_name": null,
+      "input_names": {
+        "tabuas": "Tábuas",
+        "pregos": "Pregos"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "A01",
+      "name": "Arco improvisado",
+      "output": "arco",
+      "inputs": {
+        "tabuas": 1,
+        "arame": 1,
+        "fita": 1
+      },
+      "skill": "carpintaria",
+      "minLevel": 1,
+      "xp": 30,
+      "qty": 1,
+      "tools": [],
+      "needsBench": true,
+      "kind": "item",
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Makeshift bow",
+      "name_es": "Arco improvisado",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Carpintaria",
+      "output_name": "Arco improvisado",
+      "input_names": {
+        "tabuas": "Tábuas",
+        "arame": "Arame",
+        "fita": "Fita adesiva"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "A02",
+      "name": "Flechas (5)",
+      "output": "flecha",
+      "qty": 5,
+      "inputs": {
+        "tabuas": 1,
+        "pregos": 5,
+        "fita": 1
+      },
+      "skill": "carpintaria",
+      "xp": 12,
+      "tools": [],
+      "needsBench": true,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Arrows (5)",
+      "name_es": "Flechas (5)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Carpintaria",
+      "output_name": "Flecha",
+      "input_names": {
+        "tabuas": "Tábuas",
+        "pregos": "Pregos",
+        "fita": "Fita adesiva"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "A03",
+      "name": "Silenciador improvisado (garrafa e pano)",
+      "output": "silenciador",
+      "inputs": {
+        "garrafa": 1,
+        "pano": 2,
+        "fita": 2
+      },
+      "skill": "mecanica",
+      "xp": 15,
+      "qty": 1,
+      "tools": [],
+      "needsBench": true,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Improvised silencer (bottle and cloth)",
+      "name_es": "Silenciador improvisado (botella y trapo)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Mecânica",
+      "output_name": "Silenciador improvisado",
+      "input_names": {
+        "garrafa": "Garrafa vazia",
+        "pano": "Trapos de pano",
+        "fita": "Fita adesiva"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "A04",
+      "name": "Tirar a pólvora de um rojão",
+      "output": "polvora",
+      "inputs": {
+        "rojao": 1
+      },
+      "needsBench": false,
+      "xp": 5,
+      "qty": 1,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Extract the gunpowder from a firework",
+      "name_es": "Sacar la pólvora de un cohete",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": "Pólvora",
+      "input_names": {
+        "rojao": "Rojão"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "A05",
+      "name": "Recarregar cartuchos (4)",
+      "output": "cartucho",
+      "qty": 4,
+      "inputs": {
+        "cartucho_vazio": 4,
+        "polvora": 1,
+        "pregos": 2
+      },
+      "skill": "mecanica",
+      "minLevel": 1,
+      "xp": 20,
+      "tools": [],
+      "needsBench": true,
+      "kind": "item",
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Reload shells (4)",
+      "name_es": "Recargar cartuchos (4)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Mecânica",
+      "output_name": "Cartucho calibre 12",
+      "input_names": {
+        "cartucho_vazio": "Cartucho vazio",
+        "polvora": "Pólvora",
+        "pregos": "Pregos"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "E01",
+      "name": "Saco de dormir",
+      "output": "saco_dormir",
+      "inputs": {
+        "pano": 8,
+        "fita": 2,
+        "corda": 1
+      },
+      "tools": [
+        "agulha"
+      ],
+      "skill": "costura",
+      "minLevel": 1,
+      "xp": 35,
+      "qty": 1,
+      "needsBench": true,
+      "kind": "item",
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Sleeping bag",
+      "name_es": "Saco de dormir",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Costura",
+      "output_name": "Saco de dormir",
+      "input_names": {
+        "pano": "Trapos de pano",
+        "fita": "Fita adesiva",
+        "corda": "Corda"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "E02",
+      "name": "Barraca (lona, canos e corda)",
+      "output": "barraca",
+      "inputs": {
+        "lona": 2,
+        "cano": 2,
+        "corda": 3,
+        "fita": 2
+      },
+      "tools": [
+        "agulha"
+      ],
+      "skill": "costura",
+      "minLevel": 2,
+      "xp": 80,
+      "qty": 1,
+      "needsBench": true,
+      "kind": "item",
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Tent (tarp, pipes and rope)",
+      "name_es": "Tienda (lona, caños y cuerda)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Costura",
+      "output_name": "Barraca",
+      "input_names": {
+        "lona": "Lona",
+        "cano": "Cano de ferro",
+        "corda": "Corda",
+        "fita": "Fita adesiva"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "E03",
+      "name": "Remendar a lona da barraca (+40%, a lona aguenta menos a cada remendo)",
+      "inputs": {
+        "pano": 3,
+        "fita": 2
+      },
+      "tools": [
+        "agulha"
+      ],
+      "skill": "costura",
+      "xp": 25,
+      "kind": "lona",
+      "output": null,
+      "qty": 1,
+      "needsBench": true,
+      "minLevel": 0,
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Patch the tent tarp (+40%, it holds less after each patch)",
+      "name_es": "Remendar la lona de la tienda (+40%, aguanta menos con cada remiendo)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Costura",
+      "output_name": null,
+      "input_names": {
+        "pano": "Trapos de pano",
+        "fita": "Fita adesiva"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "E04",
+      "name": "Biodiesel (óleo, álcool e soda cáustica, no fogo)",
+      "output": "biodiesel",
+      "inputs": {
+        "oleo_cozinha": 2,
+        "alcool": 2,
+        "soda_caustica": 1
+      },
+      "needsBench": false,
+      "needsFire": true,
+      "xp": 20,
+      "qty": 1,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "name_en": "Biodiesel (oil, alcohol and lye, on the fire)",
+      "name_es": "Biodiésel (aceite, alcohol y soda cáustica, al fuego)",
+      "station": "fogo",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": "Galão de biodiesel",
+      "input_names": {
+        "oleo_cozinha": "Óleo de cozinha",
+        "alcool": "Álcool 70%",
+        "soda_caustica": "Soda cáustica"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "X01",
+      "name": "Enrolar o cabo da arma (golpe 10% mais rápido)",
+      "inputs": {
+        "fita": 2
+      },
+      "needsBench": false,
+      "kind": "mod",
+      "xp": 8,
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Wrap the weapon's handle (10% faster attacks)",
+      "name_es": "Enrollar el mango del arma (golpe 10% más rápido)",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": null,
+      "input_names": {
+        "fita": "Fita adesiva"
+      },
+      "xp_only_with_skill": false,
+      "mod": "cabo",
+      "mod_name": "cabo enrolado"
+    },
+    {
+      "id": "X02",
+      "name": "Lâmina na ponta da arma longa (+3 de dano)",
+      "inputs": {
+        "faca": 1,
+        "fita": 2
+      },
+      "skill": "mecanica",
+      "kind": "mod",
+      "xp": 15,
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "needsBench": true,
+      "minLevel": 0,
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Blade on the tip of the long weapon (+3 damage)",
+      "name_es": "Hoja en la punta del arma larga (+3 de daño)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Mecânica",
+      "output_name": null,
+      "input_names": {
+        "faca": "Faca de cozinha",
+        "fita": "Fita adesiva"
+      },
+      "xp_only_with_skill": true,
+      "mod": "lamina",
+      "mod_name": "lâmina na ponta"
+    },
+    {
+      "id": "X03",
+      "name": "Lanterna presa na arma (enxerga longe de noite)",
+      "inputs": {
+        "lanterna": 1,
+        "fita": 1,
+        "arame": 1
+      },
+      "skill": "mecanica",
+      "kind": "mod",
+      "xp": 15,
+      "output": null,
+      "qty": 1,
+      "tools": [],
+      "needsBench": true,
+      "minLevel": 0,
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Flashlight mounted on the weapon (see far at night)",
+      "name_es": "Linterna montada en el arma (ves lejos de noche)",
+      "station": "bancada",
+      "time_seconds": 0,
+      "skill_name": "Mecânica",
+      "output_name": null,
+      "input_names": {
+        "lanterna": "Lanterna",
+        "fita": "Fita adesiva",
+        "arame": "Arame"
+      },
+      "xp_only_with_skill": true,
+      "mod": "lanterna",
+      "mod_name": "lanterna presa"
+    },
+    {
+      "id": "C06",
+      "name": "Carne seca no fogo (dura 2 meses)",
+      "output": "carne_seca",
+      "qty": 2,
+      "inputs": {
+        "carne": 1
+      },
+      "needsBench": false,
+      "needsFire": true,
+      "xp": 10,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "name_en": "Dried meat over the fire (lasts 2 months)",
+      "name_es": "Carne seca al fuego (dura 2 meses)",
+      "station": "fogo",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": "Carne seca (charque)",
+      "input_names": {
+        "carne": "Carne fresca"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "C07",
+      "name": "Legumes em conserva (duram 3 meses)",
+      "output": "conserva",
+      "qty": 2,
+      "inputs": {
+        "legumes": 2,
+        "garrafa": 2,
+        "agua": 1
+      },
+      "needsBench": false,
+      "needsFire": true,
+      "skill": "agricultura",
+      "xp": 12,
+      "tools": [],
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "name_en": "Canned vegetables (last 3 months)",
+      "name_es": "Verduras en conserva (duran 3 meses)",
+      "station": "fogo",
+      "time_seconds": 0,
+      "skill_name": "Agricultura",
+      "output_name": "Legumes em conserva",
+      "input_names": {
+        "legumes": "Legumes da horta",
+        "garrafa": "Garrafa vazia",
+        "agua": "Garrafa d'água"
+      },
+      "xp_only_with_skill": true
+    },
+    {
+      "id": "C08",
+      "name": "Sopa (esquenta)",
+      "output": "sopa",
+      "qty": 2,
+      "inputs": {
+        "legumes": 1,
+        "agua": 2,
+        "feijao": 1
+      },
+      "needsBench": false,
+      "needsFire": true,
+      "xp": 10,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "name_en": "Soup (warms up)",
+      "name_es": "Sopa (calienta)",
+      "station": "fogo",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": "Sopa quente",
+      "input_names": {
+        "legumes": "Legumes da horta",
+        "agua": "Garrafa d'água",
+        "feijao": "Lata de feijão"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "C09",
+      "name": "Café coado",
+      "output": "cafe_coado",
+      "qty": 2,
+      "inputs": {
+        "cafe": 1,
+        "agua": 1,
+        "pano": 1
+      },
+      "needsBench": false,
+      "needsFire": true,
+      "xp": 5,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "name_en": "Drip coffee",
+      "name_es": "Café colado",
+      "station": "fogo",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": "Café coado",
+      "input_names": {
+        "cafe": "Pó de café",
+        "agua": "Garrafa d'água",
+        "pano": "Trapos de pano"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "C10",
+      "name": "Pão de panela",
+      "output": "pao_panela",
+      "qty": 2,
+      "inputs": {
+        "farinha": 1,
+        "agua": 1
+      },
+      "needsBench": false,
+      "needsFire": true,
+      "xp": 10,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "name_en": "Pot bread",
+      "name_es": "Pan de olla",
+      "station": "fogo",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": "Pão de panela",
+      "input_names": {
+        "farinha": "Pacote de farinha",
+        "agua": "Garrafa d'água"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "C01",
+      "name": "Cozinhar arroz",
+      "output": "arroz_cozido",
+      "qty": 3,
+      "inputs": {
+        "arroz": 1,
+        "agua": 2
+      },
+      "needsBench": false,
+      "needsFire": true,
+      "xp": 10,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "name_en": "Cook rice",
+      "name_es": "Cocinar arroz",
+      "station": "fogo",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": "Arroz cozido",
+      "input_names": {
+        "arroz": "Pacote de arroz",
+        "agua": "Garrafa d'água"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "C02",
+      "name": "Assar carne",
+      "output": "carne_assada",
+      "inputs": {
+        "carne": 1
+      },
+      "needsBench": false,
+      "needsFire": true,
+      "xp": 8,
+      "qty": 1,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "name_en": "Roast meat",
+      "name_es": "Asar carne",
+      "station": "fogo",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": "Carne assada",
+      "input_names": {
+        "carne": "Carne fresca"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "C03",
+      "name": "Cozinhar legumes",
+      "output": "legumes_cozidos",
+      "inputs": {
+        "legumes": 1,
+        "agua": 1
+      },
+      "needsBench": false,
+      "needsFire": true,
+      "xp": 8,
+      "qty": 1,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "name_en": "Cook vegetables",
+      "name_es": "Cocinar verduras",
+      "station": "fogo",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": "Legumes cozidos",
+      "input_names": {
+        "legumes": "Legumes da horta",
+        "agua": "Garrafa d'água"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "C05",
+      "name": "Ferver água",
+      "output": "agua",
+      "qty": 2,
+      "inputs": {
+        "agua_suja": 2
+      },
+      "needsBench": false,
+      "needsFire": true,
+      "xp": 4,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "name_en": "Boil water",
+      "name_es": "Hervir agua",
+      "station": "fogo",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": "Garrafa d'água",
+      "input_names": {
+        "agua_suja": "Água de chuva (não fervida)"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "R09",
+      "name": "Filtrar água no pano (metade das vezes não basta)",
+      "output": "agua",
+      "inputs": {
+        "agua_suja": 1,
+        "pano": 1
+      },
+      "needsBench": false,
+      "xp": 3,
+      "qty": 1,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "needsFire": false,
+      "name_en": "Filter water through cloth (half the time it's not enough)",
+      "name_es": "Filtrar agua con un trapo (la mitad de las veces no basta)",
+      "station": "nenhuma",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": "Garrafa d'água",
+      "input_names": {
+        "agua_suja": "Água de chuva (não fervida)",
+        "pano": "Trapos de pano"
+      },
+      "xp_only_with_skill": false
+    },
+    {
+      "id": "C04",
+      "name": "Esquentar feijão",
+      "output": "feijao_quente",
+      "inputs": {
+        "feijao": 1
+      },
+      "needsBench": false,
+      "needsFire": true,
+      "xp": 5,
+      "qty": 1,
+      "tools": [],
+      "skill": null,
+      "minLevel": 0,
+      "kind": "item",
+      "furniture": null,
+      "name_en": "Heat beans",
+      "name_es": "Calentar frijoles",
+      "station": "fogo",
+      "time_seconds": 0,
+      "skill_name": null,
+      "output_name": "Feijão quente",
+      "input_names": {
+        "feijao": "Lata de feijão"
+      },
+      "xp_only_with_skill": false
+    }
+  ],
+  "kinds": [
+    "estrutura",
+    "item",
+    "lona",
+    "mod",
+    "reparo"
+  ],
+  "doc": "Receitas da bancada (da planilha do catalogo, adaptadas aos itens atuais).",
+  "rules": {
+    "time": "Instantâneo (craft() não tem tempo de espera).",
+    "xp": "XP da receita vai para a habilidade da receita (sem skill = sem XP). Móvel refeito depois de desmontar não dá XP.",
+    "repair": {
+      "R06_base_fraction": 0.5,
+      "R08_base_fraction": 1.0,
+      "decay_per_repair": 0.8,
+      "mecanica_bonus_per_level": 0.05,
+      "formula": "ganho = durabilidade_max * base * 0.8^reparos * (1 + 0.05 * nível mecânica)"
+    },
+    "R09_fail_chance": 0.5,
+    "tool_injury": {
+      "skills": [
+        "carpintaria",
+        "mecanica"
+      ],
+      "base_chance": 0.03,
+      "minus_per_level": 0.005,
+      "wound": "corte nas mãos"
+    },
+    "bench_limit": "R14: só uma bancada por base",
+    "max_garden_plots": 4
+  },
+  "_meta": {
+    "source": "/mnt/user-data/outputs/footfall",
+    "generator": "extract.py"
+  }
+}

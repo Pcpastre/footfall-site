@@ -1,0 +1,80 @@
+<!-- titulo: Infecção | categoria: Saúde | resumo: A infecção zumbi (fases, prazo de 7 dias, chance por ferida e por traço) e a infecção comum de ferida, que o antibiótico cura. -->
+<p>O Footfall tem dois tipos de infecção, que não têm nada a ver um com o outro:</p>
+<ul>
+<li><b>Infecção zumbi</b>: vem de feridas causadas por zumbi. Não tem cura e mata em 7 dias de tempo real.</li>
+<li><b>Infecção comum</b>: pega numa <a href="feridas.html">ferida</a> suja ou mal tratada. Atrapalha bastante, mas o <a href="item-antibiotico.html">Antibiótico</a> cura.</li>
+</ul>
+
+<h2>Infecção zumbi</h2>
+<h3>Como se pega</h3>
+<p>Cada ferida que um zumbi causa sorteia, na hora, se passa a infecção:</p>
+<div class="tbl"><table>
+<tr><th>Ferida</th><th>Normal</th><th>Imunidade forte</th><th>Imunidade fraca</th></tr>
+<tr><td>Mordida</td><td>85%</td><td>60%</td><td>100%</td></tr>
+<tr><td>Laceração</td><td>25%</td><td>12,5%</td><td>40%</td></tr>
+<tr><td>Hemorragia</td><td>25%</td><td>12,5%</td><td>40%</td></tr>
+<tr><td>Arranhão</td><td>7%</td><td>3,5%</td><td>11,2%</td></tr>
+<tr><td>Qualquer outra (contusão, fratura, queimadura, corte, estilhaço)</td><td>0%</td><td>0%</td><td>0%</td></tr>
+</table></div>
+<p>Quando a roupa segura uma mordida, ela vira contusão e não infecta. Feridas de guardas e de acidentes (caco de vidro, ferramenta, fogo) nunca passam a infecção zumbi. Ser mordido sempre avisa "Você foi mordido..." e soma 20 de estresse e 15 de tristeza, infectando ou não.</p>
+<p>A infecção é uma só: se você já está infectado, outra ferida infectada não muda o relógio. O prazo conta do momento da primeira ferida que infectou.</p>
+
+<h3>Fases</h3>
+<div class="tbl"><table>
+<tr><th>Tempo desde a ferida</th><th>Fase</th><th>Moodle</th><th>Efeitos</th></tr>
+<tr><td>0 a 3 dias</td><td>Incubando</td><td>—</td><td>Nenhum sintoma ("Mordido. Ainda sem sintomas.")</td></tr>
+<tr><td>3 a 5 dias</td><td>Febre</td><td>Com febre (nível 2)</td><td>−25 de fôlego máximo; −10% de dano na luta; o estresse sobe</td></tr>
+<tr><td>5 a 7 dias</td><td>Delírio</td><td>Delirando (nível 3)</td><td>−35 de fôlego máximo; visão no mapa ×0,6; −20% de dano na luta; o estresse sobe</td></tr>
+<tr><td>7 dias</td><td>Morte</td><td>—</td><td>"A infecção venceu."</td></tr>
+</table></div>
+<p>Os dias são <b>reais</b> e correm com o app fechado. Se o prazo vencer enquanto você está fora, o personagem morre ao abrir o jogo ("A infecção venceu enquanto você estava fora."). Veja <a href="morte.html">Morte</a>.</p>
+<p>Na aba <kbd>Saúde</kbd>, enquanto houver infecção, aparece o texto da fase e "Tempo que resta: ... (real). Ainda não há cura.".</p>
+
+<h3>Outros efeitos</h3>
+<ul>
+<li>Infectado, você não recupera vida dormindo (nem na base, nem na cama, nem no saco de dormir). Jogando, a vida continua voltando 1 por minuto se as outras condições deixarem (veja <a href="necessidades.html">Necessidades</a>).</li>
+<li>Na febre e no delírio, o estresse sobe 0,05 por segundo com o app aberto (veja <a href="mente.html">Mente</a>).</li>
+<li>Nenhum item ou remédio cura ou atrasa a infecção zumbi. O antibiótico não tem efeito nela.</li>
+</ul>
+
+<h3>Como evitar</h3>
+<ul>
+<li>Vista proteção nos braços e no tronco, onde a maioria das mordidas pega (ver <a href="feridas.html">Feridas</a>). Couro e peças rígidas seguram 85% a 95% das mordidas onde cobrem.</li>
+<li>O traço <a href="tracos.html">Imunidade forte</a> baixa a mordida para 60% e corta pela metade a chance de laceração e arranhão.</li>
+<li>Zumbi em pé só morde depois de te agarrar (ou quando você está caído no chão); rastejante morde direto. Solte-se do agarrão logo e evite ser derrubado.</li>
+</ul>
+<div class="tip warn"><b>Mordido não é morto (ainda)</b>Com 15% de chance a mordida não infecta. E mesmo infectado você tem 7 dias reais: tempo para levar o que importa para a base e os baús, que continuam depois da morte.</div>
+
+<h2>Infecção comum</h2>
+<h3>Como se pega</h3>
+<p>A cada hora com a <b>sessão ativa</b>, cada ferida que pode sangrar (arranhão, laceração, mordida, corte profundo, estilhaço; hemorragia não) tem uma chance que é a soma de:</p>
+<div class="tbl"><table>
+<tr><th>Situação</th><th>Chance por hora</th></tr>
+<tr><td>Enfaixada sem ter sido limpa</td><td>6%</td></tr>
+<tr><td>Curativo sujo (atadura com mais de 12 h, 24 h com esparadrapo, ou de trapo)</td><td>4%</td></tr>
+<tr><td>Estilhaço ainda dentro</td><td>5%</td></tr>
+<tr><td>Sem curativo nenhum (menos arranhão)</td><td>2%</td></tr>
+</table></div>
+<p>A queimadura sem pomada tem 3% por hora, à parte. Contusão e fratura nunca infeccionam. Exemplo: uma laceração enfaixada com trapo e sem limpar soma 6% + 4% = 10% por hora.</p>
+<p>A chance só é sorteada com o app aberto, fora da tela de ação. Com o app fechado, a ferida não infecciona.</p>
+
+<h3>Efeitos</h3>
+<ul>
+<li>A ferida fica <i>INFECCIONADA</i> e para de cicatrizar (mesmo com todos os passos feitos).</li>
+<li>Dor +10 naquela ferida.</li>
+<li>Moodle <i>Ferida infeccionada</i> (nível 2) e −15 de fôlego máximo.</li>
+<li>Com o app aberto, a vida não volta.</li>
+<li>Depois de 72 h infeccionada, a ferida tira 1 HP a cada 600 s (6 por hora).</li>
+</ul>
+
+<h3>Cura</h3>
+<p>Tome um <a href="item-antibiotico.html">Antibiótico</a> (<kbd>Tomar</kbd> no inventário): ele cura a infecção comum de <b>todas</b> as feridas de uma vez ("Antibiótico: a infecção da ferida vai passar.") e ainda devolve 20 de vida (mais 10% por nível de Primeiros socorros). A ferida volta a cicatrizar do zero. Tomar sem ter infecção gasta o remédio do mesmo jeito ("Tomou antibiótico (não havia ferida infeccionada).").</p>
+
+<h3>Como evitar</h3>
+<ul>
+<li>Limpe antes de enfaixar (<a href="item-soro.html">Soro</a>, <a href="item-alcool.html">Álcool</a> ou <a href="item-cachaca.html">Cachaça</a>), ou enfaixe com <a href="item-bandagem_esteril.html">Atadura estéril</a> ou <a href="item-kit_socorros.html">Kit de primeiros socorros</a>, que já contam como limpeza.</li>
+<li>Tire o estilhaço logo.</li>
+<li>Troque o curativo quando aparecer <i>curativo sujo</i>, e use <a href="item-esparadrapo.html">Esparadrapo</a> para ele durar 24 h.</li>
+<li>Evite enfaixar com trapo, a não ser no aperto.</li>
+</ul>
+<p>Passo a passo em <a href="tratamento.html">Tratamento</a>.</p>
